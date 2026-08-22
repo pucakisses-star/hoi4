@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------------------
+# HOI4 mod repository attributes
+#
+# `* -text` disables ALL automatic end-of-line conversion. This is deliberate:
+# many HOI4 script and localisation files are UTF-8-with-BOM and the game is
+# sensitive to how they are encoded. Letting git rewrite line endings on
+# checkout has historically corrupted localisation files, so we opt out
+# globally and treat every file as already being in its final form.
+* -text
+
+# --- Treat game assets as binary (no diffing, no merge attempts) ----------
+*.dds  binary
+*.tga  binary
+*.TGA  binary
+*.bmp  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.psd  binary
+*.pdn  binary
+*.ogg  binary
+*.wav  binary
+*.mp3  binary
+*.mesh binary
+*.anim binary
+*.bin  binary
+*.dll  binary
+*.exe  binary
+*.zip  binary
+
+# --- Git LFS --------------------------------------------------------------
+# NOT enabled by default. Enabling LFS requires rewriting history
+# (`git lfs migrate import`) AND every clone of this repo to have git-lfs
+# installed. Run `tools/shrink-repo.sh --lfs` to turn it on; that script
+# appends the filter lines below in place of these comments.
+#
+#   *.dds  filter=lfs diff=lfs merge=lfs -text
+#   *.tga  filter=lfs diff=lfs merge=lfs -text
+#   *.png  filter=lfs diff=lfs merge=lfs -text
+#   *.jpg  filter=lfs diff=lfs merge=lfs -text
+#   *.bmp  filter=lfs diff=lfs merge=lfs -text
+#   *.ogg  filter=lfs diff=lfs merge=lfs -text
