@@ -96,3 +96,4 @@ if = {
 	autonomous_state = autonomy_dominion
 	freedom_level = 0.9
 	}
+}

@@ -49,3 +49,4 @@ set_technology = {
   tech_infantry_napoleonic_uniform = 1
 }
 
+}

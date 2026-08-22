@@ -3646,3 +3646,4 @@ focus_tree = {
 
 
 continuous_focus_position = { x = 25 y = 1200 }
+}

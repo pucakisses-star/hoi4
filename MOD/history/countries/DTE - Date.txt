@@ -101,4 +101,3 @@ set_popularities = {
   }
 
 }
-}

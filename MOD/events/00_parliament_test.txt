@@ -138,3 +138,4 @@ country_event = { # EXEMPLE : CUSTOM VOTE, RESULTS
 # 2 : Pro-Militarist
 # 3 : Anti-Militarist
 # 4 : Pacifist
+}

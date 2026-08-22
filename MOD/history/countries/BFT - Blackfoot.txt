@@ -89,3 +89,4 @@ create_country_leader = {
 	traits = {
 	}
 }
+}
