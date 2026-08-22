@@ -1,0 +1,23 @@
+state={
+	id=860
+	name="STATE_860"
+
+	state_category = wasteland
+	resources={
+		rubber=2
+	}
+
+	history={
+		buildings = {
+		}
+		owner = KAA
+		add_core_of = KAA
+		add_claim_by = TOU
+	}
+
+	provinces={
+		13349
+	}
+	manpower=9234
+	buildings_max_level_factor=1.000
+}

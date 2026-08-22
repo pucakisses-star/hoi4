@@ -1,0 +1,37 @@
+state={
+	id=970
+	name="STATE_970"
+	resources={
+		iron=2
+		aluminium=4
+	}
+
+	history = {
+		owner=AUS
+		add_core_of=AUS
+		add_core_of = CRO
+		victory_points = {
+			3924 3 
+		}
+		victory_points = {
+			6889 3 
+		}
+
+		buildings={
+			infrastructure=3
+		}
+		
+		add_to_array = { state_culture_array = 72 }
+		add_to_array = { state_culture_array = 44 }
+		
+       	add_to_array = { state_culture_array_num = 0.91 } 
+       	add_to_array = { state_culture_array_num = 0.09 }
+	}
+
+	provinces={
+		3868 3924 6889 11816 
+	}
+	manpower=254000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

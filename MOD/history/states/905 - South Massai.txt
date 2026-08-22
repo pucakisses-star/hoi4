@@ -1,0 +1,27 @@
+state={
+	id=905
+	name="STATE_905"
+
+	state_category = rural
+	
+	resources = {
+		cotton=12
+	}
+	
+	history={
+		buildings = {
+			
+		}
+
+		
+		
+		owner = MAA
+		add_core_of = MAA
+	}
+
+	provinces={
+		5224 2206 11017 
+	}
+	manpower=75425
+	buildings_max_level_factor=1.000
+}

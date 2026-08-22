@@ -1,0 +1,15 @@
+SPR_Patronage = {
+	icon = generic_political_actions
+	
+		visible = {
+			tag = SPR
+		}
+}
+
+SPR_FLAVOUR = {
+	icon = generic_political_actions
+	
+		visible = {
+			tag = SPR
+		}
+}

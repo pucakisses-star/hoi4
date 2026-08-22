@@ -1,0 +1,22 @@
+focus_tree = {
+	id = nzl_vic_liberal
+	country = {
+		factor = 0
+		modifier = {
+			add = 11
+			tag = NZL
+			date > 1871.1.1
+		}
+	}
+	default = no
+	focus = {
+		id = nzl_mac_vogel_era
+		icon = GFX_goal_nz_vogel_era
+		cost = 70
+		x = 3
+		y = 0
+		completion_reward = {
+		}
+		ai_will_do = { factor = 11 } 
+	}
+}

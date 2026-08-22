@@ -1,0 +1,86 @@
+﻿capital = 380
+
+OOB = "DES_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 10
+		}
+
+		fascism = {
+			popularity = 65
+		}
+		
+		communism = {
+			popularity = 0
+		}
+		
+		neutrality = { 
+			popularity = 25
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1847.12.27"
+	election_frequency = 0
+	elections_allowed = no
+}
+
+set_convoys = 0
+
+set_stability = 0.71
+
+
+create_country_leader = {
+	name = "Brigham Young"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_DES_Brigham_Young.dds"
+	expire = "1965.1.1"
+	ideology = fascism 
+	traits = {
+		#
+	}
+}
+
+#create_field_marshal = {
+#	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+#skill = 2
+#
+create_country_leader = {
+	name = "Brigham Young"
+#desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "Portrait_DES_Brigham_Young.dds"
+	expire = "1888.1.1"
+	ideology = fascism_ideology
+	traits = {
+		dictator
+	}
+}
+#create_country_leader = {
+#	name = "John J. Ballam"
+#desc = "POLITICS_KING_ZOG_DESC"
+#	picture = "JohnJBallam_result.dds"
+#	expire = "1965.1.1"
+#	ideology = marxism
+#	traits = {
+#		
+#	}
+#}
+create_country_leader = {
+	name = "Heber J. Grant"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "HeberJGrantDES_result.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}

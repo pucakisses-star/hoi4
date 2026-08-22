@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+####################
+#Snippet by TheThBa#
+####################
+
+focus_tree = {
+	id = _focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag =
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	####insert focuses here, accessible by "tfocus" for normal focuses, and "sfocusc" for accessing shared focuses####
+	####"sfocus" creates a *SHARED* focus####
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>hfocus</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

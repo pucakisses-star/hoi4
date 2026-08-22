@@ -1,0 +1,1 @@
+Please be aware it changes the sublime settings though - you need to press TAB to autocomplete, this ensures no accidental autocomplete.

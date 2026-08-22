@@ -1,0 +1,682 @@
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "Arkansas Traveler"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Battle Cry of Freedom"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Battle of Bull Run"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Colonel Lou"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+
+music = {
+	song = "Confederate Song"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Cumberland Gap"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Everybody's Dixie"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Jackson's in the Valley"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Jine the Cavalry"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Joe's Been A-Gittin' There"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Dixie"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Johnny is Gone for a Soldier"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Johnny Reb"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Long Ago"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Lorena"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "March of the Southern Men"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Oh I'm a Good Old Rebel"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Old Abe Lies Sick"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Old Abe's Lament"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "The Plains of Manassas"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Richmond is a Hard Road to Travel"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Riding a Raid"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Soldiers Suit of Grey"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Somebody's Darling"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Southern Soldier"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Stonewall Jackson's Way"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Somebody's Darling"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Strike for the South"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "The Bonnie Blue Flag"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "The Kennesaw Line"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "The Rebel Soldier"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "The Reluctant Conscript"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "The Upidee Song"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Twas the Siege of Vicksburg"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "You're Going to the War Willy Boy"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Wait for the Wagon"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Yellow Rose of Texas"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "We Conquer or Die"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "Confederate Irish Brigade"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "I Wish I Was in Dixie"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "The Old Unreconstructed"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = "The Night They Drove Dixie Down"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = COF
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,4063 @@
+afr_islamic_renaissance = {
+	
+	SKT_KBO_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			owns_state = 838
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			owns_state = 838
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 838 } }
+				838 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+	
+	SKT_BAG_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			OR = {	
+				owns_state = 805
+				owns_state = 789
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			OR = {	
+				owns_state = 805
+				owns_state = 789
+			}
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 805 } }
+				805 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 789 } }
+				789 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+
+	SKT_SNS_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			owns_state = 273
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			owns_state = 273
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 273 } }
+				273 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+ 
+	SKT_IJB_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			owns_state = 874
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			owns_state = 874
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 874 } }
+				874 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+ 
+	SKT_ARO_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			OR = {	
+				owns_state = 800
+				owns_state = 796
+				owns_state = 798
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			OR = {	
+				owns_state = 800
+				owns_state = 796
+				owns_state = 798
+			}
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 10
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 800 } }
+				800 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 796 } }
+				796 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 798 } }
+				798 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+ 
+    SKT_TUG_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			OR = {
+				owns_state = 515
+				owns_state = 771
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			OR = {
+				owns_state = 515
+				owns_state = 771
+			}
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 515 } }
+				515 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 771 } }
+				771 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+		
+	SKT_GBG_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			owns_state = 558
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			owns_state = 558
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 558 } }
+				558 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+		
+	SKT_OYO_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			owns_state = 871
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			owns_state = 871
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 871 } }
+				871 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+		
+	SKT_DAH_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			OR = {
+				owns_state = 769
+				owns_state = 768
+				owns_state = 846
+				owns_state = 1111
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			OR = {
+				owns_state = 769
+				owns_state = 768
+				owns_state = 846
+				owns_state = 1111
+			}
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 846 } }
+				846 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 769 } }
+				769 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 768 } }
+				768 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 1111 } }
+				1111 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+		
+	SKT_BRG_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			owns_state = 872
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			owns_state = 872
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 872 } }
+				872 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+	
+	SKT_DDI_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			OR = {
+				owns_state = 855
+				owns_state = 770
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			OR = {
+				owns_state = 855
+				owns_state = 770
+			}
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 855 } }
+				855 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 770 } }
+				770 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+	
+	SKT_KAG_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			owns_state = 514
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			owns_state = 514
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 514 } }
+				514 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+	
+	SKT_ASH_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			owns_state = 274
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			owns_state = 274
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 274 } }
+				274 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+	
+	SKT_MOS_build_ribats = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			OR = {
+				owns_state = 856
+				owns_state = 772
+			}
+			custom_trigger_tooltip = {
+				tooltip = AFR_constructing_islamic_frontier_ribat
+				NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+			}
+		}
+
+		visible = {
+			tag = ROOT
+			OR = {
+				owns_state = 856
+				owns_state = 772
+			}
+			has_country_flag = Jihad_develop_frontier_ribats
+			NOT = { has_country_flag = AFR_constructing_islamic_frontier_ribat }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				add = 200
+				ROOT = { check_variable = { afr_war_exhaustion_value > 14 } }
+			}
+		}
+		
+		cost = 50
+		
+		days_remove = 360
+		
+		complete_effect = {
+			set_country_flag = AFR_constructing_islamic_frontier_ribat
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = {
+			clr_country_flag = AFR_constructing_islamic_frontier_ribat
+			if = {
+				limit = { ROOT = { owns_state = 856 } }
+				856 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = farm
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { ROOT = { owns_state = 772 } }
+				772 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = AFR_islamic_frontier_ribat
+				}
+			}
+			if = {
+				limit = { check_variable = { afr_war_exhaustion_value > 0 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+		}
+		
+	}
+
+	afr_jihad_ribat_stage_1 = {
+		icon = generic_form_nation
+		available = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		days_remove = 90
+		
+		complete_effect = {
+			
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				ROOT = { country_event = { id = afr_jihad_repair_ribats.2 } }
+			}
+		}
+	}
+	
+	afr_jihad_ribat_stage_2 = {
+		icon = generic_form_nation
+		available = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		days_remove = 90
+		
+		complete_effect = {
+			
+		}
+	
+		remove_effect = {
+			if = {
+				limit = {
+					has_country_flag = afr_jihad_ribat_skilled_labor
+				}
+				hidden_effect = {
+					ROOT = { country_event = { id = afr_jihad_repair_ribats.3 } }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = afr_jihad_ribat_skilled_labor }
+				}
+				hidden_effect = {
+					ROOT = { country_event = { id = afr_jihad_repair_ribats.5 } }
+				}
+			}
+		}
+	}
+	
+	afr_jihad_ribat_stage_3 = {
+		icon = generic_form_nation
+		available = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		days_remove = 360
+		
+		complete_effect = {
+			
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				ROOT = { country_event = { id = afr_jihad_repair_ribats.4 } }
+			}
+		}
+	}
+	
+	afr_jihad_ribat_stage_4 = {
+		icon = generic_form_nation
+		available = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		days_remove = 360
+		
+		complete_effect = {
+			
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				ROOT = { country_event = { id = afr_jihad_repair_ribats.5 } }
+			}
+		}
+	}
+	
+	afr_jihad_ribat_stage_5 = {
+		icon = generic_form_nation
+		available = {
+			always = no
+		}
+
+		visible = {
+			always = no
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		days_remove = 360
+		
+		complete_effect = {
+			
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				ROOT = { country_event = { id = afr_jihad_repair_ribats.5 } }
+			}
+		}
+	}
+}
+	
+
+ afr_prosperity_mechanic_category = {
+ 
+	afr_ethiopia_send_gift_por = {
+		icon = generic_form_nation
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = afr_prosperity_mechanic_greater_than_5
+					check_variable = {
+					afr_prosperity_mechanic_value > 4
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = afr_ethiopia_send_gift_por_trigger
+				has_global_flag = scramble_for_africa
+			}
+		}
+
+		visible = {
+			TAG = ETH
+			NOT = { has_global_flag = scramble_for_africa }
+		}
+	
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		complete_effect = {
+			POR = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = ETH_gift_por
+				}
+			}
+			hidden_effect = {
+				add_opinion_modifier = {
+					target = POR
+					modifier = ETH_gift_por
+				}
+			}
+			custom_effect_tooltip = afr_prosperity_mechanic_minus_5
+			add_to_variable = {
+				var = afr_prosperity_mechanic_value
+				value = -5
+			}
+		}
+	}
+ 
+	afr_ethiopia_purchase_por_supplies = {
+		icon = generic_form_nation
+		available = {
+			POR = {
+				has_opinion = {
+					target = ROOT
+					value > 24
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = afr_prosperity_mechanic_greater_than_5
+					check_variable = {
+					afr_prosperity_mechanic_value > 4
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = afr_ethiopia_send_gift_por_trigger
+				has_global_flag = scramble_for_africa
+			}
+		}
+
+		visible = {
+			TAG = ETH
+			NOT = { has_global_flag = scramble_for_africa }
+		}
+	
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 10
+		}
+	
+		days_re_enable = 360
+		
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_rifle_0
+					amount = 250
+					producer = POR
+				}
+				add_equipment_to_stockpile = {
+					type = uniform_equipment_0
+					amount = 250
+					producer = POR
+				}
+			}
+			custom_effect_tooltip = afr_prosperity_mechanic_minus_5
+			add_to_variable = {
+				var = afr_prosperity_mechanic_value
+				value = -5
+			}
+		}
+	}
+ 
+	afr_prosperity_mechanic_build_farm = {
+
+		available = {
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ROOT
+						farm > 6 
+					}
+					NOT = { has_tech = threshing_machine }
+				}
+				custom_trigger_tooltip = {
+					tooltip = afr_prosperity_mechanic_greater_than_15
+						check_variable = {
+						afr_prosperity_mechanic_value > 14
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = Ocenaia_farm_less_than_7
+					any_owned_state = { 
+						farm < 7 
+						is_core_of = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = Ocenaia_farm_research_threshing_machine
+					has_tech = threshing_machine
+				}
+			}
+			if = {
+				limit = {
+					has_tech = threshing_machine
+				}
+				custom_trigger_tooltip = {
+					tooltip = afr_prosperity_mechanic_greater_than_15
+						check_variable = {
+						afr_prosperity_mechanic_value > 14
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = Ocenaia_farm_less_than_10
+					any_owned_state = { 
+						farm < 10 
+						is_core_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ROOT
+						farm < 7 
+					}
+					NOT = { has_tech = threshing_machine }
+				}
+				custom_trigger_tooltip = {
+					tooltip = afr_prosperity_mechanic_greater_than_15
+						check_variable = {
+						afr_prosperity_mechanic_value > 14
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = Ocenaia_farm_less_than_7
+					any_owned_state = { 
+						farm < 7 
+						is_core_of = ROOT
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = Ocenaia_has_infrastructure_to_support_new_buildings
+				any_owned_state = { 
+					Oceania_infrastructure_for_extra_building_slots_trigger = yes 
+					is_core_of = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = afr_prosperity_mechanic_construction
+				NOT = { has_country_flag = afr_prosperity_mechanic_construction_flag }
+			}
+		}
+
+		visible = {
+			afr_is_tribal = yes
+			
+		}
+
+
+		complete_effect = {
+			add_political_power = -25
+			custom_effect_tooltip = afr_prosperity_mechanic_minus_15
+			add_to_variable = {
+				var = afr_prosperity_mechanic_value
+				value = -15
+			}
+			set_country_flag = afr_prosperity_mechanic_construction_flag
+		}
+		
+		days_remove = 550
+		
+		modifier = {
+			political_power_cost = 0.5
+        }
+		
+		
+		remove_effect = {
+            random_owned_controlled_state = {
+				limit = { 
+					is_core_of = ROOT 
+					OR = {
+						AND = {
+							ROOT = { NOT = { has_tech = threshing_machine } }
+							farm < 7
+						}
+						AND = {
+							ROOT = { has_tech = threshing_machine }
+							farm < 10
+						}
+					}
+					Oceania_infrastructure_for_extra_building_slots_trigger = yes
+				}
+				hidden_effect = {
+					add_to_variable = { Oceania_extra_state_shared_building_slots = 1 }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = farm
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 1000
+		   }
+		   clr_country_flag = afr_prosperity_mechanic_construction_flag
+        }
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	afr_prosperity_mechanic_build_cotton_farm = {
+
+		available = {
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ROOT
+						cotton_farm > 6 
+					}
+					NOT = { has_tech = threshing_machine }
+				}
+				custom_trigger_tooltip = {
+					tooltip = afr_prosperity_mechanic_greater_than_20
+						check_variable = {
+						afr_prosperity_mechanic_value > 19
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = Ocenaia_cotton_farm_less_than_7
+					any_state = { 
+						cotton_farm < 7 
+						is_core_of = ROOT
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = Ocenaia_cotton_farm_research_threshing_machine
+					has_tech = threshing_machine
+				}
+			}
+			if = {
+				limit = {
+					has_tech = threshing_machine
+				}
+				custom_trigger_tooltip = {
+					tooltip = afr_prosperity_mechanic_greater_than_20
+						check_variable = {
+						afr_prosperity_mechanic_value > 19
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = Ocenaia_cotton_farm_less_than_10
+					any_state = { 
+						cotton_farm < 10 
+						is_core_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ROOT
+						cotton_farm < 7 
+					}
+					NOT = { has_tech = threshing_machine }
+				}
+				custom_trigger_tooltip = {
+					tooltip = afr_prosperity_mechanic_greater_than_20
+						check_variable = {
+						afr_prosperity_mechanic_value > 19
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = Ocenaia_cotton_farm_less_than_7
+					any_state = { 
+						cotton_farm < 7 
+						is_core_of = ROOT
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = Ocenaia_has_infrastructure_to_support_new_buildings
+				any_owned_state = { 
+					Oceania_infrastructure_for_extra_building_slots_trigger = yes 
+					is_core_of = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = afr_prosperity_mechanic_construction
+				NOT = { has_country_flag = afr_prosperity_mechanic_construction_flag }
+			}
+		}
+
+		visible = {
+			afr_is_tribal = yes
+		}
+
+		complete_effect = {
+			add_political_power = -50
+			custom_effect_tooltip = afr_prosperity_mechanic_minus_20
+			add_to_variable = {
+				var = afr_prosperity_mechanic_value
+				value = -20
+			}
+			set_country_flag = afr_prosperity_mechanic_construction_flag
+		}
+		
+		days_remove = 720
+		
+		modifier = {
+			political_power_cost = 0.5
+        }
+		
+		remove_effect = {
+			random_owned_controlled_state ={
+				limit = {
+					is_core_of = ROOT 
+					OR = {
+						AND = {
+							ROOT = { NOT = { has_tech = threshing_machine } }
+							cotton_farm < 7
+						}
+						AND = {
+							ROOT = { has_tech = threshing_machine }
+							cotton_farm < 10
+						}
+					}
+					Oceania_infrastructure_for_extra_building_slots_trigger = yes
+				}
+				hidden_effect = {
+					add_to_variable = { Oceania_extra_state_shared_building_slots = 1 }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = cotton_farm
+					level = 1
+					instant_build = yes
+				}
+		   }
+		   clr_country_flag = afr_prosperity_mechanic_construction_flag
+        }
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+}
+ SKT_war_exhaustion = {
+	SKT_war_exhaustion_mission_peace = {
+		icon = generic_prepare_civil_war
+		
+		activation = { 
+			hidden_trigger = {
+				has_war = no
+				afr_is_tribal = yes
+			}
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+			
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				has_war = yes
+			}
+		}
+
+		visible = {
+			always = no
+		}
+	
+		fire_only_once = no
+		selectable_mission = no
+		is_good = yes
+		days_mission_timeout = 90
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+		}
+		
+		timeout_effect = { 
+			#Base Income Here
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value = 0 }
+					OR = {
+						has_idea = AF_T_unorganized_tribal_nation
+						has_idea = AF_T_unorganized_tribal_nation_2
+						has_idea = AF_T_unorganized_tribal_nation_3
+						has_idea = AF_T_unorganized_tribal_nation_4
+						has_idea = AF_T_unorganized_tribal_nation_5
+					}
+				}
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_growth
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_unorganized
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value = 0 }
+					OR = {
+						has_idea = AF_T_organized_tribal_nation
+						has_idea = AF_T_organized_tribal_nation_2
+						has_idea = AF_T_organized_tribal_nation_3
+					}
+				}
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_growth
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_organized
+				add_to_variable = {
+					var = afr_prosperity_mechanic_value
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value = 0 }
+					has_idea = AF_T_small_kingdom
+				}
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_growth
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_small_kingdom
+				add_to_variable = {
+					var = afr_prosperity_mechanic_value
+					value = 2
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value = 0 }
+					OR = {
+						has_idea = afr_reforming_kingdom
+						has_idea = afr_large_kingdom
+					}
+				}
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_growth
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_regional_power
+				add_to_variable = {
+					var = afr_prosperity_mechanic_value
+					value = 3
+				}
+			}
+			#Place Extra Income Here
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value = 0 }
+					has_country_flag = afr_rrp_company_port
+				}
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_colonial_company
+				add_to_variable = {
+					var = afr_prosperity_mechanic_value
+					value = 1
+				}
+			}
+			
+			
+			#Tooltips to upgrade income
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value = 0 }
+					OR = {
+						has_idea = AF_T_unorganized_tribal_nation
+						has_idea = AF_T_unorganized_tribal_nation_2
+						has_idea = AF_T_unorganized_tribal_nation_3
+						has_idea = AF_T_unorganized_tribal_nation_4
+						has_idea = AF_T_unorganized_tribal_nation_5
+					}
+				}
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_unorganized_upgrade_tooltip
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value = 0 }
+					OR = {
+						has_idea = AF_T_organized_tribal_nation
+						has_idea = AF_T_organized_tribal_nation_2
+						has_idea = AF_T_organized_tribal_nation_3
+					}
+				}
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_organized_upgrade_tooltip
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value = 0 }
+					has_idea = AF_T_small_kingdom
+				}
+				custom_effect_tooltip = afr_peacetime_economy_base_prosperity_small_kingdom_upgrade_tooltip
+			}
+			#War Exhaustion Effects
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value > 0 }
+				}
+				custom_effect_tooltip = afr_war_exhaustion_value_minus_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = -1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 20 }
+					has_idea = afr_war_exhaustion_value_penalty_1_idea
+				}
+				remove_ideas = afr_war_exhaustion_value_penalty_1_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 30 }
+					has_idea = afr_war_exhaustion_value_penalty_2_idea
+				}
+				remove_ideas = afr_war_exhaustion_value_penalty_2_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 40 }
+					has_idea = afr_war_exhaustion_value_penalty_3_idea
+				}
+				remove_ideas = afr_war_exhaustion_value_penalty_3_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 50 }
+					has_idea = afr_war_exhaustion_value_penalty_4_idea
+				}
+				remove_ideas = afr_war_exhaustion_value_penalty_4_idea
+			}
+			hidden_effect = { activate_mission = SKT_war_exhaustion_mission_peace }
+		}
+		
+		complete_effect = {
+			
+		}
+		
+	}
+ 
+	SKT_war_exhaustion_mission = {
+		icon = generic_prepare_civil_war
+		
+		activation = {  
+			hidden_trigger = {
+				has_war = yes
+				afr_is_tribal = yes
+			}
+		}
+		available = {
+			hidden_trigger = {
+				has_war = no
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				has_war = no
+			}
+		}
+
+		visible = {
+			always = no
+		}
+	
+		fire_only_once = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 45
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+		}
+		
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 20 }
+					has_idea = afr_war_exhaustion_value_penalty_1_idea
+				}
+				remove_ideas = afr_war_exhaustion_value_penalty_1_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 30 }
+					has_idea = afr_war_exhaustion_value_penalty_2_idea
+				}
+				remove_ideas = afr_war_exhaustion_value_penalty_2_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 40 }
+					has_idea = afr_war_exhaustion_value_penalty_3_idea
+				}
+				remove_ideas = afr_war_exhaustion_value_penalty_3_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 50 }
+					has_idea = afr_war_exhaustion_value_penalty_4_idea
+				}
+				remove_ideas = afr_war_exhaustion_value_penalty_4_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value > 19 }
+					NOT = { has_idea = afr_war_exhaustion_value_penalty_1_idea }
+				}
+				add_ideas = afr_war_exhaustion_value_penalty_1_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value > 29 } 
+					NOT = { has_idea = afr_war_exhaustion_value_penalty_2_idea }
+				}
+				custom_effect_tooltip = afr_war_exhaustion_enter_space
+				add_ideas = afr_war_exhaustion_value_penalty_2_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value > 39 }
+					NOT = { has_idea = afr_war_exhaustion_value_penalty_3_idea }
+				}
+				custom_effect_tooltip = afr_war_exhaustion_enter_space
+				add_ideas = afr_war_exhaustion_value_penalty_3_idea
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value > 49 }
+					NOT = { has_idea = afr_war_exhaustion_value_penalty_4_idea }
+				}
+				custom_effect_tooltip = afr_war_exhaustion_enter_space
+				add_ideas = afr_war_exhaustion_value_penalty_4_idea
+			}
+			if = {
+				limit = {
+					check_variable = {
+						afr_war_exhaustion_value = 50
+					}
+				}
+				custom_effect_tooltip = afr_war_exhaustion_enter_space
+				custom_effect_tooltip = afr_max_war_exhaustion_value_reached
+			}
+			if = {
+				limit = {
+					check_variable = { afr_war_exhaustion_value < 50 }
+				}
+				custom_effect_tooltip = afr_war_exhaustion_enter_space
+				custom_effect_tooltip = afr_war_exhaustion_value_add_1
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = 1
+				}
+			}
+			hidden_effect = { activate_mission = SKT_war_exhaustion_mission }
+		}
+		
+		complete_effect = {
+			
+		}
+		
+	}
+	
+	afr_war_exhaustion_mission_exertion = {
+		icon = generic_prepare_civil_war
+		
+		activation = {  
+			hidden_trigger = {
+				has_war = yes
+				afr_is_tribal = yes
+				check_variable = {
+					afr_war_exhaustion_value > 20
+				}
+			}
+		}
+		available = {
+			hidden_trigger = {
+				has_war = no
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				has_war = no
+			}
+		}
+
+		visible = {
+			always = no
+		}
+	
+		fire_only_once = no
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 200
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+		}
+		
+		timeout_effect = {
+			ROOT = { country_event = { id = afr_war_exhaustion_exertion.1 } }
+			hidden_effect = { activate_mission = afr_war_exhaustion_mission_exertion }
+		}
+		
+		complete_effect = {
+			
+		}
+		
+	}
+	
+}
+
+afr_jihadist_regional_power_caliphate_wars = {
+	SKT_FTT_declare_war = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = afr_war_exhaustion_value_less_than_40
+				check_variable = {
+					afr_war_exhaustion_value < 40
+				}
+			}
+			NOT = { has_non_aggression_pact_with = FTT }
+			FTT = {
+				custom_trigger_tooltip = {
+					tooltip = skt_jihad_caliphate_member_is_neighbor
+					OR = {
+						FTT = { is_neighbor_of = SKT }
+						any_country = {
+							AND = {
+								OR = {
+									is_subject_of = SKT
+									is_in_faction_with = SKT
+								}
+								is_neighbor_of = FTT
+							}
+						}
+					}
+				}
+			}
+		}
+
+		visible = {
+			tag = SKT
+			country_exists = FTT
+			has_country_flag = SKT_conquer_the_fulani_calpiphates_ftt
+			FTT = {
+				NOT = { is_in_faction_with = SKT }
+				NOT = { is_subject_of = SKT }
+			}
+		}
+	
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 40
+				has_war_support > 0.5
+			}
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					FTT = {
+						OR = {
+							NOT = {
+								is_in_array = {
+									array = national_religion_array
+									value = global.sunni
+								}
+							}
+							AND = {
+								is_in_array = {
+									array = national_religion_array
+									value = global.sunni
+								}
+								NOT = { has_government = fundamentalism }
+							}
+						}
+					}
+				}
+				declare_war_on = {
+					target = FTT
+					type = annex_everything
+				}
+				hidden_effect = { FTT = { every_owned_state = { add_claim_by = ROOT } } }
+				custom_effect_tooltip = afr_war_exhaustion_value_add_10
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = 10
+				}
+			}
+			if = {
+				limit = {
+					FTT = {
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}
+						has_government = fundamentalism
+					}
+				}
+				FTT = { country_event = { days = 5 id = SKT_sunni_integration.3 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_add_10_if_declined
+			}
+		}
+		
+	}
+	
+	SKT_FTJ_declare_war = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = afr_war_exhaustion_value_less_than_40
+				check_variable = {
+					afr_war_exhaustion_value < 40
+				}
+			}
+			NOT = { has_non_aggression_pact_with = FTJ }
+			FTJ = { 
+				custom_trigger_tooltip = {
+					tooltip = skt_jihad_caliphate_member_is_neighbor
+					OR = {
+						FTJ = { is_neighbor_of = SKT }
+						any_country = {
+							AND = {
+								OR = {
+									is_subject_of = SKT
+									is_in_faction_with = SKT
+								}
+								is_neighbor_of = FTJ
+							}
+						}
+					}
+				}
+			}
+		}
+
+		visible = {
+			tag = SKT
+			country_exists = FTJ
+			has_country_flag = SKT_conquer_the_fulani_calpiphates_ftj
+			FTJ = {
+				NOT = { is_in_faction_with = SKT }
+				NOT = { is_subject_of = SKT }
+			}
+		}
+	
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 40
+				has_war_support > 0.5
+			}
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					FTJ = {
+						OR = {
+							NOT = {
+								is_in_array = {
+									array = national_religion_array
+									value = global.sunni
+								}
+							}
+							AND = {
+								is_in_array = {
+									array = national_religion_array
+									value = global.sunni
+								}
+								NOT = { has_government = fundamentalism }
+							}
+						}
+					}
+				}
+				declare_war_on = {
+					target = FTJ
+					type = annex_everything
+				}
+				hidden_effect = { FTJ = { every_owned_state = { add_claim_by = ROOT } } }
+				custom_effect_tooltip = afr_war_exhaustion_value_add_10
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = 10
+				}
+			}
+			if = {
+				limit = {
+					FTJ = {
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}
+						has_government = fundamentalism
+					}
+				}
+				FTJ = { country_event = { days = 5 id = SKT_sunni_integration.3 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_add_10_if_declined
+			}
+		}
+		
+	}
+	
+	SKT_TOU_declare_war = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = afr_war_exhaustion_value_less_than_40
+				check_variable = {
+					afr_war_exhaustion_value < 40
+				}
+			}
+			NOT = { has_non_aggression_pact_with = TOU }
+			TOU = {
+				custom_trigger_tooltip = {
+					tooltip = skt_jihad_caliphate_member_is_neighbor
+					OR = {
+						TOU = { is_neighbor_of = SKT }
+						any_country = {
+							AND = {
+								OR = {
+									is_subject_of = SKT
+									is_in_faction_with = SKT
+								}
+								is_neighbor_of = TOU
+							}
+						}
+					}
+				}
+			}
+		}
+
+		visible = {
+			tag = SKT
+			country_exists = TOU
+			has_country_flag = SKT_conquer_the_fulani_calpiphates_tou
+			TOU = {
+				NOT = { is_in_faction_with = SKT }
+				NOT = { is_subject_of = SKT }
+			}
+		}
+	
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 40
+				has_war_support > 0.5
+			}
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					TOU = {
+						OR = {
+							NOT = {
+								is_in_array = {
+									array = national_religion_array
+									value = global.sunni
+								}
+							}
+							AND = {
+								is_in_array = {
+									array = national_religion_array
+									value = global.sunni
+								}
+								NOT = { has_government = fundamentalism }
+							}
+						}
+					}
+				}
+				declare_war_on = {
+					target = TOU
+					type = annex_everything
+				}
+				hidden_effect = { TOU = { every_owned_state = { add_claim_by = ROOT } } }
+				custom_effect_tooltip = afr_war_exhaustion_value_add_10
+				add_to_variable = {
+					var = afr_war_exhaustion_value
+					value = 10
+				}
+			}
+			if = {
+				limit = {
+					TOU = {
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}
+						has_government = fundamentalism
+					}
+				}
+				TOU = { country_event = { days = 5 id = SKT_sunni_integration.3 } }
+				custom_effect_tooltip = afr_war_exhaustion_value_add_10_if_declined
+			}
+		}
+		
+	}
+ 
+}
+ 
+ SKT_Caliphate_raids = {
+
+	#TUG
+	SKT_TUG_raid_village = {
+		icon = generic_prepare_civil_war
+		available = {
+			ROOT = {
+				is_neighbor_of = TUG
+				NOT = { 
+					OR = {
+						has_non_aggression_pact_with = TUG 
+						is_subject_of = TUG 
+					}
+				}
+			}
+			NOT = {has_country_flag = raiding_neighbour}
+			TUG = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_not_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+
+			command_power > 50
+
+		}
+		custom_cost_text = skt_command_power_more_than_50
+
+		visible = {
+			AND = {
+				tag = SKT
+				ROOT = {
+					is_neighbor_of = TUG
+					owns_state = 873
+				}
+				TUG = {
+					owns_state = 515
+				}
+			}
+			NOT = { TUG = { is_subject_of = SKT } }
+		}
+	
+		fire_only_once = no
+		
+		days_re_enable = 180
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = afr_jihadist_regional_power_caliphate_wars_tribes_flag
+			}
+		}
+	
+		days_remove = 60
+		
+		complete_effect = {
+			army_experience = 25
+			add_command_power = -50
+			hidden_effect = {
+				
+				TUG = {
+					division_template = {
+						name = "Elite Tribal Infantry"
+						priority = 2
+						division_names_group = KRU_TRIBAL_INFANTRY_01
+						regiments = {
+							tribal_infantry = { x = 0 y = 0 }
+						
+							tribal_infantry = { x = 1 y = 0 }
+						}
+					}
+					set_division_template_lock = {
+						division_template = "Elite Tribal Infantry"
+						is_locked = yes
+					}
+					capital_scope ={
+						create_unit = {
+							division = "name = \"Elite Tribal Infantry\" division_template = \"Elite Tribal Infantry\" start_experience_factor = 3.0" 
+							owner = TUG
+						}
+					}
+				}
+				TUG = {
+					add_ideas = ETH_generals_inspire
+				}
+				SKT = {
+					clr_country_flag = SKT_border_war_ended
+				}
+				TUG = { country_event = { days = 7 id = skt_islamic_raid_defender.1 } }
+				SKT = { country_event = { days = 7 id = SKT_TUG_islamic_raid.1 } }
+			}
+			custom_effect_tooltip = SKT_TUG_prepare_border_raid
+			
+		}
+		
+		cancel_trigger = {
+			hidden_trigger = { has_country_flag = SKT_border_war_ended }
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				finalize_border_war = {
+					attacker_win = yes
+					attacker = 873
+					defender = 515
+				}
+			}
+			#custom_effect_tooltip = SKT_TUG_end_border_raid
+		}
+	}
+	
+	#BAG
+	SKT_BAG_raid_village = {
+		icon = generic_prepare_civil_war
+		available = {
+			ROOT = {
+				is_neighbor_of = BAG
+				NOT = { 
+					OR = {
+						has_non_aggression_pact_with = BAG
+						is_subject_of = BAG
+					}
+				}
+			}
+			NOT = {has_country_flag = raiding_neighbour}
+			BAG = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_not_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+
+			command_power > 50
+
+		}
+		custom_cost_text = skt_command_power_more_than_50
+
+		visible = {
+			AND = {
+				tag = SKT
+				ROOT = {
+					is_neighbor_of = BAG
+					owns_state = 1219
+				}
+				BAG = {
+					owns_state = 805
+				}
+			}
+			NOT = { BAG = { is_subject_of = SKT } }
+		}
+	
+		fire_only_once = no
+		
+		days_re_enable = 180
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = afr_jihadist_regional_power_caliphate_wars_tribes_flag
+			}
+		}
+	
+		days_remove = 60
+		
+		complete_effect = {
+			army_experience = 25
+			add_command_power = -50
+			hidden_effect = {
+				
+				BAG = {
+					division_template = {
+						name = "Elite Tribal Infantry"
+						priority = 2
+						division_names_group = KRU_TRIBAL_INFANTRY_01
+						regiments = {
+							tribal_infantry = { x = 0 y = 0 }
+						
+							tribal_infantry = { x = 1 y = 0 }
+						}
+					}
+					set_division_template_lock = {
+						division_template = "Elite Tribal Infantry"
+						is_locked = yes
+					}
+					capital_scope ={
+						create_unit = {
+							division = "name = \"Elite Tribal Infantry\" division_template = \"Elite Tribal Infantry\" start_experience_factor = 3.0" 
+							owner = BAG
+						}
+					}
+				}
+				BAG = {
+					add_ideas = ETH_generals_inspire
+				}
+				SKT = {
+					clr_country_flag = SKT_border_war_ended
+				}
+				BAG = { country_event = { days = 7 id = skt_islamic_raid_defender.1 } }
+				SKT = { country_event = { days = 7 id = SKT_BAG_islamic_raid.1 } }
+			}
+			custom_effect_tooltip = SKT_BAG_prepare_border_raid
+		}
+		
+		cancel_trigger = {
+			hidden_trigger = { has_country_flag = SKT_border_war_ended }
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				finalize_border_war = {
+					attacker_win = yes
+					attacker = 1219
+					defender = 805
+				}
+			}
+			#custom_effect_tooltip = SKT_BAG_end_border_raid
+		}
+		}
+		
+		SKT_GBG_raid_village = {
+		icon = generic_prepare_civil_war
+		available = {
+			ROOT = {
+				is_neighbor_of = GBG
+				NOT = { 
+					OR = {
+						has_non_aggression_pact_with = GBG 
+						is_subject_of = GBG 
+					}
+				}
+			}
+			NOT = {has_country_flag = raiding_neighbour}
+			GBG = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_not_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+
+			command_power > 50
+
+		}
+		custom_cost_text = skt_command_power_more_than_50
+
+		visible = {
+			AND = {
+				tag = SKT
+				ROOT = {
+					is_neighbor_of = GBG
+					owns_state = 1219
+				}
+				GBG = {
+					owns_state = 558
+				}
+			}
+			NOT = { GBG = { is_subject_of = SKT } }
+		}
+	
+		fire_only_once = no
+		
+		days_re_enable = 180
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = afr_jihadist_regional_power_caliphate_wars_tribes_flag
+			}
+		}
+	
+		days_remove = 60
+		
+		complete_effect = {
+			army_experience = 25
+			add_command_power = -50
+			hidden_effect = {
+				
+				GBG = {
+					division_template = {
+						name = "Elite Tribal Infantry"
+						priority = 2
+						division_names_group = KRU_TRIBAL_INFANTRY_01
+						regiments = {
+							tribal_infantry = { x = 0 y = 0 }
+						
+							tribal_infantry = { x = 1 y = 0 }
+						}
+					}
+					set_division_template_lock = {
+						division_template = "Elite Tribal Infantry"
+						is_locked = yes
+					}
+					capital_scope ={
+						create_unit = {
+							division = "name = \"Elite Tribal Infantry\" division_template = \"Elite Tribal Infantry\" start_experience_factor = 3.0" 
+							owner = GBG
+						}
+					}
+				}
+				GBG = {
+					add_ideas = ETH_generals_inspire
+				}
+				SKT = {
+					clr_country_flag = SKT_border_war_ended
+				}
+				GBG = { country_event = { days = 7 id = skt_islamic_raid_defender.1 } }
+				SKT = { country_event = { days = 7 id = SKT_GBG_islamic_raid.1 } }
+			}
+			custom_effect_tooltip = SKT_GBG_prepare_border_raid
+		}
+		
+		cancel_trigger = {
+			hidden_trigger = { has_country_flag = SKT_border_war_ended }
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				finalize_border_war = {
+					attacker_win = yes
+					attacker = 1219
+					defender = 558
+				}
+			}
+			#custom_effect_tooltip = SKT_GBG_end_border_raid
+		}
+		}
+		
+		SKT_OYO_raid_village = {
+		icon = generic_prepare_civil_war
+		available = {
+			ROOT = {
+				is_neighbor_of = OYO
+				NOT = { 
+					OR = {
+						has_non_aggression_pact_with = OYO 
+						is_subject_of = OYO 
+					}
+				}
+			}
+			NOT = {has_country_flag = raiding_neighbour}
+			OYO = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_not_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+
+			command_power > 50
+
+		}
+		custom_cost_text = skt_command_power_more_than_50
+
+		visible = {
+			AND = {
+				tag = SKT
+				ROOT = {
+					is_neighbor_of = OYO
+					owns_state = 1218
+				}
+				OYO = {
+					owns_state = 871
+				}
+			}
+			NOT = { OYO = { is_subject_of = SKT } }
+		}
+	
+		fire_only_once = no
+		
+		days_re_enable = 180
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = afr_jihadist_regional_power_caliphate_wars_tribes_flag
+			}
+		}
+	
+		days_remove = 60
+		
+		complete_effect = {
+			army_experience = 25
+			add_command_power = -50
+			hidden_effect = {
+				
+				OYO = {
+					division_template = {
+						name = "Elite Tribal Infantry"
+						priority = 2
+						division_names_group = KRU_TRIBAL_INFANTRY_01
+						regiments = {
+							tribal_infantry = { x = 0 y = 0 }
+						
+							tribal_infantry = { x = 1 y = 0 }
+						}
+					}
+					set_division_template_lock = {
+						division_template = "Elite Tribal Infantry"
+						is_locked = yes
+					}
+					capital_scope ={
+						create_unit = {
+							division = "name = \"Elite Tribal Infantry\" division_template = \"Elite Tribal Infantry\" start_experience_factor = 3.0" 
+							owner = OYO
+						}
+					}
+				}
+				OYO = {
+					add_ideas = ETH_generals_inspire
+				}
+				SKT = {
+					clr_country_flag = SKT_border_war_ended
+				}
+				OYO = { country_event = { days = 7 id = skt_islamic_raid_defender.1 } }
+				SKT = { country_event = { days = 7 id = SKT_OYO_islamic_raid.1 } }
+			}
+			custom_effect_tooltip = SKT_OYO_prepare_border_raid
+		}
+		
+		cancel_trigger = {
+			hidden_trigger = { has_country_flag = SKT_border_war_ended }
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				finalize_border_war = {
+					attacker_win = yes
+					attacker = 871
+					defender = 1218
+				}
+			}
+			#custom_effect_tooltip = SKT_OYO_end_border_raid
+		}
+		}
+		
+		SKT_DAH_raid_village = {
+		icon = generic_prepare_civil_war
+		available = {
+			ROOT = {
+				is_neighbor_of = DAH
+				NOT = { 
+					OR = {
+						has_non_aggression_pact_with = DAH 
+						is_subject_of = DAH 
+					}
+				}
+			}
+			NOT = {has_country_flag = raiding_neighbour}
+			DAH = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_not_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+
+			command_power > 50
+
+		}
+		custom_cost_text = skt_command_power_more_than_50
+
+		visible = {
+			AND = {
+				tag = SKT
+				ROOT = {
+					is_neighbor_of = DAH
+					owns_state = 1218
+				}
+				DAH = {
+					owns_state = 769
+				}
+			}
+			NOT = { DAH = { is_subject_of = SKT } }
+		}
+	
+		fire_only_once = no
+		
+		days_re_enable = 180
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = afr_jihadist_regional_power_caliphate_wars_kingdoms_flag
+			}
+		}
+	
+		days_remove = 60
+		
+		complete_effect = {
+			army_experience = 25
+			add_command_power = -50
+			hidden_effect = {
+				
+				DAH = {
+					division_template = {
+						name = "Elite Tribal Infantry"
+						priority = 2
+						division_names_group = KRU_TRIBAL_INFANTRY_01
+						regiments = {
+							tribal_infantry = { x = 0 y = 0 }
+						
+							tribal_infantry = { x = 1 y = 0 }
+						}
+					}
+					set_division_template_lock = {
+						division_template = "Elite Tribal Infantry"
+						is_locked = yes
+					}
+					capital_scope ={
+						create_unit = {
+							division = "name = \"Elite Tribal Infantry\" division_template = \"Elite Tribal Infantry\" start_experience_factor = 3.0" 
+							owner = DAH
+						}
+					}
+				}
+				DAH = {
+					add_ideas = ETH_generals_inspire
+				}
+				SKT = {
+					clr_country_flag = SKT_border_war_ended
+				}
+				DAH = { country_event = { days = 7 id = skt_islamic_raid_defender.1 } }
+				SKT = { country_event = { days = 7 id = SKT_DAH_islamic_raid.1 } }
+			}
+			custom_effect_tooltip = SKT_GBG_prepare_border_raid
+		}
+		
+		cancel_trigger = {
+			hidden_trigger = { has_country_flag = SKT_border_war_ended }
+		}
+	
+		remove_effect = {
+			
+			hidden_effect = {
+				finalize_border_war = {
+					attacker_win = yes
+					attacker = 1218
+					defender = 769
+				}
+			}
+			#custom_effect_tooltip = SKT_GBG_end_border_raid
+		}
+		}
+		
+		SKT_BRG_raid_village = {
+		icon = generic_prepare_civil_war
+		available = {
+			ROOT = {
+				is_neighbor_of = BRG
+				NOT = { 
+					OR = {
+						has_non_aggression_pact_with =  BRG
+						is_subject_of = BRG 
+					}
+				}
+			}
+			NOT = {has_country_flag = raiding_neighbour}
+			BRG = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_not_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+
+			command_power > 50
+
+		}
+		custom_cost_text = skt_command_power_more_than_50
+
+		visible = {
+			AND = {
+				tag = SKT
+				ROOT = {
+					is_neighbor_of = BRG
+					owns_state = 873
+				}
+				BRG = {
+					owns_state = 872
+				}
+			}
+			NOT = { BRG = { is_subject_of = SKT } }
+		}
+	
+		fire_only_once = no
+		
+		days_re_enable = 180
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = afr_jihadist_regional_power_caliphate_wars_tribes_flag
+			}
+		}
+	
+		days_remove = 60
+		
+		complete_effect = {
+			army_experience = 25
+			add_command_power = -50
+			hidden_effect = {
+				
+				BRG = {
+					division_template = {
+						name = "Elite Tribal Infantry"
+						priority = 2
+						division_names_group = KRU_TRIBAL_INFANTRY_01
+						regiments = {
+							tribal_infantry = { x = 0 y = 0 }
+						
+							tribal_infantry = { x = 1 y = 0 }
+						}
+					}
+					set_division_template_lock = {
+						division_template = "Elite Tribal Infantry"
+						is_locked = yes
+					}
+					capital_scope ={
+						create_unit = {
+							division = "name = \"Elite Tribal Infantry\" division_template = \"Elite Tribal Infantry\" start_experience_factor = 3.0" 
+							owner = BRG
+						}
+					}
+				}
+				BRG = {
+					add_ideas = ETH_generals_inspire
+				}
+				SKT = {
+					clr_country_flag = SKT_border_war_ended
+				}
+				BRG = { country_event = { days = 7 id = skt_islamic_raid_defender.1 } }
+				SKT = { country_event = { days = 7 id = SKT_BRG_islamic_raid.1 } }
+			}
+			custom_effect_tooltip = SKT_BRG_prepare_border_raid
+		}
+		
+		cancel_trigger = {
+			hidden_trigger = { has_country_flag = SKT_border_war_ended }
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				finalize_border_war = {
+					attacker_win = yes
+					attacker = 873
+					defender = 872
+				}
+			}
+			#custom_effect_tooltip = SKT_BRG_end_border_raid
+		}
+		
+	}
+	
+	SKT_DDI_raid_village = {
+		icon = generic_prepare_civil_war
+		available = {
+			ROOT = {
+				is_neighbor_of = DDI
+				NOT = { 
+					OR = {
+						has_non_aggression_pact_with =  DDI
+						is_subject_of = DDI 
+					}
+				}
+			}
+			NOT = {has_country_flag = raiding_neighbour}
+			DDI = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_not_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+
+			command_power > 50
+
+		}
+		custom_cost_text = skt_command_power_more_than_50
+
+		visible = {
+			AND = {
+				tag = SKT
+				ROOT = {
+					is_neighbor_of = DDI
+					owns_state = 873
+				}
+				DDI = {
+					owns_state = 770
+				}
+			}
+			NOT = { DDI = { is_subject_of = SKT } }
+		}
+	
+		fire_only_once = no
+		
+		days_re_enable = 180
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_war_support > 0.5
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = afr_jihadist_regional_power_caliphate_wars_tribes_flag
+			}
+		}
+	
+		days_remove = 60
+		
+		complete_effect = {
+			army_experience = 25
+			add_command_power = -50
+			hidden_effect = {
+				
+				DDI = {
+					division_template = {
+						name = "Elite Tribal Infantry"
+						priority = 2
+						division_names_group = KRU_TRIBAL_INFANTRY_01
+						regiments = {
+							tribal_infantry = { x = 0 y = 0 }
+						
+							tribal_infantry = { x = 1 y = 0 }
+						}
+					}
+					set_division_template_lock = {
+						division_template = "Elite Tribal Infantry"
+						is_locked = yes
+					}
+					capital_scope ={
+						create_unit = {
+							division = "name = \"Elite Tribal Infantry\" division_template = \"Elite Tribal Infantry\" start_experience_factor = 3.0" 
+							owner = DDI
+						}
+					}
+				}
+				DDI = {
+					add_ideas = ETH_generals_inspire
+				}
+				SKT = {
+					clr_country_flag = SKT_border_war_ended
+				}
+				DDI = { country_event = { days = 7 id = skt_islamic_raid_defender.1 } }
+				SKT = { country_event = { days = 7 id = SKT_DDI_islamic_raid.1 } }
+			}
+			custom_effect_tooltip = SKT_DDI_prepare_border_raid
+		}
+		
+		cancel_trigger = {
+			hidden_trigger = { has_country_flag = SKT_border_war_ended }
+		}
+	
+		remove_effect = {
+			hidden_effect = {
+				finalize_border_war = {
+					attacker_win = yes
+					attacker = 873
+					defender = 770
+				}
+			}
+			#custom_effect_tooltip = SKT_DDI_end_border_raid
+		}
+		
+	}
+}
+
+SKT_Caliphate_Diplomacy = {
+
+#Generic Influence
+	SKT_form_an_african_jihad = {
+		icon = generic_political_discourse
+		available = {
+			always = no
+		}
+
+		visible = {
+			AND = {
+				tag = SKT
+				ROOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_not_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+			}
+		}
+	
+		fire_only_once = yes
+
+		#cost = 50
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = 150
+			set_country_flag = SKT_jihad_formed
+			
+			swap_ideas={
+				remove_idea = SKT_sokoto_jihad
+				add_idea = SKT_an_african_jihad
+			}
+			
+			custom_effect_tooltip = SKT_form_an_african_jihad_tooltip
+		}
+	}
+
+#Generic Influence
+	SKT_ANY_sunni_influence = {
+		icon = generic_political_discourse
+		available = {
+			has_country_flag = SKT_jihad_formed
+			has_stability > 0.75
+			any_country = {
+				AND = {
+					OR = {
+						is_neighbor_of = ROOT
+						if = { 
+							limit = {
+								BAG = { is_subject_of = SKT }
+							}
+							is_neighbor_of = BAG
+						}
+						if = { 
+							limit = {
+								BRG = { is_subject_of = SKT }
+							}
+							is_neighbor_of = BRG
+						}
+					}
+					has_opinion = {
+						target = SKT
+						value > 9
+					}
+					NOT = {
+						OR = {
+							if = { 
+								limit = {
+									BAG = { is_subject_of = SKT }
+								}
+								tag = BAG
+							}
+							if = { 
+								limit = {
+									BRG = { is_subject_of = SKT }
+								}
+								tag = BRG
+							}
+							tag = OTO
+						}
+					}
+					
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+					is_puppet = no
+				}
+			}
+			is_puppet = no
+		}
+
+		visible = {
+			always = no
+			AND = {
+				tag = SKT
+				ROOT = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+				any_neighbor_country = {
+					custom_trigger_tooltip = {
+						tooltip = AFR_religion_sunni_tooltip                                     
+						is_in_array = {
+							array = national_religion_array
+							value = global.sunni
+						}   
+					}
+				}
+				has_country_flag = SKT_jihad_formed
+			}
+			
+		}
+	
+		fire_only_once = yes
+
+		cost = 300
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -300
+			every_neighbor_country = {
+				if = {
+					limit = {
+						AND = {
+							is_in_array = {
+								array = national_religion_array
+								value = global.sunni
+							}
+							NOT = {
+								OR = {
+									if = { 
+										limit = {
+											BAG = { is_subject_of = SKT }
+										}
+										tag = BAG
+									}
+									if = { 
+										limit = {
+											BRG = { is_subject_of = SKT }
+										}
+										tag = BRG
+									}
+									tag = OTO
+								}
+							}
+							is_puppet = no
+						}
+					}
+					country_event = { days = 5 id = SKT_sunni_influence.1 }
+				}
+			}
+			hidden_effect = {
+
+			}
+			
+		}
+	}
+
+#BAG Influence
+	SKT_BAG_sunni_influence = {
+		icon = generic_political_discourse
+		available = {
+			BAG = { exists = yes }
+			has_stability > 0.60
+			is_neighbor_of = BAG
+			BAG = {
+				has_opinion = {
+					target = SKT
+					value > 9
+				}
+			}
+			NOT = { is_subject_of = BAG }
+			BAG = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			always = no
+			AND = {
+				tag = SKT
+				BAG = { exists = yes }
+				ROOT = {
+					is_neighbor_of = BAG
+					owns_state = 1219
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				BAG = {
+					owns_state = 805
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+			}
+		}
+	
+		fire_only_once = yes
+
+		cost = 50
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.50
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -50
+			BAG = { country_event = { days = 5 id = SKT_sunni_influence.1 } }
+			hidden_effect = {
+				set_country_flag = SKT_BAG_jihad
+			}
+			
+		}
+	}
+	#BRG Influence
+	SKT_BRG_sunni_influence = {
+		icon = generic_political_discourse
+		available = {
+			BRG = { exists = yes }
+			has_stability > 0.60
+			is_neighbor_of = BRG
+			BRG = {
+				has_opinion = {
+					target = SKT
+					value > 9
+				}
+			}
+			NOT = { is_subject_of = BRG }
+			BRG = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			always = no
+			AND = {
+				tag = SKT
+				BRG = { exists = yes }
+				ROOT = {
+					is_neighbor_of = BRG
+					owns_state = 873
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				BRG = {
+					owns_state = 872
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+			}
+		}
+	
+		fire_only_once = yes
+
+		cost = 50
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.60
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -50
+			BRG = { country_event = { days = 5 id = SKT_sunni_influence.1 } }
+			hidden_effect = {
+				set_country_flag = SKT_BRG_jihad
+			}
+			
+		}
+	}
+
+	#TUG
+	SKT_TUG_sunni_integration = {
+		icon = generic_political_discourse
+		available = {
+			TUG = { exists = yes }
+			has_stability > 0.75
+			is_neighbor_of = TUG
+			OR = {
+				TUG = { is_subject_of = SKT }
+				TUG = {
+					has_opinion = {
+						target = SKT
+						value > 64
+					}
+				}
+			}
+			NOT = { is_subject_of = TUG }
+			NOT = {has_country_flag = raiding_neighbour}
+			TUG = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			AND = {
+				TUG = { exists = yes }
+				tag = SKT
+				ROOT = {
+					is_neighbor_of = TUG
+					owns_state = 873
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				TUG = {
+					owns_state = 515
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+			}
+			
+		}
+	
+		fire_only_once = yes
+
+		cost = 250
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -250
+			TUG = { country_event = { days = 5 id = SKT_sunni_integration.1 } }
+			hidden_effect = {
+
+			}
+			
+		}
+		}
+	
+	#BAG
+	SKT_BAG_sunni_integration = {
+		icon = generic_political_discourse
+		available = {
+			BAG = { exists = yes }
+			has_stability > 0.75
+			is_neighbor_of = BAG
+			OR = {
+				BAG = { is_subject_of = SKT }
+				BAG = {
+					has_opinion = {
+						target = SKT
+						value > 64
+					}
+				}
+			}
+			NOT = { is_subject_of = BAG }
+			NOT = {has_country_flag = raiding_neighbour}
+			BAG = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			AND = {
+				tag = SKT
+				BAG = { exists = yes }
+				ROOT = {
+					is_neighbor_of = BAG
+					owns_state = 1219
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				BAG = {
+					owns_state = 805
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				has_country_flag = SKT_BRG_jihad
+			}
+		}
+	
+		fire_only_once = yes
+
+		cost = 250
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -250
+			BAG = { country_event = { days = 5 id = SKT_sunni_integration.1 } }
+			hidden_effect = {
+				set_country_flag = SKT_BAG_subject
+			}
+			
+		}
+	}
+		
+	SKT_GBG_sunni_integration = {
+		icon = generic_political_discourse
+		available = {
+			GBG = { exists = yes }
+			has_stability > 0.75
+			is_neighbor_of = GBG
+			OR = {
+				GBG = { is_subject_of = SKT }
+				GBG = {
+					has_opinion = {
+						target = SKT
+						value > 64
+					}
+				}
+			}
+			NOT = { is_subject_of = GBG }
+			NOT = {has_country_flag = raiding_neighbour}
+			GBG = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			AND = {
+				tag = SKT
+				GBG = { exists = yes }
+				ROOT = {
+					is_neighbor_of = GBG
+					owns_state = 1219
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				GBG = {
+					owns_state = 558
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+			}
+			
+		}
+	
+		fire_only_once = yes
+
+		cost = 250
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -250
+			GBG = { country_event = { days = 5 id = SKT_sunni_integration.1 } }
+			hidden_effect = {
+
+			}
+			
+		}
+		}
+		
+		SKT_OYO_sunni_integration = {
+		icon = generic_political_discourse
+		available = {
+			OYO = { exists = yes }
+			has_stability > 0.75
+			is_neighbor_of = OYO
+			OR = {
+				OYO = { is_subject_of = SKT }
+				OYO = {
+					has_opinion = {
+						target = SKT
+						value > 64
+					}
+				}
+			}
+			NOT = { is_subject_of = OYO }
+			NOT = {has_country_flag = raiding_neighbour}
+			OYO = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			AND = {
+				tag = SKT
+				OYO = { exists = yes }
+				ROOT = {
+					is_neighbor_of = OYO
+					owns_state = 1218
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				OYO = {
+					owns_state = 871
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+			}
+			
+		}
+	
+		fire_only_once = yes
+
+		cost = 250
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -250
+			OYO = { country_event = { days = 5 id = SKT_sunni_integration.1 } }
+			hidden_effect = {
+
+			}
+			
+		}
+		}
+		
+		SKT_DAH_sunni_integration = {
+		icon = generic_political_discourse
+		available = {
+			DAH = { exists = yes }
+			has_stability > 0.75
+			is_neighbor_of = DAH
+			OR = {
+				DAH = { is_subject_of = SKT }
+				DAH = {
+					has_opinion = {
+						target = SKT
+						value > 64
+					}
+				}
+			}
+			NOT = { is_subject_of = DAH }
+			NOT = {has_country_flag = raiding_neighbour}
+			DAH = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			AND = {
+				tag = SKT
+				DAH = { exists = yes }
+				ROOT = {
+					is_neighbor_of = DAH
+					owns_state = 1218
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				DAH = {
+					owns_state = 769
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+			}
+			
+		}
+	
+		fire_only_once = yes
+
+		cost = 250
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -250
+			DAH = { country_event = { days = 5 id = SKT_sunni_integration.1 } }
+			hidden_effect = {
+
+			}
+			
+		}
+		}
+		
+		#BRG
+		SKT_BRG_sunni_integration = {
+		icon = generic_political_discourse
+		available = {
+			BRG = { exists = yes }
+			has_stability > 0.75
+			is_neighbor_of = BRG
+			OR = {
+				BRG = { is_subject_of = SKT }
+				BRG = {
+					has_opinion = {
+						target = SKT
+						value > 64
+					}
+				}
+			}
+			NOT = { is_subject_of = BRG }
+			NOT = {has_country_flag = raiding_neighbour}
+			BRG = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			AND = {
+				tag = SKT
+				BRG = { exists = yes }
+				ROOT = {
+					is_neighbor_of = BRG
+					owns_state = 873
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				BRG = {
+					owns_state = 872
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				has_country_flag = SKT_BRG_jihad
+			}
+		}
+	
+		fire_only_once = yes
+
+		cost = 250
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -250
+			BRG = { country_event = { days = 5 id = SKT_sunni_integration.1 } }
+			hidden_effect = {
+				set_country_flag = SKT_BRG_subject
+			}
+			
+		}
+		
+	}
+	
+	
+	SKT_DDI_sunni_integration = {
+		icon = generic_political_discourse
+		available = {
+			DDI = { exists = yes }
+			has_stability > 0.75
+			is_neighbor_of = DDI
+			OR = {
+				DDI = { is_subject_of = SKT }
+				DDI = { 
+					has_opinion = {
+						target = SKT
+						value > 64
+					}
+				}
+			}
+			NOT = { is_subject_of = DDI }
+			NOT = {has_country_flag = raiding_neighbour}
+			DDI = {
+				custom_trigger_tooltip = {
+					tooltip = AFR_religion_sunni_tooltip                                     
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}   
+				}
+			}
+		}
+		
+
+		visible = {
+			AND = {
+				tag = SKT
+				DDI = { exists = yes }
+				ROOT = {
+					is_neighbor_of = DDI
+					owns_state = 873
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+				DDI = {
+					owns_state = 770
+					is_in_array = {
+						array = national_religion_array
+						value = global.sunni
+					}
+				}
+			}
+			
+		}
+	
+		fire_only_once = yes
+
+		cost = 250
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4
+				has_stability > 0.75
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = -250
+			DDI = { country_event = { days = 5 id = SKT_sunni_integration.1 } }
+			hidden_effect = {
+
+			}
+			
+		}
+		
+	}
+}

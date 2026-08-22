@@ -1,0 +1,56 @@
+# AngelCode Bitmap Font Generator configuration file
+fileVersion=1
+
+# font settings
+fontName=Volkszeitung 21
+fontFile=
+charSet=0
+fontSize=32
+aa=2
+scaleH=100
+useSmoothing=1
+isBold=0
+isItalic=0
+useUnicode=1
+disableBoxChars=1
+outputInvalidCharGlyph=0
+dontIncludeKerningPairs=0
+useHinting=1
+renderFromOutline=1
+useClearType=1
+
+# character alignment
+paddingDown=4
+paddingUp=4
+paddingRight=4
+paddingLeft=4
+spacingHoriz=1
+spacingVert=1
+useFixedHeight=1
+forceZero=1
+
+# output file
+outWidth=512
+outHeight=512
+outBitDepth=32
+fontDescFormat=0
+fourChnlPacked=0
+textureFormat=dds
+textureCompression=0
+alphaChnl=0
+redChnl=4
+greenChnl=4
+blueChnl=4
+invA=0
+invR=0
+invG=0
+invB=0
+
+# outline
+outlineThickness=0
+
+# selected chars
+chars=32-93,95-126,161-162,168-169,174-175,177,180,183-184,187,191-207,209-214,216-220,223-239,241-246
+chars=248-252,255,338-339,376,710,732,8211,8216-8218,8220-8222,8226,8230
+
+# imported icon images

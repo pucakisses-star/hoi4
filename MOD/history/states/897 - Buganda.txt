@@ -1,0 +1,24 @@
+state={
+	id=897
+	name="STATE_897"
+
+	state_category = rural
+	
+	resources = {
+		cotton=6
+	}
+	
+	history={
+		buildings = {
+		
+		}
+		owner = BUG
+		add_core_of = BUG
+	}
+
+	provinces={
+		3854 
+	}
+	manpower=75666
+	buildings_max_level_factor=1.000
+}

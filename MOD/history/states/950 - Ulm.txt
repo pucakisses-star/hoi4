@@ -1,0 +1,45 @@
+
+state={
+	id=950
+	name="STATE_950"
+	resources={
+		aluminium=4
+	}
+
+	history={
+		owner = WUR
+		victory_points = {
+			11499 3
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+		add_extra_state_shared_building_slots = 1
+		
+		add_core_of = WUR
+		add_core_of = ULM
+       	add_to_array = { state_culture_array = 5 }
+		add_to_array = { state_culture_array = 121 }
+				
+       	add_to_array = { state_culture_array_num = 0.99 }
+		add_to_array = { state_culture_array_num = 0.01 }
+	
+      	add_to_array = { state_religion_array = 3 }
+		add_to_array = { state_religion_array = 2 }
+		add_to_array = { state_religion_array = 7 }
+		
+      	add_to_array = { state_religion_array_num = 0.70 }
+		add_to_array = { state_religion_array_num = 0.29 }
+		add_to_array = { state_religion_array_num = 0.1 }
+	}
+
+	provinces={
+		11499
+	}
+	manpower=443000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

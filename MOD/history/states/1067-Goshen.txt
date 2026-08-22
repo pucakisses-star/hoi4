@@ -1,0 +1,19 @@
+state={
+	id=1067
+	name="STATE_1067"
+	
+	state_category =rural
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		13711
+	}
+	manpower=7571
+	buildings_max_level_factor=1.000
+}

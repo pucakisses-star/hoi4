@@ -1,0 +1,26 @@
+
+state={
+	id=390
+	name="STATE_390"
+	manpower = 692849
+	state_category = rural
+
+	history={
+		owner = DAK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = USA
+		add_core_of = DAK
+		add_core_of = GRP
+		victory_points = {
+			1747 1 
+		}
+
+	}
+
+	provinces={
+		1747 3750 4839 4880 7862 10569 10595 12620 12667 10587 7760 4820 4610 7814
+	}
+}
