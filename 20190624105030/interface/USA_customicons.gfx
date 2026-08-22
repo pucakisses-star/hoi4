@@ -1,0 +1,7 @@
+spriteTypes = { 
+##Icon For: 908317
+ SpriteType = { 
+ name = "GFX_fg" 
+ texturefile = "gfx/interface/goals/GFX_fg.tga" 
+ } 
+ }
