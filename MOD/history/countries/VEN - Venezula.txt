@@ -61,22 +61,14 @@ set_country_flag = monroe_doctrine
 }
 
 set_convoys = 10
+set_popularities = {
+centrism = 5
+chauvinist_populism = 80
+vanguard_communism = 15
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 5
-		}
 
-		chauvinist_populism = {
-			popularity = 80
-		}
-		
-		vanguard_communism = {
-			popularity = 15
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = chauvinist_populism
 	last_election = "1936.1.1"
@@ -89,22 +81,14 @@ recruit_character = VEN_eleazar_lopez_contreras
 recruit_character = VEN_juan_bautista_fuenmayor
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 5
+	chauvinist_populism = 80
+	vanguard_communism = 15
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 5
-			}
 
-			chauvinist_populism = {
-				popularity = 80
-			}
-			
-			vanguard_communism = {
-				popularity = 15
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = chauvinist_populism
 		last_election = "1936.1.1"

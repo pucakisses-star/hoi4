@@ -67,22 +67,14 @@ set_convoys = 10
 }
 
 set_convoys = 5
+set_popularities = {
+centrism = 99
+chauvinist_populism = 0
+vanguard_communism = 1
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 99
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1934.2.11"
@@ -96,22 +88,14 @@ recruit_character = COL_mariano_ospina_perez
 
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 100
+	chauvinist_populism = 0
+	vanguard_communism = 0
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 100
-			}
 
-			chauvinist_populism = {
-				popularity = 0
-			}
-			
-			vanguard_communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1938.5.1"

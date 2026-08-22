@@ -155,25 +155,15 @@ set_convoys = 10
 	}
 }
 
+set_popularities = {
+centrism = 20
+chauvinist_populism = 18
+vanguard_communism = 2
+autocracy = 60
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 20
-		}
 
-		chauvinist_populism = {
-			popularity = 18
-		}
-		
-		vanguard_communism = {
-			popularity = 2
-		}
-		
-		autocracy = { 
-			popularity = 60
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1933.12.20"
@@ -182,25 +172,15 @@ set_politics = {
 }
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 20
+	chauvinist_populism = 35
+	vanguard_communism = 2
+	autocracy = 43
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 20
-			}
 
-			chauvinist_populism = {
-				popularity = 35
-			}
-			
-			vanguard_communism = {
-				popularity = 2
-			}
-			
-			autocracy = { 
-				popularity = 43
-			}
-		}
 		
 		ruling_party = autocracy
 		last_election = "1939.7.15"

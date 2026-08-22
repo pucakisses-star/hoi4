@@ -67,22 +67,14 @@ set_convoys = 5
 	}
 }
 
+set_popularities = {
+centrism = 49
+chauvinist_populism = 51
+vanguard_communism = 0
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 49
-		}
 
-		chauvinist_populism = {
-			popularity = 51
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = chauvinist_populism
 	last_election = "1931.10.11"
@@ -93,22 +85,14 @@ set_politics = {
 recruit_character = PRU_oscar_benavides
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 49
+	chauvinist_populism = 51
+	vanguard_communism = 0
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 49
-			}
 
-			chauvinist_populism = {
-				popularity = 51
-			}
-			
-			vanguard_communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = chauvinist_populism
 		last_election = "1931.10.11"

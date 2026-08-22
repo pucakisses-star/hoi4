@@ -40,24 +40,14 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+set_popularities = {
+centrism = 25
+vanguard_communism = 35
+autocracy = 40
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 25
-		}
 
-#		fascism = {
-#		
-#		}
-		
-		vanguard_communism = {
-			popularity = 35
-		}
-		autocracy = {
-			popularity = 40
-		}
-	}
 }
 
 recruit_character = LAO_souphanouvong

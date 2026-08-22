@@ -110,22 +110,14 @@ if = {
 		dispersed_industry2 = 1
 	}
 }
+set_popularities = {
+centrism = 100
+chauvinist_populism = 0
+vanguard_communism = 0
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 100
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1935.11.27"
@@ -144,22 +136,14 @@ recruit_character = NZL_elsie_farrelly
 set_convoys = 70
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 100
+	chauvinist_populism = 0
+	vanguard_communism = 0
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 100
-			}
 
-			chauvinist_populism = {
-				popularity = 0
-			}
-			
-			vanguard_communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1938.10.15"

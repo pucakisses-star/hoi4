@@ -59,26 +59,15 @@ set_technology = {
 	}
 }
 
+set_popularities = {
+centrism = 0
+chauvinist_populism = 15
+vanguard_communism = 10
+autocracy = 75
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 0
-		}
 
-		chauvinist_populism = {
-			popularity = 15
-		}
-		
-		vanguard_communism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-		
-		autocracy = { 
-			popularity = 75
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1936.1.1"
@@ -90,26 +79,15 @@ set_politics = {
 recruit_character = AFG_mohammed_zahir_shah
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 0
+	chauvinist_populism = 20
+	vanguard_communism = 10
+	autocracy = 70
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 0
-			}
 
-			chauvinist_populism = {
-				popularity = 20
-			}
-			
-			vanguard_communism = {
-				popularity = 10
-				#banned = no #default is no
-			}
-		
-			autocracy = { 
-				popularity = 70
-			}
-		}
 	
 		ruling_party = autocracy
 		last_election = "1936.1.1"

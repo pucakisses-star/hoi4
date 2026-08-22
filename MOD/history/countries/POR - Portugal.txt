@@ -71,25 +71,15 @@ set_technology = {
 }
 
 set_convoys = 50
+set_popularities = {
+centrism = 0
+chauvinist_populism = 5
+vanguard_communism = 5
+autocracy = 90
+}
 set_politics = {
 
-	parties = {
-		centrism = {
-			popularity = 0
-		}
 
-		chauvinist_populism = {
-			popularity = 5
-		}
-		
-		vanguard_communism = {
-			popularity = 5
-		}
-		
-		autocracy = {
-			popularity = 90
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1933.3.5"
@@ -98,25 +88,15 @@ set_politics = {
 }
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 0
+	chauvinist_populism = 0
+	vanguard_communism = 0
+	autocracy = 100
+	}
 	set_politics = {
 
-		parties = {
-			centrism = {
-				popularity = 0
-			}
 
-			chauvinist_populism = {
-				popularity = 0
-			}
-			
-			vanguard_communism = {
-				popularity = 0
-			}
-			
-			autocracy = {
-				popularity = 100
-			}
-		}
 		
 		ruling_party = autocracy
 		last_election = "1938.10.30"

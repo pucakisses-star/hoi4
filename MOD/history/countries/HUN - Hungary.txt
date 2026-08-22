@@ -125,21 +125,14 @@ if = {
 	}
 }
 
+set_popularities = {
+centrism = 25
+chauvinist_populism = 31
+autocracy = 44
+vanguard_communism = 0
+}
 set_politics = {
-	parties = {
-		centrism = { 
-			popularity = 25
-		}
-		chauvinist_populism = {
-			popularity = 31
-		}
-		autocracy = {
-			popularity = 44
-		}
-		vanguard_communism = {
-			popularity = 0
-		}
-	}
+
 	
 	ruling_party = autocracy
 	last_election = "1935.3.31"
@@ -173,21 +166,14 @@ recruit_character = HUN_arpad_szakasits
 		recruit_character = HUN_miklos_horthy_4
 	}
 
+	set_popularities = {
+	centrism = 27
+	chauvinist_populism = 70
+	vanguard_communism = 3
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 27
-			}
 
-			chauvinist_populism = {
-				popularity = 70
-			}
-			
-			vanguard_communism = {
-				popularity = 3
-			}
-		}
 		
 		ruling_party = chauvinist_populism
 		last_election = "1939.5.29"

@@ -121,22 +121,14 @@ if = {
 	}
 }
 
+set_popularities = {
+centrism = 98
+chauvinist_populism = 1
+vanguard_communism = 1
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 98
-		}
 
-		chauvinist_populism = {
-			popularity = 1
-		}
-		
-		vanguard_communism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1935.10.14"
@@ -156,22 +148,14 @@ set_convoys = 100
 set_stability = 0.75
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 98
+	chauvinist_populism = 1
+	vanguard_communism = 1
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 98
-			}
 
-			chauvinist_populism = {
-				popularity = 1
-			}
-			
-			vanguard_communism = {
-				popularity = 1
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1935.10.14"

@@ -86,24 +86,14 @@ if = {
 	}
 }
 
+set_popularities = {
+centrism = 0
+chauvinist_populism = 0
+vanguard_communism = 100
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 0
-			banned = yes
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		vanguard_communism = {
-			popularity = 100
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = vanguard_communism
 	last_election = "1936.1.1"
@@ -116,24 +106,14 @@ recruit_character = SIK_sheng_shicai
 recruit_character = SIK_chiang_yu_fen
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 0
+	chauvinist_populism = 0
+	vanguard_communism = 100
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 0
-				banned = yes
-			}
 
-			chauvinist_populism = {
-				popularity = 0
-				banned = yes
-			}
-			
-			vanguard_communism = {
-				popularity = 100
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = vanguard_communism
 		last_election = "1936.1.1"

@@ -118,22 +118,14 @@ if = {
 	}
 }
 
+set_popularities = {
+centrism = 98
+chauvinist_populism = 0
+vanguard_communism = 2
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 98
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 2
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1934.9.15"
@@ -154,22 +146,14 @@ recruit_character = AST_rod_hull
 set_convoys = 100
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 99
+	chauvinist_populism = 0
+	vanguard_communism = 1
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 99
-			}
 
-			chauvinist_populism = {
-				popularity = 0
-			}
-			
-			vanguard_communism = {
-				popularity = 1
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1937.10.23"

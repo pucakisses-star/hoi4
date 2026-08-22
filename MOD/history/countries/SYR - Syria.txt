@@ -59,26 +59,15 @@ set_convoys = 5
 }
 
 
+set_popularities = {
+centrism = 50
+chauvinist_populism = 10
+vanguard_communism = 10
+autocracy = 30
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 50
-		}
 
-		chauvinist_populism = {
-			popularity = 10
-		}
-		
-		vanguard_communism = {
-			popularity = 10
-			#banned = no #default is no
-		}
-		
-		autocracy = { 
-			popularity = 30
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1936.1.1"

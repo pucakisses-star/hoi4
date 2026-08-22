@@ -37,17 +37,13 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+set_popularities = {
+centrism = 25
+vanguard_communism = 75
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 25
-		}
-		
-		vanguard_communism = {
-			popularity = 75
-		}
-	}
+
 }
 
 recruit_character = GEO_noe_zhordania

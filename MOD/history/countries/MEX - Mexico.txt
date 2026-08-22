@@ -67,25 +67,15 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 45
 
+set_popularities = {
+centrism = 5
+chauvinist_populism = 0
+vanguard_communism = 1
+autocracy = 94
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 5
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 1
-		}
-		
-		autocracy = { 
-			popularity = 94
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1934.7.1"
@@ -104,25 +94,15 @@ recruit_character = MEX_manuel_gomez_morin
 recruit_character = MEX_dionisio_encina
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 1
+	chauvinist_populism = 0
+	vanguard_communism = 1
+	autocracy = 98
+	}
 	set_politics = {
 
-		parties = {
-		centrism = { 
-			popularity = 1
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 1
-		}
-		
-		autocracy = { 
-			popularity = 98
-		}
-	}
 	
 	ruling_party = autocracy
 		last_election = "1934.7.1"

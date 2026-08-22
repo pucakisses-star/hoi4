@@ -114,22 +114,14 @@ set_stability = 0.75
 	}
 }
 
+set_popularities = {
+centrism = 30
+chauvinist_populism = 10
+vanguard_communism = 60
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 30
-		}
 
-		chauvinist_populism = {
-			popularity = 10
-		}
-		
-		vanguard_communism = {
-			popularity = 60
-			banned = no #default is no
-		}
-	}
 	
 	ruling_party = vanguard_communism
 	last_election = "1936.1.1"

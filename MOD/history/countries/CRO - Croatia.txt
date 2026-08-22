@@ -65,21 +65,14 @@ set_convoys = 5
 		dispersed_industry2 = 1
 	}
 }
+set_popularities = {
+centrism = 15
+chauvinist_populism = 75
+vanguard_communism = 10
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 15
-		}
 
-		chauvinist_populism = {
-			popularity = 75
-		}
-		
-		vanguard_communism = {
-			popularity = 10
-		}
-	}
 	
 	ruling_party = chauvinist_populism
 	last_election = "1935.6.9"
@@ -88,21 +81,14 @@ set_politics = {
 }
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 15
+	chauvinist_populism = 75
+	vanguard_communism = 10
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 15
-			}
 
-			chauvinist_populism = {
-				popularity = 75
-			}
-			
-			vanguard_communism = {
-				popularity = 10
-			}
-		}
 		
 		ruling_party = chauvinist_populism
 		last_election = "1935.6.9"

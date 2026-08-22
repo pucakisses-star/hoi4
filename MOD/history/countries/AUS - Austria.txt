@@ -14,25 +14,15 @@ set_technology = {
 	early_fighter = 1
 }
 
+set_popularities = {
+autocracy = 48
+chauvinist_populism = 50
+centrism = 1
+vanguard_communism = 1
+}
 set_politics = {
 
-	parties = {
-		autocracy = { 
-			popularity = 48
-		}
 
-		chauvinist_populism = {
-			popularity = 50
-		}
-
-		centrism = {
-			popularity = 1
-		}
-		
-		vanguard_communism = {
-			popularity = 1
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1930.11.9"

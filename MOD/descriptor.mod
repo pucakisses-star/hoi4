@@ -6,4 +6,4 @@ tags={
 	"Events"
 }
 name="Divided States of America"
-supported_version="1.16.*"
+supported_version="1.19.*"

@@ -6,7 +6,7 @@ tags={
 	"Events"
 }
 name="Divided States of America"
-supported_version="1.16.*"
+supported_version="1.19.*"
 # Absolute path to the mod folder. Use forward slashes, even on Windows.
 # Windows: C:/Users/<you>/Documents/Paradox Interactive/Hearts of Iron IV/mod/dsa
 # macOS:   /Users/<you>/Documents/Paradox Interactive/Hearts of Iron IV/mod/dsa

@@ -70,25 +70,15 @@ set_convoys = 10
 	}
 }
 
+set_popularities = {
+centrism = 30
+chauvinist_populism = 15
+vanguard_communism = 15
+autocracy = 40
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 30
-		}
 
-		chauvinist_populism = {
-			popularity = 15
-		}
-		
-		vanguard_communism = {
-			popularity = 15
-		}
-		
-		autocracy = { 
-			popularity = 40
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1931.10.3"
@@ -97,25 +87,15 @@ set_politics = {
 }
 
 1939.1.1 = {# probably needs some adjustment before nazi occupation in 1940
+	set_popularities = {
+	centrism = 30
+	chauvinist_populism = 15
+	vanguard_communism = 15
+	autocracy = 40
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 30
-			}
 
-			chauvinist_populism = {
-				popularity = 15
-			}
-			
-			vanguard_communism = {
-				popularity = 15
-			}
-			
-			autocracy = { 
-				popularity = 40
-			}
-		}
 		
 		ruling_party = autocracy
 		last_election = "1931.10.3"

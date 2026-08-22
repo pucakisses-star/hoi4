@@ -23,24 +23,15 @@ set_technology = {
 
 set_convoys = 25
 
+set_popularities = {
+centrism = 10
+chauvinist_populism = 10
+vanguard_communism = 30
+autocracy = 50
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 10
-		}
 
-		chauvinist_populism = {
-			popularity = 10
-		}
-		
-		vanguard_communism = {
-			popularity = 30
-		}
-		autocracy = {
-			popularity = 50
-		}
-	}
 }
 
 recruit_character = INS_sukarno

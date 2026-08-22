@@ -59,22 +59,14 @@ set_country_flag = monroe_doctrine
 	}
 }
 
+set_popularities = {
+centrism = 25
+chauvinist_populism = 0
+vanguard_communism = 75
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 25
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 75
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = vanguard_communism
 	last_election = "1936.1.1"
@@ -97,26 +89,15 @@ set_politics = {
 recruit_character = PAR_rafael_franco
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 20
+	chauvinist_populism = 0
+	vanguard_communism = 30
+	autocracy = 50
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 20
-			}
 
-			chauvinist_populism = {
-				popularity = 0
-			}
-			
-			vanguard_communism = {
-				popularity = 30
-				#banned = no #default is no
-			}
-
-			autocracy = {
-				popularity = 50
-			}
-		}
 
 		ruling_party = autocracy
 		last_election = "1938.1.1"

@@ -20,25 +20,15 @@ set_technology = {
 
 set_research_slots = 3
 
+set_popularities = {
+centrism = 65
+autocracy = 20
+chauvinist_populism = 5
+vanguard_communism = 10
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 65
-		}
 
-		autocracy = { 
-			popularity = 20
-		}
-
-		chauvinist_populism = {
-			popularity = 5
-		}
-		
-		vanguard_communism = {
-			popularity = 10
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1935.5.19"

@@ -85,25 +85,15 @@ add_ideas = {
 	}
 }
 
+set_popularities = {
+centrism = 10
+chauvinist_populism = 10
+vanguard_communism = 1
+autocracy = 79
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 10
-		}
 
-		chauvinist_populism = {
-			popularity = 10
-		}
-		
-		vanguard_communism = {
-			popularity = 1
-		}
-
-		autocracy = {
-			popularity = 79
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1933.7.1"
@@ -112,25 +102,15 @@ set_politics = {
 }
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 10
+	chauvinist_populism = 10
+	vanguard_communism = 1
+	autocracy = 79
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 10
-			}
 
-			chauvinist_populism = {
-				popularity = 10
-			}
-			
-			vanguard_communism = {
-				popularity = 1
-			}
-
-			autocracy = {
-				popularity = 79
-			}
-		}
 		
 		ruling_party = autocracy
 		last_election = "1939.7.1"
