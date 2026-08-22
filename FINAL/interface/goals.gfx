@@ -1,0 +1,73 @@
+spriteTypes = { 
+ 
+	SpriteType = {
+	name = "GFX_texas"
+	texturefile = "gfx/interface/goals/texas/texas.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_generic_canyon_focus"
+	texturefile = "gfx/interface/goals/texas/generic_canyon_focus.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_TEX_Rail"
+	texturefile = "gfx/interface/goals/texas/TEX_Rail.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_research2"
+	texturefile = "gfx/interface/goals/texas/focus_research2.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_generic_treaty"
+	texturefile = "gfx/interface/goals/texas/focus_generic_treaty.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_generic_military_academy"
+	texturefile = "gfx/interface/goals/texas/focus_generic_military_academy.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_remember_the_nueces_massacre"
+	texturefile = "gfx/interface/goals/texas/remember_the_nueces_massacre.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_cult_of_wyatt"
+	texturefile = "gfx/interface/goals/texas/cult_of_wyatt.dds"			
+		}
+	
+	SpriteType = {
+	name = "GFX_TEX_Rail"
+	texturefile = "gfx/interface/goals/confederacy/TEX_Rail.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_Confederate-Politics"
+	texturefile = "gfx/interface/goals/confederacy/Confederate-Politics.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_generic_treaty"
+	texturefile = "gfx/interface/goals/confederacy/focus_generic_treaty.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_generic_military_academy"
+	texturefile = "gfx/interface/goals/confederacy/focus_generic_military_academy.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_remember_the_nueces_massacre"
+	texturefile = "gfx/interface/goals/confederacy/remember_the_nueces_massacre.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_cult_of_wyatt"
+	texturefile = "gfx/interface/goals/confederacy/cult_of_wyatt.dds"			
+	}
+	
+	

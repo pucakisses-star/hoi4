@@ -1,0 +1,53 @@
+﻿capital = 47
+
+oob = "GRE_1860"
+
+set_research_slots = 3
+
+add_ideas = {
+}
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 400
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 40		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0		}
+			
+		monarchist = {
+			popularity = 60
+		}
+		
+				
+		neutrality = { 
+			popularity = 0		}
+	}ruling_party = monarchist	
+	last_election = "1835.6.9"
+	election_frequency = 0
+	elections_allowed = no
+}
+
+set_stability = 0.5
+
+create_country_leader = {
+	name = "King George"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gfx/leaders/GRE/George.dds"
+	expire = "1895.1.1"
+	ideology = imperial
+	traits = {
+		#
+	}
+}

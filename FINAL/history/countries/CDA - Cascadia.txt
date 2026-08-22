@@ -1,0 +1,117 @@
+﻿capital = 386
+
+OOB = "CDA_1868"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1868.3.5"
+	election_frequency = 68
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 37
+	communism = 14
+	fascism = 35
+	neutrality = 14
+}
+
+set_convoys = 63
+
+set_stability = 0.64
+
+set_research_slots = 3
+
+
+create_country_leader = {
+	name = "George Abernethy"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "GeorgeAbernethy.dds"
+	expire = "1877.3.2"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+#create_field_marshal = {
+#	name = "Xhemal Aranitasi"	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+#skill = 2
+
+create_country_leader = {
+	name = "William D. Pelley"
+desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "WilliamDudleyPelley.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		dictator
+	}
+}
+create_country_leader = {
+	name = "Eugene Dennis"
+desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Eugene_Dennis_result.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = ""
+desc = "POLITICS_KING_ZOG_DESC"
+	picture = ".dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+
+create_corps_commander = {
+	name = "Joseph Meek"
+	picture = "JosephMeek.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+
+
+}
+
+ create_field_marshal = {
+	name = "Thomas D. Keizur"
+	picture = "ThomasDKeizur.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 1
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Joseph Gale"
+		picture = "JosephGale.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Elliot Turgenson"
+		picture = "ElliotTurgenson.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
