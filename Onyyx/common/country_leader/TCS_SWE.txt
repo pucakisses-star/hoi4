@@ -1,9 +1,0 @@
-leader_traits = {
-	monarch_power_trait = { 
-		random = no
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-}

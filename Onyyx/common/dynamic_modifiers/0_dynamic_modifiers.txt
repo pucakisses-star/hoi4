@@ -1,7 +1,0 @@
-dynamic_modifier_opda = {
-		enable = { original_tag = OTT }
-		remove_trigger = { 
-			has_country_flag = no_opda 
-		}
-		consumer_goods_factor = OTT.opda_influence
-}

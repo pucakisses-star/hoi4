@@ -1,7 +1,0 @@
-GRE_struggle_macedonia_cat = {
-    #icon = 
-    #picture = 
-    allowed = {
-		original_tag = GRE
-	}
-}

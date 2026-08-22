@@ -1,9 +1,0 @@
-focus_tree = {
-	id = TCS_Petkov_cabinet
-	country = {
-		factor = 0
-	}
-
-	shared_focus = BUL_Petrov_cabinet
-	shared_focus = BUL_Petkov_cabinet
-}

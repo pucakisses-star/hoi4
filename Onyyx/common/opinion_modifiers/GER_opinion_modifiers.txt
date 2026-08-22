@@ -1,3 +1,0 @@
-opinion_modifiers = {
-	GER_franco_german_border_regulation = { value = 5 }
-}

@@ -1,8 +1,0 @@
-focus_tree = {
-	id = TCS_Norway_Nissen
-	country = {
-		factor = 0
-	}
-	shared_focus = NOR_choose_doctrine
-	shared_focus = NOR_nissen_cabinet
-}
