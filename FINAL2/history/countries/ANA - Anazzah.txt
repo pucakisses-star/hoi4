@@ -1,0 +1,53 @@
+﻿capital = 972
+
+oob = ""
+
+add_ideas = {
+	ANA_nomadic_society
+	ANA_tribal_factionalism
+	ANA_ottoman_ties
+	ANA_camel_trade
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = pat_autocrat
+	last_election = "2126.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    leninism = 0
+    marxism = 0
+    rev_socialism = 0
+    soc_democracy = 0
+    soc_liberal = 0
+    lib_conservatism = 0
+    soc_conservatism = 0
+    auth_democrat = 0
+    pat_autocrat = 100
+    fascism = 0
+}
+
+set_country_flag = pat_autocrat_coalition
+set_country_flag = auth_democrat_coalition
+set_country_flag = soc_conservatism_coalition
+set_country_flag = lib_conservatism_coalition
+
+create_country_leader = {
+	name = "Mejhem ibn Meheid"
+	desc = "POLITICS_MEJHEM_IBN_MEHEID_DESC"
+	picture = "Portrait_Mejhem_ibn_Meheid.tga"
+	expire = "1965.1.1"
+	ideology = pat_autocrat_subtype
+	traits = {
+		#
+	}
+}

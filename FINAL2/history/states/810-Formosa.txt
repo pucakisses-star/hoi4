@@ -1,0 +1,21 @@
+
+state={
+	id=810
+	name="STATE_810"
+	manpower = 104241
+	
+	state_category = rural
+
+	history={
+		owner = PAR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PAR
+		add_claim_by = ARG
+	}
+
+	provinces={
+		12922
+	}
+}

@@ -1,0 +1,239 @@
+bookmarks = {
+	bookmark = {
+		name = "The End of an Era"
+		desc = "GATHERING_STORM_DESC"
+		date = 1868.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "COF"
+		default = yes
+		
+		"CDA"={
+			history = "CDA_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				manafest_destiny 
+				oregon_trail 
+				pioneer_spirit
+			}
+			focuses = {
+				Republic_Of_The_Pascific 
+				Niimíipuu_Homeland 
+				Second_Champoeg_Meetings
+			}
+		}
+		"DES"={
+			history = "DES_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				book_of_mormon
+				mission
+				slavery
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_strike_at_the_empire
+				USA_pearl_harbor_gambit
+			}
+		}
+		"CAL"={
+			history = "CAL_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				bear_flag_republic
+				industrialists_paradise
+				San_Fransico_Intelectulalism
+			}
+			focuses = {
+				tizard_mission_focus
+				ENG_war_with_germany
+				ENG_war_with_italy
+			}
+		}
+		"COF"={
+			history = "COF_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+				slavery
+				southern_spirit 
+				
+			}
+			focuses = {
+				GER_anschluss
+				Golden_Circle
+				GER_revive_the_kaiserreich
+			}
+		}
+		"USA"={
+			history = "USA_POWDERKEG_DESC"
+			ideology = democratic 
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			ideas = {
+				Divided_Country
+				Reconstruction
+				Northern_Reperations
+			}
+			focuses = {
+				Divided_Country
+				Reconstruction
+				Northern_Reperations
+			}
+		}
+		"TEX"={
+			history = "TEX_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+				Indian_Raids
+				Lone_Star_Republic
+				slavery
+			}	
+			focuses = {
+				Lone_Star
+				Indian_Raids
+				texas
+			}		
+		}
+		"AZT"={
+			history =  "AZT_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+				catholic_state
+				mexician_puppet
+				soar_losers
+			}	
+			focuses = {
+				Reclaim_Lost_Land
+				Aztec_Spirit
+				Navajo_Homeland
+			}			
+		}
+
+		"---"={
+			history = "OTHER_POWDERKEG_DESC"
+		}
+
+		"POL" = {
+			minor = yes
+			history = "USA_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+				USA_ww1_MexicanRevolution
+			}
+		}
+
+		"SOV" = {
+			minor = yes
+			history = "SER_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				Illiteracy
+			}
+			focuses = {
+				SER_first_balkan
+			}
+		}
+
+		"FRA" ={
+			minor = yes
+			history = "BUL_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+				BUL_ww1_balkan_league
+			}
+		}
+
+		"ENG" = {
+			minor = yes
+			history = "BEL_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				Queen_Victoria
+				The_Sun_Never_Sets
+				British_Imperialism
+			}
+			focuses = {
+
+			}
+		}
+
+		"JAP" = {
+			minor = yes
+			history = "GRE_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"ROM" = {
+			minor = yes
+			history = "ROM_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"GER" = {
+			minor = yes
+			history = "JAP_POWDERKEG_DESC"
+			ideology = neutrality
+			ideas = {
+				state_shintoism
+			}
+			focuses = {
+
+			}
+		}
+		
+		"MAN" = {
+			minor = yes
+			history = "MEX_POWDERKEG_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+		}
+
+		"ITA" = {
+			minor = yes
+			history = "JAP_POWDERKEG_DESC"
+			ideology = neutrality
+			ideas = {
+				state_shintoism
+			}
+			focuses = {
+
+			}
+		}
+		
+		"YUG" = {
+			minor = yes
+			history = "MEX_POWDERKEG_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

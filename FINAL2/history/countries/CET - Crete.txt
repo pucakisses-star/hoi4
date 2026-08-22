@@ -1,0 +1,91 @@
+﻿capital = 182
+
+oob = "CET_1905"
+
+set_research_slots = 2
+
+add_ideas = {
+	extensive_conscription
+	CET_nominal_ottoman_state
+}
+
+set_technology = {
+	trench_warfare = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_recon = 1
+
+}
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = pat_autocrat
+	last_election = "1902.11.17"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    leninism = 0
+    marxism = 0
+    rev_socialism = 0
+    soc_democracy = 0
+    soc_liberal = 0
+    lib_conservatism = 76
+    soc_conservatism = 0
+    auth_democrat = 0
+    pat_autocrat = 24
+    fascism = 0
+}
+
+set_stability = 0.75
+
+create_country_leader = {
+	name = "Eleftherios Venizelos"
+	desc = "POLITICS_GEORGE_I_DESC"
+	picture = "Portrait_CET_Eleftherios_Venizelos.tga"
+	expire = "1965.1.1"
+	ideology = lib_conservatism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "George of Greece"
+	desc = "POLITICS_GEORGE_I_DESC"
+	picture = "Portrait_CET_Prince_George.tga"
+	expire = "1965.1.1"
+	ideology = pat_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Markos Drakos"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = { hill_fighter }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Hydra Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 2
+		destroyer_engine_upgrade = 2
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 2
+	}
+}

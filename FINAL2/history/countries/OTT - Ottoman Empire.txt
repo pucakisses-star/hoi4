@@ -1,0 +1,224 @@
+﻿capital = 341
+
+oob = "OTT_1905"
+
+#if = {
+	#limit = {
+		#has_dlc = "Man the Guns"
+	#}
+	#set_naval_oob = "OTT_1905_Naval"
+	#else = {
+		#set_naval_oob = "OTT_1905_Naval_Legacy"
+	#}
+#}
+
+set_research_slots = 3
+
+set_variable = {
+    var = OTT.opda_influence
+    value = 0.25
+}
+
+add_ideas = {
+	free_trade
+	limited_conscription
+	OTT_sickman_mac
+	OTT_development_1
+	OTT_europe_capitulations
+	OTT_bad_military_1
+	OTT_bad_government_1
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+}
+
+set_politics = {	
+	ruling_party = pat_autocrat
+	last_election = "1935.2.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    leninism = 0
+    marxism = 0
+    rev_socialism = 0
+    soc_democracy = 2
+    soc_liberal = 1
+    lib_conservatism = 2
+    soc_conservatism = 1
+    auth_democrat = 7
+    pat_autocrat = 75
+    fascism = 12
+}
+
+set_country_flag = pat_autocrat_coalition
+set_country_flag = fascism_coalition
+
+set_convoys = 20
+set_stability = 0.55
+
+create_country_leader = {
+	name = "Abdü’l-Hamīd II"
+	desc = "POLITICS_Abdulhamid_II_DESC"
+	picture = "Portrait_Abdulhamid.tga"
+	expire = "1965.1.1"
+	ideology = pat_autocrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Abdü’l-Hamīd II"
+	desc = "POLITICS_Abdulhamid_II_DESC"
+	picture = "Portrait_Abdulhamid.tga"
+	expire = "1965.1.1"
+	ideology = auth_democrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Abdü’l-Hamīd II"
+	desc = "POLITICS_Abdulhamid_II_DESC"
+	picture = "Portrait_Abdulhamid.tga"
+	expire = "1965.1.1"
+	ideology = fascism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Abdü’l-Hamīd II"
+	desc = "POLITICS_Abdulhamid_II_DESC"
+	picture = "Portrait_Abdulhamid.tga"
+	expire = "1965.1.1"
+	ideology = soc_conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Abdü’l-Hamīd II"
+	desc = "POLITICS_Abdulhamid_II_DESC"
+	picture = "Portrait_Abdulhamid.tga"
+	expire = "1965.1.1"
+	ideology = lib_conservatism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Abdü’l-Hamīd II"
+	desc = "POLITICS_Abdulhamid_II_DESC"
+	picture = "Portrait_Abdulhamid.tga"
+	expire = "1965.1.1"
+	ideology = soc_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Christapor Mikaelian"
+	desc = "POLITICS_CHRISTAPOR_MIKAELIAN_DESC"
+	#picture =
+	expire = "1965.1.1"
+	ideology = rev_socialism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Christapor Mikaelian"
+	desc = "POLITICS_CHRISTAPOR_MIKAELIAN_DESC"
+	#picture =
+	expire = "1965.1.1"
+	ideology = marxism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "-"
+	desc = "POLITICS_CHRISTAPOR_MIKAELIAN_DESC"
+	#picture =
+	expire = "1965.1.1"
+	ideology = leninism_subtype
+	traits = {
+		#
+	}
+}
+
+### Generals ###
+
+create_field_marshal = {
+	name = "Mehmed Şükrü Pasha"
+	#portrait_path = "#"
+	traits = { 
+		bearer_of_artillery
+		unyielding_defender
+		}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Sedettin Pasha"
+	#portrait_path = "#"
+	traits = { 
+		#
+		}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Mustafa Zeki Pasha"
+	#portrait_path = "#"
+	traits = { 
+		politically_connected
+		}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Mehmed Riza Pasha"
+	#portrait_path = "#"
+	traits = { 
+		politically_connected
+		}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Mahmud Şevket Pasha"
+	#portrait_path = "#"
+	traits = { 
+		urban_assault_specialist
+		}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

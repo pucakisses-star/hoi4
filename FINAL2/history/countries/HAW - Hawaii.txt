@@ -1,0 +1,80 @@
+﻿capital = 629
+
+OOB = "HAW_1868"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 35
+	fascism = 2
+	communism = 5
+	neutrality = 58
+}
+
+add_ideas = {
+	Coconut_Country
+	hawaiian_spirit
+}
+
+
+
+set_convoys = 2
+set_stability = 0.81
+
+
+create_country_leader = {
+	name = "Queen Liliokalani"
+desc = "POLITICS_KING_ZOG_DESC"
+	picture = "liliokalani.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+#create_field_marshal = {
+#	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+#skill = 2
+#
+#create_country_leader = {
+#	name = "William D. Pelley"
+#desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#	traits = {
+#		dictator
+#	}
+#}
+
+create_country_leader = {
+	name = "Kamehameha V"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "JackW.Hall(Com.Haw.)_result.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Kamehameha V"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "KamehamehaV.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}

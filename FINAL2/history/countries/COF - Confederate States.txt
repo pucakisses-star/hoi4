@@ -1,0 +1,225 @@
+﻿capital = 362
+# it was set to 10343
+
+OOB = "COF_1868"
+
+set_technology = {
+add_ideas = {
+	slavery
+	southern_spirit 
+	unpopular_leader	
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1864.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 43
+	fascism = 22
+	communism = 1
+	neutrality = 34
+	monarchist = 0
+}
+
+set_convoys = 115
+
+set_stability = 0.63
+
+set_research_slots = 4
+
+ideas = {
+	southern_spirit
+	slavery 
+	unpopular_leader 
+
+}
+create_country_leader = {
+	name = "Alexander H. Stephens"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "AlexanderStephens.dds"
+	expire = "1900.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+#create_field_marshal = {
+#	name = "Robert E. Lee"	portrait_path = "gfx/leaders/COF/RobertLee.dds"
+#skill = 8
+#}
+
+create_country_leader = {
+	name = ""
+#desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "OneSickFucker_result.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		dictator
+	}
+}
+#create_country_leader = {
+#	name = ""
+#desc = "POLITICS_KING_ZOG_DESC"
+#	picture = "JohnJBallam_result.dds"
+#	expire = "1965.1.1"
+#	ideology = marxism
+#	traits = {
+#		
+#	}
+#}
+#create_country_leader = {
+#	name = ""
+#desc = "POLITICS_KING_ZOG_DESC"
+#	picture = "Father Feeney.dds"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {
+#		
+#	}
+#}
+
+create_corps_commander = {
+	name = "Edmund Kirby Smith"
+	picture = "EdmundKirbySmith.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist politically_connected }
+	skill = 5
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+
+}
+
+
+create_corps_commander = {
+	name = "Joseph Johnston"
+	picture = "JosephJohnston.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 5
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+
+create_corps_commander = {
+	name = "P.G.T. Beauregard"
+	picture = "PierreBeauregard.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 5
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+
+}
+
+create_corps_commander = {
+	name = "Stonewall Jackson"
+	picture = "StonewallJackson.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 5
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+
+}
+
+create_corps_commander = {
+	name = "James Longstreet"
+	picture = "JamesLongstreet.dds"
+	traits = { harsh_leader }
+	skill = 4
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+
+}
+
+create_corps_commander = {
+	name = "Braxton Bragg"
+	picture = "BraxtonBragg.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "George Pickett"
+	picture = "GeorgePickett.dds"
+	traits = {  war_hero trait_reckless offensive_doctrine }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 7
+	planning_skill = 2
+	logistics_skill = 3
+
+}
+
+create_corps_commander = {
+	name = "Henry Hopkins Sibley"
+	picture = "HenryHopkinsSibley.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Richard L.T Beale"
+	picture = "RichardLTBeale.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Richard Ewell"
+	picture = "RichardEwell.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+
+
+}
+
+create_corps_commander = {
+	name = "J.B.Duman"
+	picture = "J.B.Duman.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 1
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
