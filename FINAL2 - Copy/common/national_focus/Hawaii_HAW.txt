@@ -1,0 +1,128 @@
+focus_tree = {
+	id = HAW
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = Hawaii
+		}
+	}
+	#Focus for House of Kamehameha
+	focus = {
+		id = Hawaii_houseofkamehameha
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hale Nauā Society
+	focus = {
+		id = Hawaii_halenausociety
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Royal Order of Kapiolani
+	focus = {
+		id = Hawaii_royalorderofkapiolani
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban Hula
+	focus = {
+		id = Hawaii_banhula
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for House of Kalākaua
+	focus = {
+		id = Hawaii_houseofkalkaua
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Royal Order of Kamehameha I
+	focus = {
+		id = Hawaii_royalorderofkamehamehai
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban Surfing
+	focus = {
+		id = Hawaii_bansurfing
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Island onto thyself
+	focus = {
+		id = Hawaii_anislandontothyself
+		icon = GFX_goal_unknown
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kamehameha Schools
+	focus = {
+		id = Hawaii_kamehamehaschools
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

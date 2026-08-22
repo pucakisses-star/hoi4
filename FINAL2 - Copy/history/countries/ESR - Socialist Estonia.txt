@@ -1,0 +1,33 @@
+﻿capital = 892
+
+oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	#early_fighter = 1
+}
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = marxism
+	last_election = "2126.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    leninism = 10
+    marxism = 10
+    rev_socialism = 10
+    soc_democracy = 10
+    soc_liberal = 10
+    lib_conservatism = 10
+    soc_conservatism = 10
+    auth_democrat = 10
+    pat_autocrat = 10
+    fascism = 10
+}
+

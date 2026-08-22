@@ -1,0 +1,65 @@
+ideas = {
+
+	country = {
+		Divided_Country = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = { 
+				political_power_cost = 0.1
+				stability_factor = -0.20
+				opposition_party_drift = 0.01
+				}
+		}
+		Reconstruction  = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = reconstruction
+			
+			modifier = { 
+				industrial_capacity_factory = -0.01
+				industrial_capacity_dockyard = -0.01
+				political_power_cost = -0.05
+				land_reinforce_rate = -0.02
+				army_morale_factor = -0.10
+			}
+		}
+		Northern_Reperations = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = Northern_Reperations
+			
+			modifier = { 
+				production_speed_infrastructure_factor = 0.1
+				opposition_party_drift = 0.02
+				industrial_capacity_factory = 0.01
+				industrial_capacity_dockyard = 0.01
+				
+			}
+
+		}

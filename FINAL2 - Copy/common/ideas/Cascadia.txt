@@ -1,0 +1,69 @@
+ideas = {
+
+
+	country = {
+		manafest_destiny = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = AZT_reclaiminglostland
+			
+			modifier = { 
+				political_power_cost = 0.1
+				stability_factor = -0.20
+				opposition_party_drift = 0.01
+				war_support_weekly = -0.05
+				}
+		}
+		oregon_trail  = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = oregon_trail
+			
+			modifier = { 
+				monthly_population = 0.05
+				conscription = 0.02
+				industrial_capacity_factory = 0.01
+				industrial_capacity_dockyard = 0.01
+				political_power_cost = -0.05
+				land_reinforce_rate = 0.02
+				army_morale_factor = 0.10
+			}
+		}
+		pioneer_spirit = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = Manifest_Destiny
+			
+			modifier = { 
+				
+				industrial_capacity_factory = -0.01
+				industrial_capacity_dockyard = -0.01
+				mobilization_speed = 0.01
+				
+			}
+
+		}
