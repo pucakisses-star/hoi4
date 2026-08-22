@@ -1,0 +1,85 @@
+﻿capital = 813
+
+oob = "ETH"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	#early_fighter = 1
+}
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = pat_autocrat
+	last_election = "2126.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    leninism = 0
+    marxism = 0
+    rev_socialism = 0
+    soc_democracy = 0
+    soc_liberal = 0
+    lib_conservatism = 0
+    soc_conservatism = 0
+    auth_democrat = 33
+    pat_autocrat = 50
+    fascism = 17
+}
+
+create_country_leader = {
+	name = "Maxamed Cabdille Xasan"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Sayid_Maxamed_Cabdille_Xasan.tga"
+	expire = "1965.1.1"
+	ideology = pat_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Maxamed Cabdille Xasan"
+	portrait_path = "Sayid_Maxamed_Cabdille_Xasan.tga"
+	traits = { 
+		#
+	}
+	skill = 3
+	#id = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nur Ahmed Aman"
+	portrait_path = "gfx/DER/leaders/"
+	traits = { 
+		#
+	}
+	skill = 2
+	#id = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Xaaji Suudi Shabeel"
+	portrait_path = "gfx/DER/leaders/"
+	traits = { 
+		#
+	}
+	skill = 1
+	#id = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

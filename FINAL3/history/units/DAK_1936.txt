@@ -1,0 +1,72 @@
+division_template = {
+	name = "Dakotan Infantry"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+division= {	
+		name = "Dakotan 1st Division"
+		location = 1747
+		division_template = "Dakotan Infantry"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		name = "Dakotan 2nd Division"
+		location = 1836
+		division_template = "Dakotan Infantry"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		name = "Dakotan 3rd Division"
+		location = 1866
+		division_template = "Dakotan Infantry"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		name = "Dakotan 4th Division"
+		location = 1866
+		division_template = "Dakotan Infantry"
+		start_experience_factor = 0.4
+	}
+
+	division= {	
+		name = "Dakotan Worker's Division"
+		location = 6767
+		division_template = "Dakotan Infantry"
+		start_experience_factor = 0.8
+	}
+
+	division= {	
+		name = "Dakotan 5th Division"
+		location = 10569
+		division_template = "Dakotan Infantry"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "Dakotan 6th Division"
+		location = 1719
+		division_template = "Dakotan Infantry"
+		start_experience_factor = 0.6
+	}
+
+	

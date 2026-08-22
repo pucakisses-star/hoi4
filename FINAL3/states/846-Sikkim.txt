@@ -1,0 +1,25 @@
+
+state={
+	id=846
+	name="STATE_846"
+	manpower = 335000
+	
+	state_category = town
+
+	history={
+		owner = SIK
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SIK
+
+	}
+
+	provinces={
+		4435
+	}
+}
+
+
+
+

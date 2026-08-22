@@ -1,0 +1,43 @@
+﻿capital = 1
+
+oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	#early_fighter = 1
+}
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = lib_conservatism
+	last_election = "2126.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    leninism = 0
+    marxism = 0
+    rev_socialism = 1
+    soc_democracy = 2
+    soc_liberal = 22
+    lib_conservatism = 34
+    soc_conservatism = 11
+    auth_democrat = 30
+    pat_autocrat = 0
+    fascism = 0
+}
+
+create_country_leader = {
+	name = "Alfred Milner"
+	desc = ""
+	picture = "Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = lib_conservatism_subtype
+	traits = {
+		#
+	}
+}

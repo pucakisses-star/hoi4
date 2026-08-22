@@ -1,0 +1,90 @@
+﻿capital = 212
+
+
+
+add_ideas = {
+}
+
+set_technology = {
+	trench_warfare = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	motorised_infantry = 1
+	#early_fighter = 1
+} 
+
+set_politics = {
+	ruling_party = soc_democracy
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+} 
+
+set_popularities = {
+    leninism = 0
+    marxism = 12
+    rev_socialism = 3
+    soc_democracy = 36 
+    soc_liberal = 28
+    lib_conservatism = 12
+    soc_conservatism = 7
+    auth_democrat = 2
+    pat_autocrat = 0
+    fascism = 0
+}
+
+set_country_flag = marxism_coalition
+set_country_flag = rev_socialism_coalition
+set_country_flag = soc_democracy_coalition
+set_country_flag = soc_liberal_coalition
+
+
+create_country_leader = {
+	name = "Dimitar Blagoev"
+	desc = "POLITICS_DIMITAR_BLAGOEV_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = marxism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Dimitar Blagoev"
+	desc = "POLITICS_DIMITAR_BLAGOEV_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = rev_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandar Stamboliyski" 
+	desc = "POLITICS_ALEKSANDAR_STAMBOLIYSKI_DESC"
+	picture = "gfx/leaders/BUL/BUL_aleksandar_stamboliyski.tga"
+	expire = "1965.1.1"
+	ideology = soc_democracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = ""
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = soc_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+
+

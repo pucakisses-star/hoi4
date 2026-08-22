@@ -1,0 +1,82 @@
+﻿capital = 89
+
+oob = "WUK_1918"
+
+set_research_slots = 3
+
+set_stability = 0.4
+set_war_support = 0.7
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	#early_fighter = 1
+}
+
+add_ideas = {
+	WUK_kost_lewyckyj_hos
+	WUK_wasyl_panejko
+	WUK_stepan_baran
+	WUK_longyn_cehelski
+	WUK_semen_horuk
+	WUK_hnat_stefaniw
+	WUK_petro_ivanovych_franko
+}
+
+set_convoys = 10
+
+set_politics = {	
+	ruling_party = auth_democrat
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    leninism = 0
+    marxism = 0
+    rev_socialism = 5
+    soc_democracy = 15
+    soc_liberal = 5
+    lib_conservatism = 10
+    soc_conservatism = 0
+    auth_democrat = 40
+    pat_autocrat = 20
+    fascism = 5
+}
+
+create_country_leader = {
+	name = "Yevhen Petrushevych"
+	desc = "POLITICS_JEHWEN_PETRUSHEVICH_DESC"
+	picture = "gfx/leaders/WUK/Portrait_WUK_Jehwen_Petrushevich.tga"
+	expire = "1953.3.1"
+	ideology = auth_democrat_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mykola Hnatovych Lahodynsky"
+	desc = "POLITICS_MYKOLA_LAHODYNSKY_DESC"
+	picture = "gfx/leaders/WUK/Portrait_WUK_Jehwen_Petrushevich.tga"
+	expire = "1953.3.1"
+	ideology = rev_socialism_subtype
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Dmytro Vitovsky"
+	picture = "Portrait_WUK_Dmytro_Vitovsky.tga"
+	traits = {  }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Hnat Stefaniv"
+	picture = "Portrait_WUK_Hnat_Stefaniv.tga"
+	traits = {  }
+	skill = 2
+}
+

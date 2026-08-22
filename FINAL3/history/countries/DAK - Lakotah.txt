@@ -1,0 +1,75 @@
+﻿capital = 390
+
+OOB = "DAK_1868"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1860.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 15
+	communism = 43
+	fascism = 5
+	neutrality = 37
+}
+
+
+set_convoys = 0
+
+set_stability = 0.43
+
+
+create_country_leader = {
+	name = "Carl Gunderson"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "CarlGundersonDemDAK_result.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+#create_field_marshal = {
+#	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+#skill = 2
+#
+#create_country_leader = {
+#	name = "William D. Pelley"
+#desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+#	picture = "WilliamDudleyPelley.dds"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#	traits = {
+#		dictator
+#	}
+#}
+#create_country_leader = {
+#	name = "John J. Ballam"
+#desc = "POLITICS_KING_ZOG_DESC"
+#	picture = "JohnJBallam_result.dds"
+#	expire = "1965.1.1"
+#	ideology = marxism
+#	traits = {
+#		
+#	}
+#}
+create_country_leader = {
+	name = "William H. McMaster"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "WilliamHMcMasterNeutDAK_result.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}

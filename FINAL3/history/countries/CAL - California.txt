@@ -1,0 +1,142 @@
+﻿capital = 378
+
+OOB = "CAL_1868"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1868.3.5"
+	election_frequency = 56
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 55
+	communism = 31
+	fascism = 13
+	neutrality = 1
+	monarchist = 0
+}
+
+set_convoys = 25
+
+set_stability = 0.75
+
+set_research_slots = 3
+
+
+create_country_leader = {
+	name = "Peter Hardeman Burnett"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "PeterBurnett.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+
+	}
+}
+
+#create_field_marshal = {
+#	name = "William C. Kibbe"	portrait_path = "gfx/leaders/CAL/WilliamKibbe.dds"
+#skill = 2
+
+create_country_leader = {
+	name = "William D. Pelley"
+desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "WilliamDudleyPelley.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		dictator
+	}
+}
+create_country_leader = {
+	name = "William Patterson"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "WilliamPattersonCommunist_result.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Emperor Norton I"
+#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "EmperorNorton_result.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "William C. Kibbe"
+	#id = 57
+	picture = "WilliamKibbe.dds"
+	#expire = "1903.1.1"
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "AndresPico"
+	picture = "AndresPico.dds"
+	traits = { armor_officer career_officer brilliant_strategist }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "John C. Fremont"
+	picture = "JohnCFremont.dds"
+	traits = { old_guard infantry_officer inflexible_strategist }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "William McCleaver"
+	picture = "WilliamMcCleave.dds"
+	traits = {  old_guard career_officer armor_officer }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "John Bidwell"
+	picture = "JohnBidwell.dds"
+	traits = {  old_guard career_officer armor_officer }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+
