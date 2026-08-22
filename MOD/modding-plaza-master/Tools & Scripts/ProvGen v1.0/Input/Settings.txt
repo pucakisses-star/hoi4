@@ -1,6 +1,0 @@
-Min_Land_Prov_Size:10
-Max_Land_Prov_Size:30
-Min_Sea_Prov_Size:40
-Max_Sea_Prov_Size:60
-Average_State_Size:3
-Mountain_Range_Size:60 (Smaller values are intensive)
