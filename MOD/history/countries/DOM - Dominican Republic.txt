@@ -81,16 +81,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Rafael Trujillo"
-	desc = "POLITICS_RAFAEL_TRUJILLO_DESC"
-	picture = "GFX_portrait_dominca_rafael_trujillo"
-	expire = "1965.1.1"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = DOM_rafael_trujillo
 
 1939.1.1 = {
 	set_politics = {
@@ -116,14 +107,5 @@ create_country_leader = {
 		elections_allowed = no
 	}
 
-	create_country_leader = {
-		name = "Jacinto Peynado"
-		desc = "POLITICS_JACINTO_PEYNADO_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-		expire = "1965.1.1"
-		ideology = fascism
-		traits = {
-			#
-		}
-	}
+	recruit_character = DOM_jacinto_peynado
 }

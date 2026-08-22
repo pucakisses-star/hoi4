@@ -75,14 +75,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Ahmad III ibn Abu Bakr"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "gfx/leaders/Africa/generic_leader_king_4.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = HRR_ahmad_iii_ibn_abu_bakr
 }

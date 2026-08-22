@@ -1,0 +1,17 @@
+characters = {
+	MYS_krishnaraja_wadiyar_iii = {
+		name = "Krishnaraja Wadiyar III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MYS/Portrait_India_Wadiyar_III.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_WADIYAR_DESC"
+			expire = "1868.3.27"
+			traits = {  }
+			id = -1
+		}
+	}
+}

@@ -94,11 +94,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Charlotte de Belgique"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_NHB_Charlotte_de_Belgique.dds"
-    expire = 1861.12.31
-    ideology = despotism
-  }
+  recruit_character = NHB_charlotte_de_belgique
 }

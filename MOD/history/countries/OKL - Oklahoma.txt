@@ -82,13 +82,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-	name = "Great Five Council"
-	desc = ""
-	picture = "Portrait_SIX_Sitting_Bull.dds"
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-	}
-}
+recruit_character = OKL_great_five_council
 }

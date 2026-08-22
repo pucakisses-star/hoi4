@@ -123,74 +123,17 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Aisin Gioro Puyi"
-	
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = rexism
-	traits = {
-		warrior_code
-	}
-}
+recruit_character = MAN_aisin_gioro_puyi
 
-create_country_leader = {
-	name = "Aisin Gioro Puyi"
-	
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = despotism
-	traits = {
-		warrior_code
-	}
-}
+recruit_character = MAN_aisin_gioro_puyi_2
 
-create_corps_commander = {
-	name = "Zhang Haipeng"
-	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = {  }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
+recruit_character = MAN_zhang_haipeng
 
-create_corps_commander = {
-	name = "Zhang Jinghui"
-	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { infantry_officer }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = MAN_zhang_jinghui
 
-create_corps_commander = {
-	name = "Aisin Gioro Xiqia"
-	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = { career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
-}
+recruit_character = MAN_aisin_gioro_xiqia
 
-create_corps_commander = {
-	name = "Yoshiko Kawashima"
-	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { cavalry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-	female = yes
-}
+recruit_character = MAN_yoshiko_kawashima
 
 1939.1.1 = {
 }

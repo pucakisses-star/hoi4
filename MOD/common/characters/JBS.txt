@@ -1,0 +1,32 @@
+characters = {
+	JBS_abdullah_bin_mitab = {
+		name = "Abdullah bin Mitab"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	JBS_mohammad_bin_talal = {
+		name = "Mohammad bin Talal"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	JBS_saud_bin_abdul_aziz_rashid = {
+		name = "Saud bin Abdul Aziz Rashid"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	JBS_abdullah = {
+		name = Abdullah
+		corps_commander = {
+			traits = {  }
+		}
+	}
+}

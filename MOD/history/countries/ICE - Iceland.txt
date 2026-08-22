@@ -126,46 +126,10 @@ set_politics = {
 	}
 }
 
-create_country_leader = {
-	name = "Sveinn Björnsson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = conserv
-	traits = {
-		#
-	}
-}
+recruit_character = ICE_sveinn_bjornsson
 
-create_country_leader = {
-	name = "Johannes Valurson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = ICE_johannes_valurson
 
-create_country_leader = {
-	name = "Haraldur Gudmunsson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = ICE_haraldur_gudmunsson
 
-create_country_leader = {
-	name = "Einar Olgeirsson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+recruit_character = ICE_einar_olgeirsson

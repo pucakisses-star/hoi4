@@ -1,0 +1,17 @@
+characters = {
+	FRK_eduard_ludwig_von_harnier = {
+		name = "Eduard Ludwig von Harnier"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRK/Portrait_FRK_Eduard_Ludwig_von_Harnier.dds"
+			}
+		}
+		country_leader = {
+			ideology = parlia_repub
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

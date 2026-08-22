@@ -93,15 +93,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Nicolaus Binder"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_HAM_Nicolaus_Binder.dds"
-  expire = "1900.1.1"
-  ideology = parlia_repub
-  traits = {
-
-  }
-}
+recruit_character = HAM_nicolaus_binder
 
 }

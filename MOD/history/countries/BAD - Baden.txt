@@ -94,58 +94,13 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Frederick I"
-  desc = "POLITICS_FREDERICK_I_DESC"
-  picture = "Portrait_BAD_Frederick_I.dds"
-  expire = "1907.1.1"
-  ideology = despotism
-  traits = {
+  recruit_character = BAD_frederick_i
 
-  }
-}
+recruit_character = BAD_alfred_ludwig_von_degenfeld
 
-create_corps_commander = {
-  name = "Alfred Ludwig von Degenfeld"
-  picture = "Portrait_BAD_Alfred_Ludwig_von_Degenfeld.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = BAD_karl_egon_iii_zu_furstenberg
 
-create_corps_commander = {
-  name = "Karl Egon III zu Furstenberg"
-  picture = "Portrait_BAD_Karl_Egon_III_zu_Furstenberg.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = BAD_karl_von_baden
 
-create_corps_commander = {
-  name = "Karl von Baden"
-  picture = "Portrait_BAD_Karl_von_Baden.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-  name = "Prince William of Baden"
-  picture = "Portrait_BAD_Prince_William_of_Baden.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = BAD_prince_william_of_baden
 }

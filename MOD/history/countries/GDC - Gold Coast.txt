@@ -113,34 +113,10 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
- create_country_leader = {
-	name = "Charles Ferdinand Pahud"
-	desc = ""
-	picture = "Portrait_INS_Charles_Ferdinand_Pahud.dds"
-	expire = "1953.3.1"
-	ideology = despotism
- }
+ recruit_character = GDC_charles_ferdinand_pahud
 	
   ### GENERALS 
- create_field_marshal = {
-  name = "Willem Boetje"
-  picture = ""
-  traits = { }
-  skill = 3
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
- }
+ recruit_character = GDC_willem_boetje
 
- create_corps_commander = {
-  name = "Anthonie Haga"
-  picture = ""
-  traits = { }
-  skill = 3
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
- }
+ recruit_character = GDC_anthonie_haga
 }

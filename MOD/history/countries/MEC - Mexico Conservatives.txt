@@ -90,39 +90,13 @@ set_popularities = {
   }
 
   # POLITICAL LEADERS
-  create_country_leader = {
-    name = "Ignacio Comonfort"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_MEC_Ignacio_Comonfort.dds"
-    expire = 1865.11.13
-    ideology = conserv_liberal
-	id = 18631
-}
+  recruit_character = MEC_ignacio_comonfort
 
-create_country_leader = {
-    name = "Felix Maria Zuloaga"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_MEC_Felix_Maria_Zuloaga.dds"
-    expire = 1898.2.11
-    ideology = conserv
-	id = 18632
-}
+recruit_character = MEC_felix_maria_zuloaga
 
-create_country_leader = {
-    name = "José Lazaro"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_MEC_Jose_Lazaro_de_la_Graza.dds"
-    expire = 1862.3.11
-    ideology = christian
-}
+recruit_character = MEC_jose_lazaro
 
-create_country_leader = {
-    name = "Miguel Miramón"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_MEC_Miguel_Miramon.dds"
-    expire = 1870.5.11
-    ideology = military_goverment
-}
+recruit_character = MEC_miguel_miramon
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

@@ -1,0 +1,58 @@
+characters = {
+	VER_peter_t_washburn = {
+		name = "Peter T. Washburn"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VER/Peter_T._Washburn.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			expire = "1880.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	VER_tikhon_nikolaevich_romanov = {
+		name = "Tikhon Nikolaevich Romanov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VER/Tikhon Nikolaevich Romanov_result.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			expire = "1965.1.1"
+			traits = { dictator }
+			id = -1
+		}
+	}
+	VER_louis_c_fraina = {
+		name = "Louis C. Fraina"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VER/LouisCFraina_Communism_result.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	VER_scott_cordelle_bone = {
+		name = "Scott Cordelle Bone"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VER/Scott_Cordelle_Bone_Democratic-Neutrality_result.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

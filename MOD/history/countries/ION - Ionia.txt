@@ -93,12 +93,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "John Young"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_ION_John_Young.dds"
-    expire = 1862.8.3
-    ideology = parlia_repub
-}
+recruit_character = ION_john_young
 
 }

@@ -111,14 +111,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Louis Adolphe Bonard"
-    desc = "POLITICS_GEORGE_V_DESC"
-    picture = "Portrait_CCH_Louis_Adolphe_Bonard.dds"
-    expire = "1867.5.31"
-    ideology = despotism
-    traits = {
-
-    }
-  }
+  recruit_character = CCH_louis_adolphe_bonard
 }

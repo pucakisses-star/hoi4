@@ -83,46 +83,11 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-	name = "Chief Joseph"
-	desc = ""
-	picture = "Portrait_NEZ_Chief_Joseph.dds"
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-	}
-}
+  recruit_character = NEZ_chief_joseph
 
-create_corps_commander = {
-  name = "Hallalhotsoot"
-  picture = "Portrait_NEZ_Hallalhotsoot.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = NEZ_hallalhotsoot
 
-create_corps_commander = {
-  name = "Old Chief Joseph"
-  picture = "Portrait_NEZ_Old_Chief_Joseph.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = NEZ_old_chief_joseph
 
-create_corps_commander = {
-  name = "White Bird"
-  picture = "Portrait_NEZ_White_Bird.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = NEZ_white_bird
 }

@@ -82,11 +82,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "Unorganized Colony"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_NWT_Unorganized_Colony.dds"
-    expire = 1861.12.31
-    ideology = despotism
-}
+recruit_character = NWT_unorganized_colony
 }

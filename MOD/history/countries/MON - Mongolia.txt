@@ -83,16 +83,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+recruit_character = MON_anandyn_amar
 
 1939.1.1 = {
 
@@ -125,14 +116,5 @@ create_country_leader = {
 		elections_allowed = no
 	}
 
-	create_country_leader = {
-		name = "Khorloogiin Choibalsan"
-		desc = "POLITICS_KHORLOOGIIN_CHOIBALSAN_DESC"
-		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-		expire = "1965.1.1"
-		ideology = stalinism
-		traits = {
-			#
-		}
-	}
+	recruit_character = MON_khorloogiin_choibalsan
 }

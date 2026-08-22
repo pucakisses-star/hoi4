@@ -1,0 +1,77 @@
+characters = {
+	SIC_zhang_xiumei = {
+		name = "Zhang Xiumei"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIC/Portrait_SIC_Zhang_Xiumei.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1891.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+	SIC_zhang_xiumei_2 = {
+		name = "Zhang Xiumei"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIC/Portrait_SIC_Zhang_Xiumei.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SIC_pan_xinjian = {
+		name = "Pan Xinjian"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SIC_luo_guangming = {
+		name = "Luo Guangming"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SIC_pan_mingjie = {
+		name = "Pan Mingjie"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SIC_liu_tiancheng = {
+		name = "Liu Tiancheng"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

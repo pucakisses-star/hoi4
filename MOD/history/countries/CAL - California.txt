@@ -41,16 +41,7 @@ set_stability = 0.75
 set_research_slots = 3
 
 
-create_country_leader = {
-	name = "Peter Hardeman Burnett"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "PeterBurnett.dds"
-	expire = "1965.1.1"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = CAL_peter_hardeman_burnett
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
@@ -66,26 +57,8 @@ create_country_leader = {
 #		dictator
 #	}
 #}
-create_country_leader = {
-	name = "William Patterson"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "WilliamPattersonCommunist_result.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Emperor Norton I"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "EmperorNorton_result.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+recruit_character = CAL_william_patterson
+recruit_character = CAL_emperor_norton_i
 
 if = {
 	limit = {

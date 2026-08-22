@@ -1,0 +1,47 @@
+characters = {
+	NFL_sir_alexander_bannerman = {
+		name = "Sir Alexander Bannerman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NFL/Portrait_NFL_Alexander_Bannerman.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1861.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+	NFL_charles_fox_bennett = {
+		name = "Charles Fox Bennett"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NFL/Portrait_NFL_Charles_Fox_Bennett.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberal
+			desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+			expire = "1865.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NFL_john_thomas_mullock = {
+		name = "John Thomas Mullock"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NFL/Portrait_NFL_John_Thomas_Mullock.dds"
+			}
+		}
+		country_leader = {
+			ideology = christian
+			desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+			expire = "1865.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

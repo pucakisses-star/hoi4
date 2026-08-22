@@ -1,0 +1,31 @@
+characters = {
+	DDR_jake_richter = {
+		name = "Jake Richter"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			expire = "1965.1.1"
+			traits = { political_dancer }
+			id = -1
+		}
+	}
+	DDR_wilhelm_pieck = {
+		name = "Wilhelm Pieck"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = "POLITICS_WILHELM_PIECK_DESC"
+			expire = "1965.1.1"
+			traits = { exiled }
+			id = -1
+		}
+	}
+}

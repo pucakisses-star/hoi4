@@ -1,0 +1,17 @@
+characters = {
+	TIC_ticino_parliment = {
+		name = "Ticino Parliment"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TIC/Portrait_TIC_Parliment.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_SanMan_DESC"
+			expire = "1947.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

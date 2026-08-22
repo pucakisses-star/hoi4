@@ -1,0 +1,64 @@
+characters = {
+	NSC_ferdinand_ii = {
+		name = "Ferdinand II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NSC/Portrait_NSC_Ferdinand_II.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1862.11.7"
+			traits = {  }
+			id = -1
+		}
+	}
+	NSC_giovan_luca_von_mechel = {
+		name = "Giovan Luca Von Mechel"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NSC/Portrait_NSC_Giovan_Luca_Von_Mechel.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NSC_carlo_filangieri = {
+		name = "Carlo Filangieri"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NSC/Portrait_NSC_Carlo_Filangieri.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NSC_vincenzo_polizzy = {
+		name = "Vincenzo Polizzy"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NSC/Portrait_NSC_Vincenzo_Polizzy.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

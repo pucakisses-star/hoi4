@@ -86,42 +86,10 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Hashim al-Atassi"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = LEB_hashim_al_atassi
 
-create_country_leader = {
-	name = "Pierre Gemayel"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Europe_Generic_fascism1.dds"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = LEB_pierre_gemayel
 
-create_country_leader = {
-	name = "Melick Yarad"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = LEB_melick_yarad
 
-create_country_leader = {
-	name = "Rami Sarraff"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = LEB_rami_sarraff

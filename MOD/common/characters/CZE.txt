@@ -1,0 +1,111 @@
+characters = {
+	CZE_edvard_benes = {
+		name = "Edvard Beneš"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CZE/Portrait_Czech_Edvard_Benes.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_EDVARD_BENES_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CZE_jaroslav_krejci = {
+		name = "Jaroslav Krejčí"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CZE/Portrait_Czech_Jaroslav_Krejci.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			desc = "POLITICS_JAROSLAV_KREJCI_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CZE_klement_gottwald = {
+		name = "Klement Gottwald"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CZE/Portrait_Czech_Klement_Gottwald.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CZE_vojtech_luza = {
+		name = "Vojtěch Luža"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CZE/GFX_Portrait_czechoslovakia_vojtech_luza"
+			}
+		}
+		field_marshal = {
+			traits = { fast_planner offensive_doctrine }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	CZE_josef_snejdarek = {
+		name = "Josef Šnejdárek"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CZE/GFX_Portrait_czechoslovakia_josef_snejdarek"
+			}
+		}
+		field_marshal = {
+			traits = { thorough_planner defensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	CZE_richard_tesarik = {
+		name = "Richard Tesařík"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CZE/GFX_Portrait_czechoslovakia_richard_tesarik"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CZE_sergej_vojcechovsky = {
+		name = "Sergej Vojcechovský"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CZE/GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

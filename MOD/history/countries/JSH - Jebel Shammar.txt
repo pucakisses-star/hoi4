@@ -91,11 +91,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Talal bin 'Abdullah"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "gfx/leaders/Arabia/generic_leader_sultan_2.dds"
-    expire = 1891.12.31
-    ideology = despotism
-}
+  recruit_character = JSH_talal_bin_abdullah
 }

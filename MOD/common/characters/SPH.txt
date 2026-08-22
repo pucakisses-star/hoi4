@@ -1,0 +1,17 @@
+characters = {
+	SPH_fernando_norzagaray_y_escudero = {
+		name = "Fernándo Norzagaray y Escudero"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPH/Portrait_SPH_Fernando_Norzagaray_y_Escudero.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

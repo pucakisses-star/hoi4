@@ -1,0 +1,32 @@
+characters = {
+	PHI_manuel_luis_quezon = {
+		name = "Manuel Luis Quezón"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	PHI_pedro_p_baguisa = {
+		name = "Pedro P. Baguisa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_PEDRO_BAGUISA_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

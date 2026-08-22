@@ -112,15 +112,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
   
-  create_country_leader = {
-	  name = "Fernándo Norzagaray y Escudero"
-	  desc = "POLITICS_GEORGE_V_DESC"
-	  picture = "Portrait_SPH_Fernando_Norzagaray_y_Escudero.dds"
-	  expire = "1900.1.1"
-	  ideology = despotism
-	  traits = {
-
-	  }
-	}
+  recruit_character = SPH_fernando_norzagaray_y_escudero
 
 }

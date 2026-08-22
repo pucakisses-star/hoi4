@@ -101,14 +101,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Uthram Thirunal Marthanda Varma"
-    desc = "POLITICS_VARMA_DESC"
-    picture = "Portrait_India_Varma.dds"
-    expire = "1860.8.18"
-    ideology = despotism
-    traits = {
-
-    }
-  }
+  recruit_character = TRA_uthram_thirunal_marthanda_varma
 }

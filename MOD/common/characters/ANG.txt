@@ -1,0 +1,16 @@
+characters = {
+	ANG_jonas_lote = {
+		name = "Jonas Lote"
+		portraits = {
+			civilian = {
+				large = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

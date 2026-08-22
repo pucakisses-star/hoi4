@@ -1,0 +1,39 @@
+characters = {
+	OUD_berjis_qadr = {
+		name = "Berjis Qadr"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OUD/Portrait_OUD_Berjis_Qadr.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_BERJIS_DESC"
+			expire = "1858.3.3"
+			traits = {  }
+			id = -1
+		}
+	}
+	OUD_nana_sahib = {
+		name = "Nana Sahib"
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	OUD_kunwar_singh = {
+		name = "Kunwar Singh"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

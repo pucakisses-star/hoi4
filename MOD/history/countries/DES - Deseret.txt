@@ -44,16 +44,7 @@ set_stability = 0.71
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 #skill = 2
 #
-create_country_leader = {
-	name = "Brigham Young"
-#desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "Portrait_DES_Brigham_Young.dds"
-	expire = "1888.1.1"
-	ideology = fascism
-	traits = {
-		dictator
-	}
-}
+recruit_character = DES_brigham_young
 #create_country_leader = {
 #	name = "John J. Ballam"
 #desc = "POLITICS_KING_ZOG_DESC"
@@ -64,13 +55,4 @@ create_country_leader = {
 #		
 #	}
 #}
-create_country_leader = {
-	name = "Heber J. Grant"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "HeberJGrantDES_result.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+recruit_character = DES_heber_j_grant

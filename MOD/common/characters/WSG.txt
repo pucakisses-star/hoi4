@@ -1,0 +1,17 @@
+characters = {
+	WSG_garaad_aul = {
+		name = "Garaad Aul"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Arabia/generic_leader_sultan_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GARAAD_AUL_DESC"
+			expire = "1870.5.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

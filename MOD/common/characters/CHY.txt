@@ -1,0 +1,48 @@
+characters = {
+	CHY_morning_star = {
+		name = "Morning Star"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHY/Portrait_CHY_Morning_Star.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CHY_little_wolf = {
+		name = "Little Wolf"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHY/Portrait_CHY_Little_Wolf.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CHY_black_kettle = {
+		name = "Black Kettle"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHY/Portrait_CHY_Black_Kettle.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

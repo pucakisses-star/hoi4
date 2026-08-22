@@ -1,0 +1,273 @@
+characters = {
+	QIN_zaifeng = {
+		name = Zaifeng
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	QIN_puwei = {
+		name = Puwei
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	QIN_sun_wen = {
+		name = "Sun Wen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC_sun_wen.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "PRC_sun_wen_DESC"
+			expire = "1935.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	QIN_xuantong_emperor = {
+		name = "Xuantong Emperor"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	QIN_zhang_xun = {
+		name = "Zhang Xun"
+		portraits = {
+			army = {
+				large = "gfx/hoi4tgw_portraits/QIN/army_generals/QIN_zhang_xun.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trickster }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	QIN_feng_guozhang = {
+		name = "Feng Guozhang"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_wang_shizhen = {
+		name = "Wang Shizhen"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_duan_qirui = {
+		name = "Duan Qirui"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_liangbi = {
+		name = Liangbi
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_tieliang = {
+		name = Tieliang
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_he_zonglian = {
+		name = "He Zonglian"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_wu_fengling = {
+		name = "Wu Fengling"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_zhang_shaozeng = {
+		name = "Zhang Shaozeng"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_liu_guangcai = {
+		name = "Liu Guangcai"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_cao_zhizhong = {
+		name = "Cao Zhizhong"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_hong_yongan = {
+		name = "Hong Yongan"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_sun_daoren = {
+		name = "Sun Daoren"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_long_jiguang = {
+		name = "Long Jiguang"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_zhu_qinglan = {
+		name = "Zhu Qinglan"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_zhong_lintong = {
+		name = "Zhong Lintong"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_yuan_dahua = {
+		name = "Yuan Dahua"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_shengyu = {
+		name = Shengyu
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_zhao_erfeng = {
+		name = "Zhao Erfeng"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_zaitao = {
+		name = Zaitao
+		field_marshal = {
+			traits = {  }
+		}
+	}
+	QIN_zaifeng_2 = {
+		name = Zaifeng
+		field_marshal = {
+			traits = {  }
+		}
+	}
+	QIN_yinchang = {
+		name = Yinchang
+		field_marshal = {
+			traits = {  }
+		}
+	}
+	QIN_jin_zhan = {
+		name = "Jin Zhan"
+		field_marshal = {
+			traits = {  }
+		}
+	}
+	QIN_yuan_shikai = {
+		name = "Yuan Shikai"
+		field_marshal = {
+			traits = {  }
+		}
+	}
+	QIN_feng_guozhang_2 = {
+		name = "Feng Guozhang"
+		field_marshal = {
+			traits = {  }
+		}
+	}
+	QIN_duan_qirui_2 = {
+		name = "Duan Qirui"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_yang_zengxin = {
+		name = "Yang Zengxin"
+		corps_commander = {
+			traits = {  }
+		}
+	}
+	QIN_sa_zhenbing = {
+		name = "Sa Zhenbing"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_li_zhun = {
+		name = "Li Zhun"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_zaixun = {
+		name = Zaixun
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_cheng_biguang = {
+		name = "Cheng Biguang"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_shen_shoukun = {
+		name = "Shen Shoukun"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_xichang = {
+		name = Xichang
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_huang_zhongying = {
+		name = "Huang Zhongying"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_rongxu = {
+		name = Rongxu
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_liu_guanxiong = {
+		name = "Liu Guanxiong"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	QIN_li_dingxin = {
+		name = "Li Dingxin"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+}

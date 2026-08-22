@@ -1,0 +1,16 @@
+characters = {
+	QNL_robert_herbert = {
+		name = "Robert Herbert"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/QNL/Portrait_QNL_Robert_Herbert.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_TEMP_DESC"
+			traits = {  }
+			id = -1
+		}
+	}
+}

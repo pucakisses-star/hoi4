@@ -69,16 +69,7 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Woldemichael Solomon"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "gfx/leaders/Africa/generic_leader_king_4.dds"
-  expire = "1889.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = MED_woldemichael_solomon
 
 
 }

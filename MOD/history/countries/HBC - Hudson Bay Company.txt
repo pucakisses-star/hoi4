@@ -112,12 +112,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "John Shepherd"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_HBC_John_Shepherd.dds"
-    expire = 1861.12.31
-    ideology = despotism
-}
+recruit_character = HBC_john_shepherd
 
 }

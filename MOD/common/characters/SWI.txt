@@ -1,0 +1,78 @@
+characters = {
+	SWI_federal_council = {
+		name = "Federal Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWI/Portrait_Switzerland_Federal_council.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SWI_ernest_beuin = {
+		name = "Ernest Béuin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_ERNST_BEGUIN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SWI_dr_max_leo_keller = {
+		name = "Dr. Max Leo Keller"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			desc = "POLITICS_MAX_LEO_KELLER_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SWI_fritz_platten = {
+		name = "Fritz Platten"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_FRITZ_PLATTEN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SWI_henri_guisan = {
+		name = "Henri Guisan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

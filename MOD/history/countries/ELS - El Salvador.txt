@@ -80,16 +80,7 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Maximiliano Hernández Martínez"
-	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
-	picture = "GFX_portrait_el_salvador_maximiliano_hernandez_martinez"
-	expire = "1965.1.1"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = ELS_maximiliano_hernandez_martinez
 
 1939.1.1 = {
 	set_politics = {

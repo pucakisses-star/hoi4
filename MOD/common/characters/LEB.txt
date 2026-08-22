@@ -1,0 +1,54 @@
+characters = {
+	LEB_hashim_al_atassi = {
+		name = "Hashim al-Atassi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			traits = {  }
+			id = -1
+		}
+	}
+	LEB_pierre_gemayel = {
+		name = "Pierre Gemayel"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/Portrait_Europe_Generic_fascism1.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			traits = {  }
+			id = -1
+		}
+	}
+	LEB_melick_yarad = {
+		name = "Melick Yarad"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	LEB_rami_sarraff = {
+		name = "Rami Sarraff"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			id = -1
+		}
+	}
+}

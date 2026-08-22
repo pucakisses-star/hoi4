@@ -50,27 +50,9 @@ set_politics = {
 	}
 }
 
-create_country_leader = {
-	name = "Noe Zhordania"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conserv_liberal
-	traits = {
-		
-	}
-}
+recruit_character = GEO_noe_zhordania
 
-create_country_leader = {
-	name = "Kandid Charkviani"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
+recruit_character = GEO_kandid_charkviani
 
 #couldnt find anything else, the commies simply forced everyone else into exile
 

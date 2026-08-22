@@ -93,26 +93,8 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Albert Blanc"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_SAV_Albert_Blanc.dds"
-  expire = "1900.1.1"
-  ideology = conserv
-  traits = {
+recruit_character = SAV_albert_blanc
 
-  }
-}
-
-create_country_leader = {
-  name = "Francois Buloz"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_SAV_Francois_Buloz.dds"
-  expire = "1900.1.1"
-  ideology = conserv_liberal
-  traits = {
-
-  }
-}
+recruit_character = SAV_francois_buloz
 
 }

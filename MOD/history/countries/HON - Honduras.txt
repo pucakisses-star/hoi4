@@ -82,16 +82,7 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Tiburcio Carías Andino"
-	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
-	picture = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
-	expire = "1965.1.1"
-	ideology = conserv
-	traits = {
-		#
-	}
-}
+recruit_character = HON_tiburcio_carias_andino
 
 1939.1.1 = {
 	set_politics = {

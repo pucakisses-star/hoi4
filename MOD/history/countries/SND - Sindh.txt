@@ -82,14 +82,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Nasir Khan Talpur"
-    desc = "POLITICS_Randhir_DESC"
-    picture = "Portrait_SND_Nasir_Khan_Talpur.dds"
-    expire = "1870.4.2"
-    ideology = despotism
-    traits = {
-
-    }
-  }
+  recruit_character = SND_nasir_khan_talpur
 }

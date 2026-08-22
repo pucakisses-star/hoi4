@@ -72,11 +72,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Ahmad al-Raffa ibn Muhammad Guma"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "gfx/leaders/Arabia/generic_leader_sultan_2.dds"
-    expire = 1891.12.31
-    ideology = despotism
-  }
+  recruit_character = TUG_ahmad_al_raffa_ibn_muhammad_guma
 }

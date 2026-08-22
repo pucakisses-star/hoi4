@@ -1,0 +1,17 @@
+characters = {
+	MED_woldemichael_solomon = {
+		name = "Woldemichael Solomon"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/generic_leader_king_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1889.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

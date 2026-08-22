@@ -75,16 +75,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Jamphel Yeshe Gyaltsen"
-	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
-	picture = "Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = TIB_jamphel_yeshe_gyaltsen
 
 1939.1.1 = {
 	set_politics = {

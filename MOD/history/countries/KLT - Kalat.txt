@@ -80,11 +80,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Khudadad Khan Baloch"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_KLT_Khudadad_Khan_Baloch.dds"
-    expire = 1891.12.31
-    ideology = despotism
-}
+  recruit_character = KLT_khudadad_khan_baloch
 }

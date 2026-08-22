@@ -1,0 +1,16 @@
+characters = {
+	MZB_eduardo_tsonga = {
+		name = "Eduardo Tsonga"
+		portraits = {
+			civilian = {
+				large = "gfx//leaders//Africa//Portrait_Africa_Generic_land_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

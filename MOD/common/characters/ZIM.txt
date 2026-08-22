@@ -1,0 +1,16 @@
+characters = {
+	ZIM_marcus_james_hugins = {
+		name = "Marcus James Hugins"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1965.1.1"
+			traits = { prince_of_terror }
+			id = -1
+		}
+	}
+}

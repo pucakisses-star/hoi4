@@ -68,34 +68,9 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Berjis Qadr"
-  desc = "POLITICS_BERJIS_DESC"
-  picture = "Portrait_OUD_Berjis_Qadr.dds"
-  expire = "1858.3.3"
-  ideology = despotism
-  traits = {
+  recruit_character = OUD_berjis_qadr
 
-  }
-}
+recruit_character = OUD_nana_sahib
 
-create_corps_commander = {
-  name = "Nana Sahib"
-  traits = { }
-  skill = 2
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-  name = "Kunwar Singh"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = OUD_kunwar_singh
 }

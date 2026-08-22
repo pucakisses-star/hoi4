@@ -1,0 +1,110 @@
+characters = {
+	SRS_bahadur_shah_ii = {
+		name = "Bahadur Shah II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRS/Portrait_SRS_Bahadur_Shah_II.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_BAHADUR_DESC"
+			expire = "1862.11.7"
+			traits = {  }
+			id = -1
+		}
+	}
+	SRS_rani_of_jhansi = {
+		name = "Rani of Jhansi"
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SRS_mirza_mughal = {
+		name = "Mirza Mughal"
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SRS_bahadur_shah_ii_2 = {
+		name = "Bahadur Shah II"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRS/Portrait_SRS_Bahadur_Shah_II.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SRS_bakht_khan = {
+		name = "Bakht Khan"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SRS_kunwar_singh = {
+		name = "Kunwar Singh"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SRS_dhan_singh_gurjar = {
+		name = "Dhan Singh Gurjar"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SRS_kalu_singh_mahara = {
+		name = "Kalu Singh Mahara"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SRS_rao_tula_ram = {
+		name = "Rao Tula Ram"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

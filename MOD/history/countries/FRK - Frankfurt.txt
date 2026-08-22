@@ -93,15 +93,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Eduard Ludwig von Harnier"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_FRK_Eduard_Ludwig_von_Harnier.dds"
-  expire = "1900.1.1"
-  ideology = parlia_repub
-  traits = {
-
-  }
-}
+recruit_character = FRK_eduard_ludwig_von_harnier
 
 }

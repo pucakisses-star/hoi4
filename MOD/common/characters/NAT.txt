@@ -1,0 +1,17 @@
+characters = {
+	NAT_john_scott = {
+		name = "John Scott"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Portrait_NAT_John_Scott.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

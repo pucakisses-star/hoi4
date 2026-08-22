@@ -1,0 +1,81 @@
+characters = {
+	OLD_peter_von_rossing = {
+		name = "Peter von Rossing"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/old/Portrait_OLD_Peter_von_Rossing.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_PETER_II_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	OLD_peter_von_gayl = {
+		name = "Peter von Gayl"
+		portraits = {
+			army = {
+				large = "gfx/leaders/old/Portrait_OLD_Peter_von_Gayl.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	OLD_peter_von_lehmann = {
+		name = "Peter von Lehmann"
+		portraits = {
+			army = {
+				large = "gfx/leaders/old/Portrait_OLD_Peter_von_Lehmann.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	OLD_wilhelm_von_ranzow = {
+		name = "Wilhelm von Ranzow"
+		portraits = {
+			army = {
+				large = "gfx/leaders/old/Portrait_OLD_Wilhelm_von_Ranzow.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	OLD_julius_von_egloffstein = {
+		name = "Julius von Egloffstein"
+		portraits = {
+			army = {
+				large = "gfx/leaders/old/Portrait_OLD_Julius_von_Egloffstein.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

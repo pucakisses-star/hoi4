@@ -1,0 +1,44 @@
+characters = {
+	UKR_kost_levytsky = {
+		name = "Kost Levytsky"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	UKR_nikita_sergeyevich_khrushchev = {
+		name = "Nikita Sergeyevich Khrushchev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	UKR_stepan_bandera = {
+		name = "Stepan Bandera"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	LIB_edwin_barclay = {
+		name = "Edwin Barclay"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_EDWIN_BARCLAY_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

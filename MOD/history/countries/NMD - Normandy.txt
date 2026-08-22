@@ -93,15 +93,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Georges Sorel"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_NMD_Georges_Sorel.dds"
-  expire = "1900.1.1"
-  ideology = leninism
-  traits = {
-
-  }
-}
+recruit_character = NMD_georges_sorel
 
 }

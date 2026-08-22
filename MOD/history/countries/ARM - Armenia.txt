@@ -54,37 +54,10 @@ set_politics = {
 	}
 }
 
-create_country_leader = {
-	name = "Drastamat Kanayan"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1953.3.1"
-	ideology = fascism
-	traits = {
-		
-	}
-}
+recruit_character = ARM_drastamat_kanayan
 
-create_country_leader = {
-	name = "Hovhannes Kajaznuni"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conserv
-	traits = {
-		
-	}
-}
+recruit_character = ARM_hovhannes_kajaznuni
 
-create_country_leader = {
-	name = "Grigor Harutyunyan"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
+recruit_character = ARM_grigor_harutyunyan
 
 

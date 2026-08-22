@@ -82,42 +82,10 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "David Ben-Gurion"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_david_ben_gurion
 
-create_country_leader = {
-	name = "Itzhak Gaster"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_itzhak_gaster
 
-create_country_leader = {
-	name = "Rudolf Szabó"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_rudolf_szabo
 
-create_country_leader = {
-	name = "Shmuel Mikunis"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_shmuel_mikunis

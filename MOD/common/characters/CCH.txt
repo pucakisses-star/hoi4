@@ -1,0 +1,17 @@
+characters = {
+	CCH_louis_adolphe_bonard = {
+		name = "Louis Adolphe Bonard"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CCH/Portrait_CCH_Louis_Adolphe_Bonard.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1867.5.31"
+			traits = {  }
+			id = -1
+		}
+	}
+}

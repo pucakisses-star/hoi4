@@ -1,0 +1,17 @@
+characters = {
+	OCC_gaston_cremieux = {
+		name = "Gaston Cremieux"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OCC/Portrait_OCC_Gaston_Cremieux.dds"
+			}
+		}
+		country_leader = {
+			ideology = anarchism_sub
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

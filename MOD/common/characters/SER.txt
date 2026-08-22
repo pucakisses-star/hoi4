@@ -1,0 +1,58 @@
+characters = {
+	SER_draza_mihailovic = {
+		name = "Draza Mihailovic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SER/Portrait_Yugoslavia_Prince_Paul.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SER_milan_nedic = {
+		name = "Milan Nedic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SER_peter_karadordevic = {
+		name = "Peter Karadordevic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SER_zivorad_jovanovic = {
+		name = "Zivorad Jovanovic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

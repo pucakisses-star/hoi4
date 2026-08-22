@@ -82,11 +82,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Ghalib ibn Muhsin al-Kathir"
-    picture = ""
-    expire = "1880.1.1"
-    ideology = despotism
-    traits = { }
-  }
+  recruit_character = KAT_ghalib_ibn_muhsin_al_kathir
 }

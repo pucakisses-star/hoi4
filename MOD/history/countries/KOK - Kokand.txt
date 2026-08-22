@@ -84,11 +84,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Muhammad Khudayar Khan"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_KOK_Muhammad_Khudayar_Khan.dds"
-    expire = 1891.12.31
-    ideology = despotism
-}
+  recruit_character = KOK_muhammad_khudayar_khan
 }

@@ -86,42 +86,10 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Hashim al-Atassi"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_navy_1.dds"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_hashim_al_atassi
 
-create_country_leader = {
-	name = "Antun Saadeh"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_3.dds"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_antun_saadeh
 
-create_country_leader = {
-	name = "Ghazi bin Faisal"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_2.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_ghazi_bin_faisal
 
-create_country_leader = {
-	name = "Khalid Bakdash"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_1.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_khalid_bakdash

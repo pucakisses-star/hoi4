@@ -87,16 +87,7 @@ set_politics = {
 }
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate
-create_country_leader = {
-	name = "Mohammed Zahir Shah"
-	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = AFG_mohammed_zahir_shah
 
 1939.1.1 = {
 	set_politics = {
@@ -127,13 +118,4 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
-	name = "Sardar Shah Wali Khan"
-	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
-	traits = { desert_fox }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
+recruit_character = AFG_sardar_shah_wali_khan

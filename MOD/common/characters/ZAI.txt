@@ -1,0 +1,17 @@
+characters = {
+	ZAI_leopold_ii = {
+		name = "Léopold II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BEL/Portrait_BEL_Leopold_II.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1870.11.9"
+			traits = {  }
+			id = -1
+		}
+	}
+}

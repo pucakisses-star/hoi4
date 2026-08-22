@@ -1,0 +1,121 @@
+characters = {
+	TAI_hong_xiuquan = {
+		name = "Hong Xiuquan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TAI/Portrait_TAI_Hong_Xiuquan.dds"
+			}
+		}
+		country_leader = {
+			ideology = other
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1891.12.31"
+			traits = { stout_defender }
+			id = -1
+		}
+	}
+	TAI_hong_xiuquan_2 = {
+		name = "Hong Xiuquan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TAI/Portrait_TAI_Hong_Xiuquan.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAI_yang_xiuqing = {
+		name = "Yang Xiuqing"
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAI_xiao_chaogui = {
+		name = "Xiao Chaogui"
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAI_feng_yunshan = {
+		name = "Feng Yunshan"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAI_wei_changhui = {
+		name = "Wei Changhui"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAI_shi_dakai = {
+		name = "Shi Dakai"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAI_li_xiucheng = {
+		name = "Li Xiucheng"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAI_li_shixian = {
+		name = "Li Shixian"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAI_chen_yucheng = {
+		name = "Chen Yucheng"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

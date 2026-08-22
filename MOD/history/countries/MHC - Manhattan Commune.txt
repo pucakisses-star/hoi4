@@ -90,35 +90,11 @@ set_popularities = {
   }
 
   # POLITICAL LEADERS
-  create_country_leader = {
-    name = "Josiah Warren"
-    desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-    picture = "Portrait_USA_Josiah_Warren.dds"
-    expire = "1947.1.1"
-    ideology = anarchism_sub
-  }
+  recruit_character = MHC_josiah_warren
 
-  create_country_leader = {
-    name = "Uriah Smith Stephens"
-    desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-    picture = ""
-    expire = "1947.1.1"
-    ideology = liberal_social
-  }
+  recruit_character = MHC_uriah_smith_stephens
 
-  create_country_leader = {
-    name = "Friedrich Sorge"
-    desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-    picture = ""
-    expire = "1947.1.1"
-    ideology = owensim
-  }
+  recruit_character = MHC_friedrich_sorge
 
-  create_country_leader = {
-    name = "Joseph Dietzgen"
-    desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-    picture = ""
-    expire = "1947.1.1"
-    ideology = marxism
-  }
+  recruit_character = MHC_joseph_dietzgen
 }

@@ -1,0 +1,33 @@
+characters = {
+	ALZ_al_zubayr_rahma_mansur = {
+		name = "Al-Zubayr Rahma Mansur"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALZ/Portrait_ALZ_Al_Zubayr_Rahma_Mansur.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	ALZ_al_zubayr_rahma_mansur_2 = {
+		name = "Al-Zubayr Rahma Mansur"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ALZ/Portrait_ALZ_Al_Zubayr_Rahma_Mansur.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

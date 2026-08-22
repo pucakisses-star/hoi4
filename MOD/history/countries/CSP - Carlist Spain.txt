@@ -77,45 +77,9 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Juan III"
-  desc = ""
-  picture = "Portrait_CSP_Juan_de_Borbon.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
+  recruit_character = CSP_juan_iii
 
-  }
-}
-
-create_corps_commander = {
-  name = "Juan Nepomuceno de Orbe"
-  picture = "Portrait_CSP_Juan_Nepomuceno_de_Orbe.dds"
-  traits = {trickster ambusher}
-  skill = 2
-  attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 4
-}
-create_corps_commander = {
-  name = "Antonio Dorregaray"
-  picture = "Portrait_CSP_Antonio_Dorregaray.dds"
-  traits = {scavenger ambusher}
-  skill = 3
-  attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-  name = "Pedro Balanzátegui "
-  picture = "Portrait_CSP_pedro_balanzategui.dds"
-  traits = { }
-  skill = 1
-  attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 2
-}
+recruit_character = CSP_juan_nepomuceno_de_orbe
+recruit_character = CSP_antonio_dorregaray
+recruit_character = CSP_pedro_balanzategui
 }

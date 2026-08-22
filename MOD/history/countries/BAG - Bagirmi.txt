@@ -86,14 +86,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "‘Abdul Qadir II al-Mahdi"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Abdul_Qadir_II.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = BAG_abdul_qadir_ii_al_mahdi
 }

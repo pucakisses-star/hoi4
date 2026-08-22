@@ -1,0 +1,250 @@
+characters = {
+	RUS_vladimir_lenin = {
+		name = "Vladimir Lenin"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	RUS_georgy_lvov = {
+		name = "Georgy Lvov"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	RUS_nikolay_ii = {
+		name = "Nikolay II"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	RUS_nikolay_ii_2 = {
+		name = "Nikolay II"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	RUS_nikolay_ii_3 = {
+		name = "Nikolay II"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	RUS_aleksandr_kolchak = {
+		name = "Aleksandr Kolchak"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	RUS_mikhail_alexeyev = {
+		name = "Mikhail Alexeyev"
+		field_marshal = {
+			traits = {  }
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	RUS_nikolay_rouzski = {
+		name = "Nikolay Rouzski"
+		field_marshal = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	RUS_vladimir_sukhomlinov = {
+		name = "Vladimir Sukhomlinov"
+		field_marshal = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	RUS_nikolay_baratov = {
+		name = "Nikolay Baratov"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	RUS_alexei_broussilov = {
+		name = "Alexeï Broussilov"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	RUS_anton_denikin = {
+		name = "Anton Denikin"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	RUS_alexei_evert = {
+		name = "Alexei Evert"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	RUS_nikolay_iudovich_ivanov = {
+		name = "Nikolay Iudovich Ivanov"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	RUS_alexey_kaledin = {
+		name = "Alexey Kaledin"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	RUS_aleksey_kuropatkin = {
+		name = "Aleksey Kuropatkin"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	RUS_platon_lechitsky = {
+		name = "Platon Lechitsky"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	RUS_pavel_karlovitch_rennenkampf = {
+		name = "Pavel Karlovitch Rennenkampf"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	RUS_aleksandr_samsonov = {
+		name = "Aleksandr Samsonov"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	RUS_vladimir_sakharov = {
+		name = "Vladimir Sakharov"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	RUS_dmitry_shcherbachev = {
+		name = "Dmitry Shcherbachev"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	RUS_piotr_wrangel = {
+		name = "Piotr Wrangel"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	RUS_nikolai_yudenich = {
+		name = "Nikolai Yudenich"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	RUS_aleksandr_kolchak_2 = {
+		name = "Aleksandr Kolchak"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	RUS_yevgeni_ivanovich_alekseyev = {
+		name = "Yevgeni Ivanovich Alekseyev"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	RUS_andrei_eberhardt = {
+		name = "Andrei Eberhardt"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	RUS_grand_duke_alexander = {
+		name = "Grand Duke Alexander"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	RUS_aleksandr_rusin = {
+		name = "Aleksandr Rusin"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+}

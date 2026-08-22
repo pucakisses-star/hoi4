@@ -1,0 +1,149 @@
+characters = {
+	NZL_michael_joseph_savage = {
+		name = "Michael Joseph Savage"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NZL/GFX_NZL_michael_joseph_savage"
+			}
+		}
+		country_leader = {
+			ideology = liberal_social
+			desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NZL_sidney_holland = {
+		name = "Sidney Holland"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NZL/GFX_NZL_sidney_holland"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_SIDNEY_HOLLAND_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NZL_john_ormond = {
+		name = "John Ormond"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NZL/GFX_NZL_john_ormond"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			desc = "POLITICS_JOHN_ORMOND_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NZL_elsie_farrelly = {
+		name = "Elsie Farrelly"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NZL/GFX_NZL_elsie_farrelly"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_JOHN_ORMOND_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NZL_peter_fraser = {
+		name = "Peter Fraser"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NZL/Portrait_NewZealand_Peter_Fraser.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_social
+			desc = "POLITICS_PETER_FRASER_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NZL_bernard_freyberg = {
+		name = "Bernard Freyberg"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NZL/GFX_NZL_bernard_freyberg"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	NZL_robert_row = {
+		name = "Robert Row"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NZL/GFX_NZL_robert_row"
+			}
+		}
+		corps_commander = {
+			traits = { naval_invader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	NZL_william_stevens = {
+		name = "William Stevens"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NZL/GFX_NZL_william_stevens"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	NZL_edmund_rupert_drummond = {
+		name = "Edmund Rupert Drummond"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/NZL/GFX_NZL_edmund_drummond"
+			}
+		}
+		navy_leader = {
+			traits = {  }
+			skill = 3
+		}
+	}
+	NZL_peter_phipps = {
+		name = "Peter Phipps"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/NZL/GFX_NZL_peter_phipps"
+			}
+		}
+		navy_leader = {
+			traits = {  }
+			skill = 3
+		}
+	}
+}

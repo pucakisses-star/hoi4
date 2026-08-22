@@ -78,16 +78,7 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Ricardo Jiménez Oreamuno"
-	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
-	picture = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
-	expire = "1965.1.1"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = COS_ricardo_jimenez_oreamuno
 
 1939.1.1 = {
 	set_politics = {
@@ -113,14 +104,5 @@ create_country_leader = {
 		elections_allowed = yes
 	}
 
-	create_country_leader = {
-		name = "León Cortés Castro"
-		desc = "POLITICS_LEON_CORTES_CASTRO_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
-		expire = "1965.1.1"
-		ideology = conserv_liberal
-		traits = {
-			#
-		}
-	}
+	recruit_character = COS_leon_cortes_castro
 }

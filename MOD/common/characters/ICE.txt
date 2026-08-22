@@ -1,0 +1,58 @@
+characters = {
+	ICE_sveinn_bjornsson = {
+		name = "Sveinn Björnsson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	ICE_johannes_valurson = {
+		name = "Johannes Valurson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	ICE_haraldur_gudmunsson = {
+		name = "Haraldur Gudmunsson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	ICE_einar_olgeirsson = {
+		name = "Einar Olgeirsson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

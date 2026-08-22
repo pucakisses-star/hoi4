@@ -94,14 +94,5 @@
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Charles-Paul Brossard de Corbigny"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_GBS_Charles_Paul_Brossard_de_Corbigny.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = GBS_charles_paul_brossard_de_corbigny
 }

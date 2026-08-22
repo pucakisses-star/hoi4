@@ -84,16 +84,7 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Gabriel Terra"
-	desc = "POLITICS_GABRIEL_TERRA_DESC"
-	picture = "GFX_portrait_uruguay_portrait_gabriel_terra"
-	expire = "1965.1.1"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = URG_gabriel_terra
 
 1939.1.1 = {
 	set_politics = {
@@ -119,14 +110,5 @@ create_country_leader = {
 		elections_allowed = yes
 	}
 
-	create_country_leader = {
-		name = "Alfredo Baldomir Ferrari"
-		desc = "POLITICS_ALFREDO_BALDOMIR_FERRARI_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = conserv_liberal
-		traits = {
-			#
-		}
-	}
+	recruit_character = URG_alfredo_baldomir_ferrari
 }

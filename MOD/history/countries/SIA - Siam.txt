@@ -95,16 +95,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Phraya Phahon"
-	desc = "POLITICS_PHRAYA_PHAHON_DESC"
-	picture = "Portrait_Siam_Phraya_Phahon.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = SIA_phraya_phahon
 
 1939.1.1 = {
 	set_politics = {
@@ -130,14 +121,5 @@ create_country_leader = {
 		elections_allowed = no
 	}
 
-	create_country_leader = {
-		name = "Plaek Phibunsongkhram"
-		desc = "POLITICS_PLAEK_PHIBUNSONGKHRAM_DESC"
-		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
-		expire = "1965.1.1"
-		ideology = fascism
-		traits = {
-			#
-		}
-	}
+	recruit_character = SIA_plaek_phibunsongkhram
 }

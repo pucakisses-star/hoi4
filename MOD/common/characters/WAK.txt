@@ -1,0 +1,17 @@
+characters = {
+	WAK_t_khwezi = {
+		name = "T'Khwezi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/generic_leader_king_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_Generic_DESC"
+			expire = "1892.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

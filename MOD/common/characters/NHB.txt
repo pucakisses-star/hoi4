@@ -1,0 +1,17 @@
+characters = {
+	NHB_charlotte_de_belgique = {
+		name = "Charlotte de Belgique"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NHB/Portrait_NHB_Charlotte_de_Belgique.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1861.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+}

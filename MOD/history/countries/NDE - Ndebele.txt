@@ -67,14 +67,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Mkhepula Soqaleni Sonyengele Cornelius I a Mabhôgô Mahlangu"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "gfx/leaders/Africa/generic_leader_tribe_1.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = NDE_mkhepula_soqaleni_sonyengele_cornelius_i_a_mabhogo_mahlangu
 }

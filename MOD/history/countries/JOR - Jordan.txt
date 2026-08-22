@@ -86,42 +86,10 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Hashim Kheir"
-	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_2.dds"
-	ideology = conserv
-	traits = {
-		#
-	}
-}
+recruit_character = JOR_hashim_kheir
 
-create_country_leader = {
-	name = "Saeed Ahmadi"
-	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = JOR_saeed_ahmadi
 
-create_country_leader = {
-	name = "Abdullah bin al-Hussein"
-	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_3.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = JOR_abdullah_bin_al_hussein
 
-create_country_leader = {
-	name = "Fu'ad Nassar"
-	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_navy_2.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = JOR_fu_ad_nassar

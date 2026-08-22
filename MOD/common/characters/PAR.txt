@@ -1,0 +1,32 @@
+characters = {
+	PAR_rafael_franco = {
+		name = "Rafael Franco"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAR/GFX_Portrait_paraguay_rafael_franco"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_RAFAEL_FRANCO_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	PAR_higinio_morinigo = {
+		name = "Higinio Morinigo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_HIGINIO_MORINIGO_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

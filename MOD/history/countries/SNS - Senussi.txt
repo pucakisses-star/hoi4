@@ -67,11 +67,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Muhammad ibn Ali as-Senussi"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_SNS_Muhammad_ibn Ali_as_Senussi.dds"
-    expire = 1891.12.31
-    ideology = islamist
-}
+  recruit_character = SNS_muhammad_ibn_ali_as_senussi
 }

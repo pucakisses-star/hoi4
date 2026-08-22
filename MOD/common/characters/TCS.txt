@@ -1,0 +1,17 @@
+characters = {
+	TCS_confederation_of_emirates = {
+		name = "Confederation of Emirates"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TCS/Portrait_TCS_Confederation_Emirates.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1891.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+}

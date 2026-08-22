@@ -81,35 +81,9 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-	name = "Morning Star"
-	desc = ""
-	picture = "Portrait_CHY_Morning_Star.dds"
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-	}
-}
+  recruit_character = CHY_morning_star
 
-create_corps_commander = {
-  name = "Little Wolf"
-  picture = "Portrait_CHY_Little_Wolf.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = CHY_little_wolf
 
-create_corps_commander = {
-  name = "Black Kettle"
-  picture = "Portrait_CHY_Black_Kettle.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = CHY_black_kettle
 }

@@ -79,16 +79,7 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Edwin Barclay"
-	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = conserv
-	traits = {
-		#
-	}
-}
+recruit_character = LIB_edwin_barclay
 
 1939.1.1 = {
 	set_politics = {

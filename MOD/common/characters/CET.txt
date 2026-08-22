@@ -1,0 +1,17 @@
+characters = {
+	CET_hadji_michail_giannaris = {
+		name = "Hadji Michail Giannaris"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CET/Portrait_CET_Hadjimichail_Giannaris.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "2000.09.10"
+			traits = {  }
+			id = -1
+		}
+	}
+}

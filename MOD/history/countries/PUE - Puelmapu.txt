@@ -1,12 +1,6 @@
 ﻿
 
-create_country_leader = {
-    name = "Unorganized Government"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_WLL_Mapuche_Unorganized.dds"
-    expire = 1891.12.31
-    ideology = despotism
-}
+recruit_character = PUE_unorganized_government
 
 set_technology = {
   infantry_weapons = 1
@@ -92,12 +86,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Manuel Namancura"
-    desc = "POLITICS_WALLMAPU_UNORGANIZED_GOVERNMENT_DESC"
-    picture = "Manuel_Namancura.dds"
-    expire = 1891.12.31
-    ideology = despotism
-    traits = { }
-  }
+  recruit_character = PUE_manuel_namancura
 }

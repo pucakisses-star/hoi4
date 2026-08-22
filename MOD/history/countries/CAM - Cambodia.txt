@@ -65,39 +65,12 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Pol Pot" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
-	expire = "1953.3.1"
-	ideology = anarchism_sub #insanity
-	traits = {
-		
-	}
-}
+recruit_character = CAM_pol_pot
 
 #non standard english alphabet character
-create_country_leader = {
-	name = "Sisowath Youtévong"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	expire = "1953.3.1"
-	ideology = conserv_liberal
-	traits = {
-		
-	}
-}
+recruit_character = CAM_sisowath_youtevong
 
-create_country_leader = {
-	name = "Norodom Sihanouk" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conserv
-	traits = {
-		
-	}
-}
+recruit_character = CAM_norodom_sihanouk
 
 #couldnt find anything historical on fascism
 

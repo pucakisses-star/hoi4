@@ -41,31 +41,13 @@ set_stability = 0.64
 set_research_slots = 3
 
 
-create_country_leader = {
-	name = "Sam Houston"
-#desc = ""
-	picture = "Portrait_TEX_Sam_Houston.dds"
-	expire = "1965.1.1"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = TEX_sam_houston
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 #skill = 2
 #
-create_country_leader = {
-	name = "Robert Minor"
-#desc = ""
-	picture = "RobertMinor(TEXCOMMUNISM)_result.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		dictator
-	}
-}
+recruit_character = TEX_robert_minor
 #create_country_leader = {
 #	name = ""
 #desc = ""
@@ -76,13 +58,4 @@ create_country_leader = {
 		
 	
 
-create_country_leader = {
-	name = "Royalist Texan Council"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "RoyalistCouncil_result.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+recruit_character = TEX_royalist_texan_council

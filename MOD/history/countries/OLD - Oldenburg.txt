@@ -95,59 +95,14 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Peter von Rossing"
-  desc = "POLITICS_PETER_II_DESC"
-  picture = "Portrait_OLD_Peter_von_Rossing.dds"
-  expire = "1900.1.1"
-  ideology = conserv
-  traits = {
+recruit_character = OLD_peter_von_rossing
 
-  }
-}
+recruit_character = OLD_peter_von_gayl
 
-create_corps_commander = {
-  name = "Peter von Gayl"
-  picture = "Portrait_OLD_Peter_von_Gayl.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = OLD_peter_von_lehmann
 
-create_corps_commander = {
-  name = "Peter von Lehmann"
-  picture = "Portrait_OLD_Peter_von_Lehmann.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = OLD_wilhelm_von_ranzow
 
-create_corps_commander = {
-  name = "Wilhelm von Ranzow"
-  picture = "Portrait_OLD_Wilhelm_von_Ranzow.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-  name = "Julius von Egloffstein"
-  picture = "Portrait_OLD_Julius_von_Egloffstein.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = OLD_julius_von_egloffstein
 
 }

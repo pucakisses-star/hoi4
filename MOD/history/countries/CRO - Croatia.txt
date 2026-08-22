@@ -111,13 +111,4 @@ set_politics = {
 	}
 }
 
-create_country_leader = {
-	name = "Ante Pavelic"
-	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
-	expire = "1965.1.1"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = CRO_ante_pavelic

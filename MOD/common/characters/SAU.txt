@@ -1,0 +1,17 @@
+characters = {
+	SAU_abdulaziz_ibn_saud = {
+		name = "Abdulaziz Ibn Saud"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_ABDULAZIZ_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

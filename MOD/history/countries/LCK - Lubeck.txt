@@ -94,15 +94,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Johann Joachim Friedrich Torkuhl"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_LCK_Johann_Joachim_Friedrich_Torkuhl.dds"
-  expire = "1900.1.1"
-  ideology = parlia_repub
-  traits = {
-
-  }
-}
+recruit_character = LCK_johann_joachim_friedrich_torkuhl
 
 }

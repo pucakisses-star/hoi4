@@ -1,0 +1,17 @@
+characters = {
+	KRG_mwezi_iv_gisabo = {
+		name = "Mwezi IV Gisabo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/generic_leader_tribe_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

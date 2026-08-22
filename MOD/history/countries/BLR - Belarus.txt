@@ -58,49 +58,13 @@ set_politics = {
 	}
 }
 
-create_country_leader = {
-    name = "Vasil Zacharka"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-    expire = "1965.1.1"
-    ideology = conserv_liberal
-    traits = {
-        #
-    }
-}
+recruit_character = BLR_vasil_zacharka
 
-create_country_leader = {
-    name = "Radasłaŭ Astroŭski"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-    expire = "1965.1.1"
-    ideology = fascism
-    traits = {
-        #
-    }
-}
+recruit_character = BLR_radasau_astrouski
 
-create_country_leader = {
-    name = "Panteleimon Ponomarenko"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-    expire = "1965.1.1"
-    ideology = stalinism
-    traits = {
-        #
-    }
-}
+recruit_character = BLR_panteleimon_ponomarenko
 
-create_country_leader = {
-    name = "Adam Stankievič"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-    expire = "1965.1.1"
-    ideology = liberal_social
-    traits = {
-        #
-    }
-}
+recruit_character = BLR_adam_stankievic
 
 
 

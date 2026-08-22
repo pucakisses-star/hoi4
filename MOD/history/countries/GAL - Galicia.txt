@@ -18,13 +18,7 @@ set_popularities = {
     fundamentalism = 0
 }
 
-  create_country_leader = {
-    name = "Luisa Fernanda"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portait_GAL_Luisa_Ferdinanda.dds"
-    expire = 1867.1.30
-    ideology = despotism
-}
+  recruit_character = GAL_luisa_fernanda
 
 
 

@@ -83,16 +83,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Prince Demchugdongrub"
-	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX_portrait_men_demchugdongrub"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-		spirit_of_genghis
-	}
-}
+recruit_character = MEN_prince_demchugdongrub
 
 1939.1.1 = {
 }

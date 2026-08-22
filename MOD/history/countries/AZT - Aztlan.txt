@@ -39,16 +39,7 @@ set_convoys = 0
 set_stability = 0.70
 
 
-create_country_leader = {
-	name = "Santa Anna"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "SantaAnna.dds"
-	expire = "1880.1.1"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = AZT_santa_anna
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
@@ -73,13 +64,4 @@ create_country_leader = {
 #		
 #	}
 #}
-create_country_leader = {
-	name = "Navajo-Arizonian Council"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "navajonationcouncilARIneut_result.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+recruit_character = AZT_navajo_arizonian_council

@@ -83,23 +83,8 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "Lan Dashun"
-    picture = "Portrait_SHU_Lan_Dashun.dds"
-    desc = "POLITICS_TEMP_DESC"
-    expire = 1891.12.31
-    ideology = despotism
-}
+recruit_character = SHU_lan_dashun
 
-create_corps_commander = {
-  name = "Lan Dashun"
-  picture = "Portrait_SHU_Lan_Dashun.dds"
-  traits = { }
-  skill = 2
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = SHU_lan_dashun_2
 add_manpower = 10000
 }

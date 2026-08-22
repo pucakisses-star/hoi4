@@ -89,35 +89,11 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Juan Falcon"
-    desc = "POLITICS_JOSE_TADEO_MONAGAS_DESC"
-    picture = "Portrait_USV_Juan_Falcon.dds"
-    expire = 1868.5.2
-    ideology = conserv_liberal
-    traits = { }
-  }
+  recruit_character = USV_juan_falcon
   
-   create_corps_commander = {
-    name = "Ezequiel Zamora"
-    picture = "Portrait_USV_Ezequiel_Zamora.dds"
-    traits = { urban_assault_specialist }
-    skill = 4
-    attack_skill = 5
-    defense_skill = 3
-    planning_skill = 1
-    logistics_skill = 4
-  }
+   recruit_character = USV_ezequiel_zamora
   
-   create_corps_commander = {
-    name = "Manuel Bruzual"
-    picture = "Portrait_USV_Manuel_Bruzual.dds"
-    skill = 3
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 3
-  }
+   recruit_character = USV_manuel_bruzual
  
   
   
@@ -143,23 +119,9 @@ set_popularities = {
 }
 
 1868.5.2 = {
-	create_country_leader = {
-		name = "José Ruperto Monagas"
-		desc = "POLITICS_JOSE_TADEO_MONAGAS_DESC"
-		picture = "Portrait_USV_Jose_Ruperto_Monagas.dds"
-		expire = 1870.4.26
-		ideology = conserv_liberal
-		traits = { }
-	}
+	recruit_character = USV_jose_ruperto_monagas
 }	
 
 1870.4.27 = {
-	create_country_leader = {
-		name = "José Ruperto Monagas"
-		desc = "POLITICS_JOSE_TADEO_MONAGAS_DESC"
-		picture = "Portrait_USV_Antonio_Guzman_Blanco.dds"
-		expire = 1884.4.26
-		ideology = market_liberal
-		traits = { }
-	}
+	recruit_character = USV_jose_ruperto_monagas_2
 }

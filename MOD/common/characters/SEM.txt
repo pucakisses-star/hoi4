@@ -1,0 +1,32 @@
+characters = {
+	SEM_billy_bowlegs = {
+		name = "Billy Bowlegs"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEM/Portrait_SEM_Billy_Bowlegs.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SEM_billy_bowlegs_2 = {
+		name = "Billy Bowlegs"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SEM/Portrait_SEM_Billy_Bowlegs.dds"
+			}
+		}
+		corps_commander = {
+			traits = { scavenger }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

@@ -82,14 +82,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Ranbir Singh"
-  desc = "POLITICS_RANBIR_DESC"
-  picture = "Portrait_KAS_Ranbir_Singh.dds"
-  expire = "1885.9.15"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = KAS_ranbir_singh
 }

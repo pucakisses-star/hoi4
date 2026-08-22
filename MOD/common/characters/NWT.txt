@@ -1,0 +1,17 @@
+characters = {
+	NWT_unorganized_colony = {
+		name = "Unorganized Colony"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NWT/Portrait_NWT_Unorganized_Colony.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1861.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+}

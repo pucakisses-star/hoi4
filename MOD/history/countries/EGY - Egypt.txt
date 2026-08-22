@@ -86,42 +86,10 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Muhammad Naguib"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
-	ideology = conserv_liberal
-	traits = {
-		#
-	}
-}
+recruit_character = EGY_muhammad_naguib
 
-create_country_leader = {
-	name = "Ahmed Husayn"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = EGY_ahmed_husayn
 
-create_country_leader = {
-	name = "Farouk Muhammad Ali"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = EGY_farouk_muhammad_ali
 
-create_country_leader = {
-	name = "Hosni al-Arabi"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = EGY_hosni_al_arabi

@@ -1,0 +1,17 @@
+characters = {
+	NZA_john_williamson = {
+		name = "John Williamson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NZA/Portrait_NZA_John_Williamson.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1875.02.16"
+			traits = {  }
+			id = -1
+		}
+	}
+}

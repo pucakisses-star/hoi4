@@ -1,0 +1,121 @@
+characters = {
+	MEX_lazaro_cardenas = {
+		name = "Lázaro Cárdenas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Lazaro_Cardenas.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_LAZARO_CARDENAS_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	MEX_salvador_abascal = {
+		name = "Salvador Abascal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			desc = "POLITICS_SALVADOR_ABASCAL_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	MEX_manuel_gomez_morin = {
+		name = "Manuel Gómez Morín"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_MANUEL_GOMEZ_MORIN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	MEX_dionisio_encina = {
+		name = "Dionisio Encina"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_DIONISIO_ENCINA_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	MEX_manuel_avila_camacho = {
+		name = "Manuel Avila Camacho"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_LAZARO_CARDENAS_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	MEX_luis_farell = {
+		name = "Luis Farell"
+		portraits = {
+			army = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	MEX_gildardo_magana = {
+		name = "Gildardo Magaña"
+		portraits = {
+			army = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+			}
+		}
+		corps_commander = {
+			traits = { desert_fox }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	MEX_paul_suarez = {
+		name = "Paul Suarez"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
+			}
+		}
+		navy_leader = {
+			traits = { superior_tactician }
+			skill = 3
+		}
+	}
+}

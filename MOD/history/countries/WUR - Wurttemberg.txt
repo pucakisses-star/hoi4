@@ -96,58 +96,15 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Wilhelm I"
-    desc = "POLITICS_WILHELM_I_WURTTEMBERG_DESC"
-    picture = "Portrait_WUR_Wilhelm_I_of_Wurttemberg.dds"
-    expire = "1864.1.1"
-    ideology = despotism
-    traits = { }
-  }
+  recruit_character = WUR_wilhelm_i
 
   # GENERALS
 
-  create_corps_commander = {
-    name = "Eduard von Kallee"
-    picture = "Portrait_WUR_Eduard_von_Kallee.dds"
-    traits = { }
-    skill = 3
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = WUR_eduard_von_kallee
 
-  create_corps_commander = {
-    name = "Ferdinand von Zeppelin"
-    picture = "Portrait_WUR_Ferdinand_von_Zeppelin.dds"
-    traits = { }
-    skill = 3
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = WUR_ferdinand_von_zeppelin
 
-  create_corps_commander = {
-    name = "Graf von Scheler"
-    picture = "Portrait_WUR_Graf_von_Scheler.dds"
-    traits = { }
-    skill = 3
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = WUR_graf_von_scheler
 
-  create_corps_commander = {
-    name = "Oskar von Hardegg"
-    picture = "Portrait_WUR_Oskar_von_Hardegg.dds"
-    traits = { }
-    skill = 3
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = WUR_oskar_von_hardegg
 }

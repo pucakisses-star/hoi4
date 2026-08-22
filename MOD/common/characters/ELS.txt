@@ -1,0 +1,17 @@
+characters = {
+	ELS_maximiliano_hernandez_martinez = {
+		name = "Maximiliano Hernández Martínez"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ELS/GFX_portrait_el_salvador_maximiliano_hernandez_martinez"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

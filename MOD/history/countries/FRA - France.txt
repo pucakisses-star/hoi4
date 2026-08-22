@@ -172,184 +172,42 @@ add_ideas = {
 #give_guarantee = CZE
 
 #Order matters here Daladier will start as leaders because added last
-create_country_leader = {
-	name = "Charles de Gaulle"
-	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
-	expire = "1965.1.1"
-	ideology = conserv
-	traits = {
-		
-	}
-}
+recruit_character = FRA_charles_de_gaulle
 
-create_country_leader = {
-	name = "Édouard Daladier"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
-	expire = "1965.1.1"
-	ideology = liberal_social
-	traits = {
-		stout_defender
-	}
-}
+recruit_character = FRA_edouard_daladier
 
-create_country_leader = {
-	name = "Maurice Thorez"
-	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "GFX_portrait_fra_maurice_thorez"
-	expire = "1965.1.1"
-	ideology = 	stalinism
-	traits = {
-		
-	}
-}
+recruit_character = FRA_maurice_thorez
 
-create_country_leader = {
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
-	expire = "1965.1.1"
-	ideology = fascism
-	traits = {
-		
-	}
-}
+recruit_character = FRA_philippe_petain
 
-create_corps_commander = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
-	traits = { trickster brilliant_strategist cavalry_officer war_hero }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
-}
+recruit_character = FRA_jean_de_lattre_de_tassigny
 
-create_corps_commander = {
-	name = "Alphonse Juin"
-	picture = "Portrait_France_Alphonse_Juin.dds"
-	traits = { armor_officer career_officer trait_cautious  }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 4
-}
+recruit_character = FRA_alphonse_juin
 
-create_field_marshal = {
-	name = "Maurice Gamelin"
-	picture = "Portrait_France_Maurice_Gamelin.dds"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-}
+recruit_character = FRA_maurice_gamelin
 
-create_field_marshal = {
-	name = "Maxime Weygand"
-	picture = "Portrait_France_Maxime_Weygand.dds"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = FRA_maxime_weygand
 
-create_field_marshal = {
-	name = "Alphonse Georges"
-	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
-	traits = { defensive_doctrine old_guard trait_cautious }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 2
-}
+recruit_character = FRA_alphonse_georges
 
-create_corps_commander = {
-	name = "Charles De Gaulle"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
-	traits = {  armor_officer harsh_leader media_personality }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = FRA_charles_de_gaulle_2
 
-create_corps_commander = {
-	name = "Philippe Leclerc"
-	picture = "portrait_france_philippe_leclerc.dds"
-	traits = {  armor_officer trait_reckless career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
+recruit_character = FRA_philippe_leclerc
 
-create_corps_commander = {
-	name = "Henri Giraud"
-	picture = "portrait_france_henri_giraud.dds"
-	traits = {  trickster trait_cautious career_officer infantry_officer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 2
-}
+recruit_character = FRA_henri_giraud
 
-create_corps_commander = {
-	name = "Charles Huntziger"
-	picture = "portrait_france_charles_huntziger.dds"
-	traits = { old_guard infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
+recruit_character = FRA_charles_huntziger
 
 
-create_navy_leader = {
-	name = "François Darlan"
-		picture = "Portrait_France_Francois_Darlan.dds"
-	traits = { superior_tactician }
-	skill = 3
-}
+recruit_character = FRA_francois_darlan
 
-create_navy_leader = {
-	name = "Jean-Marie Charles Abrial"
-		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
-	traits = { superior_tactician }
-	skill = 3
-}
+recruit_character = FRA_jean_marie_charles_abrial
 
-create_navy_leader = {
-	name = "Jean-Pierre Esteva"
-		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
-	traits = { seawolf }
-	skill = 2
-}
+recruit_character = FRA_jean_pierre_esteva
 
-create_navy_leader = {
-	name = "René-Émile Godfroy"
-		picture = "Portrait_France_Rene-Emile_Godfroy.dds"
-	traits = { old_guard_navy spotter }
-	skill = 2
-}
+recruit_character = FRA_rene_emile_godfroy
 
-create_navy_leader = {
-	name = "Jean de Laborde"
-	picture = "Portrait_France_Jean_de_Laborde.dds"
-	traits = {  }
-	skill = 1
-}
+recruit_character = FRA_jean_de_laborde
 
 ### Ship Variants ###
 

@@ -1,0 +1,17 @@
+characters = {
+	RWD_kigeli_iv_rwabugiri = {
+		name = "Kigeli IV Rwabugiri"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RWD/Portrait_RWD_Kigeli_IV_Rwabugiri.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

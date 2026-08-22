@@ -1,0 +1,17 @@
+characters = {
+	JOH_abu_bakar_of_johor = {
+		name = "Abu Bakar of Johor"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JOH/Portrait_JOH_Abu_Bakar_of_Johor.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

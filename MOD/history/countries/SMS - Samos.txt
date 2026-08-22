@@ -100,11 +100,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
   
-create_country_leader = {
-    name = "Ion Ghica"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_SMS_Ion_Ghica.dds"
-    expire = 1877.10.01
-    ideology = despotism
-}
+recruit_character = SMS_ion_ghica
 }

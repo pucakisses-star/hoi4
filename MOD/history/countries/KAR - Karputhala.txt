@@ -83,14 +83,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Randhir Singh"
-  desc = "POLITICS_Randhir_DESC"
-  picture = "Portrait_KAR_Randhir_Singh.dds"
-  expire = "1870.4.2"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = KAR_randhir_singh
 }

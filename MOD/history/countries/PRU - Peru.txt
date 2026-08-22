@@ -90,16 +90,7 @@ set_politics = {
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Óscar Benavides"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "GFX_Portrait_peru_oscar_benavides"
-	expire = "1965.1.1"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
+recruit_character = PRU_oscar_benavides
 
 1939.1.1 = {
 	set_politics = {
@@ -125,14 +116,5 @@ create_country_leader = {
 		elections_allowed = yes
 	}
 
-	create_country_leader = {
-		name = "Manuel Prado Ugarteche"
-		desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = fascism
-		traits = {
-			#
-		}
-	}
+	recruit_character = PRU_manuel_prado_ugarteche
 }

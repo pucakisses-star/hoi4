@@ -1,0 +1,17 @@
+characters = {
+	KAS_ranbir_singh = {
+		name = "Ranbir Singh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KAS/Portrait_KAS_Ranbir_Singh.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_RANBIR_DESC"
+			expire = "1885.9.15"
+			traits = {  }
+			id = -1
+		}
+	}
+}

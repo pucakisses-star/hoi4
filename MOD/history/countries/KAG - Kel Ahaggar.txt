@@ -66,11 +66,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "al-Hajj Ahmad"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "gfx/leaders/Arabia/generic_leader_sultan_1.dds"
-    expire = 1891.12.31
-    ideology = despotism
-}
+  recruit_character = KAG_al_hajj_ahmad
 }

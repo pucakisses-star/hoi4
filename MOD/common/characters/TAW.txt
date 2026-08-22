@@ -1,0 +1,77 @@
+characters = {
+	TAW_tai_chaochuen = {
+		name = "Tai Chaochuen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TAW/Portrait_TAW_Tai_Chaochuen.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1891.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+	TAW_tai_chaochuen_2 = {
+		name = "Tai Chaochuen"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TAW/Portrait_TAW_Tai_Chaochuen.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAW_lin_richeng = {
+		name = "Lin Richeng"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAW_hong_cong = {
+		name = "Hong Cong"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAW_chen_nong = {
+		name = "Chen Nong"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TAW_yan_ban = {
+		name = "Yan Ban"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

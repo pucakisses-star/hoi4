@@ -70,13 +70,4 @@ set_popularities = {
     fundamentalism = 0
 }
 
-create_country_leader = {
-  name = "Tribal Council"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "gfx/leaders/Africa/generic_leader_tribal_council.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+recruit_character = WYO_tribal_council

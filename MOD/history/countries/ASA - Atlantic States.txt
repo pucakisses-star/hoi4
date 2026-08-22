@@ -100,29 +100,9 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "John Bell"
-    desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-    picture = "Portrait_USA_John_Bell.dds"
-    expire = "1947.1.1"
-    ideology = reactionary
-  }
+  recruit_character = ASA_john_bell
 
-  create_country_leader = {
-    name = "Benjamin Wade"
-    desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-    picture = "Portrait_USA_Charles_Sumner.dds"
-    expire = "1947.1.1"
-    ideology = liberal_social
-  }
+  recruit_character = ASA_benjamin_wade
 
-  create_country_leader = {
-    name = "John C. Frémont"
-    desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-    picture = "Portrait_USA_John_C_Fremont.dds"
-    expire = "1886.5.2"
-    ideology = conserv_liberal
-    traits = {
-    }
-  }
+  recruit_character = ASA_john_c_fremont
 }
