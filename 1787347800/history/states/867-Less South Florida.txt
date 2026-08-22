@@ -1,0 +1,41 @@
+state={
+	id=867
+	name="Less South Florida"
+		manpower=1468210
+	state_category=city
+	history={
+		owner = FLF
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			air_base = 8
+			1572 = {
+				naval_base = 2
+
+			}
+			1843 = {
+				naval_base = 5
+
+			}
+			7388 = {
+				naval_base = 3
+
+			}
+			10352 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = FLF
+		victory_points = {
+			1843 5 
+		}
+
+	}
+	provinces={
+		1556 1572 1584 12353 12381 12439 
+	}
+	
+	buildings_max_level_factor=1.000
+}

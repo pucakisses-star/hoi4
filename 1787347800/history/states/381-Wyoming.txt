@@ -1,0 +1,24 @@
+
+state={
+	id=381
+	name="Southeast Wyoming"
+	manpower=225564
+	state_category=rural
+	history={
+		owner = WYW
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = WYW
+
+	}
+
+	provinces={
+		4723 10640 12561 
+	}
+
+	buildings_max_level_factor=1.000
+
+}

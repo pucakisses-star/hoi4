@@ -1,0 +1,26 @@
+state={
+	id=850
+	name="South Illinois"
+	manpower=7630651
+	state_category=megalopolis
+	history={
+		owner = ILI
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 11
+			air_base = 3
+
+		}
+		add_core_of = ILI
+		victory_points = {
+			9450 30.0 
+		}
+
+	}
+	provinces={
+		954 1604 7626 7831 12305 
+	}
+	
+	buildings_max_level_factor=1.000
+}

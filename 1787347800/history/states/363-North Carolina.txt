@@ -1,0 +1,21 @@
+state={
+	id=363
+	name="Piedmont"
+	manpower = 257491
+	
+	state_category = large_city
+
+	history={
+		owner = NCN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 3
+			}
+		add_core_of = NCN
+
+	}
+	provinces={
+		7045 7083 7138 10051 10081 10096 11783 12054 12445 
+	}
+}

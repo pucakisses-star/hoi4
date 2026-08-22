@@ -1,0 +1,28 @@
+state={
+	id=838
+	name="South Arkansas"
+	manpower=1854481
+	state_category=town
+	resources={
+		aluminium=14.000
+	}
+
+	history={
+		owner = ARA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = ARA
+		victory_points = {
+			12489 1 
+		}
+
+	}
+	provinces={
+		1503 7485 7543 10355 12458 
+	}
+	
+	buildings_max_level_factor=1.000
+}

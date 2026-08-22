@@ -1,0 +1,30 @@
+state={
+	id=817
+	name="Central Quebec"
+	manpower=318860
+	state_category=rural
+	resources={
+		aluminium=4.000
+	}
+
+	history={
+		owner = QCQ
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			3691 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = QCQ
+
+	}
+
+	provinces={
+		1657 4666 6740 7683 7807 7810 10176 10534 10715 12600 13162 13164 13181 13196 
+	}
+	
+	buildings_max_level_factor=1.000
+}

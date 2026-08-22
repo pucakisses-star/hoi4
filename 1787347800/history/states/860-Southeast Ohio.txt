@@ -1,0 +1,40 @@
+state={
+	id=860
+	name="Southeast Ohio"
+	manpower=6646694
+	state_category=metropolis
+	resources={
+		steel=28.000
+		aluminium=9.000
+	}
+
+	history={
+		owner = OHO
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 6
+
+		}
+		add_core_of = OHO
+		victory_points = {
+			6855 5 
+		}
+		victory_points = {
+			6890 10 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 7
+
+			}
+
+		}
+
+	}
+	provinces={
+		827 971 3829 6855 7528 9760 
+	}
+
+	buildings_max_level_factor=1.000
+}

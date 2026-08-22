@@ -1,0 +1,37 @@
+state={
+	id=879
+	name="District Columbia"
+	manpower=2118394
+	state_category=city
+	history={
+		owner = MDM
+		victory_points = {
+			3957 40 
+		}
+		victory_points = {
+			6984 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			dockyard = 1
+			air_base = 6
+			6984 = {
+				naval_base = 2
+
+			}
+			3957 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = MDM
+
+	}
+	provinces={
+		3957 
+	}
+	
+	buildings_max_level_factor=1.000
+}

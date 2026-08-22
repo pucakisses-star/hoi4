@@ -1,0 +1,19 @@
+state={
+	id=894
+	name="Oahu"
+	manpower = 953207
+	state_category = rural
+	history={
+		owner = HIH
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = HIH
+	}
+
+	provinces={
+		4180 
+	}
+	
+	buildings_max_level_factor=1.000
+}

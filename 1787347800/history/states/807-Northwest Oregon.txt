@@ -1,0 +1,30 @@
+state={
+	id=807
+	name="Northwest Oregon"
+	manpower=953785
+	state_category=town
+
+	history={
+		owner = ORO
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 6
+			12211 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = ORO
+		victory_points = {
+			3513 1 
+		}
+
+	}
+	provinces={
+		1414 3513 4274 4328 4380 7398 10183 12183 12211 
+	}
+
+	buildings_max_level_factor=1.000
+}

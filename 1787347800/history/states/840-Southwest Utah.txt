@@ -1,0 +1,22 @@
+state={
+	id=840
+	name="Southwest Utah"
+	manpower = 10000
+	
+	state_category = rural
+	
+
+	history={
+		owner = UTU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		add_core_of =UTU
+	}
+	provinces={
+		1740 10662 12573 12699 
+	}
+
+	buildings_max_level_factor=1.000
+}

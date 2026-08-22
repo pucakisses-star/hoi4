@@ -1,0 +1,26 @@
+state={
+	id=851
+	name="East Illinois"
+	manpower=7630651
+	state_category=megalopolis
+	history={
+		owner = ILI
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 11
+			air_base = 3
+
+		}
+		add_core_of = ILI
+		victory_points = {
+			9450 30.0 
+		}
+
+	}
+	provinces={
+		720 1655 4508 7611 9682 10461 12697 
+	}
+
+	buildings_max_level_factor=1.000
+}

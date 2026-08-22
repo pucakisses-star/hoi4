@@ -1,0 +1,41 @@
+
+state={
+	id=367
+	name="West Alabama"
+	manpower=2646247
+	state_category=city
+	history={
+		owner = ALA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			7480 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = ALA
+		victory_points = {
+			7480 1 
+		}
+		victory_points = {
+			12735 1 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1587 4622 4756 7422 10192 12735 12803 
+	}
+	
+	buildings_max_level_factor=1.000
+
+}

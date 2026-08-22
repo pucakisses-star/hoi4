@@ -1,0 +1,43 @@
+state={
+	id=790
+	name="Texas Coast"
+
+			state_category = metropolis
+	
+	resources={
+		oil=320 # was: 580
+		aluminium=50 # was: 96
+	}
+
+
+	history={
+		owner = TXT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 9
+			air_base = 3
+			10337 = {
+				naval_base = 3
+			}
+			6785 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = TXT
+		victory_points = {
+			10337 10
+		}
+		victory_points = {
+			3960 10 
+		}
+		victory_points = {
+			12782 1 
+		}
+
+	}
+	provinces={
+		1500 2042 4884 5061 6785 6987 10337 12369 12410 
+	}
+	manpower=5824712
+	buildings_max_level_factor=1.000
+}

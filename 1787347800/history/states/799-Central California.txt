@@ -1,0 +1,65 @@
+state={
+	id=799
+	name="Central California"
+	state_category=metropolis
+	manpower=5677248
+	resources={
+		oil=180.000
+		aluminium=8.000
+	}
+
+	history={
+		owner = CAC
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 6
+			dockyard = 2
+			air_base = 10
+			1562 = {
+				naval_base = 10
+
+			}
+			9671 = {
+				naval_base = 4
+
+			}
+			9814 = {
+				naval_base = 5
+
+			}
+			610 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CAC
+		victory_points = {
+			9814 30 
+		}
+		victory_points = {
+			1562 15 
+		}
+		victory_points = {
+			9671 25 
+		}
+		victory_points = {
+			9713 1 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 7
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		677 710 941 986 1432 1601 3677 3678 3784 3840 4518 6681 6694 6699 6861 6876 6881 7667 9637 9671 9713 9911 11658 11763 11859 11876 
+	}
+	
+	buildings_max_level_factor=1.000
+}

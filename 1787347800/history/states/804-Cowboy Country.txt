@@ -1,0 +1,27 @@
+state={
+	id=804
+	name="Cowboy Country"
+		state_category=rural
+	manpower=91057
+	resources={
+		steel=70.000
+		tungsten=32.000
+		aluminium=25.000
+	}
+
+	history={
+		owner = NVN
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = NVN
+
+	}
+
+	provinces={
+		1862 7756 7827 10591 
+	}
+
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,41 @@
+state={
+	id=866
+	name="Florida Panhandle"
+		manpower=1468210
+	state_category=city
+	history={
+		owner = FLF
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			air_base = 8
+			1572 = {
+				naval_base = 2
+
+			}
+			1843 = {
+				naval_base = 5
+
+			}
+			7388 = {
+				naval_base = 3
+
+			}
+			10352 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = FLF
+		victory_points = {
+			1843 5 
+		}
+
+	}
+	provinces={
+		10352 10380 10407 
+	}
+	
+	buildings_max_level_factor=1.000
+}

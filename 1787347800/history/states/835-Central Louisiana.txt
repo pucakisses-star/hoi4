@@ -1,0 +1,33 @@
+state={
+	id=835
+	name="Central Louisiana"
+		manpower=2101592
+	state_category=city
+	resources={
+		oil=44.000
+	}
+
+	history={
+		owner = LAL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 5
+			7552 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = LAL
+		victory_points = {
+			7552 10 
+		}
+
+	}
+	provinces={
+		1528 1643 7599 
+	}
+
+	buildings_max_level_factor=1.000
+}

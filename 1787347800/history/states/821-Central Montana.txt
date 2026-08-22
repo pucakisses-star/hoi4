@@ -1,0 +1,28 @@
+state={
+	id=821
+	name="Central Montana"
+	manpower=537605
+state_category=rural
+	resources={
+		tungsten=11.000
+	}
+
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = MTM
+		victory_points = {
+			4860 1 
+		}
+
+	}
+
+	provinces={
+		1851 1857 4741 4860 10593 11712 12572 12585 
+	}
+
+	buildings_max_level_factor=1.000
+}

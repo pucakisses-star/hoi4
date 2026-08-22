@@ -1,0 +1,36 @@
+state={
+	id=869
+	name="Georgia Coast"
+	manpower=2908504
+	state_category=city
+	history={
+		owner = GAG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 2
+			11975 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GAG
+		victory_points = {
+			12384 10 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+
+			}
+
+		}
+
+	}
+	provinces={
+		1433 1480 11975 
+	}
+	
+	buildings_max_level_factor=1.000
+}
