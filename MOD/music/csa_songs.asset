@@ -1,260 +1,249 @@
-
-#CSA MUSIC
-
-# MAIN THEME
-music = {
-	name = "maintheme"
-	file = "CSA_everybody's_dixie.ogg"
-	volume = 0.70
-}
-
-#General
+# Confederate music, recovered from 'important do not delete/music'.
+# Gated to the Confederacy in csa_songs.txt.
 
 music = {
-	name = "Arkansas Traveler"
+	name = "csa_arkansas_traveler"
 	file = "CSA_arkansas_traveler.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Battle Cry of Freedom"
+	name = "csa_battle_cry_of_freedom"
 	file = "CSA_battle_cry_of_freedom.ogg"
 	volume = 0.70
 }
+
 music = {
-	name = "Battle of Bull Run"
+	name = "csa_battle_of_bull_run"
 	file = "CSA_battle_of_bull_run.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Colonel Lou"
+	name = "csa_colonel_lou"
 	file = "CSA_colonel_lou.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Confederate Song"
+	name = "csa_confederate_song"
 	file = "CSA_confederate_song.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Cumberland Gap"
+	name = "csa_cumberland_gap"
 	file = "CSA_cumberland_gap.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Everybody's Dixie"
-	file = "CSA_everybody's_dixie.ogg"
+	name = "csa_everybody_s_dixie"
+	file = "CSA_everybodys_dixie.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Jackson's in the Valley"
+	name = "csa_jackson_s_in_the_valley"
 	file = "CSA_jacksons_in_the_valley.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Jine the Cavalry"
+	name = "csa_jine_the_cavalry"
 	file = "CSA_jine_the_cavalry.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Joe's Been A-Gittin' There"
+	name = "csa_joe_s_been_a_gittin_there"
 	file = "CSA_joes_been_gettin_there.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Johnny is Gone for a Soldier"
+	name = "csa_johnny_is_gone_for_a_soldier"
 	file = "CSA_johnny_is_gone_for_a_soldier.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Johnny Reb"
+	name = "csa_johnny_reb"
 	file = "CSA_johnny_reb.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Long Ago"
+	name = "csa_long_ago"
 	file = "CSA_long_ago.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Lorena"
+	name = "csa_lorena"
 	file = "CSA_lorena.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "March of the Southern Men"
+	name = "csa_march_of_the_southern_men"
 	file = "CSA_march_of_the_southern_men.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Oh I'm a Good Old Rebel"
-	file = "CSA_oh_i'm_a_good_old_rebel.ogg"
+	name = "csa_oh_i_m_a_good_old_rebel"
+	file = "CSA_oh_im_a_good_old_rebel.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Old Abe Lies Sick"
+	name = "csa_old_abe_lies_sick"
 	file = "CSA_old_abe_lies_sick.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Old Abe's Lament"
+	name = "csa_old_abe_s_lament"
 	file = "CSA_old_abes_lament.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "The Plains of Manassas"
+	name = "csa_the_plains_of_manassas"
 	file = "CSA_plains_of_manassas.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Richmond is a Hard Road to Travel"
+	name = "csa_richmond_is_a_hard_road_to_travel"
 	file = "CSA_richmond_is_a_hard_road_to_travel.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Riding a Raid"
+	name = "csa_riding_a_raid"
 	file = "CSA_riding_a_raid.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Soldiers Suit of Grey"
+	name = "csa_soldiers_suit_of_grey"
 	file = "CSA_soldiers_suit_of_grey.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Somebody's Darling"
+	name = "csa_somebody_s_darling"
 	file = "CSA_somebodys_darling.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Southern Soldier"
+	name = "csa_southern_soldier"
 	file = "CSA_southern_soldier.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Stonewall Jackson's Way"
-	file = "CSA_stonewall_jackson's_way.ogg"
+	name = "csa_stonewall_jackson_s_way"
+	file = "CSA_stonewall_jacksons_way.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Strike for the South"
+	name = "csa_strike_for_the_south"
 	file = "CSA_strike_for_the_south.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "The Bonnie Blue Flag"
+	name = "csa_the_bonnie_blue_flag"
 	file = "CSA_the_bonnie_blue_flag.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "The Kennesaw Line"
+	name = "csa_the_kennesaw_line"
 	file = "CSA_the_kennesaw_line.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "The Rebel Soldier"
+	name = "csa_the_rebel_soldier"
 	file = "CSA_the_rebel_soldier.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "The Reluctant Conscript"
+	name = "csa_the_reluctant_conscript"
 	file = "CSA_the_reluctant_conscript.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "The Upidee Song"
+	name = "csa_the_upidee_song"
 	file = "CSA_the_upidee_song.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Twas the Siege of Vicksburg"
+	name = "csa_twas_the_siege_of_vicksburg"
 	file = "CSA_twas_the_siege_of_vicksburg.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Wait for the Wagon"
+	name = "csa_wait_for_the_wagon"
 	file = "CSA_wait_for_the_wagon.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "We Conquer or Die"
+	name = "csa_we_conquer_or_die"
 	file = "CSA_we_conquer_or_die.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Yellow Rose of Texas"
+	name = "csa_yellow_rose_of_texas"
 	file = "CSA_yellow_rose_of_texas.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "You're Going to the War Willy Boy"
+	name = "csa_you_re_going_to_the_war_willy_boy"
 	file = "CSA_youre_going_to_the_war_willy.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Dixie"
+	name = "csa_dixie"
 	file = "CSA_dixie.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "Confederate Irish Brigade"
+	name = "csa_confederate_irish_brigade"
 	file = "CSA_confederate_irish_brigade.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "I Wish I Was in Dixie"
+	name = "csa_i_wish_i_was_in_dixie"
 	file = "CSA_i_wish_i_was_in_dixie.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "The Old Unreconstructed"
+	name = "csa_the_old_unreconstructed"
 	file = "CSA_the_old_unreconstructed.ogg"
 	volume = 0.70
 }
 
 music = {
-	name = "The Night They Drove Dixie Down"
+	name = "csa_the_night_they_drove_dixie_down"
 	file = "CSA_the_night_they_drove_dixie_down.ogg"
 	volume = 0.70
 }
-
-
-
 
