@@ -52,3 +52,29 @@ plus `descriptor.mod` and `thumbnail.png`.
 `descriptor.mod` currently declares `supported_version="1.16.*"`. Set it to the
 build actually installed. It is advisory - a mismatch only produces a launcher
 warning and does not stop the mod loading.
+
+## The outer .mod file is the one that matters
+
+Everything the launcher acts on - `path`, `supported_version`, and critically
+`replace_path` - is read from the **outer** `.mod` file beside the mod folder,
+not from `descriptor.mod` inside it. The inner copy exists for Steam Workshop
+packaging and is largely ignored for a local folder mod.
+
+This has already caught us once. `replace_path="common/on_actions"` was added to
+both `dsa.mod` and `MOD/descriptor.mod`, the mod was reinstalled, and the game
+loaded `mod/test.mod` - a hand-written outer descriptor that had neither line.
+The setting silently did nothing and the run was indistinguishable from the one
+before it, differing only in texture-load ordering.
+
+So: whatever your outer file is called, it needs to carry every line below.
+If yours is `test.mod`, edit that; using `dsa.mod` from this repository instead
+also works, as long as `path=` points at your folder.
+
+    version="1.3"
+    name="Divided States of America"
+    supported_version="1.19.*"
+    replace_path="common/on_actions"
+    path="<absolute path to the mod folder, forward slashes>"
+
+A missing `replace_path` produces no warning of any kind. The only way to tell
+it did not apply is that the errors it was meant to remove are all still there.
