@@ -578,4 +578,175 @@ ideologies = {
 
 	}
 
+
+	###########################################################################
+	# Vanilla-compatibility groups.
+	#
+	# This mod uses the ten-ideology Victorian set above. Base-game and DLC
+	# content references the four vanilla groups by name in roughly 211,000
+	# places, and with those groups absent every one of those references
+	# errors. These four exist purely so that content resolves; no country in
+	# this mod uses them, so they stay at zero popularity and never surface.
+	#
+	# Their sub-ideologies are deliberately named vanilla_* rather than reusing
+	# the vanilla names, because despotism, marxism, leninism, stalinism,
+	# nazism, falangism, rexism and anti_revisionism are already sub-ideologies
+	# of the Victorian groups and would collide.
+	###########################################################################
+
+	democratic = {
+
+		types = {
+			vanilla_democratic = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NEUTRAL_1"
+		}
+
+		color = { 0 0 255 }
+
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1
+			join_faction_tension = 1
+			lend_lease_tension = 1
+			send_volunteers_tension = 1
+			guarantee_tension = 1
+		}
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.75
+
+		ai_democratic = yes
+
+	}
+
+	communism = {
+
+		types = {
+			vanilla_communism = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NEUTRAL_1"
+		}
+
+		color = { 255 0 0 }
+
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1
+			join_faction_tension = 1
+			lend_lease_tension = 1
+			send_volunteers_tension = 1
+			guarantee_tension = 1
+		}
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.75
+
+		ai_communist = yes
+
+	}
+
+	fascism = {
+
+		types = {
+			vanilla_fascism = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NEUTRAL_1"
+		}
+
+		color = { 128 128 128 }
+
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1
+			join_faction_tension = 1
+			lend_lease_tension = 1
+			send_volunteers_tension = 1
+			guarantee_tension = 1
+		}
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.75
+
+		ai_fascist = yes
+
+	}
+
+	neutrality = {
+
+		types = {
+			vanilla_neutrality = {
+
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NEUTRAL_1"
+		}
+
+		color = { 100 100 100 }
+
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1
+			join_faction_tension = 1
+			lend_lease_tension = 1
+			send_volunteers_tension = 1
+			guarantee_tension = 1
+		}
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.75
+
+		ai_neutral = yes
+
+	}
 }
