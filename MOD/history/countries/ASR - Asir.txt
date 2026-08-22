@@ -14,7 +14,7 @@ set_convoys = 0
 create_country_leader={ name = "Muhammad ibn Ali al-Idrisi" desc=ASR_muhammad_ibn_ali_al_idrisi_DESC picture="gfx/leaders/ASR_muhammad_ibn_ali_al_idrisi.dds" expire="1935.1.1" ideology=despotism traits={  } }
 
 set_politics = {
-    ruling_party = neutrality
+    ruling_party = autocracy
     last_election = "1910.1.1"
     election_frequency = 48
     elections_allowed = no

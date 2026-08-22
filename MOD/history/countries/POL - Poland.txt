@@ -132,24 +132,24 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 18
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 15
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 2
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 65
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
@@ -159,24 +159,24 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 13
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 7
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 2
 			}
 			
-			neutrality = { 
+			autocracy = { 
 				popularity = 78
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1935.9.8"
 		election_frequency = 36
 		elections_allowed = no
@@ -188,7 +188,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = plutocracy
 	traits = {
 		#
 	}
@@ -199,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
 	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = plutocracy
 	traits = {
 		#
 	}
@@ -221,7 +221,7 @@ create_country_leader = {
 	desc = "POLITICS_WINCENTY_WITOS_DESC"
 	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}

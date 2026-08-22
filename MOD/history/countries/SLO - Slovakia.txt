@@ -62,20 +62,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 5
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 90
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 5
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = chauvinist_populism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -86,7 +86,7 @@ create_country_leader = {
 	desc = "POLITICS_JOZEF_TISO_DESC"
 	picture = "Portrait_Slovakia_Jozef_Tiso.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}

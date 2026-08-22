@@ -23,24 +23,24 @@ set_research_slots = 3
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 65
 		}
 
-		neutrality = { 
+		autocracy = { 
 			popularity = 20
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 5
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 10
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
@@ -51,7 +51,7 @@ create_country_leader = {
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}

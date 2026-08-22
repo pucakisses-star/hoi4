@@ -71,25 +71,25 @@ set_convoys = 15
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 20
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = {
+		autocracy = {
 			popularity = 80
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -110,21 +110,21 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 0
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 100
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = chauvinist_populism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -135,7 +135,7 @@ create_country_leader = {
 		desc = "POLITICS_PLAEK_PHIBUNSONGKHRAM_DESC"
 		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
 		expire = "1965.1.1"
-		ideology = fascism_ideology
+		ideology = fascism
 		traits = {
 			#
 		}

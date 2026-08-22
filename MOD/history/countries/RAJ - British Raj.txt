@@ -121,24 +121,24 @@ set_cosmetic_tag = RAJ_UK # British Raj
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 17
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 2
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 1
 		}
 
-		neutrality = {
+		autocracy = {
 			popularity = 80
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
@@ -183,7 +183,7 @@ create_country_leader = {
 	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
 	picture = "GFX_RAJ_pattabhi_sitaramayya"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_social
 	traits = {
 		
 	}

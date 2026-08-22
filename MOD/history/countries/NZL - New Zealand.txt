@@ -113,21 +113,21 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 100
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1935.11.27"
 	election_frequency = 36
 	elections_allowed = yes
@@ -138,7 +138,7 @@ create_country_leader = {
 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_social
 	traits = {
 		#
 	}
@@ -149,7 +149,7 @@ create_country_leader = {
 	desc = "POLITICS_SIDNEY_HOLLAND_DESC"
 	picture = "GFX_NZL_sidney_holland"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}
@@ -160,7 +160,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHN_ORMOND_DESC"
 	picture = "GFX_NZL_john_ormond"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}
@@ -183,21 +183,21 @@ set_convoys = 70
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 100
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1938.10.15"
 		election_frequency = 60
 		elections_allowed = yes
@@ -209,7 +209,7 @@ set_convoys = 70
 		desc = "POLITICS_PETER_FRASER_DESC"
 		picture = "Portrait_NewZealand_Peter_Fraser.dds"
 		expire = "1965.1.1"
-		ideology = socialism
+		ideology = liberal_social
 		traits = {
 			#
 		}

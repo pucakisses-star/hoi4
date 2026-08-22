@@ -93,25 +93,25 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 75
 		}
 
-		neutrality = {
+		autocracy = {
 			popularity  = 14
 		}
 
-		communism = {
+		vanguard_communism = {
 			popularity = 8
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 3
 		}
 		
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
@@ -121,25 +121,25 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
-				popularity = 85
+			centrism = { 
+				popularity = 83
 			}
 
-			neutrality = {
+			autocracy = {
 				popularity  = 12
 			}
 
-			communism = {
+			vanguard_communism = {
 				popularity = 4
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 1
 			}
 			
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1936.9.20"
 		election_frequency = 48
 		elections_allowed = yes
@@ -157,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_social
 	traits = {
 		#
 	}
@@ -190,7 +190,7 @@ create_country_leader = {
 	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}

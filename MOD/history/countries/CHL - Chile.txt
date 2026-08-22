@@ -78,21 +78,21 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 98
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 2
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1932.10.30"
 	election_frequency = 72  #but 4 years after this one in 1938.
 	elections_allowed = yes
@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
 	picture = "GFX_Portrait_chile_arturo_alessandri"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}
@@ -113,21 +113,21 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 100
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1938.10.25"
 		election_frequency = 48
 		elections_allowed = yes
@@ -138,7 +138,7 @@ create_country_leader = {
 		desc = "POLITICS_PEDRO_AGUIRRE_CERDA_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 		expire = "1965.1.1"
-		ideology = socialism
+		ideology = liberal_social
 		traits = {
 			#
 		}

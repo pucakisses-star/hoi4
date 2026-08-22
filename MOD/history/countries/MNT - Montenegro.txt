@@ -23,13 +23,13 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		fascism = { 
+		chauvinist_populism = { 
 			popularity = 33
 		}
-		neutrality = { 
+		autocracy = { 
 			popularity = 33
 		}		
-		communism = {
+		vanguard_communism = {
 			popularity = 34
 		}
 	}
@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		
 	}
@@ -51,7 +51,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = oligarchism
+	ideology = plutocracy
 	traits = {
 		
 	}

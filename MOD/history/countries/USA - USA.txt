@@ -171,21 +171,21 @@ set_convoys = 400
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 99
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 1
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -211,21 +211,21 @@ set_autonomy = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 99
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 1
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1936.11.3"
 		election_frequency = 48
 		elections_allowed = yes
@@ -237,7 +237,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Portrait_USA_Andrew_Johnson.dds"
 	expire = "1877.1.1"
-	ideology = liberalism
+	ideology = conserv_liberal
 	traits = {
 		dislikes_germany
 	}
@@ -248,7 +248,7 @@ create_country_leader = {
 	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 	picture = "Portrait_USA_William_Dudley_Pelley.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		
 	}

@@ -70,20 +70,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 96
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 2
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 2
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
@@ -93,20 +93,20 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 95
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 2
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 3
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1935.10.27"
 		election_frequency = 48
 		elections_allowed = yes
@@ -125,7 +125,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}
@@ -136,7 +136,7 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_BEGUIN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}

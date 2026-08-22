@@ -169,24 +169,24 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 20
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 18
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 2
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 60
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -196,24 +196,24 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 20
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 35
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 2
 			}
 			
-			neutrality = { 
+			autocracy = { 
 				popularity = 43
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1939.7.15"
 		election_frequency = 48
 		elections_allowed = no
@@ -225,7 +225,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}
@@ -247,7 +247,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMAND_CALINESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}
@@ -258,7 +258,7 @@ create_country_leader = {
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = "Portrait_Romania_Octavian_Goga.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}
@@ -269,7 +269,7 @@ create_country_leader = {
 	desc = "POLITICS_ION_ANTONESCU_DESC"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}

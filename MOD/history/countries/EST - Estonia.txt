@@ -79,25 +79,25 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 20
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 15
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 5
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 60
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
@@ -107,25 +107,25 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 20
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 15
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 5
 				#banned = no #default is no
 			}
 			
-			neutrality = { 
+			autocracy = { 
 				popularity = 60
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1938.2.25"
 		election_frequency = 48
 		elections_allowed = no

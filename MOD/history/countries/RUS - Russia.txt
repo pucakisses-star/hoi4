@@ -16,11 +16,11 @@ add_namespace = { name = "unit_leader_sov" type = unit_leader }
 
 #LEADERS
 create_country_leader={ name = "Vladimir Lenin" desc=RUS_vladimir_ilyich_lenin_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_vladimir_ilyich_lenin.dds" expire="1935.1.1" ideology=leninism traits={  } }
-create_country_leader={ name = "Georgy Lvov" desc=RUS_georgy_lvov_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_georgy_lvov.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Nikolay II" desc=RUS_nikolai_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_nikolai_2.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Nikolay II" desc=RUS_nikolai_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_nikolai_ii.dds" expire="1935.1.1" ideology=autocracy traits={  } }
-create_country_leader={ name = "Nikolay II" desc=RUS_nikolai_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_tsar_nikolai_ii.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
-create_country_leader={ name = "Aleksandr Kolchak" desc=WHR_aleksandr_kolchak_DESC picture="gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds" expire="1935.1.1" ideology=fascism_ideology  traits={  } }
+create_country_leader={ name = "Georgy Lvov" desc=RUS_georgy_lvov_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_georgy_lvov.dds" expire="1935.1.1" ideology=conserv_liberal traits={  } }
+create_country_leader={ name = "Nikolay II" desc=RUS_nikolai_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_nikolai_2.dds" expire="1935.1.1" ideology=conserv_liberal traits={  } }
+create_country_leader={ name = "Nikolay II" desc=RUS_nikolai_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_nikolai_ii.dds" expire="1935.1.1" ideology=despotism traits={  } }
+create_country_leader={ name = "Nikolay II" desc=RUS_nikolai_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/country_leaders/RUS_tsar_nikolai_ii.dds" expire="1935.1.1" ideology=fascism traits={  } }
+create_country_leader={ name = "Aleksandr Kolchak" desc=WHR_aleksandr_kolchak_DESC picture="gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds" expire="1935.1.1" ideology=fascism  traits={  } }
 
 #ARMY
 create_field_marshal={  name = "Mikhail Alexeyev" id=76321 portrait_path="gfx/hoi4tgw_portraits/RUS/army_generals/RUS_alekseyev.dds" traits={ thorough_planner } skill=2 
@@ -210,7 +210,7 @@ create_navy_leader={  name = "Aleksandr Rusin" id=77235 portrait_path="gfx/hoi4t
 	}
 
 	set_politics = {
-	    ruling_party = neutrality
+	    ruling_party = autocracy
 	    last_election = "1912.9.1"
 	    election_frequency = 60
 	    elections_allowed = yes
@@ -418,7 +418,7 @@ create_navy_leader={  name = "Aleksandr Rusin" id=77235 portrait_path="gfx/hoi4t
 	}
 
 	set_politics = {
-	    ruling_party = neutrality
+	    ruling_party = autocracy
 	    last_election = "1912.9.1"
 	    election_frequency = 60
 	    elections_allowed = yes

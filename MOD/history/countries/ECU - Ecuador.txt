@@ -62,21 +62,21 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 100
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.12.15"
 	election_frequency = 84
 	elections_allowed = yes
@@ -87,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
 	picture = "GFX_Portrait_ecuador_federico_paez"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_social
 	traits = {
 		#
 	}
@@ -97,21 +97,21 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 100
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1933.12.15"
 		election_frequency = 84
 		elections_allowed = yes
@@ -122,7 +122,7 @@ create_country_leader = {
 		desc = "POLITICS_AURELIO_MOSQUERA_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 		expire = "1965.1.1"
-		ideology = liberalism
+		ideology = conserv_liberal
 		traits = {
 			#
 		}

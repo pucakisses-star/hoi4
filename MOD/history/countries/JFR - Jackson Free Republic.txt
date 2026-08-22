@@ -11,24 +11,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 34
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 12
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 24
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 30
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
@@ -46,7 +46,7 @@ create_country_leader = {
 #desc = "POLITICS_KING_ZOG_DESC"
 	picture = "JHamiltonLewisdemGRL_result.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}
@@ -61,7 +61,7 @@ create_country_leader = {
 #desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 #	picture = "WilliamDudleyPelley.dds"
 #	expire = "1965.1.1"
-#	ideology = fascism_ideology
+#	ideology = fascism
 #	traits = {
 #		dictator
 #	}

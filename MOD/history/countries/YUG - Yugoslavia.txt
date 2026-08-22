@@ -137,25 +137,25 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 15
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 10
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 15
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 60
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = yes
@@ -165,25 +165,25 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 5
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 20
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 5
 				#banned = no #default is no
 			}
 			
-			neutrality = { 
-				popularity = 60
+			autocracy = { 
+				popularity = 70
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1938.12.1"
 		election_frequency = 36
 		elections_allowed = yes
@@ -208,7 +208,7 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}
@@ -219,7 +219,7 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_GROL_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}

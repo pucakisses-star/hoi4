@@ -116,7 +116,7 @@ set_technology = {
 	}
 
 	set_politics = {
-	    ruling_party = neutrality
+	    ruling_party = autocracy
 	    last_election = "1907.10.31"
 	    election_frequency = 48
 	    elections_allowed = yes
@@ -206,7 +206,7 @@ set_technology = {
 	}
 
 	set_politics = {
-	    ruling_party = neutrality
+	    ruling_party = autocracy
 	    last_election = "1911.9.27"
 	    election_frequency = 48
 	    elections_allowed = yes

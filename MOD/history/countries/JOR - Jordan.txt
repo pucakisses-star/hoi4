@@ -62,25 +62,25 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 25
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 20
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 5
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 50
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -90,7 +90,7 @@ create_country_leader = {
 	name = "Hashim Kheir"
 	desc = ""
 	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_2.dds"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}
@@ -100,7 +100,7 @@ create_country_leader = {
 	name = "Saeed Ahmadi"
 	desc = ""
 	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}

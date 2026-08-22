@@ -12,14 +12,14 @@ set_convoys = 100
 #					POLITICS & ARMY
 #-------------------------------------------------------
 create_country_leader={ name = "Zaifeng" desc=QIN_zaifeng_DESC picture="gfx/leaders/QIN_zaifeng.dds" expire="1935.1.1" ideology=nazism traits={  } }
-create_country_leader={ name = "Puwei" desc=QIN_puwei_DESC picture="gfx/leaders/QIN_puwei.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
+create_country_leader={ name = "Puwei" desc=QIN_puwei_DESC picture="gfx/leaders/QIN_puwei.dds" expire="1935.1.1" ideology=fascism traits={  } }
 
 		create_country_leader={
 			name="Sun Wen"
 			desc=PRC_sun_wen_DESC
 			picture="gfx/leaders/PRC_sun_wen.dds"
 			expire="1935.1.1"
-			ideology=conservatism
+			ideology=conserv
 			traits={
 				}
 			}
@@ -158,7 +158,7 @@ set_technology = {
 	}
 
 	set_politics = {
-	    ruling_party = neutrality
+	    ruling_party = autocracy
 	    last_election = "1910.1.1"
 	    election_frequency = 48
 	    elections_allowed = no
@@ -255,7 +255,7 @@ create_equipment_variant={ name="Hai Tien Class" type=light_cruiser_1900 parent_
 	}
 
 	set_politics = {
-	    ruling_party = neutrality
+	    ruling_party = autocracy
 	    last_election = "1910.1.1"
 	    election_frequency = 48
 	    elections_allowed = no

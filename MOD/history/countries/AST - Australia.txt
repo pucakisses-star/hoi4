@@ -121,21 +121,21 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 98
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 2
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
@@ -146,7 +146,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHN_CURTIN_DESC"
 	picture = "Portrait_Australia_John_Curtin.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_social
 	traits = {
 		#
 	}
@@ -157,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_ERIC_CAMPBELL_DESC"
 	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}
@@ -179,7 +179,7 @@ create_country_leader = {
 	desc = "POLITICS_EARLE_PAGE_DESC"
 	picture = "GFX_AST_earle_page"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}
@@ -202,21 +202,21 @@ set_convoys = 100
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 99
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 1
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1937.10.23"
 		election_frequency = 36
 		elections_allowed = yes

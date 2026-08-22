@@ -62,25 +62,25 @@ set_convoys = 20
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 25
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 20
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 5
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 50
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -90,7 +90,7 @@ create_country_leader = {
 	name = "Bashir es Sadawi"
 	desc = ""
 	picture = "Portrait_Arabia_Generic_democratic1.dds"
-	ideology = liberalism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}
@@ -100,7 +100,7 @@ create_country_leader = {
 	name = "Ettore Bastico"
 	desc = ""
 	picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}

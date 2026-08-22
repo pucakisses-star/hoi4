@@ -11,24 +11,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 10
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 65
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 25
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = chauvinist_populism
 	last_election = "1847.12.27"
 	election_frequency = 0
 	elections_allowed = no
@@ -39,16 +39,6 @@ set_convoys = 0
 set_stability = 0.71
 
 
-create_country_leader = {
-	name = "Brigham Young"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Portrait_DES_Brigham_Young.dds"
-	expire = "1965.1.1"
-	ideology = fascism 
-	traits = {
-		#
-	}
-}
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
@@ -59,7 +49,7 @@ create_country_leader = {
 #desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 	picture = "Portrait_DES_Brigham_Young.dds"
 	expire = "1888.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		dictator
 	}

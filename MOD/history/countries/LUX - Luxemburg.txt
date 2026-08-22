@@ -65,20 +65,20 @@ set_stability = 0.8
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 92
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 3
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 5
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
@@ -88,20 +88,20 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 92
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 3
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 5
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1937.6.6"
 		election_frequency = 36
 		elections_allowed = yes
@@ -112,7 +112,7 @@ set_politics = {
 		desc = "POLITICS_PIERRE_DUPONG_DESC"
 		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 		expire = "1965.1.1"
-		ideology = conservatism
+		ideology = conserv
 		traits = {
 			#
 		}
@@ -124,7 +124,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_BECH_DESC"
 	picture = "GFX_portrait_luxembourg_joseph_bech"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}

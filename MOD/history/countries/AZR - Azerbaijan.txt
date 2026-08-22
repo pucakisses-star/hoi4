@@ -40,15 +40,15 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 30
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 40
 		}
 		
-		neutrality = {
+		autocracy = {
 			popularity = 30
 		}		
 	}
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		
 	}

@@ -17,24 +17,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		neutrality = { 
+		autocracy = { 
 			popularity = 48
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 50
 		}
 
-		democratic = {
+		centrism = {
 			popularity = 1
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 1
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
@@ -47,7 +47,7 @@ create_country_leader = {
 	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
 	picture = "Portrait_Austria_Kurt_Schuschnigg.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}
@@ -58,7 +58,7 @@ create_country_leader = {
 	desc = "POLITICS_KARL_RENNER_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_social
 	traits = {
 		#
 	}

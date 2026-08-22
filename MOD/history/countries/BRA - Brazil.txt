@@ -78,24 +78,24 @@ set_country_flag = monroe_doctrine
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1934.7.17"
 	election_frequency = 48
 	elections_allowed = no
@@ -117,7 +117,7 @@ create_country_leader = {
 	desc = "POLITICS_PLINIO_SALGADO_DESC"
 	picture = "Portrait_Brazil_Plinio_Salgado.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}
@@ -138,7 +138,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMANDO_SALES_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}
@@ -151,24 +151,24 @@ set_convoys = 40
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 		last_election = "1934.7.17"
 		election_frequency = 48
 		elections_allowed = no

@@ -215,21 +215,21 @@ create_import = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 20
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 60
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 20
 			banned = yes #default is no
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = chauvinist_populism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -267,7 +267,7 @@ create_country_leader = {
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 	}
 }
@@ -289,7 +289,7 @@ create_country_leader = {
 #	desc = "POLITICS_OTTO_WELS_DESC"
 #	picture = "Portrait_Germany_Adolf_Hitler.dds"
 #	expire = "1939.1.16"
-#	ideology = socialism
+#	ideology = liberal_social
 #	traits = {
 #		exiled
 #		union_man

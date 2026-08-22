@@ -127,21 +127,21 @@ if = {
 
 set_politics = {
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 25
 		}
-		fascism = {
+		chauvinist_populism = {
 			popularity = 31
 		}
-		neutrality = {
+		autocracy = {
 			popularity = 44
 		}
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = yes
@@ -157,7 +157,7 @@ if = {
 		desc = "POLITICS_MIKLOS_HORTHY_DESC"
 		picture = "Portrait_Hungary_Miklos_Horthy.dds"
 		expire = "1965.1.1"
-		ideology = oligarchism
+		ideology = plutocracy
 		traits = {
 			fascist_sympathies
 			anti_communist
@@ -177,7 +177,7 @@ if = {
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
 			picture = "Portrait_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
-			ideology = fascism_ideology
+			ideology = fascism
 		}
 	}
 }
@@ -198,7 +198,7 @@ create_country_leader = {
 	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_social
 	traits = {
 		#
 	}
@@ -216,7 +216,7 @@ create_country_leader = {
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
 			picture = "Portrait_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
-			ideology = fascism_ideology
+			ideology = fascism
 			traits = {
 				anti_communist
 			}
@@ -227,20 +227,20 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 27
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 70
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 3
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = chauvinist_populism
 		last_election = "1939.5.29"
 		election_frequency = 48
 		elections_allowed = yes

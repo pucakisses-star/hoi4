@@ -70,24 +70,24 @@ set_convoys = 45
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 5
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 1
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 94
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = yes
@@ -122,7 +122,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_GOMEZ_MORIN_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}
@@ -143,24 +143,24 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 1
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 1
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 98
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 		last_election = "1934.7.1"
 		election_frequency = 72
 		elections_allowed = yes

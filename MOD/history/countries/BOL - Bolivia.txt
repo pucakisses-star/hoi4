@@ -68,24 +68,24 @@ set_country_flag = monroe_doctrine
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
@@ -117,24 +117,24 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 		last_election = "1934.11.11"
 		election_frequency = 72
 		elections_allowed = yes
@@ -145,7 +145,7 @@ create_country_leader = {
 		desc = "POLITICS_CARLOS_QUINTANILLA_DESC"
 		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 		expire = "1965.1.1"
-		ideology = oligarchism
+		ideology = plutocracy
 		traits = {
 			#
 		}

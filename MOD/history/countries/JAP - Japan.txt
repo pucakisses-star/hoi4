@@ -206,21 +206,21 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 100
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = chauvinist_populism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -231,21 +231,21 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 0
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 100
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = chauvinist_populism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -257,7 +257,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		warrior_code
 		emperor_showa
@@ -281,7 +281,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_tetsu_katayama"
 	expire = "1989.1.1"
-	ideology = liberalism
+	ideology = conserv_liberal
 	traits = {
 	}
 }

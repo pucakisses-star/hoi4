@@ -105,20 +105,20 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 93
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 4
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 3
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.4.26"
 	election_frequency = 48
 	elections_allowed = yes
@@ -132,7 +132,7 @@ create_country_leader = {
 	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
 	picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}
@@ -143,7 +143,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTON_MUSSERT_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}
@@ -165,7 +165,7 @@ create_country_leader = {
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
 	picture = "GFX_portrait_holland_hendrikus_colijn"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}

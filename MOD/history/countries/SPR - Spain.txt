@@ -28,20 +28,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 47
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 46
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 7
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -114,20 +114,20 @@ set_stability = 0.5
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 22
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 76
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 2
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = chauvinist_populism
 		last_election = "1934.3.26"
 		election_frequency = 60
 		elections_allowed = no
@@ -142,7 +142,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_AZANA_DESC"
 	picture = "Portrait_Spain_Manuel_Azana.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}
@@ -164,7 +164,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
 	picture = "Portrait_Spain_Francisco_Franco.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}
@@ -175,7 +175,7 @@ create_country_leader = {
 	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}

@@ -143,20 +143,20 @@ set_convoys = 300
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 69
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 1
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 30
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -177,7 +177,7 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_France_Charles_De_Gaulle.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		
 	}
@@ -188,7 +188,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_social
 	traits = {
 		stout_defender
 	}
@@ -210,7 +210,7 @@ create_country_leader = {
 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
 	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		
 	}

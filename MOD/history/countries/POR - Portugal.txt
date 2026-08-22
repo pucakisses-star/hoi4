@@ -74,24 +74,24 @@ set_convoys = 50
 set_politics = {
 
 	parties = {
-		democratic = {
+		centrism = {
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 5
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 5
 		}
 		
-		neutrality = {
+		autocracy = {
 			popularity = 90
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
@@ -101,24 +101,24 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = {
+			centrism = {
 				popularity = 0
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 0
 			}
 			
-			neutrality = {
+			autocracy = {
 				popularity = 100
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1938.10.30"
 		election_frequency = 48
 		elections_allowed = yes
@@ -156,7 +156,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}

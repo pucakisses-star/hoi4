@@ -79,20 +79,20 @@ set_stability = 0.75
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 96
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 2
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 2
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -102,24 +102,24 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 84
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 2
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 2
 			}
 
-			neutrality = {
+			autocracy = {
 				popularity = 12
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1936.10.19"
 		election_frequency = 36
 		elections_allowed = yes
@@ -131,7 +131,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conserv
 	traits = {
 		#
 	}
@@ -142,7 +142,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = fascism
 	traits = {
 		#
 	}
@@ -153,7 +153,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conserv_liberal
 	traits = {
 		#
 	}

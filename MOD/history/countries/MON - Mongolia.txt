@@ -61,23 +61,23 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 			banned = yes
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 			banned = yes
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 100
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = vanguard_communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -103,23 +103,23 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 0
 				banned = yes
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 				banned = yes
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 100
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = vanguard_communism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
