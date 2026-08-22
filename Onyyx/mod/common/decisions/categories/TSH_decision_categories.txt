@@ -1,9 +1,0 @@
-TSH_category_bakumatsu_modernization = {
-	icon = generic_construction
-
-	picture = GFX_decision_category_bakumatsu_modernization
-
-	available = {
-		tag = TSH
-	}
-}

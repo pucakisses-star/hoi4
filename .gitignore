@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------
+# Hearts of Iron IV mod repository
+#
+# NOTE: .gitignore only affects files git is not already tracking. Anything
+# already committed keeps being tracked until it is explicitly removed
+# (git rm --cached <path>) or stripped from history — see tools/shrink-repo.sh.
+# ---------------------------------------------------------------------------
+
+# --- Third-party modding tools -------------------------------------------
+# Downloaded tool suites (Modding Plaza, MapGen, ProvGen, PDX Validator,
+# BMFont, Tree Snap …). These are redistributable binaries with upstream
+# homes; they are not mod content and should live outside the repo.
+modding-plaza-master/
+**/modding-plaza-master/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# --- Archives -------------------------------------------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# --- Image editor working files ------------------------------------------
+# Layered sources are large and rarely need to travel with the mod. Keep the
+# exported .dds/.tga/.png instead. Delete these lines if you deliberately want
+# the layered originals versioned — prefer putting them in LFS if so.
+*.psd
+*.pdn
+*.xcf
+
+# --- Game / launcher output ----------------------------------------------
+logs/
+*.log
+crash.txt
+error.log
+settings.txt
+
+# --- OS and editor noise --------------------------------------------------
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.sublime-workspace
+*~
+*.bak
+*.orig
+*.tmp
+
+# --- Local scratch --------------------------------------------------------
+/scratch/
+/tmp/
