@@ -1,0 +1,141 @@
+division_template = {
+	name = "New-English Infantry"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+division= {	
+		name = "New-English 1st Division"
+		location = 6732
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		name = "New-English 2nd Division"
+		location = 6732
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		name = "New-English 3rd Division"
+		location = 9832
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		name = "New-English 4th Division"
+		location = 12459
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.4
+	}
+
+	division= {	
+		name = "New-English Golden Division"
+		location = 11654
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.8
+	}
+
+	division= {	
+		name = "New-English 5th Division"
+		location = 3878
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "New-English 6th Division"
+		location = 3878
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		name = "New-English 7th Division"
+		location = 3878
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.5
+	}
+
+	division= {	
+		name = "New-English Volunteer Militiamen"
+		location = 3878
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "New-English Volunteer Militiamen"
+		location = 7361
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "Minutemen"
+		location = 11662
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.7
+	}
+
+	division= {	
+		name = "Minutemen"
+		location = 11650
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.6
+	}
+
+	division= {	
+		name = "New-English 8th Division"
+		location = 10247
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "New-English 9th Division"
+		location = 706
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		name = "New-English 10th Division"
+		location = 706
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		name = "New-English 11th Division"
+		location = 4285
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "New-English 12th Division"
+		location = 6732
+		division_template = "New-English Infantry"
+		start_experience_factor = 0.3
+	}
+}	

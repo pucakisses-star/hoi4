@@ -1,0 +1,211 @@
+bookmarks = {
+	bookmark = {
+		name = "The End of an Era"
+		desc = "The Civil war is finally over and the south reigns supreme. After a year long occupation of the north by confederate forces, the southern armies have returned home and disbanded. From sea to shining sea the former United States is now divided among several breakaway countries that followed the path of the confederacy by declaring their indepedence the people of these new various countries now look to the future to see what fate has in store for their upstart nations."
+		date = 1868.5.1.1
+		picture = "load_13"
+		default_country = "COF"
+		default = yes
+
+		"CDA"={
+			history = "FRA_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_ww1_Revanchism
+				FRA_disjointed_government
+				ww1_Scramble_for_Africa
+			}
+			focuses = {
+				FRA_ww1_triple_alliance
+				FRA_ww1_agadir_crisis
+				FRA_ww1_ready_country
+			}
+		}
+		"DES"={
+			history = "TUR_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+				ww1_Faith_Allah
+			}
+			focuses = {
+				TUR_ww1_BalkanLeagueMenace
+				TUR_ww1_fight_arab_revolt
+				TUR_ww1_support_libya
+			}
+		}
+		"CAL"={
+			history = "ENG_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				stiff_upper_lip
+				ww1_Scramble_for_Africa
+			}
+			focuses = {
+				ENG_ww1_aviation_effort
+				ENG_ww1_protect_suez
+				ENG_ww1_airship_focus
+			}
+		}
+		"COF"={
+			history = "GER_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+				#general_staff
+				GER_ww1_North_German_Confederation
+				ww1_Scramble_for_Africa
+			}
+			focuses = {
+				GER_ww1_support_kaiser
+				GER_ww1_agadir_crisis
+				GER_ww1_secret_alliance_rom
+			}
+		}
+		"USA"={
+			history = "ITA_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+				ITA_ww1_Risorgimento
+				ww1_Scramble_for_Africa
+			}
+			focuses = {
+				ITA_ww1_aviation_effort
+				ITA_ww1_libyan_claims
+				ITA_ww1_back_france
+			}
+		}
+		"TEX"={
+			history = "AUH_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+				AUH_ww1_House_Habsburg_Lorraine
+				AUH_ww1_Multinational_State
+			}
+			focuses = {
+				AUH_ww1_back_italy
+				AUH_ww1_military_advisors
+				AUH_ww1_aviation_effort
+			}
+		}
+		"AZT"={
+			history = "RUS_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+			RUS_ww1_orthodox_church
+			RUS_ww1_tsushima_humiliation
+			RUS_ww1_mixed_railways
+			}
+			focuses = {
+				RUS_ww1_pro_fra
+				RUS_wilhlems_deal
+				RUS_ww1_naval_effort
+			}
+		}
+
+		"---"={
+			history = "OTHER_POWDERKEG_DESC"
+		}
+
+		# Minors ####
+
+		"VER"={
+			minor = yes
+			history = "USA_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+				USA_ww1_MexicanRevolution
+			}
+		}
+
+		"ALK"={
+			minor = yes
+			history = "SER_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+				SER_first_balkan
+			}
+		}
+
+		"NEW"={
+			minor = yes
+			history = "BUL_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+				BUL_ww1_balkan_league
+			}
+		}
+
+		"HAW"={
+			minor = yes
+			history = "BEL_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"PRC"={
+			minor = yes
+			history = "GRE_POWDERKEG_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_POWDERKEG_DESC"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"VEG"={
+			minor = yes
+			history = "JAP_POWDERKEG_DESC"
+			ideology = neutrality
+			ideas = {
+				state_shintoism
+			}
+			focuses = {
+
+			}
+		}
+		
+		"MEX"={
+			minor = yes
+			history = "MEX_POWDERKEG_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

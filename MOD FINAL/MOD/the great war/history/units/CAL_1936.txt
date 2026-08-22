@@ -1,0 +1,58 @@
+division_template = {
+	name = "Californian Infantry"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+division= {	
+		name = "Californian 1st Division"
+		location = 9671
+		division_template = "Californian Infantry"
+		start_experience_factor = 0.5
+	}
+
+	division= {	
+		name = "Californian 2nd Division"
+		location = 9713
+		division_template = "Californian Infantry"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		name = "Californian 3rd Division"
+		location = 9814
+		division_template = "Calfiornian Infantry"
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		name = "Californian 4th Division"
+		location = 12736
+		division_template = "Californian Infantry"
+		start_experience_factor = 0.4
+	}
+
+	division= {	
+		name = "Californian Freedom Division"
+		location = 1651
+		division_template = "Californian Infantry"
+		start_experience_factor = 0.7
+	}
+
+	
