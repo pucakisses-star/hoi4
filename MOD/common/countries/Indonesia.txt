@@ -1,5 +1,3 @@
-
-
 graphical_culture = asian_gfx
 
-color = { 9  171  190 }
+color = { 108  189  192 }

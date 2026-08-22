@@ -1,0 +1,3 @@
+graphical_culture = african_gfx
+
+color = { 70  215  199 }
