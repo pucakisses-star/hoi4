@@ -25,21 +25,14 @@ set_technology = {
 	transport = 1
 }
 
+set_popularities = {
+centrism = 47
+chauvinist_populism = 46
+vanguard_communism = 7
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 47
-		}
 
-		chauvinist_populism = {
-			popularity = 46
-		}
-		
-		vanguard_communism = {
-			popularity = 7
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1933.2.16"
@@ -111,21 +104,14 @@ set_stability = 0.5
 		dispersed_industry3 = 1
 	}
 
+	set_popularities = {
+	centrism = 22
+	chauvinist_populism = 76
+	vanguard_communism = 2
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 22
-			}
 
-			chauvinist_populism = {
-				popularity = 76
-			}
-			
-			vanguard_communism = {
-				popularity = 2
-			}
-		}
 		
 		ruling_party = chauvinist_populism
 		last_election = "1934.3.26"

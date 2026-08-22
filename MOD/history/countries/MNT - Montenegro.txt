@@ -20,19 +20,14 @@ set_technology = {
 	early_submarine = 1
 }
 
+set_popularities = {
+chauvinist_populism = 33
+autocracy = 33
+vanguard_communism = 34
+}
 set_politics = {
 
-	parties = {
-		chauvinist_populism = { 
-			popularity = 33
-		}
-		autocracy = { 
-			popularity = 33
-		}		
-		vanguard_communism = {
-			popularity = 34
-		}
-	}
+
 }
 
 recruit_character = MNT_sekula_drljevic

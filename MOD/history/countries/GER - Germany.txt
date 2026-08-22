@@ -212,22 +212,14 @@ create_import = {
 	}
 }
 
+set_popularities = {
+centrism = 20
+chauvinist_populism = 60
+vanguard_communism = 20
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 20
-		}
 
-		chauvinist_populism = {
-			popularity = 60
-		}
-		
-		vanguard_communism = {
-			popularity = 20
-			banned = yes #default is no
-		}
-	}
 	
 	ruling_party = chauvinist_populism
 	last_election = "1933.3.5"

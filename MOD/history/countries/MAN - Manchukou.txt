@@ -95,27 +95,15 @@ set_convoys = 5
 	}
 }
 
+set_popularities = {
+centrism = 0
+chauvinist_populism = 80
+vanguard_communism = 0
+autocracy = 20
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 0
-			banned = yes
-		}
 
-		chauvinist_populism = {
-			popularity = 80
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-			banned = yes
-		}
-
-		autocracy = {
-			popularity = 20
-		}
-	}
 	
 	ruling_party = chauvinist_populism
 	last_election = "1936.1.1"

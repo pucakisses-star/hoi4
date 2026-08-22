@@ -76,25 +76,15 @@ set_country_flag = monroe_doctrine
 }
 
 set_convoys = 120
+set_popularities = {
+centrism = 5
+chauvinist_populism = 5
+vanguard_communism = 12
+autocracy = 78
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 5
-		}
 
-		chauvinist_populism = {
-			popularity = 5
-		}
-		
-		vanguard_communism = {
-			popularity = 12
-		}
-		
-		autocracy = { 
-			popularity = 78
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1931.11.8"
@@ -105,25 +95,15 @@ set_politics = {
 recruit_character = ARG_agustin_pedro_justo
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 5
+	chauvinist_populism = 5
+	vanguard_communism = 12
+	autocracy = 78
+	}
 	set_politics = {
 
-		parties = {
-		centrism = { 
-			popularity = 5
-		}
 
-		chauvinist_populism = {
-			popularity = 5
-		}
-		
-		vanguard_communism = {
-			popularity = 12
-		}
-		
-		autocracy = { 
-			popularity = 78
-		}
-	}
 	
 	ruling_party = autocracy
 		last_election = "1937.9.5"

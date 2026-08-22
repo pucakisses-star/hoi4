@@ -37,25 +37,15 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+set_popularities = {
+centrism = 15
+autocracy = 20
+vanguard_communism = 60
+chauvinist_populism = 5
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 15
-		}
 
-		autocracy = {
-			popularity = 20
-		}
-		
-		vanguard_communism = {
-			popularity = 60
-		}
-
-		chauvinist_populism = { 
-			popularity = 5
-		}
-	}
 }
 
 recruit_character = BLR_vasil_zacharka

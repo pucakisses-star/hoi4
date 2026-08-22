@@ -166,26 +166,15 @@ set_convoys = 40
 	}
 }
 
+set_popularities = {
+centrism = 0
+chauvinist_populism = 0
+vanguard_communism = 0
+autocracy = 100
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 0
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		autocracy = { 
-			popularity = 100
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1936.1.1"
@@ -204,26 +193,15 @@ recruit_character = CHI_weng_wenhao
 add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 0
+	chauvinist_populism = 0
+	vanguard_communism = 0
+	autocracy = 100
+	}
 	set_politics = {
 
-		parties = {
-		centrism = { 
-			popularity = 0
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		autocracy = { 
-			popularity = 100
-		}
-	}
 		
 		ruling_party = autocracy
 		last_election = "1936.1.1"

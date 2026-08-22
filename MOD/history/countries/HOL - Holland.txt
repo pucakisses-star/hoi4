@@ -102,21 +102,14 @@ if = {
 	}
 }
 
+set_popularities = {
+centrism = 93
+chauvinist_populism = 4
+vanguard_communism = 3
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 93
-		}
 
-		chauvinist_populism = {
-			popularity = 4
-		}
-		
-		vanguard_communism = {
-			popularity = 3
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1933.4.26"

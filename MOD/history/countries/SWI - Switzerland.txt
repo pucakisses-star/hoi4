@@ -67,21 +67,14 @@ set_technology = {
 	}
 }
 
+set_popularities = {
+centrism = 96
+chauvinist_populism = 2
+vanguard_communism = 2
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 96
-		}
 
-		chauvinist_populism = {
-			popularity = 2
-		}
-		
-		vanguard_communism = {
-			popularity = 2
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1935.10.27"
@@ -90,21 +83,14 @@ set_politics = {
 }
 
 1939.1.1 = {#next election october 39
+	set_popularities = {
+	centrism = 95
+	chauvinist_populism = 2
+	vanguard_communism = 3
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 95
-			}
 
-			chauvinist_populism = {
-				popularity = 2
-			}
-			
-			vanguard_communism = {
-				popularity = 3
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1935.10.27"

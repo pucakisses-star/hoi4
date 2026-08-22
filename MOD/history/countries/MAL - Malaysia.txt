@@ -50,23 +50,14 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
+set_popularities = {
+centrism = 33
+vanguard_communism = 33
+autocracy = 34
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 33
-		}
 
-#		fascism = {
-#		}
-		
-		vanguard_communism = {
-			popularity = 33
-		}
-		autocracy = {
-			popularity = 34
-		}
-	}
 }
 
 recruit_character = MAL_onn_jaafar

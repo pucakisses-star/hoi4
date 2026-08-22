@@ -66,25 +66,15 @@ set_technology = {
 }
 
 set_convoys = 10
+set_popularities = {
+centrism = 0
+chauvinist_populism = 0
+vanguard_communism = 0
+autocracy = 100
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 0
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-		}
-		
-		autocracy = { 
-			popularity = 100
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1936.1.1"
@@ -109,25 +99,15 @@ recruit_character = PER_reza_shah_pahlavi
 recruit_character = PER_soleyman_mirza_eskandari
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 0
+	chauvinist_populism = 0
+	vanguard_communism = 0
+	autocracy = 100
+	}
 	set_politics = {
 
-		parties = {
-		centrism = { 
-			popularity = 0
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-		}
-		
-		autocracy = { 
-			popularity = 100
-		}
-	}
 	
 		ruling_party = autocracy
 		last_election = "1936.1.1"

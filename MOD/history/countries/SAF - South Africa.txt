@@ -114,21 +114,14 @@ if = {
 }
 
 set_convoys = 25
+set_popularities = {
+centrism = 75
+chauvinist_populism = 20
+vanguard_communism = 5
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 75
-		}
 
-		chauvinist_populism = {
-			popularity = 20
-		}
-		
-		vanguard_communism = {
-			popularity = 5
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1933.5.17"
@@ -140,22 +133,14 @@ set_politics = {
 recruit_character = SAF_j_b_m_hertzog
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 100
+	chauvinist_populism = 0
+	vanguard_communism = 0
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 100
-			}
 
-			chauvinist_populism = {
-				popularity = 0
-			}
-			
-			vanguard_communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1938.5.18"

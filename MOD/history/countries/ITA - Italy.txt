@@ -145,21 +145,14 @@ set_technology = {
 
 set_convoys = 200
 
+set_popularities = {
+centrism = 22
+chauvinist_populism = 76
+vanguard_communism = 2
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 22
-		}
 
-		chauvinist_populism = {
-			popularity = 76
-		}
-		
-		vanguard_communism = {
-			popularity = 2
-		}
-	}
 	
 	ruling_party = chauvinist_populism
 	last_election = "1934.3.26"

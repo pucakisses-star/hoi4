@@ -90,26 +90,15 @@ set_technology = {
 	}
 }
 
+set_popularities = {
+centrism = 75
+autocracy = 14
+vanguard_communism = 8
+chauvinist_populism = 3
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 75
-		}
 
-		autocracy = {
-			popularity  = 14
-		}
-
-		vanguard_communism = {
-			popularity = 8
-		}
-
-		chauvinist_populism = {
-			popularity = 3
-		}
-		
-	}
 	
 	ruling_party = centrism
 	last_election = "1932.9.18"
@@ -118,26 +107,15 @@ set_politics = {
 }
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 83
+	autocracy = 12
+	vanguard_communism = 4
+	chauvinist_populism = 1
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 83
-			}
 
-			autocracy = {
-				popularity  = 12
-			}
-
-			vanguard_communism = {
-				popularity = 4
-			}
-
-			chauvinist_populism = {
-				popularity = 1
-			}
-			
-		}
 		
 		ruling_party = centrism
 		last_election = "1936.9.20"

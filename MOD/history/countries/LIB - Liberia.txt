@@ -56,22 +56,14 @@ set_convoys = 10
 	}
 }
 
+set_popularities = {
+centrism = 100
+chauvinist_populism = 0
+vanguard_communism = 0
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 100
-		}
 
-		chauvinist_populism = {
-			popularity = 0
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1931.1.1"
@@ -82,22 +74,14 @@ set_politics = {
 recruit_character = LIB_edwin_barclay
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 100
+	chauvinist_populism = 0
+	vanguard_communism = 0
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 100
-			}
 
-			chauvinist_populism = {
-				popularity = 0
-			}
-			
-			vanguard_communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1939.1.1"

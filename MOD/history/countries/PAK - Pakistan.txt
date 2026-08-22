@@ -91,25 +91,15 @@ set_convoys = 20
 	}
 }
 
+set_popularities = {
+centrism = 17
+chauvinist_populism = 2
+vanguard_communism = 1
+autocracy = 80
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 17
-		}
 
-		chauvinist_populism = {
-			popularity = 2
-		}
-		
-		vanguard_communism = {
-			popularity = 1
-		}
-
-		autocracy = {
-			popularity = 80
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1935.11.14"

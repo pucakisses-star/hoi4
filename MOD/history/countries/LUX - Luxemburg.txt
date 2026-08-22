@@ -62,21 +62,14 @@ set_stability = 0.8
 	}
 }
 
+set_popularities = {
+centrism = 92
+chauvinist_populism = 3
+vanguard_communism = 5
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 92
-		}
 
-		chauvinist_populism = {
-			popularity = 3
-		}
-		
-		vanguard_communism = {
-			popularity = 5
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1934.6.3"
@@ -85,21 +78,14 @@ set_politics = {
 }
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 92
+	chauvinist_populism = 3
+	vanguard_communism = 5
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 92
-			}
 
-			chauvinist_populism = {
-				popularity = 3
-			}
-			
-			vanguard_communism = {
-				popularity = 5
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1937.6.6"

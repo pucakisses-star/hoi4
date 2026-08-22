@@ -67,22 +67,14 @@ set_convoys = 5
 	}
 }
 
+set_popularities = {
+centrism = 82
+chauvinist_populism = 9
+vanguard_communism = 9
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 82
-		}
 
-		chauvinist_populism = {
-			popularity = 9
-		}
-		
-		vanguard_communism = {
-			popularity = 9
-			#banned = no #default is no
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1935.9.15"
@@ -95,22 +87,14 @@ recruit_character = PHI_manuel_luis_quezon
 recruit_character = PHI_pedro_p_baguisa
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 82
+	chauvinist_populism = 9
+	vanguard_communism = 9
+	}
 	set_politics = {
 
-		parties = {
-			centrism = { 
-				popularity = 82
-			}
 
-			chauvinist_populism = {
-				popularity = 9
-			}
-			
-			vanguard_communism = {
-				popularity = 9
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = centrism
 		last_election = "1935.9.15"

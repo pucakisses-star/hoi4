@@ -1,23 +1,20 @@
+music_station = "base_music"
+
+# Each track scores 0 unless the player is, or began as, the Confederacy,
+# so these never surface for any other country.
 
 music = {
-	song = "maintheme"
-	chance = {
-		modifier = {
-			factor = 0.5
-		}		
-	}
-}
+	song = "csa_arkansas_traveler"
 
-music = {
-	song = "Arkansas Traveler"
-	
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -25,15 +22,17 @@ music = {
 }
 
 music = {
-	song = "Battle Cry of Freedom"
-	
+	song = "csa_battle_cry_of_freedom"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -41,15 +40,17 @@ music = {
 }
 
 music = {
-	song = "Battle of Bull Run"
-	
+	song = "csa_battle_of_bull_run"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -57,32 +58,17 @@ music = {
 }
 
 music = {
-	song = "Colonel Lou"
-	
+	song = "csa_colonel_lou"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
-				}
-			}
-		}
-	}
-}
-
-
-music = {
-	song = "Confederate Song"
-	
-	chance = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				OR = {
-					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -90,15 +76,17 @@ music = {
 }
 
 music = {
-	song = "Cumberland Gap"
-	
+	song = "csa_confederate_song"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -106,15 +94,17 @@ music = {
 }
 
 music = {
-	song = "Everybody's Dixie"
-	
+	song = "csa_cumberland_gap"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -122,15 +112,17 @@ music = {
 }
 
 music = {
-	song = "Jackson's in the Valley"
-	
+	song = "csa_everybody_s_dixie"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -138,15 +130,17 @@ music = {
 }
 
 music = {
-	song = "Jine the Cavalry"
-	
+	song = "csa_jackson_s_in_the_valley"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -154,15 +148,17 @@ music = {
 }
 
 music = {
-	song = "Joe's Been A-Gittin' There"
-	
+	song = "csa_jine_the_cavalry"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -170,15 +166,17 @@ music = {
 }
 
 music = {
-	song = "Dixie"
-	
+	song = "csa_joe_s_been_a_gittin_there"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -186,15 +184,17 @@ music = {
 }
 
 music = {
-	song = "Johnny is Gone for a Soldier"
-	
+	song = "csa_johnny_is_gone_for_a_soldier"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -202,15 +202,17 @@ music = {
 }
 
 music = {
-	song = "Johnny Reb"
-	
+	song = "csa_johnny_reb"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -218,15 +220,17 @@ music = {
 }
 
 music = {
-	song = "Long Ago"
-	
+	song = "csa_long_ago"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -234,15 +238,17 @@ music = {
 }
 
 music = {
-	song = "Lorena"
-	
+	song = "csa_lorena"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -250,15 +256,17 @@ music = {
 }
 
 music = {
-	song = "March of the Southern Men"
-	
+	song = "csa_march_of_the_southern_men"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -266,15 +274,17 @@ music = {
 }
 
 music = {
-	song = "Oh I'm a Good Old Rebel"
-	
+	song = "csa_oh_i_m_a_good_old_rebel"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -282,15 +292,17 @@ music = {
 }
 
 music = {
-	song = "Old Abe Lies Sick"
-	
+	song = "csa_old_abe_lies_sick"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -298,15 +310,17 @@ music = {
 }
 
 music = {
-	song = "Old Abe's Lament"
-	
+	song = "csa_old_abe_s_lament"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -314,15 +328,17 @@ music = {
 }
 
 music = {
-	song = "The Plains of Manassas"
-	
+	song = "csa_the_plains_of_manassas"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -330,15 +346,17 @@ music = {
 }
 
 music = {
-	song = "Richmond is a Hard Road to Travel"
-	
+	song = "csa_richmond_is_a_hard_road_to_travel"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -346,15 +364,17 @@ music = {
 }
 
 music = {
-	song = "Riding a Raid"
-	
+	song = "csa_riding_a_raid"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -362,15 +382,17 @@ music = {
 }
 
 music = {
-	song = "Soldiers Suit of Grey"
-	
+	song = "csa_soldiers_suit_of_grey"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -378,15 +400,17 @@ music = {
 }
 
 music = {
-	song = "Somebody's Darling"
-	
+	song = "csa_somebody_s_darling"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -394,15 +418,17 @@ music = {
 }
 
 music = {
-	song = "Southern Soldier"
-	
+	song = "csa_southern_soldier"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -410,15 +436,17 @@ music = {
 }
 
 music = {
-	song = "Stonewall Jackson's Way"
-	
+	song = "csa_stonewall_jackson_s_way"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -426,15 +454,17 @@ music = {
 }
 
 music = {
-	song = "Somebody's Darling"
-	
+	song = "csa_strike_for_the_south"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -442,15 +472,17 @@ music = {
 }
 
 music = {
-	song = "Strike for the South"
-	
+	song = "csa_the_bonnie_blue_flag"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -458,15 +490,17 @@ music = {
 }
 
 music = {
-	song = "The Bonnie Blue Flag"
-	
+	song = "csa_the_kennesaw_line"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -474,15 +508,17 @@ music = {
 }
 
 music = {
-	song = "The Kennesaw Line"
-	
+	song = "csa_the_rebel_soldier"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -490,15 +526,17 @@ music = {
 }
 
 music = {
-	song = "The Rebel Soldier"
-	
+	song = "csa_the_reluctant_conscript"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -506,15 +544,17 @@ music = {
 }
 
 music = {
-	song = "The Reluctant Conscript"
-	
+	song = "csa_the_upidee_song"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -522,15 +562,17 @@ music = {
 }
 
 music = {
-	song = "The Upidee Song"
-	
+	song = "csa_twas_the_siege_of_vicksburg"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -538,15 +580,17 @@ music = {
 }
 
 music = {
-	song = "Twas the Siege of Vicksburg"
-	
+	song = "csa_wait_for_the_wagon"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -554,15 +598,17 @@ music = {
 }
 
 music = {
-	song = "You're Going to the War Willy Boy"
-	
+	song = "csa_we_conquer_or_die"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -570,15 +616,17 @@ music = {
 }
 
 music = {
-	song = "Wait for the Wagon"
-	
+	song = "csa_yellow_rose_of_texas"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -586,15 +634,17 @@ music = {
 }
 
 music = {
-	song = "Yellow Rose of Texas"
-	
+	song = "csa_you_re_going_to_the_war_willy_boy"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -602,15 +652,17 @@ music = {
 }
 
 music = {
-	song = "We Conquer or Die"
-	
+	song = "csa_dixie"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -618,15 +670,17 @@ music = {
 }
 
 music = {
-	song = "Confederate Irish Brigade"
-	
+	song = "csa_confederate_irish_brigade"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -634,15 +688,17 @@ music = {
 }
 
 music = {
-	song = "I Wish I Was in Dixie"
-	
+	song = "csa_i_wish_i_was_in_dixie"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -650,15 +706,17 @@ music = {
 }
 
 music = {
-	song = "The Old Unreconstructed"
-	
+	song = "csa_the_old_unreconstructed"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
@@ -666,17 +724,20 @@ music = {
 }
 
 music = {
-	song = "The Night They Drove Dixie Down"
-	
+	song = "csa_the_night_they_drove_dixie_down"
+
 	chance = {
 		factor = 1
+
 		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
 					tag = COF
+					original_tag = COF
 				}
 			}
 		}
 	}
 }
+

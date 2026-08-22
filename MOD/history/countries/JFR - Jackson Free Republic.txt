@@ -8,25 +8,15 @@ set_technology = {
 	tech_recon = 1
 }
 
+set_popularities = {
+centrism = 34
+chauvinist_populism = 12
+vanguard_communism = 24
+autocracy = 30
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 34
-		}
 
-		chauvinist_populism = {
-			popularity = 12
-		}
-		
-		vanguard_communism = {
-			popularity = 24
-		}
-		
-		autocracy = { 
-			popularity = 30
-		}
-	}
 	
 	ruling_party = centrism
 	last_election = "1933.3.5"

@@ -83,26 +83,15 @@ if = {
 	}
 }
 
+set_popularities = {
+centrism = 0
+chauvinist_populism = 20
+vanguard_communism = 0
+autocracy = 80
+}
 set_politics = {
 
-	parties = {
-		centrism = { 
-			popularity = 0
-		}
 
-		chauvinist_populism = {
-			popularity = 20
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		autocracy = {
-			popularity = 80
-		}
-	}
 	
 	ruling_party = autocracy
 	last_election = "1936.1.1"
@@ -115,26 +104,15 @@ recruit_character = YUN_long_yun
 recruit_character = YUN_lu_han
 
 1939.1.1 = {
+	set_popularities = {
+	centrism = 0
+	chauvinist_populism = 20
+	vanguard_communism = 0
+	autocracy = 80
+	}
 	set_politics = {
 
-		parties = {
-		centrism = { 
-			popularity = 0
-		}
 
-		chauvinist_populism = {
-			popularity = 20
-		}
-		
-		vanguard_communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-		
-		autocracy = {
-			popularity = 80
-		}
-	}
 	
 	ruling_party = autocracy
 		last_election = "1936.1.1"
