@@ -82,6 +82,22 @@ echo ">> fresh bare clone -> $OUT"
 rm -rf "$OUT"
 git clone --bare --no-hardlinks "$SRC" "$OUT"
 
+# Unconditional purge, applied at every level and independent of which
+# folders are kept. These are personal legal documents that were swept into
+# FINAL/ by accident; they are not mod content and must not survive a rewrite
+# even if this script is later changed to retain more folders.
+PURGE="$(mktemp)"
+cat > "$PURGE" <<'EOF'
+glob:**/*.doc
+glob:**/*.docx
+glob:**/*.pdf
+glob:**/*.odt
+glob:**/*.rtf
+EOF
+echo ">> purging stray office documents from all history"
+git -C "$OUT" filter-repo --force --invert-paths --paths-from-file "$PURGE"
+rm -f "$PURGE"
+
 echo ">> keeping only MOD/"
 git -C "$OUT" filter-repo --force --path 'MOD/'
 
