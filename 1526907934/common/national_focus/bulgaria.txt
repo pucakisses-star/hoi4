@@ -1,0 +1,82 @@
+focus_tree = {
+	id = bul_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = BUL
+		}
+	}
+	
+	default = no
+
+########################################
+
+focus = {
+		id = Confirm_the_Tophane_Agreement
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10
+		x = 1
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 90
+		}
+	}
+
+########################################
+
+focus = {
+		id = Saedinenia_na_Balgariya
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		
+		prerequisite = {
+			focus = Confirm_the_Tophane_Agreement
+		}
+		
+		
+		completion_reward = {
+			annex_country = { target = ERU transfer_troops = yes }
+			add_state_core = 765		
+		}
+	}
+
+########################################
+
+focus = {
+		id = The_Ilinden_Uprising
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		
+		prerequisite = {
+			focus = Saedinenia_na_Balgariya
+		}
+
+		available = {
+			date > 1903.05.20
+		}
+		
+		completion_reward = {
+			transfer_state = 106			
+		}
+	}
+

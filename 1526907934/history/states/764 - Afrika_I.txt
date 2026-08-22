@@ -1,0 +1,24 @@
+
+state={
+	id=764
+	name="STATE_764" # Afrika_I
+	manpower = 1000000
+	
+	state_category = city
+	
+	history={
+		owner = OFS
+		add_core_of = OFS
+		add_claim_by = ENG
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		5231 12064 12648 
+	}
+}

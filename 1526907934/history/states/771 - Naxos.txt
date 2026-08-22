@@ -1,0 +1,18 @@
+
+state={
+	id=771
+	name="STATE_771"
+	manpower = 322600
+	
+	state_category = small_island
+
+	history={
+		owner = GRE
+		
+		add_core_of = GRE
+	}
+
+	provinces={
+		3401
+	}
+}

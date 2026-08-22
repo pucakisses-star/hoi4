@@ -1,0 +1,67 @@
+focus_tree = {
+	id = soviet_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = SOV
+		}
+	}
+	
+	default = no
+	
+###############################################
+
+focus = {
+		id = SOV_Nothing
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 1
+		mutually_exclusive = {
+			focus = SOV_Burn_it_down
+		}
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+	}
+
+	
+############################################
+
+focus = {
+		id = SOV_Burn_it_down
+		icon = GFX_goal_support_communism
+		cost = 1
+		mutually_exclusive = {
+			focus = SOV_Nothing
+		}
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			start_civil_war = {
+                ruling_party = monarchism
+                ideology = communism
+                size = 0.5
+                capital = 255
+                states = { 255 }
+            }
+		}
+	
+	}
+
+
+
