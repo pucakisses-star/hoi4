@@ -1,0 +1,14 @@
+state={
+	id=901
+	name="STATE_901"
+	provinces={
+		543 732 3718 5283 11525 
+	}
+	history = {
+		owner = AUS
+		add_core_of = AUS
+	}
+	manpower=100000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

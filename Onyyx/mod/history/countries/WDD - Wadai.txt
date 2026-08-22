@@ -1,0 +1,98 @@
+﻿1857.1.1 = {
+  capital = 660
+
+  oob = "WDD_1857"
+
+  set_convoys = 0
+
+  add_ideas = { 
+          #POLITICS
+    hos_is_leader
+    pre_industrial_era
+    agrarian
+    has_heir
+    absolute_monarchy
+	law_army_tribal_improved
+
+    civilian_economy
+    limited_exports
+    two_percent
+    high_taxes
+	cl_legal
+	lp_land_estates
+
+    stagnation_growth
+    border_control
+    slavery
+    manpower_tribal_every_tenth
+    absolutism
+
+    no_constitution
+    no_elections
+
+    oral_tradition
+    state_religion
+	religion_sunni
+
+         #NATIONAL SPIRITS
+    afr_large_kingdom
+	WDD_wadai_hegemony
+	WDD_target_of_slave_raids
+	
+  }
+
+  #Rivals 
+	  set_variable = { rival_country = BAG.id }
+  
+  set_politics = {
+	  ruling_party = autocracy
+}
+
+WDD = { 
+	add_timed_idea = {
+		idea = WDD_KBO_TRUCE
+		days = 3600
+	}
+	add_manpower = 16000
+	add_ideas={AF_T_Tribal_Army}
+	add_to_variable = {Tribal_army_num = 3000}
+	set_country_flag = afr_traditional_tree
+}
+
+  #Diplomacy
+	add_opinion_modifier = { target = KBO modifier = AFR_kanem_bornu_waddai_conflicts }
+	add_opinion_modifier = { target = BAG modifier = AFR_kanem_bornu_waddai_conflicts_bagirmi } #This makes WDD Yellow to BAG
+
+set_popularities = {
+    anarchism = 0
+    vanguard_communism = 0
+    collectivist_socialism = 0
+    social_egalitarianism = 0
+    centrism = 0
+    traditional_conservatism = 0
+    radical_democracy = 0
+    chauvinist_populism = 0
+    autocracy = 85
+    fundamentalism = 15
+}
+
+  set_research_slots = 1
+
+  set_technology = {
+	tribaltech = 1
+	infantry_weapons = 1
+	start_build_tech = 1
+	tech_infantry_napoleonic_uniform = 1
+  }
+
+  # POLITICAL LEADERS
+
+  create_country_leader = {
+    name = "'Izz ad-Din Muhammad al-Sharif ibn Salih Derret"
+    desc = "POLITICS_IZZ_AD_DIN_MUHAMMAD_AL_SHARIF_IBN_SALIH_DERRET_DESC"
+    picture = "gfx/leaders/Africa/generic_leader_king_4.dds"
+    expire = "1858.3.1"
+    ideology = despotism
+    traits = { }
+  }
+}

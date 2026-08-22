@@ -1,0 +1,23 @@
+﻿add_namespace = TCS_sheikh_revolt
+
+country_event = { #### unfinished
+	id = TCS_sheikh_revolt.1
+	title = TCS_sheikh_revolt.1.t
+	desc = TCS_sheikh_revolt.1.d
+	picture = GFX_report_event_PER_sheikh_revolt
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TCS_sheikh_revolt.1.a
+		SKR = { add_ideas = { SKR_revolt_state } }
+	}
+	option = {
+		name = TCS_sheikh_revolt.1.b
+		SKR = { add_ideas = { SKR_revolt_state } }
+	}
+}
+	
+	

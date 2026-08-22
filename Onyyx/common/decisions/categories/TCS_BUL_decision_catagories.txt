@@ -1,0 +1,61 @@
+BUL_struggle_macedonia_cat = {
+    icon = GFX_decision_macedonia
+    picture = GFX_decision_macedonia_map
+    allowed = {
+		original_tag = BUL
+		has_idea = BUL_Macedonian_Struggle
+	}
+	visible = {
+		has_idea = BUL_Macedonian_Struggle
+	}
+}
+
+BUL_military_buildup = {
+    icon = infiltration
+    #picture = 
+    allowed = {
+        original_tag = BUL
+        NOT = {
+            has_country_flag = BUL_date_1910
+        }
+    }
+    visible = {
+        has_country_flag = BUL_milbuildup_1
+        NOT = {
+            has_country_flag = BUL_date_1910
+        }
+    }
+}
+
+BUL_stambolovist_economic_expansion = {
+    icon = generic_prospect_for_resources
+    #picture = 
+    allowed = {
+        original_tag = BUL
+        NOT = {
+            has_country_flag = BUL_date_1910
+        }
+    }
+    visible = {
+        has_country_flag = BUL_petkov_economy1
+        NOT = {
+            has_country_flag = BUL_date_1910
+        }
+    }
+}
+
+BUL_industrial_revolution = {
+    icon = generic_prospect_for_resources
+    #picture = 
+    allowed = {
+		original_tag = BUL
+		NOT = {
+        	has_country_flag = BUL_date_1910
+        }
+	}
+	visible = {
+        NOT = {
+        	has_country_flag = BUL_date_1910
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+state={
+	id=817
+	name="STATE_817"
+
+	history={
+		owner = HOB
+		add_core_of = HOB
+		add_claim_by = ITA
+
+	}
+
+	provinces={
+		5065 12840 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

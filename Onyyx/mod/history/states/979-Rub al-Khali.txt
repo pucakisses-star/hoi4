@@ -1,0 +1,15 @@
+state={
+	id=979
+	name="STATE_979"
+	provinces={
+		5006 8030 12768 
+	}
+	history = {
+		owner = SAU
+		add_core_of = SAU
+	}
+	impassable = yes
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

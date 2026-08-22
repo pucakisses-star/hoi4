@@ -1,0 +1,88 @@
+defined_text = { # Country
+	name = GetNewspaperHeader
+	### Netherlands ###
+	text = {
+		trigger = {
+			tag = HOL
+			has_government = soc_conservatism
+		}
+		localization_key = HOL_de_telegraaf
+	}
+	### Italy ###
+	text = {
+		trigger = {
+			tag = ITA
+			has_government = lib_conservatism
+		}
+		localization_key = ITA_corriere_della_sera
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				OR = {
+					has_government = soc_democracy
+					has_government = rev_socialism
+					has_government = marxism
+					has_government = leninism
+				}
+			}
+		}
+		localization_key = ITA_avanti
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			has_government = soc_conservatism
+		}
+		localization_key = ITA_il_gionale_ditalia
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			has_government = soc_liberal
+		}
+		localization_key = ITA_liniziativa
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			has_government = fascism
+			date < 1922.01.01
+		}
+		localization_key = ITA_lidea_nazionale
+	}
+	text = {
+		trigger = {
+			tag = ITA
+			has_government = fascism
+			date > 1922.01.01
+		}
+		localization_key = ITA_il_popolo_ditalia
+	}
+	### Persia ###
+	text = {
+		trigger = {
+			tag = PER
+		}
+		localization_key = PER_akhbar
+	}
+	### Greece ###
+	text = {
+		trigger = {
+			tag = GRE
+		}
+		localization_key = GRE_acropolis
+	}
+	### Bulgaria ###
+	text = {
+		trigger = {
+			tag = BUL
+		}
+		localization_key = BUL_darzhaven_vestnik
+	}
+    # #keep this one without triggers and at the end as a fallback
+	# text = {
+	# 	localization_key = newspaper_header_2
+	# }
+}

@@ -1,0 +1,23 @@
+state={
+	id=986
+	name="STATE_986"
+	provinces={
+		290 318 3281 6359 
+	}
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+
+		}
+		1918.11.11 = {
+			owner = LIT
+			controller = LIT
+			add_core_of = POL
+		}
+	}
+	manpower=100000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

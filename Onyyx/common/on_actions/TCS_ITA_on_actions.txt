@@ -1,0 +1,33 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+                limit = {
+                    has_start_date < 1905.1.2
+                }
+            	ITA = {
+                	country_event = { id = ita.disasters.1 days = 1457 }
+                	country_event = { id = ita.disasters.10 days = 249 }
+            	}
+            }
+        }
+    }
+    on_new_term_election = {
+        effect = {
+            if = {
+                limit = {
+                    has_start_date < 1905.1.2
+					original_tag = ITA
+					NOT = {
+						ITA = {
+							has_country_flag = ITA_1909_elections_held
+						}
+					}
+                }
+            	ITA = {
+                	country_event = { id = ita.15 }
+            	}
+            }
+        }
+    }
+}

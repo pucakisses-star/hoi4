@@ -1,0 +1,67 @@
+﻿#
+# greece events
+#
+
+add_namespace = tcs_greece
+
+country_event = {
+    id = tcs_greece.1
+    title = tcs_greece.1.t
+    desc = tcs_greece.1.d
+    picture = GFX_assassination_of_diligiannis
+
+    is_triggered_only = yes
+
+    option = {
+    name = tcs_greece.1.a
+     add_stability = -0.2
+     set_country_flag = GRE_diligiannis_assassinated
+     hidden_effect = {
+       add_ideas = GRE_dimitrios_rallis
+       add_ideas = GRE_dimitrios_rallis_economy
+       add_ideas = GRE_dimitrios_rallis_foreign
+       add_ideas = GRE_kyriakoulis_mavromichalis
+       load_focus_tree = {
+         tree = TCS_Greece_Rallis
+         keep_completed = yes
+       }
+       country_event = {
+         id = tcs_greece.2
+         days = 183
+       }
+    }
+  }
+}
+
+country_event = {
+    id = tcs_greece.2
+    title = tcs_greece.2.t
+    desc = tcs_greece.2.d
+    picture = GFX_report_event_generic_parliament
+
+    is_triggered_only = yes
+
+  option = {
+    name = tcs_greece.2.a
+    set_country_flag = GRE_rallis_ousted
+
+    hidden_effect = {
+      set_politics = {
+		    ruling_party = soc_liberal
+	    }
+      add_ideas = GRE_georgios_theotokis
+      add_ideas = GRE_alexandros_skouzes
+      add_ideas = GRE_anargiros_simopoulos
+      add_ideas = GRE_nikolaos_kalogeropoulos
+      load_focus_tree = {
+        tree = TCS_Greece_Theotokis
+        keep_completed = yes
+      } 
+      add_popularity = {
+        ideology = soc_liberal
+        popularity = 0.1
+      }
+    }
+  }
+}
+

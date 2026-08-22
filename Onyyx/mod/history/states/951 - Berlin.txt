@@ -1,0 +1,44 @@
+
+state={
+	id=951
+	name="STATE_951"
+	manpower = 435029
+	buildings_max_level_factor = 1
+
+	state_category = megalopolis
+
+
+	history={
+		owner = PRS
+		victory_points = {
+			6521 30
+		}
+		buildings = {
+			infrastructure = 7 
+			arms_factory = 1
+			industrial_complex = 1
+			6521 = {
+				bunker = 2
+
+			}
+		}
+		add_core_of = PRS
+       	add_to_array = { state_culture_array = 13 }
+		add_to_array = { state_culture_array = 121 }
+				
+       	add_to_array = { state_culture_array_num = 0.978 }
+		add_to_array = { state_culture_array_num = 0.022 }
+	
+      	add_to_array = { state_religion_array = 3 }
+		add_to_array = { state_religion_array = 2 }
+		add_to_array = { state_religion_array = 7 }
+		
+      	add_to_array = { state_religion_array_num = 0.94 }
+		add_to_array = { state_religion_array_num = 0.048 }
+		add_to_array = { state_religion_array_num = 0.022 }	
+	}
+
+	provinces={
+		6521
+	}
+}

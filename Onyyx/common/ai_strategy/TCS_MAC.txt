@@ -1,0 +1,28 @@
+MAC_focus_on_retaking_core = {
+	enable = {
+		tag = MAC
+		date < 1910.1.1
+		country_exists = OTT
+		has_war_with = OTT
+	}
+	abort = {
+		NOT = {
+			OTT = {
+				controls_state = 831
+				controls_state = 106
+				controls_state = 830
+				controls_state = 731
+				controls_state = 843
+				controls_state = 834
+				controls_state = 835
+				controls_state = 842
+			}
+		}		
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "OTT"
+		value = 100
+	}
+}   

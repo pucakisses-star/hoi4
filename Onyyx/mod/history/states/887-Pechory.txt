@@ -1,0 +1,21 @@
+state={
+	id=887
+	name="STATE_887"
+	provinces={
+		415 
+	}
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+		}
+		1918.11.11 = {
+			owner = SOV
+			controller = SOV
+		}
+	}
+	manpower=100000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

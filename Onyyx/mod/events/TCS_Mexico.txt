@@ -1,0 +1,83 @@
+﻿#
+# M E E E E E E E E E X I C O 
+#
+
+add_namespace = mexico
+
+### Creelman Interview ###
+
+country_event = {
+    id = mexico.1
+    title = mexico.1.t
+    desc = mexico.1.d
+
+    is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+    fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+    option = { 
+        name = mexico.1.a 
+		country_event = {
+			id = mexico.2
+			days = 14
+		}
+		add_ideas = MEX_promised_end
+    }
+}
+country_event = {
+    id = mexico.2
+    title = mexico.2.t
+    desc = mexico.2.d
+
+    is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+    fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+    option = { 
+        name = mexico.2.a 
+		swap_ideas = {
+			remove_idea = MEX_promised_end
+			add_idea = MEX_promised_end2
+		}
+		complete_national_focus = MEX_creelman_interview
+    }
+}
+country_event = {
+    id = mexico.3
+    title = mexico.3.t
+    desc = mexico.3.d
+
+    is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+    fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+    option = { 
+        name = mexico.3.a 
+    }
+}
+country_event = {
+    id = mexico.4
+    title = mexico.4.t
+    desc = mexico.4.d
+
+    is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+    fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+    option = { 
+        name = mexico.4.a 
+    }
+}
+country_event = {
+    id = mexico.5
+    title = mexico.5.t
+    desc = mexico.5.d
+
+    is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+    fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+
+    option = { 
+        name = mexico.5.a 
+    }
+}

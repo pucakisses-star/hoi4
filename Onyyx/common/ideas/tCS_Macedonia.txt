@@ -1,0 +1,60 @@
+ideas = {
+	country = {
+
+		MAC_revolt_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			#picture = 
+			
+			modifier = {
+				war_support_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		MAC_fragile_alliance = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.15
+			}
+		}
+		# hidden_ideas = { #Doesnt work or just gives error.
+
+		#  	MAC_defence_revolt = {
+
+		# 		allowed = {
+		# 			always = no
+		# 		}
+			
+		# 		removal_cost = -1
+			
+		# 		modifier = {
+		# 			ai_focus_defense_factor = 0.65
+		# 			surrender_limit = 0.1
+		# 		}
+		#  	}
+	 	# }
+	}
+}

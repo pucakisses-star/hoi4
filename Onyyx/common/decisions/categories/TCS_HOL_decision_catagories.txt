@@ -1,0 +1,10 @@
+HOL_parliament = {
+	icon = HOL_parliament
+	allowed = {
+		original_tag = HOL
+	}
+
+	scripted_gui = hol_parliament_decision_ui	
+
+	priority = 85
+}

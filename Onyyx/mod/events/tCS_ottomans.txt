@@ -1,0 +1,527 @@
+####################################
+### Ottoman Events ###
+####################################
+
+add_namespace = ott
+
+country_event = { # Yildiz assassination
+    id = ott.0
+    title = ott.0.t
+    desc = ott.0.d
+    picture = GFX_report_Yildiz_mosque
+
+    trigger = {
+        tag = OTT
+        date > 1905.6.12
+        has_start_date < 1910.01.01
+    }
+    fire_only_once = yes
+    
+    option = { #Abdulhamid survives
+        name = ott.0.a
+        ai_chance = { factor = 80}
+        country_event = { id = ott.5 }
+    }
+
+    option = { #Abdulhamid dies
+        name = ott.0.b
+        ai_chance = { factor = 10}
+        country_event = { id = ott.6 }
+    }
+}
+
+country_event = { # Startup Event
+    id = ott.2
+    title = ott.2.t
+    desc = ott.2.d
+    picture = GFX_event_OTT_Group
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    immediate = {
+        hidden_effect = {
+            set_country_flag = mac_struggle
+            add_dynamic_modifier = {
+                modifier = dynamic_modifier_opda
+            }
+            OTT = { 
+                add_opinion_modifier = { 
+                    target = CET 
+                    modifier = OTT_member_of_empire 
+                } 
+            }
+            OTT = { 
+                add_opinion_modifier = { 
+                    target = BOS 
+                    modifier = OTT_member_of_empire 
+                } 
+            }
+            OTT = { 
+                add_opinion_modifier = { 
+                    target = EGY 
+                    modifier = OTT_member_of_empire 
+                } 
+            }
+            CET = { 
+                add_opinion_modifier = { 
+                    target = OTT
+                    modifier = OTT_claimed_our_lands
+                } 
+            }
+            BOS = { 
+                add_opinion_modifier = { 
+                    target = OTT 
+                    modifier = OTT_claimed_our_lands 
+                } 
+            }
+            EGY = { 
+                add_opinion_modifier = { 
+                    target = OTT
+                    modifier = OTT_claimed_our_lands 
+                } 
+            }
+        }
+    }
+    option = { #
+        name = ott.2.a
+        country_event = { id = ott.12 }
+    }
+}
+
+country_event = { # OPDA disbanded
+    id = ott.3
+    title = ott.3.t
+    desc = ott.3.d
+    #picture = 
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        hidden_effect = {
+            set_country_flag = no_opda
+        }
+    }
+    option = {
+        name = ott.3.a
+        swap_ideas = {
+            remove_idea = OTT_opda
+            add_idea = OTT_good_trade
+        }
+    }
+}
+
+country_event = { # put back army restrictions
+    id = ott.4
+    title = ott.4.t
+    desc = ott.4.d
+    picture = GFX_report_ottoman_soldiers_1
+    is_triggered_only = yes
+    fire_only_once = no
+    option = {
+        name = ott.4.a
+        swap_ideas = {
+            remove_idea = OTT_bad_military_war
+            add_idea = OTT_bad_military_1
+        }
+    }
+}
+
+country_event = { # Abdulhamid survives the Yildiz Assasination
+    id = ott.5
+    title = ott.5.t
+    desc = ott.5.d
+    picture = GFX_report_Yildiz_explosion
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.5.a
+        add_stability = -0.05     
+    } 
+} 
+
+country_event = { # Abdulhamid dies in the Yildiz Assasination
+    id = ott.6
+    title = ott.6.t
+    desc = ott.6.d
+    picture = GFX_report_Yildiz_explosion
+    is_triggered_only = yes
+    fire_only_once = yes
+        option = {
+        name = ott.6.a
+        news_event = { id = ott.11 }
+        add_stability = -0.05
+        kill_country_leader = yes
+        create_country_leader = {
+                name = "Reşad I"
+                desc = "POLITICS_Resad_I_DESC"
+                picture = "gfx/leaders/OTT/Portrait_Mehmet_V.tga"
+                expire = "1965.1.1"
+                ideology = pat_autocrat_subtype
+                traits = {
+                    #
+                }
+            }
+        }
+    }
+}
+}
+
+country_event = { #Capture of Sana'a
+    id = ott.7
+    title = ott.7.t
+    desc = ott.7.d
+    picture = GFX_report_Sana'a
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.7.a
+        add_stability = -0.05     
+    } 
+} 
+
+country_event = { # Yemen Offers Peace
+    id = ott.8
+    title = ott.8.t
+    desc = ott.8.d
+    picture = GFX_report_yemen_map
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { # accept
+        name = ott.8.a
+        YEM = {
+            set_cosmetic_tag = YEM_OTT
+            country_event = { 
+                id = yem.3 
+            }
+        }
+        if = {
+            limit {
+                has_dlc = "Together for Victory"
+            }
+            set_autonomy = {
+                target = YEM
+                autonomous_state = autonomy_vassal
+                freedom_level = 0.6 
+            }
+            else = {
+                puppet = YEM
+            }
+        }
+    }
+    option = { # fuck off
+        name = ott.8.b
+        YEM = {
+            country_event = { 
+                id = yem.4 
+            }
+        }
+        declare_war_on = {
+            target = YEM
+            type = annex_everything
+        }
+    }
+}
+
+country_event = { #Yemen Accepts our Offer
+    id = ott.9
+    title = ott.9.t
+    desc = ott.9.d
+    picture = GFX_report_yemen_map
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.9.a
+        add_political_power = 30    
+    } 
+} 
+
+country_event = { #Yemen Declines our Offer
+    id = ott.10
+    title = ott.10.t
+    desc = ott.10.d
+    picture = GFX_report_yemen_map
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.10.a
+        add_political_power = -30    
+    } 
+} 
+
+news_event = {
+    id = ott.11
+    title = ott.11.t
+    desc = ott.11.d
+    picture = GFX_report_abdulhamid_dies
+    major = yes 
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = { 
+        ott.11.a
+    }
+}
+}
+
+country_event = { #situation in Yemen
+    id = ott.12
+    title = ott.12.t
+    desc = ott.12.d
+    picture = GFX_report_yemen_map
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.12.a   
+    } 
+} 
+
+news_event = { #Yemen is Vassalized
+    id = ott.13
+    title = ott.13.t
+    desc = ott.13.d
+    picture = GFX_report_yemen_revolt
+    major = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.13.a   
+    } 
+}
+
+news_event = { #Yemen is Annexed
+    id = ott.14
+    title = ott.14.t
+    desc = ott.14.d
+    picture = GFX_report_yemen_revolt
+    major = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.14.a   
+    } 
+}
+
+country_event = { # Soubak Revolt
+    id = ott.15
+    title = ott.15.t
+    desc = ott.15.d
+    picture = GFX_report_shoubak_revolt
+
+    trigger = {
+        tag = OTT
+        date > 1905.5.15
+        has_start_date < 1910.01.01
+    }
+    fire_only_once = yes
+    
+    option = {
+        name = ott.15.a
+        add_stability = -0.05   
+    }
+}
+
+country_event = { # Second Congress of Ottoman Opposition
+    id = ott.16
+    title = ott.16.t
+    desc = ott.16.d
+    picture = GFX_event_OTT_Group
+
+    trigger = {
+        tag = OTT
+        date > 1907.6.15
+        has_start_date < 1910.01.01
+    }
+    fire_only_once = yes
+    
+    option = {
+        name = ott.16.a
+        add_stability = -0.05 
+    }
+}
+
+country_event = { # Begining of Taba Crisis
+    id = ott.17
+    title = ott.17.t
+    desc = ott.17.d
+    picture = GFX_event_taba
+
+    trigger = {
+        tag = OTT
+        date > 1905.12.25
+        has_start_date < 1910.01.01
+    }
+    fire_only_once = yes
+    
+    option = {
+        name = ott.17.a
+         ENG = {
+            country_event = { 
+                id = ott.18 
+            }
+        } 
+    }
+    option = {
+    name = ott.17.b
+    }
+}
+
+country_event = { # Britain learns of the Taba incident
+    id = ott.18
+    title = ott.18.t
+    desc = ott.18.d
+    picture = GFX_event_taba
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = ott.18.a
+        country_event = { 
+                id = ott.19 
+            }
+        OTT = {
+            country_event = { 
+                id = ott.19 
+            } 
+        } 
+        EGY = {
+            country_event = { 
+                id = ott.19 
+            } 
+        } 
+    }
+    option = {
+    name = ott.18.b
+        OTT = {
+            country_event = { id = ott.22 }
+        }
+    }
+}
+
+country_event = { # negotiations start
+    id = ott.19
+    title = ott.19.t
+    desc = ott.20.d
+    picture = GFX_event_taba
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+    name = ott.19.a
+        if = {
+            limit = {
+                tag = ENG
+            }
+            activate_mission = ENG_taba_ultimatum
+            }
+        }
+    }
+}
+}
+
+country_event = { # Britain sends the ultimatum
+    id = ott.20
+    title = ott.20.t
+    desc = ott.20.d
+    picture = GFX_event_taba
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+    name = ott.20.a
+        add_political_power = -50 
+        add_opinion_modifier = { 
+            target = ENG
+            modifier = OTT_taba_loss_opinion
+            } 
+        }
+    }
+}
+
+country_event = { # Taba Crisis Ottoman Victory, British perspective
+    id = ott.21
+    title = ott.21.t
+    desc = ott.21.d
+    picture = GFX_event_taba
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.21.a   
+    } 
+}
+
+country_event = { # Taba Crisis Ottoman Victory, Ottoman perspective
+    id = ott.22
+    title = ott.22.t
+    desc = ott.22.d
+    picture = GFX_event_taba
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.22.a 
+        ENG = { 
+            add_opinion_modifier = { 
+                    target = OTT
+                    modifier = OTT_taba_loss_opinion
+                } 
+            }
+        }
+    } 
+}
+}
+
+country_event = { # manage donations
+    id = ott.23
+    title = ott.23.t
+    desc = ott.23.d
+    picture = GFX_event_taba
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.23.a  
+        custom_effect_tooltip = OTT_tt_6
+        hidden_effect = {
+            add_to_variable = { OTT.opda_influence = -0.03 } 
+        } 
+    } 
+    option = {
+        name = ott.23.b
+        341 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }   
+    } 
+    option = {
+        name = ott.23.c
+        add_stability = 0.05 
+    } 
+}
+
+country_event = { # manage donations
+    id = ott.24
+    title = ott.24.t
+    desc = ott.24.d
+    picture = GFX_event_taba
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = ott.24.a  
+        custom_effect_tooltip = OTT_tt_6
+        hidden_effect = {
+            add_to_variable = { OTT.opda_influence = -0.03 } 
+        } 
+    } 
+    option = {
+        name = ott.23.b
+        341 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }   
+    } 
+    option = {
+        name = ott.24.c
+        add_stability = 0.05 
+    } 
+}

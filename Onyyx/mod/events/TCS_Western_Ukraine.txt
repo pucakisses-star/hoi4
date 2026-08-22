@@ -1,0 +1,81 @@
+﻿#
+# Polish Events
+#
+
+add_namespace = wuk
+add_namespace = wuk_news
+add_namespace = wuk_flav
+
+country_event = { #Ceasfire with Poland
+    id = wuk.1
+    title = wuk.1.title
+    desc = wuk.1.desc
+    picture = GFX_event_WUK_interalied_mission
+
+    trigger = {
+        tag = WUK
+        date > 1919.2.15
+        date < 1925.1.1
+    }
+
+    fire_only_once = yes
+
+    option = { #OK
+        name = wuk.1.a
+        white_peace = POL
+        WUK = {  
+            remove_state_core = 91
+        }
+        POL = {
+            transfer_state = 91
+            remove_state_core = 89
+        }
+        country_event = { id = wuk.2 hours = 7 }
+        hidden_effect = {
+            news_event = { id = wuk_news.1 hours = 6 }
+        } 
+    }
+
+    option = { #Never
+        name = wuk.1.b
+        hidden_effect = {
+            news_event = { id = wuk_news.1 hours = 6 }
+        } 
+    }
+}
+
+country_event = { #Oil Explatation rights
+    id = wuk.2
+    title = wuk.2.title
+    desc = wuk.2.desc
+    picture = GFX_event_WUK_oil_exploration_rights
+
+    trigger = {
+        tag = WUK
+        date > 1919.2.16
+        date < 1925.1.1
+    }
+
+    fire_only_once = yes
+
+    option = { #Good...
+        name = wuk.2.a
+        POL = {
+            give_resource_rights = { receiver = WUK state = 91 }
+        }
+    }
+}
+
+
+news_event = { #Ceasfire Event
+    id = wuk_news.1
+    title = wuk_news.1.title
+    desc = wuk_news.1.desc
+    picture = GFX_report_event_GER_News_Hitler_Chancellor
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = wuk_news.1.a
+    }
+}
+

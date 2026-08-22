@@ -1,0 +1,21 @@
+state={
+	id=1000
+	name="STATE_1000"
+	provinces={
+		12441 
+	}
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 2
+
+			12441 = {
+				bunker = 1
+			}
+		}
+	}
+	manpower=100000
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

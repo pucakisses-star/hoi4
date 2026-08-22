@@ -1,0 +1,391 @@
+ideas = {
+	### Ministers ###
+	### Heads of Government ###
+	head_of_government = {
+		### Boström Government ###
+		SWE_Erik_Bostrom = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Bostrom_gone }
+			}
+			picture = SWE_Erik_Bostrom
+			traits = {
+				head_of_government
+				lib_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+		### Ramstedt Government ###
+		SWE_Johan_Ramstedt = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Johan_Ramstedt_dead }
+			}
+			picture = SWE_Johan_Ramstedt
+			traits = {
+				head_of_government
+				lib_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+		### Lundeberg Government ###
+		SWE_Christian_Lundeberg = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Christian_Lundeberg_dead }
+			}
+			picture = SWE_Christian_Lundeberg
+			traits = {
+				head_of_government
+				soc_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+		### Staaff Government ###
+		SWE_Karl_Staaff_hg = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Karl_Staaff_dead }
+			}
+			picture = SWE_Karl_Staaff
+			traits = {
+				head_of_government
+				soc_liberal
+			}
+			cancel_if_invalid = yes
+		}
+		### Lindman Government ###
+		SWE_Arvid_Lindman = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Arvid_Lindman_dead }
+			}
+			picture = SWE_Arvid_Lindman
+			traits = {
+				head_of_government
+				soc_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+	}
+	### Foreign Ministers ###
+	foreign_minister = {
+		### Ramstedt Government ###
+	    SWE_August_Gyldenstolpe = {
+		   allowed = { original_tag = SWE }
+		   available = {
+			   always = yes
+		   }
+		   allowed_to_remove = {
+			always = no
+			}
+		   visible = {
+			   NOT = { has_country_flag = August_Gyldenstolpe_dead }
+		   }
+		   picture = SWE_August_Gyldenstolpe
+		   traits = {
+			   foreign_minister
+			   soc_conservatism
+		   }
+		   cancel_if_invalid = yes
+	    }
+	    ### Lundeberg Government ###
+	    SWE_Fredrik_Wachtmeister = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Fredrik_Wachtmeister_dead }
+			}
+			picture = SWE_Fredrik_Wachtmeister
+			traits = {
+				foreign_minister
+				soc_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+		### Staaff Government ###
+		SWE_Eric_Trolle = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Eric_Trolle_dead }
+			}
+			picture = SWE_Eric_Trolle
+			traits = {
+				foreign_minister
+				soc_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+	}
+	### Economy ###
+	economy_minister = {
+		### Ramstedt Government ###
+	    SWE_Ernst_Meyer = {
+		   allowed = { original_tag = SWE }
+		    available = {
+			   always = yes
+		    }
+		   allowed_to_remove = {
+				always = no
+			}
+		   visible = {
+			   NOT = { has_country_flag = Ernst_Meyer_dead }
+		   }
+		   picture = SWE_Ernst_Meyer
+		   traits = {
+			economy_minister
+			soc_conservatism
+		   }
+		   cancel_if_invalid = yes
+	    }
+	    ### Lundeberg & Staaff Government ###
+	    SWE_Elof_Biesert = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Elof_Biesert_dead }
+			}
+			picture = SWE_Elof_Biesert
+			traits = {
+				economy_minister
+				soc_liberal
+			}
+			cancel_if_invalid = yes
+		}
+		### Staaff & Lindman Government ###
+		SWE_Carl_Swartz = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Carl_Swartz_dead }
+			}
+			picture = SWE_Carl_Swartz
+			traits = {
+				economy_minister
+				soc_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+	}
+	### Interior Ministers ###
+	interior_minister = {
+		### Ramstedt Government ###
+	    SWE_Ossian_Berger = {
+		   allowed = { original_tag = SWE }
+		   available = {
+			   always = yes
+		    }
+		   allowed_to_remove = {
+			always = no
+			}
+		   visible = {
+			   NOT = { has_country_flag = Ossian_Berger_dead }
+		    }
+		    picture = SWE_Ossian_Berger
+		    traits = {
+				security_minister
+				lib_conservatism
+		    }
+		    cancel_if_invalid = yes
+	    }
+	    ### Lundeberg Government ###
+	    SWE_Gustaf_Berg = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Gustaf_Berg_dead }
+			}
+			picture = SWE_Gustaf_Berg
+			traits = {
+				security_minister
+				lib_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+		### Staaff Government ###
+		SWE_Karl_Staaff_sm = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Karl_Staaff_dead }
+			}
+			picture = SWE_Karl_Staaff
+			traits = {
+				security_minister
+				soc_liberal
+			}
+			cancel_if_invalid = yes
+		}
+		### Lindman Government ###
+		SWE_Albert_Petersson = {
+			allowed = { original_tag = SWE }
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Albert_Petersson_dead }
+			}
+			picture = SWE_Albert_Petersson
+			traits = {
+				security_minister
+				soc_conservatism
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+
+	### Companies ###
+	weapons_manufacturer = {
+
+		designer = yes
+
+		SWE_bofors = {
+			allowed = {
+				original_tag = SWE
+            }
+            allowed_civil_war = {
+                #
+            }
+            removal_cost = -1
+			picture = SWE_bofors
+			research_bonus = {
+				artillery = 0.10
+				infantry_weapons = 0.10
+			}
+			traits = {
+				artillery_manufacturer
+				infantry_equipment_manufacturer
+			}
+		}
+	}
+
+
+
+	country = {
+		SWE_desire_for_sufferage = {
+			picture = SWE_reform_desire
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		SWE_failing_union = {
+			picture = SWE_failing_union
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = -0.5
+				army_org_factor = -0.15
+			}
+		}
+
+
+
+		### Monarch Power ###
+		SWE_monarch_power = {
+			picture = SWE_monarch_power_3
+			
+			allowed = {
+				always = no
+			}
+
+			traits = {
+				monarch_power_trait
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+			}
+		}
+	}
+}

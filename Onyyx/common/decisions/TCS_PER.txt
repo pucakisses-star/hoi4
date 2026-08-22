@@ -1,0 +1,182 @@
+PER_army_control_cat = {
+	PER_army_too_much_control = {
+		allowed = { tag = PER }
+		fire_only_once = no
+		activation = {
+			check_variable = {
+				var = var_army_persia
+				value = 30
+				compare = greater_than
+			}
+		}
+		available = { PER = {  check_variable = { var = var_army_persia value = 30 compare = less_than_or_equals } } custom_trigger_tooltip = { tooltip = var_persia_less_than_30_tt } }  
+		is_good = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			add_political_power = -60
+		}
+	}
+#############
+	PER_move_rezakhan_dec = {
+		allowed = { tag = PER }
+		cost = 30
+		days_remove = 7
+		visible = { always = no }
+		remove_effect = { 
+			move_reza_khan = yes
+		}
+	}
+	PER_army_cat_info = {
+		available = {
+			always = no
+		}
+		is_good = no
+	}
+
+##############
+	PER_move_pessian_dec = {
+		allowed = { tag = PER }
+		cost = 30
+		days_remove = 7
+		visible = { always = no }
+		remove_effect = { 
+			move_pessian = yes
+		}
+	}
+	PER_allow_pessian_into_service = {
+		allowed = { tag = PER }
+		available  ={ date > 1907.2.9 }
+		cost = 30
+		complete_effect = {
+			set_country_flag = PER_pessian_in_service
+			set_variable = { var_pessian_position = 0 }
+		}
+	}
+
+################# tribes lmao
+	PER_raise_tribes_kurd = {
+		visible = { always = no }
+	}
+	PER_raise_tribes_qashqai = { visible = { always = no }
+	}
+	PER_raise_tribes_azeri = {visible = { always = no }
+	}
+	PER_raise_tribes_arab = { visible = { always = no }
+	}
+	PER_raise_tribes_sistani = { visible = { always = no }
+	}
+	PER_raise_tribes_turkmen = { visible = { always = no }
+	}
+	PER_raise_tribes_mazandarani = { visible = { always = no }
+	}
+	PER_raise_tribes_bakhtiari = {visible = { always = no } 
+	}
+	PER_raise_tribes_afghan = {visible = { always = no }
+	}
+	PER_raise_tribes_luri = {visible = { always = no }
+	}
+	PER_raise_tribes_gilaki = {visible = { always = no }
+	}
+	PER_raise_tribes_armenian = {visible = { always = no }
+	}
+	PER_raise_tribes_georgian = {visible = { always = no }
+	}
+    
+
+		
+}
+PER_constitutional_movement_cat = {
+	PER_constitutional_movement_cat_info = {
+		available = {
+			always = no
+		}
+		is_good = no
+	}
+	PER_constitutional_movement_mission = {
+		allowed = { tag = PER }
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+			}
+		is_good = no
+		days_mission_timeout = 300
+		timeout_effect = {
+			if = { limit = { check_variable = { var_revolt_chance < 17 } } country_event = { days = 1 id = TCS_Persia_constitutional_revolt.1 } }
+			if = { limit = { check_variable = { var_revolt_chance > 17 } } country_event = { days = 1 id = TCS_Persia_constitutional_revolt.2 } }
+			if = { limit = { AND = { check_variable = { var_revolt_chance < 17 } has_completed_focus = PER_bombard_parliament } } country_event = { days = 1 id = TCS_Persia_constitutional_revolt.5  } }
+		}
+	}
+}
+PER_revanchism_cat = {
+	PER_fill = {
+		complete_effect = {
+			add_to_variable = { var_british_persian_relation = 1 }
+		}	
+	}
+	PER_retry_herat_campaign = {
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		days_remove = 20
+		complete_effect = {
+			custom_effect_tooltip = PER_equip_rifles_kerman_khorasan_tt
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+				producer = PER
+			}
+		}
+		remove_effect = {
+		division_template = {
+			name = "Sarbaz-e-Khoransani wa Kermani"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+			}
+		}
+		414 = {
+		create_unit = {
+			division = "name = \"Sarbaz-e-Khoransani wa Kermani\" division_template = \"Sarbaz-e-Khoransani wa Kermani\" start_experience_factor = 0.5"
+			owner = PER
+		}
+		}
+	}
+} 
+	PER_invade_afghanistan = {
+		available = {
+			divisions_in_border_state = {
+				size > 4
+				state = 414
+				border_state = 415
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 30
+		complete_effect = {
+			declare_war_on = {
+				target = AFG
+				type = annex_everything
+			}
+			reverse_add_opinion_modifier = {
+				target = RUS
+				modifier = medium_decrease
+			}
+			reverse_add_opinion_modifier = {
+				target = ENG
+				modifier = medium_decrease
+			}
+		}
+		modifier = {
+				army_infantry_attack_factor = 0.15
+				supply_consumption_factor = -0.20
+				army_org_factor = -0.05
+				weekly_manpower = -150
+			}
+		}
+}

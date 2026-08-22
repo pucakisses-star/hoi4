@@ -1,0 +1,176 @@
+ideas = {
+	country = {
+		OTT_opda = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = opda
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.10
+			}
+		}
+		OTT_prussian_help = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = GER_german_general_staff
+			research_bonus = { land_doctrine = 0.08 }
+		}
+		OTT_sickman_mac = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = sickman
+			modifier = {
+				stability_factor = -0.3			
+			}
+		}
+		OTT_europe_capitulations = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = european_influence
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05		
+			}
+		}
+		OTT_development_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = lack_of_industry
+			modifier = {
+				mobilization_speed = -0.15
+				land_reinforce_rate = -0.15
+				army_speed_factor = -0.15
+				research_speed_factor = -0.17
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+			}
+		}
+		OTT_bad_military_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = restricted_armed_forces
+			research_bonus = { land_doctrine = -1 }
+			research_bonus = { naval_doctrine = -1 }
+			research_bonus = { air_doctrine = -1 }
+			modifier = {
+				experience_gain_army_factor = -0.5
+				experience_gain_navy_factor = -0.75
+				planning_speed = -0.4
+				ships_at_battle_start = -0.25
+				spotting_chance = -0.1
+				naval_hit_chance = -0.1
+				naval_coordination = -0.1
+			}
+		}
+		OTT_bad_military_war = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = restricted_armed_forces
+			modifier = {
+				planning_speed = -0.4
+				ships_at_battle_start = -0.25
+				spotting_chance = -0.1
+				naval_hit_chance = -0.1
+				naval_coordination = -0.1
+			}
+		}
+		OTT_bad_government_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = ineffective_government
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.4
+			}
+		}
+		OTT_good_trade = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = generic_foreign_capital
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = -0.05
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		OTT_defend_Tripoli = {
+			allowed = {
+				always = no
+			}
+			available = { 
+				has_war_with = ITA 
+			}
+			allowed_civil_war = {	
+			}
+			removal_cost = -1
+			picture = OTT_north_africa_mission
+			targeted_modifier = {
+				tag = ITA
+				defense_bonus_against = 0.2	
+			}
+		}
+	}
+}

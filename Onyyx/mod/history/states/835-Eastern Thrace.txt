@@ -1,0 +1,21 @@
+state={
+	id=835
+	name="STATE_835"
+	provinces={
+		3526 3936 6990 9791 9930 13626 
+	}
+	history = {
+		owner = OTT
+		add_core_of = OTT
+		add_core_of = MAC
+		1914.1.1 = {
+			owner = GRE
+			controller = GRE
+			remove_core_of = OTT
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	state_category = rural
+}

@@ -1,0 +1,22 @@
+state={
+	id=922
+	name="STATE_922"
+
+	state_category = rural
+	history={
+		buildings = {
+            infrastructure = 3 
+		}
+		victory_points = {
+			12299 10
+		}
+		owner = ENG
+		add_core_of = JOH
+	}
+
+	provinces={
+		12299 12113 
+	}
+	manpower=23457
+	buildings_max_level_factor=1.000
+}

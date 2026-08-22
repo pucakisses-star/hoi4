@@ -1,0 +1,27 @@
+state={
+	id=918
+	name="STATE_918"
+	manpower = 399523
+	
+	state_category = rural
+	
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 6600 3 }
+		victory_points = { 13787 1 }
+		add_core_of = RUS
+		add_core_of = MOL
+		
+		1918.11.11 = {
+			owner = ROM
+			controller = ROM
+			add_core_of = ROM
+			remove_core_of = RUS
+		}
+	}
+	provinces= { 414 565 3577 6600 13787 }
+}

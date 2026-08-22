@@ -1,0 +1,22 @@
+state={
+	id=889
+	name="STATE_889"
+	provinces={
+		308 3174 6178 6381 11291 
+	}
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+		}
+		1918.11.11 = {
+			owner = LIV
+			controller = LIV
+			remove_core_of = RUS
+		}
+	}
+	manpower=100000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

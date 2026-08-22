@@ -1,0 +1,32 @@
+
+state={
+	id=178
+	name="STATE_178"
+	manpower = 261347
+	
+	state_category = small_island
+
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 2
+			13071 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SPR
+		
+		#cultures
+		add_to_array = { state_culture_array = 47 }
+		#culture percentage	
+       	add_to_array = { state_culture_array_num = 1.0 }
+		#religion
+      	add_to_array = { state_religion_array = 2 }
+		#relgion percentage
+      	add_to_array = { state_religion_array_num = 1.0 }
+	}
+
+	provinces={
+		13071 
+	}
+}

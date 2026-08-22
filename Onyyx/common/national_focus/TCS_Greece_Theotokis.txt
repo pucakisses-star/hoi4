@@ -1,0 +1,9 @@
+focus_tree = {
+	id = TCS_Greece_Theotokis
+	country = {
+		factor = 0
+	}
+	shared_focus = GRE_theotokis_government
+	shared_focus = GRE_debt_recovery
+	continuous_focus_position = { x = 175 y = 1475 }
+}

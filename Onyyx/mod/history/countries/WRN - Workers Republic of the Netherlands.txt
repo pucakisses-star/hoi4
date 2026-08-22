@@ -1,0 +1,177 @@
+﻿capital = 7
+
+oob = "WRN_1905"
+
+set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.1
+
+set_technology = {
+	trench_warfare = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	#early_fighter = 1
+	#early_bomber = 1
+
+}
+
+set_politics = {
+	ruling_party = rev_socialism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+    leninism = 2
+    marxism = 10
+    rev_socialism = 32
+    soc_democracy = 26
+    soc_liberal = 11
+    lib_conservatism = 6
+    soc_conservatism = 9
+    auth_democrat = 4
+    pat_autocrat = 0
+    fascism = 0
+}
+set_country_flag = leninism_coalition
+set_country_flag = marxism_coalition
+set_country_flag = rev_socialism_coalition
+set_country_flag = soc_democracy_coalition
+set_country_flag = soc_liberal_coalition
+# set_country_flag = lib_conservatism_coalition
+#set_country_flag = soc_conservatism_coalition
+#set_country_flag = auth_democrat_coalition
+# set_country_flag = pat_autocrat_coalition
+# set_country_flag = fascism_coalition
+
+# set_country_flag = leninism_opposition
+#set_country_flag = marxism_opposition
+#set_country_flag = rev_socialism_opposition
+#set_country_flag = soc_democracy_opposition
+#set_country_flag = soc_liberal_opposition
+set_country_flag = lib_conservatism_opposition
+set_country_flag = soc_conservatism_opposition
+set_country_flag = auth_democrat_opposition
+# set_country_flag = pat_autocrat_opposition
+# set_country_flag = fascism_opposition
+
+add_ideas = {
+	#
+}
+
+create_country_leader = {
+	name = "Pieter Jelles Troelstra"
+	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
+	picture = "gfx/leaders/WRN/Pieter_Jelles_Troelstra.tga"
+	expire = "1965.1.1"
+	ideology = leninism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pieter Jelles Troelstra"
+	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
+	picture = "gfx/leaders/WRN/Pieter_Jelles_Troelstra.tga"
+	expire = "1965.1.1"
+	ideology = marxism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pieter Jelles Troelstra"
+	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
+	picture = "gfx/leaders/WRN/Pieter_Jelles_Troelstra.tga"
+	expire = "1965.1.1"
+	ideology = rev_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pieter Jelles Troelstra"
+	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
+	picture = "gfx/leaders/WRN/Pieter_Jelles_Troelstra.tga"
+	expire = "1965.1.1"
+	ideology = soc_democracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pieter Jelles Troelstra"
+	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
+	picture = "gfx/leaders/WRN/Pieter_Jelles_Troelstra.tga"
+	expire = "1965.1.1"
+	ideology = soc_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Pieter Jelles Troelstra"
+	portrait_path = "gfx/leaders/WRN/Pieter_Jelles_Troelstra.tga"
+	traits = { 
+		infantry_officer
+	}
+	skill = 4
+	#id = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mina Kruseman"
+	portrait_path = "gfx/leaders/WRN/Mina_Kruseman.tga"
+	traits = { 
+		#
+	}
+	skill = 3
+	#id = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+# create_corps_commander = {
+# 	name = "Gerardus Lambertus Janssen"
+# 	#portrait_path = "gfx/leaders/WRN/Mina Kruseman.tga"
+# 	traits = { 
+# 		infantry_officer
+# 	}
+# 	skill = 2
+# 	#id = 3
+# 	attack_skill = 2
+# 	defense_skill = 2
+# 	planning_skill = 1
+# 	logistics_skill = 1
+# }
+
+create_corps_commander = {
+	name = "Klaas Kater"
+	portrait_path = "gfx/leaders/WRN/Klaas_Kater.tga"
+	traits = { 
+		infantry_officer
+	}
+	skill = 2
+	#id = 3
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+set_convoys = 500

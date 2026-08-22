@@ -1,0 +1,64 @@
+﻿division_template = {
+	name = "Pešadijska Divizija"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+#	support = {
+#		
+#
+#	}
+}
+
+division_template = {
+	name = "Divizija Konjice"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "1. Pešadijska Divizija"
+		location = 11586
+		division_template = "Pešadijska Divizija"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "2. Pešadijska Divizija"
+		location = 9602
+		division_template = "Pešadijska Divizija"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "3. Pešadijska Divizija"
+		location = 11868
+		division_template = "Pešadijska Divizija"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "4. Pešadijska Divizija"
+		location = 3956
+		division_template = "Pešadijska Divizija"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		name = "1. Divizija Konjice"
+		location = 630
+		division_template = "Divizija Konjice"
+		start_experience_factor = 0.1
+	}
+}

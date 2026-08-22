@@ -1,0 +1,19 @@
+scripted_gui = {
+
+	hol_parliament_decision_ui = {
+		context_type = decision_category
+		window_name = "hol_parliament_decision_ui_window"
+
+		properties = {
+			eerste_kamer_icon = {
+				frame = HOL_current_eerste_kamer_icon_frame
+			}
+
+			tweede_kamer_icon = {
+				frame = HOL_current_tweede_kamer_icon_frame
+			}
+		}
+	}
+	
+}
+

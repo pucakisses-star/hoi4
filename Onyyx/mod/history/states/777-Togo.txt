@@ -1,0 +1,29 @@
+
+state={
+	id=777
+	name="STATE_777"
+
+	history={
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			1951 1 
+		}
+		buildings = {
+			infrastructure = 3
+			1951 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1951 13606 
+	}
+	manpower=600000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

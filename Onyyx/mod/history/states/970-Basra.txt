@@ -1,0 +1,18 @@
+state={
+	id=970
+	name="STATE_970"
+	provinces={
+		78 2089 7977 8001 12726 
+	}
+	history = {
+		owner = OTT
+		add_core_of = OTT
+		1918.1.1 = {
+			owner = ENG
+			controller = ENG
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,464 @@
+﻿#############################
+### 1905 Japan Events #######
+#############################
+### HS1San/Senku Ishigami ###
+#############################
+
+add_namespace = tcsjapan
+add_namespace = rjwjapan
+
+### intro ####
+
+country_event = { # 1905 intro -thinking face-
+
+	id = tcsjapan.1 
+    title = tcsjapan.1.t 
+    desc = tcsjapan.1.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.1.a 
+	}
+	
+}
+
+### internal and external affairs ####
+
+country_event = { # incorporation of liancourt rocks 28th jan 1905
+
+	id = tcsjapan.2
+    title = tcsjapan.2.t 
+    desc = tcsjapan.2.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.2.a 
+	}
+	
+}
+
+country_event = { # Taft-Katsura Agreement
+
+	id = tcsjapan.3 
+    title = tcsjapan.3.t 
+    desc = tcsjapan.3.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.3.a 
+	}
+	
+}
+
+country_event = { # Sun Yat-Sen in Tokyo
+
+	id = tcsjapan.4
+    title = tcsjapan.4.t 
+    desc = tcsjapan.4.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.4.a 
+	}
+	
+}
+
+country_event = { # Hibiya Incident
+
+	id = tcsjapan.5
+    title = tcsjapan.5.t 
+    desc = tcsjapan.5.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.5.a 
+	}
+	
+}
+
+country_event = { # Saionji Kinmochi elected
+
+	id = tcsjapan.6
+    title = tcsjapan.6.t 
+    desc = tcsjapan.6.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.6.a 
+	}
+	
+}
+
+country_event = { # Choe Ik-hyeon causes trouble
+
+	id = tcsjapan.7
+    title = tcsjapan.7.t 
+    desc = tcsjapan.7.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.7.a 
+	}
+	
+}
+
+country_event = { # Ashio Copper Mine Protests
+
+	id = tcsjapan.8
+    title = tcsjapan.8.t 
+    desc = tcsjapan.8.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # bad luck
+		name = tcsjapan.8.a 
+	}
+	
+}
+
+country_event = { # Flood in Yamanashi
+
+	id = tcsjapan.9
+    title = tcsjapan.9.t 
+    desc = tcsjapan.9.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # oof
+		name = tcsjapan.9.a 
+	}
+	
+}
+
+country_event = { # Beipu Incident
+
+	id = tcsjapan.10
+    title = tcsjapan.10.t 
+    desc = tcsjapan.10.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # oof
+		name = tcsjapan.10.a 
+	}
+	
+}
+
+country_event = { # Red Flag Incident
+
+	id = tcsjapan.11
+    title = tcsjapan.11.t 
+    desc = tcsjapan.11.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # oof
+		name = tcsjapan.11.a 
+	}
+	
+}
+
+country_event = { # Assassination of Ito Hirobumi
+
+	id = tcsjapan.12
+    title = tcsjapan.12.t 
+    desc = tcsjapan.12.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # oof
+		name = tcsjapan.12.a 
+	}
+	
+}
+
+#### event order
+
+#1905
+#incorporation of liancourt rocks
+#heimin shimbun ceases publication (from focus) 
+#taft-katsura agreement
+#treaty of portsmouth
+#anglo japanese alliance renewed
+#sun yat sen in tokyo
+
+##hibiya incident##
+#protestors gather at hibya park
+#protests turn into riots, several buildings damaged
+#martial law declared
+#order finally restored
+##hibiya incident##
+
+#fall of the cabinet of katsura taro
+#second japan-korea agreement
+#22nd congress
+
+#1906
+#saionji elected
+#japanese socialist party formed
+#literary association established
+#imperial library moves to ueno
+#railway nationalization act
+#shinjuku gyoen
+#choi ik hyun
+#south manchurian railway established
+#23rd congress
+
+#1907
+#ashio copper mine
+#gentleman's agreement of 1907
+#elementaty school length revised to 6 years
+#south machuria railway opens
+#franco-japanese treaty of 1907
+#2nd japan-korea treaty 
+#japan-russia agreement
+#dissolve korean army
+#great flood yamanashi
+#tohoku imperial unversity
+#hague agrrement? nah
+#beipu uprising
+#24th cingress
+
+#1908
+#general elections
+#red flag incident
+#fall of saionji cabinet
+
+#shrine preservation
+#expansion of taiwanese railways
+#root takahira agreement
+#25th congress
+
+#1909
+#weight and measures act
+#ban newspapers
+#sumo wrestling
+#osaka fire
+#anegawa eqrthquake
+#gando convention
+#korean assassim ahn
+#krean japaese joint-proposal
+#26th congress
+
+#1910
+#ahn sentecned to deaths
+#chuo club formed
+#rikken kokuminto formed
+#kaigun holland #6 incident
+#high treason incident
+#2nd japan-russia agreement
+#annex korea
+#
+
+### flavor cause why not ###
+
+country_event = { # I am a cat soseki natsume
+
+	id = tcsjapan.9001 
+    title = tcsjapan.9001.t 
+    desc = tcsjapan.9001.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.9001.a 
+	}
+	
+}
+
+country_event = { # extinction of japanese wolves
+
+	id = tcsjapan.9002
+    title = tcsjapan.9002.t 
+    desc = tcsjapan.9002.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.9002.a 
+	}
+	
+}
+
+country_event = { # New Year Cards
+
+	id = tcsjapan.9003
+    title = tcsjapan.9003.t 
+    desc = tcsjapan.9003.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.9003.a 
+	}
+	
+}
+
+country_event = { # A strange murder case
+
+	id = tcsjapan.9004
+    title = tcsjapan.9004.t 
+    desc = tcsjapan.9004.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # ok
+		name = tcsjapan.9004.a 
+	}
+	
+}
+
+### births & deaths ###
+
+country_event = { # Meiji dies
+
+	id = tcsjapan.9501 
+    title = tcsjapan.9501.t 
+    desc = tcsjapan.9501.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # noo
+		name = tcsjapan.9501.a 
+	}
+	
+}
+
+country_event = { # Takahito
+
+	id = tcsjapan.9502
+    title = tcsjapan.9502.t 
+    desc = tcsjapan.9502.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # yay
+		name = tcsjapan.9502.a 
+	}
+	
+}
+
+### rjw events ###
+
+country_event = { # fall of port arthur - japanese side
+
+	id = rjwjapan.1
+    title = rjwjapan.1.t 
+    desc = rjwjapan.1.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # yay
+		name = rjwjapan.1.a 
+	}
+	
+}
+
+country_event = { # battle of sandepu - japanese side
+
+	id = rjwjapan.2
+    title = rjwjapan.2.t 
+    desc = rjwjapan.2.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # yay
+		name = rjwjapan.2.a 
+	}
+	
+}
+
+country_event = { # battle of mukden - japanese side
+
+	id = rjwjapan.3
+    title = rjwjapan.3.t 
+    desc = rjwjapan.3.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # yay
+		name = rjwjapan.3.a 
+	}
+	
+}
+
+country_event = { # tsushima outcome - japanese side
+
+	id = rjwjapan.4
+    title = rjwjapan.4.t 
+    desc = rjwjapan.4.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # yay
+		name = rjwjapan.4.a 
+	}
+	
+}
+
+country_event = { # invasion of sakhalin - japanese side
+
+	id = rjwjapan.5
+    title = rjwjapan.5.t 
+    desc = rjwjapan.5.d 
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes
+	
+	option = { # yay
+		name = rjwjapan.5.a 
+	}
+	
+}

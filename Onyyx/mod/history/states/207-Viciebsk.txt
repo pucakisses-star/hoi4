@@ -1,0 +1,56 @@
+
+state={
+	id=207
+	name="STATE_207"
+	manpower = 804470
+
+	resources = {
+		wood = 12
+		iron = 3
+	}
+	
+	state_category = town
+
+	history={
+		owner = RUS
+		victory_points = {
+			11241 5
+		}
+		victory_points = {
+			9241 1
+		}
+		victory_points = {
+			6249 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = RUS
+
+		add_to_array = { state_culture_array = 88 }
+       	add_to_array = { state_culture_array = 90 }
+       	add_to_array = { state_culture_array = 102 }
+       	add_to_array = { state_culture_array = 80 }
+       	add_to_array = { state_culture_array = 121 }
+				
+       	add_to_array = { state_culture_array_num = 0.883 }
+       	add_to_array = { state_culture_array_num = 0.051 }
+       	add_to_array = { state_culture_array_num = 0.04 }
+       	add_to_array = { state_culture_array_num = 0.025 }
+       	add_to_array = { state_culture_array_num = 0.001 }
+	
+      	add_to_array = { state_religion_array = 1 }
+      	add_to_array = { state_religion_array = 2 }
+      	add_to_array = { state_religion_array = 3 }
+      	add_to_array = { state_religion_array = 7 }
+		
+      	add_to_array = { state_religion_array_num = 0.914 }
+      	add_to_array = { state_religion_array_num = 0.083 }
+      	add_to_array = { state_religion_array_num = 0.002 }
+      	add_to_array = { state_religion_array_num = 0.001 }
+	}
+
+	provinces={
+		323 3219 3331 6220 6249 6326 6371 9241 9323 11220 11241 
+	}
+}

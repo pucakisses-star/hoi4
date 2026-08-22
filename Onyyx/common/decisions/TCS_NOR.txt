@@ -1,0 +1,114 @@
+##############################
+### Everything here is WIP ###
+##############################
+
+NOR_fortification_projects_cat = {         
+    NOR_strengthen_glomma_line = {
+
+		available = {
+			controls_state = 110 # Østlandet
+		}
+
+		cost = 30
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			controls_state = 110 # Østlandet
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			110 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3021
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6160
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11078
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11184
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11151
+						instant_build = yes
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = NOR_ongoing_fort_expansion days = 180 }
+		}
+	}	
+	NOR_expand_glomma_line = {
+
+		available = {
+			controls_state = 110 # Østlandet
+		}
+
+		cost = 30
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			controls_state = 110 # Østlandet
+		}
+		days_remove = 140
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			110 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11028
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9227
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11206
+						instant_build = yes
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = NOR_ongoing_fort_construction days = 140 }
+		}
+	}	
+}

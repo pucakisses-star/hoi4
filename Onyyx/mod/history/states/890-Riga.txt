@@ -1,0 +1,29 @@
+state={
+	id=890
+	name="STATE_890"
+	state_category = city
+	manpower = 282200
+
+	provinces={
+		9340 
+	}
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		victory_points = {
+			9340 20 
+		}
+		buildings = {
+			infrastructure = 4
+			9340 = {
+				bunker = 1
+			}
+		}
+		1918.11.11 = {
+			owner = LIV
+			controller = LIV
+			remove_core_of = RUS
+		}
+	}
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,109 @@
+ideas = {
+
+	### Ministers ###
+	head_of_government = {
+        ENG_arthur_balfour = {
+            allowed = { original_tag = ENG }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = arthur_balfour_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = arthur_balfour_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ENG_arthur_balfour"
+			}
+			picture = ENG_arthur_balfour
+			traits = {
+				head_of_government
+				soc_conservatism
+				hog_naive_optimist
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    foreign_minister = {
+        ENG_henry_petty_fitzmaurice = {
+            allowed = { original_tag = ENG }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = henry_petty_fitzmaurice_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = henry_petty_fitzmaurice_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ENG_henry_petty_fitzmaurice"
+			}
+			picture = ENG_henry_petty_fitzmaurice
+			traits = {
+				foreign_minister
+				lib_conservatism
+				for_general_staffer
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    economy_minister = {
+        ENG_austen_chamberlain = {
+            allowed = { original_tag = ENG }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = hausten_chamberlain_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = austen_chamberlain_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ENG_austen_chamberlain"
+			}
+			picture = ENG_austen_chamberlain
+			traits = {
+				economy_minister
+				lib_conservatism
+				eco_theoretical_scientist
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    interior_minister = {
+        ENG_aretas_akers_douglas = {
+            allowed = { original_tag = ENG }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = aretas_akers_douglas_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = aretas_akers_douglas_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ENG_aretas_akers_douglas"
+			}
+			picture = ENG_aretas_akers_douglas
+			traits = {
+				security_minister
+				soc_conservatism
+				sec_preserver_of_culture
+			}
+			cancel_if_invalid = yes
+        }
+    }
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,18 @@
+state={
+	id=820
+	name="STATE_820"
+	provinces={
+		3985 6619 6957 6983 9586 9588 9591 9922 11572 11574 
+	}
+	history = {
+		owner = AUS
+		add_core_of = AUS
+		1918.11.11 = {
+			owner = SCS
+			controller = SCS
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

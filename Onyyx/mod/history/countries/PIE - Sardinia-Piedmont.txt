@@ -1,0 +1,336 @@
+﻿1857.1.1 = {   
+  capital = 158
+
+  oob = "PIE_1857"
+  if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "PIE_1857_naval_mtg"
+	else = {
+		set_naval_oob = "PIE_1857_naval_legacy"
+	}
+}
+
+  set_convoys = 100
+  
+  set_research_slots = 3
+  add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 1000 producer = PIE }
+  add_equipment_to_stockpile = { type = uniform_equipment_1 amount = 1000 producer = PIE }
+  add_equipment_to_stockpile = { type = cavalry_equipment_0 amount = 1000 producer = PIE }
+
+  add_ideas = { 
+    #POLITICS 
+      
+    hos_is_leader
+    victorian_era
+  law_victorian_army
+    agrarian
+    has_heir
+    absolute_monarchy
+
+    civilian_economy
+    limited_exports
+    two_percent
+    normal_taxes
+	cl_restricted
+	fourteen_hour_work_day
+
+    stagnation_growth
+    border_control
+  volunteer_only
+    limited_equality
+    absolutism
+
+    human_rights
+    no_elections
+
+    open_schools
+    state_religion
+  religion_catholic
+        #NATIONAL SPIRITS
+  
+    
+  ITA_hos_Victor_Emmanuel_II
+  PIE_National_Society
+  PIE_Resistance_Go_Away
+  }
+  #Rivals 
+  set_variable = { rival_country = AUS.id }
+  
+      #Colective guarantee of the 7 great power
+  #give_guarantee = ROM
+  #give_guarantee = MOL
+
+
+  set_politics = {
+    ruling_party = centrism
+}
+
+set_popularities = {
+    anarchism = 0
+    vanguard_communism = 0
+    collectivist_socialism = 0
+    social_egalitarianism = 20
+    centrism = 70
+    traditional_conservatism = 0
+    radical_democracy = 0
+    chauvinist_populism = 0
+    autocracy = 10
+    fundamentalism = 0
+}
+
+  set_technology = {
+  infantry_weapons = 1
+	tribal_carrier_birds=1 tribal_electrical_theory=1
+	tribal_steel_tools=1
+	tribal_tatics=1
+	tribal_gunpowder=1
+	tribal_riding=1
+	tribal_steam_experiments=1
+	tribal_forging=1
+	tribal_artisan=1
+	tribal_chemistry=1
+	tribal_guilds_trade=1
+	tribal_crop_rotation=1
+	tribal_salted_smoked_goods=1
+	tribal_leching=1
+  tech_infantry_napoleonic_uniform = 1
+  tech_infantry_infantry_swords = 1
+  tech_infantry_flintlock_pistol = 1
+  vic_army_cloth = 1
+  tech_naval_mtg_simple_corvette_hull = 1
+    tech_naval_mtg_24_pounder_battery = 1
+    tech_naval_mtg_sails = 1
+    tech_naval_mtg_crows_nest = 1
+  gw_artillery = 1
+  iron_railways = 1
+  steam_engine = 1
+  manufactories = 1
+  hot_blast_furnaces = 1
+  food_preserving_icebox = 1
+	start_build_tech = 1
+  early_artificial_fertilizer = 1
+  electrical_engineering = 1
+  basic_cavalry = 1
+  socket_bayonet = 1
+  mounted_infantry = 1
+  }
+
+  # POLITICAL LEADERS
+
+create_country_leader = {
+  name = "Victor Emmanuel II"
+  desc = "POLITICS_Emmanuel_DESC"
+  picture = "Portrait_PIE_Victor_Emmanuel_II.dds"
+  expire = "1862.11.7"
+  ideology = despotism
+  traits = {
+
+  }
+}
+
+create_country_leader = {
+  name = "Camillo Cavour"
+  desc = "POLITICS_LEOPOLDO_O_DONNELL_Y_JORRIS_DESC"
+  picture = "Portrait_PIE_Camillo_Cavour.dds"
+  expire = "1965.1.1"
+  ideology = conserv_liberal
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "Giuseppe Mazzini"
+  desc = "POLITICS_GIUSEPPE_MAZZINI_DESC"
+  picture = "Portrait_ITA_Giuseppe_Mazzini.dds"
+  expire = "1965.1.1"
+  ideology = liberal_social
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "Giuseppe Mazzini"
+  desc = ""
+  picture = ""
+  expire = "1965.1.1"
+  ideology = anarchism_sub
+  traits = {
+    #
+  }
+}
+
+create_corps_commander = {
+  name = "Alfonso Ferrero La Marmora"
+  picture = "Portrait_PIE_Alfonso_La_Marmora.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+
+create_corps_commander = {
+  name = "Enrico Cialdini"
+  picture = "Portrait_PIE_Enrico_Cialdini.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+
+create_corps_commander = {
+  name = "Giuseppe Garibaldi"
+  id = 114
+  picture = "Portrait_PIE_Giuseppe_Garibaldi.dds"
+  traits = { infantry_officer brilliant_strategist  }
+  skill = 3
+  attack_skill = 2
+  defense_skill = 1
+  planning_skill = 2
+  logistics_skill = 2
+}
+
+create_corps_commander = {
+  name = "Nino Bixio"
+  picture = "Portrait_PIE_Nino_Bixio.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 2
+  logistics_skill = 3
+}
+create_corps_commander = {
+  name = "Enrico Cosenz"
+  picture = "Portrait_NSC_Enrico_Cosenz.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+create_corps_commander = {
+  name = "Manfredo Fanti"
+  picture = "Portrait_ITA_manfredo_fanti.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+create_corps_commander = {
+  name = "Domenico Cucchiari"
+  picture = "Portrait_ITA_domenico_cucchiari.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+create_corps_commander = {
+  name = "Giovanni Durando"
+  picture = "Portrait_ITA_giovanni_durando.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+create_corps_commander = {
+  name = "Vittorio Asinari di Bernezzo"
+  picture = "ITA_Vittorio_Asinari_di_Bernezzo.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 2
+  logistics_skill = 2
+}
+create_corps_commander = {
+  name = "Nicola Fabrizi"
+  picture = "ITA_Young_Italy_General_Nicola_Fabrizi.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+create_corps_commander = {
+  name = "Luigi Federico Menabrea"
+  picture = "Portrait_ITA_Luigi_Federico_Menabrea.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 2
+  logistics_skill = 3
+}
+create_corps_commander = {
+  name = "Giuseppe Arimondi"
+  picture = "PIE_Giuseppe_Arimondi.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+create_corps_commander = {
+  name = "Luigi Acquaviva"
+  picture = "PIE_Luigi_Acquaviva.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+create_corps_commander = {
+  name = "Matteo Albertone"
+  picture = "PIE_Matteo_Albertone.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+  defense_skill = 1
+  planning_skill = 1
+  logistics_skill = 1
+}
+
+
+create_navy_leader = {
+  name = "Carlo Pellion di Persano"
+  picture = "Portrait_PIE_Carlo_Pellion_di_Persano.dds"
+  traits = { }
+  skill = 3
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	create_equipment_variant = {
+		name = "Corvette Class"
+		type = ship_hull_corvette_0
+		name_group = GER_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+        	fixed_ship_battery_slot = ship_light_battery_0
+			fixed_ship_fire_control_system_slot = fire_control_system_0
+			fixed_ship_engine_slot = ship_engine_sail_0
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = empty
+			front_1_custom_slot = empty
+    	}
+		#obsolete = no
+	}
+}
+
+}

@@ -1,0 +1,92 @@
+scripted_gui = {
+
+	PER_army_var_container = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+
+		window_name = "persia_army_container"
+
+		visible = { original_tag = PER }
+		
+		triggers = {
+			persia_army_button_1_click_enabled = {
+				has_political_power > 99
+			}
+			persia_army_button_2_click_enabled = {
+				has_political_power > 99
+			}
+			persia_army_button_3_click_enabled = {
+				NOT = { has_idea = PER_curtailing_dissent }
+				has_political_power > 99
+			}
+		}
+
+		effects = {
+			persia_army_button_1_click = {
+				var_persia_army_up_10 = yes
+				add_political_power = -100
+				}
+			persia_army_button_2_click = {
+				var_persia_army_down_10 = yes
+				add_political_power = -100
+				}
+			persia_army_button_3_click = {
+				add_timed_idea = {
+					idea = PER_curtailing_dissent
+					days = 80
+				}
+				add_political_power = -100
+			}
+			}
+		}
+	PER_army_small_var_container = {
+		context_type = player_context
+		parent_window_token = decision_tab
+
+		window_name = "persia_small_army_container"
+
+		visible = { original_tag = PER }
+			
+			
+	}
+	PER_persia_revolution_info_container = {
+		parent_window_token = decision_tab
+		
+		window_name = "persia_revolution_info_container"
+
+		visible = { original_tag = PER }
+		
+		triggers = {
+		
+		persia_revolution_info_pessian_unavailable_visible = { NOT = { has_country_flag = PER_pessian_in_service } }
+		
+		persia_revolution_info_pessian_visible = { has_country_flag = PER_pessian_in_service }
+		
+		persia_pessian_army_text_visible = { has_country_flag = PER_pessian_in_service }
+		
+		persia_pessian_army_text_NA_visible = { NOT = { has_country_flag = PER_pessian_in_service } }
+		
+		persia_move_pessian_button_click_enabled 	= { has_country_flag = PER_pessian_in_service has_political_power > 29 }
+		persia_move_reza_button_click_enabled = { has_political_power > -29 }
+
+		}
+			
+		
+		effects = {
+			persia_move_reza_button_click = {
+				activate_decision = PER_move_rezakhan_dec
+				add_political_power = -30
+			}
+			persia_move_pessian_button_click = {
+				activate_decision = PER_move_pessian_dec
+				add_political_power = -30
+			}
+			
+
+		}
+
+	}
+}
+
+

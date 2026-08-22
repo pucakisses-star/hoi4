@@ -1,0 +1,98 @@
+### Fiuman Ministers ###
+
+ideas = {
+	head_of_government = {
+		CRN_Antonio_Grossich_hog_fas = {
+			allowed = { original_tag = CRN }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = Antonio_Grossich_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Antonio_Grossich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea CRN_Antonio_Grossich_hog_fas"
+			}
+			picture = CRN_Antonio_Grossich_hog_fas
+			traits = {
+				head_of_government
+				lib_conservatism
+				hog_happy_amateur
+			}
+			cancel_if_invalid = yes
+		}
+	}
+	foreign_minister = {
+		CRN_Guido_Keller_for_fas = {
+			allowed = { original_tag = CRN }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Guido_Keller_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Guido_Keller_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea CRN_Guido_Keller_for_fas"
+			}
+			picture = CRN_Guido_Keller_for_fas
+			traits = {
+				foreign_minister
+				fascism
+				for_hawkish_intervener
+			}
+			cancel_if_invalid = yes
+		}
+	}
+	economy_minister = {
+		CRN_Harukichi_Shimoi_eco_fas = {
+			allowed = { original_tag = CRN }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Harukichi_Shimoi_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Harukichi_Shimoi_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea CRN_Harukichi_Shimoi_eco_fas"
+			}
+			picture = CRN_Harukichi_Shimoi_eco_fas
+			traits = {
+				economy_minister
+				fascism
+				eco_samurai_di_fiume
+			}
+			cancel_if_invalid = yes
+		}
+	
+	}
+	interior_minister = {
+		CRN_Giuseppe_Giuriati_sec_fas = {
+			allowed = { original_tag = CRN }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Giuseppe_Giuriati_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Giuseppe_Giuriati_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea CRN_Giuseppe_Giuriati_sec_fas"
+			}
+			picture = CRN_Giuseppe_Giuriati_sec_fas
+			traits = {
+				security_minister
+				fascism
+				sec_efficient_sociopath
+			}
+			cancel_if_invalid = yes
+		}
+	}
+}

@@ -1,0 +1,1036 @@
+# focus tree code
+
+shared_focus = {
+	id = GRE_finish_client_reform
+	icon = GFX_goal_diligiannis
+	cost = 5
+	x = 4
+	y = 0
+
+	available = {
+	}
+
+	completion_reward = {
+       add_timed_idea = { idea = GRE_client_renewal days = 45 }
+	}
+}
+
+shared_focus = {
+	id = GRE_war_against_gambling
+	icon = GFX_war_on_gambling
+    prerequisite = { focus = GRE_finish_client_reform }
+	cost = 5
+	x = 0
+	y = 1
+    relative_position_id = GRE_finish_client_reform
+	available = {
+	}
+
+	completion_reward = {
+        add_ideas = GRE_war_against_gambling
+        hidden_effect = {
+            country_event = {
+                id = tcs_greece.1
+                days = 80
+           }
+	    }
+    }
+}
+
+shared_focus = {
+	id = GRE_discredit_opposition
+	icon = GFX_OTT_manage_administration
+  prerequisite = { focus = GRE_war_against_gambling }
+	cost = 5
+	x = -2
+	y = 1
+  relative_position_id = GRE_war_against_gambling
+	available = {
+	}
+
+	completion_reward = {
+    add_political_power = 50
+    add_stability = 0.05
+  }
+}
+
+shared_focus = {
+	id = GRE_religion_education_justice
+	icon = GFX_goal_religion_education_justice
+  prerequisite = { focus = GRE_war_against_gambling }
+	cost = 5
+	x = 0
+	y = 1
+  relative_position_id = GRE_war_against_gambling
+	available = {
+	}
+
+	completion_reward = {
+    add_political_power = 50
+    add_stability = 0.05
+  }
+}
+
+shared_focus = {
+	id = GRE_lower_the_taxes
+	icon = GFX_goal_lower_taxes
+     prerequisite = { focus = GRE_war_against_gambling }
+	cost = 5
+	x = 2
+	y = 1
+    relative_position_id = GRE_war_against_gambling
+	available = {
+	}
+
+	completion_reward = {
+	    add_timed_idea = {idea = GRE_lower_the_taxes days = 40 }
+  }
+}
+
+shared_focus = {
+	id = GRE_prioritize_the_agrarian_sector
+	icon = GFX_strengthen_small_production
+  prerequisite = { focus = GRE_religion_education_justice focus = GRE_lower_the_taxes }
+	cost = 5
+	x = 1
+	y = 1
+  relative_position_id = GRE_religion_education_justice
+	available = {
+	}
+
+	completion_reward = {
+		modify_timed_idea = {
+            idea = GRE_lower_the_taxes
+            days = 40
+        }
+    }
+}
+
+shared_focus = {
+	id = GRE_increase_military_funds
+	icon = GFX_goal_GRE_army
+  prerequisite = { focus = GRE_religion_education_justice focus = GRE_discredit_opposition }
+	cost = 5
+	x = -1
+	y = 1
+  relative_position_id = GRE_religion_education_justice
+	available = {
+	}
+
+	completion_reward = {
+    army_experience = 5
+    add_tech_bonus = {
+      name = land_doc_bonus
+      bonus = 0.25
+      uses = 1
+      category = land_doctrine
+    }
+  }
+}
+
+shared_focus = {
+	id = GRE_the_rallis_government
+	icon = GFX_goal_GRE_rallis
+	cost = 5
+	x = 4
+	y = 0
+
+	available = {
+    has_country_flag = GRE_diligiannis_assassinated
+	}
+
+	completion_reward = {
+    add_political_power = 60
+	}
+}
+
+shared_focus = {
+	id = GRE_maintain_the_economy
+	icon = GFX_focus_generic_self_management
+  prerequisite = { focus = GRE_the_rallis_government }
+	cost = 10
+	x = 2
+	y = 1
+  relative_position_id = GRE_the_rallis_government
+
+	available = {
+	}
+
+	completion_reward = {
+      add_timed_idea = { idea = GRE_maintain_the_economy days = 90}
+	}
+}
+
+shared_focus = {
+	id = GRE_tip_toe_turkish_diplomacy
+	icon = GFX_goal_generic_defence
+  prerequisite = { focus = GRE_the_rallis_government }
+	cost = 5
+	x = -2
+	y = 1
+  relative_position_id = GRE_the_rallis_government
+
+	available = {
+	}
+
+	completion_reward = {
+      add_political_power = 20
+	  OTT = {
+	    add_opinion_modifier = {
+		  target = ROOT
+		  modifier = medium_increase
+		}
+	  }
+	  ROOT = {
+	    add_opinion_modifier = {
+		  target = OTT
+		  modifier = medium_increase
+		}
+	  }
+	}
+}
+
+shared_focus = {
+	id = GRE_interim_client_reform
+	icon = GFX_Co-Owned_businesses
+  prerequisite = { focus = GRE_the_rallis_government }
+	cost = 7.15
+	x = 0
+	y = 1
+  relative_position_id = GRE_the_rallis_government
+
+	available = {
+	}
+
+	completion_reward = {
+       add_timed_idea = { idea = GRE_client_renewal days = 45 }
+	}
+}
+
+shared_focus = {
+	id = GRE_theotokis_government
+	icon = GFX_goal_GRE_theotokis
+	cost = 5
+	x = 3
+	y = 0
+
+	available = {
+	}
+
+	completion_reward = {
+        add_political_power = 60
+	}
+}
+
+shared_focus = {
+	id = GRE_repopularize_liberalism
+	icon = GFX_Liberal_Victory
+	prerequisite = { focus = GRE_reaffirm_liberal_popularity }
+	cost = 7.15
+	x = 0
+	y = 1
+	relative_position_id = GRE_reaffirm_liberal_popularity
+
+	available = {
+	}
+
+	completion_reward = {
+        add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = GRE_concessions_to_gambling_dens
+	icon = GFX_gambling_concessions
+	prerequisite = { focus = GRE_repopularize_liberalism }
+	cost = 5
+	x = -1
+	y = 1
+	mutually_exclusive = { focus = GRE_continue_the_war_on_gambling }
+	relative_position_id = GRE_repopularize_liberalism
+
+	available = {
+	}
+
+	completion_reward = {
+		remove_ideas = GRE_war_against_gambling
+	}
+}
+
+shared_focus = {
+	id = GRE_continue_the_war_on_gambling
+	icon = GFX_war_on_gambling
+	prerequisite = { focus = GRE_repopularize_liberalism }
+	cost = 5
+	x = 1
+	y = 1
+	mutually_exclusive = { focus = GRE_concessions_to_gambling_dens }
+	relative_position_id = GRE_repopularize_liberalism
+
+	available = {
+	}
+
+	completion_reward = {
+		add_political_power = 20
+		swap_ideas = {
+			remove_idea = GRE_war_against_gambling
+			add_idea = GRE_war_against_gambling_2
+		}
+	}
+}
+
+shared_focus = {
+	id = GRE_extend_the_dedilomeni_principle
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = GRE_concessions_to_gambling_dens focus = GRE_continue_the_war_on_gambling }
+	cost = 7.15
+	x = 0
+	y = 2
+	relative_position_id = GRE_repopularize_liberalism
+
+	available = {
+	}
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GRE_Troubled_Politics
+			add_idea = GRE_Troubled_Politics_2
+		}
+	}
+}
+
+shared_focus = {
+	id = GRE_increase_veterans_pension
+	icon = GFX_increase_veteran_pension
+	prerequisite = { focus = GRE_concessions_to_gambling_dens focus = GRE_continue_the_war_on_gambling }
+	cost = 5
+	x = 2
+	y = 2
+	relative_position_id = GRE_repopularize_liberalism
+
+	available = {
+	}
+
+	completion_reward = {
+		add_timed_idea = { idea = GRE_increase_veterans_pension days = 180 }
+		add_war_support = 0.07
+	}
+}
+
+shared_focus = {
+	id = GRE_support_immigration
+	icon = GFX_support_immigration
+	prerequisite = { focus = GRE_concessions_to_gambling_dens focus = GRE_continue_the_war_on_gambling }
+	cost = 10
+	x = -2
+	y = 2
+	relative_position_id = GRE_repopularize_liberalism
+
+	available = {
+	}
+
+	completion_reward = {
+		add_timed_idea = { idea = GRE_support_immigration days = 90 }
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = GRE_reform_the_cabinet
+	icon = GFX_PER_placate_parliament
+	prerequisite = { focus = GRE_increase_veterans_pension }
+	prerequisite = { focus = GRE_support_immigration }
+	prerequisite = { focus = GRE_extend_the_dedilomeni_principle }
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = GRE_extend_the_dedilomeni_principle
+
+	available = {
+	}
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRE_undo_1897
+	icon = GFX_goal_GRE_army_in_chaos
+	prerequisite = { focus = GRE_reaffirm_liberal_popularity }
+	cost = 1
+	x = -7
+	y = 1
+	relative_position_id = GRE_reaffirm_liberal_popularity
+
+	available = {
+	}
+
+	completion_reward = {
+        add_political_power = 5
+	}
+}
+
+shared_focus = {
+	id = GRE_purchase_rifles
+	icon = GFX_goal_rearm_the_military
+	prerequisite = { focus = GRE_undo_1897 }
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = GRE_undo_1897
+
+	available = {
+	}
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRE_support_equipment
+	icon = GFX_Support_equipment_2
+	prerequisite = { focus = GRE_purchase_rifles }
+	cost = 1
+	x = -1
+	y = 1
+	relative_position_id = GRE_purchase_rifles
+
+	available = {
+	}
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRE_purchase_artillery_pieces
+	icon = GFX_Artillery_equipment
+	prerequisite = { focus = GRE_purchase_rifles }
+	cost = 1
+	x = 1
+	y = 1
+	relative_position_id = GRE_purchase_rifles
+
+	available = {
+	}
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRE_adopt_khaki_uniforms
+	icon = GFX_goal_adopt_khaki_uniforms
+	prerequisite = { focus = GRE_purchase_artillery_pieces }
+	prerequisite = { focus = GRE_support_equipment }
+	cost = 4
+	x = -1
+	y = 1
+	relative_position_id = GRE_purchase_artillery_pieces
+
+	available = {
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_idea = GRE_1897_defeat
+			}
+			swap_ideas = {
+				remove_idea = GRE_1897_defeat
+				add_idea = GRE_1897_defeat_2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_idea = GRE_1897_defeat_2
+				}
+				swap_ideas = {
+					remove_idea = GRE_1897_defeat_2
+					add_idea = GRE_1897_defeat_3
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = GRE_1897_defeat_3
+					}
+					swap_ideas = {
+						remove_idea = GRE_1897_defeat_3
+						add_idea = GRE_1897_defeat_4
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_idea = GRE_1897_defeat_4
+						}
+						swap_ideas = {
+							remove_idea = GRE_1897_defeat_4
+							add_idea = GRE_1897_defeat_5
+						}
+					}
+				}
+			}
+		}
+    }
+}
+
+shared_focus = {
+	id = GRE_reorganize_the_military
+	icon = GFX_goal_reorganize_the_military
+	prerequisite = { focus = GRE_undo_1897 }
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = GRE_undo_1897
+
+	available = {
+	}
+
+	completion_reward = {
+		add_political_power =  30
+		add_command_power = 10
+	}
+}
+
+shared_focus = {
+	id = GRE_open_additional_military_schools
+	icon = GFX_focus_generic_military_academy
+	prerequisite = { focus = GRE_reorganize_the_military }
+	cost = 7.15
+	x = -1
+	y = 1
+	relative_position_id = GRE_reorganize_the_military
+
+	available = {
+	}
+
+	completion_reward = {
+		add_tech_bonus = {
+		    bonus = 0.25
+		    uses = 1
+		    category = land_doctrine
+	    }
+		if = {
+			limit = {
+				has_idea = GRE_1897_defeat
+			}
+			swap_ideas = {
+				remove_idea = GRE_1897_defeat
+				add_idea = GRE_1897_defeat_2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_idea = GRE_1897_defeat_2
+				}
+				swap_ideas = {
+					remove_idea = GRE_1897_defeat_2
+					add_idea = GRE_1897_defeat_3
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = GRE_1897_defeat_3
+					}
+					swap_ideas = {
+						remove_idea = GRE_1897_defeat_3
+						add_idea = GRE_1897_defeat_4
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_idea = GRE_1897_defeat_4
+						}
+						swap_ideas = {
+							remove_idea = GRE_1897_defeat_4
+							add_idea = GRE_1897_defeat_5
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GRE_increase_military_training
+	icon = GFX_goal_improve_military_training
+	prerequisite = { focus = GRE_reorganize_the_military }
+	cost = 7.15
+	x = 1
+	y = 1
+	relative_position_id = GRE_reorganize_the_military
+
+	available = {
+	}
+
+	completion_reward = {
+		army_experience = 5
+		if = {
+			limit = {
+				has_idea = GRE_1897_defeat
+			}
+			swap_ideas = {
+				remove_idea = GRE_1897_defeat
+				add_idea = GRE_1897_defeat_2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_idea = GRE_1897_defeat_2
+				}
+				swap_ideas = {
+					remove_idea = GRE_1897_defeat_2
+					add_idea = GRE_1897_defeat_3
+				}
+			}
+			else = {
+				if = {
+					limit = {
+							has_idea = GRE_1897_defeat_3
+					}
+					swap_ideas = {
+						remove_idea = GRE_1897_defeat_3
+						add_idea = GRE_1897_defeat_4
+					}
+				}
+				else = {
+	                if = {
+						limit = {
+							has_idea = GRE_1897_defeat_4
+						}
+						swap_ideas = {
+							remove_idea = GRE_1897_defeat_4
+							add_idea = GRE_1897_defeat_5
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = GRE_remoralize_the_army
+	icon = GFX_Recruitment_Upgrade
+	prerequisite = { focus = GRE_open_additional_military_schools }
+	prerequisite = { focus = GRE_increase_military_training }
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = GRE_open_additional_military_schools
+
+	available = {
+	}
+
+	completion_reward = {
+		army_experience = 5
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = land_doctrine
+		}
+		if = {
+			limit = {
+				has_idea = GRE_1897_defeat
+			}
+			swap_ideas = {
+				remove_idea = GRE_1897_defeat
+				add_idea = GRE_1897_defeat_2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_idea = GRE_1897_defeat_2
+				}
+				swap_ideas = {
+					remove_idea = GRE_1897_defeat_2
+					add_idea = GRE_1897_defeat_3
+				}
+			}
+			else = {
+				if = {
+					limit = {
+							has_idea = GRE_1897_defeat_3
+					}
+					swap_ideas = {
+						remove_idea = GRE_1897_defeat_3
+						add_idea = GRE_1897_defeat_4
+					}
+				}
+				else = {
+	                if = {
+						limit = {
+							has_idea = GRE_1897_defeat_4
+						}
+						swap_ideas = {
+							remove_idea = GRE_1897_defeat_4
+							add_idea = GRE_1897_defeat_5
+						}
+					}
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = GRE_the_capable_force
+	icon = GFX_New_officers
+	prerequisite = { focus = GRE_adopt_khaki_uniforms }
+	prerequisite = { focus = GRE_remoralize_the_army }
+	cost = 10
+	x = -2
+	y = 1
+	relative_position_id = GRE_remoralize_the_army
+
+	available = {
+	}
+
+	completion_reward = {
+		remove_ideas = GRE_1897_defeat_5
+		hidden_effect = {
+			add_ideas = GRE_inneficient_military_bureaucracy
+		}
+	}
+}
+
+
+
+shared_focus = {
+	id = GRE_diversify_the_farming_sector
+	icon = GFX_Advanced_Farming_Methods
+	prerequisite = { focus = GRE_reaffirm_liberal_popularity }
+	prerequisite = { focus = GRE_debt_recovery }
+	cost = 5
+	x = 7
+	y = 1
+	relative_position_id = GRE_reaffirm_liberal_popularity
+
+	available = {
+	}
+
+	completion_reward = {
+        add_ideas = GRE_diversify_the_farming_sector
+	}
+}
+
+shared_focus = {
+	id = GRE_raisin_harvests
+	icon = GFX_goal_raisin_harvest
+	prerequisite = { focus = GRE_diversify_the_farming_sector }
+	cost = 7.15
+	x = -2
+	y = 1
+	relative_position_id = GRE_diversify_the_farming_sector
+
+	available = {
+	}
+
+	completion_reward = {
+		186 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		if = {
+			limit = {
+				has_idea = GRE_diversify_the_farming_sector
+			}
+			swap_ideas = {
+				remove_idea = GRE_diversify_the_farming_sector
+				add_idea = GRE_diversify_the_farming_sector_2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_idea = GRE_diversify_the_farming_sector_2
+				}
+				swap_ideas = {
+					remove_idea = GRE_diversify_the_farming_sector_2
+					add_idea = GRE_diversify_the_farming_sector_3
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = GRE_diversify_the_farming_sector_3
+					}
+					swap_ideas = {
+						remove_idea = GRE_diversify_the_farming_sector_3
+						add_idea = GRE_diversify_the_farming_sector_4
+					}
+				}
+			}
+	    }
+	}
+}
+shared_focus = {
+	id =  GRE_olive_harvests
+	icon = GFX_goal_olive_harvest
+	prerequisite = { focus = GRE_diversify_the_farming_sector }
+	cost = 7.15
+	x = 0
+	y = 1
+	relative_position_id = GRE_diversify_the_farming_sector
+
+	available = {
+	}
+
+	completion_reward = {
+		186 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		if = {
+			limit = {
+				has_idea = GRE_diversify_the_farming_sector
+			}
+			swap_ideas = {
+				remove_idea = GRE_diversify_the_farming_sector
+				add_idea = GRE_diversify_the_farming_sector_2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_idea = GRE_diversify_the_farming_sector_2
+				}
+				swap_ideas = {
+					remove_idea = GRE_diversify_the_farming_sector_2
+					add_idea = GRE_diversify_the_farming_sector_3
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = GRE_diversify_the_farming_sector_3
+					}
+					swap_ideas = {
+						remove_idea = GRE_diversify_the_farming_sector_3
+						add_idea = GRE_diversify_the_farming_sector_4
+					}
+				}
+			}
+	    }
+	}
+}
+shared_focus = {
+	id = GRE_vineyard_harvests
+	icon = GFX_Wine_2
+	prerequisite = { focus = GRE_diversify_the_farming_sector }
+	cost = 7.15
+	x = 2
+	y = 1
+	relative_position_id = GRE_diversify_the_farming_sector
+
+	available = {
+	}
+
+	completion_reward = {
+		936 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		if = {
+			limit = {
+				has_idea = GRE_diversify_the_farming_sector
+			}
+			swap_ideas = {
+				remove_idea = GRE_diversify_the_farming_sector
+				add_idea = GRE_diversify_the_farming_sector_2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_idea = GRE_diversify_the_farming_sector_2
+				}
+				swap_ideas = {
+					remove_idea = GRE_diversify_the_farming_sector_2
+					add_idea = GRE_diversify_the_farming_sector_3
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_idea = GRE_diversify_the_farming_sector_3
+					}
+					swap_ideas = {
+						remove_idea = GRE_diversify_the_farming_sector_3
+						add_idea = GRE_diversify_the_farming_sector_4
+					}
+				}
+			}
+	    }
+	}
+}
+shared_focus = {
+	id = GRE_never_another_stafidika
+	icon = GFX_strengthen_small_production
+	prerequisite = { focus = GRE_vineyard_harvests }
+	prerequisite = { focus = GRE_olive_harvests }
+	prerequisite = { focus = GRE_raisin_harvests }
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = GRE_olive_harvests
+
+	available = {
+	}
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GRE_diversify_the_farming_sector_4
+			add_idea = GRE_never_another_stafidika
+		}
+	}
+}
+
+shared_focus = {
+	id = GRE_debt_recovery
+	icon = GFX_Co-Owned_businesses
+	cost = 5
+	x = 13
+	y = 0
+	available = {
+	}
+
+	completion_reward = {
+		add_political_power = 50
+		swap_ideas = {
+            remove_idea = GRE_international_finances_commission
+            add_idea = GRE_international_finances_commission_2
+        }
+	}
+}
+
+shared_focus = {
+	id = GRE_industrial_legacy
+	icon = GFX_Urbanization_One
+	prerequisite = { focus = GRE_debt_recovery }
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = GRE_debt_recovery
+
+	available = {
+	}
+
+	completion_reward = {
+	    add_timed_idea = { idea = GRE_industrial_legacy days = 180 }
+		47 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = GRE_urbanize_central_greece
+	icon = GFX_BUL_developments_in_countryside
+	prerequisite = { focus = GRE_debt_recovery }
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = GRE_debt_recovery
+
+	available = {
+	}
+
+	completion_reward = {
+		934 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		935 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+
+shared_focus = {
+	id = GRE_expand_piraeus
+	icon = GFX_goal_generic_construct_naval_dockyard
+	prerequisite = { focus = GRE_debt_recovery }
+	cost = 7.15
+	x = -2
+	y = 1
+	relative_position_id = GRE_debt_recovery
+
+	available = {
+	}
+
+	completion_reward = {
+		47 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = GRE_continue_railway_construction
+	icon = GFX_Train_Transport_Two
+	prerequisite = { focus = GRE_expand_piraeus }
+	prerequisite = { focus = GRE_urbanize_central_greece }
+	prerequisite = { focus = GRE_industrial_legacy }
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = GRE_urbanize_central_greece
+
+	available = {
+	}
+
+	completion_reward = {
+		934 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		935 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		47 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}

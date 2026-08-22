@@ -1,0 +1,11 @@
+opinion_modifiers = {
+
+	SWE_diplomatic_mission = { value = 20 }
+
+	SWE_diplomatic_mission_neg = { value = -15 }
+
+	SWE_diplomatic_mission_ENG = { value = 20 }
+
+	SWE_diplomatic_mission_GER = { value = 20 }
+
+}

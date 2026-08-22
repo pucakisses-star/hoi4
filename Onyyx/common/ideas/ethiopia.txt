@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+		ETH_feudal_society = {
+
+			allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                #
+            }
+
+			picture = ETH_feudal_society
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				mobilization_speed = -0.08
+				production_speed_buildings_factor = -0.15
+				conscription_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.2
+			}
+		}
+
+		ETH_meneliks_reign = {
+
+			allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                #
+            }
+
+			picture = ETH_meneliks_reign
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+			}
+		}
+
+		ETH_legacy_of_adwa = {
+
+			allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                #
+            }
+
+			picture = ETH_legacy_of_adwa
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_morale_factor = 0.10
+			}
+		}
+
+		ETH_great_famine = {
+
+			allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                #
+            }
+
+			picture = ETH_great_famine
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.10
+				production_speed_buildings_factor = -0.20
+				MONTHLY_POPULATION = -0.15
+			}
+		}
+	}
+}

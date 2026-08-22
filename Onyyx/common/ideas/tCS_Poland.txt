@@ -1,0 +1,536 @@
+ideas = {
+    ### Ideas ###
+    country = {
+        POL_freedom = {
+			allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                #
+            }
+
+            removal_cost = -1
+            picture = POL_freedom
+            modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+            }
+		}
+
+        POL_ruined_economy = {
+			allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                #
+            }
+
+            removal_cost = -1
+            picture = usa_great_depression_2
+            modifier = {
+				stability_factor = -0.
+				production_speed_buildings_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+            }
+		}
+		POL_political_instability = {
+			allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                #
+            }
+		
+            removal_cost = -1
+            picture = saf_history_of_segregation_2
+            modifier = {
+			 	political_power_gain = -0.10
+            }
+		}
+    }
+    ### Ministers ###
+    head_of_government = {
+        POL_wladyslaw_wroblewski_hos = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = wladyslaw_wroblewski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = wladyslaw_wroblewski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_wladyslaw_wroblewski_hos"
+			}
+			picture = POL_wladyslaw_wroblewski
+			traits = {
+				head_of_government
+				auth_democrat
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_jedrzej_moraczewski_hos = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = jedrzej_moraczewski_hos_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = jedrzej_moraczewski_hos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_jedrzej_moraczewski_hos_hos"
+			}
+			picture = POL_jedrzej_moraczewski
+			traits = {
+				head_of_government
+				soc_democracy
+				hog_red_chairmen
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_ignacy_paderewski_hos = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = ignacy_paderewski_hos_hos_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = ignacy_paderewski_hos_hos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_ignacy_paderewski_hos"
+			}
+			picture = POL_ignacy_paderewski
+			traits = {
+				head_of_government
+				soc_conservatism
+				hog_happy_amateur
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_leopold_skulski_hos = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = leopold_skulski_hos_hos_hos_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = leopold_skulski_hos_hos_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_leopold_skulski_hos"
+			}
+			picture = POL_leopold_skulski
+			traits = {
+				head_of_government
+				soc_conservatism
+				hog_smiling_oilman
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    foreign_minister = {
+        POL_tytus_filipowicz = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = tytus_filipowicz_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = tytus_filipowicz_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_tytus_filipowicz"
+			}
+			picture = POL_tytus_filipowicz
+			traits = {
+				foreign_minister
+				soc_democracy
+				for_moderate_among_radicals
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_leon_wasilewski = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = leon_wasilewski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = leon_wasilewski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_leon_wasilewski"
+			}
+			picture = POL_leon_wasilewski
+			traits = {
+				foreign_minister
+				soc_democracy
+				for_radical_among_moderates
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_stanislaw_patek = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = stanislaw_patek_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = stanislaw_patek_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_stanislaw_patek"
+			}
+			picture = POL_stanislaw_patek
+			traits = {
+				foreign_minister
+				for_world_patrician
+				soc_democracy
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    economy_minister = {
+        POL_franciszek_josse = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = franciszek_josse_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = franciszek_josse_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_franciszek_josse"
+			}
+			picture = POL_franciszek_josse
+			traits = {
+				economy_minister
+				auth_democrat
+				eco_reformer
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_wladyslaw_byrka = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = wladyslaw_byrka_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = wladyslaw_byrka_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_wladyslaw_byrka"
+			}
+			picture = POL_wladyslaw_byrka
+			traits = {
+				economy_minister
+				lib_conservatism
+				eco_bank_president
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_jozef_englich = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = jozef_englich_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = jozef_englich_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_jozef_englich"
+			}
+			picture = POL_jozef_englich
+			traits = {
+				economy_minister
+				auth_democrat
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_wladyslaw_grabski = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = wladyslaw_grabski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = wladyslaw_grabski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_wladyslaw_grabski"
+			}
+			picture = POL_wladyslaw_grabski
+			traits = {
+				economy_minister
+				soc_conservatism
+				eco_reformer
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    interior_minister = {
+        POL_stanislaw_thugutt = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = stanislaw_thugutt_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = stanislaw_thugutt_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_stanislaw_thugutt_secmin"
+			}
+			picture = POL_stanislaw_thugutt
+			traits = {
+				security_minister
+				soc_democracy
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = yes
+        }
+
+        POL_stanislaw_wojciechowski = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = stanislaw_wojciechowskt_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = stanislaw_wojciechowski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_stanislaw_wojciechowski_secmin"
+			}
+			picture = POL_stanislaw_wojciechowski
+			traits = {
+				security_minister
+				soc_democracy
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = yes
+        }
+    }
+
+    chief_of_staff = {
+        POL_tadeusz_rozwadowski = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = tadeusz_rozwadowski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = tadeusz_rozwadowski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_tadeusz_rozwadowski"
+			}
+			picture = POL_tadeusz_rozwadowski
+			traits = {
+				chief_of_staff
+				auth_democrat
+				cos_school_of_fire_support
+			}
+			cancel_if_invalid = yes
+        }
+        POL_stanislaw_szeptycki = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = stanislaw_szeptycki_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = stanislaw_szeptycki_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_stanislaw_szeptycki"
+			}
+			picture = POL_stanislaw_szeptycki
+			traits = {
+				chief_of_staff
+				auth_democrat
+				cos_school_of_mass_combat
+			}
+			cancel_if_invalid = yes
+        }
+        POL_stanislaw_haller = {
+            allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = stanislaw_haller_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = stanislaw_haller_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_stanislaw_haller"
+			}
+			picture = POL_stanislaw_haller
+			traits = {
+				chief_of_staff
+				soc_conservatism
+				cos_school_of_defence
+			}
+			cancel_if_invalid = yes
+        }
+    }
+
+    chief_of_army = {
+		POL_jozef_pilsudski = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = jozef_pilsudski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = jozef_pilsudski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_jozef_pilsudski"
+			}
+			picture = POL_jozef_pilsudski
+			traits = {
+				chief_of_army
+				soc_democracy
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+    chief_of_air_force = {
+		POL_hipolit_lossowski = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = hipolit_lossowski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = hipolit_lossowski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_hipolit_lossowski"
+			}
+			picture = POL_hipolit_lossowski
+			traits = {
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		POL_gustaw_macewicz = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = gustaw_macewicz_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = gustaw_macewicz_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_gustaw_macewicz"
+			}
+			picture = POL_gustaw_macewicz
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+	chief_of_navy = {
+		POL_kazimierz_porebski = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = kazimierz_porebski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = kazimierz_porebskii_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_kazimierz_porebski"
+			}
+			picture = POL_kazimierz_porebski
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		POL_bogumil_nowotny = {
+			allowed = { original_tag = POL }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = bogumil_nowotny_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = bogumil_nowotny_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea POL_bogumil_nowotny"
+			}
+			picture = POL_bogumil_nowotny
+			traits = {
+				chief_of_navy
+				cnav_base_control_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+}

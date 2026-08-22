@@ -1,0 +1,23 @@
+state=
+{
+	id=648
+	name="STATE_648"
+	state_category = tiny_island
+	manpower=1
+	history=
+	{
+		owner = UCT
+		add_core_of = UCT
+		buildings = {
+			infrastructure = 0
+			
+			13026 = {
+				naval_base = 0
+			}
+		}
+
+	}
+	provinces=
+	{
+13026 	}
+}

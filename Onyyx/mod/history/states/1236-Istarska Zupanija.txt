@@ -1,0 +1,34 @@
+state={
+	id=1236
+	name="STATE_1236"
+
+	state_category = town
+
+	history={
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 3 
+
+		}
+		
+	    add_to_array = { state_culture_array = 44 }
+		add_to_array = { state_culture_array = 72 }
+		add_to_array = { state_culture_array = 39 }
+		
+       	add_to_array = { state_culture_array_num = 0.50 } 		
+        add_to_array = { state_culture_array_num = 0.40 } 			
+       	add_to_array = { state_culture_array_num = 0.10 } 
+	
+      	add_to_array = { state_religion_array = 2 }
+		
+      	add_to_array = { state_religion_array_num = 1 }
+
+	}
+
+	provinces={
+		11735 13841
+	}
+	manpower=258685
+	buildings_max_level_factor=1.000
+}

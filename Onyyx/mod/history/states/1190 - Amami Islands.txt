@@ -1,0 +1,24 @@
+state={
+	id=1190
+	name="STATE_1190"
+	manpower = 7624
+	
+	state_category = small_island
+
+	history={
+		owner = SAT
+		victory_points = {
+			7115 1
+		}
+		buildings = {
+			7115 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SAT
+	}
+
+	provinces={
+		7115
+	}
+}

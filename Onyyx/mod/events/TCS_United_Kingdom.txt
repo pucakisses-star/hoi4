@@ -1,0 +1,76 @@
+﻿#
+# Polish Events
+#
+
+add_namespace = britain
+add_namespace = britain_election
+add_namespace = britain_flavour
+
+#Local By-Elections ID 1..
+
+country_event = { # Libs win
+    id = britain_election.0
+    title = britain_election.0.t
+    desc = britain_election.0.d
+    picture = GFX_event_britain_election
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = { # Liberal
+        name = britain_election.0.a
+		add_popularity = { ideology = soc_liberal popularity = 0.11 }
+    }
+    
+}
+
+country_event = { # Cons win
+    id = britain_election.1
+    title = britain_election.1.t
+    desc = britain_election.1.d
+    picture = GFX_event_britain_election
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = { # Irish Unionist
+        name = britain_election.1.a
+		add_popularity = { ideology = soc_conservatism popularity = 0.11 }
+    }
+    
+}
+
+country_event = { # Labour
+    id = britain_election.2
+    title = britain_election.2.t
+    desc = britain_election.2.d
+    picture = GFX_event_britain_election
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = { # Liberal
+        name = britain_election.2.a
+		add_popularity = { ideology = soc_democracy popularity = 0.11 }
+    }
+    
+}
+
+country_event = { # No clear winner
+    id = britain_election.3
+    title = britain_election.3.t
+    desc = britain_election.3.d
+    picture = GFX_event_britain_election
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = { # Liberal
+        name = britain_election.3.a
+		add_popularity = { ideology = soc_liberal popularity = 0.04 }
+		add_popularity = { ideology = soc_conservatism popularity = 0.04 }
+		add_popularity = { ideology = soc_democracy popularity = 0.04 }
+    }
+    
+}
+  

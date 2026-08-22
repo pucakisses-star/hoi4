@@ -1,0 +1,250 @@
+ideas = {
+	head_of_government = {
+        BUL_Racho_Petrov_hog = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = Racho_Petrov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Racho_Petrov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_Racho_Petrov_hog"
+			}
+			picture = BUL_Racho_Petrov
+			traits = {
+				head_of_government
+				hog_reformist_soldier
+			}
+			cancel_if_invalid = yes
+        }
+        BUL_Dimitar_Petkov_hog = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = Dimitar_Petkov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Racho_Petrov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_Dimitar_Petkov_hog"
+			}
+			picture = BUL_Dimitar_Petkov
+			traits = {
+				head_of_government
+				lib_conservatism
+				hog_old_compromiser
+			}
+			cancel_if_invalid = yes
+        }
+        BUL_Dimitar_Stanchov_hog = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = Dimitar_Stanchov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Dimitar_Stanchov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_Dimitar_Stanchov_hog"
+			}
+			#picture = 
+			traits = {
+				head_of_government
+				lib_conservatism
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = yes
+        }
+        BUL_petar_gudev_hog = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = petar_gudev_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = petar_gudev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_petar_gudev_hog"
+			}
+			#picture = 
+			traits = {
+				head_of_government
+				lib_conservatism
+				hog_backroom_backstabber
+			}
+			cancel_if_invalid = yes
+        }
+        BUL_aleksandar_stamboliyski_hog = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = aleksandar_stamboliyski }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = aleksandar_stamboliyski }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_aleksandar_stamboliyski_hog"
+			}
+			picture = BUL_aleksandar_stamboliyksi
+			traits = {
+				head_of_government
+				soc_democracy
+				hog_agrarian_reformist
+			}
+			cancel_if_invalid = yes
+        }
+       	BUL_aleksandar_malinov_hog = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = aleksandar_malinov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = aleksandar_malinov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_aleksandar_malinov_hog"
+			}
+			picture = BUL_aleksandar_malinov
+			traits = {
+				head_of_government
+				soc_conservatism
+
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    foreign_minister = {
+        BUL_Racho_Petrov_for = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = BUL_Racho_Petrov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = BUL_Racho_Petrov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_Racho_Petrov_for"
+			}
+			picture = BUL_Racho_Petrov
+			traits = {
+				foreign_minister
+				for_general_staffer
+			}
+			cancel_if_invalid = yes
+        }
+        BUL_Dimitar_Stanchov_for = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = BUL_Dimitar_Stanchov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = BUL_Dimitar_Stanchov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_Dimitar_Stanchov_for"
+			}
+			#picture = 
+			traits = {
+				foreign_minister
+				lib_conservatism
+				for_relations_expert
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    economy_minister = {
+        BUL_Lazar_Payakov_eco = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = BUL_Lazar_Payakov_eco }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = BUL_Lazar_Payakov_eco }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_Lazar_Payakov_eco"
+			}
+			picture = BUL_Lazar_Payakov
+			traits = {
+				economy_minister
+				lib_conservatism
+				eco_reformer
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    interior_minister = {
+        BUL_Dimitar_Petkov_sec = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = Dimitar_Petkov_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Dimitar_Petkov_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_Dimitar_Petkov_sec"
+			}
+			picture = BUL_Dimitar_Petkov
+			traits = {
+				security_minister
+				lib_conservatism
+				sec_crooked_kleptocrat
+			}
+			cancel_if_invalid = yes
+        }
+        BUL_Nikola_Genadiev_sec = {
+            allowed = { original_tag = BUL }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = Nikola_Genadiev_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Nikola_Genadiev_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BUL_Nikola_Genadiev_sec"
+			}
+			#picture = 
+			traits = {
+				security_minister
+				lib_conservatism
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = yes
+        }
+	}
+}

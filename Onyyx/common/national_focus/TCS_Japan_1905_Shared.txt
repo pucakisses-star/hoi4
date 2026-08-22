@@ -1,0 +1,1566 @@
+#####################################
+### tCS Japan 1905 Shared Focuses ###
+#####################################
+
+#	shared_focus = {
+#		id = JAP_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+#######################################
+### 1905 1st Katsura Cabinet Branch ###
+#######################################
+
+shared_focus = {
+
+	id = JAP_1st_katsura_cabinet
+	icon = GFX_focus_generic_support_the_left_right
+	x = 15
+	y = 0
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_political_power = 25
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+## Stabilizing Administration Sub Branch ##
+
+shared_focus = {
+
+	id = JAP_stabilizing_the_administration
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_1st_katsura_cabinet
+	}
+	x = 3
+	y = 1
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_stability = 0.025
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_ban_socialist_newspapers
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_stabilizing_the_administration
+	}
+	x = 2
+	y = 2
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#lower left party support
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_secret_deal_with_the_opposition
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_stabilizing_the_administration
+	}
+	x = 4
+	y = 2
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#event (sets country flag for saionji cabinet)
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_contain_the_hibiya_protests
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_ban_socialist_newspapers
+	}
+	prerequisite = { 
+		focus = JAP_secret_deal_with_the_opposition
+	}
+	x = 3
+	y = 3
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#hibiya event
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_declare_martial_law_1905
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_contain_the_hibiya_protests
+	}
+	x = 3
+	y = 4
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#hibiya event
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+## Russo-Japanese War Sub Branch ##
+
+shared_focus = {
+
+	id = JAP_campaign_of_1905
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_1st_katsura_cabinet
+	}
+	x = -3
+	y = 1
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+		# has_country_flag = JAP_rjw_over
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_war_support = 0.05
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_emergency_tax_increases
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_campaign_of_1905 
+	}
+	x = -3
+	y = 2
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+		# has_country_flag = JAP_rjw_over
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_political_power = -50
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_allocate_funds_to_the_navy
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_emergency_tax_increases 
+	}
+	mutually_exclusive = {
+		focus = JAP_allocate_funds_to_the_army
+	}
+	x = -5
+	y = 3
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+		# has_country_flag = JAP_rjw_over
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		navy_experience = 15
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_allocate_funds_to_the_army
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_emergency_tax_increases 
+	}
+	mutually_exclusive = {
+		focus = JAP_allocate_funds_to_the_navy
+	}
+	x = -1
+	y = 3
+	relative_position_id = JAP_1st_katsura_cabinet
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+		# has_country_flag = JAP_rjw_over
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		army_experience = 15
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_lobby_for_american_support
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_allocate_funds_to_the_navy
+		focus = JAP_allocate_funds_to_the_army
+	}
+	x = -3
+	y = 4
+	relative_position_id = JAP_campaign_of_1905
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+		# has_country_flag = JAP_rjw_over
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+################################
+### 1905 1st Saionji Cabinet ###
+################################
+
+shared_focus = {
+
+	id = JAP_1st_saionji_cabinet
+	icon = GFX_focus_generic_support_the_left_right
+	x = 15
+	y = 0
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_political_power = 25
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+## Domestic Affairs Sub Branch ##
+
+shared_focus = {
+
+	id = JAP_domestic_affairs
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_1st_saionji_cabinet
+	}
+	x = -5
+	y = 1
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_political_power = 25
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_subsidize_steel_works
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_domestic_affairs
+	}
+	x = -8
+	y = 2
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#add timed idea (minus consumer goods)
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_introduce_open_hearth_furnaces
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_subsidize_steel_works
+	}
+	x = -8
+	y = 3
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#research bonus
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_expand_mining_operations
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_introduce_open_hearth_furnaces
+	}
+	x = -8
+	y = 4
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#add timed idea (resource gain efficiency)
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_begin_railway_nationalization
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_domestic_affairs
+	}
+	x = -5
+	y = 2
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#unlock decisions
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_establish_south_manchuria_railway_company
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_begin_railway_nationalization
+	}
+	x = -6
+	y = 3
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#event
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_develop_taiwanese_infrastructure
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_begin_railway_nationalization
+	}
+	x = -4
+	y = 3
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#infrastructure ~1-2 to Taiwan
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_encourage_electric_railways
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_establish_south_manchuria_railway_company
+	}
+	prerequisite = { 
+		focus = JAP_develop_taiwanese_infrastructure
+	}
+	x = -5
+	y = 4
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#add timed idea (boosts infra construction)
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_literary_association
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_domestic_affairs
+	}
+	x = -2
+	y = 2
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_stability = 0.025
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_relocate_the_imperial_library
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_literary_association
+	}
+	x = -2
+	y = 3
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#add timed idea (research speed?)
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_tohoku_imperial_university
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_relocate_the_imperial_library
+	}
+	x = -2
+	y = 4
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#add research slot lol (too op may revise)
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+## Party Reform Sub Branch ##
+
+shared_focus = {
+
+	id = JAP_party_reform
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_1st_saionji_cabinet
+	}
+	x = 5
+	y = 1
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_stability = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_limit_genro_influence
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_party_reform
+	}
+	mutually_exclusive = { 
+		focus = JAP_eliminate_genro_influence
+	}
+	x = 2
+	y = 2
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#swaps satcho dominance 
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_appease_military_budget_demands
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_limit_genro_influence
+	}
+	x = 1
+	y = 3
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#add timed idea (research bonus + lower consumer goods)
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_cooperation_with_the_teitokuko_party
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_limit_genro_influence
+	}
+	x = 3
+	y = 3
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		add_political_power = 25
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_suppress_the_socialist_movement
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_appease_military_budget_demands
+	}
+	prerequisite = { 
+		focus = JAP_cooperation_with_the_teitokuko_party
+	}
+	x = 2
+	y = 4
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#decrease left support
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_eliminate_genro_influence
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_party_reform
+	}
+	mutually_exclusive = { 
+		focus = JAP_limit_genro_influence
+	}
+	x = 8
+	y = 2
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#removes satcho dominance 
+		add_political_power = -150
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_allow_representatives_in_the_cabinet
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_eliminate_genro_influence
+	}
+	x = 7
+	y = 3
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#swaps some cabinet members
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_abolish_the_county_system
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_eliminate_genro_influence
+	}
+	x = 9
+	y = 3
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#lower ruling party support
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_lift_the_socialist_ban
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_allow_representatives_in_the_cabinet
+	}
+	prerequisite = { 
+		focus = JAP_abolish_the_county_system
+	}
+	x = 8
+	y = 4
+	relative_position_id = JAP_1st_saionji_cabinet
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+		#increase left support
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+################################
+### 1905 2nd Katsura Cabinet ###
+################################
+
+
+
+############################
+### 1905 Foreign Affairs ###
+############################
+
+#rewards probably just trigger events
+
+shared_focus = {
+
+	id = JAP_taft_katsura_agreement
+	icon = GFX_focus_generic_support_the_left_right
+	x = 30
+	y = 0
+	cost = 5
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_renew_anglo_japanese_alliance
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_taft_katsura_agreement
+	}
+	x = -1
+	y = 1
+	relative_position_id = JAP_taft_katsura_agreement
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_secure_our_sphere_of_influence
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_renew_anglo_japanese_alliance
+	}
+	x = -1
+	y = 2
+	relative_position_id = JAP_taft_katsura_agreement
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_second_japan_korea_treaty
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_taft_katsura_agreement
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_taft_katsura_agreement
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_third_japan_korea_treaty
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_second_japan_korea_treaty
+	}
+	x = 1
+	y = 2
+	relative_position_id = JAP_taft_katsura_agreement
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_gando_convention
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_secure_our_sphere_of_influence
+	}
+	prerequisite = { 
+		focus = JAP_third_japan_korea_treaty
+	}
+	x = 0
+	y = 3
+	relative_position_id = JAP_taft_katsura_agreement
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}
+
+shared_focus = {
+
+	id = JAP_annex_korea
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { 
+		focus = JAP_gando_convention
+	}
+	x = 0
+	y = 4
+	relative_position_id = JAP_taft_katsura_agreement
+	cost = 5
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+	
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+		
+	complete_tooltip = {
+
+	}
+	
+	completion_reward = {
+
+	}
+	
+	ai_will_do = {
+		factor = 5
+	}
+
+}

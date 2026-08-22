@@ -1,0 +1,646 @@
+### Norwegian Focus Tree ###
+
+### Army ###
+shared_focus = {
+	id = NOR_choose_doctrine
+	icon = GFX_New_officers
+	cost = 5
+	x = 37
+	y = 0
+
+	completion_reward = {
+	    army_experience = 10
+		country_event = {
+            id = norway.7
+            days = 3
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_bratlies_plan
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = NOR_choose_doctrine }
+	available = {
+	    custom_trigger_tooltip = {
+			tooltip = NOR_bratlie_plan_tt
+ 	        has_country_flag = NOR_bratlie_plan
+		}
+	}
+	cost = 5
+	x = 34
+	y = 1
+
+	completion_reward = {
+	    add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_grand_battle_plan
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_stangs_plan
+	icon = GFX_goal_generic_defence
+	prerequisite = { focus = NOR_choose_doctrine }
+	available = {
+	    custom_trigger_tooltip = {
+			tooltip = NOR_stang_plan_tt
+ 	        has_country_flag = NOR_stang_plan
+		}
+	}
+	cost = 5
+	x = 40
+	y = 1
+
+	completion_reward = {
+	    add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_superior_firepower
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_improve_mobilization_system
+	icon = GFX_Recruitment_Upgrade
+	prerequisite = { focus = NOR_bratlies_plan focus = NOR_stangs_plan }
+	cost = 5
+	x = 35
+	y = 2
+
+	completion_reward = {
+	    add_ideas = NOR_improved_mobilization
+	}
+}
+
+shared_focus = {
+	id = NOR_fortification_projects
+	icon = GFX_goal_generic_construct_military
+	prerequisite = { focus = NOR_bratlies_plan focus = NOR_stangs_plan }
+	cost = 5
+	x = 39
+	y = 2
+
+	completion_reward = {
+	    unlock_decision_category_tooltip = NOR_fortification_projects_cat
+	}
+}
+
+shared_focus = {
+	id = NOR_modernize_weapons
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = NOR_bratlies_plan focus = NOR_stangs_plan }
+	cost = 5
+	x = 37
+	y = 2
+
+	completion_reward = {
+	    add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_expand_medical_service
+	icon = GFX_Support_equipment
+	prerequisite = { focus = NOR_modernize_weapons }
+	cost = 5
+	x = 36
+	y = 3
+
+	completion_reward = {
+	    add_tech_bonus = {
+			name = support_bonus
+			bonus = 0.5
+			uses = 1
+			category = support_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_military_telegraph
+	icon = GFX_focus_telegraph_lines
+	prerequisite = { focus = NOR_expand_medical_service }
+	cost = 5
+	x = 36
+	y = 4
+
+	completion_reward = {
+	    add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			technology = radio
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_krag_jorgensen_rifle
+	icon = GFX_focus_krag_jorgensen
+	prerequisite = { focus = NOR_modernize_weapons }
+	cost = 5
+	x = 38
+	y = 3
+
+	completion_reward = {
+	    add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 1
+			uses = 1
+			category = infantry_weapons
+	    }
+	}
+}
+
+shared_focus = {
+	id = NOR_modernize_artillery
+	icon = GFX_Artillery_equipment
+	prerequisite = { focus = NOR_krag_jorgensen_rifle }
+	cost = 5
+	x = 38
+	y = 4
+
+	completion_reward = {
+	    add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 0.5
+			uses = 2
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_emphasize_mobility
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = { focus = NOR_bratlies_plan }
+	cost = 5
+	x = 33
+	y = 2
+
+	completion_reward = {
+	    swap_ideas = {
+            remove_idea = NOR_bratlies_grand_army1
+            add_idea = NOR_bratlies_grand_army2
+        }
+	}
+}
+
+shared_focus = {
+	id = NOR_independent_officers
+	icon = GFX_New_recruits
+	prerequisite = { focus = NOR_emphasize_mobility }
+	prerequisite = { focus = NOR_improve_mobilization_system }
+	cost = 5
+	x = 34
+	y = 3
+
+	completion_reward = {
+	    add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_grand_battle_plan
+		}
+	    swap_ideas = {
+            remove_idea = NOR_bratlies_grand_army2
+            add_idea = NOR_bratlies_grand_army3
+        }
+	}
+}
+
+shared_focus = {
+	id = NOR_glorify_soldiers
+	icon = GFX_Modernization_army
+	prerequisite = { focus = NOR_independent_officers }
+	cost = 5
+	x = 34
+	y = 4
+
+	completion_reward = {
+	    swap_ideas = {
+            remove_idea = NOR_bratlies_grand_army3
+            add_idea = NOR_bratlies_grand_army4
+        }
+	}
+}
+
+shared_focus = {
+	id = NOR_emphasize_discipline
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = NOR_stangs_plan }
+	cost = 5
+	x = 41
+	y = 2
+
+	completion_reward = {
+	    swap_ideas = {
+            remove_idea = NOR_stangs_defensive_army1
+            add_idea = NOR_stangs_defensive_army2
+        }
+	}
+}
+
+shared_focus = {
+	id = NOR_static_defence
+	icon = GFX_focus_generic_provoke_border_clashes
+	prerequisite = { focus = NOR_emphasize_discipline }
+	prerequisite = { focus = NOR_fortification_projects }
+	cost = 5
+	x = 40
+	y = 3
+
+	completion_reward = {
+	    swap_ideas = {
+            remove_idea = NOR_stangs_defensive_army2
+            add_idea = NOR_stangs_defensive_army3
+        }
+	}
+}
+
+shared_focus = {
+	id = NOR_chain_of_command
+	icon = GFX_goal_rhineland
+	prerequisite = { focus = NOR_static_defence }
+	cost = 5
+	x = 40
+	y = 4
+
+	completion_reward = {
+	    swap_ideas = {
+            remove_idea = NOR_stangs_defensive_army3
+            add_idea = NOR_stangs_defensive_army4
+        }
+	}
+}
+
+shared_focus = {
+	id = NOR_modern_war
+	icon = GFX_focus_NOR_army_expansion
+	prerequisite = { focus = NOR_military_telegraph }
+	prerequisite = { focus = NOR_modernize_artillery }
+	prerequisite = { focus = NOR_glorify_soldiers focus = NOR_chain_of_command }
+	cost = 5
+	x = 37
+	y = 5
+
+	completion_reward = {
+	    add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_mobility_doctrine
+	icon = GFX_focus_unknown
+	prerequisite = { focus = NOR_modern_war }
+	cost = 5
+	x = 34
+	y = 6
+
+	completion_reward = {
+	    if = {
+		    limit ={
+			    has_idea = NOR_stangs_defensive_army4
+			}
+			swap_ideas = {
+                remove_idea = NOR_stangs_defensive_army4
+                add_idea = NOR_stangs_defensive_army5
+            }
+		}
+		else_if = {
+		    limit ={
+			    has_idea = NOR_stangs_defensive_army6
+			}
+			swap_ideas = {
+                remove_idea = NOR_stangs_defensive_army6
+                add_idea = NOR_stangs_defensive_army7
+            }
+		}
+		else_if = {
+		    limit ={
+			    has_idea = NOR_bratlies_grand_army4
+			}
+			swap_ideas = {
+                remove_idea = NOR_bratlies_grand_army4
+                add_idea = NOR_bratlies_grand_army5
+            }
+		}
+		else_if = {
+		    limit ={
+			    has_idea = NOR_bratlies_grand_army6
+			}
+			swap_ideas = {
+                remove_idea = NOR_bratlies_grand_army6
+                add_idea = NOR_bratlies_grand_army7
+            }
+		}
+		else = {
+		    add_ideas = NOR_mobility_doctrine_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_mountain_warfare
+	icon = GFX_focus_mountain_warfare
+	prerequisite = { focus = NOR_mobility_doctrine }
+	cost = 5
+	x = 35
+	y = 7
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_winter_warfare
+	icon = GFX_focus_winter_warfare
+	prerequisite = { focus = NOR_mobility_doctrine }
+	cost = 5
+	x = 33
+	y = 7
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_natural_battlefield
+	icon = GFX_NOR_natural_battlefield
+	prerequisite = { focus = NOR_mountain_warfare }
+	prerequisite = { focus = NOR_winter_warfare }
+	cost = 5
+	x = 34
+	y = 8
+
+	completion_reward = {
+	    add_ideas = NOR_natural_battlefield_idea
+	}
+}
+
+shared_focus = {
+	id = NOR_continue_modernization
+	icon = GFX_focus_unknown
+	prerequisite = { focus = NOR_mobility_doctrine }
+	prerequisite = { focus = NOR_study_trench_warfare }
+	cost = 5
+	x = 37
+	y = 7
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_support_kongsberg_vapenfabrikk
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = NOR_continue_modernization }
+	available = {
+	    controls_state = 110
+	}
+	cost = 5
+	x = 36
+	y = 8
+
+	completion_reward = {
+	    army_experience = 10
+	    110 = {
+		    add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+			}
+        }
+	}
+}
+
+shared_focus = {
+	id = NOR_expand_field_artillery
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = { focus = NOR_support_kongsberg_vapenfabrikk }
+	prerequisite = { focus = NOR_introduce_madsen_gun }
+	cost = 5
+	x = 35
+	y = 9
+
+	completion_reward = {
+	    add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 1
+			uses = 1
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_towed_artillery
+	icon = GFX_goal_generic_army_artillery2
+	prerequisite = { focus = NOR_expand_field_artillery }
+	prerequisite = { focus = NOR_license_hotchkiss }
+	cost = 5
+	x = 35
+	y = 10
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_license_hotchkiss
+	icon = GFX_support_equipment_3
+	prerequisite = { focus = NOR_support_kongsberg_vapenfabrikk }
+	prerequisite = { focus = NOR_introduce_madsen_gun }
+	cost = 5
+	x = 37
+	y = 9
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_expand_automobile_corps
+	icon = GFX_focus_unknown
+	prerequisite = { focus = NOR_expand_field_artillery }
+	prerequisite = { focus = NOR_license_hotchkiss }
+	prerequisite = { focus = NOR_expand_supply_corps }
+	cost = 5
+	x = 37
+	y = 10
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_introduce_madsen_gun
+	icon = GFX_Support_equipment_3
+	prerequisite = { focus = NOR_continue_modernization }
+	cost = 5
+	x = 38
+	y = 8
+
+	completion_reward = {
+	    add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 1
+			uses = 1
+			category = infantry_weapons
+	    }
+	}
+}
+
+shared_focus = {
+	id = NOR_expand_supply_corps
+	icon = GFX_Support_equipment_2
+	prerequisite = { focus = NOR_support_kongsberg_vapenfabrikk }
+	prerequisite = { focus = NOR_introduce_madsen_gun }
+	cost = 5
+	x = 39
+	y = 9
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_found_engineer_brigades
+	icon = GFX_focus_unknown
+	prerequisite = { focus = NOR_license_hotchkiss }
+	prerequisite = { focus = NOR_expand_supply_corps }
+	cost = 5
+	x = 39
+	y = 10
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_army_reform
+	icon = GFX_focus_unknown
+	prerequisite = { focus = NOR_towed_artillery }
+	prerequisite = { focus = NOR_expand_automobile_corps }
+	prerequisite = { focus = NOR_found_engineer_brigades }
+	cost = 20
+	x = 37
+	y = 11
+
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = NOR_study_trench_warfare
+	icon = GFX_study_trench_warfare
+	prerequisite = { focus = NOR_modern_war }
+	cost = 5
+	x = 40
+	y = 6
+
+	completion_reward = {
+	    if = {
+		    limit ={
+			    has_idea = NOR_stangs_defensive_army4
+			}
+			swap_ideas = {
+                remove_idea = NOR_stangs_defensive_army4
+                add_idea = NOR_stangs_defensive_army6
+            }
+		}
+		else_if = {
+		    limit ={
+			    has_idea = NOR_stangs_defensive_army5
+			}
+			swap_ideas = {
+                remove_idea = NOR_stangs_defensive_army5
+                add_idea = NOR_stangs_defensive_army7
+            }
+		}
+		else_if = {
+		    limit ={
+			    has_idea = NOR_bratlies_grand_army4
+			}
+			swap_ideas = {
+                remove_idea = NOR_bratlies_grand_army4
+                add_idea = NOR_bratlies_grand_army6
+            }
+		}
+		else_if = {
+		    limit ={
+			    has_idea = NOR_bratlies_grand_army5
+			}
+			swap_ideas = {
+                remove_idea = NOR_bratlies_grand_army5
+                add_idea = NOR_bratlies_grand_army7
+            }
+		}
+		else = {
+		    add_ideas = NOR_trench_warfare_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_doctrinal_reforms
+	icon = GFX_goal_generic_army_doctrines
+	prerequisite = { focus = NOR_study_trench_warfare }
+	cost = 5
+	x = 39
+	y = 7
+
+	completion_reward = {
+	    army_experience = 15
+	    add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 0.25
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = NOR_soldier_mindset
+	icon = GFX_focus_unknown
+	prerequisite = { focus = NOR_study_trench_warfare }
+	cost = 5
+	x = 41
+	y = 7
+
+	completion_reward = {
+	    add_ideas = NOR_soldier_mindset_idea
+	}
+}
+
+shared_focus = {
+	id = NOR_shooting_lessons_in_schools
+	icon = GFX_focus_unknown
+	prerequisite = { focus = NOR_doctrinal_reforms }
+	prerequisite = { focus = NOR_soldier_mindset }
+	cost = 5
+	x = 40
+	y = 8
+
+	completion_reward = {
+	    swap_ideas = {
+            remove_idea = NOR_soldier_mindset_idea
+            add_idea = NOR_war_readiness
+        }
+	}
+}

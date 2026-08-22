@@ -1,0 +1,42 @@
+TCS_crisis = {
+	join_offensive_side = {
+		cost = 0
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			add_to_array = { global.crisis_offensive = THIS }
+			IF = {
+				is_in_array = {
+					global.crisis_defensive = THIS
+				}
+				remove_from_array = { global.crisis_defensive = THIS }
+			}
+		}
+	}
+	join_defensive_side = {
+		cost = 0
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			add_to_array = { global.crisis_defensive = THIS }
+			IF = {
+				is_in_array = {
+					global.crisis_offensive = THIS
+				}
+				remove_from_array = { global.crisis_offensive = THIS }
+			}
+		}
+	}
+	clear_array = {
+		cost = 0
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			clear_array = global.crisis_defensive
+			clear_array = global.crisis_offensive
+		}
+	}
+}

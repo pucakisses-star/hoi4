@@ -1,0 +1,455 @@
+﻿#
+# Generic Flavor Events
+#
+
+add_namespace = tcs_flavor
+
+### Normal Events ###
+
+news_event = {
+    id = tcs_flavor.1
+    title = tcs_flavor.1.title
+    desc = tcs_flavor.1.desc
+    picture = GFX_news_event_zeppelins
+
+    major = yes
+
+    trigger = {
+        date > 1910.6.19
+        date < 1910.6.26
+    }
+
+    mean_time_to_happen = {
+        days = 5
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.1.a
+    }
+}
+news_event = {
+    id = tcs_flavor.2
+    title = tcs_flavor.2.title
+    desc = tcs_flavor.2.desc
+    picture = GFX_news_event_invasion_literature
+
+    major = yes
+
+    trigger = {
+        TAG = ENG
+        date > 1909.3.12
+        date < 1909.3.19
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.2.a
+    }
+}
+news_event = {
+    id = tcs_flavor.3
+    title = tcs_flavor.3.title
+    desc = tcs_flavor.3.desc
+    picture = GFX_news_event_valencia_sinking
+
+    major = yes
+
+    trigger = {
+        date > 1906.1.22
+        date < 1906.1.29
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.3.a
+    }
+}
+news_event = {
+    id = tcs_flavor.4
+    title = tcs_flavor.4.title
+    desc = tcs_flavor.4.desc
+    picture = GFX_news_event_tunguska_event
+
+    major = yes
+
+    trigger = {
+        date > 1908.6.30
+        date < 1908.7.7
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.4.a
+    }
+}
+news_event = {
+    id = tcs_flavor.5
+    title = tcs_flavor.5.title
+    desc = tcs_flavor.5.desc
+    picture = GFX_news_event_kelly_gang
+
+    major = yes
+
+    trigger = {
+        date > 1909.12.26
+        date < 1909.12.31
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.5.a
+    }
+}
+news_event = {
+    id = tcs_flavor.6
+    title = tcs_flavor.6.title
+    desc = tcs_flavor.6.desc
+    picture = GFX_news_event_halley_comet
+
+    major = yes
+
+    trigger = {
+        date > 1910.4.10
+        date < 1910.4.17
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.6.a
+    }
+}
+news_event = { 
+    id = tcs_flavor.7
+    title = tcs_flavor.7.title
+    desc = tcs_flavor.7.desc
+    #picture = 
+
+    major = yes
+
+    #trigger = { #Would be triggered after the Great War
+    #}
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = tcs_flavor.7.a
+    }
+}
+news_event = { 
+    id = tcs_flavor.8
+    title = tcs_flavor.8.title
+    desc = tcs_flavor.8.desc
+    picture = GFX_news_event_haber_process
+
+    major = yes
+
+    trigger = {
+        date > 1905.7.10
+        date < 1905.7.17
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.8.a
+    }
+}
+news_event = { 
+    id = tcs_flavor.9
+    title = tcs_flavor.9.title
+    desc = tcs_flavor.9.desc
+    picture = GFX_news_event_sinking_titanic
+
+    major = yes
+
+    trigger = {
+        date > 1912.4.14
+        date < 1912.4.21
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.9.a
+    }
+}
+news_event = { 
+    id = tcs_flavor.10
+    title = tcs_flavor.10.title
+    desc = tcs_flavor.10.desc
+    #picture = 
+
+    major = yes
+
+    trigger = {
+        date > 1905.6.30
+        date < 1905.7.1
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.10.a
+    }
+}
+news_event = { #Jazz age
+    id = tcs_flavor.11
+    title = tcs_flavor.11.title
+    desc = tcs_flavor.11.desc
+    picture = GFX_news_event_jazz
+
+    major = yes
+
+    trigger = {
+        date > 1920.1.5
+        date < 1920.1.12
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.11.a
+    }
+}
+news_event = { #Continental Drift Proposed
+    id = tcs_flavor.12
+    title = tcs_flavor.12.title
+    desc = tcs_flavor.12.desc
+    #picture = 
+
+    major = yes
+
+    trigger = {
+        date > 1912.1.6
+        date < 1912.1.13
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.12.a
+    }
+}
+news_event = { #Chile Mine strike (Succeeds)
+    id = tcs_flavor.13
+    title = tcs_flavor.13.title
+    desc = tcs_flavor.13.desc
+    #picture = 
+
+    major = yes
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.13.a
+    }
+}
+news_event = { #Santa Maria Tragedy (Chile Mine Strike Fails)
+    id = tcs_flavor.14
+    title = tcs_flavor.14.title
+    desc = tcs_flavor.14.desc
+    #picture = 
+
+    major = yes
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.14.a
+    }
+}
+news_event = { #Launch of the HMS Dreadnought
+    id = tcs_flavor.15
+    title = tcs_flavor.15.title
+    desc = tcs_flavor.15.desc
+    #picture = 
+
+    major = yes
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.15.a
+    }
+}
+news_event = { #Rediscovery of Machu Picchu 
+    id = tcs_flavor.16
+    title = tcs_flavor.16.title
+    desc = tcs_flavor.16.desc
+    picture = GFX_news_event_machu_piccu
+
+    major = yes
+
+    trigger = {
+        date > 1911.7.24
+        date < 1911.7.30
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.16.a
+    }
+}
+news_event = { #Rite of Spring Premieres 
+    id = tcs_flavor.17
+    title = tcs_flavor.17.title
+    desc = tcs_flavor.17.desc
+    picture = GFX_news_event_rite_spring
+
+    major = yes
+
+    trigger = {
+        date > 1913.5.29
+        date < 1913.6.5
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.17.a
+    }
+}
+news_event = { #Mona Lisa Recovered
+    id = tcs_flavor.18
+    title = tcs_flavor.18.title
+    desc = tcs_flavor.18.desc
+    picture = GFX_news_event_mona_lisa_returned
+
+    major = yes
+
+    trigger = {
+        date > 1913.11.17
+        date < 1913.11.24
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.18.a
+    }
+}
+news_event = { #Theft of the Mona Lisa
+    id = tcs_flavor.19
+    title = tcs_flavor.19.title
+    desc = tcs_flavor.19.desc
+    picture = GFX_news_event_mona_lisa_stolen
+
+    major = yes
+
+    trigger = {
+        date > 1911.8.21
+        date < 1911.8.28
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.19.a
+    }
+}
+news_event = { #The Model T Begins Production
+    id = tcs_flavor.20
+    title = tcs_flavor.20.title
+    desc = tcs_flavor.20.desc
+    #picture = 
+
+    major = yes
+
+    trigger = {
+        date > 1908.8.12
+        date < 1908.8.19
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.20.a
+    }
+}
+news_event = { #The Futurist Manifesto
+    id = tcs_flavor.21
+    title = tcs_flavor.21.title
+    desc = tcs_flavor.21.desc
+    picture = GFX_news_event_futurism
+
+    major = yes
+
+    trigger = {
+        date > 1909.1.15
+        date < 1909.1.22
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.21.a
+    }
+}
+news_event = { #King of Portugal Assassinated!
+    id = tcs_flavor.22
+    title = tcs_flavor.22.title
+    desc = tcs_flavor.22.desc
+    #picture = 
+
+    major = yes
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.22.a
+    }
+    option = { #Socialist government
+        name = tcs_flavor.22.b
+    }
+}
+news_event = { #Emergence of Swing Music
+    id = tcs_flavor.23
+    title = tcs_flavor.23.title
+    desc = tcs_flavor.23.desc
+    picture = GFX_news_event_swing
+
+    major = yes
+
+    trigger = {
+        date > 1929.1.15
+        date < 1929.7.22
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.23.a
+    }
+}
+news_event = { #Peary Expedition Reaches North Pole
+    id = tcs_flavor.24
+    title = tcs_flavor.24.title
+    desc = tcs_flavor.24.desc
+    picture = GFX_news_event_peary_expedition
+
+    major = yes
+
+    trigger = {
+        date > 1909.4.6
+        date < 1909.4.13
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = tcs_flavor.24.a
+    }
+}

@@ -1,0 +1,29 @@
+state={
+	id=1179
+	name="STATE_1179"
+	manpower = 28365
+	
+	state_category = city
+
+	history={
+		owner = INS
+		victory_points = {
+			7381 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+			cotton_farm = 1
+			
+			7381 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = INS
+	}
+
+	provinces={
+		7381
+	}
+}

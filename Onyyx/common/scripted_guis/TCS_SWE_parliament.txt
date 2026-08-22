@@ -1,0 +1,24 @@
+scripted_gui = {
+
+	swe_parliament_decision_ui = {
+		context_type = decision_category
+		window_name = "swe_parliament_decision_ui_window"
+
+		properties = {
+			forsta_kammaren_icon = {
+				frame = SWE_current_forsta_kammaren_icon_frame
+			}
+
+			andra_kammaren_icon = {
+				frame = SWE_current_andra_kammaren_icon_frame
+			}
+			SWE_monarch_power_level_amount = {
+				x = SWE.monarch_power_location
+			}
+			monarch_power_slider = {
+				x = SWE.monarch_power_location
+			}
+		}
+	}
+}
+

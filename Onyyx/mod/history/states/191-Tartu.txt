@@ -1,0 +1,48 @@
+state={
+	id=191
+	name="STATE_191"
+
+	state_category = rural
+
+	history={
+		owner = RUS
+		add_claim_by = RUS
+		add_core_of = UBD
+		
+		buildings = {
+			infrastructure = 3
+		}
+
+		victory_points = {
+			9221 3
+		}
+		victory_points = {
+			592 1
+		}
+		victory_points = {
+			11443 1
+		}
+		
+		add_to_array = { state_culture_array = 102 }
+       	add_to_array = { state_culture_array = 4 }
+       	add_to_array = { state_culture_array = 89 }
+       	add_to_array = { state_culture_array = 26 }
+				
+       	add_to_array = { state_culture_array_num = 0.500 }
+       	add_to_array = { state_culture_array_num = 0.180 }
+       	add_to_array = { state_culture_array_num = 0.170 }
+       	add_to_array = { state_culture_array_num = 0.009 }
+	
+      	add_to_array = { state_religion_array = 3 }
+      	add_to_array = { state_religion_array = 1 }
+		
+      	add_to_array = { state_religion_array_num = 0.950 }
+      	add_to_array = { state_religion_array_num = 0.005 }
+	}
+
+	provinces={
+		592 4640 6099 6178 6408 9221 9485 11057 11443 13127
+	}
+	manpower=256400
+	buildings_max_level_factor=1.000
+}

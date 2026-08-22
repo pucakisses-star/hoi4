@@ -1,0 +1,10 @@
+NOR_fortification_projects_cat = {
+	
+	allowed = {
+		original_tag = NOR
+	}
+
+	visible = {
+		has_completed_focus = NOR_fortification_projects
+	}
+}

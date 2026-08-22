@@ -1,0 +1,27 @@
+state={
+	id=894
+	name="STATE_894"
+
+	state_category = rural
+	
+	resources = {
+		cotton=6
+	}
+	
+	history={
+		buildings = {
+		
+		}
+		victory_points = { 
+			2220 2.0 
+		}
+		owner = RWD
+		add_core_of = RWD
+	}
+
+	provinces={
+		9962 
+	}
+	manpower=37245
+	buildings_max_level_factor=1.000
+}

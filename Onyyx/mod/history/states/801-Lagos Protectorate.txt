@@ -1,0 +1,15 @@
+state={
+	id=801
+	name="STATE_801"
+	provinces={
+		12731 13326 13344 13351 13370 13398 13400 
+	}
+	history = {
+		owner = ENG
+		add_core_of = ENG
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	state_category = rural
+}

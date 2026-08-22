@@ -1,0 +1,110 @@
+﻿#
+# Polish Events
+#
+
+add_namespace = poland_1918
+add_namespace = poland_1918_news
+add_namespace = poland_1918_flav
+
+country_event = { #End of Regency, Pilsudski in power
+    id = poland_1918.1
+    title = poland_1918.1.title
+    desc = poland_1918.1.desc
+    picture = GFX_event_POL_future
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = POL
+        date > 1918.11.14
+    }
+
+    mean_time_to_happen = { 
+        days = 1
+    }
+    
+    option = { #Pilsudski in power, historical
+        name = poland_1918.1.a
+        custom_effect_tooltip = poland.1.a.tooltip.end.of.regency
+        set_politics = {
+            ruling_party = soc_democracy
+            last_election = "1914.1.26"
+            election_frequency = 60
+            elections_allowed = yes
+        }
+        set_country_flag = POL_1918_end_of_regency
+        news_event = { id = poland_news.1 }
+        country_event = { id = poland_1918.2 }
+    }
+}
+country_event = { #Forming of Moraczewki's socialist goverment
+    id = poland_1918.2
+    title = poland_1918.2.title
+    desc = poland_1918.2.desc
+    picture = GFX_event_POL_moraczewski_gov
+
+    trigger = {
+        tag = POL
+        date > 1918.11.17
+        date < 1925.1.1
+        has_country_flag = POL_1918_end_of_regency
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = poland_1918.2.a
+        custom_effect_tooltip = poland.2.a.tooltip
+        hidden_effect = {
+            add_ideas = POL_jedrzej_moraczewski_hos
+            add_ideas = POL_leon_wasilewski
+            add_ideas = POL_stanislaw_szeptycki
+        }    
+    }
+}
+
+country_event = { #Januszajtis Coup Attempt
+    id = poland_1918.3
+    title = poland_1918.3.title
+    desc = poland_1918.3.desc
+    picture = GFX_event_POL_moraczewski_gov
+
+    trigger = {
+        tag = POL
+        date > 1919.1.6
+        date < 1925.1.1
+        has_country_flag = POL_1918_end_of_regency
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = poland_1918.3.a
+        add_political_power = -50
+    }
+}
+
+news_event = { #Independence of Poland Pilsudski's dip note
+    id = poland_1918_news.1
+    title = poland_1918_news.1.title
+    desc = poland_1918_news.1.desc
+    picture = GFX_report_event_GER_News_Hitler_Chancellor
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = poland_1918_news.1.a
+    }
+}
+
+country_event = { #3rd May Constitution Anniversary
+    id = poland_1918_flav.1
+    title = poland_1918_flav.1.title
+    desc = poland_1918_flav.1.desc
+    #picture = 
+    is_triggered_only = yes
+    option = {
+        name = poland_1918_flav.1.a
+    }
+}        
+
+

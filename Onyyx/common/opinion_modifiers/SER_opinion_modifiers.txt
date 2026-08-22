@@ -1,0 +1,8 @@
+opinion_modifiers = {
+	
+	SER_fights_in_macedonia = { value = -15 }
+	
+	SER_no_more_profit = { value = -25 }
+
+	SER_state_visit = { value = 15 }
+}

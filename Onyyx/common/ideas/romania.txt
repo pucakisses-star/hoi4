@@ -1,0 +1,518 @@
+ideas = {
+
+	country = {
+
+	##Stater Ideas##
+
+		ROM_orthodoxy = {
+		
+		allowed = {
+			original_tag = ROM
+		}
+		
+		removal_cost = -1
+
+		picture = ROM_Romanian_Orthodoxy	
+	
+		modifier = {
+			stability_factor = 0.05
+			political_power_gain = 0.05
+			surrender_limit = 0.1
+			}
+		}
+
+		ROM_greater_romania = {
+
+			picture = ROM_Romanian_Dream
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+                war_support_factor = 0.05
+                army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		ROM_dacian_revanchism = {
+
+			picture = ROM_Romanian_Dream
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.35
+				enemy_justify_war_goal_time = -0.25
+                war_support_factor = 0.1
+                army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		ROM_oligarchist_military = {
+
+			picture = ROM_Oligarchist_Army
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				offence = -0.1
+				defence = -0.05
+				land_reinforce_rate = -0.1
+				planning_speed = -0.2
+				army_morale_factor = -0.2
+				promote_cost_factor = -0.75
+			}
+		}
+
+		ROM_agrarian_country = {
+
+			picture = ROM_Agrarian_Economy
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				political_power_gain = -0.15
+				research_speed_factor = -0.1
+				production_speed_buildings_factor = -0.25
+				consumer_goods_factor = 0.05
+				monthly_population = 0.05
+			}
+		}
+
+		ROM_agrarian_country_1 = {
+
+			picture = ROM_Agrarian_Economy
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				political_power_gain = -0.15
+				research_speed_factor = -0.1
+				production_speed_buildings_factor = -0.25
+				monthly_population = 0.1
+			}
+		}
+
+		ROM_agrarian_country_2 = {
+
+			picture = ROM_Agrarian_Economy
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				political_power_gain = -0.15
+				research_speed_factor = -0.075
+				production_speed_buildings_factor = -0.25
+				monthly_population = 0.1
+			}
+		}
+
+		ROM_oil_boom_1 = {
+
+#			picture = 
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.025
+			}
+		}
+	}
+
+	head_of_government = {
+
+		ROM_Ion_Bratianu = {
+			allowed = {
+				OR = {
+					original_tag = ROM
+				}
+			}
+			
+			available = {
+				always = yes
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			picture = ROM_Ion_C_Bratianu
+
+			traits = {
+				hog_pragmatic_statesman
+				head_of_government
+			}
+		}
+	}
+
+	foreign_minister = {
+
+		ROM_Constantin_Cantacuzino = {
+			allowed = {
+				OR = {
+					original_tag = ROM
+				}
+			}
+			
+			available = {
+				always = yes
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			picture = ROM_Constantin_Cantacuzino-Pascanu
+
+			traits = {
+				for_apologetic_clerk
+				foreign_minister
+			}
+		}
+	}
+
+	economy_minister = {
+
+		ROM_Petre_Aurelian = {
+			allowed = {
+				OR = {
+					original_tag = ROM
+				}
+			}
+			
+			available = {
+				always = yes
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			picture = ROM_Petre_Aurelian
+
+			traits = {
+				eco_steel_magnate
+				economy_minister
+			}
+		}
+	}
+
+	interior_minister = {
+
+		ROM_Henri_Cihoski_SM = {
+			allowed = {
+				OR = {
+					original_tag = ROM
+				}
+			}
+			
+			available = {
+				always = yes
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			picture = ROM_Henri_Cihoski
+
+			traits = {
+				sec_driven_recruiter
+				security_minister
+			}
+		}
+	}
+
+	head_of_intel = {
+
+		ROM_Nicolae_Petala_HoI = {
+			allowed = {
+				OR = {
+					original_tag = ROM
+				}
+			}
+			
+			available = {
+				always = yes
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			picture = ROM_Nicolae_Petala
+
+			traits = {
+				sec_driven_recruiter
+				head_of_intel
+			}
+		}
+	}
+
+	theorist = {
+
+		ROM_Ioan_Rascanu = {
+					
+			picture = ROM_Ioan_Rascanu
+
+			allowed = { original_tag = ROM }
+			
+			research_bonus = { cat_superior_firepower = 0.15 }
+
+		modifier = {
+			offence = 0.05
+			defence = 0.05
+		}
+			
+			traits = {  }
+		}
+
+		ROM_Nicolae_Petala = {
+					
+			picture = ROM_Nicolae_Petala
+
+			allowed = { original_tag = ROM }
+			
+			traits = { carm_mountaineer }			
+		}
+	}
+
+	weapons_manufacturer = {
+		
+		designer = yes
+
+		ROM_cugir2 = {
+			
+			picture = ROM_Cugir
+
+			allowed = { original_TAG = ROM }
+			
+			research_bonus = { infantry_weapons = 0.10 }
+
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.05
+					breakthrough = 0.05
+					instant = yes
+				}
+			}
+	
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+
+		ROM_RomArm = {
+			
+			picture = RomArm
+
+			allowed = { original_TAG = ROM }
+			
+			research_bonus = { infantry_weapons = 0.10 }
+
+			equipment_bonus = {
+				infantry_equipment = {
+					breakthrough = 0.05
+					reliability = 0.05
+					instant = yes
+				}
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+		}
+	}
+
+	tank_manufacturer = {
+
+		ROM_UDR = {
+			
+			picture = ROM_UDR
+
+			allowed = { original_TAG = ROM }
+			
+			equipment_bonus = {
+				artillery_equipment = { 
+					ap_attack = 0.05 instant = yes
+					soft_attack = 0.05 instant = yes
+					hard_attack = 0.05 instant = yes
+				}
+				anti_tank_equipment = { 
+					ap_attack = 0.05 instant = yes
+					soft_attack = 0.05 instant = yes
+					hard_attack = 0.05 instant = yes
+				}
+				anti_air_equipment = { 
+					ap_attack = 0.05 instant = yes
+					soft_attack = 0.05 instant = yes
+					hard_attack = 0.05 instant = yes
+				}
+			}
+
+			research_bonus = { artillery = 0.10 }
+			
+			traits = { artillery_manufacturer }
+			
+		}
+
+		ROM_leonidas_works = {
+			
+			picture = ROM_Leonidas
+			
+			allowed = { original_TAG = ROM }
+
+			cost = 150
+
+			research_bonus = { armor = 0.15 }
+			
+			equipment_bonus = {
+				light_tank_equipment = {
+					soft_attack = 0.1
+					defense = 0.1
+					hardness = 0.05
+					instant = yes
+				}
+			}
+
+			traits = { tank_manufacturer }
+		}
+	}
+
+	air_naval_manufacturer = {
+		
+		designer = yes
+		
+		Santierul_Naval_Constanta = {
+			
+			picture = ROM_Santierul_Naval_Constanta
+
+			allowed = { original_tag = ROM }
+			
+			research_bonus = { naval_equipment = 0.15 }
+			
+			equipment_bonus = {
+				ship_hull_light = {
+					lg_attack = 0.1
+					naval_range = -0.25
+					build_cost_ic = -0.15
+				}
+			}
+			
+			traits = { naval_manufacturer }
+		}
+
+		Santierul_Naval_Galati = {
+			
+			picture = ROM_Santierul_Naval_Galati
+
+			allowed = { original_tag = ROM }
+			
+			research_bonus = { naval_equipment = 0.15 }
+			
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					lg_attack = 0.15
+					naval_range = -0.4
+					build_cost_ic = -0.15
+				}
+			}
+			
+			traits = { naval_manufacturer }
+		}
+
+		ROM_ICAR2 = {
+			
+			picture = ROM_ICAR2
+
+			allowed = { original_tag = ROM }
+			
+			research_bonus = { air_equipment = 0.15 }
+
+			equipment_bonus = {
+				fighter_equipment = {
+					air_attack = 0.1
+					air_agility = 0.1
+					air_range = 0.05
+					instant = yes
+				}
+			}
+		}
+	}
+
+	industrial_concern = {
+
+		ROM_CFR = {
+			
+			picture = ROM_CFR
+
+			available = { has_completed_focus = ROM_Expand_CFR }
+			
+			allowed = { original_tag = ROM }
+
+			research_bonus = { industry = 0.15 }
+
+			equipment_bonus = {
+				motorized_equipment = {
+					hardness = 0.05
+					maximum_speed = 0.1
+					instant = yes
+				}
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+			
+			traits = { industrial_manufacturer }
+		}
+
+		ROM_RSR = {
+			
+			picture = ROM_RSR
+			
+			allowed = { original_tag = ROM }
+
+			research_bonus = { synth_resources = 0.2 }
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+			
+			traits = { industrial_manufacturer }
+		}
+
+		ROM_UB = {
+			
+			picture = ROM_UB
+			
+			allowed = { original_tag = ROM }
+
+			research_bonus = { electronics = 0.15 }
+
+			modifier = {
+				
+			}
+			
+			traits = { electronics_manufacturer }
+		}
+	}

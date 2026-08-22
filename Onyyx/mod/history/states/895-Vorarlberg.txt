@@ -1,0 +1,14 @@
+state={
+	id=895
+	name="STATE_895"
+	provinces={
+		6678 6680 
+	}
+	history = {
+		owner = AUS
+		add_core_of = AUS
+	}
+	manpower=100000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

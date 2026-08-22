@@ -1,0 +1,36 @@
+on_actions = {
+    ### Coalitions & Oppositions ###
+    on_startup = {
+        effect = {
+            HOL = {
+                country_event = {
+                    id = tcs_general.1
+                }
+            }
+            # TCS_calc_coalitions = yes
+            # TCS_calc_oppositions = yes
+        }
+    }
+    on_daily = {
+        effect = {
+            TCS_calc_coalitions = yes
+            TCS_calc_oppositions = yes
+        }
+    }
+    ### Dutch Parliament ###
+    on_daily = {
+        effect = {
+            HOL_recalc_parliament_icon_frames = yes
+        }
+    }
+    ### Elections ###
+    on_new_term_election = {
+        effect = {
+            ### Netherlands ###
+            if = {
+                limit = { tag = HOL }
+                country_event = netherlands.1
+            }
+        }
+    }
+}

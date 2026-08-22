@@ -1,0 +1,1087 @@
+focus_tree = {
+	id = serbia_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	default = no
+	focus = {
+		id = SER_adress_the_economy
+		icon = GFX_focus_generic_industry_3
+		cost = 8.57
+		x = 28
+		y = 0
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = SER_political_turmoil
+		icon = GFX_goal_unknown
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = SER_remnants_of_the_habsburg_influence
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_political_turmoil
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = SER_revive_international_trade
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_remnants_of_the_habsburg_influence
+		}
+		available = {
+			NOT = { has_completed_focus = SER_tax_imports_from_austria }
+			NOT = { has_completed_focus = SER_limit_exports_to_austria }
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Economic_Sattelite
+				add_idea = SER_Economic_Sattelite2
+			}
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = SER_tax_imports_from_austria
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_remnants_of_the_habsburg_influence
+		}
+		available = {
+			SER = { has_completed_focus = SER_revive_international_trade }
+			NOT = { has_completed_focus = SER_limit_exports_to_austria }
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Economic_Sattelite2
+				add_idea = SER_Economic_Sattelite3
+			}
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = SER_change_import_sources
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_revive_international_trade
+		}
+		prerequisite = {
+			focus = SER_tax_imports_from_austria
+		}
+		completion_reward = {
+			FRA = { country_event = { days = 2 id = ser_pigwar.2 } }
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = SER_limit_exports_to_austria
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_remnants_of_the_habsburg_influence
+		}
+		available = {
+			SER = { has_completed_focus = SER_tax_imports_from_austria }
+			SER = { has_completed_focus = SER_revive_international_trade }
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Economic_Sattelite3
+				add_idea = SER_Economic_Sattelite4
+			}
+		}
+		x = 6
+		y = 2
+	}
+	focus = {
+		id = SER_open_to_the_world_market
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_limit_exports_to_austria
+		}
+		completion_reward = {
+			swap_ideas = {
+            	remove_idea = SER_Economic_Sattelite4
+            	add_idea = SER_Economic_Sattelite5
+        	}
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = SER_end_tariff_laden_goods_from_austria
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_change_import_sources
+		}
+		prerequisite = {
+			focus = SER_open_to_the_world_market
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = { target = AUS modifier = SER_no_more_profit }
+			remove_ideas = SER_Economic_Sattelite5
+			add_ideas = SER_Nationalized_Industry
+			hidden_effect = {
+				remove_ideas = SER_Economic_Sattelite4
+				remove_ideas = SER_Economic_Sattelite3
+				remove_ideas = SER_Economic_Sattelite2
+			}
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = SER_social_crisis
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_political_turmoil
+		}
+		completion_reward = {
+			add_political_power = 20
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = SER_calm_the_people
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_social_crisis
+		}
+		completion_reward = {
+			swap_ideas = {
+            	remove_idea = SER_Aftremath_of_the_May_Regicide
+            	add_idea = SER_Aftremath_of_the_May_Regicide2
+        	}
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = SER_build_the_vozdovac_football_stadium
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_calm_the_people
+		}
+		completion_reward = {
+			swap_ideas = {
+            	remove_idea = SER_Aftremath_of_the_May_Regicide2
+            	add_idea = SER_Aftremath_of_the_May_Regicide3
+        	}
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = SER_host_football_tournaments
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_build_the_vozdovac_football_stadium
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = SER_deal_with_secret_societies
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_social_crisis
+		}
+		completion_reward = {
+			add_ideas = SER_Police_Standby
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = SER_hunt_them_down
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_deal_with_secret_societies
+		}
+		mutually_exclusive = {
+			focus = SER_live_and_let_live
+		}
+		completion_reward = {
+			add_stability = -0.025
+			add_popularity = { ideology = lib_conservatism popularity = +0.05 }
+			add_timed_idea = {
+				idea = SER_Secret_Societies_Purged
+				days = 365
+			}
+			remove_ideas = { SER_Secret_Societies }
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = SER_live_and_let_live
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_deal_with_secret_societies
+		}
+		mutually_exclusive = {
+			focus = SER_hunt_them_down
+		}
+		completion_reward = {
+			add_stability = 0.025
+			add_popularity = { ideology = lib_conservatism popularity = -0.05 }
+			SER = { country_event = { days = 1 id = ser_negotiate.1 } }
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = SER_end_police_standby
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_live_and_let_live
+			focus = SER_hunt_them_down
+		}
+		completion_reward = {
+			remove_ideas = SER_Police_Standby
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = SER_issue_military_parades
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_end_police_standby
+		}
+		prerequisite = {
+			focus = SER_host_football_tournaments
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = SER_request_international_remission
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_social_crisis
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = SER_visit_the_british
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_request_international_remission
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = { target = ENG modifier = SER_state_visit }
+			hidden_effect = {
+				add_opinion_modifier = { target = ENG modifier = SER_state_visit }
+			}
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = SER_state_visit_to_the_dutch
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_request_international_remission
+		}
+		bypass = {
+			HOL = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = { target = HOL modifier = SER_state_visit }
+			hidden_effect = {
+				add_opinion_modifier = { target = HOL modifier = SER_state_visit }
+			}
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = SER_reinvite_diplomats
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_visit_the_british
+		}
+		prerequisite = {
+			focus = SER_state_visit_to_the_dutch
+		}
+		available = {
+			SER = { has_completed_focus = SER_build_the_vozdovac_football_stadium }
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Aftremath_of_the_May_Regicide3
+				add_idea = SER_Aftremath_of_the_May_Regicide4
+			}
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = SER_found_the_ujedinjeno_srpstvo_newspaper
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_end_police_standby
+		}
+		prerequisite = {
+			focus = SER_reinvite_diplomats
+		}
+		completion_reward = {
+			add_stability = 0.025
+			add_popularity = { ideology = lib_conservatism popularity = 0.025 }
+		}
+		x = 14
+		y = 5
+
+	}
+	
+	focus = {
+		id = SER_state_of_our_infrastucture
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.57
+		prerequisite = {
+			focus = SER_adress_the_economy
+		}
+		completion_reward = {
+			add_ideas = SER_Infrastructure_Reforms
+		}
+		x = 22
+		y = 1
+	}
+
+	focus = {
+		id = SER_build_the_cuprija-senjski_rudnik_railway
+		icon = GFX_Train_Transport_One
+		cost = 8.57
+		prerequisite = {
+			focus = SER_state_of_our_infrastucture
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+			108 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SER_widen_to_standart_railway_width
+		icon = GFX_SER_widen_to_standard_railway_size
+		cost = 8.57
+		prerequisite = {
+			focus = SER_build_the_cuprija-senjski_rudnik_railway
+		}
+		completion_reward = {
+			swap_ideas = {
+            	remove_idea = SER_Infrastructure_Reforms
+            	add_idea = SER_Infrastructure_Reforms2
+        	}
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = SER_introduce_a_new_trolley_system
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_build_the_cuprija-senjski_rudnik_railway
+		}
+		completion_reward = {
+			107 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = SER_supply_electricity
+		icon = GFX_BUL_further_electrification
+		cost = 8.57
+		prerequisite = {
+			focus = SER_introduce_a_new_trolley_system
+		}
+		prerequisite = {
+			focus = SER_widen_to_standart_railway_width
+		}
+		completion_reward = {
+			823 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = SER_extend_to_ravna_reka
+		icon = GFX_SER_extend_the_railway_to_Ravna_Reka
+		cost = 8.57
+		prerequisite = {
+			focus = SER_supply_electricity
+		}
+		completion_reward = {
+			108 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = SER_sabac_banja-koviljaca_railway
+		icon = GFX_Train_Transport_Two
+		cost = 8.57
+		prerequisite = {
+			focus = SER_supply_electricity
+		}
+		completion_reward = {
+			823 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = SER_expand_the_Chemins_de_fer_Orientaux
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_sabac_banja-koviljaca_railway
+		}
+		prerequisite = {
+			focus = SER_extend_to_ravna_reka
+		}
+		completion_reward = {
+			107 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = SER_switch_to_lightbulbs
+		icon = GFX_SER_switch_to_lightbulbs
+		cost = 8.57
+		prerequisite = {
+			focus = SER_supply_electricity
+		}
+		completion_reward = {
+			swap_ideas = {
+            	remove_idea = SER_Infrastructure_Reforms2
+            	add_idea = SER_Infrastructure_Reforms3
+        	}
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = SER_scrap_gas_streetlights
+		icon = GFX_SER_Scrap_Gas_Streetlights
+		cost = 8.57
+		prerequisite = {
+			focus = SER_switch_to_lightbulbs
+		}
+		completion_reward = {
+			107 = {
+				add_resource = {
+					type = aluminium
+					amount = 3
+				}
+			}
+			828 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+			swap_ideas = {
+            	remove_idea = SER_Infrastructure_Reforms3
+            	add_idea = SER_Infrastructure_Reforms4
+        	}
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = SER_finish_infrastructure_reforms
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_scrap_gas_streetlights
+		}
+		prerequisite = {
+			focus = SER_expand_the_Chemins_de_fer_Orientaux
+		}
+		completion_reward = {
+            remove_ideas = SER_Infrastructure_Reforms4
+            add_timed_idea = {
+				idea = SER_Infrastructure_Reforms_Finished
+				days = 1460
+			}
+        	add_political_power = 50
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = SER_give_state_founding_to_Zatsava_company
+		icon = GFX_SER_State_funding_to_Zatsava
+		cost = 8.57
+		prerequisite = {
+			focus = SER_adress_the_economy
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = SER_expand_zatsava_foundries
+		icon = GFX_SER_State_funding_to_Zatsava_2
+		cost = 8.57
+		prerequisite = {
+			focus = SER_give_state_founding_to_Zatsava_company
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = industry
+    		}
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = SER_expand_inustrial_sites
+		icon = GFX_goal_generic_construct_civilian
+		cost = 8.57
+		prerequisite = {
+			focus = SER_expand_zatsava_foundries
+		}
+		completion_reward = {
+			107 = { add_extra_state_shared_building_slots = 1 }
+			828 = { add_extra_state_shared_building_slots = 1 }
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = SER_invite_elektroprivreda_srbije_to_the_state_funds_program
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_expand_zatsava_foundries
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = SER_open_hydroelectric_plants_gamzigrad_in_zajecar_and_sveta-petka
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_expand_inustrial_sites
+		}
+		prerequisite = {
+			focus = SER_invite_elektroprivreda_srbije_to_the_state_funds_program
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = SER_electrify_the_wool-weaving_cottage_industries
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_open_hydroelectric_plants_gamzigrad_in_zajecar_and_sveta-petka
+		}
+		completion_reward = {
+			823 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = SER_kickstart_the_serbian_automobile_industry
+		icon = GFX_Automobile_Industry
+		cost = 8.57
+		prerequisite = {
+			focus = SER_open_hydroelectric_plants_gamzigrad_in_zajecar_and_sveta-petka
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = SER_build_the_cukarica_sugar_refinery
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_open_hydroelectric_plants_gamzigrad_in_zajecar_and_sveta-petka
+		}
+		completion_reward = {
+			829 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = SER_build_a_workshop_for_zastava_arms
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_adress_the_economy
+		}
+		completion_reward = {
+			add_ideas = SER_Official_Arms_Company
+			828 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = SER_upgrade_factories
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_build_a_workshop_for_zastava_arms
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+            	remove_idea = SER_Official_Arms_Company
+            	add_idea = SER_Official_Arms_Company2
+        	}
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = SER_build_a_second_workshop
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_upgrade_factories
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = SER_hire_additional_faculty_at_university_of_belgrade
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_adress_the_economy
+		}
+		completion_reward = {
+			add_tech_bonus= {
+				bonus = 0.5 
+				uses = 2
+				category = support_tech
+			}
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = SER_establish_the_serbian_electrical_engineering_laboratory
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_hire_additional_faculty_at_university_of_belgrade
+		}
+		completion_reward = {
+			add_tech_bonus= {
+				bonus = 0.5 
+				uses = 2
+				category = electronics
+			}
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = SER_construct_new_library_at_the_university_of_belgrade
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_hire_additional_faculty_at_university_of_belgrade
+		}
+		completion_reward = { 
+			add_research_slot= 1
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = SER_laboratory_grants_at_the_ub_engineering_department
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_establish_the_serbian_electrical_engineering_laboratory
+		}
+		prerequisite = {
+			focus = SER_construct_new_library_at_the_university_of_belgrade
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = industry
+    		}
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = SER_military_research_department_at_the_university_of_belgrade
+		icon = GFX_goal_unknown
+		cost = 8.57
+		prerequisite = {
+			focus = SER_laboratory_grants_at_the_ub_engineering_department
+		}
+		prerequisite = {
+			focus = SER_build_a_second_workshop
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = infantry_weapons
+    		}
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = SER_artillery_experiments
+		icon = GFX_Artillery_equipment
+		cost = 8.57
+		prerequisite = {
+			focus = SER_laboratory_grants_at_the_ub_engineering_department
+		}
+		prerequisite = {
+			focus = SER_build_a_second_workshop
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = artillery
+    		}
+
+    		add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = support_tech
+    		}
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = SER_army_exercises
+		icon = GFX_Modernization_army
+		cost = 8.57
+		prerequisite = {
+			focus = SER_military_research_department_at_the_university_of_belgrade
+		}
+		prerequisite = {
+			focus = SER_artillery_experiments
+		}
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = SER_open_tungsten_mines
+		icon = GFX_focus_generic_tungsten
+		cost = 8.57
+		prerequisite = {
+			focus = SER_kickstart_the_serbian_automobile_industry
+			focus = SER_build_the_cukarica_sugar_refinery
+			focus = SER_electrify_the_wool-weaving_cottage_industries
+		}
+		completion_reward = {
+			823 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = SER_create_fortified_frontier_border_outposts
+		icon = GFX_SER_Fortified_Border_Outposts
+		cost = 8.57
+		prerequisite = {
+			focus = SER_build_the_cukarica_sugar_refinery
+			focus = SER_kickstart_the_serbian_automobile_industry
+			focus = SER_electrify_the_wool-weaving_cottage_industries
+		}
+		completion_reward = {
+			107 = {
+				add_building_construction = { type = bunker province = 6970 level = 1 instant_build = yes }
+			}
+			828 = {
+				add_building_construction = { type = bunker province = 9906 level = 1 instant_build = yes }
+			}
+			829 = {
+				add_building_construction = { type = bunker province = 11857 level = 1 instant_build = yes }
+			}
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = SER_cut_pork_exports
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_end_tariff_laden_goods_from_austria
+		}
+		completion_reward = {
+            remove_ideas = SER_Pork_Exporting
+            add_ideas = SER_Pig_War
+            custom_effect_tooltip = SER_pig_war_tooltip
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = SER_recovering_society
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SER_issue_military_parades
+		}
+		prerequisite = {
+			focus = SER_found_the_ujedinjeno_srpstvo_newspaper
+		}
+		completion_reward = {
+			remove_ideas = SER_Aftremath_of_the_May_Regicide4
+			add_timed_idea = {
+				idea = SER_Recovering_Society
+				days = 182
+			}
+		}
+		x = 12
+		y = 6
+
+	}
+}

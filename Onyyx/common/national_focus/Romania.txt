@@ -1,0 +1,56 @@
+#    focus_tree = {
+# 	id = romanian_focus
+	
+# 	country = {
+# 		factor = 0
+		
+# 		modifier = {
+# 			add = 10
+# 			tag = ROM
+# 		}
+# 	}
+	
+# 	default = no
+
+# 	continuous_focus_position = { x = 50 y = 1500 }
+
+# 	############################
+# 	### Industrial Expansion ###
+# 	############################
+
+# 		focus = {
+# 		id = ROM_fund_CFR
+# 		icon = GFX_ROM_CFR
+# 		x = 10
+# 		y = 0
+
+# 		cost = 10
+
+# 		ai_will_do = {
+# 			factor = 9
+# 		}
+# 		cancel_if_invalid = yes
+# 		continue_if_invalid = no
+# 		available_if_capitulated = no
+# 		complete_tooltip = {
+
+# 		}
+
+# 		completion_reward = {
+# 			random_owned_controlled_state = {
+# 				prioritize = { 46 }
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes
+# 				}
+# 			}
+# 			custom_effect_tooltip = ROM_Caile_Ferate_Romane		
+# 		}
+# 	}

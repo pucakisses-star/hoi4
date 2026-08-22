@@ -1,0 +1,19 @@
+# ################
+# ##### ENG ######
+# ################
+
+ ENG_Anglo_German_Arms_Race = {
+ 	icon = generic_naval
+
+ 	allowed = {
+ 		original_tag = ENG
+ 	}
+ }
+
+  ENG_political_cat = {
+ 	icon = generic_naval
+
+ 	allowed = {
+ 		original_tag = ENG
+ 	}
+ }

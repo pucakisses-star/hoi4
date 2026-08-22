@@ -1,0 +1,32 @@
+
+state={
+	id=784
+	name="STATE_784"
+	state_category = town
+	manpower = 454500
+
+	history={
+		owner = RUS
+		victory_points = {
+			3320 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = RUS
+		1918.11.11 = {
+			owner = LIT
+			controller = LIT
+			remove_core_of = RUS
+		}
+
+	}
+
+	provinces={
+		3320 9295 
+	}
+	buildings_max_level_factor=1.000
+}

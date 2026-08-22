@@ -1,0 +1,22 @@
+state={
+	id=897
+	name="STATE_897"
+	provinces={
+		11598 
+	}
+	history = {
+		victory_points = {
+			11598 5 
+		}
+		owner = AUS
+		add_core_of = AUS
+		1918.11.11 = {
+			owner = ITA
+			controller = ITA
+			remove_core_of = AUS
+		}
+	}
+	manpower=100000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

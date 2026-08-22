@@ -1,0 +1,193 @@
+ideas = {
+    ### Ideas ###
+    country = {
+    }
+    ### Ministers ###
+    head_of_government = {
+        WUK_kost_lewyckyj_hos = {
+            allowed = { original_tag = WUK }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = kost_lewyckyj_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = kost_lewyckyj_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WUK_kost_lewyckyj_hos"
+			}
+			picture = WUK_kost_lewyckyj
+			traits = {
+				head_of_government
+				soc_conservatism
+				hog_spiritual_leader
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    foreign_minister = {
+        WUK_wasyl_panejko = {
+            allowed = { original_tag = WUK }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = wasyl_panejko_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = wasyl_panejko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WUK_wasyl_panejko"
+			}
+			picture = WUK_wasyl_panejko
+			traits = {
+				foreign_minister
+				soc_conservatism
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    economy_minister = {
+        WUK_stepan_baran = {
+            allowed = { original_tag = WUK }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = stepan_baran_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = stepan_baran_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WUK_stepan_baran"
+			}
+			picture = WUK_stepan_baran
+			traits = {
+				economy_minister
+				soc_conservatism
+				eco_reformer
+			}
+			cancel_if_invalid = yes
+        }
+    }
+    interior_minister = {
+        WUK_longyn_cehelski = {
+            allowed = { original_tag = WUK }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+					NOT = { has_country_flag = longyn_cehelski_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = longyn_cehelski_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WUK_longyn_cehelski"
+			}
+			picture = WUK_longyn_cehelski
+			traits = {
+				security_minister
+				soc_democracy
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = yes
+        }
+    }
+
+    chief_of_staff = {
+        WUK_semen_horuk = {
+            allowed = { original_tag = WUK }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = semen_horuk_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = semen_horuk_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WUK_semen_horuk"
+			}
+			picture = WUK_semen_horuk
+			traits = {
+				chief_of_staff
+				soc_conservatism
+				auth_democrat
+				cos_school_of_psychology
+			}
+			cancel_if_invalid = yes
+        } 
+    }
+
+    chief_of_army = {
+		WUK_hnat_stefaniw = {
+			allowed = { original_tag = WUK }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = hnat_stefaniw_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = hnat_stefaniw_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WUK_hnat_stefaniw"
+			}
+			picture = WUK_hnat_stefaniw
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+
+		WUK_mykhaylo_omelyanovych_pavlenko = {
+			allowed = { original_tag = WUK }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = mykhaylo_omelyanovych_pavlenko_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = mykhaylo_omelyanovych_pavlenko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WUK_mykhaylo_omelyanovych_pavlenko"
+			}
+			picture = WUK_mykhaylo_omelyanovych_pavlenko
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+	chief_of_air_force = {
+		WUK_petro_ivanovych_franko = {
+			allowed = { original_tag = WUK }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = petro_ivanovych_franko_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = petro_ivanovych_franko_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea WUK_petro_ivanovych_franko"
+			}
+			picture = WUK_petro_ivanovych_franko
+			traits = {
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+}

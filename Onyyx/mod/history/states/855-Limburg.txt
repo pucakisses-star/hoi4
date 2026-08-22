@@ -1,0 +1,23 @@
+
+state={
+	id=855
+	name="STATE_855"
+	manpower = 309800
+
+	state_category = rural
+	
+	history={
+		owner = HOL
+		victory_points = {
+			11562 1 
+		}	
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HOL
+	}
+
+	provinces = {
+		11562 13761 13764
+    }
+}

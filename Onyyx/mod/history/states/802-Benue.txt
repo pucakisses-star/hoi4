@@ -1,0 +1,15 @@
+state={
+	id=802
+	name="STATE_802"
+	provinces={
+		1992 4889 4952 7978 8021 8034 12900 13298 13355 13371 13377 13384 13393 13404 
+	}
+	history = {
+		owner = ENG
+		add_core_of = ENG
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	state_category = rural
+}

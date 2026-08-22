@@ -1,0 +1,25 @@
+state={
+	id=759
+	name="STATE_759"
+	provinces={
+		1908 2054 4915 7905 7998
+	}
+	state_category = town
+	history = {
+		owner = BIK
+		add_core_of = BIK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		add_extra_state_shared_building_slots = 1
+		
+		add_core_of = RAJ
+		victory_points = {
+			1908 3
+		}
+	}
+	manpower=55834
+	buildings_max_level_factor=1.000
+}

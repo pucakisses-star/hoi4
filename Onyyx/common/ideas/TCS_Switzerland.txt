@@ -1,0 +1,209 @@
+### New Switzerland Ideas by Brammeke ###
+ideas = {
+	country = {
+		SWI_armed_neutrality = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = swiss_neutrality
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_core_defence_factor = 0.1
+				join_faction_tension = 1
+				send_volunteers_tension	= 1
+				guarantee_tension = 1
+			}
+		}
+		SWI_bank_of_europe = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = bank_of_europe
+			modifier = {
+				trade_laws_cost_factor = 1
+				trade_opinion_factor = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	head_of_government = {
+		SWI_gottlieb_ringier_hog = {
+			allowed = { original_tag = SWI }
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			visible = {
+				NOT = { has_country_flag = gottlieb_ringier_removed }
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWI_gottlieb_ringier_hog"
+			}
+
+			picture = SWI_gottlieb_ringier
+
+			traits = {
+				head_of_government
+				soc_liberal
+				hog_pragmatic_statesman
+			}
+
+			cancel_if_invalid = yes
+		}
+	}
+	foreign_minister = {
+		SWI_marc_ruchet_for = {
+			allowed = { original_tag = SWI }
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			visible = {
+			
+				NOT = { has_country_flag = marc_ruchet_removed }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWI_marc_ruchet_for"
+			}
+
+			picture = SWI_marc_ruchet
+
+			traits = {
+				foreign_minister
+				soc_liberal
+				for_relations_expert
+			}
+
+			cancel_if_invalid = yes
+		}
+	}
+	economy_minister = {
+		SWI_adolf_deucher_eco = {
+			allowed = { original_tag = SWI }
+
+			allowed_to_remove = {
+				always = no
+			}
+			
+			visible = {
+				NOT = { has_country_flag = adolf_deucher_removed }
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWI_adolf_deucher_eco"
+			}
+
+			picture = SWI_adolf_deucher
+
+			traits = {
+				economy_minister
+				soc_liberal
+				eco_administrative_genius
+			}
+
+			cancel_if_invalid = yes
+		}
+	}
+	interior_minister = {
+		SWI_ludwig_forrer_sec = {
+			allowed = { original_tag = SWI }
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			visible = {
+				NOT = { has_country_flag = ludwig_forrer_removed }
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SWI_ludwig_forrer_sec"
+			}
+
+			picture = SWI_ludwig_forrer
+
+			traits = {
+				security_minister
+				soc_liberal
+				sec_health_and_safety
+			}
+
+			cancel_if_invalid = yes
+		}
+	}
+	weapons_manufacturer = {
+		SWI_hammerli = {
+			picture = hammerli
+			allowed = { original_TAG = SWI }
+			research_bonus = { infantry_weapons = 0.10 }
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.05
+					breakthrough = 0.05
+					instant = yes
+				}
+			}
+			traits = { infantry_equipment_manufacturer }
+		}
+		SWI_waffenfabrik_bern = {
+			picture = waffenfabrik_bern
+			allowed = { original_TAG = SWI }
+			research_bonus = { infantry_weapons = 0.10 }
+			equipment_bonus = {
+				infantry_equipment = {
+					breakthrough = 0.05
+					reliability = 0.05
+					instant = yes
+				}
+			}
+			traits = { infantry_equipment_manufacturer }
+		}
+		SWI_eidgenossische_konstruktionswerkstatte = {
+			picture = eidgenossische_konstruktionswerkstatte
+			allowed = { original_TAG = SWI }
+			equipment_bonus = {
+				artillery_equipment = {
+					ap_attack = 0.05 instant = yes
+					soft_attack = 0.05 instant = yes
+					hard_attack = 0.05 instant = yes
+				}
+				anti_tank_equipment = {
+					ap_attack = 0.05 instant = yes
+					soft_attack = 0.05 instant = yes
+					hard_attack = 0.05 instant = yes
+				}
+				anti_air_equipment = {
+					ap_attack = 0.05 instant = yes
+					soft_attack = 0.05 instant = yes
+					hard_attack = 0.05 instant = yes
+				}
+			}
+			research_bonus = { artillery = 0.10 }
+			traits = { artillery_manufacturer }
+		}
+	}
+	industrial_concern = {
+		SWI_saurer = {
+			picture = saurer
+			allowed = { original_tag = SWI }
+			equipment_bonus = {
+				motorized_equipment = {
+					hardness = 0.05
+					maximum_speed = 0.1
+					instant = yes
+				}
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+			traits = { industrial_manufacturer }
+		}
+	}
+}

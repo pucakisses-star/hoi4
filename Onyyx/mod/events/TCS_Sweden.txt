@@ -1,0 +1,203 @@
+﻿add_namespace = sweden
+add_namespace = sweden_pol
+
+country_event = {
+	### Boström steps down ###
+	id = sweden_pol.1
+	title = sweden_pol.1.title
+	desc = sweden_pol.1.desc
+
+	trigger = {
+        date > 1905.4.10
+		tag = SWE
+		has_idea = SWE_Erik_Bostrom
+    }
+	
+	mean_time_to_happen = { days = 6 }
+
+    fire_only_once = yes
+	
+	option = { 
+		name = sweden_pol.1.a 
+		add_political_power = -20
+		set_country_flag = Bostrom_gone
+		add_ideas = SWE_Johan_Ramstedt
+	}
+}
+country_event = {
+	### Ramstedt steps down ###
+	id = sweden_pol.2
+	title = sweden_pol.2.title
+	desc = sweden_pol.2.desc
+
+	trigger = {
+        date > 1905.7.29
+		tag = SWE
+		has_idea = SWE_Johan_Ramstedt
+    }
+	
+	mean_time_to_happen = { days = 6 }
+
+    fire_only_once = yes
+	
+	option = { 
+		name = sweden_pol.2.a 
+		add_political_power = -20
+		set_country_flag = Bostrom_gone
+		custom_effect_tooltip = sweden2_event_tt
+		hidden_effect = {
+			add_ideas = {
+				SWE_Christian_Lundeberg
+				SWE_Fredrik_Wachtmeister
+				SWE_Elof_Biesert
+				SWE_Gustaf_Berg
+			}
+		}
+		TCS_clear_coalitions = yes
+		set_country_flag = soc_liberal_coalition
+		set_country_flag = lib_conservatism_coalition
+		set_country_flag = soc_conservatism_coalition
+		TCS_auto_calc_opposition = yes
+		SWE_forsta_kammaren_disapproval = yes
+	}
+}
+country_event = {
+	### 1905 Election Results ###
+	id = sweden_pol.3
+	title = sweden_pol.3.title
+	desc = sweden_pol.3.desc
+
+	trigger = {
+        date > 1905.9.15
+		tag = SWE
+    }
+	
+	mean_time_to_happen = { days = 18 }
+
+    fire_only_once = yes
+	
+	option = { 
+		name = sweden_pol.3.a 
+		set_country_flag = Staaff_government
+		custom_effect_tooltip = sweden3a_event_tt
+		hidden_effect = {
+			activate_mission = SWE_pass_voting_reform
+			add_ideas = {
+				SWE_Karl_Staaff_hg
+				SWE_Eric_Trolle
+				SWE_Elof_Biesert
+				SWE_Karl_Staaff_sm
+			}
+		}
+		set_politics = {
+			ruling_party = soc_liberal
+		}
+		TCS_clear_coalitions = yes
+		set_country_flag = soc_democracy_coalition
+		set_country_flag = soc_liberal_coalition
+		TCS_auto_calc_opposition = yes
+		SWE_forsta_kammaren_disapproval = yes
+		SWE_large_andra_kammaren_support = yes
+		SWE_decrease_monarch_power = yes
+		
+	}
+	option = { 
+		name = sweden_pol.3.b
+		set_country_flag = Lindman_government
+		custom_effect_tooltip = sweden3b_event_tt
+		hidden_effect = {
+			activate_mission = SWE_pass_voting_reform
+			add_ideas = {
+				SWE_Arvid_Lindman
+				SWE_Eric_Trolle
+				SWE_Carl_Swartz
+				SWE_Albert_Petersson
+			}
+		}
+		set_politics = {
+			ruling_party = lib_conservatism
+		}
+		TCS_clear_coalitions = yes
+		set_country_flag = lib_conservatism_coalition
+		TCS_auto_calc_opposition = yes
+		SWE_forsta_kammaren_support = yes
+	}
+	option = { 
+		name = sweden_pol.3.c
+		set_country_flag = Lundeberg_government_2
+		custom_effect_tooltip = sweden3c_event_tt
+		hidden_effect = {
+			add_ideas = {
+				SWE_Christian_Lundeberg
+				SWE_Eric_Trolle
+				SWE_Carl_Swartz
+				SWE_Albert_Petersson
+			}
+		}
+		TCS_clear_coalitions = yes
+		set_country_flag = lib_conservatism_coalition
+		set_country_flag = soc_conservatism_coalition
+		TCS_auto_calc_opposition = yes
+		SWE_andra_kammaren_disapproval = yes
+		SWE_large_forsta_kammaren_support = yes
+	}
+}
+country_event = {
+	### Lindman steps down ###
+	id = sweden_pol.4
+	title = sweden_pol.4.title
+	desc = sweden_pol.4.desc
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = sweden_pol.4.a 
+		add_political_power = -40
+		clr_country_flag = Staaff_government
+		set_country_flag = Lindman_government
+		set_country_flag = failed_voting_reform
+		custom_effect_tooltip = sweden4_event_tt
+		hidden_effect = {
+			add_ideas = {
+				SWE_Karl_Staaff_hg
+				SWE_Eric_Trolle
+				SWE_Elof_Biesert
+				SWE_Karl_Staaff_sm
+			}
+		}
+		set_politics = {
+			ruling_party = soc_liberal
+		}
+		TCS_clear_coalitions = yes
+		set_country_flag = soc_democracy_coalition
+		set_country_flag = soc_liberal_coalition
+		TCS_auto_calc_opposition = yes
+		SWE_decrease_monarch_power = yes
+	}
+}
+country_event = {
+	### Staaff steps down ###
+	id = sweden_pol.5
+	title = sweden_pol.5.title
+	desc = sweden_pol.5.desc
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = sweden_pol.5.a 
+		add_political_power = -40
+		clr_country_flag = Staaff_government
+		set_country_flag = Lindman_government
+		set_country_flag = failed_voting_reform
+		custom_effect_tooltip = sweden5_event_tt
+		hidden_effect = {
+			add_ideas = {
+				SWE_Arvid_Lindman
+				SWE_Eric_Trolle
+				SWE_Carl_Swartz
+				SWE_Albert_Petersson
+			}
+		}
+		SWE_increase_monarch_power = yes
+	}
+}

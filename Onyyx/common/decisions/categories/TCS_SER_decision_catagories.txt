@@ -1,0 +1,21 @@
+SER_struggle_macedonia_cat = {
+    icon = GFX_decision_macedonia
+    picture = GFX_decision_macedonia_map
+    allowed = {
+		original_tag = SER
+	}
+	visible = {
+		has_idea = SER_Macedonian_Struggle
+	}
+}
+
+SER_pig_war_cat = {
+	icon = GFX_decision_pigwar
+	picture = GFX_picture
+	allowed = {
+		original_tag = SER
+	}
+	visible = {
+    	has_idea = SER_Pig_War
+    }
+}

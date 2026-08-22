@@ -1,0 +1,138 @@
+defined_text = {
+	name = RoyalCandidate
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_haakon
+		}
+		localization_key = NOR_haakon_candidature
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_valdemar
+		}
+		localization_key = NOR_valdemar_candidature
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_eugen_swe_king
+		}
+		localization_key = NOR_eugen_candidature
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_carl_swe_king
+		}
+		localization_key = NOR_carl_candidature
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_oscar_swe_king
+		}
+		localization_key = NOR_oscar_candidature
+	}
+}
+
+defined_text = {
+	name = MonarchyReferendum
+	
+	text = {
+		trigger = {
+		    OR = {
+			    has_country_flag = NOR_haakon
+				has_country_flag = NOR_eugen_swe_king
+			}
+		}
+		localization_key = NOR_candidate_referendum
+	}
+	
+	text = {
+		trigger = {
+			OR = {
+			    has_country_flag = NOR_valdemar
+				has_country_flag = NOR_carl_swe_king
+				has_country_flag = NOR_oscar_swe_king
+			}
+		}
+		localization_key = NOR_republican_referendum
+	}
+}
+
+defined_text = {
+	name = PresidentCandidate
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_lovland_cabinet
+		}
+		localization_key = NOR_berner_candidate
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_berner_cabinet
+		}
+		localization_key = NOR_lovland_candidate
+	}
+}
+
+defined_text = {
+	name = RegnalName
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_haakon
+		}
+		localization_key = NOR_haakon_name
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_valdemar
+		}
+		localization_key = NOR_valdemar_name
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_eugen_swe_king
+		}
+		localization_key = NOR_eugen_name
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_carl_swe_king
+		}
+		localization_key = NOR_carl_name
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_oscar_swe_king
+		}
+		localization_key = NOR_oscar_name
+	}
+}
+
+defined_text = {
+	name = PrimeMinister
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_berner_cabinet
+		}
+		localization_key = NOR_berner_pm
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = NOR_lovland_cabinet
+		}
+		localization_key = NOR_lovland_pm
+	}
+}

@@ -1,0 +1,3 @@
+opinion_modifiers = {
+	crn_yug_denounce = { value = -15 }
+}

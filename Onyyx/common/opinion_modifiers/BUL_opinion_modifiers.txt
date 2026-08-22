@@ -1,0 +1,8 @@
+opinion_modifiers = {
+	BUL_macedonian_struggle_mod = { value = -25 }
+	BUL_serbo_bulgarian_alliance = { value = 50 }
+	BUL_serbo_bulgarian_customs_union = { value = 15 }
+	BUL_serbo_bulgarian_alliance_aus = { value = -25 }
+	BUL_serbo_bulgarian_customs_union_aus = { value = -15 }
+
+}

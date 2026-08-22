@@ -1,0 +1,845 @@
+ideas = {
+	country = {
+	
+		PER_iranian_decadence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_persian_decadence
+			
+			modifier = {
+				stability_factor = 0.01
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.2
+				political_power_factor = -0.25
+				consumer_goods_factor = 0.15
+			}
+		}
+		PER_iranian_decadence_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_persian_decadence
+			
+			modifier = {
+				stability_factor = 0.02
+				industrial_capacity_factory = -0.07
+				industrial_capacity_dockyard = -0.15
+				political_power_factor = -0.2
+				consumer_goods_factor = 0.13
+			}
+		}
+		PER_iranian_decadence_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_persian_decadence
+			
+			modifier = {
+				stability_factor = 0.04
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.10
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		PER_iranian_decadence_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_persian_decadence
+			
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = -0.03
+				industrial_capacity_dockyard = -0.05
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.07
+			}
+		}
+		PER_iranian_decadence_5 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_persian_decadence
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		PER_constitutional_rise = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_growing_constitutionalism
+			
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.2
+			}
+		}
+		PER_antiquated_agriculture = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_persian_decadence
+			
+			modifier = {
+				stability_factor = -0.10
+				conscription_factor = -0.05
+				MONTHLY_POPULATION = -0.01
+				consumer_goods_factor = 0.1
+			}
+		}
+		PER_loyal_army_payment = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_increased_army_money
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+			}
+		}
+		PER_curtailing_dissent = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation_2
+			
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				army_org_factor = -0.25
+				enemy_partisan_effect = 0.4
+				
+			}
+		}
+		PER_humilated_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_humilated_army
+			
+			modifier = {
+				army_org_factor = -0.3
+				army_morale_factor = -0.3
+				minimum_training_level = 0.2
+				army_attack_factor = -0.8
+				
+			}
+		}
+		PER_human_rights_charter = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+			
+			modifier = {
+					stability_factor = 0.10
+						political_power_factor = 0.05
+			}
+		}
+		PER_islamic_schooling = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+			
+			modifier = {
+				research_speed_factor = 0.2
+					decryption_factor = 0.2
+			}
+		}
+		PER_might_making_right = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				stability_weekly = 0.024
+			}
+		}
+		PER_british_oil_payments2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_british_oil_payments2
+			
+			targeted_modifier = {
+				tag = ENG
+				trade_opinion_factor = 0.5
+			}
+			modifier = {
+					consumer_goods_factor = -0.07
+			}
+		}
+		PER_sun_never_set = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = PER_sun_never_set
+			
+			modifier = {
+				enemy_justify_war_goal_time = 0.1
+					legitimacy_daily = -0.01
+						justify_war_goal_time = 0.4
+							research_speed_factor = 0.05
+			}
+		}
+					
+				
+		SKR_revolt_state = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = saf_history_of_segregation_2
+			
+			modifier = {
+				land_reinforce_rate = 0.3
+				army_core_defence_factor = 0.1
+				consumer_goods_factor = 0.8
+			}
+		}
+############### diplomacy
+		PER_russian_payments_warm_water_ports = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation2
+			
+			modifier = {
+				stability_weekly = -0.01
+				consumer_goods_factor = -0.1
+			}
+		}
+		PER_RUS_payments_to_persia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation2
+			
+			modifier = {
+				stability_weekly = 0.01
+				consumer_goods_factor = 0.05	
+			}
+		}			
+	}
+	head_of_government = {
+			reza_khan_idea = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+			OR = {
+			has_government = auth_democrat
+			has_government = soc_conservatism
+			}
+							custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+
+			removal_cost = -1
+
+			picture = reza_khan_minister
+			
+			traits = { hog_iron_heel }
+			
+			modifier = {  }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			}
+			
+			abdolhossein_teymourtash_hog = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+			OR = {
+			has_government = pat_autocrat
+			has_government = fascism
+			}
+							custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+
+			removal_cost = -1
+
+			picture = abdolhossein_teymourtash_hog
+			
+			traits = { hog_determined_populist }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			}
+			##################
+			sattar_khan_hog = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+			OR = {
+			has_government = soc_liberal
+			has_government = soc_democracy
+			has_government = soc_conservatism
+			}
+							custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+
+			removal_cost = -1
+
+			picture = sattar_khan_hog
+			
+			traits = { hog_backroom_backstabber }
+			
+			modifier = { }
+			
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			}
+			###############
+			mirza_kuchik_hog = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+			OR = {
+			has_government = leninism
+			has_government = marxism
+			has_completed_focus = PER_legacy_of_kaveh
+			}
+							custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+
+			removal_cost = -1
+
+			picture = mirza_kuchik_hog
+			
+			traits = { hog_underground_figurehead  }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			}			
+			####################
+			abdol_majid_mirza_hog = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+			OR = {
+			has_government = auth_democrat
+			has_government = pat_autocrat
+			}
+							custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+
+			removal_cost = -1
+
+			picture = abdol_majid_mirza_hog
+			
+			traits = { hog_old_compromiser  }
+			
+			modifier = {  }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			}
+#####			
+		mirza_nasrullah_hog = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+			OR = {
+			has_government = soc_conservatism
+			has_government = lib_conservatism
+			}
+			custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			NOT = { has_country_flag = mirza_nasrullah_died }
+			}
+			cancel = { has_country_flag = mirza_nasrullah_died }
+
+			removal_cost = -1
+
+			picture = mirza_nasrullah
+			
+			traits = { hog_pragmatic_statesman }
+			
+			modifier = {  }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+		}
+		seyyed_abdollah_hog = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+			OR = {
+			has_government = soc_conservatism
+			has_government = lib_conservatism
+			
+			}
+							custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+
+			removal_cost = -1
+
+			picture = seyyed_abdollah
+			
+			traits = { hog_spiritual_leader  }
+			
+			modifier = { }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+		}
+		abdol_qasem_molk_hog = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+			always = no 
+			OR = {
+			has_government = soc_conservatism
+			has_government = lib_conservatism
+			
+			}
+			custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+
+			removal_cost = -1
+
+			picture = abdol_qasem_molk
+			
+			traits = { hog_silent_workhorse  }
+			
+			modifier = { }
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+		}
+	}
+	economy_minister = {
+		firouz_dowleh_iii_fom = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+			removal_cost = -1
+
+			picture = firouz_dowleh_iii
+			
+			traits = { eco_oil_baron }
+			
+			modifier = {  }
+			
+			allowed_to_remove = {
+				always = no
+			}
+		}
+		abdol_qasem_molk_fom = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+			}
+			removal_cost = -1
+
+			picture = abdol_qasem_molk
+			
+			traits = { eco_industrialiser }
+			
+			modifier = {  }
+			
+			allowed_to_remove = {
+				always = no
+			}
+		}
+		mirza_abdul_talibov_fom = {
+			
+			allowed = {
+				original_tag = PER
+			}
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = can_replace_hog
+				}
+				has_completed_focus = PER_legacy_of_kaveh
+			}
+			removal_cost = -1
+
+			picture = mirza_abdul_talibov
+			
+			traits = { eco_reformer }
+			
+			modifier = {  }
+			
+			allowed_to_remove = {
+				always = no
+			}
+		}
+	}
+		foreign_minister = {
+			firouz_dowleh_iii_for = {
+				
+				allowed = {
+					original_tag = PER
+				}
+				available = {
+					custom_trigger_tooltip = {
+						has_country_flag = can_replace_hog
+					}
+				}
+				removal_cost = -1
+
+				picture = firouz_dowleh_iii
+				
+				traits = { for_foreign_sympathizer }
+				
+				modifier = {  }
+				
+				allowed_to_remove = {
+					always = no
+				}
+			}
+			mirza_nasrullah_for = {
+				
+				allowed = {
+					original_tag = PER
+				}
+				available = {
+				OR = {
+				has_government = soc_conservatism
+				has_government = lib_conservatism
+				}
+				custom_trigger_tooltip = {
+						has_country_flag = can_replace_hog
+					}
+				NOT = { has_country_flag = mirza_nasrullah_died }
+				}
+				cancel = { has_country_flag = mirza_nasrullah_died }
+				removal_cost = -1
+
+				picture = mirza_nasrullah
+				
+				traits = { for_great_compromiser }
+				
+				modifier = {  }
+				
+				allowed_to_remove = {
+					always = no
+				}
+			}
+			mohammad_ala_saltaneh_for = {
+				
+				allowed = {
+					original_tag = PER
+				}
+				cost = 0
+				removal_cost = -1
+
+				picture = mohammad_ala_saltaneh
+				
+				traits = { for_world_patrician }
+				
+				modifier = {  }
+				
+				allowed_to_remove = {
+					always = no
+				}
+			}
+			
+}
+theorist = {
+		
+		PER_nader_shah_reform = {
+			
+			allowed = {
+				original_TAG = PER
+			}
+			
+			picture = PER_nader_shah_reform
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = {  }
+			
+			modifier = {
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.2
+					soft_attack = 0.1
+				}
+			}
+		}
+		PER_qizilbash_reform = {
+			
+			allowed = {
+				original_TAG = PER
+			}
+			
+			picture = PER_qizilbash_reform
+			
+
+			
+			research_bonus = {
+				cat_grand_battle_plan = 0.2
+			}
+			
+			traits = {  }
+			
+			modifier = {
+				weekly_manpower = 100
+				training_time_factor = -0.3
+				non_core_manpower = 0.05
+				attrition = -0.2
+			}
+			equipment_bonus = {
+			}
+		}
+		PER_cossacks_army = {
+			
+			allowed = {
+				original_TAG = PER
+			}
+			
+			picture = PER_cossacks_army
+			
+
+			
+			research_bonus = {
+				recon_tech = 0.1
+				support_tech = 0.05
+			}
+			
+			traits = {  }
+			
+			modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+					recon_factor = 0.1
+			}
+			equipment_bonus = {
+			}
+		}
+		PER_european_reform = {
+			
+			allowed = {
+				original_TAG = PER
+			}
+			
+			picture = PER_european_reform
+
+			
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+			
+			traits = {  }
+			
+			modifier = {
+					army_org_factor = 0.05
+					max_dig_in = 5
+					dig_in_speed = 1
+						supply_consumption_factor = 0.1
+							minimum_training_level = 0.05
+			}
+			equipment_bonus = {
+			}
+		}

@@ -1,0 +1,147 @@
+
+### 1905 Kuyper Tree Netherlands ###
+
+shared_focus = {
+	id = HOL_second_kuyper
+	icon = GFX_kuyper_second_chance
+	cost = 10
+	x = 3
+	y = 0
+}
+shared_focus = {
+	id = HOL_politieke_razernij
+	icon = GFX_goal_unknown
+    cost = 10
+    available = {
+        has_country_flag = HOL_first_unrest
+    }
+    relative_position_id = HOL_second_kuyper
+	x = 0
+	y = 3
+}
+shared_focus = {
+	id = HOL_gods_work
+	icon = GFX_gods_work
+    cost = 10
+    relative_position_id = HOL_second_kuyper
+	prerequisite = {
+		focus = HOL_second_kuyper
+	}
+	x = 0
+	y = 1
+}
+shared_focus = {
+	id = HOL_christian_schools_full
+	icon = GFX_fully_christian_schools
+	cost = 10
+    relative_position_id = HOL_second_kuyper
+	prerequisite = {
+		focus = HOL_gods_work
+	}
+	x = -3
+	y = 2
+}
+shared_focus = {
+	id = HOL_wetboek_arbeid
+	icon = GFX_arbeids_wet
+	cost = 10
+    relative_position_id = HOL_second_kuyper
+	prerequisite = {
+		focus = HOL_gods_work
+	}
+	x = -1
+	y = 2
+}
+shared_focus = {
+	id = HOL_ban_sdap
+	icon = GFX_ban_the_sdap
+	cost = 10
+    relative_position_id = HOL_second_kuyper
+	prerequisite = {
+		focus = HOL_wetboek_arbeid
+	}
+	prerequisite = {
+		focus = HOL_christian_schools_full
+	}
+	x = -2
+	y = 3
+}
+shared_focus = {
+	id = HOL_united_kuyper
+	icon = GFX_support_kuyper
+	cost = 10
+    relative_position_id = HOL_politieke_razernij
+	prerequisite = {
+		focus = HOL_politieke_razernij
+	}
+	mutually_exclusive = {
+		focus = HOL_united_army
+	}
+	x = -1
+	y = 1
+}
+shared_focus = {
+	id = HOL_united_army
+	icon = GFX_support_snijders
+	cost = 10
+    relative_position_id = HOL_politieke_razernij
+	prerequisite = {
+		focus = HOL_politieke_razernij
+	}
+	mutually_exclusive = {
+		focus = HOL_united_kuyper
+	}
+	x = 1
+	y = 1
+}
+shared_focus = {
+	id = HOL_anti_jewish
+	icon = GFX_anti_jewish_rhetoric
+	cost = 10
+    relative_position_id = HOL_second_kuyper
+	prerequisite = {
+		focus = HOL_gods_work
+	}
+	x = 1
+	y = 2
+}
+shared_focus = {
+	id = HOL_anti_islamic
+	icon = GFX_anti_islamic_rhetoric
+	cost = 10
+    relative_position_id = HOL_second_kuyper
+	prerequisite = {
+		focus = HOL_gods_work
+	}
+	x = 3
+	y = 2
+}
+shared_focus = {
+	id = HOL_christian_state
+	icon = GFX_the_christian_state
+	cost = 10
+    relative_position_id = HOL_second_kuyper
+	prerequisite = {
+		focus = HOL_anti_jewish
+	}
+	prerequisite = {
+		focus = HOL_anti_islamic
+	}
+	x = 2
+	y = 3
+}
+shared_focus = {
+	id = HOL_state_in_chaos
+	icon = GFX_goal_unknown
+	cost = 10
+    relative_position_id = HOL_politieke_razernij
+	prerequisite = {
+		focus = HOL_united_kuyper
+		focus = HOL_united_army
+    }
+    bypass = {
+        has_country_flag = HOL_civil_war
+    }
+	x = 0
+	y = 2
+}

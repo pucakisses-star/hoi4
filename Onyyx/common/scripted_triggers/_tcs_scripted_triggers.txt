@@ -1,0 +1,117 @@
+has_same_government_as_ROOT = { #thanks KR, checks if ROOT has the same ideology as the country in question
+	OR = {
+		AND = {
+			has_government = leninism
+			ROOT = { has_government = leninism }
+		}
+		AND = {
+			has_government = marxism
+			ROOT = { has_government = marxism }
+		}
+		AND = {
+			has_government = rev_socialism
+			ROOT = { has_government = rev_socialism }
+		}
+		AND = {
+			has_government = soc_democracy
+			ROOT = { has_government = soc_democracy }
+		}
+		AND = {
+			has_government = soc_liberal
+			ROOT = { has_government = soc_liberal }
+		}
+		AND = {
+			has_government = lib_conservatism
+			ROOT = { has_government = lib_conservatism }
+		}
+		AND = {
+			has_government = soc_conservatism
+			ROOT = { has_government = soc_conservatism }
+		}
+		AND = {
+			has_government = auth_democrat
+			ROOT = { has_government = auth_democrat }
+		}
+		AND = {
+			has_government = pat_autocrat
+			ROOT = { has_government = pat_autocrat }
+		}
+		AND = {
+			has_government = fascism
+			ROOT = { has_government = fascism }
+		}
+	}
+}
+
+#Checking for socialism
+has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = is_socialist_tt
+		OR = {
+			has_government = leninism
+			has_government = marxism
+			has_government = rev_socialism
+		}
+	}
+}
+
+not_has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_socialist_tt
+		NOT = {
+			has_government = leninism
+			has_government = marxism
+			has_government = rev_socialism
+		}
+	}
+}
+
+#Checking for democracy
+has_democratic_government = {
+	custom_trigger_tooltip = {
+		tooltip = is_democratic_tt
+		OR = {
+			has_government = soc_democracy
+			has_government = soc_liberal
+			has_government = lib_conservatism
+			has_government = soc_conservatism
+			has_government = auth_democrat
+		}
+	}
+}
+
+not_has_democratic_government = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_democratic_tt
+		NOT = {
+			has_government = soc_democracy
+			has_government = soc_liberal
+			has_government = lib_conservatism
+			has_government = soc_conservatism
+			has_government = auth_democrat
+		}
+	}
+}
+
+#Checking for authoritarianism
+has_authoritarian_government = {
+	custom_trigger_tooltip = {
+		tooltip = is_authoritarian_tt
+		OR = {
+			has_government = auth_democrat
+			has_government = pat_autocrat
+			has_government = fascism
+		}
+	}
+}
+
+not_has_authoritarian_government = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_authoritarian_tt
+		NOT = {
+			has_government = auth_democrat
+			has_government = pat_autocrat
+			has_government = fascism
+		}
+	}
+}

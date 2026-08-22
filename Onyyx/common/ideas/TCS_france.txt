@@ -1,0 +1,54 @@
+ideas = {
+     country = {
+            FRA_Legacy_of_Dreyfus = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_legacy_of_dreyfus
+
+			modifier = {
+            stability_factor = -0.05
+            political_power_factor = -0.05
+        }
+    }
+
+
+            FRA_the_question_of_laicity = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+            modifier = {
+            stability_factor = -0.1
+            political_power_factor = -0.05
+        }
+    }
+
+            FRA_La_Revanche = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = la_revanche
+
+            modifier = {
+            war_support_factor = 0.2
+        }
+            targeted_modifier = { tag = GER attack_bonus_against = 0.5 }
+        }
+    }
+}
+
+
+        

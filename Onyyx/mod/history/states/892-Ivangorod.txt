@@ -1,0 +1,26 @@
+state={
+	id=892
+	name="STATE_892"
+	state_category = rural
+	manpower=12310
+
+	provinces={
+		13783 
+	}
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 3
+			13783 = {
+				bunker = 1
+			}
+		}
+		1918.11.11 = {
+			owner = EST
+			controller = EST
+			remove_core_of = RUS
+		}
+	}
+	buildings_max_level_factor=1.000
+}

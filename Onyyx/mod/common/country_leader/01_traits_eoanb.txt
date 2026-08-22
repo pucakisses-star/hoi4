@@ -1,0 +1,1026 @@
+leader_traits = {
+	
+	traditional_conservative = {
+		random = no
+		# Boosts conservatism
+		traditional_conservatism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	centrist = {
+		random = no
+		# Boosts centrism
+		centrism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	social_egalitarian = {
+		random = no
+		# Boosts social democracy
+		social_egalitarianism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	collectivist_socialist = {
+		random = no
+		# Boosts socialisms
+		collectivist_socialism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	vanguard_communist = {
+		random = no
+		# Boosts communism
+		vanguard_communism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	autocrat = {
+		random = no
+		# Boosts autocracy
+		autocracy_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	radical_democrat = {
+		random = no
+		# Boosts radical democracy
+		radical_democracy_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	chauvinist_populist = {
+		random = no
+		# Boosts chauvinist populism
+		chauvinist_populism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	anarchist = {
+		random = no
+		# Boosts anarchism
+		anarchism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	fundamentalist = {
+		random = no
+		# Boosts fundamentalism
+		fundamentalism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	political_independent = {
+		random = yes
+		drift_defence_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#POLITICAL ALIGNMENT TRAITS
+
+
+	vanguard_communism_alignment = {
+		random = no
+		vanguard_communism_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	collectivist_socialism_alignment = {
+		random = no
+		collectivist_socialism_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	social_egalitarianism_alignment = {
+		random = no
+		social_egalitarianism_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	centrism_alignment = {
+		random = no
+		centrism_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	traditional_conservatism_alignment = {
+		random = no
+		traditional_conservatism_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	radical_democracy_alignment = {
+		random = no
+		radical_democracy_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	autocracy_alignment = {
+		random = no
+		autocracy_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	chauvinist_populism_alignment = {
+		random = no
+		chauvinist_populism_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	anarchism_alignment = {
+		random = no
+		anarchism_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	fundamentalism_alignment = {
+		random = no
+		fundamentalism_drift = 0.05
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	neutral_party = {
+		random = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ideological_promoter = {
+		random = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#ADVISOR TRAITS
+
+
+	oil_magnate = {
+		random = yes
+		
+		consumer_goods_factor = -0.02
+		production_oil_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	clever_buisnessman = {
+		random = yes
+		
+		consumer_goods_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	railroad_tycoon = {
+		random = yes
+		
+		production_speed_infrastructure_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	influencial_writer = {
+		random = yes
+		
+		political_power_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	innovative_engineer = {
+		random = yes
+		
+		research_speed_factor = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ingenious_scientist = {
+		random = yes
+		
+		research_speed_factor = 0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	efficient_administrator = {
+		random = yes
+		
+		political_power_factor = 0.05
+		stability_factor = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	administrative_genius = {
+		random = yes
+		
+		consumer_goods_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tax_collector = {
+		random = yes
+		
+		production_speed_buildings_factor = -0.03
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+
+	industrial_promoter = {
+		random = yes
+		
+		production_speed_industrial_complex_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	great_urbanizer = {
+		random = yes
+		
+		production_speed_infrastructure_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	controversial_figure = {
+		random = yes
+		
+		political_power_factor = 0.05
+		stability_factor = -0.05
+		stability_weekly = -0.001
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	determined_expansionist = {
+		random = yes
+		
+		justify_war_goal_time = -0.1
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	war_veteran = {
+		random = yes
+		
+		training_time_factor = -0.1
+		war_support_factor = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	friend_of_capitalism = {
+		random = yes
+		
+		consumer_goods_factor = -0.1
+		political_power_factor = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	working_class_figurehead = {
+		random = yes
+		
+		political_power_factor = 0.1
+		stability_factor = 0.05
+		stability_weekly = 0.001
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				TAG = PRS
+				is_historical_focus_on = yes
+				date < 1920.1.1
+			}
+		}
+	}
+
+	geologist = {
+		random = yes
+		
+		local_resources_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	rural_innovator = {
+		random = yes
+			
+		production_speed_farm_factor = 0.1
+		production_speed_logging_camp_factor = 0.1
+		production_speed_cotton_farm_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	explorer = {
+		random = yes
+			
+		research_speed_factor = 0.015
+		opinion_gain_monthly_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	counter_reformist = {
+		random = yes
+		
+		stability_factor = -0.05
+		political_power_factor = 0.05
+		traditional_conservatism_drift = 0.05
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	suffragist = {
+		random = yes
+		
+		political_power_factor = 0.10
+		autocracy_drift = -0.05
+		radical_democracy_drift = -0.05
+		chauvinist_populism_drift = -0.05
+		fundamentalism_drift = -0.05
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_chancellor_of_exchequer = {
+		sprite = 10
+		random = no
+		
+		political_power_factor = -0.05  
+		consumer_goods_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_president_of_the_board_of_trade  = {
+		sprite = 10
+		random = no
+		
+		political_power_factor = -0.02
+		trade_laws_cost_factor = -0.10
+		trade_opinion_factor = 0.10	
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_foreign_secretary  = {
+		sprite = 10
+		random = no
+		
+		political_power_factor = -0.05  
+		stability_factor = 0.05
+		improve_relations_maintain_cost_factor = -0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chemist = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	textile_merchant = {
+		random = yes
+			
+		production_speed_fabric_weavery_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eoanb_successful_merchant = {
+		random = no
+
+		trade_laws_cost_factor = -0.33
+		trade_opinion_factor = 0.25
+		consumer_goods_factor = -0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_arms_dealer = {
+		random = no
+
+		trade_opinion_factor = -0.05
+		political_power_factor = -0.05
+        equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.03		
+		        }
+	        }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+
+	# HEAD OF STATE TRAITS
+
+	hos_trait_partially_paralyzed = {
+		random = no
+		
+		stability_factor = -0.08
+		stability_weekly = -0.001
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hos_trait_colonial_monarch = {
+		random = no
+		
+		political_power_factor = -0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# COUNTRY LEADER TRAITS
+	
+	eoanb_trait_weak_claim = {
+		random = no
+		
+		political_power_factor = -0.2
+		stability_factor = -0.05
+		stability_weekly = -0.002
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_medium_claim = {
+		random = no
+		
+		political_power_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_strong_claim = {
+		random = no
+		
+		political_power_factor = 0.05
+		stability_factor = 0.02
+		stability_weekly = 0.001
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_military_leader = {
+		random = yes
+		
+		army_morale_factor = 0.05
+		experience_gain_army_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_experienced_diplomat = {
+		random = yes
+		
+		opinion_gain_monthly_factor = 0.25
+		improve_relations_maintain_cost_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_efficient_administrator = {
+		random = no
+		
+		political_power_factor = 0.05
+		mobilization_speed = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_warmonger = {
+		random = yes
+		
+		justify_war_goal_time = -0.1
+		production_speed_arms_factory_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_industrial_investor = {
+		random = yes
+		
+		production_speed_buildings_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_patriotic_orator = {
+		random = yes
+		
+		drift_defence_factor = 0.1
+		army_core_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_disorganized_councils = {
+		random = no
+		
+		political_power_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# POLITICAL ADVISOR TRAITS
+	
+	eoanb_trait_rural_developer_specialist = {
+		random = no
+		
+		MONTHLY_POPULATION = 0.04
+		production_speed_industrial_complex_factor = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_rural_developer_expert = {
+		random = no
+		
+		MONTHLY_POPULATION = 0.06
+		production_speed_industrial_complex_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_rural_developer_genius = {
+		random = no
+		
+		MONTHLY_POPULATION = 0.08
+		production_speed_industrial_complex_factor = 0.08
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eoanb_trait_strict_authoritarian = {
+		random = yes
+		
+		political_power_factor = -0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	eoanb_trait_effective_judge = {
+		random = no
+		
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	eoanb_trait_popular_figure = {
+		random = no
+		
+		stability_factor = 0.05  
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	eoanb_trait_partisant_killer = {
+		random = no
+		
+		resistance_damage_to_garrison = -0.05
+        resistance_activity = -0.05	
+        resistance_growth = -0.05		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	###african ruler traits
+	afr_trait_westerniser = {
+		random = no
+		
+		stability_factor = -0.05
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_arms_factory_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	afr_trait_reformer = {
+		random = no
+		
+		political_power_gain = 0.025
+		political_power_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### MILITARY HIGH COMMAND TRAITS
+	
+	eoanb_trait_high_rank_vrc = { 
+		
+		conscription = 0.001
+		out_of_supply_factor = -0.05
+		army_core_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###Italian Leader Traits
+
+	ITA_trait_Iron_Baron = {
+		random = no
+		
+		political_power_gain = 0.5 
+		
+
+	}
+
+	###Russian Leader Traits
+
+	RUS_trait_Staunch_Authoritarian = {
+		random = no
+
+		autocracy_drift = 0.02
+	}
+
+	RUS_trait_Iron_Fist = {
+		random = no
+
+		political_power_gain = -0.1
+	}
+	
+	#Companies
+	
+	#Light Ship Designer
+	eoanb_naval_manufacturer_light = {
+		random = no
+		equipment_bonus = {
+			screen_ship = {
+				lg_attack = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Heavy Ship Designer
+	eoanb_naval_manufacturer_heavy = {
+		random = no
+		equipment_bonus = {
+			capital_ship = {
+				hg_attack = 0.05
+				armor_value = 0.05
+				max_strength = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	artillery_manufacturer_1 = {
+		random = no
+		#generic
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Mass Ship Designer
+	ENG_trait_naval_whitworth = {
+		random = no
+		#TEMPORARY
+		navy_screen_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Fleet Designer
+	GER_trait_naval_lloyd = {
+		random = no
+		#TEMPORARY
+		navy_screen_attack_factor = 0.05
+		navy_screen_defence_factor = 0.05
+		navy_capital_ship_attack_factor = 0.05
+		navy_capital_ship_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	RYU_trait_chinese_advisor = {
+		random = no
+		#DIFFICULT TO AQUIRE
+		autocracy_drift = 0.01
+		production_speed_infrastructure_factor = 0.05
+		production_speed_farm_factor = 0.1
+		production_speed_logging_camp_factor = 0.1
+		production_speed_cotton_farm_factor = 0.1
+		political_power_gain = -0.1
+		justify_war_goal_time = 0.1
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	RYU_trait_british_advisor = {
+		random = no
+		#DIFFICULT TO AQUIRE
+		centrism_drift = 0.01
+		production_speed_fabric_weavery_factor = 0.25
+		production_speed_industrial_complex_factor = 0.10
+		line_change_production_efficiency_factor = 0.05
+		political_power_gain = -0.1
+		justify_war_goal_time = 0.1
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	RYU_trait_french_advisor = {
+		random = no
+		#DIFFICULT TO AQUIRE
+		autocracy_drift = 0.01
+		improve_relations_maintain_cost_factor = -0.90
+		stability_weekly = 0.001
+		political_power_gain = -0.1
+		justify_war_goal_time = 0.1
+		
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	RYU_trait_usa_advisor = {
+		random = no
+		#DIFFICULT TO AQUIRE
+		traditional_conservatism_drift = 0.01
+		amphibious_invasion = 0.1
+		production_speed_dockyard_factor = 0.1
+		political_power_gain = -0.1
+		justify_war_goal_time = 0.1
+		equipment_bonus = {
+			carrier = {
+				build_cost_ic = -0.25 carrier_size = -0.2 naval_range = -0.5
+			}
+			capital_ship = {
+				build_cost_ic = -0.25 armor_value = -0.2 hg_attack = -0.2 naval_range = -0.5
+			}
+			screen_ship = {
+				build_cost_ic = -0.25 naval_range = -0.5
+			}
+			submarine = {
+				build_cost_ic = -0.25 naval_range = -0.5
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	Oceania_isolationist_diplomacy_advisor_trait = {
+		random = no
+		drift_defence_factor = 0.075
+		foreign_subversive_activites = -0.50
+		encryption_factor = 0.15
+		stability_weekly = 0.001
+		improve_relations_maintain_cost_factor = 1
+		trade_laws_cost_factor = 1
+		political_advisor_cost_factor = 0.25
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	Oceania_isolationist_industry_advisor_trait = {
+		random = no
+		drift_defence_factor = 0.075
+		conversion_cost_civ_to_mil_factor= -0.5
+		production_speed_infrastructure_factor = 0.15
+		generate_wargoal_tension = 1
+		political_advisor_cost_factor = 0.25
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	Oceania_antoine_dufresne_trait = {
+		random = no
+		conscription = 0.001
+		production_speed_arms_factory_factor = 0.10
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	Oceania_theodore_wilkinson_trait = {
+		random = no
+		production_speed_fabric_weavery_factor = 0.25
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	BMM_likes_germany = {
+		random = no
+		# ai_strategy = {
+			# type = antagonize
+			# id = "befriend"			
+			# value = 200
+		# }
+		# ai_strategy = {
+			# type = antagonize
+			# id = "befriend"			
+			# value = 200
+		# }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Transport Tech Concern
+	eoanb_generic_transport_concern = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

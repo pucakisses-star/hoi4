@@ -1,0 +1,298 @@
+focus_tree = {
+	id = TCS_Norway_1905_Start
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NOR
+		}
+	}
+	default = no
+	
+	shared_focus = NOR_choose_doctrine
+	
+	focus = {
+		id = NOR_michelsen_start
+		icon = GFX_focus_christian_michelsen
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 18
+		y = 0
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = NOR_examine_finances
+		icon = GFX_examine_finances
+		prerequisite = { focus = NOR_michelsen_start }
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 16
+		y = 1
+		completion_reward = {
+		    custom_effect_tooltip = NOR_examine_finances_tt
+		    hidden_effect = {
+			     country_event = {
+                     id = norway.23
+                     days = 3
+				 }
+		    }
+		}
+	}
+	
+	focus = {
+		id = NOR_cut_railway_spending
+		icon = GFX_cut_rail_spending
+		prerequisite = { focus = NOR_examine_finances }
+		available = {
+		    has_government = lib_conservatism
+			custom_trigger_tooltip = {
+			    tooltip = coalition_majority_tt
+ 	            check_variable = {
+                    coalition_pop_total > 51
+                }
+            }
+	    }
+		cost = 5
+		x = 14
+		y = 2
+		completion_reward = {
+		   add_timed_idea = {
+                idea = NOR_railway_cuts
+                days = 365
+            }
+		}
+	}
+	
+	focus = {
+		id = NOR_cut_defence_spending
+		icon = GFX_cut_defense_spending
+		prerequisite = { focus = NOR_examine_finances }
+		available = {
+		    has_government = lib_conservatism
+			custom_trigger_tooltip = {
+			    tooltip = coalition_majority_tt
+ 	            check_variable = {
+                    coalition_pop_total > 51
+                }
+            }
+	    }
+		cost = 5
+		x = 16
+		y = 2
+		completion_reward = {
+		    add_timed_idea = {
+                idea = NOR_defence_cuts
+                days = 365
+            }
+		}
+	}
+	
+	focus = {
+		id = NOR_cut_state_loans
+		icon = GFX_Cut_loans
+		prerequisite = { focus = NOR_cut_railway_spending }
+		prerequisite = { focus = NOR_cut_defence_spending }
+		available = {
+		    has_government = lib_conservatism
+			custom_trigger_tooltip = {
+			    tooltip = coalition_majority_tt
+ 	            check_variable = {
+                    coalition_pop_total > 51
+                }
+            }
+	    }
+		cost = 5
+		x = 15
+		y = 3
+		completion_reward = {
+		    add_political_power = -50
+			add_timed_idea = {
+                idea = NOR_loan_cuts
+                days = 365
+            }
+		}
+	}
+	
+	focus = {
+		id = NOR_guiding_hand
+		icon = GFX_a_guiding_hand
+		prerequisite = { focus = NOR_michelsen_start }
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 20
+		y = 1
+		completion_reward = {
+		    add_stability = 0.03
+		    add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = NOR_reassure_liberals
+		icon = GFX_goal_social_liberal_agreement
+		prerequisite = { focus = NOR_guiding_hand }
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 20
+		y = 2
+		completion_reward = {
+		     custom_effect_tooltip = NOR_decide_concessions_tt
+			 hidden_effect = {
+			     country_event = {
+                     id = norway.22
+                     days = 5
+				 }
+		     }
+		}
+	}
+	
+	focus = {
+		id = NOR_strengthen_party
+		icon = GFX_Conservative_Victory
+		prerequisite = { focus = NOR_guiding_hand }
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 22
+		y = 2
+		completion_reward = {
+		    add_popularity = {
+                ideology = lib_conservatism
+                popularity = 0.03
+            }
+			add_popularity = {
+                ideology = soc_conservatism
+                popularity = 0.02
+            }
+		}
+	}
+	
+	focus = {
+		id = NOR_united_behind_king
+		icon = GFX_norwegian_coa
+		prerequisite = { focus = NOR_reassure_liberals }
+		prerequisite = { focus = NOR_strengthen_party }
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 21
+		y = 3
+		completion_reward = {
+		    swap_ideas = {
+                remove_idea = NOR_young_nation1
+                add_idea = NOR_young_nation2
+            }
+		}
+	}
+	
+	focus = {
+		id = NOR_reorganized_cabinet
+		icon = GFX_PER_placate_parliament
+		prerequisite = { focus = NOR_examine_finances }
+		prerequisite = { focus = NOR_guiding_hand }
+		available = {
+		    has_government = lib_conservatism
+			custom_trigger_tooltip = {
+			    tooltip = NOR_michelsen_reorganized_tt
+ 	            has_country_flag = NOR_michelsen_reorganized
+            }
+	    }
+		cost = 2
+		x = 18
+		y = 2
+		completion_reward = {
+		    add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = NOR_continue_industrial_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NOR_reorganized_cabinet }
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 17
+		y = 3
+		completion_reward = {
+		    add_tech_bonus = {
+			    bonus = 0.25
+			    uses = 1
+			    category = industry
+		    }
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = NOR_expand_commerce_ministry
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = NOR_reorganized_cabinet }
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 19
+		y = 3
+		completion_reward = {
+		    add_timed_idea = {
+                idea = NOR_expanded_ministry_commercy
+                days = 365
+            }
+		}
+	}
+	
+	focus = {
+		id = NOR_prepare_for_election
+		icon = GFX_norwegian_elections
+		prerequisite = { focus = NOR_continue_industrial_expansion }
+		prerequisite = { focus = NOR_expand_commerce_ministry }
+		available = {
+		    has_government = lib_conservatism
+	    }
+		cost = 5
+		x = 18
+		y = 4
+		completion_reward = {
+		    add_timed_idea = {
+                idea = NOR_election_campaign
+                days = 140
+            }
+		    add_popularity = {
+                ideology = lib_conservatism
+                popularity = 0.03
+            }
+			add_popularity = {
+                ideology = soc_conservatism
+                popularity = 0.02
+            }
+		}
+	}
+}

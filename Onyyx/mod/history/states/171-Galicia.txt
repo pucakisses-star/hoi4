@@ -1,0 +1,40 @@
+
+state={
+	id=171
+	name="STATE_171"
+	manpower = 1776879
+	
+	state_category = city
+
+	history={
+		owner = SPR
+		victory_points = {
+			758 3 
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			758 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = SPR
+		
+		#cultures
+		add_to_array = { state_culture_array = 52 }
+       	add_to_array = { state_culture_array = 47 }
+		add_to_array = { state_culture_array = 53 }
+		#culture percentage	
+       	add_to_array = { state_culture_array_num = 0.60 }
+       	add_to_array = { state_culture_array_num = 0.35 }
+		add_to_array = { state_culture_array_num = 0.05 }
+		#religion
+      	add_to_array = { state_religion_array = 2 }
+		#relgion percentage
+      	add_to_array = { state_religion_array_num = 1.0 }
+	}
+
+	provinces={
+		729 758 3761 6734 6764 6955 9686 9689 11675 11677 11692 11710 11840 13822 
+	}
+}

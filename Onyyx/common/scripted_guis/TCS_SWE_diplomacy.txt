@@ -1,0 +1,23 @@
+scripted_gui = {
+
+	swe_diplomacy_decision_ui = {
+		context_type = decision_category
+		window_name = "swe_diplomacy_decision_ui_window"
+
+		properties = {
+			SWE_diplomacy_balance_amount = {
+				x = SWE.diplomacy_balance_location
+			}
+			diplomacy_balance_slider = {
+				x = diplomacy_balance_location
+			}
+            ENG_flag_diplo = {
+				image = "[ENG.GetFlag]"
+			}
+			GER_flag_diplo = {
+				image = "[GER.GetFlag]"
+            }
+		}
+	}
+}
+

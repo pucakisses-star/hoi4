@@ -1,0 +1,103 @@
+YEM_operations_cat = {
+    YEM_independence_war_mission = {
+        icon = generic_operation
+        allowed = {
+            tag = YEM
+            has_war_with = OTT
+            date < 1909.12.1
+        }
+        available = {
+            954 = { is_controlled_by = YEM }
+            955 = { is_controlled_by = YEM }
+        }
+        days_mission_timeout = 150
+        fire_only_once = yes
+        activation = {
+            has_war_with = OTT
+            tag = YEM
+            has_war_with = OTT
+            date < 1909.12.1
+        }
+        is_good = no
+        complete_effect = {
+            custom_effect_tooltip = YEM_we_will_get_independence_tt
+            hidden_effect = {
+                remove_ideas = {
+                    YEM_anti_ottoman_revolt
+                }
+                add_ideas = {
+                    YEM_lingering_piracy
+                    YEM_islamic_law
+                    YEM_bad_industry
+                }
+                white_peace = {
+                    tag = OTT
+                }
+                set_cosmetic_tag = YEM_Independent
+                OTT = {
+                    news_event = { id = yem.5 }
+                }
+                EGY = {
+                    news_event = { id = yem.5 }
+                }
+                OMA = {
+                    news_event = { id = yem.5 }
+                }
+                QAT = {
+                    news_event = { id = yem.5 }
+                }
+                PER = {
+                    news_event = { id = yem.5 }
+                }
+                SAU = {
+                    news_event = { id = yem.5 }
+                }
+                JBS = {
+                    news_event = { id = yem.5 }
+                }
+                ANA = {
+                    news_event = { id = yem.5 }
+                }
+                ITA = {
+                    news_event = { id = yem.5 }
+                }
+            }
+        }
+        timeout_effect = {   
+            custom_effect_tooltip = YEM_we_will_become_a_vassal_tt
+            hidden_effect = {
+                remove_ideas = {
+                    YEM_anti_ottoman_revolt
+                }
+                add_ideas = {
+                    YEM_neutrality
+                    YEM_lingering_piracy
+                    YEM_islamic_law
+                    YEM_bad_industry
+                }
+                white_peace = {
+                    tag = OTT
+                }
+                set_cosmetic_tag = YEM_OTT
+                OTT = {
+                    if = {
+                        limit {
+                            has_dlc = "Together for Victory"
+                        }
+                        set_autonomy = {
+                            target = YEM
+                            autonomous_state = autonomy_vassal
+                            freedom_level = 0.6 
+                        }
+                        else = {
+                            puppet = YEM
+                        }
+                    }
+                }
+            }  
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

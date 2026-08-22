@@ -1,0 +1,305 @@
+TCS_calc_coalitions = {
+	set_variable = { coalition_pop_total = 0 } 
+	if = {
+		LIMIT = {
+			has_country_flag = leninism_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@leninism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = marxism_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@marxism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = rev_socialism_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@rev_socialism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = soc_democracy_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@soc_democracy
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = soc_liberal_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@soc_liberal
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = lib_conservatism_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@lib_conservatism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = soc_conservatism_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@soc_conservatism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = auth_democrat_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@auth_democrat
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = pat_autocrat_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@pat_autocrat
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = fascism_coalition
+		}
+		add_to_variable = {
+			var = coalition_pop_total
+			value = party_popularity@fascism
+		}
+	}
+	multiply_variable = { coalition_pop_total = 100 }
+	round_variable = coalition_pop_total
+}
+TCS_calc_oppositions = {
+	set_variable = { opposition_pop_total = 0 } 
+	if = {
+		LIMIT = {
+			has_country_flag = leninism_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@leninism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = marxism_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@marxism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = rev_socialism_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@rev_socialism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = soc_democracy_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@soc_democracy
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = soc_liberal_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@soc_liberal
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = lib_conservatism_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@lib_conservatism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = soc_conservatism_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@soc_conservatism
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = auth_democrat_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@auth_democrat
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = pat_autocrat_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@pat_autocrat
+		}
+	}
+	if = {
+		LIMIT = {
+			has_country_flag = fascism_opposition
+		}
+		add_to_variable = {
+			var = opposition_pop_total
+			value = party_popularity@fascism
+		}
+	}
+	multiply_variable = { opposition_pop_total = 100 }
+	round_variable = opposition_pop_total
+}
+TCS_clear_coalitions = {
+	clr_country_flag = leninism_coalition
+	clr_country_flag = marxism_coalition
+	clr_country_flag = rev_socialism_coalition
+	clr_country_flag = soc_democracy_coalition
+	clr_country_flag = soc_liberal_coalition
+	clr_country_flag = lib_conservatism_coalition
+	clr_country_flag = soc_conservatism_coalition
+	clr_country_flag = auth_democrat_coalition
+	clr_country_flag = pat_autocrat_coalition
+	clr_country_flag = fascism_coalition
+
+	clr_country_flag = leninism_opposition
+	clr_country_flag = marxism_opposition
+	clr_country_flag = rev_socialism_opposition
+	clr_country_flag = soc_democracy_opposition
+	clr_country_flag = soc_liberal_opposition
+	clr_country_flag = lib_conservatism_opposition
+	clr_country_flag = soc_conservatism_opposition
+	clr_country_flag = auth_democrat_opposition
+	clr_country_flag = pat_autocrat_opposition
+	clr_country_flag = fascism_opposition
+}
+TCS_auto_calc_opposition = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = leninism_coalition
+			}
+			leninism > 0.01
+		}
+		set_country_flag = leninism_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = marxism_coalition
+			}
+			marxism > 0.01
+		}
+		set_country_flag = marxism_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = rev_socialism_coalition
+			}
+			rev_socialism > 0.01
+		}
+		set_country_flag = rev_socialism_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = soc_democracy_coalition
+			}
+			soc_democracy > 0.01
+		}
+		set_country_flag = soc_democracy_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = soc_liberal_coalition
+			}
+			soc_liberal > 0.01
+		}
+		set_country_flag = soc_liberal_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = lib_conservatism_coalition
+			}
+			lib_conservatism > 0.01
+		}
+		set_country_flag = lib_conservatism_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = soc_conservatism_coalition
+			}
+			soc_conservatism > 0.01
+		}
+		set_country_flag = soc_conservatism_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = auth_democrat_coalition
+			}
+			auth_democrat > 0.01
+		}
+		set_country_flag = auth_democrat_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = pat_autocrat_opposition
+			}
+			pat_autocrat > 0.01
+		}
+		set_country_flag = pat_autocrat_opposition
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = fascism_opposition
+			}
+			fascism > 0.01
+		}
+		set_country_flag = fascism_opposition
+	}
+}

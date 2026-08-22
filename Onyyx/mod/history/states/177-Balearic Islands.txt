@@ -1,0 +1,34 @@
+state=
+{
+	id=177
+	name="STATE_177"
+	manpower = 263501
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = SPR
+		buildings = {
+			infrastructure = 4
+			9793 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SPR
+		
+		#cultures
+		add_to_array = { state_culture_array = 48 }
+       	add_to_array = { state_culture_array = 47 }
+		#culture percentage	
+       	add_to_array = { state_culture_array_num = 0.70 }
+       	add_to_array = { state_culture_array_num = 0.30 }
+		#religion
+      	add_to_array = { state_religion_array = 2 }
+		#relgion percentage
+      	add_to_array = { state_religion_array_num = 1.00 }
+	}
+	provinces=
+	{
+7114 9793 9845 	}
+}

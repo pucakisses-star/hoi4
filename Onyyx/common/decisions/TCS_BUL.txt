@@ -1,0 +1,729 @@
+BUL_struggle_macedonia_cat = {
+    BUL_back_bulgarian_church = {
+        cost = 25
+        available = {
+            always = yes
+        }
+        fire_only_once = no
+        visible = {
+            always = yes
+        }
+        fixed_random_seed = no
+        days_remove = 25
+        complete_effect = {
+            custom_effect_tooltip = BUL_tt_0
+            hidden_effect = {
+                add_to_variable = { global.mac_tension = 0.025 } 
+            }
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+    }
+    BUL_back_bulgarian_schools = {
+        cost = 50
+        available = {
+            always = yes
+        }
+        fire_only_once = no
+        visible = {
+            always = yes
+        }
+        fixed_random_seed = no
+        days_remove = 25
+        complete_effect = {
+            add_stability = 0.02
+            custom_effect_tooltip = BUL_tt_1
+            hidden_effect = {
+                add_to_variable = { global.mac_tension = 0.05 } 
+            }
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+    }
+    BUL_send_armed_bands = {
+        cost = 80
+        available = {
+            has_equipment = { infantry_equipment > 999 }
+        }
+        #custom_cost_text = 1000_infantry_equipment_1
+        available = {
+            always = yes
+        }
+        fire_only_once = no
+        visible = {
+            always = yes
+        }
+        fixed_random_seed = no
+        days_remove = 40
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = -1000
+                producer = BUL
+            }
+            custom_effect_tooltip = BUL_tt_2
+            hidden_effect = {
+                add_to_variable = { global.mac_tension = 0.10 } 
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = BUL_mac_clash_serbia
+                            has_country_flag = BUL_mac_clash_ottomans
+                            has_country_flag = BUL_mac_clash_greece
+                            has_country_flag = Serbo_bulgarian_alliance
+                        }
+                    }
+                    random_list = {
+                        30 = {  country_event = { id = bul_mac.10 days = 10 } } #Serbia
+                        30 = {  country_event = { id = bul_mac.11 days = 10 } } #Ottomans
+                        40 = {  country_event = { id = bul_mac.12 days = 10 } } #Greece
+                    }
+                }
+                if = {
+                    limit = {
+                        has_country_flag = BUL_mac_clash_serbia
+                        NOT = {
+                            has_country_flag = BUL_mac_clash_ottomans
+                            has_country_flag = BUL_mac_clash_greece
+                            has_country_flag = Serbo_bulgarian_alliance
+                        }
+                    }
+                    random_list = {
+                        40 = {  country_event = { id = bul_mac.11 days = 10 } } #Ottomans
+                        60 = {  country_event = { id = bul_mac.12 days = 10 } } #Greece
+                    }
+                }
+                if = {
+                    limit = {
+                        has_country_flag = BUL_mac_clash_ottomans
+                        NOT = {
+                            has_country_flag = BUL_mac_clash_serbia
+                            has_country_flag = BUL_mac_clash_greece
+                            has_country_flag = Serbo_bulgarian_alliance
+                        }
+                    }
+                    random_list = {
+                        40 = {  country_event = { id = bul_mac.10 days = 10 } } #Serbia
+                        60 = {  country_event = { id = bul_mac.12 days = 10 } } #Greece
+                    }
+                }
+                if = {
+                    limit = {
+                        has_country_flag = BUL_mac_clash_greece
+                        NOT = {
+                            has_country_flag = BUL_mac_clash_serbia
+                            has_country_flag = BUL_mac_clash_ottomans
+                            has_country_flag = Serbo_bulgarian_alliance
+                        }
+                    }
+                    random_list = {
+                        50 = {  country_event = { id = bul_mac.10 days = 10 } } #Serbia
+                        50 = {  country_event = { id = bul_mac.11 days = 10 } } #Ottomans
+                    }
+                }
+                if = {
+                    limit = {
+                        has_country_flag = BUL_mac_clash_serbia
+                        has_country_flag = BUL_mac_clash_ottomans
+                        NOT = {
+                            has_country_flag = BUL_mac_clash_greece
+                            has_country_flag = Serbo_bulgarian_alliance
+                        }
+                    }
+                    country_event = { id = bul_mac.12 days = 10 } #Greece      
+                }
+                if = {
+                    limit = {
+                        has_country_flag = BUL_mac_clash_serbia
+                        has_country_flag = BUL_mac_clash_greece
+                        NOT = {
+                            has_country_flag = BUL_mac_clash_ottomans
+                            has_country_flag = Serbo_bulgarian_alliance
+                        }
+                    }
+                    country_event = { id = bul_mac.11 days = 10 } #Ottomans      
+                }
+                if = {
+                    limit = {
+                        has_country_flag = BUL_mac_clash_ottomans
+                        has_country_flag = BUL_mac_clash_greece
+                        NOT = {
+                            has_country_flag = BUL_mac_clash_serbia
+                            has_country_flag = Serbo_bulgarian_alliance
+                        }
+                    }
+                    country_event = { id = bul_mac.10 days = 10 } #Serbia 
+                }
+                if = {
+                    limit = {
+                        has_country_flag = Serbo_bulgarian_alliance
+                    }
+                    country_event = { id = bul_mac.17 days = 10 } #Serbia (special)
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 1.0
+        }
+    }                             
+    #BUL_reset_tension = {
+    #    available = {
+    #        always = yes
+    #    }
+    #    fire_only_once = no
+    #    fixed_random_seed = no
+    #    complete_effect = {
+    #        set_variable = { global.mac_tension = 0.3 }
+    #    }
+    #    ai_will_do = {
+    #        factor = 0
+    #    }
+    #}
+    #BUL_add_10_tension = {
+    #    available = {
+    #        always = yes
+    #    }
+    #    fire_only_once = no
+    #    fixed_random_seed = no
+    #    complete_effect = {
+    #        add_to_variable = { global.mac_tension = 0.10 } 
+    #    }
+    #    ai_will_do = {
+    #        factor = 0
+    #    }
+    #}
+}
+
+BUL_military_buildup = {
+    BUL_import_foreign_rifles = {
+        ##icon = 
+        cost = 30
+        available = {
+            has_country_flag = BUL_milbuildup_1
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        days_remove = 10
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = BUL
+            }
+        }
+        ai_will_do = {
+            factor = 75
+        }
+    }
+    BUL_support_small_arms_industry = {
+        ##icon = 
+        cost = 50
+        available = {
+            has_country_flag = BUL_milbuildup_1
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        days_remove = 50
+        modifier = {
+            consumer_goods_factor = 0.10
+            industrial_capacity_factory = -0.15
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    NOT = { state = 48 }
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = arms_factory
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+    BUL_expand_munition_factory = {
+        ##icon = 
+        cost = 50
+        available = {
+            has_country_flag = BUL_milbuildup_2
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        days_remove = 50
+        modifier = {
+            consumer_goods_factor = 0.10
+            industrial_capacity_factory = -0.15
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    NOT = { state = 48 }
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = arms_factory
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+    BUL_expand_munition_factory2 = {
+        #icon = generic_construction
+        cost = 50
+        available = {
+            has_country_flag = BUL_milbuildup_3
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        days_remove = 50
+        modifier = {
+            consumer_goods_factor = 0.10
+            industrial_capacity_factory = -0.15
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    NOT = { state = 48 }
+                    free_building_slots = {
+                        building = arms_factory
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = arms_factory
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+}
+
+BUL_stambolovist_economic_expansion = {
+    BUL_complete_sofia_modernization = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy1
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_aid_rural_areas_eastern_rumelia = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy2
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_import_modern_agricultural_tools = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy2
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_expand_TSB_line = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy3
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_expand_RV_line = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy3
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_further_electrify_varna = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy4
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_install_new_generators_along_danube = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy4
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_expand_varna_dockyard = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy4
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_expand_burgas_dockyard = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy4
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_import_german_american_cars = {
+        #icon = generic_construction
+        cost = 40
+        available = {
+            has_country_flag = BUL_petkov_economy4
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = -0.10
+        }
+        days_remove = 50
+        remove_effect = {
+            48 = {
+                add_extra_state_shared_building_slots = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}
+
+
+
+BUL_industrial_revolution = {
+    BUL_promote_local_trade_industry = {
+        #icon = generic_construction
+        cost = 60
+        available = {
+            always = yes
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+
+        available = {
+        }
+        modifier = {
+            consumer_goods_factor = 0.10
+            industrial_capacity_factory = -0.15
+        }
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    NOT = { state = 48 }
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        days_remove = 80
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_stimulate_chambers_industry = {
+        #icon = generic_construction
+        cost = 60
+        available = {
+            always = yes
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            consumer_goods_factor = 0.10
+            industrial_capacity_factory = -0.15
+        }
+        days_remove = 80
+        remove_effect = {
+            random_owned_controlled_state = {
+                limit = {
+                    NOT = { state = 48 }
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 0
+                        include_locked = yes
+                    }
+                    OR = {
+                        is_in_home_area = yes
+                        NOT = {
+                            owner = {
+                                any_owned_state = {
+                                    free_building_slots = {
+                                        building = industrial_complex
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                                    is_in_home_area = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_prohibite_child_labor = {
+        #icon = generic_industry
+        cost = 40
+        available = {
+            always = yes
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = 0.1
+        }
+        days_remove = 40
+        complete_effect = {
+            add_stability = 0.03
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    BUL_protective_women_labor_law = {
+        #icon = generic_industry
+        cost = 40
+        available = {
+            always = yes
+        }
+        fire_only_once = yes
+        fixed_random_seed = no
+        modifier = {
+            industrial_capacity_factory = 0.1
+        }
+        days_remove = 40
+        complete_effect = {
+            add_stability = 0.03
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

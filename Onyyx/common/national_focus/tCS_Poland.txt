@@ -1,0 +1,279 @@
+focus_tree = {
+	id = tCS_Poland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	focus = {
+		id = POL_rebirth_of_poland
+		icon = GFX_focus_generic_polish_deal
+		cost = 44
+		x = 25
+		y = 0
+
+	}
+	focus = {
+		id = POL_march_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = POL_small_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10
+		prerequisite = {
+			focus = POL_rebirth_of_poland
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = POL_diplomatic_actions
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = POL_small_constitution
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = POL_agreement_with_romania
+		icon = GFX_focus_rom_preserve_romania
+		cost = 10
+		prerequisite = {
+			focus = POL_diplomatic_actions
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = POL_agreement_with_france
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10
+		prerequisite = {
+			focus = POL_diplomatic_actions
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = POL_intermarium_plans
+		icon = GFX_goal_anschluss
+		cost = 10
+		prerequisite = {
+			focus = POL_small_constitution
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = POL_decree_of_pko
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10
+		prerequisite = {
+			focus = POL_rebirth_of_poland
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = POL_land_reform
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = POL_small_constitution
+		}
+		prerequisite = {
+			focus = POL_decree_of_pko
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = POL_warsaw_railway_hub
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = POL_decree_of_pko
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = POL_land_act_for_soldiers
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = POL_land_reform
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = POL_decree_military_service
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		prerequisite = {
+			focus = POL_rebirth_of_poland
+		}
+		x = 31
+		y = 1
+
+	}
+	focus = {
+		id = POL_military_technical_institute
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = POL_decree_military_service
+			focus = POL_decree_of_pko
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = POL_main_office_of_supplies
+		icon = GFX_goal_generic_trade
+		cost = 10
+		prerequisite = {
+			focus = POL_decree_military_service
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = POL_war_school_of_general_staff
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		prerequisite = {
+			focus = POL_main_office_of_supplies
+		}
+		prerequisite = {
+			focus = POL_military_technical_institute
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = POL_integration_of_army
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = POL_main_office_of_supplies
+			focus = POL_war_school_of_general_staff
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = POL_the_war_council_act
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = {
+			focus = POL_land_act_for_soldiers
+			focus = POL_integration_of_army
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = POL_french_pilot_school
+		icon = GFX_goal_continuous_air_production
+		cost = 10
+		prerequisite = {
+			focus = POL_main_office_of_supplies
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = POL_aeronautical_school
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		prerequisite = {
+			focus = POL_french_pilot_school
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = POL_department_of_maritime_affairs
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = {
+			focus = POL_main_office_of_supplies
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = POL_navy_development_plan
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		prerequisite = {
+			focus = POL_department_of_maritime_affairs
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = POL_martime_school
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = POL_department_of_maritime_affairs
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = POL_gdynia_seaport
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = POL_the_war_council_act
+			focus = POL_navy_development_plan
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = POL_dealt_with_inflation
+		icon = GFX_focus_mex_privatisation
+		cost = 10
+		prerequisite = {
+			focus = POL_march_constitution
+		}
+		x = 20
+		y = 7
+
+	}
+}

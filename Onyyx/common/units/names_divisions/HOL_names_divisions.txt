@@ -1,0 +1,37 @@
+﻿HOL_MIL_01 = {
+	name = "Koninklijke Militie"
+
+	for_countries = { HOL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%de Koninklijke Militie"
+
+	ordered = {
+		1 = { "Kroon en Landgeweren" }
+		2 = { "Oranje Vrijwilligers" }
+		3 = { "Boerenbrigade" }
+		4 = { "Christus Rex Legioen" }
+	}
+}
+
+HOL_INF_01 = {
+	name = "Infanteriedivisie"
+
+	for_countries = { HOL }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%de Infanteriedivisie"
+
+	ordered = {
+		1 = { "1e Infanteriedivisie" }
+		2 = { "2e Infanteriedivisie" }
+		3 = { "3e Infanteriedivisie" }
+		4 = { "4e Infanteriedivisie" }
+	}
+}

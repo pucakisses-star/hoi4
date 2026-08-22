@@ -1,0 +1,22 @@
+state={
+	id=934
+	name="STATE_934"
+	provinces={
+		863 3864 3973 11786 12001 
+	}
+	history = {
+		owner = GRE
+		add_core_of = GRE
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	buildings = {
+	   infrastructure = 3
+		industrial_complex = 2
+        dockyard = 1
+		3864 = {
+		    naval_base = 1
+		}
+	}
+}

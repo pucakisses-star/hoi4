@@ -1,0 +1,1608 @@
+### Italian Ministers ###
+
+ideas = {
+	head_of_government = {
+		### Radicals ###
+		ITA_Ettore_Sacchi_hog_rad = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					has_country_flag = ITA_radicals_get_in_governments
+					NOT = { has_country_flag = Ettore_Sacchi_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Ettore_Sacchi_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Ettore_Sacchi_hog_rad"
+			}
+			picture = ITA_Ettore_Sacchi_hog_rad
+			traits = {
+				soc_liberal_m
+				head_of_government_trait
+				hog_happy_amateur
+			}
+			cancel_if_invalid = yes
+		}
+		 ### Liberals ###
+		ITA_Giovanni_Giolitti_hog_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Giovanni_Giolitti_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Giovanni_Giolitti_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Giovanni_Giolitti_hog_lib"
+			}
+			picture = ITA_Giovanni_Giolitti_hog_lib
+			traits = {
+				lib_conservative_m
+				head_of_government_trait
+				hog_pragmatic_statesman
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Alessandro_Fortis_hog_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Alessandro_Fortis_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Alessandro_Fortis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Alessandro_Fortis_hog_lib"
+			}
+			picture = ITA_Alessandro_Fortis_hog_lib
+			traits = {
+				lib_conservative_m
+				head_of_government_trait
+				hog_silent_workhorse
+			}
+			cancel_if_invalid = yes
+		}
+		 ### Conservatives ###
+		ITA_Tommaso_Tittoni_hog_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Tommaso_Tittoni_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Tommaso_Tittoni_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Tommaso_Tittoni_hog_sco"
+			}
+			picture = ITA_Tommaso_Tittoni_for_sco
+			traits = {
+				soc_conservative_m
+				head_of_government_trait
+				hog_happy_amateur
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Giuseppe_Manfredi_hog_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Giuseppe_Manfredi_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Giuseppe_Manfredi_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Giuseppe_Manfredi_hog_sco"
+			}
+			traits = {
+				soc_conservative_m
+				head_of_government_trait
+				hog_old_compromiser
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Sidney_Sonnino_hog_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Sidney_Sonnino_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Sidney_Sonnino_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Sidney_Sonnino_hog_sco"
+			}
+			traits = {
+				soc_conservative_m
+				head_of_government_trait
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = yes
+		}
+		 ### Military ###
+		ITA_Ettore_Pedotti_hog_ade = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Ettore_Pedotti_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Ettore_Pedotti_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Ettore_Pedotti_hog_ade"
+			}
+			picture = ITA_Ettore_Pedotti_hog_ade
+			traits = {
+				pat_autocrat_m
+				head_of_government_trait
+				hog_old_general
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Alberto_Pollio_hog_ade = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Alberto_Pollio_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Alberto_Pollio_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Alberto_Pollio_hog_ade"
+			}
+			picture = ITA_Alberto_Pollio_for_ade
+			traits = {
+				pat_autocrat_m
+				head_of_government_trait
+				hog_flamboyant_tough_guy
+			}
+			cancel_if_invalid = yes
+		}
+		### Autocrats ###
+		ITA_Emanuele_Filiberto_hog_pau = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Emanuele_Filiberto_dead }
+				}
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = Emanuele_Filiberto_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Emanuele_Filiberto_hog_pau"
+			}
+			picture = ITA_Emanuele_Filiberto_sec_ade
+			traits = {
+				pat_autocrat_m
+				head_of_government_trait
+				hog_determined_populist
+			}
+			cancel_if_invalid = yes
+		}
+	}
+	foreign_minister = {
+		 ### Radicals ###
+		ITA_Giuseppe_Girardini_for_rad = {
+			allowed = { original_tag = ITA }
+			available = {
+				has_country_flag = ITA_radicals_get_in_governments
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Giuseppe_Girardini_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Giuseppe_Girardini_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Giuseppe_Girardini_for_rad"
+			}
+			picture = ITA_Giuseppe_Girardini_for_rad
+			traits = {
+				soc_liberal_m
+				foreign_minister_trait
+				for_general_staffer
+			}
+			cancel_if_invalid = yes
+		}
+		 ### Liberals ###
+		ITA_Alessandro_Fortis_for_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Alessandro_Fortis_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alessandro_Fortis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Alessandro_Fortis_for_lib"
+			}
+			picture = ITA_Alessandro_Fortis_hog_lib
+			traits = {
+				lib_conservative_m
+				foreign_minister_trait
+				for_the_cloak_n_dagger_schemer
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Antonino_Paterno_Castello_di_San_Giuliano_for_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Antonino_Paterno_Castello_di_San_Giuliano_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Antonino_Paterno_Castello_di_San_Giuliano_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Antonino_Paterno_Castello_di_San_Giuliano_for_lib"
+			}
+			picture = ITA_Antonino_Paterno_Castello_di_San_Giuliano_for_lib
+			traits = {
+				lib_conservative_m
+				foreign_minister_trait
+				for_hawkish_intervener
+			}
+			cancel_if_invalid = yes
+		}
+		 ### Conservatives ###
+		ITA_Tommaso_Tittoni_for_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Tommaso_Tittoni_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Tommaso_Tittoni_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Tommaso_Tittoni_for_sco"
+			}
+			picture = ITA_Tommaso_Tittoni_for_sco
+			traits = {
+				soc_conservative_m
+				foreign_minister_trait
+				for_biased_intellectual
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Francesco_Guicciardini_for_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Francesco_Guicciardini_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Francesco_Guicciardini_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Francesco_Guicciardini_for_sco"
+			}
+			picture = ITA_Francesco_Guicciardini_for_sco
+			traits = {
+				soc_conservative_m
+				foreign_minister_trait
+				for_apologetic_clerk
+			}
+			cancel_if_invalid = yes
+		}
+		### Military ###
+		ITA_Alberto_Pollio_for_ade = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Alberto_Pollio_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alberto_Pollio_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Alberto_Pollio_for_ade"
+			}
+			picture = ITA_Alberto_Pollio_for_ade
+			traits = {
+				pat_autocrat_m
+				foreign_minister_trait
+				for_iron_fisted_brute
+			}
+			cancel_if_invalid = yes
+		}
+		### Nationalists ###
+		ITA_Gabriele_dAnnunzio_for_fas = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Gabriele_dAnnunzio_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Gabriele_dAnnunzio_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Gabriele_dAnnunzio_for_fas"
+			}
+			picture = ITA_Gabriele_dAnnunzio_for_fas
+			traits = {
+				fascist_m
+				foreign_minister_trait
+				for_biased_intellectual
+			}
+			cancel_if_invalid = yes
+		}
+	
+	}
+	economy_minister = {
+		 ### Radicals ###
+		ITA_Giulio_Alessio_eco_rad = {
+			allowed = { original_tag = ITA }
+			available = {
+				has_country_flag = ITA_radicals_get_in_governments
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Giulio_Alessio_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Giulio_Alessio_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Giulio_Alessio_eco_rad"
+			}
+			picture = ITA_Giulio_Alessio_eco_rad
+			traits = {
+				soc_liberal_m
+				economy_minister_trait
+				eco_mixed_economy
+			}
+			cancel_if_invalid = yes
+		}
+		 ### Liberals ###
+		ITA_Angelo_Majorana_Calatabiano_eco_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Angelo_Majorana_Calatabiano_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Angelo_Majorana_Calatabiano_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Angelo_Majorana_Calatabiano_eco_lib"
+			}
+			picture = ITA_Angelo_Majorana_Calatabiano_eco_lib
+			traits = {
+				lib_conservative_m
+				economy_minister_trait
+				eco_reformer
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Pietro_Vacchelli_eco_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Pietro_Vacchelli_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pietro_Vacchelli_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Pietro_Vacchelli_eco_sco"
+			}
+			traits = {
+				lib_conservative_m
+				economy_minister_trait
+				eco_bank_president
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Antonio_Salandra_eco_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Antonio_Salandra_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Antonio_Salandra_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Antonio_Salandra_eco_lib"
+			}
+			picture = ITA_Antonio_Salandra_hog_lib
+			traits = {
+				lib_conservative_m
+				economy_minister_trait
+				eco_laissez_faire_capitalist
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Fausto_Massimini_eco_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Fausto_Massimini_dead }
+					NOT = { has_country_flag = Fausto_Massimini_paralised }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Fausto_Massimini_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Fausto_Massimini_eco_lib"
+			}
+			picture = ITA_Fausto_Massimini_eco_lib
+			traits = {
+				lib_conservative_m
+				economy_minister_trait
+				eco_mixed_economy
+			}
+			cancel_if_invalid = yes
+		}
+		### Conservatives ###
+		ITA_Enrico_Arlotta_eco_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Enrico_Arlotta_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Enrico_Arlotta_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Enrico_Arlotta_eco_sco"
+			}
+			picture = ITA_Enrico_Arlotta_eco_sco
+			traits = {
+				soc_conservative_m
+				economy_minister_trait
+				eco_railway_magnate
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Paolo_Carcano_eco_ade = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Paolo_Carcano_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Paolo_Carcano_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Paolo_Carcano_eco_ade"
+			}
+			picture = ITA_Paolo_Carcano_eco_ade
+			traits = {
+				soc_conservative_m
+				economy_minister_trait
+				eco_mixed_economy
+			}
+			cancel_if_invalid = yes
+		}
+		### Military ###
+		ITA_Pietro_Frugoni_eco_ade = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Pietro_Frugoni_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pietro_Frugoni_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Pietro_Frugoni_eco_ade"
+			}
+			picture = ITA_Pietro_Frugoni_eco_ade
+			traits = {
+				pat_autocrat_m
+				economy_minister_trait
+				eco_infantry_proponent
+			}
+			cancel_if_invalid = yes
+		}
+	
+	}
+	interior_minister = {
+		### Radicals ###
+		ITA_Ettore_Sacchi_sec_rad = {
+			allowed = { original_tag = ITA }
+			available = {
+				has_country_flag = ITA_radicals_get_in_governments
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Ettore_Sacchi_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ettore_Sacchi_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Ettore_Sacchi_sec_rad"
+			}
+			picture = ITA_Ettore_Sacchi_hog_rad
+			traits = {
+				soc_liberal_m
+				interior_minister_trait
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = yes
+		}
+		 ### Liberals ###
+		ITA_Giovanni_Giolitti_sec_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Giovanni_Giolitti_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Giovanni_Giolitti_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Giovanni_Giolitti_sec_lib"
+			}
+			picture = ITA_Giovanni_Giolitti_hog_lib
+			traits = {
+				lib_conservative_m
+				interior_minister_trait
+				sec_compassionate_gentleman
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Alessandro_Fortis_sec_lib = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Alessandro_Fortis_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alessandro_Fortis_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Alessandro_Fortis_sec_lib"
+			}
+			picture = ITA_Alessandro_Fortis_hog_lib
+			traits = {
+				lib_conservative_m
+				interior_minister_trait
+				sec_preserver_of_culture
+			}
+			cancel_if_invalid = yes
+		}
+		 ### Conservatives ###
+		ITA_Tommaso_Tittoni_sec_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Tommaso_Tittoni_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Tommaso_Tittoni_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Tommaso_Tittoni_sec_sco"
+			}
+			picture = ITA_Tommaso_Tittoni_for_sco
+			traits = {
+				soc_conservative_m
+				interior_minister_trait
+				sec_health_and_safety
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Sidney_Sonnino_sec_sco = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Sidney_Sonnino_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Sidney_Sonnino_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Sidney_Sonnino_sec_sco"
+			}
+			picture = ITA_Sidney_Sonnino_hog_sco
+			traits = {
+				soc_conservative_m
+				interior_minister_trait
+				sec_crime_fighter
+			}
+			cancel_if_invalid = yes
+		}
+		### Military ###
+		ITA_Emanuele_Filiberto_sec_ade = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Emanuele_Filiberto_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Emanuele_Filiberto_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Emanuele_Filiberto_sec_ade"
+			}
+			picture = ITA_Emanuele_Filiberto_sec_ade
+			traits = {
+				pat_autocrat_m
+				interior_minister_trait
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Alberto_Pollio_sec_ade = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Alberto_Pollio_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Alberto_Pollio_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Alberto_Pollio_sec_ade"
+			}
+			picture = ITA_Alberto_Pollio_for_ade
+			traits = {
+				pat_autocrat_m
+				interior_minister_trait
+				sec_man_of_the_people
+			}
+			cancel_if_invalid = yes
+		}
+	
+	}
+	chief_of_army = {
+		ITA_Ettore_Pedotti_coa = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Ettore_Pedotti_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Ettore_Pedotti_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Ettore_Pedotti_coa"
+			}
+			picture = ITA_Ettore_Pedotti_coa
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Giuseppe_Ettore_Vigano_coa = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Giuseppe_Ettore_Vigano_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Giuseppe_Ettore_Vigano_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Giuseppe_Ettore_Vigano_coa"
+			}
+			picture = ITA_Giuseppe_Ettore_Vigano_coa
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Luigi_Majnoni_d_Intignano_coa = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Luigi_Majnoni_d_Intignano_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Luigi_Majnoni_d_Intignano_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Luigi_Majnoni_d_Intignano_coa"
+			}
+			picture = ITA_Luigi_Majnoni_d_Intignano_coa
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Severino_Casana_coa = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Severino_Casana_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Severino_Casana_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Severino_Casana_coa"
+			}
+			picture = ITA_Severino_Casana_coa
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Coriolano_Ponza_di_San_Martino_coa = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Coriolano_Ponza_di_San_Martino_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Coriolano_Ponza_di_San_Martino_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Coriolano_Ponza_di_San_Martino_coa"
+			}
+			picture = ITA_Coriolano_Ponza_di_San_Martino_coa
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Paolo_Spingardi_coa = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Paolo_Spingardi_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Paolo_Spingardi_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Paolo_Spingardi_coa"
+			}
+			picture = ITA_Coriolano_Ponza_di_San_Martino_coa
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+	chief_of_navy = {
+		ITA_Carlo_Mirabello_con = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Carlo_Mirabello_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Carlo_Mirabello_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Carlo_Mirabello_con"
+			}
+			picture = ITA_Carlo_Mirabello_con
+			traits = {
+				chief_of_navy
+				cnav_power_projection_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Giovanni_Bettolo_con = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Giovanni_Bettolo_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Giovanni_Bettolo_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Giovanni_Bettolo_con"
+			}
+			picture = ITA_Giovanni_Bettolo_con
+			traits = {
+				chief_of_navy
+				cnav_indirect_approach_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+		ITA_Pasquale_Leonardi_Cattolica_con = {
+			allowed = { original_tag = ITA }
+			available = {
+				custom_trigger_tooltip = {
+					NOT = { has_country_flag = Pasquale_Leonardi_Cattolica_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Pasquale_Leonardi_Cattolica_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Pasquale_Leonardi_Cattolica_con"
+			}
+			picture = ITA_Pasquale_Leonardi_Cattolica_con
+			traits = {
+				chief_of_navy
+				cnav_open_seas_doctrine
+			}
+			cancel_if_invalid = yes
+		}
+	}
+	weapons_manufacturer = {
+		ITA_breda_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { infantry_equipment_producer_allround_1 }
+			cancel_if_invalid = yes
+		}
+	}
+	tank_manufacturer = {
+		ITA_FIAT_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { motorised_equipment_producer_mass_0 }
+			cancel_if_invalid = yes
+		}
+		ITA_lancia_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { motorised_equipment_producer_offense_1 }
+			cancel_if_invalid = yes
+		}
+		ITA_isotta_fraschini_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { motorised_equipment_producer_defense_0 }
+			cancel_if_invalid = yes
+		}
+		ITA_ansaldo_tanks_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { artillery_producer_offense_1 motorised_equipment_producer_offense_0 }
+			cancel_if_invalid = yes
+		}
+		ITA_SAFAT_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { artillery_producer_defense_0 }
+			cancel_if_invalid = yes
+		}
+		ITA_ILVA_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { artillery_producer_offense_1 }
+			cancel_if_invalid = yes
+		}
+	}
+	air_naval_manufacturer = {
+		ITA_breda_naval_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { capital_ship_producer_defense_0 }
+			cancel_if_invalid = yes
+		}
+		ITA_breda_aviation_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { fighter_producer_offense_0 }
+			cancel_if_invalid = yes
+		}
+		ITA_CNOMV_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { cruiser_producer_offense_1 }
+			cancel_if_invalid = yes
+		}
+		ITA_ansaldo_marina_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { capital_ship_producer_offense_1 }
+			cancel_if_invalid = yes
+		}
+		ITA_navigazione_generale_italiana_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { cruiser_producer_mass_0 }
+			cancel_if_invalid = yes
+		}
+	}
+	industrial_concern = {
+		ITA_politecnico_di_milano_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { electronics_manufacturer }
+			cancel_if_invalid = yes
+		}
+		ITA_Ferrovie_dello_Stato_company = {
+			allowed = { original_tag = ITA }
+			available = {
+				has_completed_focus = ITA_ferrovie_dello_stato
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ITA_Ferrovie_dello_Stato_company"
+			}
+			picture = ITA_Ferrovie_dello_Stato_company
+
+			research_bonus = { industry = 0.05 }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+			}
+			
+			traits = { industrial_manufacturer }
+			cancel_if_invalid = yes
+		}
+		ITA_SME_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { industrial_manufacturer }
+			cancel_if_invalid = yes
+		}
+		ITA_societa_pont_saint_martin_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { industrial_manufacturer }
+			cancel_if_invalid = yes
+		}
+		ITA_breda_construction_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { industrial_manufacturer }
+			cancel_if_invalid = yes
+		}
+		ITA_ansaldo_construction_company = {
+			allowed = { original_tag = ITA }
+
+			research_bonus = {  }
+
+			modifier = {
+			}
+			
+			traits = { industrial_manufacturer }
+			cancel_if_invalid = yes
+		}
+	}
+	country = {
+		ITA_aftermath_of_the_buggerru_massacre = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_aftermath_of_the_buggerru_massacre"}
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			conscription_factor = -0.1
+			}
+		}
+		GEL_italian_presence_on_the_juba_river = {
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea GEL_italian_presence_on_the_juba_river"}
+			modifier = {
+			war_support_factor = 0.05
+			stability_factor = -0.1
+			political_power_gain = -0.25
+			}
+		}
+		ITA_legacy_of_adua = {
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_legacy_of_adua"}
+			modifier = {
+			war_support_factor = -0.05
+			army_org_factor = -0.1
+			planning_speed = -0.05
+			max_planning = -0.1
+			max_dig_in = 0.1
+			}
+		}
+		ITA_outdated_railways = {
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_outdated_railways"}
+			modifier = {
+			mobilization_speed = -0.1
+			land_reinforce_rate = -0.1
+			army_speed_factor = -0.1
+			production_speed_buildings_factor = -0.1
+			}
+		}
+		ITA_la_questione_meridionale = {
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_la_questione_meridionale"}
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = -0.1
+				line_change_production_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = -0.05
+			}
+		}
+		ITA_la_questione_meridionale_2 = {
+			picture = ITA_la_questione_meridionale
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_la_questione_meridionale"}
+			modifier = {
+				consumer_goods_factor = 0.12
+				production_factory_max_efficiency_factor = -0.07
+				line_change_production_efficiency_factor = -0.09
+				production_speed_buildings_factor = -0.08
+				local_resources_factor = -0.04
+			}
+		}
+		ITA_meridionalismo = {
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_meridionalismo"}
+			picture = ITA_la_questione_meridionale
+			modifier = {
+			consumer_goods_factor = -0.03
+			production_factory_max_efficiency_factor = 0.03
+			line_change_production_efficiency_factor = 0.01
+				production_speed_buildings_factor = 0.02
+				local_resources_factor = 0.01
+			}
+		}
+		ITA_la_lira_fa_aggio_sull_oro_spirit = {
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_la_lira_fa_aggio_sull_oro_spirit"}
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		ITA_la_questione_romana = {
+			picture = ITA_la_questione_romana
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_la_questione_romana"}
+			modifier = {
+			political_power_factor = -0.05
+			}
+		}
+		ITA_radical_promises_fortis_I = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_radical_promises_fortis_I"}
+			modifier = {
+			political_power_gain = -0.1
+			consumer_goods_factor = 0.05
+			
+			}
+		}
+		ITA_rightist_promises_fortis_I = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_rightist_promises_fortis_I"}
+			modifier = {
+			political_power_gain = -0.15
+			production_speed_infrastructure_factor = -0.05
+			production_factory_max_efficiency_factor = -0.05
+			
+			}
+		}
+		ITA_fortis_I_deal_with_the_railwaymen = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_fortis_I_deal_with_the_railwaymen"}
+			modifier = {
+			political_power_gain = -0.10
+			stability_factor = 0.05
+			}
+		}
+		ITA_fortis_I_deal_with_the_railwaymen_costly = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_fortis_I_deal_with_the_railwaymen_costly"}
+			modifier = {
+			political_power_gain = -0.25
+			stability_factor = 0.025
+			}
+		}
+		ITA_fortis_I_lower_the_refunds = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_fortis_I_lower_the_refunds"}
+			modifier = {
+			political_power_gain = -0.10
+			consumer_goods_factor = -0.1
+			production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		ITA_fortis_I_lower_the_refunds_costly = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_fortis_I_lower_the_refunds_costly"}
+			modifier = {
+			political_power_gain = -0.25
+			consumer_goods_factor = -0.05
+			}
+		}
+		ITA_fortis_I_further_nationalist_support = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_fortis_I_further_nationalist_support"}
+			modifier = {
+			political_power_gain = 0.15
+			}
+		}
+		ITA_fortis_I_socialist_support = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_fortis_I_socialist_support"}
+			modifier = {
+			political_power_gain = 0.10
+			}
+		}
+		ITA_fortis_I_workers_legislation = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_fortis_I_workers_legislation"}
+			modifier = {
+			stability_factor = 0.05
+			production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		ITA_fortis_II_republican_support = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_fortis_II_republican_support"}
+			modifier = {
+			political_power_gain = 0.10
+			stability_factor = -0.05
+			}
+		}
+		ITA_infrastructural_crisis = {
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_infrastructural_crisis"}
+			modifier = {
+			mobilization_speed = -0.05
+			land_reinforce_rate = -0.05
+			army_speed_factor = -0.05
+			production_speed_buildings_factor = -0.05
+			consumer_goods_factor = 0.05
+			production_factory_max_efficiency_factor = -0.15
+			political_power_gain = -0.1
+			war_support_factor = -0.05
+			}
+		}
+		ITA_infrastructural_crisis_2 = {
+			picture = ITA_infrastructural_crisis
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_infrastructural_crisis_2"}
+			modifier = {
+			mobilization_speed = -0.04
+			land_reinforce_rate = -0.05
+			army_speed_factor = -0.05
+			production_speed_buildings_factor = -0.05
+			consumer_goods_factor = 0.07
+			production_factory_max_efficiency_factor = -0.12
+			political_power_gain = -0.08
+			war_support_factor = -0.03
+			}
+		}
+		ITA_infrastructural_crisis_3 = {
+			picture = ITA_infrastructural_crisis
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_infrastructural_crisis_3"}
+			modifier = {
+			mobilization_speed = -0.03
+			land_reinforce_rate = -0.06
+			army_speed_factor = -0.04
+			production_speed_buildings_factor = -0.04
+			consumer_goods_factor = 0.06
+			production_factory_max_efficiency_factor = -0.09
+			political_power_gain = -0.06
+			war_support_factor = -0.01
+			}
+		}
+		ITA_infrastructural_crisis_4 = {
+			picture = ITA_infrastructural_crisis
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_infrastructural_crisis_4"}
+			modifier = {
+			mobilization_speed = -0.04
+			land_reinforce_rate = -0.03
+			army_speed_factor = -0.02
+			production_speed_buildings_factor = -0.07
+			consumer_goods_factor = 0.04
+			production_factory_max_efficiency_factor = -0.08
+			political_power_gain = -0.04
+			war_support_factor = -0.005
+			}
+		}
+		ITA_infrastructural_crisis_5 = {
+			picture = ITA_infrastructural_crisis
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_infrastructural_crisis_5"}
+			modifier = {
+			mobilization_speed = -0.04
+			land_reinforce_rate = -0.03
+			army_speed_factor = -0.02
+			production_speed_buildings_factor = -0.07
+			consumer_goods_factor = 0.04
+			production_factory_max_efficiency_factor = -0.08
+			political_power_gain = -0.04
+			war_support_factor = -0.005
+			}
+		}
+		ITA_infrastructural_crisis_6 = {
+			picture = ITA_infrastructural_crisis
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_infrastructural_crisis_6"}
+			modifier = {
+			mobilization_speed = -0.05
+			land_reinforce_rate = -0.02
+			production_speed_buildings_factor = -0.05
+			consumer_goods_factor = 0.07
+			production_factory_max_efficiency_factor = -0.09
+			political_power_gain = -0.02
+			}
+		}
+		ITA_infrastructural_crisis_7 = {
+			picture = ITA_infrastructural_crisis
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_infrastructural_crisis_7"}
+			modifier = {
+			mobilization_speed = -0.03
+			land_reinforce_rate = -0.01
+			production_speed_buildings_factor = -0.04
+			consumer_goods_factor = 0.04
+			production_factory_max_efficiency_factor = -0.06
+			}
+		}
+		ITA_infrastructural_crisis_8 = {
+			picture = ITA_infrastructural_crisis
+			on_add = {
+			log = "[GetDateText]: [Root.GetName]: add idea ITA_infrastructural_crisis_8"}
+			modifier = {
+			mobilization_speed = -0.01
+			production_speed_buildings_factor = -0.02
+			consumer_goods_factor = 0.02
+			production_factory_max_efficiency_factor = -0.03
+			}
+		}
+		ITA_sonnino_I_radical_support = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_sonnino_I_radical_support"}
+			modifier = {
+			political_power_gain = 0.10
+			}
+		}
+		ITA_giolitti_III_further_naval_spending = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_further_naval_spending"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.15
+			}
+		}
+		ITA_giolitti_III_open_public_support = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_open_public_support"}
+			modifier = {
+			political_power_gain = 0.20
+			}
+		}
+		ITA_giolitti_III_promises_to_the_socialists = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_promises_to_the_socialists"}
+			modifier = {
+				political_power_gain = -0.25
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		ITA_giolitti_III_promises_to_the_socialists_2 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_promises_to_the_socialists_2"}
+			modifier = {
+				political_power_gain = -0.20
+				consumer_goods_factor = 0.02
+				production_speed_infrastructure_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		ITA_catholic_promises_giolitti_III = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_catholic_promises_giolitti_III"}
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = -0.05
+				research_speed_factor = -0.02
+			}
+		}
+		ITA_giolitti_III_further_conscription = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_further_conscription"}
+			modifier = {
+				political_power_gain = -0.05
+				industrial_capacity_factory = -0.05
+				conscription_factor = 0.10
+			}
+		}
+		ITA_giolitti_III_further_army_investments = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_further_army_investments"}
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				training_time_army_factor = -0.1
+			}
+		}
+		ITA_outdated_general_staff = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_outdated_general_staff"}
+			modifier = {
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				planning_speed = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = 0.05
+				max_dig_in = 1
+			}
+		}
+		ITA_a_renovated_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_a_renovated_army"}
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				planning_speed = 0.10
+				army_attack_factor = 0.05
+			}
+		}
+		ITA_giolitti_III_workers_laws = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_workers_laws"}
+			modifier = {
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		ITA_giolitti_III_workers_laws_2 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_workers_laws_2"}
+			modifier = {
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				line_change_production_efficiency_factor = -0.05
+				political_power_gain = 0.07
+			}
+		}
+		ITA_giolitti_III_workers_laws_3 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_workers_laws_3"}
+			modifier = {
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				political_power_gain = 0.1
+			}
+		}
+		ITA_giolitti_III_workers_laws_4 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_giolitti_III_workers_laws_4"}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				political_power_gain = 0.15
+			}
+		}
+		ITA_messina_great_disaster = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_messina_great_disaster"}
+			modifier = {
+				consumer_goods_factor = 0.20
+				political_power_factor = -0.80
+				production_factory_max_efficiency_factor = -0.10
+				stability_factor = -0.1
+			}
+		}
+		ITA_messina_great_disaster_2 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_messina_great_disaster_2"}
+			modifier = {
+				consumer_goods_factor = 0.18
+				political_power_factor = -0.68
+				production_factory_max_efficiency_factor = -0.08
+				stability_factor = -0.09
+			}
+		}
+		ITA_messina_great_disaster_3 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_messina_great_disaster_3"}
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.50
+				production_factory_max_efficiency_factor = -0.06
+				stability_factor = -0.07
+			}
+		}
+		ITA_messina_great_disaster_4 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_messina_great_disaster_4"}
+			modifier = {
+				consumer_goods_factor = 0.12
+				political_power_factor = -0.45
+				production_factory_max_efficiency_factor = -0.06
+				stability_factor = -0.05
+			}
+		}
+		ITA_messina_great_disaster_5 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_messina_great_disaster_5"}
+			modifier = {
+				consumer_goods_factor = 0.07
+				political_power_factor = -0.27
+				production_factory_max_efficiency_factor = -0.04
+				stability_factor = -0.02
+			}
+		}
+		ITA_messina_great_disaster_6 = {
+	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ITA_messina_great_disaster_6"}
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_factor = -0.11
+				production_factory_max_efficiency_factor = -0.01
+				stability_factor = -0.01
+			}
+		}
+            FRA_agrarian_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = NOR_stock_market_crash
+
+            modifier = {
+            production_speed_buildings_factor = -0.05
+            production_factory_max_efficiency_factor = -0.1
+            consumer_goods_factor = 0.05
+            MONTHLY_POPULATION = 0.05
+
+                }
+            }
+        }
+    }

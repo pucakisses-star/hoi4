@@ -1,0 +1,26 @@
+
+state={
+	id=768
+	name="STATE_768"
+
+	history={
+		owner = GER
+		victory_points = {
+			9962 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		2220 9962 13593 13594 13597 13598 13601 13602 13603 
+	}
+	manpower=1716564
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	state_category = rural
+	state_category = rural
+}

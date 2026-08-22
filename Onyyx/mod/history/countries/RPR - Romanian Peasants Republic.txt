@@ -1,0 +1,58 @@
+capital = 919
+
+oob = "RPR_Revolt"
+
+set_research_slots = 2
+set_stability = 0.25
+set_war_support = 0.85
+
+# Starting tech
+set_technology = {
+	trench_warfare = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+}
+
+add_ideas = {  }
+
+set_convoys = 25
+
+set_politics = {	
+	ruling_party = rev_socialism
+	last_election = "1901.1.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+    leninism = 17
+    marxism = 0
+    rev_socialism = 32.5
+    soc_democracy = 19
+    soc_liberal = 12.6
+    lib_conservatism = 17.9
+    soc_conservatism = 1
+    auth_democrat = 0
+    pat_autocrat = 0
+    fascism = 0
+}
+
+set_country_flag = leninism_coalition
+set_country_flag = marxism_coalition
+set_country_flag = rev_socialism_coalition
+set_country_flag = soc_democracy_coalition
+
+create_country_leader = {
+	name = "Revolutionary Peasant's Council"
+	desc = "POLITICS_RPC_DESC"
+	picture = "gfx/leaders/RPR/RPC.dds"
+	expire = "1965.1.1"
+	ideology = rev_socialism_subtype
+	traits = {
+		#
+	}
+}

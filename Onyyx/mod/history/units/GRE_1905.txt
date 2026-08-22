@@ -1,0 +1,105 @@
+division_template = {
+	name = "Merarchía Pezikoú" 				#  Infantry Division
+	division_names_group = GRE_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Merarchía Ippikoú" 			# Cavalry Division
+	division_names_group = GRE_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	######## Elliniko Geniko Epiteleio ########
+	division = { #"I Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3973 #Larissa
+		division_template = "Merarchía Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { #"II Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 4109 #Athens
+		division_template = "Merarchía Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { #"III Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1205 #Mesologgi
+		division_template = "Merarchía Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { #"IV Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 7096 #Nafplio
+		division_template = "Merarchía Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { #"V Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 863 #Farsala
+		division_template = "Merarchía Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { #"VI Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 7211 #Patra
+		division_template = "Merarchía Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.1
+	}
+	division = { #"VII Merarchía Pezikoú"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 11965 #Kalamata
+		division_template = "Merarchía Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.1
+	}
+	division = { #"Taxiarchía Ippikoú"
+	  division_name = {
+			  is_name_ordered = no
+	  }
+		location = 3864 #Volos
+		division_template = "Merarchía Ippikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	}
+}

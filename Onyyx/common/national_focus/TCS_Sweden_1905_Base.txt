@@ -1,0 +1,12 @@
+focus_tree = {
+	id = SWE_focus_1905_base
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	shared_focus = SWE_new_riksdag
+	shared_focus = SWE_sufferage_question
+}

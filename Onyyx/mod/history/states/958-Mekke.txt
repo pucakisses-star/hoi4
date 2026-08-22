@@ -1,0 +1,14 @@
+state={
+	id=958
+	name="STATE_958"
+	provinces={
+		4981 5037 12883 
+	}
+	history = {
+		owner = OTT
+		add_core_of = OTT
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

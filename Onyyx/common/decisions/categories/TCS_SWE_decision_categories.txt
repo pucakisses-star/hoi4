@@ -1,0 +1,16 @@
+SWE_parliament = {
+	icon = SWE_parliament
+	allowed = {
+		original_tag = SWE
+	}
+	scripted_gui = swe_parliament_decision_ui
+	priority = 100
+}
+SWE_diplomacy = {
+	icon = SWE_diplomacy
+	allowed = {
+		original_tag = SWE
+	}
+	scripted_gui = swe_diplomacy_decision_ui
+	priority = 90
+}

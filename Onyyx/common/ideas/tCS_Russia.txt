@@ -1,0 +1,774 @@
+ideas = {
+
+    ### Country Events ###
+
+    country = {
+        RUS_agrarian_economy = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_agrarian_economy
+            modifier = {
+                production_speed_buildings_factor = -0.25
+                mobilization_speed = -0.15
+                MONTHLY_POPULATION = 0.05
+                stability_factor = -0.05
+				political_power_factor = -0.10
+				consumer_goods_factor = 0.15
+                production_factory_start_efficiency_factor = -0.20
+                industrial_capacity_factory = -0.10
+                industrial_capacity_dockyard = -0.10
+            }
+        }
+        RUS_1905_Revolution = {
+            allowed = {
+               always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+           removal_cost = -1
+           picture = RUS_1905_russian_revolution
+
+           modifier = {
+               stability_factor = -0.02
+               political_power_factor = -0.10
+               consumer_goods_factor = 0.05
+               army_morale_factor = -0.10
+               army_org_factor = -0.10
+            } 
+       }
+        RUS_revolutionary_agitation_a = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_revolutionary_agitation
+            
+            modifier = {
+                stability_factor = -0.15
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.15
+                conscription_factor = -0.15
+                army_morale_factor = -0.15
+                army_org_factor = -0.15
+                offence = -0.10
+                planning_speed = -0.10
+            }
+        }
+        RUS_revolutionary_agitation_b = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_revolutionary_agitation
+            
+            modifier = {
+                stability_factor = -0.10
+                political_power_factor = -0.10
+                consumer_goods_factor = 0.10
+                conscription_factor = -0.10
+                army_morale_factor = -0.10
+                army_org_factor = -0.10
+                offence = -0.08
+                planning_speed = -0.08
+            }
+        }
+        RUS_revolutionary_agitation_c = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_revolutionary_agitation
+            
+            modifier = {
+                stability_factor = -0.08
+                political_power_factor = -0.08
+                consumer_goods_factor = 0.10
+                conscription_factor = -0.08
+                army_morale_factor = -0.08
+                army_org_factor = -0.08
+                offence = -0.08
+            }
+        }
+        RUS_revolutionary_agitation_d = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_revolutionary_agitation
+            
+            modifier = {
+                stability_factor = -0.08
+                political_power_factor = -0.05
+                consumer_goods_factor = 0.08
+                conscription_factor = -0.05
+                army_morale_factor = -0.08
+                army_org_factor = -0.05
+                offence = -0.05
+            }
+        }
+        RUS_revolutionary_agitation_e = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_revolutionary_agitation
+            
+            modifier = {
+                stability_factor = -0.05
+                conscription_factor = -0.05
+                army_morale_factor = -0.05
+            }
+        }
+        RUS_railway_troop_idea = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_railway_troops_spirit
+
+            modifier = {
+                army_speed_factor = 0.15
+                out_of_supply_factor = -0.10
+                army_org_factor = 0.10
+            }
+        }
+        RUS_incompetent_general_staff_a = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_incompetent_general_staff
+
+            modifier = {
+                army_attack_factor = -0.5
+                army_defence_factor = -0.5
+                army_org_factor = -0.5
+                supply_consumption_factor = 0.20
+                experience_loss_factor = 0.2
+                planning_speed = -0.20
+                # research_bonus_factor = { ### Note for the Russian Dev, Tech is broken atm ###
+                #     land_doctrine = -0.10
+                # }
+            }
+        }
+        RUS_incompetent_general_staff_b = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_incompetent_general_staff
+
+            modifier = {
+                army_org_factor = -0.5
+                supply_consumption_factor = 0.20
+                planning_speed = -0.20
+                # research_bonus_factor = { ### Note for the Russian Dev, Tech is broken atm ###
+                #     land_doctrine = -0.10
+                # }
+            }
+        }
+        RUS_incompetent_general_staff_c = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_incompetent_general_staff
+
+            modifier = {
+                supply_consumption_factor = 0.20
+                planning_speed = -0.20
+                training_time_army_factor = 0.10
+                land_reinforce_rate = 0.01
+                # research_bonus_factor = { ### Note for the Russian Dev, Tech is broken atm ###
+                #     land_doctrine = -0.10
+                # }
+            }
+        }
+        RUS_incompetent_general_staff_d = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_incompetent_general_staff
+
+            modifier = {
+                supply_consumption_factor = 0.20
+                training_time_army_factor = 0.10
+                land_reinforce_rate = 0.01
+                decryption_factor = 0.2
+                recon_factor = 0.10
+                # research_bonus_factor = { ### Note for the Russian Dev, Tech is broken atm ###
+                #     land_doctrine = -0.10
+                # }
+            }
+        }
+        RUS_incompetent_admiralty_a = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_incompetent_admirality
+
+            modifier = {
+                naval_hit_chance = -0.05
+                naval_coordination = -0.05
+                navy_max_range_factor = -0.10
+                sortie_efficiency = -0.05
+                spotting_chance = -0.10
+                ships_at_battle_start = -0.05
+            }
+        }
+        RUS_incompetent_admiralty_b = {
+            #
+        }
+        RUS_incompetent_admiralty_c = {
+            #
+        }
+        RUS_military_mutinies_a = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_army_mutinies
+            
+            modifier = {
+                army_morale_factor = -0.15
+                army_org_factor = -0.15
+                army_attack_factor = -0.15
+                army_speed_factor = -0.15
+                attrition = 0.20
+            }
+        }
+        RUS_military_mutinies_b = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_army_mutinies
+            
+            modifier = {
+                army_morale_factor = -0.10
+                army_org_factor = -0.10
+                army_attack_factor = -0.10
+                army_speed_factor = -0.10
+                attrition = 0.15
+            }
+        }
+        RUS_military_mutinies_c = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_army_mutinies
+            
+            modifier = {
+                army_morale_factor = -0.08
+                army_org_factor = -0.08
+                army_attack_factor = -0.08
+                army_speed_factor = -0.08
+                attrition = 0.10
+            }
+        }
+        RUS_military_mutinies_d = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_army_mutinies
+            
+            modifier = {
+                army_morale_factor = -0.05
+                army_org_factor = -0.05
+                attrition = 0.05
+            }
+        }
+        RUS_pro_gov_tradeunions_idea = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = RUS_pro_gov_tradeunions
+
+            modifier = {
+                stability_factor = 0.05
+                consumer_goods_factor = -0.05
+            }
+        }
+        RUS_siberian_migration_idea = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                #
+            }
+            removal_cost = -1
+            picture = RUS_siberian_migration
+
+            modifier = {
+                consumer_goods_factor = 0.05
+                MONTHLY_POPULATION = 0.10
+                stability_factor = -0.05
+            }
+        }
+        RUS_switch_from_coal_to_oil_idea = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            #picture = 
+
+            modifier = {
+                consumer_goods_factor = -0.10
+                production_factory_max_efficiency_factor = 0.10
+            }
+        }
+        RUS_industrial_strikes_a = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = GFX_idea_FRA_factory_strikes
+
+            modifier = {
+                industrial_capacity_factory = -0.9
+                industrial_capacity_dockyard = -0.9
+                stability_factor = -0.1
+                war_support_factor = -0.1
+            }
+        }
+        RUS_industrial_strikes_b = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = GFX_idea_FRA_factory_strikes
+
+            modifier = {
+                industrial_capacity_factory = -0.9
+                industrial_capacity_dockyard = -0.9
+                stability_factor = -0.1
+                war_support_factor = -0.1
+            }
+        }
+        RUS_industrial_strikes_c = {
+            allowed = {
+                always = no
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            picture = GFX_idea_FRA_factory_strikes
+
+            modifier = {
+                industrial_capacity_factory = -0.9
+                industrial_capacity_dockyard = -0.9
+                stability_factor = -0.1
+                war_support_factor = -0.1
+            }
+        }
+    }
+
+
+
+    ### Ministers ###
+    head_of_government = {
+        RUS_sergei_witte_hog = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = sergei_witte_dead }
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = sergei_witte_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_sergei_witte_hog"
+            }
+            picture = RUS_sergei_witte
+            traits = {
+                lib_conservative_m
+                head_of_government_trait
+                #hog_naive_optimist
+            }
+            cancel_if_invalid = yes
+        }
+        RUS_ivan_goremykin_hog = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = ivan_goremykin_dead }
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = ivan_goremykin_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_ivan_goremykin_hog"
+            }
+            picture = RUS_ivan_goremykin
+            traits = {
+                auth_democrat_m
+                head_of_government_trait
+                #hog_silent_workhorse
+            }
+            cancel_if_invalid = yes
+        }
+        RUS_pyotr_stolypin_hog = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = pyotr_stolypin_dead }
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = pyotr_stolypin_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_pyotr_stolypin_hog"
+            }
+            picture = RUS_pyotr_stolypin
+            traits = {
+                auth_democrat_m
+                head_of_government_trait
+                #hog_local_tyrant
+            }
+            cancel_if_invalid = yes
+        }
+    }
+    foreign_minister = {
+        RUS_vladimir_lamsdorf_fm = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = vladimir_lamsdorf_dead }
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = vladimir_lamsdorf_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_vladimir_lamsdorf_fm"
+            }
+            picture = RUS_vladimir_lamsdorf
+            traits = {
+                lib_conservative_m
+                foreign_minister_trait
+                #for_relations_expert
+            }
+            cancel_if_invalid = yes
+        }
+        RUS_alexander_izvolsky_fm = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = alexander_izvolsky_dead }
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = alexander_izvolsky_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_alexander_izvolsky_fm"
+            }
+            picture = RUS_alexander_izvolsky
+            traits = {
+                lib_conservative_m
+                foreign_minister_trait
+                #for_relations_expert
+            }
+            cancel_if_invalid = yes
+        }
+        RUS_sergey_sazonov_fm = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = sergey_sazonov_dead }
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = sergey_sazonov_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_sergey_sazonov_fm"
+            }
+            picture = RUS_sergey_sazonov
+            traits = {
+                lib_conservative_m
+                foreign_minister_trait
+                #for_great_compromiser
+            }
+            cancel_if_invalid = yes
+        }
+    }
+    economy_minister = {
+        RUS_ivan_shipov_em = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = ivan_shipov_dead }
+                }    
+            }
+            visible = {
+                NOT = { has_country_flag = ivan_shipov_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_ivan_shipov_em"
+            }
+            picture = RUS_ivan_shipov
+            traits = {
+                lib_conservative_m
+                economy_minister_trait
+                #eco_reformer
+            }
+            cancel_if_invalid = yes 
+        }
+        RUS_vladimir_kokovtsov_em = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = vladimir_kokovtsov_dead }
+                }    
+            }
+            visible = {
+                NOT = { has_country_flag = vladimir_kokovtsov_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_vladimir_kokovtsov_em"
+            }
+            picture = RUS_vladimir_kokovtsov
+            traits = {
+                lib_conservative_m
+                economy_minister_trait
+                #eco_industrialiser
+            }
+            cancel_if_invalid = yes 
+        }
+    }
+    interior_minister = {
+        RUS_durnovo_petr_im = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = durnovo_petr_dead }
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = durnovo_petr_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_durnovo_petr_im"
+            }
+            picture = RUS_durnovo_petr
+            traits = {
+                auth_democrat_m
+                interior_minister_trait
+                #sec_secret_police_chief
+            }
+            cancel_if_invalid = yes
+        }
+        RUS_pyotr_stolypin_im = {
+            allowed = { original_tag = RUS }
+            available = {
+                custom_trigger_tooltip = {
+                    has_country_flag = can_replace_hog
+                    NOT = { has_country_flag = pyotr_stolypin_dead }
+                }
+            }
+            visible = {
+                NOT = { has_country_flag = pyotr_stolypin_dead }
+            }
+            on_add = {
+                log = "[GetDateText]: [Root.GetName]: add idea RUS_pyotr_stolypin_im"
+            }
+            picture = RUS_pyotr_stolypin
+            traits = {
+                auth_democrat_m
+                interior_minister_trait
+                #sec_efficient_sociopath
+            }
+            cancel_if_invalid = yes
+        }
+    }
+
+    ##############
+    # Companies
+    ##############
+
+    ### Weapons Manufacture ###
+    weapons_manufacturer = {
+        designer = yes
+        
+        RUS_tula_arms_plant = {
+            picture = RUS_tula_arms_plant
+            allowed = {
+                original_tag = RUS
+            }
+            available = {
+                has_completed_focus = RUS_tula_company_plant
+            }
+            traits = {
+                #infantry_equipment_producer_defense_3
+            }
+        }
+    }
+    
+    #### Tanks and Artillery ####
+    tank_manufacturer = {
+        designer = yes
+        
+        RUS_putilov_company = {
+            allowed = {
+                original_tag = RUS
+            }
+            available = {
+                has_completed_focus = RUS_putlov_company_plant
+            }
+            traits = {
+                #
+            }  
+        }
+        
+        RUS_RBVZ = {
+            picture = RUS_russo-baltic_cars
+            allowed = {
+                original_tag = RUS
+            }
+            available = {
+                has_completed_focus = RUS_fund_RBVZ_vehicle
+            }
+            traits = {
+                #
+            }
+        }
+        RUS_schneider_creusot = {
+            picture = RUS_schneidercreusot
+            allowed = {
+                original_tag = RUS
+            }
+            available = {
+                #has_completed_focus =
+            }
+            traits = {
+                #
+            }
+        }
+    }
+
+    #### Air and Naval ###
+    air_naval_manufacturer = {
+        designer = yes
+
+        RUS_RBVZ_sikorsky = {
+            picture = GFX_idea_RUS_RBVZ_sikorsky
+            allowed = {
+                original_tag = RUS
+            }
+            available = {
+                has_completed_focus = RUS_support_sikorsky
+            }
+            traits = {
+                #
+            }
+            #research_bonus = {
+
+            #}
+        }
+        
+        RUS_admiralty_shipyard = {
+            allowed ={
+                original_tag = RUS
+            }
+            available = {
+                has_completed_focus = RUS_admiralty_shipyards
+            }
+            traits = {
+                #capital_ship_producer_defense_2
+            }
+        }
+        RUS_nikolaev_shipyard = {
+            allowed ={
+                original_tag = RUS
+            }
+            available = {
+                has_completed_focus = RUS_nikolaev_shipbuilding
+            }
+            traits = {
+                #capital_ship_producer_defense_2
+            }
+        }
+    }
+}   

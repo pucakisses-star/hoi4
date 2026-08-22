@@ -1,0 +1,16 @@
+state={
+	id=981
+	name="STATE_981"
+	provinces={
+		4186 7105 10018 1200 1104 1184
+	}
+	history = {
+		owner = QNG
+		add_core_of = QNG
+		set_demilitarized_zone = yes
+	}
+
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

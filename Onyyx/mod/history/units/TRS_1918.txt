@@ -1,0 +1,101 @@
+division_template = {
+	name = "Brigada de Munte"
+
+	division_names_group = ROM_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+	support = {
+		# 
+	}
+}
+
+division_template = {
+	name = "Brigada de Cavalerie"
+	division_names_group = ROM_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Rebelii Transilvăneni"
+	division_names_group = ROM_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+######################################
+
+units = {
+	division= { 
+			name = "Brigada 1 de Munte"
+			location=9716 # Cluj
+			division_template="Brigada de Munte"
+			start_experience_factor=0.5
+			start_equipment_factor = 1.0
+			}
+	division= { 
+			name = "Brigada 2 de Munte"
+			location=9716 # Cluj
+			division_template="Brigada de Munte"
+			start_experience_factor=0.5
+			start_equipment_factor = 0.9
+			}
+	division= { 
+			name = "Brigada ”Sibiu”"
+			location=6679 #Sibiu
+			division_template="Rebelii Transilvăneni"
+			start_experience_factor=0.5
+			start_equipment_factor = 0.9
+			}
+	division= { 
+			name = "Brigada ”Oradea”"
+			location=3696 #Oradea
+			division_template="Rebelii Transilvăneni"
+			start_experience_factor=0.5
+			start_equipment_factor = 0.2
+			}
+	division= { 
+			name = "Brigada ”Marea Transilvania”"
+			location=3696 #Oradea
+			division_template="Rebelii Transilvăneni"
+			start_experience_factor=0.5
+			start_equipment_factor = 0.5
+			}
+	division= { 
+			name = "Brigada 1"
+			location=6682 #Arad
+			division_template="Rebelii Transilvăneni"
+			start_experience_factor=0.5
+			start_equipment_factor = 0.3
+			}
+	division= { 
+			name = "Brigada 2"
+			location=746 #Baia Mare
+			division_template="Rebelii Transilvăneni"
+			start_experience_factor=0.5
+			start_equipment_factor = 0.8
+			}
+	division= { 
+			name = "Brigada 1 Cavalerie ”Transilvania”"
+			location=9606 #Timișoara
+			division_template="Brigada de Cavalerie"
+			start_experience_factor=0.5
+			start_equipment_factor = 0.5
+			}

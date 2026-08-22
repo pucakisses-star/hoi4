@@ -1,0 +1,15 @@
+state={
+	id=815
+	name="STATE_815"
+	provinces={
+		7980 
+	}
+	history = {
+		owner = ASA
+		add_core_of = ASA
+		add_core_of = ETH
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

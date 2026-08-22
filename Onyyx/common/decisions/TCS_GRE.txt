@@ -1,0 +1,14 @@
+GRE_struggle_macedonia_cat = {
+    GRE_support_minority_towns = {
+        available = {
+            always = no
+        }
+        fire_only_once = yes
+        visible = {
+            always = yes
+        }
+        fixed_random_seed = no
+        complete_effect = {
+        }
+    }
+}

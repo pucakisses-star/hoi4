@@ -1,0 +1,22 @@
+state={
+	id=824
+	name="STATE_824"
+	provinces={
+		937 3939 
+	}
+	history = {
+		owner = AUS
+		add_core_of = AUS
+		1914.1.1 = {
+			owner = SER
+			controller = SER
+		}
+		1918.11.11 = {
+			owner = SER
+			controller = SER
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

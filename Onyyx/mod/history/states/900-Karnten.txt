@@ -1,0 +1,14 @@
+state={
+	id=900
+	name="STATE_900"
+	provinces={
+		668 3673 6673 11612 
+	}
+	history = {
+		owner = AUS
+		add_core_of = AUS
+	}
+	manpower=100000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

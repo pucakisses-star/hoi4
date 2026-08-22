@@ -1,0 +1,53 @@
+
+state={
+	id=165
+	name="STATE_165"
+	manpower = 1652291
+	
+	state_category = large_city
+
+	history={
+		owner = SPR
+		victory_points = {
+			9764 15
+		}
+		victory_points = {
+			6812 3
+		}
+		victory_points = {
+			6927 3
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			9764 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = SPR
+		
+		#cultures
+		add_to_array = { state_culture_array = 48 }
+       	add_to_array = { state_culture_array = 47 }
+		add_to_array = { state_culture_array = 32 }
+		add_to_array = { state_culture_array = 33 }
+		#culture percentage	
+       	add_to_array = { state_culture_array_num = 0.88 }
+       	add_to_array = { state_culture_array_num = 0.10 }
+		add_to_array = { state_culture_array_num = 0.01 }
+		add_to_array = { state_culture_array_num = 0.01 }
+		#religion
+      	add_to_array = { state_religion_array = 2 }
+		#relgion percentage
+      	add_to_array = { state_religion_array_num = 1.00 }
+	}
+	
+	resources = {
+		wood = 2
+		coal = 2
+	}
+
+	provinces={
+		854 872 897 3898 3899 6812 6836 6865 6927 6966 9764 9797 9824 11779 
+	}
+}

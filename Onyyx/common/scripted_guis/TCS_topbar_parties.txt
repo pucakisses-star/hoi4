@@ -1,0 +1,89 @@
+scripted_gui = {
+	TCS_topbar = {
+		window_name = "TCS_topbar"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			always = yes
+		}
+	}
+	TCS_topbar_anarchism_icon = {
+		window_name = "anarchism"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = leninism
+		}
+	}
+	TCS_topbar_marxism_icon = {
+		window_name = "marxism"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = marxism
+		}
+	}
+	TCS_topbar_rev_socialism_icon = {
+		window_name = "rev_socialism"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = rev_socialism
+		}
+	}
+	TCS_topbar_soc_democracy_icon = {
+		window_name = "soc_democracy"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = soc_democracy
+		}
+	}
+	TCS_topbar_soc_liberal_icon = {
+		window_name = "soc_liberal"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = soc_liberal
+		}
+	}
+	TCS_topbar_lib_conservatism_icon = {
+		window_name = "lib_conservatism"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = lib_conservatism
+		}
+	}
+	TCS_topbar_soc_conservatism_icon = {
+		window_name = "soc_conservatism"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = soc_conservatism
+		}
+	}
+	TCS_topbar_auth_democrat_icon = {
+		window_name = "auth_democrat"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = auth_democrat
+		}
+	}
+	TCS_topbar_pat_autocrat_icon = {
+		window_name = "pat_autocrat"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = pat_autocrat
+		}
+	}
+	TCS_topbar_fascism_icon = {
+		window_name = "fascism"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = fascism
+		}
+}

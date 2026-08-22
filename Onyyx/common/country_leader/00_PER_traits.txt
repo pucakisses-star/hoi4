@@ -1,0 +1,18 @@
+leader_traits = {
+	
+	PER_qajar_monarch = {
+		random = no
+		economy_cost_factor = -0.25
+		legitimacy_daily = 2
+		ai_get_ally_desire_factor = 100
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PER_anti_constitutionalist = {
+		random = no
+			political_power_factor = -0.25
+			stability_factor = -0.25
+	}
+		

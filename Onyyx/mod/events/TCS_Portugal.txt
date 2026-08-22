@@ -1,0 +1,251 @@
+﻿### Blanked Higuys Events ###
+
+# add_namespace = por
+# add_namespace = por_elections
+
+# country_event = {  #########gardens in macau
+#     id = por.0
+#     title = por.0.t
+#     desc = por.0.d
+#     picture = GFX_Lou_Lim_Ieoc_Garden
+
+#     is_triggered_only = yes
+#     fire_only_once = yes
+
+   
+#     option = {
+#     name = por.0.a
+#      add_political_power = 25
+#     }
+# }
+
+# country_event = { #####declaration of the 60 priests
+#     id = por.1
+#     title = por.1.t
+#     desc = por.1.d
+
+#     is_triggered_only = yes
+#     fire_only_once = yes
+
+   
+#     option = {
+#     name = por.1.a
+#      add_political_power = 50
+#         add_stability = 0.02
+
+#     }
+# }
+
+# country_event = {
+#     id = por.2
+#     title = por.2.t
+#     desc = por.2.d
+#     picture = GFX_Carlos_II_regicide_event
+
+#     is_triggered_only = yes
+#     fire_only_once = yes
+
+#     trigger = {
+#         tag = POR
+#         date > 1908.2.1
+#         date < 1908.2.31
+#     }
+
+#     option = {
+#     name = por.2.a
+#     news_event = { id = por.3 days = 1 }
+#     kill_country_leader = yes
+#     create_country_leader = {
+#     name = "Dom Manuel II"
+#     desc = "POLITICS_Manuel_II_DESC"
+#     picture = "Portrait_Portugal_Manuel_II.tga"
+#     ideology = soc_conservatism_subtype
+#         }
+#     }
+# }
+
+# news_event = {
+#     id = por.3
+#     title = por.3.t
+#     desc = por.3.d
+#     picture = GFX_Carlos_II_regicide_news_event
+#     major = yes
+
+#     is_triggered_only = yes
+
+#     option = {
+#         name = por.3.a
+#     }
+
+# }
+
+
+# country_event = {  
+#     id = por.4      #civil war event
+#     title = por.4.t
+#     desc = por.4.d
+#     picture = GFX_Portuguese_Civil_War
+
+#     is_triggered_only = yes
+#     fire_only_once = yes
+
+   
+#     option = {
+#     name = por.4.a
+#     news_event = { id = por.5 days = 1 }
+#     set_country_flag = POR_Civil_war
+#     RPO = {
+#       set_province_controller = 970
+#     }
+#     RPO = {
+#     transfer_state = 181
+#     transfer_state = 179
+#     transfer_state = 697
+#     }
+#     POR = {
+#     declare_war_on = {
+#     target = RPO
+#     type = annex_everything
+#                     }
+#                 }
+#     RPO = {
+#     load_oob = RPO_rebellion
+#             }
+#         }
+#     option = {
+#     name = por.4.b
+#     news_event = { id = por.5 days = 1 }
+#     set_country_flag = POR_Civil_war
+#     RPO = {
+#       set_province_controller = 970
+#     }
+#     RPO = {
+#     transfer_state = 181
+#     transfer_state = 179
+#     transfer_state = 697
+#     }
+#     POR = {
+#     declare_war_on = {
+#     target = RPO
+#     type = annex_everything
+#         }
+#     }
+#     RPO = {
+#     change_tag_from = POR
+#         }
+#     RPO = {
+#     load_oob = RPO_rebellion
+#         }
+#     }
+# }
+
+# news_event = {
+#     id = por.5
+#     title = por.5.t
+#     desc = por.5.d
+#     picture = GFX_Portuguese_civil_War_news
+#     major = yes
+
+#     is_triggered_only = yes
+
+#     option = {
+#         name = por.5.a
+#     }
+
+# }
+
+# news_event = {
+#     id = por.6
+#     title = por.6.t
+#     desc = por.6.d
+#     picture = GFX_Proclamation_of_the_republic_of_portugal
+#     major = yes
+
+#     is_triggered_only = yes
+
+#     option = {
+#         name = por.6.a
+#     }
+
+# }
+
+# country_event = {
+#     id = por.7
+#     title = por.7.t
+#     desc = por.7.d
+#     picture = GFX_5th_october_revolution
+#     major = yes
+
+#     is_triggered_only = yes
+
+#     option = {
+#         name = por.7.a
+#     }
+
+# }
+
+# country_event = {
+#     id = por_elections.1
+#     title = por_elections.1.t
+#     desc = por_elections.1.d
+#     picture = GFX_event_HOL_1905_elections
+#     major = yes
+    
+#    fire_only_once = yes
+
+#     trigger = {
+#         tag = POR
+#         date > 1905.12.1
+#         date < 1905.12.31
+#     }
+    
+# immediate = {    
+#     hidden_effect = {
+#         complete_national_focus = POR_1905_elections
+#     }
+# }
+#     option = {
+#         name = por_elections.1.a   #Progressive
+#         set_politics = {
+#             ruling_party = soc_liberal
+#             last_election = "1905.12.12"
+#             election_frequency = 48
+#             elections_allowed = yes
+#         }        
+#         add_popularity = { ideology = soc_liberal popularity = 0.10 }
+#         complete_national_focus = POR_progressive_victory
+#        ai_chance = {
+#             factor = 70
+#             modifier = {
+#                 is_historical_focus_on = yes
+#                 factor = 1
+#             }
+#         }
+#     }  
+#         option = {
+#         name = por_elections.1.b   #regenerator
+#         set_politics = {
+#             ruling_party = soc_conservatism
+#             last_election = "1905.12.12"
+#             election_frequency = 48
+#             elections_allowed = yes
+#         }        
+#         add_popularity = { ideology = soc_conservatism popularity = 0.10 }
+#         remove_ideas_with_trait = head_of_government
+#         remove_ideas_with_trait = economy_minister
+#         remove_ideas_with_trait = security_minister
+#         remove_ideas_with_trait = foreign_minister
+#         complete_national_focus = POR_regenerator_victory
+#        ai_chance = {
+#             factor = 30
+#             modifier = {
+#                 is_historical_focus_on = yes
+#                 factor = 0
+#             }
+#         }
+#     }
+# }
+
+
+
+

@@ -1,0 +1,167 @@
+var_persia_army_up_10 = {
+	add_to_variable = { var_army_persia = 10 }
+	custom_effect_tooltip = var_persia_army_up_10_tt
+}
+var_persia_army_down_10 = {
+	subtract_from_variable = { var_army_persia = 10 }
+	custom_effect_tooltip = var_persia_down_up_10_tt
+}
+move_reza_khan = {
+	custom_effect_tooltip =  PER_move_reza_khan_tt
+	if = { 
+		limit = {
+			check_variable = { var_reza_khan_position = 0 }
+		}
+		set_variable = { var_reza_khan_position = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_reza_khan_position = 1 }
+		}
+		set_variable = { var_reza_khan_position = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_reza_khan_position = 2 }
+		}
+		set_variable = { var_reza_khan_position = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_reza_khan_position = 3 }
+		}
+		set_variable = { var_reza_khan_position = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_reza_khan_position = 4 }
+		}
+		set_variable = { var_reza_khan_position = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_reza_khan_position = 5 }
+		}
+		set_variable = { var_reza_khan_position = 0 }
+	}
+}
+move_pessian = {
+	custom_effect_tooltip =  PER_move_pessian_tt
+	if = { 
+		limit = {
+			check_variable = { var_pessian_position = 0 }
+		}
+		set_variable = { var_pessian_position = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_pessian_position = 1 }
+		}
+		set_variable = { var_pessian_position = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_pessian_position = 2 }
+		}
+		set_variable = { var_pessian_position = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_pessian_position = 3 }
+		}
+		set_variable = { var_pessian_position = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_pessian_position = 4 }
+		}
+		set_variable = { var_pessian_position = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { var_pessian_position = 5 }
+		}
+		set_variable = { var_pessian_position = 0 }
+	}
+}
+####
+PER_iranian_decadence_up = {
+	custom_effect_tooltip = PER_iranian_decadence_up_tt
+	if = { 
+		limit = {
+			has_idea = PER_iranian_decadence
+		}
+		swap_ideas = {
+			remove_idea = PER_iranian_decadence
+			add_idea = PER_iranian_decadence_2
+		}	
+	}
+	else_if = { 
+		limit = {
+			has_idea = PER_iranian_decadence_2
+		}
+		swap_ideas = {
+			remove_idea = PER_iranian_decadence_2
+			add_idea = PER_iranian_decadence_3
+		}	
+	}
+	else_if = { 
+		limit = {
+			has_idea = PER_iranian_decadence_3
+		}
+		swap_ideas = {
+			remove_idea = PER_iranian_decadence_3
+			add_idea = PER_iranian_decadence_4
+		}	
+	}
+	else_if = { 
+		limit = {
+			has_idea = PER_iranian_decadence_4
+		}
+		swap_ideas = {
+			remove_idea = PER_iranian_decadence_4
+			add_idea = PER_iranian_decadence_5
+		}	
+	}
+	else_if = { 
+		limit = {
+			has_idea = PER_iranian_decadence_5
+		}
+		remove_ideas = PER_iranian_decadence_5
+	}
+}
+PER_remove_decadence = {
+	if = { 
+		limit = {
+			has_idea = PER_iranian_decadence
+		}
+			remove_ideas = PER_iranian_decadence
+		}	
+	if = { 
+		limit = {
+			has_idea = PER_iranian_decadence_2
+		}
+			remove_ideas = PER_iranian_decadence_2
+	}
+	if = { 
+		limit = {
+			has_idea = PER_iranian_decadence_3
+		}
+			remove_ideas = PER_iranian_decadence_3
+	}
+	if = { 
+		limit = {
+			has_idea = PER_iranian_decadence_4
+		}
+			remove_ideas = PER_iranian_decadence_4
+	}
+	if = { 
+		limit = {
+			has_idea = PER_iranian_decadence_5
+		}
+			remove_ideas = PER_iranian_decadence_5
+	}
+}
+			
+			
+		

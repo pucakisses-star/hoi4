@@ -1,0 +1,292 @@
+﻿# Fiuman Events
+
+add_namespace = crn
+
+country_event = { #Impresa di Fiume
+    id = crn.1
+    title = crn.1.t
+    desc = crn.1.d
+    picture = GFX_event_impresa_di_fiume
+	
+    trigger = {
+		NOT = {
+			tag = ITA
+		}
+		NOT = {
+			tag = CRN
+		}
+		NOT = {
+			tag = AUS
+		}
+		owns_state = 848
+        date > 1919.8.1
+    }
+
+    fire_only_once = yes
+	
+	immediate = {
+        hidden_effect = {
+			set_country_flag = dannunzio_happened
+			CRN = {
+				set_country_flag = impresa_di_fiume
+				transfer_state = 848
+				load_oob = "CRN_impresa_di_fiume"
+				set_division_template_lock = {
+					division_template = "Legionari"
+					is_locked = yes
+				}
+
+			}
+		}
+	}
+
+    option = {
+        name = crn.1.a
+        custom_effect_tooltip = crn.1.a.tooltip
+    }
+}
+country_event = { #Natale di Sangue
+    id = crn.2
+    title = crn.2.t
+    desc = crn.2.d
+    picture = GFX_event_impresa_di_fiume
+	
+    trigger = {
+		tag = CRN
+        date > 1920.12.24
+		has_country_flag = impresa_di_fiume
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = crn.2.a
+        custom_effect_tooltip = crn.2.a.tooltip
+		add_political_power = -100
+		add_war_support = -0.5
+		add_manpower = -26
+        hidden_effect = {
+			set_country_flag = natale_di_sangue
+			delete_unit_template_and_units = {
+				division_template = "Legionari"
+			}
+			set_politics = {
+				ruling_party = soc_conservatism
+				last_election = "1916.4.24"
+				election_frequency = 60
+				elections_allowed = yes
+			}
+			country_event = {
+				id = crn.3
+				days = 121
+			}
+			clr_country_flag = impresa_di_fiume
+			clr_country_flag = fascism_coalition
+			clr_country_flag = rev_socialism_coalition
+			clr_country_flag = lib_conservatism_coalition
+			clr_country_flag = soc_conservatism_opposition
+			set_country_flag = fascism_opposition
+			set_country_flag = rev_socialism_opposition
+			set_country_flag = lib_conservatism_opposition
+			set_country_flag = soc_conservatism_coalition
+			set_cosmetic_tag = CRN_LIB
+		}
+    }
+}
+country_event = { #Elezioni Parlamentari a Fiume
+    id = crn.3
+    title = crn.3.t
+    desc = crn.3.d
+    picture = GFX_event_impresa_di_fiume
+	
+	is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = crn.3.a
+        custom_effect_tooltip = crn.3.a.tooltip
+		add_political_power = 30
+        hidden_effect = {
+			add_popularity = { ideology = soc_conservatism popularity = 0.2 }
+		}
+    }
+    option = {
+        name = crn.3.b
+        custom_effect_tooltip = crn.3.b.tooltip
+		add_war_support = 0.3
+		add_political_power = -50
+        hidden_effect = {
+			set_politics = {
+				ruling_party = lib_conservatism
+				last_election = "1916.4.24"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			every_country = {
+				if = {
+					limit = {
+						has_country_flag = dannunzio_happened
+					}
+				country_event = {
+					id = crn.4
+					days = 5
+				}
+				}
+			}
+			set_country_flag = fascism_coalition
+			set_country_flag = rev_socialism_coalition
+			set_country_flag = lib_conservatism_coalition
+			set_country_flag = soc_conservatism_opposition
+			clr_country_flag = fascism_opposition
+			clr_country_flag = rev_socialism_opposition
+			clr_country_flag = lib_conservatism_opposition
+			clr_country_flag = soc_conservatism_coalition
+		}
+    }
+}
+country_event = { #Denonuce?
+    id = crn.4
+    title = crn.4.t
+    desc = crn.4.d
+    picture = GFX_event_impresa_di_fiume
+	
+	is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = crn.4.a
+		add_political_power = 5
+		hidden_effect = {
+		CRN = {
+			country_event = {
+				id = crn.5
+				days = 5
+			}
+		}
+		}
+    }
+	option = {
+		name = crn.4.b
+		add_war_support = 0.05
+		hidden_effect = {
+		CRN = {
+			country_event = {
+				id = crn.6
+				days = 5
+			}
+		}
+		ITA = {
+			country_event = {
+				id = crn.7
+				days = 5
+			}
+		}
+		USA = {
+			country_event = {
+				id = crn.8
+				days = 5
+			}
+		}
+		ENG = {
+			country_event = {
+				id = crn.8
+				days = 5
+			}
+		}
+		FRA = {
+			country_event = {
+				id = crn.8
+				days = 5
+			}
+		}
+		}
+    }
+}
+country_event = { #Yugoslav Denounce
+    id = crn.5
+    title = crn.5.t
+    desc = crn.5.d
+    picture = GFX_event_impresa_di_fiume
+	
+	is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = crn.5.a
+		add_political_power = -5
+		FROM = {
+			add_opinion_modifier = { target = ROOT modifier = crn_yug_denounce } 
+		}
+		add_opinion_modifier = { target = FROM modifier = crn_yug_denounce } 
+    }
+}
+country_event = { #Yugoslav threaten War
+    id = crn.6
+    title = crn.6.t
+    desc = crn.6.d
+    picture = GFX_event_impresa_di_fiume
+	
+	is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = crn.6.a
+		add_war_support = 0.2
+		add_stability = -0.05
+    }
+}
+country_event = { #Yugoslav threaten War - Italy
+    id = crn.7
+    title = crn.7.t
+    desc = crn.7.d
+    picture = GFX_event_impresa_di_fiume
+	
+	is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = crn.7.a
+		add_political_power = 10
+		give_guarantee = CRN
+		PREV = {
+			country_event = {
+				id = crn.9
+				days = 5
+			}
+		}
+    }
+    option = {
+        name = crn.7.b
+		add_war_support = -0.1
+		add_popularity = { ideology = fascism popularity = 0.1 }
+    }
+}
+country_event = { #Yugoslav threaten War - USA-UK-FRA
+    id = crn.8
+    title = crn.8.t
+    desc = crn.8.d
+    picture = GFX_event_impresa_di_fiume
+	
+	is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = crn.8.a
+		give_guarantee = CRN
+		PREV = {
+			country_event = {
+				id = crn.10
+				days = 5
+			}
+		}
+    }
+    option = {
+        name = crn.8.b
+    }
+}

@@ -1,0 +1,177 @@
+
+### 1905 Liberal Tree Netherlands ###
+
+shared_focus = {
+	id = HOL_luchtvaart_commissie
+	icon = GFX_luchtvaart_commissie
+	available = {
+		date > 1910.03.10
+	}
+	cost = 10
+	x = 12
+	y = 0
+}
+shared_focus = {
+	id = HOL_defensive_research
+	icon = GFX_defensive_research
+	cost = 10
+	prerequisite = {
+		focus = HOL_luchtvaart_commissie
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = -1
+	y = 1
+}
+shared_focus = {
+	id = HOL_luchtballons
+	icon = GFX_luchtballons
+	cost = 10
+	prerequisite = {
+		focus = HOL_defensive_research
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = -2
+	y = 2
+}
+shared_focus = {
+	id = HOL_offensive_research
+	icon = GFX_offensive_research
+	cost = 10
+	prerequisite = {
+		focus = HOL_luchtvaart_commissie
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = 1
+	y = 1
+}
+shared_focus = {
+	id = HOL_luchtschepen
+	icon = GFX_luchtschip
+	cost = 10
+	prerequisite = {
+		focus = HOL_defensive_research
+		focus = HOL_offensive_research
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = 0
+	y = 2
+}
+shared_focus = {
+	id = HOL_train_staff
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = HOL_luchtballons
+	}
+	prerequisite = {
+		focus = HOL_luchtschepen
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = -1
+	y = 3
+}
+shared_focus = {
+	id = HOL_vliegtuigen
+	icon = GFX_vliegtuigen
+	cost = 10
+	prerequisite = {
+		focus = HOL_offensive_research
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = 2
+	y = 2
+}
+shared_focus = {
+	id = HOL_order_new_material
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = HOL_luchtschepen
+	}
+	prerequisite = {
+		focus = HOL_vliegtuigen
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = 1
+	y = 3
+}
+shared_focus = {
+	id = HOL_luchtvaartafdeling
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = HOL_train_staff
+	}
+	prerequisite = {
+		focus = HOL_order_new_material
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = 0
+	y = 4
+}
+shared_focus = {
+	id = HOL_our_own_planes
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = HOL_luchtvaartafdeling
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = 2
+	y = 5
+}
+shared_focus = {
+	id = HOL_soesterberg
+	icon = GFX_soesterberg
+	cost = 10
+	prerequisite = {
+		focus = HOL_airfields
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = -1
+	y = 6
+}
+shared_focus = {
+	id = HOL_farman_license
+	icon = GFX_farman
+	cost = 10
+	prerequisite = {
+		focus = HOL_our_own_planes
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = 3
+	y = 6
+}
+shared_focus = {
+	id = HOL_schiphol
+	icon = GFX_schiphol
+	cost = 10
+	prerequisite = {
+		focus = HOL_airfields
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = -3
+	y = 6
+}
+shared_focus = {
+	id = HOL_airfields
+	icon = GFX_goal_unknown
+	cost = 10
+	prerequisite = {
+		focus = HOL_luchtvaartafdeling
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = -2
+	y = 5
+}
+shared_focus = {
+	id = HOL_open_fokker
+	icon = GFX_fokker
+	cost = 10
+	prerequisite = {
+		focus = HOL_our_own_planes
+	}
+	relative_position_id = HOL_luchtvaart_commissie
+	x = 1
+	y = 6
+}

@@ -1,0 +1,14 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+                limit = {
+                  has_start_date < 1905.1.2
+                }
+            	  AUS = {
+              	  country_event = { id = aus.1 }
+            	  }
+            }
+        }
+    }
+}

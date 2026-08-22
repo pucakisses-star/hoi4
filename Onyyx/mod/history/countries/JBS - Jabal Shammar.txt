@@ -1,0 +1,50 @@
+﻿capital = 675
+
+oob = ""
+
+set_research_slots = 3
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	#early_fighter = 1
+	##gwtank = 1
+	#basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+
+}
+
+set_politics = {
+	ruling_party = auth_democrat
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+set_popularities = {
+    leninism = 0
+    marxism = 0
+    rev_socialism = 0
+    soc_democracy = 0
+    soc_liberal = 0
+    lib_conservatism = 0
+    soc_conservatism = 0
+    auth_democrat = 0
+    pat_autocrat = 100
+    fascism = 0
+}
+
+
+create_country_leader = {
+	name = "Abd al-Aziz ibn Mutib"
+	desc = "POLITICS_ABDULAZIZ_DESC"
+	picture = "Portrait_Abd_al-Aziz_ibn_Mutib.tga"
+	expire = "1965.1.1"
+	ideology = auth_democrat_subtype
+	traits = {
+		#
+	}
+}

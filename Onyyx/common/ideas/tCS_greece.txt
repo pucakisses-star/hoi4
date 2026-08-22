@@ -1,0 +1,791 @@
+ideas = {
+
+	country = {
+
+
+## New Ideas from Sven
+
+		GRE_idea_Megali_Idea = {
+
+
+			picture = megali_idea
+
+			allowed = {
+				original_tag = "GRE"
+			}
+
+			removal_cost = -1
+
+		    modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.15
+                justify_war_goal_time = -0.20
+			}
+		}
+
+		GRE_idea_Macedonian_Struggle = {
+
+
+			picture = macedonian_struggle
+
+			allowed = {
+				original_tag = "GRE"
+			}
+
+			removal_cost = -1
+
+		    modifier = {
+				war_support_factor = 0.05
+                political_power_gain = -0.05
+			}
+		}
+
+		GRE_1897_defeat = {
+
+			picture = 1897_defeat
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+			   land_doctrine = -0.5
+			}
+
+			modifier = {
+				army_org_factor = -0.1
+				max_command_power = -50
+				command_power_gain_mult = -0.5
+				army_morale_factor = -0.1
+				army_chief_cost_factor = -0.5
+				high_command_cost_factor = -0.5
+			}
+		}
+
+
+		GRE_1897_defeat_2 = {
+
+			picture = 1897_defeat
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+			   land_doctrine = -0.5
+			}
+
+			modifier = {
+				army_org_factor = -0.08
+				max_command_power = -50
+				command_power_gain_mult = -0.5
+				army_morale_factor = -0.08
+				army_chief_cost_factor = -0.5
+				high_command_cost_factor = -0.5
+			}
+		}
+
+		GRE_1897_defeat_3 = {
+
+			picture = 1897_defeat
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+			   land_doctrine = -0.5
+			}
+
+			modifier = {
+				army_org_factor = -0.06
+				max_command_power = -50
+				command_power_gain_mult = -0.5
+				army_morale_factor = -0.06
+				army_chief_cost_factor = -0.5
+				high_command_cost_factor = -0.5
+			}
+		}
+
+		GRE_1897_defeat_4 = {
+
+			picture = 1897_defeat
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+			   land_doctrine = -0.5
+			}
+
+			modifier = {
+				army_org_factor = -0.04
+				max_command_power = -50
+				command_power_gain_mult = -0.5
+				army_morale_factor = -0.04
+				army_chief_cost_factor = -0.5
+				high_command_cost_factor = -0.5
+			}
+		}
+
+		GRE_1897_defeat_5 = {
+
+			picture = 1897_defeat
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+			   land_doctrine = -0.5
+			}
+
+			modifier = {
+				army_org_factor = -0.02
+				max_command_power = -50
+				command_power_gain_mult = -0.5
+				army_morale_factor = -0.02
+				army_chief_cost_factor = -0.5
+				high_command_cost_factor = -0.5
+			}
+		}
+
+		GRE_inneficient_military_bureaucracy  = {
+
+			picture = GRE_inneficient_military_bureaucracy
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+			   land_doctrine = -0.4
+			}
+
+			modifier = {
+				max_command_power = -40
+				command_power_gain_mult = -0.4
+				army_chief_cost_factor = -0.4
+				high_command_cost_factor = -0.4
+			}
+		}
+
+		GRE_Troubled_Politics = {
+
+			picture = generic_disjointed_gov
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.60
+				drift_defence_factor =  -0.20
+				stability_factor = -0.2
+			}
+		}
+
+		GRE_Troubled_Politics_2 = {
+
+			picture = generic_disjointed_gov
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.50
+				drift_defence_factor =  -0.20
+				stability_factor = -0.2
+			}
+		}
+
+		GRE_international_finances_commission = {
+
+			picture = finances_control
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				economy_cost_factor = 0.25
+			}
+		}
+
+		GRE_international_finances_commission_2 = {
+
+			picture = Money3Asset
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				economy_cost_factor = 0.20
+			}
+		}
+
+
+		GRE_international_finances_commission_3 = {
+
+			picture = Money3Asset
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				economy_cost_factor = 0.10
+			}
+		}
+
+		GRE_client_renewal = {
+
+			picture = PER_british_oil_payments2
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+		GRE_war_against_gambling = {
+
+			picture = war_on_gambling
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		GRE_war_against_gambling_2 = {
+
+			picture = war_on_gambling
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.05
+				political_power_factor = 0.10
+			}
+		}
+
+		GRE_maintain_the_economy = {
+
+			picture = generic_goods_red_bonus
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = 0.05
+				consumer_goods_factor = 0.01
+			}
+		}		
+
+		GRE_support_for_the_farmers = {
+
+			picture = generic_goods_red_bonus
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                MONTHLY_POPULATION = 0.1
+				consumer_goods_factor = 0.02
+			}
+		}		
+
+		GRE_industrial_legacy = {
+
+			picture = generic_goods_red_bonus
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+              production_speed_industrial_complex_factor = 0.05
+			  	production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		GRE_increase_veterans_pension = {
+
+			picture = generic_infantry_bonus
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			  	consumer_goods_factor = 0.05
+			}
+		}			
+		GRE_support_immigration = {
+
+			picture = prc_low_popular_support2
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				MONTHLY_POPULATION = -0.1
+			}
+		}		
+		GRE_lower_the_taxes = {
+
+			picture = generic_goods_red_bonus
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+              stability_factor = 0.05
+			  industrial_capacity_factory = 0.05
+			  consumer_goods_factor = 0.05
+			}
+		}			
+		GRE_diversify_the_farming_sector = {
+
+			picture = generic_agrarian_reform
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}	
+		GRE_diversify_the_farming_sector_2 = {
+
+			picture = generic_agrarian_reform
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}	
+		GRE_diversify_the_farming_sector_3 = {
+
+			picture = generic_agrarian_reform
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}	
+		GRE_diversify_the_farming_sector_4 = {
+
+			picture = generic_agrarian_reform
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}	
+		GRE_never_another_stafidika = {
+
+			picture = generic_agrarian_reform
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				
+			}
+		}			
+	}
+
+	head_of_government = {
+		GRE_theodoros_diligiannis = {
+			allowed = { original_tag = GRE }
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+				NOT = { has_country_flag = GRE_diligiannis_assassinated }
+			}
+			picture = theodoros_diligiannis
+			traits = {
+				soc_conservative_m
+				head_of_government_trait
+			}
+			cancel_if_invalid = yes
+		}
+		GRE_dimitrios_rallis = {
+			allowed = { original_tag = GRE }
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+		  	has_country_flag = GRE_diligiannis_assassinated
+			}
+			picture = dimitrios_rallis
+			traits = {
+				soc_conservative_m
+				head_of_government_trait
+			}
+			cancel_if_invalid = yes
+		}
+		GRE_georgios_theotokis = {
+			allowed = { original_tag = GRE }
+			allowed_to_remove = {
+				always = no
+			}
+			visible = {
+		  	  has_country_flag = GRE_rallis_ousted
+			}
+			picture = georgios_theotokis
+			traits = {
+				soc_liberal_m
+				head_of_government_trait
+			}
+			cancel_if_invalid = yes
+		}
+	}
+
+	economy_minister = {
+	GRE_nikolaos_gounarakis = {
+		allowed = { original_tag = GRE }
+		allowed_to_remove = {
+			always = no
+		}
+		visible = {
+			NOT = { has_country_flag = GRE_diligiannis_assassinated }
+		}
+		picture = nikolaos_gounarakis
+		traits = {
+			soc_conservative_m
+			economy_minister_trait
+		}
+		cancel_if_invalid = yes
+	}
+
+	GRE_dimitrios_rallis_economy = {
+		allowed = { original_tag = GRE }
+		allowed_to_remove = {
+			always = no
+		}
+		visible = {
+			has_country_flag = GRE_diligiannis_assassinated
+		}
+		picture = dimitrios_rallis
+		traits = {
+			soc_conservative_m
+			economy_minister_trait
+		}
+		cancel_if_invalid = yes
+	}
+	GRE_anargiros_simopoulos = {
+		allowed = { original_tag = GRE }
+		allowed_to_remove = {
+			always = no
+		}
+		visible = {
+			has_country_flag = GRE_rallis_ousted
+		}
+		picture = anargiros_simopoulos
+		traits = {
+			soc_liberal_m
+			economy_minister_trait
+		}
+		cancel_if_invalid = yes
+	}
+ }
+
+ foreign_minister = {
+ GRE_alexandros_skouzes = {
+	allowed = { original_tag = GRE }
+	allowed_to_remove = {
+		always = no
+	}
+
+	picture = alexandros_skouzes
+
+	traits = {
+		lib_conservative_m
+		foreign_minister_trait
+	}
+ }
+ GRE_dimitrios_rallis_foreign = {
+	allowed = { original_tag = GRE }
+	allowed_to_remove = {
+		always = no
+	}
+
+	picture = dimitrios_rallis
+	visible = {
+		has_country_flag = GRE_diligiannis_assassinated
+	}
+	traits = {
+		soc_conservative_m
+		foreign_minister_trait
+	}
+	cancel_if_invalid = yes
+ }
+}
+
+ interior_minister = {
+ GRE_theodoros_diligiannis_interior = {
+	 allowed = { original_tag = GRE }
+	 allowed_to_remove = {
+		 always = no
+	 }
+
+	 visible = {
+		 NOT = { has_country_flag = GRE_diligiannis_assassinated }
+	 }
+
+	 picture = theodoros_diligiannis
+	 traits = {
+		soc_conservative_m
+		interior_minister_trait
+	 }
+	 cancel_if_invalid = yes
+ }
+ GRE_kyriakoulis_mavromichalis = {
+	 allowed = { original_tag = GRE }
+	 allowed_to_remove = {
+		 always = no
+	 }
+
+	 visible = {
+		 has_country_flag = GRE_diligiannis_assassinated
+	 }
+
+	 picture = kyriakoulis_mavromichalis
+	 traits = {
+		lib_conservative_m
+		interior_minister_trait
+	 }
+	 cancel_if_invalid = yes
+ }
+ GRE_nikolaos_kalogeropoulos = {
+	allowed = { original_tag = GRE }
+	allowed_to_remove = {
+		always = no
+	}
+
+    visible = {
+	  has_country_flag = GRE_rallis_ousted
+	}
+
+	picture = nikolaos_kalogeropoulos
+
+	traits = {
+		lib_conservative_m
+	    interior_minister_trait
+	}
+
+	cancel_if_invalid = yes
+ }
+}
+}

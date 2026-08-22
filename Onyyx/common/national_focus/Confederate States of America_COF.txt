@@ -1,0 +1,82 @@
+focus_tree = {
+	id = COF_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = COF
+		}
+	}
+	#Focus for ERGR
+	focus = {
+		id = cof_focus_ergr
+		icon = GFX_focus_smiling_buddha
+		x = 30
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = cof_focus_fsadf }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Its Good to be in Dixie
+	focus = {
+		id = cof_focus_itsgoodtobeindixie
+		icon = GFX_goal_unknown
+		x = 19
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for sdaf
+	focus = {
+		id = cof_focus_sdaf
+		icon = GFX_goal_unknown
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = cof_focus_itsgoodtobeindixie }
+		mutually_exclusive = { focus = cof_focus_fsadf }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for fsadf
+	focus = {
+		id = cof_focus_fsadf
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = cof_focus_itsgoodtobeindixie }
+		mutually_exclusive = { focus = cof_focus_sdaf }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for sdafsd
+	focus = {
+		id = cof_focus_sdafsd
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = cof_focus_sdaf }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

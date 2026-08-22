@@ -1,0 +1,20 @@
+state={
+	id=726
+	name="STATE_726"
+	manpower=33000
+	state_category = small_island
+
+	history={
+		owner = UCT
+		add_core_of = UCT
+		buildings = {
+			infrastructure = 1
+			7290 = {
+				naval_base = 1 
+			}
+		}
+	}
+	provinces={
+		7290 13080 
+	}
+}

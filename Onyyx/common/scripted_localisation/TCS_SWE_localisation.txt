@@ -1,0 +1,176 @@
+##### 0 = khuzestan (useless)
+##### 1 = Gilan (slighty more power)
+##### 2 = isfahan 
+##### 3 = Tabriz
+##### 4 = Teheran
+##### 5 = Golestan
+
+
+
+
+defined_text = {
+	name = KingInfluence
+	
+	text = {
+		trigger = {
+			check_variable = { 
+				var = monarch_power_level
+				value = 20
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = Swe_Constitutional
+	}
+	
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 
+					var = monarch_power_level
+					value = 20
+					compare = greater_than
+				}
+				check_variable = { 
+					var = monarch_power_level
+					value = 40
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = Swe_Weak
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 
+					var = monarch_power_level
+					value = 40
+					compare = greater_than
+				}
+				check_variable = { 
+					var = monarch_power_level
+					value = 60
+					compare = less_than
+				}
+			}
+		}
+		localization_key = Swe_Equal
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 
+					var = monarch_power_level
+					value = 60
+					compare = greater_than_or_equals
+				}
+				check_variable = { 
+					var = monarch_power_level
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		localization_key = Swe_Strong
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 
+					var = monarch_power_level
+					value = 80
+					compare = greater_than_or_equals
+				}
+				check_variable = { 
+					var = monarch_power_level
+					value = 100
+					compare = less_than
+				}
+			}
+		}
+		localization_key = Swe_Authoritarian
+	}
+}
+defined_text = {
+	name = DiploBalance
+	
+	text = {
+		trigger = {
+			check_variable = { 
+				var = diplomacy_balance
+				value = 20
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = Swe_Brit_Alligned
+	}
+	
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 
+					var = diplomacy_balance
+					value = 20
+					compare = greater_than
+				}
+				check_variable = { 
+					var = diplomacy_balance
+					value = 40
+					compare = less_than_or_equals
+				}
+			}
+		}
+		localization_key = Swe_Brit_Leaniant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 
+					var = diplomacy_balance
+					value = 40
+					compare = greater_than
+				}
+				check_variable = { 
+					var = diplomacy_balance
+					value = 60
+					compare = less_than
+				}
+			}
+		}
+		localization_key = Swe_Neutral
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 
+					var = diplomacy_balance
+					value = 60
+					compare = greater_than_or_equals
+				}
+				check_variable = { 
+					var = diplomacy_balance
+					value = 80
+					compare = less_than
+				}
+			}
+		}
+		localization_key = Swe_Ger_Leaniant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 
+					var = diplomacy_balance
+					value = 80
+					compare = greater_than_or_equals
+				}
+				check_variable = { 
+					var = diplomacy_balance
+					value = 100
+					compare = less_than
+				}
+			}
+		}
+		localization_key = Swe_Ger_Alligned
+	}
+}

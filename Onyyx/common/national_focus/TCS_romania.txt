@@ -1,0 +1,1345 @@
+   focus_tree = {
+	id = romanian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ROM
+		}
+	}
+
+	@industrial_tree_center = 5
+
+	@industrial_tree_left = 3
+	@industrial_tree_center_left = 4
+	@industrial_tree_left_left = 2
+
+	@industrial_tree_right = 7
+	@industrial_tree_center_right = 6
+	@industrial_tree_center_right
+
+	@military_tree_center = 15
+
+	@expansionism_tree_left = 23
+	@expansionism_tree_center = 25
+	@expansionism_tree_right = 27
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	############################
+	###### Military Tree #######
+	############################
+
+
+
+	############################
+	###### Expansion Tree ######
+	############################
+
+	focus = {
+		id = ROM_Dacian_Revanchism
+		icon = GFX_ROM_Greater_Romania
+		x = @expansionism_tree_center
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_government = soc_conservatism
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ROM_dacian_revanchism
+				remove_idea = ROM_greater_romania
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_First_Conscription_Plan
+		prerequisite = { focus = ROM_Dacian_Revanchism }
+		icon = GFX_ROM_Standing_Army
+		x = @expansionism_tree_center
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_government = soc_conservatism
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = limited_conscription
+		}
+	}
+
+	focus = {
+		id = ROM_Negotiate_With_Bulagria
+		prerequisite = { focus = ROM_First_Conscription_Plan }
+		icon = GFX_ROM_Negotiations_with_Bulgaria
+		x = @expansionism_tree_left
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_Request_Bulgaria_Hand_Over_Dobrogea
+		prerequisite = { focus = ROM_Negotiate_With_Bulagria }
+		icon = GFX_focus_generic_treaty
+		x = @expansionism_tree_left
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			BUL = {
+				country_event = romania.50
+			}	
+		}
+	}
+
+	focus = {
+		id = ROM_Demand_Dobrogea_Annexation
+		prerequisite = { focus = ROM_Request_Bulgaria_Hand_Over_Dobrogea }
+		icon = GFX_ROM_Bulgaria_in_the_Crosshairs
+		x = @expansionism_tree_left
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_Second_Balkan_War
+		prerequisite = { focus = ROM_Demand_Dobrogea_Annexation }
+		icon = GFX_ROM_First_Balkan_War
+		x = @expansionism_tree_left
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_Cooperate_with_Serbia
+		prerequisite = { focus = ROM_Second_Balkan_War }
+		icon = GFX_ROM_Balkan_Cooperation
+		x = @expansionism_tree_left
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_Focus_on_Bessarabia
+		prerequisite = { focus = ROM_First_Conscription_Plan }
+		mutually_exclusive = { focus = ROM_Focus_on_Transylvania }
+		icon = GFX_ROM_Bessarabian_Focus
+		x = @expansionism_tree_center
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ROM_Focus_On_Bessarabia
+			custom_effect_tooltip = ROM_gain_25_pp
+			hidden_effect = {
+				add_political_power = 25
+			}			
+		}
+	}
+
+	focus = {
+		id = ROM_The_Chisinau_Plot
+		prerequisite = { focus = ROM_Focus_on_Bessarabia }
+		icon = GFX_ROM_Support_Underground_Rebels
+		x = @expansionism_tree_center
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ROM_Chisinau_Plot
+			custom_effect_tooltip = ROM_Bessarabia_Decisions
+			country_event = romania.75
+			hidden_effect = {
+				set_country_flag = ROM_Bessarabian_plot
+			}	
+		}
+	}
+
+	focus = {
+		id = ROM_Talk_to_the_Central_Powers
+		prerequisite = { focus = ROM_The_Chisinau_Plot }
+		icon = GFX_ROM_Talks_with_the_Central_Powers
+		x = @expansionism_tree_center
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_Join_Central_Powers
+		prerequisite = { focus = ROM_Talk_to_the_Central_Powers }
+		icon = GFX_goal_unknown
+		x = @expansionism_tree_center
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_German_Troop_Expertise
+		prerequisite = { focus = ROM_Join_Central_Powers }
+		icon = GFX_import_soldiers
+		x = @expansionism_tree_center
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_Focus_on_Transylvania
+		prerequisite = { focus = ROM_First_Conscription_Plan }
+		mutually_exclusive = { focus = ROM_Focus_on_Bessarabia }
+		icon = GFX_ROM_Transylvanian_Focus
+		x = @expansionism_tree_right
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ROM_Focus_On_Transylvania
+			custom_effect_tooltip = ROM_gain_25_pp
+			hidden_effect = {
+				add_political_power = 25
+			}			
+		}
+	}
+
+	focus = {
+		id = ROM_Prezan_Plan
+		prerequisite = { focus = ROM_Focus_on_Transylvania }
+		icon = GFX_ROM_Prezans_Plan
+		x = @expansionism_tree_right
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ROM_Prezans_Plan
+		}
+	}
+
+	focus = {
+		id = ROM_Support_the_PNR
+		prerequisite = { focus = ROM_Prezan_Plan }
+		icon = GFX_ROM_Arm_Rebels
+		x = @expansionism_tree_right
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ROM_PNR_Support
+		}
+	}
+
+	focus = {
+		id = ROM_Expand_the_Huntsmen
+		prerequisite = { focus = ROM_Support_the_PNR }
+		icon = GFX_ROM_Mountain_Warfare
+		x = @expansionism_tree_right
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_tech = tech_mountaineers
+			has_country_flag = ROM_Corpul_de_Munte_Founded
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_corpul_de_munte
+				bonus = 1.0
+				uses = 1
+				category = mountaineers_tech
+			}
+			custom_effect_tooltip = ROM_corpul_de_munte_expansion
+			hidden_effect = {
+				division_template = {
+					name = "Corpul de Munte"
+					priority = 2
+					division_names_group = ROM_CdM_01
+					regiments = {
+						mountaineers = { x = 0 y = 0 }
+						mountaineers = { x = 0 y = 1 }
+						mountaineers = { x = 0 y = 2 }
+			
+	    	   		 	mountaineers = { x = 1 y = 0 }
+						mountaineers = { x = 1 y = 1 }
+						mountaineers = { x = 1 y = 2 }
+
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 81 }
+					create_unit = {
+						division = "name = \"Corpul de Munte\" division_template = \"Corpul de Munte\" start_experience_factor = 1.0" 
+						owner = ROM
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_Infiltrate_the_Empire
+		prerequisite = { focus = ROM_Expand_the_Huntsmen }
+		icon = GFX_goal_generic_major_war
+		x = @expansionism_tree_right
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	############################
+	##### Industrial Start #####
+	############################
+
+		focus = {
+		id = ROM_Expand_CFR
+		icon = GFX_ROM_Caile_Ferate_Romane
+		x = @industrial_tree_center
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ROM_CFR
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = industry
+    		}
+		}
+	}
+
+		focus = {
+		id = ROM_Expand_Line_600
+		icon = GFX_Train_Transport_One
+		prerequisite = { focus = ROM_Expand_CFR }
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			79 = {
+			    if = {
+			        limit = { is_controlled_by = ROOT }
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        }
+				}
+			}
+			919 = {
+			    if = {
+			        limit = { is_controlled_by = ROOT }
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        }
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = ROM_Galati_Light_Industries
+		icon = GFX_strengthen_small_production
+		prerequisite = { focus = ROM_Expand_Line_600 }
+		x = @industrial_tree_left_left
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.35
+    			uses = 1
+    			category = industry
+    		}
+			79 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = ROM_Invest_in_RomArm
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ROM_Galati_Light_Industries }
+		x = @industrial_tree_left_left
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		random_owned_controlled_state = {
+			prioritize = { 919 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = ROM_peasant_land_seized
+		}
+	}
+
+		focus = {
+		id = ROM_Aid_to_the_Peasants
+		icon = GFX_higher_salary
+		prerequisite = { focus = ROM_Expand_Line_600 }
+		x = @industrial_tree_center_left
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			ROM = { has_government = lib_conservatism }
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ROM_agrarian_country_1
+				remove_idea = ROM_agrarian_country
+			}
+			custom_effect_tooltip = ROM_peasant_wheat_payments
+		}
+	}
+
+		focus = {
+		id = ROM_Invest_in_Iasi_University
+		icon = GFX_Reform_the_Education_System_3
+		prerequisite = { focus = ROM_Aid_to_the_Peasants }
+		x = @industrial_tree_center_left
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ROM_agrarian_country_2
+				remove_idea = ROM_agrarian_country_1
+			}
+			custom_effect_tooltip = ROM_peasant_allowed_in_University
+		}
+	}
+
+		focus = {
+		id = ROM_Expand_Line_800
+		icon = GFX_Train_Transport_Two
+		prerequisite = { focus = ROM_Expand_CFR }
+		x = @industrial_tree_right
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			46 = {
+			    if = {
+			        limit = { is_controlled_by = ROOT }
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        }
+				}
+			}
+			916 = {
+			    if = {
+			        limit = { is_controlled_by = ROOT }
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        }
+				}
+			}
+			917 = {
+			    if = {
+			        limit = { is_controlled_by = ROOT }
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        }
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = ROM_Support_Oltenia_Urbanization
+		icon = GFX_BUL_developments_in_countryside
+		prerequisite = { focus = ROM_Expand_Line_800 }
+		x = @industrial_tree_center_right
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			81 = { 
+				add_extra_state_shared_building_slots = 2 
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					        type = infrastructure
+					        level = 1
+					        instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = ROM_Expand_Operations_in_Targu_Jiu
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = ROM_Support_Oltenia_Urbanization }
+		x = @industrial_tree_center_right
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			81 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = ROM_First_Ploesti_Expansion
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ROM_Expand_Line_800 }
+		x = 8
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			46 = {
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = ROM_Expand_Constanta_Port
+		icon = GFX_ROM_Expand_Constanta_Ports
+		prerequisite = { focus = ROM_First_Ploesti_Expansion }
+		x = 8
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			917 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				 	type = dockyard
+				 	level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 9635
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_Second_Ploesti_Expansion
+		icon = GFX_ROM_Ploesti_Expansions
+		prerequisite = { focus = ROM_Expand_Constanta_Port }
+		prerequisite = { focus = ROM_Expand_Operations_in_Targu_Jiu }
+		prerequisite = { focus = ROM_Invest_in_RomArm }
+		prerequisite = { focus = ROM_Invest_in_Iasi_University }
+		x = 5
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			46 = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_Oil_Export_Profits
+		icon = GFX_Progresive_Taxation
+		prerequisite = { focus = ROM_Second_Ploesti_Expansion }
+		x = 5
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = ROM_oil_boom_1
+		}
+	}
+
+	focus = {
+		id = ROM_Transilvanian_Projects
+		icon = GFX_Urbanization_One
+		prerequisite = { focus = ROM_Oil_Export_Profits }
+		x = 1
+		y = 6
+
+		cost = 14
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+				ROM = {
+					owns_state = 76
+					owns_state = 82
+					owns_state = 83
+					owns_state = 84
+					owns_state = 905
+					owns_state = 904
+					owns_state = 906
+				}	
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 76 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 82 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 83 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 905 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}

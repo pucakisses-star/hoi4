@@ -1,0 +1,18 @@
+﻿### Somalia
+division_template = {
+	name = "Regio Corpo Truppe Coloniali"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+
+units = {
+	division= { 
+		name = "Regio Corpo Truppe Coloniali della Somalia Italiana"
+		location = 12991
+		division_template="Regio Corpo Truppe Coloniali"
+		start_experience_factor=0.5
+	}
+}

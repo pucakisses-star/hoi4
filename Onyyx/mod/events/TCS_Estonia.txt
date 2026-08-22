@@ -1,0 +1,40 @@
+﻿#
+# Estonia Events
+#
+
+add_namespace = estonia
+
+### Normal Events ###
+
+country_event = {
+    id = estonia.1
+    title = estonia.1.title
+    desc = estonia.1.desc
+    picture = GFX_event_EST_1918_socialist_revolt
+
+    trigger = {
+        tag = EST
+        date > 1918.11.29
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = estonia.1.a
+        custom_effect_tooltip = "estonia.1.a.tooltip"
+        hidden_effect = {
+            ESR = {
+                transfer_state = 892
+            }
+            ESR = {
+                set_province_controller = 4640
+            }
+            ESR = {
+                declare_war_on = {
+                    target = EST
+                    type = annex_everything
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	ITA_SPA_1905_Trade_Treaty = { value = 15 }
+	ITA_AUS_1908_Salisburg_Summit_Success = { value = 30 }
+	ITA_1909_earthquake_helped = { value = 5 }
+	ITA_1909_earthquake_not_helped = { value = -5 }
+}

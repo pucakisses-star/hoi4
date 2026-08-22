@@ -1,0 +1,91 @@
+adjourning_the_railways = {
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_general_direction_FS
+	}
+	icon = GFX_decision_category_generic_industry
+
+	picture = GFX_decision_cat_generic_mefo_bills
+}
+ITA_Eritrean_Colonial_Decisions = {
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_country_flag = ITA_unlock_decisions_for_colonies
+	}
+	visible = {
+		owns_state = 550
+	}
+	
+	picture = GFX_decision_category_eritrea
+}
+ITA_Somali_Colonial_Decisions = {
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_country_flag = ITA_unlock_decisions_for_colonies
+	}
+	visible = {
+		owns_state = 559
+	}
+	
+	picture = GFX_decision_category_somalia
+}
+ITA_Army_Decisions = {
+	allowed = {
+		original_tag = ITA
+	}
+	
+	picture = GFX_decision_category_regio_esercito
+}
+ITA_libya_influence = {
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		NOT = {
+			has_country_flag = ITA_TUR_war_in_libya
+		}
+	}
+	
+	picture = GFX_decision_category_Libya_Influence_decisions
+}
+ITA_war_in_libya = {
+	icon = GFX_decision_category_military_operation
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_country_flag = ITA_TUR_war_in_libya
+	}
+	
+	picture = GFX_decision_category_Libya_Influence_decisions
+}
+ITA_AUS_bolzano_referendum = {
+	allowed = {
+		OR = {
+			original_tag = ITA
+			original_tag = AUS
+		}
+	}
+	visible = {
+		has_country_flag = ITA_AUS_bolzano_referendum_flag
+	}
+	picture = GFX_decision_category_Bolzano_Referendum
+}
+ITA_AUS_Trieste_Free_City = {
+	allowed = {
+		OR = {
+			original_tag = ITA
+			original_tag = AUS
+		}
+	}
+	visible = {
+		has_country_flag = ITA_AUS_trieste_free_city_flag
+	}
+	picture = GFX_decision_category_Bolzano_Referendum
+}

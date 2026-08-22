@@ -1,0 +1,18 @@
+state={
+	id=1006
+	name="STATE_1006"
+	provinces={
+		756 1216 1384 1573 1632 4467 4542 7224 7639 8027 9605 10205 10417 10470 10671 12161 12218 12239 12250 12722 
+	}
+	history = {
+		owner = BUK
+		add_core_of = BUK
+		add_core_of = RUS
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=100000
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

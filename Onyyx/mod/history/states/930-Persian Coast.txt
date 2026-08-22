@@ -1,0 +1,18 @@
+state={
+	id=930
+	name="STATE_930"
+	provinces={
+		1955 10791 12702 
+	}
+	history = {
+		owner = OTT
+		add_core_of = OTT
+		1918.1.1 = {
+			owner = SAU
+			controller = SAU
+		}
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

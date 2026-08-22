@@ -1,0 +1,15 @@
+swedish_politics_category = {
+	icon = generic_political_actions
+	
+		visible = {
+			tag = SWE
+		}
+}
+
+swedish_military_category = {
+	icon = generic_monarchism
+	
+		visible = {
+			tag = SWE
+		}
+}

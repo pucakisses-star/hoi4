@@ -1,0 +1,21 @@
+
+state={
+	id=917
+	name="STATE_917"
+	manpower = 954052
+	state_category = town
+
+	history={
+		owner = ROM
+		victory_points = { 9635 5 }
+		victory_points = { 687 1 }
+		buildings = {
+			infrastructure = 3
+			9635 = { naval_base = 5 } #Constanta
+			687 = { naval_base = 1 } #Tulcea
+		}
+		add_core_of = ROM
+	}
+
+	provinces={ 657 687 3076 9635 }
+}

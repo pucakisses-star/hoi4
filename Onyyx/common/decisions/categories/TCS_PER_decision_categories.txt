@@ -1,0 +1,30 @@
+PER_army_control_cat = {
+    #icon = 
+    #picture = 
+    allowed = {
+		original_tag = PER
+	}
+	scripted_gui = PER_persia_revolution_info_container
+	visible = {
+		always = yes
+	}
+}
+PER_constitutional_movement_cat = {
+    #icon = 
+    #picture = 
+    allowed = {
+		original_tag = PER
+	}
+	visible = {
+		always = yes
+	}
+}
+PER_revanchism_cat = {
+	picture = GFX_decision_category_per_revanchism
+    allowed = {
+		original_tag = PER
+	}
+	visible = {
+		always = yes
+	}
+}

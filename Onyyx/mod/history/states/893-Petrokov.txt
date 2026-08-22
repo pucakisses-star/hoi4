@@ -1,0 +1,24 @@
+state={
+	id=893
+	name="STATE_893"
+	state_category = large_town
+	manpower = 576000
+
+	provinces={
+		493 548 9508 11428 
+	}
+	history = {
+	    buildings = {
+			infrastructure = 6
+		}
+		owner = RUS
+		add_core_of = RUS
+		add_core_of = POL
+		1918.11.11 = {
+			owner = POL
+			controller = POL
+			remove_core_of = RUS
+		}
+	}
+	buildings_max_level_factor=1.000
+}

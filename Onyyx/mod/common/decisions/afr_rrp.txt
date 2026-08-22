@@ -1,0 +1,6825 @@
+afr_rrp_foreign_diplomacy = {
+
+afr_rrp_american_colonization_society = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		date < 1910.1.1
+		AND = {
+			USA = { 
+				has_country_flag = USA_supports_acs
+			}
+			LIB = {
+				has_completed_focus = LIB_gem_of_africa
+			}
+		}
+		OR = { 
+			ROOT = {
+				has_country_flag = ACS_colony
+			}
+			LIB = { 
+				is_neighbor_of = ROOT
+			}
+			any_country = {
+				OR = {
+					AND = { 
+						is_subject_of = LIB
+						is_neighbor_of = ROOT
+					}
+					AND = { 
+						has_country_flag = ACS_colony
+						is_neighbor_of = ROOT
+					}
+				}
+			}
+		}
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+		
+    }
+	days_remove = 30
+    visible = {
+		date < 1911.1.1
+		AND = { 
+			ROOT = {
+				OR = {
+					has_idea = afr_reforming_kingdom
+					has_idea = AF_T_small_kingdom
+					has_completed_focus = AF_O_K_invite_foreign_investors
+					has_completed_focus = afr_wes_governmental_westernisation
+				}
+				NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+			}
+			LIB = {
+				has_country_flag = LIB_adopted_ACS_policy_flag
+			}
+			NOT = {
+				has_country_flag = afr_rrp_british_company
+			}
+			NOT = {
+				has_country_flag = afr_rrp_hamburg_company
+			}
+			NOT = {
+				has_country_flag = afr_rrp_french_company
+			}
+			NOT = {
+				has_country_flag = afr_rrp_german_company
+			}
+			NOT = {
+				has_country_flag = afr_rrp_bremen_company
+			}
+			NOT = {
+				has_country_flag = afr_rrp_portugal_company
+			}
+		}
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	modifier = {
+
+		
+	}
+	
+	complete_effect = {
+		LIB = { country_event = { days = 1 id = afr_rrp.13 } }
+		every_country = { 
+			if = {
+				limit = {
+					has_country_flag = ACS_colony
+				}
+				country_event = { days = 1 id = afr_rrp.13 } 
+			}
+		}
+		set_country_flag = afr_rrp_usa_company
+		set_country_flag = ACS_affiliate
+		if = {
+			limit = {
+				LIB = { has_government = centrism }
+			}
+			ROOT = { 
+				add_popularity = {
+					ideology = centrism
+					popularity = 0.03
+				}
+			}
+		}
+		if = {
+			limit = {
+				LIB = { has_government = traditional_conservatism }
+			}
+			ROOT = { 
+				add_popularity = {
+					ideology = traditional_conservatism
+					popularity = 0.03
+				}
+			}
+		}
+		if = {
+			limit = {
+				LIB = { has_government = social_egalitarianism }
+			}
+			ROOT = { 
+				add_popularity = {
+					ideology = social_egalitarianism
+					popularity = 0.03
+				}
+			}
+		}	
+		if = {
+			limit = {
+				LIB = { has_government = collectivist_socialism }
+			}
+			ROOT = { 
+				add_popularity = {
+					ideology = collectivist_socialism
+					popularity = 0.03
+				}
+			}
+		}	
+		if = {
+			limit = {
+				LIB = { has_government = vanguard_communism }
+			}
+			ROOT = { 
+				add_popularity = {
+					ideology = vanguard_communism
+					popularity = 0.03
+				}
+			}
+		}	
+		if = {
+			limit = {
+				LIB = { has_government = autocracy }
+			}
+			ROOT = { 
+				add_popularity = {
+					ideology = autocracy
+					popularity = 0.03
+				}
+			}
+		}
+		if = {
+			limit = {
+				LIB = { has_government = radical_democracy }
+			}
+			ROOT = { 
+				add_popularity = {
+					ideology = radical_democracy
+					popularity = 0.03
+				}
+			}
+			
+		}
+		if = {
+			limit = {
+				LIB = { has_government = chauvinist_populism }
+			}
+			ROOT = { 
+				add_popularity = {
+					ideology = chauvinist_populism
+					popularity = 0.03
+				}
+			}
+		}
+    }
+}
+
+afr_rrp_british_company_port = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		afr_start_company_trigger = yes
+		country_exists = ENG
+		custom_trigger_tooltip = {
+			tooltip = afr_start_eng_company_tooltip
+			OR = { 
+				ROOT = {
+					any_owned_state = { is_coastal = yes }
+				}
+				ENG = { 
+					is_neighbor_of = ROOT
+				}
+				any_country = {
+					AND = {
+						is_subject_of = ENG
+						is_neighbor_of = ROOT
+					}
+				}
+			}
+		}
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+    visible = {
+		afr_visible_company_trigger = yes
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	days_remove = 360
+	
+	modifier = {
+		political_power_gain = -1
+		MONTHLY_POPULATION = 1
+	}
+	
+	cancel_trigger = {
+		NOT = { afr_english_company_port_trigger = yes }
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+		add_offsite_building = { type = cotton_farm level = 1 }
+			
+	}
+	
+	complete_effect = {
+		afr_company_port_effect = yes
+		custom_effect_tooltip = AFR_Racial_Tension_plus_3
+		
+		hidden_effect = {
+			ENG = { 
+				country_event = { days = 1 id = afr_rrp.11 } 
+				diplomatic_relation = {
+					country = ROOT
+					relation = docking_rights
+					active = yes
+				}
+			}
+			add_opinion_modifier = { target = ENG modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = ENG modifier = eoanb_om_africa_trade_focus }
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.3}
+			}
+			give_military_access = ENG
+			set_country_flag = afr_rrp_british_company_port
+		}
+		
+	}
+	
+	
+}
+
+afr_rrp_french_company_port = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		FRA = { has_country_flag = FRA_has_colonial_ambitions }
+		afr_start_company_trigger = yes
+		country_exists = FRA
+		custom_trigger_tooltip = {
+			tooltip = afr_start_fra_company_tooltip
+			OR = { 
+				ROOT = {
+					any_owned_state = { is_coastal = yes }
+				}
+				FRA = { 
+					is_neighbor_of = ROOT
+				}
+				any_country = {
+					AND = {
+						is_subject_of = FRA
+						is_neighbor_of = ROOT
+					}
+				}
+			}
+		}
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+    visible = {
+		afr_visible_company_trigger = yes
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	days_remove = 360
+	
+	modifier = {
+		political_power_gain = -1
+		MONTHLY_POPULATION = 1
+	}
+	
+	cancel_trigger = {
+		NOT = { 
+			afr_french_company_port_trigger = yes
+		}
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			add_offsite_building = { type = cotton_farm level = 1 }
+			
+	}
+	
+	 complete_effect = {
+		afr_company_port_effect = yes
+		custom_effect_tooltip = AFR_Racial_Tension_plus_3
+		
+		hidden_effect = {
+			FRA = { 
+				country_event = { days = 1 id = afr_rrp.11 } 
+				diplomatic_relation = {
+					country = ROOT
+					relation = docking_rights
+					active = yes
+				}
+			}
+			add_opinion_modifier = { target = FRA modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = FRA modifier = eoanb_om_africa_trade_focus }
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.3}
+			}
+			give_military_access = FRA
+			set_country_flag = afr_rrp_french_company_port
+		}
+    }
+}
+
+afr_rrp_portugal_company_port = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		afr_start_company_trigger = yes
+		country_exists = POR
+		custom_trigger_tooltip = {
+			tooltip = afr_start_por_company_tooltip
+			OR = { 
+				ROOT = {
+					any_owned_state = { is_coastal = yes }
+				}
+				POR = { 
+					is_neighbor_of = ROOT
+				}
+				any_country = {
+					AND = {
+						is_subject_of = POR
+						is_neighbor_of = ROOT
+					}
+				}
+			}
+		}
+		NOT = {
+			ROOT = {
+				is_subject_of = OTO
+			}
+		}
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+    visible = {
+		afr_visible_company_trigger = yes
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	days_remove = 360
+	
+	modifier = {
+		political_power_gain = -1
+		MONTHLY_POPULATION = 1
+	}
+	
+	cancel_trigger = {
+		NOT = { 
+			afr_portugal_company_port_trigger = yes
+		}		
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			add_offsite_building = { type = cotton_farm level = 1 }
+			
+	}
+	
+	complete_effect = {
+		afr_company_port_effect = yes
+		custom_effect_tooltip = AFR_Racial_Tension_plus_5
+		
+		hidden_effect = {
+			POR = { 
+				country_event = { days = 1 id = afr_rrp.11 } 
+				diplomatic_relation = {
+					country = ROOT
+					relation = docking_rights
+					active = yes
+				}
+			}	
+			add_opinion_modifier = { target = POR modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = POR modifier = eoanb_om_africa_trade_focus }
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.5}
+			}
+			give_military_access = POR
+			set_country_flag = afr_rrp_portugal_company_port
+		}
+    }
+	
+}
+
+afr_rrp_prussian_company_port = {
+
+	ai_will_do = { 
+		factor = 1 
+		modifier = {
+			factor = 1000
+			TAG = BMM
+		}
+	}
+    available = {
+		afr_start_company_trigger = yes
+		country_exists = PRS
+		custom_trigger_tooltip = {
+			tooltip = afr_start_prs_company_tooltip
+			OR = { 
+				ROOT = {
+					any_owned_state = { is_coastal = yes }
+				}
+				PRS = { 
+					is_neighbor_of = ROOT
+				}
+				any_country = {
+					AND = {
+						is_subject_of = PRS
+						is_neighbor_of = ROOT
+					}
+				}
+			}
+		}
+		PRS = {
+			has_completed_focus = PRS_focus_colonial_politics_branch
+		}
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+		
+    }
+    visible = {
+		afr_visible_company_trigger = yes
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	days_remove = 360
+	
+	modifier = {
+		political_power_gain = -1
+		MONTHLY_POPULATION = 1
+	}
+	
+	cancel_trigger = {
+		NOT = {
+			afr_prussian_company_port_trigger = yes
+		}
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			add_offsite_building = { type = cotton_farm level = 1 }
+			
+	}
+	
+	complete_effect = {
+		afr_company_port_effect = yes
+		custom_effect_tooltip = AFR_Racial_Tension_plus_2
+		
+		hidden_effect = {
+			PRS = { 
+				country_event = { days = 1 id = afr_rrp.11 } 
+				diplomatic_relation = {
+					country = ROOT
+					relation = docking_rights
+					active = yes
+				}
+			}	
+			add_opinion_modifier = { target = PRS modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = PRS modifier = eoanb_om_africa_trade_focus }
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.2}
+			}
+			give_military_access = PRS
+			set_country_flag = afr_rrp_german_company_port
+		}
+    }
+}
+
+afr_rrp_bremen_company_port = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		afr_start_company_trigger = yes
+		country_exists = BRE
+		custom_trigger_tooltip = {
+			tooltip = afr_start_bre_company_tooltip
+			OR = { 
+				ROOT = {
+					any_owned_state = { is_coastal = yes }
+				}
+				BRE = { 
+					is_neighbor_of = ROOT
+				}
+				any_country = {
+					AND = {
+						is_subject_of = BRE
+						is_neighbor_of = ROOT
+					}
+				}
+			}
+		}
+		BRE = {
+			OR = {
+				has_completed_focus = generic_focus_naval_dockyards_2
+				has_completed_focus = generic_focus_fleet_infrastructure
+			}
+		}
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+    visible = {
+		afr_visible_company_trigger = yes
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	days_remove = 360
+	
+	modifier = {
+		political_power_gain = -1
+		MONTHLY_POPULATION = 1
+	}
+	
+	cancel_trigger = {
+		NOT = {
+			afr_bremen_company_port_trigger = yes
+		}
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			add_offsite_building = { type = cotton_farm level = 1 }
+			
+	}
+	
+	 complete_effect = {
+		afr_company_port_effect = yes
+		custom_effect_tooltip = AFR_Racial_Tension_plus_1
+		
+		hidden_effect = {
+			BRE = { 
+				country_event = { days = 1 id = afr_rrp.11 } 
+				diplomatic_relation = {
+					country = ROOT
+					relation = docking_rights
+					active = yes
+				}
+			}	
+			add_opinion_modifier = { target = BRE modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = BRE modifier = eoanb_om_africa_trade_focus }
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.1}
+			}
+			set_country_flag = afr_colonial_language
+			set_country_flag = afr_colonial_language_german
+			give_military_access = BRE
+			set_country_flag = afr_rrp_bremen_company_port
+		}
+    }
+}
+
+afr_rrp_hamburg_company_port = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		afr_start_company_trigger = yes
+		country_exists = HAM
+		custom_trigger_tooltip = {
+			tooltip = afr_start_ham_company_tooltip
+			OR = { 
+				ROOT = {
+					any_owned_state = { is_coastal = yes }
+				}
+				HAM = { 
+					is_neighbor_of = ROOT
+				}
+				any_country = {
+					AND = {
+						is_subject_of = HAM
+						is_neighbor_of = ROOT
+					}
+				}
+			}
+		}
+		HAM = {
+			has_completed_focus = HAM_focus_professional_merchants	
+			has_global_flag = HAM_woermann_tradeport_gabon
+		}
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+		
+    }
+    visible = {
+		afr_visible_company_trigger = yes
+		NOT = { has_completed_focus = afr_generic_jihadist_jihad_way_not_thiers }
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	days_remove = 360
+	
+	modifier = {
+		political_power_gain = -1
+		MONTHLY_POPULATION = 1
+	}
+	
+	cancel_trigger = {
+		NOT = { 
+			afr_hamburg_company_port_trigger = yes
+		}
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			add_offsite_building = { type = cotton_farm level = 1 }
+			
+	}
+	
+	complete_effect = {
+		afr_company_port_effect= yes
+		custom_effect_tooltip = AFR_Racial_Tension_plus_1
+		
+		hidden_effect = {
+			HAM = { 
+				country_event = { days = 1 id = afr_rrp.11 } 
+				diplomatic_relation = {
+					country = ROOT
+					relation = docking_rights
+					active = yes
+				}
+			}
+			add_opinion_modifier = { target = HAM modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = HAM modifier = eoanb_om_africa_trade_focus }
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.1}
+			}
+			give_military_access = HAM
+			set_country_flag = afr_rrp_hamburg_company_port
+		}
+    }
+	
+}
+
+afr_british_companies = {
+
+	available = {
+		has_stability > 0.5
+	}
+	visible = {
+		afr_english_company_port_trigger = yes
+		NOT = {
+			has_country_flag = afr_company_chosen
+		}
+		NOT = {
+			tag = ETH
+		}
+		always = no
+	}
+	
+	fire_only_once = yes
+
+	cost = 0
+	
+	
+	complete_effect = {
+		ENG = { country_event = { days = 1 id = afr_colonial_company.1 } }
+		if = {
+			limit = {
+				ROOT = { NOT = { has_idea = industrializing } }
+			}
+			custom_effect_tooltip = EDC_afr.5.t
+			set_country_flag = afr_colony_industrializing
+		}
+		custom_effect_tooltip = afr_colonial_company_tooltip
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		custom_effect_tooltip = AFR_Racial_Tension_plus_3
+		swap_ideas = { add_idea = export_focus remove_idea = limited_exports }
+		hidden_effect = {
+			add_opinion_modifier = { target = ENG modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = ENG modifier = eoanb_om_africa_trade_focus }
+			set_country_flag = afr_company_chosen
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.3}
+			}
+		}
+		
+	}
+	
+}
+
+afr_french_companies = {
+
+	available = {
+		has_stability > 0.5
+	}
+	visible = {
+		afr_french_company_port_trigger = yes
+		NOT = {
+			has_country_flag = afr_company_chosen
+		}
+		NOT = {
+			tag = ETH
+		}
+		always = no
+	}
+	
+	fire_only_once = yes
+
+	cost = 0
+	
+	
+	complete_effect = {
+		FRA = { country_event = { days = 1 id = afr_colonial_company.1 } }
+		if = {
+			limit = {
+				ROOT = { NOT = { has_idea = industrializing } }
+			}
+			custom_effect_tooltip = EDC_afr.5.t
+			set_country_flag = afr_colony_industrializing
+		}
+		custom_effect_tooltip = afr_colonial_company_tooltip
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		custom_effect_tooltip = AFR_Racial_Tension_plus_3
+		swap_ideas = { add_idea = export_focus remove_idea = limited_exports }
+		hidden_effect = {
+			add_opinion_modifier = { target = FRA modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = FRA modifier = eoanb_om_africa_trade_focus }
+			set_country_flag = afr_company_chosen
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.3}
+			}
+		}
+	}
+	
+}
+
+afr_portugal_companies = {
+
+	available = {
+		has_stability > 0.5
+	}
+	visible = {
+		afr_portugal_company_port_trigger = yes
+		NOT = {
+			has_country_flag = afr_company_chosen
+		}
+		NOT = {
+			tag = ETH
+		}
+		always = no
+	}
+	
+	fire_only_once = yes
+
+	cost = 0
+	
+	
+	complete_effect = {
+		POR = { country_event = { days = 1 id = afr_colonial_company.1 } }
+		if = {
+			limit = {
+				ROOT = { NOT = { has_idea = industrializing } }
+			}
+			custom_effect_tooltip = EDC_afr.5.t
+			set_country_flag = afr_colony_industrializing
+		}
+		custom_effect_tooltip = afr_colonial_company_tooltip
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		custom_effect_tooltip = AFR_Racial_Tension_plus_6
+		swap_ideas = { add_idea = export_focus remove_idea = limited_exports }
+		hidden_effect = {
+			add_opinion_modifier = { target = POR modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = POR modifier = eoanb_om_africa_trade_focus }
+			set_country_flag = afr_company_chosen
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.6}
+			}
+		}
+	}
+	
+}
+
+afr_prussian_companies = {
+
+	available = {
+		has_stability > 0.5
+	}
+	visible = {
+		afr_prussian_company_port_trigger = yes
+		NOT = {
+			has_country_flag = afr_company_chosen
+		}
+		NOT = {
+			tag = ETH
+		}
+		always = no
+	}
+	
+	fire_only_once = yes
+
+	cost = 0
+	
+	
+	complete_effect = {
+		PRS = { country_event = { days = 1 id = afr_colonial_company.1 } }
+		if = {
+			limit = {
+				ROOT = { NOT = { has_idea = industrializing } }
+			}
+			custom_effect_tooltip = EDC_afr.5.t
+			set_country_flag = afr_colony_industrializing
+		}
+		custom_effect_tooltip = afr_colonial_company_tooltip
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		custom_effect_tooltip = AFR_Racial_Tension_plus_2
+		swap_ideas = { add_idea = export_focus remove_idea = limited_exports }
+		hidden_effect = {
+			add_opinion_modifier = { target = PRS modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = PRS modifier = eoanb_om_africa_trade_focus }
+			set_country_flag = afr_company_chosen
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.2}
+			}
+		}
+	}
+	
+}
+
+afr_bremen_companies = {
+
+	available = {
+		has_stability > 0.5
+	}
+	visible = {
+		afr_bremen_company_port_trigger = yes
+		NOT = {
+			has_country_flag = afr_company_chosen
+		}
+		NOT = {
+			tag = ETH
+		}
+		always = no
+	}
+	
+	fire_only_once = yes
+
+	cost = 0
+	
+	
+	complete_effect = {
+		BRE = { country_event = { days = 1 id = afr_colonial_company.1 } }
+		if = {
+			limit = {
+				ROOT = { NOT = { has_idea = industrializing } }
+			}
+			custom_effect_tooltip = EDC_afr.5.t
+			set_country_flag = afr_colony_industrializing
+		}
+		custom_effect_tooltip = afr_colonial_company_tooltip
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		custom_effect_tooltip = AFR_Racial_Tension_plus_1
+		swap_ideas = { add_idea = export_focus remove_idea = limited_exports }
+		hidden_effect = {
+			add_opinion_modifier = { target = BRE modifier = eoanb_om_africa_trade_focus }
+			reverse_add_opinion_modifier = { target = BRE modifier = eoanb_om_africa_trade_focus }
+			set_country_flag = afr_company_chosen
+			ROOT = {
+				country_event = {id = afr_rrp_racial_tension_increase.1}
+			}
+		}
+	}
+	
+}
+
+afr_establish_export_company = {
+
+	available = {
+		always = no
+	}
+
+	visible = {
+		always = no
+		
+	}
+	
+	fire_only_once = yes
+
+	cost = 0
+	
+	complete_effect = {
+		hidden_effect = { 
+			set_country_flag = afr_foreign_company
+			set_variable = { num_export_industries_used = 0 }
+		}
+	}
+	
+	days_remove = 120
+	
+	cancel_trigger = {
+		NOT = { 
+			afr_has_company_port_trigger = yes
+		}
+	}
+	
+	remove_effect = {
+		meta_effect = {
+			text = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = [afr_company_trade_good_meta]
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = [afr_company_trade_good_meta]
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = [afr_company_trade_good_meta]
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			afr_company_trade_good_meta = "[THIS.afr_company_trade_good_loc]"
+		}
+		set_country_flag = afr_company_established
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		custom_effect_tooltip = AFR_Racial_Tension_plus_1
+		
+		hidden_effect = {
+			country_event = {id = afr_rrp_racial_tension_increase.1}
+			country_event = { days = 3 id = afr_colonial_company.5 }
+		}
+		activate_mission = afr_export_quota
+	}
+}
+
+afr_export_quota = {
+
+	available = {
+		check_variable = { num_of_export_industries > num_export_industries_used }
+	}
+
+	activation = {
+		always = no	
+	}
+	
+	selectable_mission = yes
+	days_mission_timeout = 1830
+	fire_only_once = yes		
+	
+	cancel_trigger = {
+		OR = {
+			hidden_trigger = {
+				has_country_flag = afr_Coup_Started
+			}
+			NOT = { 
+				afr_has_company_port_trigger = yes
+			}
+		}
+	}
+	
+	days_remove = afr_fullfilled_quota?0
+	remove_effect = {
+		hidden_effect = {
+			activate_mission = afr_export_quota
+		}
+	}
+	
+	complete_effect = {
+		
+		var:ROOT.company_country_var = { country_event = { days = 1 id = afr_colonial_company.6 } }
+		set_variable = { afr_fullfilled_quota = days_mission_timeout@afr_export_quota }
+		add_to_variable = { num_export_industries_used = 1 }
+	}
+	
+	timeout_effect = {
+	
+	}
+}
+	
+	
+afr_rrp_weapon_contract = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		Root = {
+			OR = {
+				has_idea = AF_T_small_kingdom
+				has_idea = afr_reforming_kingdom
+			}
+		}
+		afr_has_company_port_trigger = yes
+    }
+
+    visible = {
+		NOT = {
+			tag = ETH
+		}
+		afr_has_company_port_trigger = yes
+		NOT = {
+			has_country_flag = afr_rrp_colonial_weapon_contract_requested
+		}
+    }
+	
+	days_re_enable = 720
+	
+	fire_only_once = no
+
+    cost = 0
+	
+	complete_effect = {
+		custom_effect_tooltip = afr_colonial_weapons_contract_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = afr_rrp_british_company_port
+				}
+				ENG = { country_event = { days = 7 id = afr_rrp_weapon_contract.1 } }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = afr_rrp_french_company_port
+				}
+				FRA = { country_event = { days = 7 id = afr_rrp_weapon_contract.1 } }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = afr_rrp_portugal_company_port
+				}
+				POR = { country_event = { days = 7 id = afr_rrp_weapon_contract.1 } }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = afr_rrp_german_company_port
+				}
+				PRS = { country_event = { days = 7 id = afr_rrp_weapon_contract.1 } }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = afr_rrp_bremen_company_port
+				}
+				BRE = { country_event = { days = 7 id = afr_rrp_weapon_contract.1 } }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = afr_rrp_hamburg_company_port
+				}
+				HAM = { country_event = { days = 7 id = afr_rrp_weapon_contract.1 } }
+			}
+		}
+		set_country_flag = afr_rrp_colonial_weapon_contract_requested
+    }
+}
+
+afr_rrp_weapon_contract_active = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		always = no
+    }
+
+    visible = {
+		afr_has_company_port_trigger = yes
+		has_country_flag = afr_rrp_colonial_weapon_contract_active
+    }
+	
+	fire_only_once = no
+
+    cost = 0
+	
+	days_remove = 1800
+	
+	cancel_trigger = {
+		OR = {
+			NOT = {
+				afr_has_company_port_trigger = yes
+			}
+			NOT = {
+				has_country_flag = afr_rrp_colonial_weapon_contract_active
+			}
+		}
+	}
+	
+	modifier = {
+		political_power_gain = -0.50
+		license_infantry_eq_production_speed_factor = 0.5
+	}
+	
+	complete_effect = {
+		set_country_flag = afr_rrp_colonial_project_active
+		if = {
+			limit = {
+				has_country_flag = afr_rrp_british_company_port
+			}
+			ENG = {
+				create_production_license = {
+					target = ROOT
+					equipment = {
+						type = infantry_equipment_rifle_1
+					}
+					cost_factor = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_french_company_port
+			}
+			FRA = {
+				create_production_license = {
+					target = ROOT
+					equipment = {
+						type = infantry_equipment_rifle_1
+					}
+					cost_factor = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_portugal_company_port
+			}
+			POR = {
+				create_production_license = {
+					target = ROOT
+					equipment = {
+						type = infantry_equipment_rifle_1
+					}
+					cost_factor = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_german_company_port
+			}
+			PRS = {
+				create_production_license = {
+					target = ROOT
+					equipment = {
+						type = infantry_equipment_rifle_1
+					}
+					cost_factor = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_bremen_company_port
+			}
+			BRE = {
+				create_production_license = {
+					target = ROOT
+					equipment = {
+						type = infantry_equipment_rifle_1
+					}
+					cost_factor = 0
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_hamburg_company_port
+			}
+			HAM = {
+				create_production_license = {
+					target = ROOT
+					equipment = {
+						type = infantry_equipment_rifle_1
+					}
+					cost_factor = 0
+				}
+			}
+		}	
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+		if = {
+			limit = {
+				ROOT = { has_country_flag = afr_rrp_colonial_weapon_contract_full_support }
+			}
+		}
+		ROOT = { country_event = { id = afr_rrp_weapon_contract.5 } }
+    }
+}
+
+
+
+afr_rrp_railway_line_1 = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		has_idea = afr_reforming_kingdom
+		afr_has_company_port_trigger = yes
+		ROOT = { has_completed_focus = afr_Build_more_roads }
+		NOT = {
+			has_country_flag = afr_rrp_colonial_project_active
+		}
+    }
+
+    visible = {
+		NOT = {
+			tag = ETH
+		}
+		afr_has_company_port_trigger = yes
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	cancel_trigger = {
+		NOT = { afr_has_company_port_trigger = yes }
+	}
+	
+	
+	 complete_effect = {
+		ROOT = { country_event = { days = 1 id = afr_rrp.1 } }
+		custom_effect_tooltip = afr_colonial_effect_tooltip
+		custom_effect_tooltip = AFR_Racial_Tension_plus_3
+		if = {
+			limit = {
+				has_country_flag = afr_rrp_british_company_port
+			}
+			ENG = { country_event = { days = 7 id = afr_rrp.2 } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_french_company_port
+			}
+			FRA = { country_event = { days = 7 id = afr_rrp.2 } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_portugal_company_port
+			}
+			POR = { country_event = { days = 7 id = afr_rrp.2 } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_german_company_port
+			}
+			PRS = { country_event = { days = 7 id = afr_rrp.2 } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_bremen_company_port
+			}
+			BRE = { country_event = { days = 7 id = afr_rrp.2 } }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = afr_rrp_hamburg_company_port
+			}
+			HAM = { country_event = { days = 7 id = afr_rrp.2 } }
+		}
+		set_country_flag = afr_rrp_railway_line_began
+		custom_effect_tooltip = afr_rrp_railway_line_began_tooltip
+    }
+}
+
+
+afr_rrp_railway_infrastructure_construction = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		has_idea = afr_reforming_kingdom
+		has_tech = iron_railways
+		afr_has_company_port_trigger = yes
+		NOT = {
+			has_country_flag = afr_rrp_colonial_project_active
+		}
+    }
+
+    visible = {
+		NOT = {
+			tag = ETH
+		}
+		has_country_flag = afr_rrp_railway_line
+		NOT = {
+			has_country_flag =  afr_rrp_railway_infrastructure_construction_independant
+		}
+    }
+	
+	fire_only_once = yes
+	
+	days_remove = 720
+
+    cost = 0
+	
+	cancel_trigger = {
+		NOT = {
+			afr_has_company_port_trigger = yes
+		}
+	}
+	
+	complete_effect = {
+		set_country_flag = afr_rrp_colonial_project_active
+	}
+	
+	modifier = {
+		political_power_gain = -1
+		MONTHLY_POPULATION = 1
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			ROOT = { country_event = { days = 1 id = afr_rrp.6 } }
+			custom_effect_tooltip = EDC_afr.6.t
+				if = {
+					limit = {
+					has_country_flag = afr_rrp_british_company_port
+				}
+					ENG = { country_event = { days = 7 id = afr_rrp.7 } }
+				}
+				else_if = {
+					limit = {
+						has_country_flag = afr_rrp_french_company_port
+					}
+					FRA = { country_event = { days = 7 id = afr_rrp.7 } }
+				}
+				else_if = {
+					limit = {
+						has_country_flag = afr_rrp_portugal_company_port
+					}
+					POR = { country_event = { days = 7 id = afr_rrp.7 } }
+				}
+				else_if = {
+					limit = {
+						has_country_flag = afr_rrp_german_company_port
+					}
+					PRS = { country_event = { days = 7 id = afr_rrp.7 } }
+				}
+				else_if = {
+					limit = {
+						has_country_flag = afr_rrp_bremen_company_port
+					}
+					BRE = { country_event = { days = 7 id = afr_rrp.7 } }
+				}
+				else_if = {
+					limit = {
+						has_country_flag = afr_rrp_hamburg_company_port
+					}
+					HAM = { country_event = { days = 7 id = afr_rrp.7 } }
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 250
+			}
+	}
+}
+
+afr_rrp_main_railway_route_construction = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		has_idea = afr_reforming_kingdom
+		AND = {
+				has_tech = iron_railways
+				has_tech = steam_engine
+				has_tech = steam_locomotive
+		}
+		afr_has_company_port_trigger = yes
+		NOT = {
+			has_country_flag = afr_rrp_colonial_project_active
+		}
+    }
+
+    visible = {
+		NOT = {
+			tag = ETH
+		}
+		has_country_flag = afr_rrp_railway_infrastructure_construction
+    }
+	
+	fire_only_once = yes
+	
+	days_remove = 360
+	
+	cancel_trigger = {
+		NOT = {
+			afr_has_company_port_trigger = yes
+		}
+	}
+
+    cost = 0
+	
+	modifier = {
+		political_power_gain = -1
+		MONTHLY_POPULATION = 1
+	}
+	
+	complete_effect = {
+		set_country_flag = afr_rrp_colonial_project_active
+	}
+	
+	 remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			custom_effect_tooltip = EDC_afr_20ip
+			hidden_effect = {
+				country_event = { id = EDC_afr.6 hours = 1 }
+				country_event = { id = EDC_afr.6 hours = 1 } 
+			}
+			add_ideas = { AF_T_small_scale_railways }
+			set_country_flag = afr_rrp_main_railway_route
+    }
+}
+
+afr_rrp_adopt_american_way = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		has_country_flag = ACS_affiliate
+		NOT = {
+			has_idea = no_constitution
+		}
+		OR = {
+			country_exists = CSA
+			country_exists = USA
+			any_country = {
+				AND = {
+					exists = yes 
+					has_country_flag = ACS_colony
+				}
+			}
+		}
+    }
+
+    visible = {
+		AND = {
+			has_country_flag = ACS_affiliate
+			NOT = {
+				has_country_flag = ACS_colony
+			}
+		}
+    }
+	
+	fire_only_once = yes
+	
+
+    cost = 0
+	
+	complete_effect = {
+		ROOT = {
+			set_party_name = { 
+				ideology = centrism 
+				long_name = AFR_party_republican
+				name = AFR_party_republican
+			}
+			set_party_name = { 
+				ideology = traditional_conservatism
+				long_name = AFR_party_democratic
+				name = AFR_party_democratic
+			}
+			set_party_name = { 
+				ideology = autocracy 
+				long_name = AFR_party_monarch
+				name = AFR_party_monarch 
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = centrism
+			}
+			set_popularities = {
+					centrism = 34
+					traditional_conservatism = 33
+					social_egalitarianism = 0
+					collectivist_socialism = 0
+					vanguard_communism = 0
+					autocracy = 33
+					radical_democracy = 0
+					chauvinist_populism = 0
+					anarchism = 0
+					fundamentalism = 0
+			}
+		}
+		country_event = {id = afr_rrp.20}
+		swap_ideas = {
+			remove_idea = no_elections
+			add_idea = limited_elections
+		}
+		swap_ideas = {
+			remove_idea = absolute_monarchy
+			add_idea = presidential_republic
+		}
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = state_religion
+				add_idea = secular_state
+			}
+			swap_ideas = {
+				remove_idea = nonfamily_heir
+				add_idea = non_monarchical_system
+			}
+		}
+	}
+}
+
+afr_rrp_american_colonial_confederation = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		has_country_flag = ACS_affiliate
+		LIB = {
+			exists = yes
+			num_of_civilian_factories > 2
+			has_completed_focus = LIB_gem_of_africa
+		}
+		NOT = {
+			has_idea = no_constitution
+		}
+		NOT = {
+			has_idea = no_elections
+		}
+		has_idea = afr_reforming_kingdom
+		
+    }
+
+    visible = {
+		AND = {
+			has_country_flag = ACS_affiliate
+			has_idea = presidential_republic
+			NOT = {
+				has_country_flag = ACS_colony
+			}
+		}
+    }
+	
+	fire_only_once = yes
+
+    cost = 0
+	
+	complete_effect = {
+		if = {
+			limit = {
+				LIB = {
+					NOT = {
+						has_country_flag = american_colonial_confederation
+					}
+				}
+			}
+			LIB = { country_event={id = afr_rrp.22} }
+		}
+		if = {
+			limit = {
+				LIB = {
+					has_country_flag = american_colonial_confederation
+				}
+			}
+			LIB = { country_event={id = afr_rrp.23} }
+		}
+	
+	}
+}
+
+}
+
+afr_rrp_growing_regional_industry = {
+
+#An African Inspired Industrialization
+afr_rrp_an_african_inspired_industrialization_partner_decision = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		if = {
+			limit = { has_idea = afr_large_kingdom }
+			has_idea = afr_large_kingdom
+		}
+		if = {
+			limit = { has_idea = afr_reforming_kingdom }
+			has_idea = afr_reforming_kingdom
+		}
+		if = {
+			limit = { has_country_flag = afr_rrp_an_african_inspired_industrialization_partner_response_flag }
+			custom_trigger_tooltip = {
+				tooltip = afr_rrp_an_african_inspired_industrialization_partner_response_flag
+				NOT = { has_country_flag = afr_rrp_an_african_inspired_industrialization_partner_response_flag }
+			}
+		}
+		FROM = {
+			has_country_flag = afr_rrp_non_colonial_industrialization
+			has_opinion = {
+				target = ROOT
+				value > 74
+			}
+			custom_trigger_tooltip = {
+				tooltip = afr_inward_not_subject_of_western_power
+				
+				NOT = {	is_subject_of = FRA }
+				NOT = {	is_subject_of = ENG }
+				NOT = {	is_subject_of = POR }
+				NOT = {	is_subject_of = SPR }
+				NOT = {	is_subject_of = HOL }
+				NOT = {	is_subject_of = PRS }
+				NOT = {	is_subject_of = GER }
+				NOT = {	is_subject_of = HAM }
+				NOT = {	is_subject_of = BRE }
+				NOT = {	is_subject_of = LIB }
+				if={
+					limit={
+						is_subject = yes
+					}
+					NOT = { OVERLORD = { has_cosmetic_tag = ITA } }
+				}
+				NOT = {	is_subject_of = BEL }
+				NOT = {	is_subject_of = TRV }
+				NOT = {	is_subject_of = OFS }
+				if = {
+					limit = { is_subject_of = SNG }
+					SNG = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = GBS }
+					GBS = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = ALG }
+					ALG = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = SAF }
+					SAF = { NOT = { is_subject_of = ENG } }
+				}
+				if = {
+					limit = { is_subject_of = NAT }
+					NAT = { NOT = { is_subject_of = ENG } }
+				}
+				if = {
+					limit = { is_subject_of = ETH }
+					ETH = { NOT = { is_subject_of = ENG } }
+					ETH = { NOT = { is_subject_of = FRA } }
+					ETH = { NOT = { is_subject_of = POR } }
+					ETH = { NOT = { is_subject_of = GER } }
+					ETH = { NOT = { is_subject_of = PRS } }
+				}
+			}
+		}
+		ROOT = {
+			custom_trigger_tooltip = {
+				tooltip = afr_inward_not_subject_of_western_power
+				
+				NOT = {	is_subject_of = FRA }
+				NOT = {	is_subject_of = ENG }
+				NOT = {	is_subject_of = POR }
+				NOT = {	is_subject_of = SPR }
+				NOT = {	is_subject_of = HOL }
+				NOT = {	is_subject_of = PRS }
+				NOT = {	is_subject_of = GER }
+				NOT = {	is_subject_of = HAM }
+				NOT = {	is_subject_of = BRE }
+				NOT = {	is_subject_of = LIB }
+				if={
+					limit={
+						is_subject = yes
+					}
+					NOT = { OVERLORD = { has_cosmetic_tag = ITA } }
+				}
+				NOT = {	is_subject_of = BEL }
+				NOT = {	is_subject_of = TRV }
+				NOT = {	is_subject_of = OFS }
+				if = {
+					limit = { is_subject_of = SNG }
+					SNG = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = GBS }
+					GBS = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = ALG }
+					ALG = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = SAF }
+					SAF = { NOT = { is_subject_of = ENG } }
+				}
+				if = {
+					limit = { is_subject_of = NAT }
+					NAT = { NOT = { is_subject_of = ENG } }
+				}
+				if = {
+					limit = { is_subject_of = ETH }
+					ETH = { NOT = { is_subject_of = ENG } }
+					ETH = { NOT = { is_subject_of = FRA } }
+					ETH = { NOT = { is_subject_of = POR } }
+					ETH = { NOT = { is_subject_of = GER } }
+					ETH = { NOT = { is_subject_of = PRS } }
+				}
+			}
+		}
+		has_stability > 0.6
+		NOT = {
+			has_country_flag = afr_rrp_company_port
+		}
+		custom_trigger_tooltip = {
+			tooltip = afr_inspired_industrialization_in_close_proximity
+			OR = {
+				ROOT = { is_neighbor_of = FROM }
+				ROOT = { is_in_faction_with = FROM }
+				any_country = {
+					AND = {
+						is_neighbor_of = FROM
+						is_in_faction_with = ROOT
+					}
+				}
+				any_country = {
+					AND = {
+						is_neighbor_of = FROM
+						is_subject_of = ROOT
+					}
+				}
+				any_country = {
+					AND = {
+						is_neighbor_of = ROOT
+						is_in_faction_with = FROM
+					}
+				}
+				any_country = {
+					AND = {
+						is_neighbor_of = ROOT
+						is_subject_of = FROM
+					}
+				}
+			}
+		}
+    }
+
+    visible = {
+		NOT = {
+			TAG = ETH
+			TAG = EGY
+			TAG = ZUL
+		}
+		NOT = {
+			has_country_flag = afr_rrp_company_port
+		}
+		NOT = { has_country_flag = afr_an_african_industrializing }
+    }
+	
+	target_trigger = {
+		FROM = {
+			has_country_flag = afr_rrp_non_colonial_industrialization
+			is_puppet = no
+			custom_trigger_tooltip = {
+				tooltip = afr_inward_not_subject_of_western_power
+				
+				NOT = {	is_subject_of = FRA }
+				NOT = {	is_subject_of = ENG }
+				NOT = {	is_subject_of = POR }
+				NOT = {	is_subject_of = SPR }
+				NOT = {	is_subject_of = HOL }
+				NOT = {	is_subject_of = PRS }
+				NOT = {	is_subject_of = GER }
+				NOT = {	is_subject_of = HAM }
+				NOT = {	is_subject_of = BRE }
+				NOT = {	is_subject_of = LIB }
+				if={
+					limit={
+						is_subject = yes
+					}
+					NOT = { OVERLORD = { has_cosmetic_tag = ITA } }
+				}
+				NOT = {	is_subject_of = BEL }
+				NOT = {	is_subject_of = TRV }
+				NOT = {	is_subject_of = OFS }
+				if = {
+					limit = { is_subject_of = SNG }
+					SNG = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = GBS }
+					GBS = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = ALG }
+					ALG = { NOT = { is_subject_of = FRA } }
+				}
+				if = {
+					limit = { is_subject_of = SAF }
+					SAF = { NOT = { is_subject_of = ENG } }
+				}
+				if = {
+					limit = { is_subject_of = NAT }
+					NAT = { NOT = { is_subject_of = ENG } }
+				}
+				if = {
+					limit = { is_subject_of = ETH }
+					ETH = { NOT = { is_subject_of = ENG } }
+					ETH = { NOT = { is_subject_of = FRA } }
+					ETH = { NOT = { is_subject_of = POR } }
+					ETH = { NOT = { is_subject_of = GER } }
+					ETH = { NOT = { is_subject_of = PRS } }
+				}
+			}
+		}
+	}
+	
+	fire_only_once = yes
+
+    cost = 250
+	
+	complete_effect = {
+		FROM = { country_event = { id = afr_rrp_an_african_inspired_industrialization_partner_event.1 days = 5 } }
+		set_country_flag = afr_rrp_an_african_inspired_industrialization_partner_response_flag
+	}
+}
+
+afr_rrp_railway_infrastructure_construction_independant_decision = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		has_stability > 0.65
+		custom_trigger_tooltip = {
+			tooltip = Oceania_industrisation_progress_greater_than_45
+			check_variable = {ROOT.industrisation_progress > 44}
+		}
+		has_tech = iron_railways
+		NOT = {
+			has_country_flag = afr_rrp_company_port
+		}
+    }
+
+    visible = {
+		has_country_flag = afr_an_african_industrializing
+		NOT = {
+			has_country_flag = afr_rrp_company_port
+		}
+		always = no
+    }
+	
+	fire_only_once = yes
+	
+	days_remove = 720
+
+    cost = 0
+	
+	complete_effect = {
+		set_country_flag = afr_rrp_colonial_project_active
+		if = {
+			limit = {
+				NOT = {
+					has_idea = AF_T_idea_trading_nation_2
+				}
+			}
+			add_ideas =  AF_T_idea_trading_nation_2 
+		}
+		set_country_flag = afr_an_african_industrializing
+	}
+	
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			clr_country_flag = afr_rrp_colonial_project_active
+			ROOT = { country_event = { days = 1 id = afr_rrp.6 } }
+			set_country_flag = afr_rrp_railway_infrastructure_construction_independant
+			custom_effect_tooltip = EDC_afr.6.t
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+	}
+}
+
+afr_rrp_main_railway_route_construction_independant = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		has_idea = afr_reforming_kingdom
+		has_stability > 0.60
+		NOT = {
+			tag = ETH
+		}
+		AND = {
+				has_tech = iron_railways
+				has_tech = steam_engine
+				has_tech = steam_locomotive
+		}
+    }
+
+    visible = {
+		NOT = {
+			tag = ETH
+		}
+		has_country_flag = afr_rrp_railway_infrastructure_construction_independant
+    }
+	
+	fire_only_once = yes
+	
+	days_remove = 720
+
+    cost = 0
+	
+	complete_effect = {
+		set_country_flag = afr_rrp_colonial_project_active
+	}
+	
+	 remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+			clr_country_flag = afr_rrp_colonial_project_active
+			custom_effect_tooltip = EDC_afr_20ip
+			hidden_effect = {
+				country_event = { id = EDC_afr.6 hours = 1 }
+				country_event = { id = EDC_afr.6 hours = 1 } 
+			}
+			add_ideas = { AF_T_small_scale_railways }
+			set_country_flag = afr_rrp_main_railway_route
+    }
+}
+
+afr_rrp_factory_construction = {
+
+	ai_will_do = { factor = 1 }
+    available = {
+		Root = {
+			OR = {
+				has_idea = AF_T_small_kingdom
+				has_idea = afr_reforming_kingdom
+			}
+		}
+		has_stability > 0.65
+		has_idea = AF_T_small_scale_railways
+		NOT = {
+			tag = ETH
+		}
+		OR = { 
+			ROOT = {
+				any_owned_state = { is_coastal = yes }
+			}
+			any_neighbor_country = { 
+				NOT = {
+					has_idea = pre_industrial_era
+				}
+			}
+			AND = {
+				if={
+					limit={
+						is_subject = yes
+					}
+					OVERLORD = {
+						NOT = {
+							has_idea = pre_industrial_era
+						}
+					}
+				}
+			}
+		}
+    }
+
+    visible = {
+		NOT = {
+			tag = ETH
+		}
+		has_idea = afr_reforming_kingdom
+    }
+	
+	fire_only_once = yes
+	
+	days_remove = 180
+
+    cost = 0
+	
+	modifier = {
+		political_power_gain = -1
+		research_speed_factor = 0.4
+    }
+	
+	complete_effect = {
+		set_country_flag = afr_rrp_colonial_project_active
+	}
+	
+	remove_effect = {
+		clr_country_flag = afr_rrp_colonial_project_active
+		set_country_flag = afr_rrp_factory_construction
+		custom_effect_tooltip = EDC_afr.5.t
+		hidden_effect = {
+			country_event = { id = EDC_afr.5 hours = 1 } 
+		}
+    }
+}
+
+}
+
+afr_suez_construction ={
+	EGY_dedicate_military_workers = {
+		icon = generic_construction
+		available = {
+			check_variable = {
+				var = EGY.suez_inprogress_total
+				value = EGY.suez_progress_max
+				compare = less_than
+			}
+			has_manpower > 999
+		}
+		visible={
+			has_country_flag = suez_constructor
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			political_power_gain = -0.05
+		}
+		days_remove = 240
+		cancel_trigger = {
+			check_variable = {
+				var = EGY.suez_progress
+				value = EGY.suez_progress_max
+				compare = greater_than_or_equals
+			}
+		}
+		remove_effect = {
+			##increase suez progress
+			if = { 
+				limit = {
+					check_variable = {
+						var = EGY.suez_progress
+						value = EGY.suez_progress_max
+						compare = less_than
+					}
+				}
+				add_to_variable = {EGY.suez_progress = 2}
+				add_to_variable = {suez_investment = 2}
+				clamp_variable = {
+					var = EGY.suez_progress
+					min = 0
+					max = EGY.suez_progress_max
+				}
+			}
+			add_to_variable = {EGY.suez_inprogress = -2}
+			add_manpower = 1000
+		}
+		complete_effect = {
+			##increase suez progress
+			add_manpower = -1000
+			add_to_variable = {EGY.suez_inprogress = 2}
+			set_variable = { EGY.suez_inprogress_total = EGY.suez_progress }
+			add_to_variable { EGY.suez_inprogress_total = EGY.suez_inprogress }
+			custom_effect_tooltip = EGY_suez_construct_2
+		}
+	}
+	EGY_corvee_workers_alexandria = {
+		icon = generic_construction
+		fixed_random_seed = no
+		available = {
+			check_variable = {
+				var = suez_inprogress_total
+				value = suez_progress_max
+				compare = less_than
+			}
+			447={
+				state_population > 9999
+			}
+			has_stability > 0.20
+			NOT={has_country_flag= EGY_corvee_suez_disabled}
+		}
+		visible={
+			NOT={has_country_flag= EGY_corvee_suez_disabled}
+			has_country_flag = suez_constructor
+			tag = EGY
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			political_power_gain = -0.02
+			stability_factor = -0.025
+		}
+		days_remove = 240
+		cancel_trigger = {
+			check_variable = {
+				var = suez_progress
+				value = suez_progress_max
+				compare = greater_than_or_equals
+			}
+		}
+		remove_effect = {
+			##increase suez progress
+			if = {
+				limit = {
+					check_variable = {
+						var = suez_progress
+						value = suez_progress_max
+						compare = less_than
+					}
+				}
+				add_to_variable = {suez_progress = 2}
+				add_to_variable = {suez_investment = 2}
+				clamp_variable = {
+					var = suez_progress
+					min = 0
+					max = suez_progress_max
+				}
+			}
+			add_to_variable = {suez_inprogress = -2}
+			447={
+				add_manpower = 10000
+			}
+		}
+		complete_effect = {
+			##increase suez progress
+			
+			447={
+				add_manpower = -10000
+				EGY_corvee_random_effects = yes
+			}
+			add_to_variable = {suez_inprogress = 2}
+			set_variable = { EGY.suez_inprogress_total = EGY.suez_progress }
+			add_to_variable { EGY.suez_inprogress_total = EGY.suez_inprogress }
+			custom_effect_tooltip = EGY_suez_construct_2
+		}
+	}
+	EGY_corvee_workers_aswan = {
+		icon = generic_construction
+		fixed_random_seed = no
+		available = {
+			check_variable = {
+				var = suez_inprogress_total
+				value = suez_progress_max
+				compare = less_than
+			}
+			456={
+				state_population > 9999
+			}
+			has_stability > 0.2
+			NOT={has_country_flag= EGY_corvee_suez_disabled}
+		}
+		visible={
+			NOT={has_country_flag= EGY_corvee_suez_disabled}
+			has_country_flag = suez_constructor
+			tag = EGY
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			political_power_gain = -0.02
+			stability_factor = -0.025
+		}
+		days_remove = 240
+		cancel_trigger = {
+			check_variable = {
+				var = suez_progress
+				value = suez_progress_max
+				compare = greater_than_or_equals
+			}
+		}
+		remove_effect = {
+			##increase suez progress
+			if = { 
+				limit = {
+					check_variable = {
+						var = suez_progress
+						value = suez_progress_max
+						compare = less_than
+					}
+				}
+				add_to_variable = {suez_progress = 2}
+				add_to_variable = {suez_investment = 2}
+				clamp_variable = {
+					var = suez_progress
+					min = 0
+					max = suez_progress_max
+				}
+			}
+			add_to_variable = {suez_inprogress = -2}
+			456={
+				add_manpower = 10000
+			}
+		}
+		complete_effect = {
+			##increase suez progress
+			456={
+				add_manpower = -10000
+				EGY_corvee_random_effects = yes
+			}
+			add_to_variable = {suez_inprogress = 2}
+			set_variable = { EGY.suez_inprogress_total = EGY.suez_progress }
+			add_to_variable { EGY.suez_inprogress_total = EGY.suez_inprogress }
+			custom_effect_tooltip = EGY_suez_construct_2
+		}
+	}
+	EGY_corvee_workers_cairo = {
+		icon = generic_construction
+		fixed_random_seed = no
+		available = {
+			check_variable = {
+				var = suez_inprogress_total
+				value = suez_progress_max
+				compare = less_than
+			}
+			446={
+				state_population > 9999
+			}
+			has_stability > 0.2
+			NOT={has_country_flag= EGY_corvee_suez_disabled}
+		}
+		visible={
+			NOT={has_country_flag= EGY_corvee_suez_disabled}
+			has_country_flag = suez_constructor
+			tag= EGY
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			political_power_gain = -0.02
+			stability_factor = -0.025
+		}
+		days_remove = 240
+		cancel_trigger = {
+			check_variable = {
+				var = suez_progress
+				value = suez_progress_max
+				compare = greater_than_or_equals
+			}
+		}
+		remove_effect = {
+			##increase suez progress
+			if = {
+				limit = {
+					check_variable = {
+						var = suez_progress
+						value = suez_progress_max
+						compare = less_than
+					}
+				}
+				add_to_variable = {suez_inprogress = -2}
+				clamp_variable = {
+					var = suez_progress
+					min = 0
+					max = suez_progress_max
+				}
+			}
+			add_to_variable = {suez_progress = 2}
+			add_to_variable = {suez_investment = 2}
+			446={
+				add_manpower = 10000
+			}
+		}
+		complete_effect = {
+			##increase suez progress
+			446={
+				add_manpower = -10000
+				EGY_corvee_random_effects = yes
+			}
+			add_to_variable = {suez_inprogress = 2}
+			set_variable = { EGY.suez_inprogress_total = EGY.suez_progress }
+			add_to_variable { EGY.suez_inprogress_total = EGY.suez_inprogress }
+			custom_effect_tooltip = EGY_suez_construct_2
+		}
+	}
+	EGY_dedicate_industrial_power = {
+		icon = generic_construction
+		available = {
+			check_variable = {
+				var = suez_inprogress_total
+				value = EGY.suez_progress_max
+				compare = less_than
+			}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible={
+			has_country_flag = suez_constructor
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		days_remove = 240
+		cancel_trigger = {
+			check_variable = {
+				var = EGY.suez_progress
+				value = EGY.suez_progress_max
+				compare = greater_than_or_equals
+			}
+		}
+		remove_effect = {
+			##increase suez progress
+			if = { 
+				limit = {
+					check_variable = {
+						var = EGY.suez_progress
+						value = EGY.suez_progress_max
+						compare = less_than
+					}
+				}
+				add_to_variable = {EGY.suez_progress = 2}
+				add_to_variable = {suez_investment = 2}
+				clamp_variable = {
+					var = EGY.suez_progress
+					min = 0
+					max = EGY.suez_progress_max
+				}
+			}
+			add_to_variable = {EGY.suez_inprogress = -2}
+		}
+		complete_effect = {
+			##increase suez progress
+			add_to_variable = {EGY.suez_inprogress = 2}
+			set_variable = { EGY.suez_inprogress_total = EGY.suez_progress }
+			add_to_variable { EGY.suez_inprogress_total = EGY.suez_inprogress }
+			custom_effect_tooltip = EGY_suez_construct_2
+		}
+	}
+	EGY_prepare_the_site = {
+		icon = generic_construction
+		available = {
+			has_manpower > 999
+			tag = EGY
+		}
+		visible={
+			NOT={has_country_flag = suez_constructor}
+			has_variable = suez_progress
+			tag = EGY
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+			political_power_gain = -0.05
+		}
+		days_remove = 240
+		fire_only_once = yes
+		cancel_trigger = {
+			check_variable = {
+				var = suez_progress
+				value = suez_progress_max
+				compare = greater_than_or_equals
+			}
+		}
+		remove_effect = {
+			##increase suez progress
+			if = {
+				limit = {
+					check_variable = {
+						var = suez_progress
+						value = suez_progress_max
+						compare = less_than
+					}
+				}
+				add_to_variable = {EGY.suez_progress = 2}
+				add_to_variable = {suez_investment = 2}
+				clamp_variable = {
+					var = suez_progress
+					min = 0
+					max = suez_progress_max
+				}
+				749={
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_to_variable = {EGY.suez_inprogress = -2}
+			add_manpower = 1000
+		}
+		complete_effect = {
+			##increase suez progress
+			add_manpower = -1000
+			add_to_variable = {EGY.suez_inprogress = 2}
+			set_variable = { EGY.suez_inprogress_total = EGY.suez_progress }
+			add_to_variable { EGY.suez_inprogress_total = EGY.suez_inprogress }
+			custom_effect_tooltip = EGY_suez_construct_2
+		}
+	}
+	EGY_build_northern_harbor = {
+		icon = generic_construction
+		available = {
+			has_manpower > 3999
+			tag = EGY
+			check_variable = {
+				var = suez_inprogress_total
+				value = suez_progress_max
+				compare = less_than
+			}
+		}
+		visible={
+			has_country_flag = suez_constructor
+			has_variable = suez_progress
+			tag = EGY
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 480
+		fire_only_once = yes
+		cancel_trigger = {
+			check_variable = {
+				var = suez_progress
+				value = suez_progress_max
+				compare = greater_than_or_equals
+			}
+		}
+		remove_effect = {
+			##increase suez progress
+			if = { 
+				limit = {
+					check_variable = {
+						var = suez_progress
+						value = suez_progress_max
+						compare = less_than
+					}
+				}
+				add_to_variable = {EGY.suez_progress = 5}
+				add_to_variable = {suez_investment = 5}
+				clamp_variable = {
+					var = suez_progress
+					min = 0
+					max = suez_progress_max
+				}
+				749={
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 12049
+						instant_build = yes
+					}
+				}
+			}
+			add_to_variable = {EGY.suez_inprogress = -5}
+			add_manpower = 4000
+		}
+		complete_effect = {
+			##increase suez progress
+			add_manpower = -4000
+			add_to_variable = {EGY.suez_inprogress = 5}
+			set_variable = { EGY.suez_inprogress_total = EGY.suez_progress }
+			add_to_variable { EGY.suez_inprogress_total = EGY.suez_inprogress }
+			custom_effect_tooltip = EGY_suez_construct_5
+		}
+	}
+	EGY_build_southern_harbor = {
+		icon = generic_construction
+		available = {
+			has_manpower > 3999
+			tag = EGY
+			check_variable = {
+				var = suez_inprogress_total
+				value = suez_progress_max
+				compare = less_than
+			}
+		}
+		visible={
+			has_country_flag = suez_constructor
+			has_variable = suez_progress
+			tag = EGY
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 480
+		fire_only_once = yes
+		cancel_trigger = {
+			check_variable = {
+				var = suez_progress
+				value = suez_progress_max
+				compare = greater_than_or_equals
+			}
+		}
+		
+		remove_effect = {
+			##increase suez progress
+			if = {
+				limit = {
+					check_variable = {
+						var = suez_progress
+						value = suez_progress_max
+						compare = less_than
+					}
+				}
+				add_to_variable = {EGY.suez_progress = 5}
+				add_to_variable = {suez_investment = 5}
+				clamp_variable = {
+					var = suez_progress
+					min = 0
+					max = suez_progress_max
+				}
+				749={
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 12049
+						instant_build = yes
+					}
+				}
+			}
+			add_to_variable = {suez_inprogress = -5}
+			add_manpower = 4000
+		}
+		complete_effect = {
+			##increase suez progress
+			add_manpower = -4000
+			add_to_variable = {EGY.suez_inprogress = 5}
+			set_variable = { EGY.suez_inprogress_total = EGY.suez_progress }
+			add_to_variable { EGY.suez_inprogress_total = EGY.suez_inprogress }
+			custom_effect_tooltip = EGY_suez_construct_5
+		}
+	}
+	EGY_open_the_canal = {
+		icon = generic_operation
+		available = {
+			tag = EGY
+			custom_trigger_tooltip = {
+				tooltip=suez_canal_completed
+				check_variable = {
+					var = EGY.suez_progress
+					value = EGY.suez_progress_max
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		visible={
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		#days_remove = 240
+		complete_effect = {
+			##increase suez progress
+			set_global_flag = SUEZ_CANAL_BUILT
+			EGY = { news_event ={id = afr_EGY_vic.20}}
+		}
+	}
+	FRA_suez_processing_of_the_report = {
+		icon = generic_political_discourse
+		allowed = {
+			tag = FRA
+		}
+		available = {
+			has_country_flag = suez_constructor
+			#date < 1870.01.01
+		}
+		activation = {
+			EGY={has_variable = suez_progress}
+			date < 1870.01.01
+		}
+		Is_good = yes
+		days_mission_timeout = 702
+		#fire_only_once = yes
+		timeout_effect = {
+			FRA = {country_event = {id=afr_EGY_vic.22}}
+		}
+
+
+		complete_effect = {
+			#add_political_power = 1337
+		}
+	}
+	EGY_block_the_canal = {
+		icon = generic_operation
+		available = {
+			controls_state = 749
+			NOT={has_global_flag = SUEZ_CANAL_BLOCKED}
+		}
+		visible={
+			owns_state = 749
+			has_global_flag = SUEZ_CANAL_BUILT
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 240
+		remove_effect = {
+			##block the canal
+			set_global_flag = SUEZ_CANAL_BLOCKED
+			#EGY = { news_event ={id = afr_EGY_vic.20}}
+		}
+	}
+	EGY_un_block_the_canal = {
+		icon = generic_operation
+		available = {
+			controls_state = 749
+			has_global_flag = SUEZ_CANAL_BLOCKED
+		}
+		visible={
+			owns_state = 749
+			has_global_flag = SUEZ_CANAL_BUILT
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 240
+		remove_effect = {
+			##block the canal
+			clr_global_flag = SUEZ_CANAL_BLOCKED
+			#EGY = { news_event ={id = afr_EGY_vic.20}}
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+	}
+	EGY_invite_ETH_to_invest = {
+		icon = generic_operation
+		available = {
+			tag = EGY
+			has_country_flag = suez_constructor
+			
+		}
+		visible={
+			has_country_flag = ETH_EGY_alliance
+			NOT = {has_global_flag = SUEZ_CANAL_BUILT}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		#days_remove = 240
+		complete_effect = {
+			##increase suez progress
+			set_global_flag = SUEZ_CANAL_BUILT
+			ETH = { news_event ={id = afr_EGY_vic.26}}
+		}
+	}
+
+}
+
+eoanb_category_diplomatic_actions={
+	OTO_grant_romanian_union={
+		available = {  
+			tag = OTO
+			MOL={
+				has_autonomy_state = autonomy_personal_union
+				is_subject_of = ROM
+			}
+		}
+		visible={
+			tag = OTO
+			MOL={has_autonomy_state = autonomy_personal_union}
+			NOT={
+				ROM={
+					has_country_flag = ROM_union_allowed
+				}
+			}
+		}
+        cost = 25
+        fire_only_once = yes
+        complete_effect = {
+			ROM={
+				set_country_flag = ROM_union_allowed
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {#not before historical date
+				factor = 0
+				date > 1861.12.23
+			}
+		}
+	
+	}
+}
+
+afr_berlin_conference={
+	ber_voting_decision={
+		allowed={
+			always = yes
+		}
+		target_trigger = {
+			FROM = {#is in the conferance and is colonial
+				has_country_flag = berlin_conferance_voter
+				has_idea = afr_colonial_power
+			}
+			FROM={
+				OR={#land locked regions require access
+					GER={check_variable = {current_region_conferance_vote < 18}}#coastal ones are fine
+					AND={#Uganda
+						GER={check_variable = {current_region_conferance_vote = 18}}
+						OR={
+							has_country_flag = BC_Granted_Kenya
+							has_country_flag = BC_Granted_Zanzabar
+							has_country_flag = BC_Granted_Kongo
+							owns_state = 845
+						}
+					}
+					AND={#Rhodesia/Zambia+Zimbabwe
+						GER={check_variable = {current_region_conferance_vote = 19}}
+						OR={
+							has_country_flag = BC_Granted_Zanzabar
+							has_country_flag = BC_Granted_Angola
+							has_country_flag = BC_Granted_Nambia
+							has_country_flag = BC_Granted_Kongo
+							owns_state = 542
+							owns_state = 841
+							owns_state = 1143
+							owns_state = 823
+							owns_state = 544
+							owns_state = 542
+							
+						}
+					}
+					AND={#Central africa
+						GER={check_variable = {current_region_conferance_vote = 20}}
+						OR={
+							has_country_flag = BC_Granted_Equatorial_Africa
+							has_country_flag = BC_Granted_Kongo
+							has_country_flag = BC_Granted_Kongo
+							has_country_flag = BC_Granted_Kongo
+							owns_state = 832 #Sudan
+							owns_state = 833		
+						}
+					}
+					AND={#Mali
+						GER={check_variable = {current_region_conferance_vote = 21}}
+						OR={
+							has_country_flag = BC_Granted_Senegal
+							has_country_flag = BC_Granted_Manuritania
+							has_country_flag = BC_Granted_Guinea
+							has_country_flag = BC_Granted_Ivory_Coast
+							owns_state = 514	#Algeria	
+						}
+					}
+					AND={#Niger
+						GER={check_variable = {current_region_conferance_vote = 22}}
+						OR={
+							has_country_flag = BC_Granted_Mali
+							has_country_flag = BC_Granted_Nigeria
+							has_country_flag = BC_Granted_Benin
+							has_country_flag = BC_Granted_Central_Africa
+							owns_state = 514	#Algeria	
+							owns_state = 273	#Libya	
+						}
+					}
+					AND={#Bukina Faso
+						GER={check_variable = {current_region_conferance_vote = 23}}
+						OR={
+							has_country_flag = BC_Granted_Ivory_Coast
+							has_country_flag = BC_Granted_Ghana
+							has_country_flag = BC_Granted_Togo
+							has_country_flag = BC_Granted_Benin
+							has_country_flag = BC_Granted_Niger
+							has_country_flag = BC_Granted_Mali
+						}
+					}
+					AND={#Chad
+						GER={check_variable = {current_region_conferance_vote = 24}}
+						OR={
+							has_country_flag = BC_Granted_Central_Africa
+							has_country_flag = BC_Granted_Niger
+							has_country_flag = BC_Granted_Equatorial_Africa
+							owns_state = 832	#Sudan
+							owns_state = 1191	#
+						}
+					}
+						
+				}
+			}
+        }
+		available = {  
+			has_country_flag = berlin_conferance_voting
+		}
+        #cost = 50
+        #fire_only_once = yes
+        complete_effect = {
+            #add_manpower = -500
+			clr_country_flag = berlin_conferance_voting
+			add_to_variable = {GER.conferance_vote_@FROM = 1}
+			add_to_variable = {GER.afr_number_of_votes_in_the_conference = 1}
+			if={
+				limit={
+					check_variable = {var = GER.afr_number_of_votes_in_the_conference var = GER.berlin_conferance_voters^num compare = greater_than_or_equals}
+				}
+				random_country={
+					limit={has_country_flag = berlin_conferance_host}
+					country_event={id=EDC_berlin_con.16}
+				}
+			}
+        }
+		ai_will_do = {
+			factor = 16
+			modifier = {#weighted to vote for countries that already own land
+				factor = 3
+				FROM = {
+					OR={
+						afr_ber_check_if_owns_colonial_state = yes
+						any_country={
+							is_subject_of = FROM
+							afr_ber_check_if_owns_colonial_state = yes
+						}
+					}
+				}
+			}
+			modifier = {#weighted towards GP
+				factor = 2
+				FROM = {
+					is_great_power = yes
+				}
+			}
+			modifier = {#vote for countries you like
+				factor = 1.5
+				has_opinion = {
+					target = FROM
+					value > 100
+				}	
+			}
+			modifier = { #Congo Free state basically already exists
+				factor = 10
+				is_historical_focus_on = no
+				FROM = {
+					OR={
+						TAG = BEL
+					}
+					check_variable = {GER.current_region_conferance_vote = 12}
+				}
+			}
+			modifier = {#avoid nations you hate
+				factor = 0.8
+				has_opinion = {
+					target = FROM
+					value > 100
+				}	
+			}
+
+			##historical weights
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 1}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 2}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 3}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = ENG
+					check_variable = {GER.current_region_conferance_vote = 4}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 5}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = ENG
+					check_variable = {GER.current_region_conferance_vote = 6}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					OR={
+						TAG = PRS
+						TAG = GER
+					}
+					check_variable = {GER.current_region_conferance_vote = 7}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 8}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = ENG
+					check_variable = {GER.current_region_conferance_vote = 9}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					OR={
+						TAG = PRS
+						TAG = GER
+					}
+					check_variable = {GER.current_region_conferance_vote = 10}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 11}
+				}
+			}
+			modifier = { 
+				factor = 100
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = BEL
+					check_variable = {GER.current_region_conferance_vote = 12}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = POR
+					check_variable = {GER.current_region_conferance_vote = 13}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					OR={
+						TAG = PRS
+						TAG = GER
+					}
+					check_variable = {GER.current_region_conferance_vote = 14}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					OR={
+						TAG = PRS
+						TAG = GER
+					}
+					check_variable = {GER.current_region_conferance_vote = 15}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = ENG
+					check_variable = {GER.current_region_conferance_vote = 16}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					OR={
+						TAG = ITA
+						TAG = PIE
+					}
+					check_variable = {GER.current_region_conferance_vote = 17}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = ENG
+					check_variable = {GER.current_region_conferance_vote = 18}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = ENG
+					check_variable = {GER.current_region_conferance_vote = 19}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 20}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 21}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 22}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 23}
+				}
+			}
+			modifier = { 
+				factor = 10
+				is_historical_focus_on = yes
+				FROM = {
+					TAG = FRA
+					check_variable = {GER.current_region_conferance_vote = 24}
+				}
+			}
+		}
+	}
+	ber_voting_decision_self={
+		available = {
+			has_country_flag = berlin_conferance_voter
+			has_country_flag = berlin_conferance_voting
+			has_idea = afr_colonial_power
+          }
+          #cost = 50
+          #fire_only_once = yes
+          complete_effect = {
+               #add_manpower = -500
+			   clr_country_flag = berlin_conferance_voting
+			   add_to_variable = {GER.conferance_vote_@ROOT = 1}
+			   add_to_variable = {GER.afr_number_of_votes_in_the_conference = 1}
+			   if={
+					limit={
+						check_variable = {var = GER.afr_number_of_votes_in_the_conference var = GER.berlin_conferance_voters^num compare = greater_than_or_equals}
+					}
+					random_country={
+						limit={has_country_flag = berlin_conferance_host}
+						country_event={id=EDC_berlin_con.16}
+					}
+				}
+          }
+		  ai_will_do = { 
+			factor = 16
+			modifier = {
+				factor = 5
+				FROM = {
+					OR={
+						afr_ber_check_if_owns_colonial_state = yes
+						any_country={
+							is_subject_of = FROM
+							afr_ber_check_if_owns_colonial_state = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	voting_timeout={
+		activation = {
+			has_country_flag = berlin_conferance_voting
+		}
+		available = {  
+			NOT={has_country_flag = berlin_conferance_voting}
+		}
+        selectable_mission = no
+		days_mission_timeout = 60
+		is_good = no
+        #fire_only_once = yes
+		cancel_trigger = {
+			NOT={has_country_flag = berlin_conferance_voting}
+		}
+        timeout_effect = {
+            #add_manpower = -500
+			clr_country_flag = berlin_conferance_voting
+			add_to_variable = {GER.conferance_vote_@ROOT = 1}
+			add_to_variable = {GER.afr_number_of_votes_in_the_conference = 1}
+			if={
+				limit={
+					check_variable = {var = GER.afr_number_of_votes_in_the_conference var = GER.berlin_conferance_voters^num compare = greater_than_or_equals}
+				}
+				random_country={
+					limit={has_country_flag = berlin_conferance_host}
+					country_event={id=EDC_berlin_con.16}
+				}
+			}
+        }
+	}
+}
+
+afr_scramble_for_africa={
+	afr_annex_senegal={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Senegal
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_senegal = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={
+							has_idea = AFR_history_of_colonial_resistance
+							has_idea = AFR_history_of_colonial_resistance_1
+						}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_senegal = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_senegal = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_senegal = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_senegal = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_senegal = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+					is_in_senegal = yes
+					owner={
+						afr_is_tribal = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_senegal = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_senegal = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_manuritania={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Manuritania
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_manuritania = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_manuritania = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_manuritania = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_manuritania = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_manuritania = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_manuritania = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+					is_in_manuritania = yes
+					owner={
+						afr_is_tribal = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_manuritania = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_manuritania = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_guinea={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Guinea
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_guinea = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_guinea = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_guinea = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_guinea = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_guinea = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_guinea = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+					is_in_guinea = yes
+					owner={
+						afr_is_tribal = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_guinea = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_guinea = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_sierra_leone={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Sierra_Leone
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_sierra_leone = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_sierra_leone = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_sierra_leone = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_sierra_leone = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_sierra_leone = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_sierra_leone = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_sierra_leone = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_sierra_leone = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_sierra_leone = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_ivory_coast={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Ivory_Coast
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_ivory_coast = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ivory_coast = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ivory_coast = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_ivory_coast = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ivory_coast = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ivory_coast = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_ivory_coast = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ivory_coast = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_ivory_coast = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_ghana={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Ghana
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_ghana = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ghana = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ghana = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_ghana = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ghana = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ghana = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_ghana = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_ghana = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_ghana = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_togo={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Togo
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_togo = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_togo = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_togo = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_togo = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_togo = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_togo = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_togo = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_togo = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_togo = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_benin={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Benin
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_benin = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_benin = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_benin = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_benin = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_benin = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_benin = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_benin = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_benin = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_benin = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_nigeria={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Nigeria
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_nigeria = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nigeria = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nigeria = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_nigeria = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nigeria = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nigeria = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_nigeria = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nigeria = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_nigeria = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_equatorial_africa={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Equatorial_Africa
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_equatorial_africa = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_equatorial_africa = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_equatorial_africa = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_equatorial_africa = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_equatorial_africa = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_equatorial_africa = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_equatorial_africa = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_equatorial_africa = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_equatorial_africa = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_gabon={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Gabon
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_gabon = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_gabon = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_gabon = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_gabon = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_gabon = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_gabon = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_gabon = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_gabon = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_gabon = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_kongo={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Kongo
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			if={##congo free state
+				limit={
+					tag = BEL
+				}
+				ZAI={
+					set_cosmetic_tag = ZAI_CFS
+				}
+				every_state={#tribes are subsumed
+					limit={
+						is_in_kongo = yes
+						owner={
+							afr_is_tribal = yes
+							is_ai = yes
+							NOT={
+								is_subject_of = ZAN
+							}
+						}
+					}
+					ZAI={transfer_state = PREV}
+					add_core_of = ZAI
+				}
+			}
+			else={
+				every_state={#tribes are subsumed
+					limit={
+						is_in_kongo = yes
+						owner={
+							afr_is_tribal = yes
+						}
+						owner={
+							NOT={has_idea = AFR_history_of_colonial_resistance}
+							is_ai = yes
+						}
+					}
+					if={
+						limit={
+							any_country={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_kongo = yes
+								}
+							}
+						}
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_kongo = yes
+								}
+							}
+							transfer_state = PREV
+							PREV={add_compliance = 50}
+						}
+					}
+					else={
+						ROOT={transfer_state = PREV}
+						add_compliance = 50
+					}
+				}
+				every_state={#the border states of resistors are annexed, but with high resistance
+					limit={
+						is_in_kongo = yes
+						owner={
+							afr_is_tribal = yes
+						}
+						is_capital = no
+						is_ai = yes
+						owner={
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+					if={
+						limit={
+							any_country={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_kongo = yes
+								}
+							}
+						}
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_kongo = yes
+								}
+							}
+							transfer_state = PREV
+							PREV={add_resistance = 30}
+						}
+					}
+					else={
+						ROOT={transfer_state = PREV}
+						add_resistance = 30
+					}
+				}
+				every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+					limit={
+						is_in_kongo = yes
+						owner={
+							afr_is_tribal = yes
+						}
+						is_capital = yes
+						owner={
+							OR={
+								is_ai = yes
+								has_idea = AFR_history_of_colonial_resistance
+							}
+						}
+					}
+					if={
+						limit={
+							any_country={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_kongo = yes
+								}
+							}
+						}
+						owner={
+							random_country={
+								limit={
+									is_subject_of = ROOT
+									capital_scope={
+										is_in_kongo = yes
+									}
+								}
+								declare_war_on = {
+									target = PREV
+									type = take_claimed_state
+								}
+								ROOT={
+									add_to_war = {
+										targeted_alliance = PREV 
+										enemy = PREV.PREV 
+										hostility_reason = asked_to_join
+									}
+								}
+							}
+						}
+					}
+					else={
+						owner={
+							ROOT={
+								declare_war_on = {
+									target = PREV
+									type = take_claimed_state
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_angola={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Angola
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_angola = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_angola = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_angola = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_angola = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_angola = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_angola = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_angola = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_angola = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_angola = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_nambia={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Nambia
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_nambia = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nambia = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nambia = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_nambia = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nambia = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nambia = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_nambia = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_nambia = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_nambia = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_zanzabar={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Zanzabar
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_zanzabar = yes
+					owner={
+						afr_is_tribal = yes
+						if={
+							limit={
+								is_puppet = yes
+							}
+							overlord={
+								afr_is_tribal = yes
+							}
+						}
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_zanzabar = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_zanzabar = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_zanzabar = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_zanzabar = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_zanzabar = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_zanzabar = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_zanzabar = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_zanzabar = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_kenya={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Kenya
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_kenya = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+						if={
+							limit={
+								is_puppet = yes
+							}
+							overlord={
+								afr_is_tribal = yes
+							}
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_kenya = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_kenya = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_kenya = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_kenya = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_kenya = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_kenya = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_kenya = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_kenya = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_african_horn={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_African_Horn
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_african_horn = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						if={
+							limit={
+								is_puppet = yes
+							}
+							overlord={
+								afr_is_tribal = yes
+							}
+						}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_african_horn = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_african_horn = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_african_horn = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_african_horn = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_african_horn = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_african_horn = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_african_horn = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_african_horn = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_uganda={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Uganda
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_uganda = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_uganda = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_uganda = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_uganda = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_uganda = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_uganda = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_uganda = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_uganda = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_uganda = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_rhodesia={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Rhodesia
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_rhodesia = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_rhodesia = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_rhodesia = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_rhodesia = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_rhodesia = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_rhodesia = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_rhodesia = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_rhodesia = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_rhodesia = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_central_africa={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Central_Africa
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_central_africa = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_central_africa = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_central_africa = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_central_africa = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_central_africa = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_central_africa = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_central_africa = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_central_africa = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_central_africa = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_mali={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Mali
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_mali = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_mali = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_mali = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_mali = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_mali = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_mali = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_mali = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_mali = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_mali = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_niger={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Niger
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_niger = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_niger = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_niger = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_niger = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_niger = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_niger = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_niger = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_niger = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_niger = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_burkina_faso={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Burkina_Faso
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_burkina_faso = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_burkina_faso = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_burkina_faso = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_burkina_faso = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_burkina_faso = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_burkina_faso = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_burkina_faso = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_burkina_faso = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_burkina_faso = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+	afr_annex_chad={
+		available = {
+			has_idea = afr_colonial_power
+			
+		}
+		visible={
+			has_country_flag = BC_Granted_Chad
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 240
+		remove_effect = {
+			every_state={#tribes are subsumed
+				limit={
+					is_in_chad = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					owner={
+						NOT={has_idea = AFR_history_of_colonial_resistance}
+						is_ai = yes
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_chad = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_chad = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_compliance = 50}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_compliance = 50
+				}
+			}
+			every_state={#the border states of resistors are annexed, but with high resistance
+				limit={
+					is_in_chad = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = no
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_chad = yes
+							}
+						}
+					}
+					random_country={
+						limit={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_chad = yes
+							}
+						}
+						transfer_state = PREV
+						PREV={add_resistance = 30}
+					}
+				}
+				else={
+					ROOT={transfer_state = PREV}
+					add_resistance = 30
+				}
+			}
+			every_state={#declare war on resistor capitals, due to cores if they win they should get thier land back, will likely script the peace later
+				limit={
+					is_in_chad = yes
+					owner={
+						afr_is_tribal = yes
+					}
+					is_capital = yes
+					owner={
+						OR={
+							is_ai = yes
+							has_idea = AFR_history_of_colonial_resistance
+						}
+					}
+				}
+				if={
+					limit={
+						any_country={
+							is_subject_of = ROOT
+							capital_scope={
+								is_in_chad = yes
+							}
+						}
+					}
+					owner={
+						random_country={
+							limit={
+								is_subject_of = ROOT
+								capital_scope={
+									is_in_chad = yes
+								}
+							}
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+							ROOT={
+								add_to_war = {
+									targeted_alliance = PREV 
+									enemy = PREV.PREV 
+									hostility_reason = asked_to_join
+								}
+							}
+						}
+					}
+				}
+				else={
+					owner={
+						ROOT={
+							declare_war_on = {
+								target = PREV
+								type = take_claimed_state
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 16
+		}
+	}
+
+}

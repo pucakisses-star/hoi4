@@ -1,0 +1,38 @@
+1. Oregon (385) is owned by Cascadia but the country does not have a core.
+2. Whashington (385) is owned by Cascadia but the country does not have a core.
+3. Aztlan's country history has an unfinished field marshal that interfered with the other leader/commanders. I commented it out.
+4. California's party popularities added 101 (d:56, f:13, c:13, n:1). I changed democratic popularity to 55.
+5. California's country history has an unfinished field marshal that interfered with the other leader/commanders. I commented it out.
+6. Cascadia's party popularities added 97 (d:37, f:11, c:35, n:14). I changed fascism popularity to 14.
+6. Cascadia's country history has an unfinished field marshal that interfered with the other leader/commanders. I commented it out.
+8. Confederates' country history has an unfinished field marshal that interfered with the other leader/commanders. I commented it out.
+9. Deseret's country history has an unfinished field marshal that interfered with the other leader/commanders. I commented it out.
+10. P.R. of California's party popularities added 101 (d:56, f:13, c:13, n:1). I changed democratic popularity to 55.
+11. Texas' country history has an unfinished field marshal that interfered with the other leader/commanders. I commented it out.
+12. Your files for leader traits seems to be outdated (vanilla Husky files reference them).
+13. 00_countries.txt referenced entries for "ConfederatedStates.txt" and "UnitedStates.txt" but those files' names had mispellings. I fixed it.
+14. Hosea Stout's and Joseph Smith III's portraits seem to be two different verions of Dom Pedro II's portrait (vanilla style and colourized picture). Pedro II was a Brazilian emperor and is actually featured in the mod.
+15. ConfederateStates.txt had a bloc of code with missing brackets and it seems to be redundant. I fixed the brackets and commented the bloc out.
+16. People's Republic of Californa is tagged as PRC, but this tag is already used by People's Republic of China. I commented out the duplicate on the country tag list, but it requires a lot of rework.
+17. Confederate States' country history had capital as '10343', which is an invalid state id (probably is a province within Virgina). I changed to 362 (Virginia).
+18. William C. Kibbe (California) and Douglas MacArthur (USA, vanilla) both have id = 57. I commented both lines out.
+19. Error log shows there's a duplicate of id = 55, but I could not find what characters they are.
+20. Confederate States of America_COF_I_english.yml had entries with spaces in the keys. I replaced them with undelines.
+21. ideas_I_english.yml has empty entries. I commented them out.
+22. Deserat's country history adds Brigham Young twice. I commented out the second one.
+23. Both Confederate States of America_COF.txt and usa.txt focus tree files are set as focus tree for Confederates. I weighted the first one as more important.
+24. Vanilla country history files still have a many references for techs that the mod replaces. It does not seem to bug the game in any way.
+25. Most of ideas in Texas.txt are actually tagged for California.
+26. 00_ideologies.txt has no entry for neutrality (and its sub-ideologies). It bugs most countries. I'm replacing monarchy ideology with neutrality as a temporary solution.
+27. Updated 00_ideologies.txt modifers (it was missing the spying modifiers). Other modifers were preserved but updated values are commented right next to them..
+28. The event cof.6 adds an unexisting idea (unpopular_president).
+29. Initial units are missing equipment (their countries lack the modded techs).
+30. Duplicated events with 'usa' namespace deal with repeated character ids. It may crash the game when they fire.
+
+#### MORE CHANGES
+
+31. Changed California's tag to CLF (Kaiserreich already has CAL)
+32. The mod currently uses an uncomplete colors.txt file (in common/countries). It would be better to add the custom nations colours directly into Kaiserreich's file.
+33. There is a conflict of country tag between vanilla Madagascar and Kaiserreich's indian country in Madras state (currently, Magadascasr owns a piece of India).
+34. Alaska has its capital set to state 362 (Virgina), but the state of Alaska itself has id = 463. I changed the Alaskan history file to capital = 463
+35. Vanilla unity history files causes the game to crash. It is probably trying to spawn units for countries that does not exist. Only nations that exist in Kaiserreich should be imported.

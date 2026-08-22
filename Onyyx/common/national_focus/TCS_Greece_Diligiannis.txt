@@ -1,0 +1,12 @@
+focus_tree = {
+	id = TCS_greece_diligiannis
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = GRE
+		}
+	}
+	shared_focus = GRE_finish_client_reform
+	continuous_focus_position = { x = 300 y = 900 }
+}
