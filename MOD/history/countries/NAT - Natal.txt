@@ -99,11 +99,5 @@
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "John Scott"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "gfx/leaders/Africa/Portrait_NAT_John_Scott.dds"
-    expire = 1900.1.1
-    ideology = conserv
-}
+recruit_character = NAT_john_scott
 }

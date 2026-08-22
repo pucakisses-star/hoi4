@@ -1,0 +1,32 @@
+characters = {
+	MXE_ignacio_comonfort = {
+		name = "Ignacio Comonfort"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Portrait_MEX_Ignacio_Comonfort.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1865.11.13"
+			traits = {  }
+			id = -1
+		}
+	}
+	MXE_juan_nepomuceno_almonte = {
+		name = "Juan Nepomuceno Almonte"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MXE/Portrait_MXE_Juan_Nepomuceno_Almonte.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1898.2.11"
+			traits = {  }
+			id = -1
+		}
+	}
+}

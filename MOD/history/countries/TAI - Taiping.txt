@@ -96,107 +96,25 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Hong Xiuquan"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_TAI_Hong_Xiuquan.dds"
-    expire = 1891.12.31
-    ideology = other
-    traits = {
-      stout_defender
-    }
-  }
+  recruit_character = TAI_hong_xiuquan
 
   # GENERALS
 
-  create_corps_commander = {
-    name = "Hong Xiuquan"
-    picture = "Portrait_TAI_Hong_Xiuquan.dds"
-    traits = { }
-    skill = 3
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_hong_xiuquan_2
 
-  create_corps_commander = {
-    name = "Yang Xiuqing"
-    traits = { }
-    skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_yang_xiuqing
 
-  create_corps_commander = {
-    name = "Xiao Chaogui"
-    traits = { }
-    skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_xiao_chaogui
 
-  create_corps_commander = {
-    name = "Feng Yunshan"
-    traits = { }
-    skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_feng_yunshan
 
-  create_corps_commander = {
-    name = "Wei Changhui"
-    traits = { }
-    skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_wei_changhui
 
-  create_corps_commander = {
-    name = "Shi Dakai"
-    traits = { }
-    skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_shi_dakai
 
-  create_corps_commander = {
-    name = "Li Xiucheng"
-    traits = { }
-    skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_li_xiucheng
 
-  create_corps_commander = {
-    name = "Li Shixian"
-    traits = { }
-    skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_li_shixian
 
-  create_corps_commander = {
-    name = "Chen Yucheng"
-    traits = { }
-    skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-  }
+  recruit_character = TAI_chen_yucheng
 }

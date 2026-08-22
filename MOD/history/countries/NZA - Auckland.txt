@@ -85,11 +85,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-	create_country_leader = {
-		name = "John Williamson"
-		desc = "POLITICS_TEMP_DESC"
-		picture = "Portrait_NZA_John_Williamson.dds"
-		expire = 1875.02.16
-		ideology = despotism
-	}
+	recruit_character = NZA_john_williamson
 }

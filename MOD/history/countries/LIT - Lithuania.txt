@@ -73,24 +73,24 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 30
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 15
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 15
 		}
 		
-		neutrality = { 
-			popularity = 50
+		autocracy = { 
+			popularity = 40
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1926.5.8"
 	election_frequency = 120
 	elections_allowed = no
@@ -100,59 +100,32 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 30
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 15
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 15
 			}
 			
-			neutrality = { 
-				popularity = 50
+			autocracy = { 
+				popularity = 40
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1936.6.10"
 		election_frequency = 120
 		elections_allowed = no
 	}
 }
 
-create_country_leader = {
-	name = "Antanas Smetona"
-	desc = "POLITICS_ANTANAS_SMETONA_DESC"
-	picture = "GFX_Portrait_lithuania_antanas_smetona"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-}
+recruit_character = LIT_antanas_smetona
 
-create_country_leader = {
-	name = "Antanas Snieckus"
-	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
+recruit_character = LIT_antanas_snieckus
 
-create_country_leader = {
-	name = "Augustinas Voldemaras"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = LIT_augustinas_voldemaras

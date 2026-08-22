@@ -93,37 +93,10 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Francesco V"
-  desc = "POLITICS_PLACEHOLDER_DESC"
-  picture = "Portrait_MOD_Francis_V.dds"
-  expire = "1862.11.7"
-  ideology = despotism
-  traits = {
+recruit_character = MOD_francesco_v
 
-  }
-}
+recruit_character = MOD_agostino_saccozzi
 
-create_corps_commander = {
-  name = "Agostino Saccozzi"
-  picture = "Portrait_MOD_Agostino_Saccozzi.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
-
-create_corps_commander = {
-  name = "Francis V, Duke of Modena"
-  picture = "Portrait_MOD_Francis_V.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = MOD_francis_v_duke_of_modena
 
 }

@@ -73,47 +73,29 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Li Zongren"
-	desc = "POLITICS_LI_ZONGREN_DESC"
-	picture = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = GXC_li_zongren
 
-create_corps_commander = {
-	name = "Chen Jitang"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = GXC_chen_jitang

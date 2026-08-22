@@ -62,66 +62,34 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 50
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 10
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 10
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 30
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Hashim al-Atassi"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_navy_1.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_hashim_al_atassi
 
-create_country_leader = {
-	name = "Antun Saadeh"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_3.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_antun_saadeh
 
-create_country_leader = {
-	name = "Ghazi bin Faisal"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_2.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_ghazi_bin_faisal
 
-create_country_leader = {
-	name = "Khalid Bakdash"
-	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_1.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = SYR_khalid_bakdash

@@ -1,0 +1,17 @@
+characters = {
+	REW_raja_raghuraj = {
+		name = "Raja Raghuraj"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REW/Portrait_REW_Raja_Raghuraj.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_RAGHURAJ_DESC"
+			expire = "1880.3.27"
+			traits = {  }
+			id = -1
+		}
+	}
+}

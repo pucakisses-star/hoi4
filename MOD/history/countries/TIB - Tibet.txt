@@ -51,64 +51,55 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Jamphel Yeshe Gyaltsen"
-	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
-	picture = "Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = TIB_jamphel_yeshe_gyaltsen
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

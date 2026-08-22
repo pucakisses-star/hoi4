@@ -70,69 +70,51 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 49
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 51
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = chauvinist_populism
 	last_election = "1931.10.11"
 	election_frequency = 96
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Óscar Benavides"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "GFX_Portrait_peru_oscar_benavides"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = PRU_oscar_benavides
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 49
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 51
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = chauvinist_populism
 		last_election = "1931.10.11"
 		election_frequency = 96
 		elections_allowed = yes
 	}
 
-	create_country_leader = {
-		name = "Manuel Prado Ugarteche"
-		desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = fascism_ideology
-		traits = {
-			#
-		}
-	}
+	recruit_character = PRU_manuel_prado_ugarteche
 }

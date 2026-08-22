@@ -87,11 +87,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Mohand Mokrani"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_BAB_Mohand_Mokrani.dds"
-    expire = 1891.12.31
-    ideology = islamist
-}
+  recruit_character = BAB_mohand_mokrani
 }

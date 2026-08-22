@@ -110,23 +110,8 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Mehmed Rashid Pasha"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_BOS_Mehmed_Rashid_Pasha.dds"
-    expire = 2000.09.10
-    ideology = absolutism
-}
+  recruit_character = BOS_mehmed_rashid_pasha
 
-create_corps_commander = {
-  name = "Luka Vukalović"
-  picture = ""
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = BOS_luka_vukalovic
 
 }

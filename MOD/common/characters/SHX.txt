@@ -1,0 +1,33 @@
+characters = {
+	SHX_yan_xishan = {
+		name = "Yan Xishan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHX/GFX_portrait_shanxi_portrait_yan_xishan"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_YAN XISHAN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SHX_wang_jingguo = {
+		name = "Wang Jingguo"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

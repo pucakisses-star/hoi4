@@ -86,24 +86,9 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Haji Kirantukh Berzeg"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_CIR_Haji_Kirantukh_Berzeg.dds"
-    expire = 1891.12.31
-    ideology = despotism
-  }
+  recruit_character = CIR_haji_kirantukh_berzeg
 
-create_corps_commander = {
-  name = "Haji Kirantukh Berzeg"
-  picture = "Portrait_CIR_Haji_Kirantukh_Berzeg.dds"
-  traits = { ambusher hill_fighter trait_mountaineer }
-  skill = 2
-  attack_skill = 2
-  defense_skill = 3
-  planning_skill = 3
-  logistics_skill = 2
-}
+recruit_character = CIR_haji_kirantukh_berzeg_2
 
 add_equipment_to_stockpile = {
     type = infantry_equipment_rifle_0

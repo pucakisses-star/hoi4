@@ -79,20 +79,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 83
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 11
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 6
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
@@ -102,20 +102,20 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 87
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 8
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 5
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1939.4.2"
 		election_frequency = 48
 		elections_allowed = yes
@@ -125,53 +125,12 @@ set_politics = {
 set_convoys = 80
 set_stability = 0.75
 
-create_country_leader = {
-	name = "Leopold II"
-	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "leopold_deux_md.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+recruit_character = BEL_leopold_ii
 
-create_country_leader = {
-	name = "Joseph Jacquemotte"
-	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = anarchist_communism
-	traits = {
-		#
-	}
-}
+recruit_character = BEL_joseph_jacquemotte
 
-create_country_leader = {
-	name = "Léon Degrelle"
-	desc = "POLITICS_LEON_DEGRELLE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-		#
-	}
-}
+recruit_character = BEL_leon_degrelle
 
-create_corps_commander = {
-	name = "M.C.L. Keyaerts"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trait_mountaineer hill_fighter }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 4
-}
+recruit_character = BEL_m_c_l_keyaerts
 
-create_navy_leader = {
-	name = "Georges Timmermans"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
-	traits = { seawolf }
-	skill = 4
-}
+recruit_character = BEL_georges_timmermans

@@ -40,59 +40,32 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 15
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 30
 		}
 		
-		communism = {
-			popularity = 50
+		vanguard_communism = {
+			popularity = 55
 		}
 	}
 }
 
-create_country_leader = {
-	name = "Kost Levytsky"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
+recruit_character = UKR_kost_levytsky
 
-create_country_leader = {
-	name = "Nikita Sergeyevich Khrushchev"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
+recruit_character = UKR_nikita_sergeyevich_khrushchev
 
-create_country_leader = {
-	name = "Stepan Bandera"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
+recruit_character = UKR_stepan_bandera
 
 #create_country_leader = {
 #	name = ""
 #	desc = ""
 #	picture = ""
 #	expire = "1953.3.1"
-#	ideology = oligarchism
+#	ideology = plutocracy
 #	traits = {
 #		
 #	}

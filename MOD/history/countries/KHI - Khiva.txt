@@ -82,11 +82,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Sayyid Muhammad"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "gfx/leaders/Arabia/generic_leader_chah_1.dds"
-    expire = 1891.12.31
-    ideology = despotism
-}
+  recruit_character = KHI_sayyid_muhammad
 }

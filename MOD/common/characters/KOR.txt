@@ -1,0 +1,58 @@
+characters = {
+	KOR_syngman_rhee = {
+		name = "Syngman Rhee"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	KOR_yi_kang = {
+		name = "Yi Kang"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	KOR_kim_il_sung = {
+		name = "Kim Il-sung"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	KOR_yi_un = {
+		name = "Yi Un"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

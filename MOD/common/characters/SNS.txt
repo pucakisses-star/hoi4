@@ -1,0 +1,17 @@
+characters = {
+	SNS_muhammad_ibn_ali_as_senussi = {
+		name = "Muhammad ibn Ali as-Senussi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNS/Portrait_SNS_Muhammad_ibn Ali_as_Senussi.dds"
+			}
+		}
+		country_leader = {
+			ideology = islamist
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1891.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+}

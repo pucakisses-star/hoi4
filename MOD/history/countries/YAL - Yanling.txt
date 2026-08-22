@@ -75,97 +75,18 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "Wu Lingyun"
-    picture = "Portrait_YAL_Wu_Lingyun.dds"
-    desc = "POLITICS_TEMP_DESC"
-    expire = 1891.12.31
-    ideology = despotism
-}
+recruit_character = YAL_wu_lingyun
 
-create_corps_commander = {
-  name = "Wu Lingyun"
-  picture = "Portrait_YAL_Wu_Lingyun.dds"
-  traits = { }
-  skill = 2
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = YAL_wu_lingyun_2
 
-create_corps_commander = {
-  name = "Wu Yuangao"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = YAL_wu_yuangao
 
-create_corps_commander = {
-  name = "Wu Yuanlu"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-  name = "Zheng San"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-  name = "Liu Yongfu"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-  name = "Lu Yulun"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-  name = "Yang Quandi"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-  name = "Deng Peijin"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-  name = "Zhao Huadan"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = YAL_wu_yuanlu
+recruit_character = YAL_zheng_san
+recruit_character = YAL_liu_yongfu
+recruit_character = YAL_lu_yulun
+recruit_character = YAL_yang_quandi
+recruit_character = YAL_deng_peijin
+recruit_character = YAL_zhao_huadan
 add_manpower = 10000
 }

@@ -43,23 +43,23 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 35
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 15
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 15
 		}
-		neutrality = {
+		autocracy = {
 			popularity = 35
 		}
 	}
 
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -67,49 +67,13 @@ set_politics = {
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
 
-create_country_leader = {
-	name = "Phan Bôi Châu" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
-	expire = "1953.3.1"
-	ideology = fascism_ideology 
-	traits = {
-		
-	}
-}
+recruit_character = VIN_phan_boi_chau
 
-create_country_leader = {
-	name = "Ho Chí Minh" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
+recruit_character = VIN_ho_chi_minh
 
-create_country_leader = {
-	name = "Ngô Đình Diêm"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
+recruit_character = VIN_ngo_inh_diem
 
-create_country_leader = {
-	name = "Nguyen Tuong Tam"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
+recruit_character = VIN_nguyen_tuong_tam
 
 
 

@@ -82,14 +82,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Mir Tahniyath Ali Khan"
-  desc = "POLITICS_Tahniyath_DESC"
-  picture = "Portrait_HYD_Mir_Tahniyath_Ali_Khan.dds"
-  expire = "1857.5.16"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = HYD_mir_tahniyath_ali_khan
 }

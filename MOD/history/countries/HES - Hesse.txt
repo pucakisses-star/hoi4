@@ -94,15 +94,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Friedrich Scheffer"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_HES_Friedrich_Scheffer.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+recruit_character = HES_friedrich_scheffer
 
 }

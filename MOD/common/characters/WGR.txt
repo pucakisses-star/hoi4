@@ -1,0 +1,31 @@
+characters = {
+	WGR_klaus_klauser = {
+		name = "Klaus Klauser"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	WGR_konrad_adenauer = {
+		name = "Konrad Adenauer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_KONRAD_ADENAUER_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

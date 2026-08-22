@@ -1,0 +1,58 @@
+characters = {
+	NEW_william_a_harriman = {
+		name = "William A. Harriman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEW/WilliamAverellHarriman.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NEW_william_d_pelley = {
+		name = "William D. Pelley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEW/WilliamDudleyPelley.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			expire = "1965.1.1"
+			traits = { dictator }
+			id = -1
+		}
+	}
+	NEW_john_j_ballam = {
+		name = "John J. Ballam"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEW/JohnJBallam_result.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NEW_father_leonard_feeney = {
+		name = "Father Leonard Feeney"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEW/Father Feeney.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

@@ -93,14 +93,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Jean-Louis Pindy"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_BRI_Jean_Louis_Pindy.dds"
-  expire = "1900.1.1"
-  ideology = anarchism_sub
-  traits = {
-
-  }
-}
+  recruit_character = BRI_jean_louis_pindy
 }

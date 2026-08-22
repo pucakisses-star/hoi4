@@ -82,14 +82,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Krishnaraja Wadiyar III"
-  desc = "POLITICS_WADIYAR_DESC"
-  picture = "Portrait_India_Wadiyar_III.dds"
-  expire = "1868.3.27"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = MYS_krishnaraja_wadiyar_iii
 }

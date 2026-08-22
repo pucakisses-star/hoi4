@@ -1,0 +1,97 @@
+characters = {
+	PRC_mao_zedong = {
+		name = "Mao Zedong"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/GFX_portrait_prc_mao_zedong"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_MAO_ZEDONG_DESC"
+			expire = "1965.1.1"
+			traits = { cornered_fox }
+			id = -1
+		}
+	}
+	PRC_mao_zedong_2 = {
+		name = "Mao Zedong"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/GFX_portrait_prc_mao_zedong"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine trait_cautious politically_connected }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	PRC_zhu_de = {
+		name = "Zhu De"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/GFX_portrait_prc_zhu_de"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	PRC_chen_yi = {
+		name = "Chen Yi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/GFX_portrait_prc_chen_yi"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	PRC_peng_dehuai = {
+		name = "Peng Dehuai"
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/GFX_portrait_prc_peng_dehuai"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer trait_mountaineer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	PRC_lin_biao = {
+		name = "Lin Biao"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer trait_mountaineer }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+}

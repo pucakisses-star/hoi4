@@ -11,24 +11,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 35
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 2
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 5
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 58
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -38,16 +38,7 @@ set_convoys = 2
 set_stability = 0.81
 
 
-create_country_leader = {
-	name = "Queen Liliokalani"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "liliokalani.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = HAW_queen_liliokalani
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
@@ -57,28 +48,10 @@ create_country_leader = {
 	name = "William D. Pelley"
 #desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 #	expire = "1965.1.1"
-#	ideology = fascism_ideology
+#	ideology = fascism
 #	traits = {
 #		dictator
 #	}
 #}
-create_country_leader = {
-	name = "Jack W. Hall"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "JackW.Hall(Com.Haw.)_result.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Queen Lydia"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Lydia_result.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+recruit_character = HAW_jack_w_hall
+recruit_character = HAW_queen_lydia

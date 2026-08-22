@@ -1,0 +1,49 @@
+characters = {
+	MOD_francesco_v = {
+		name = "Francesco V"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MOD/Portrait_MOD_Francis_V.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_PLACEHOLDER_DESC"
+			expire = "1862.11.7"
+			traits = {  }
+			id = -1
+		}
+	}
+	MOD_agostino_saccozzi = {
+		name = "Agostino Saccozzi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MOD/Portrait_MOD_Agostino_Saccozzi.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	MOD_francis_v_duke_of_modena = {
+		name = "Francis V, Duke of Modena"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MOD/Portrait_MOD_Francis_V.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

@@ -127,21 +127,21 @@ if = {
 
 set_politics = {
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 25
 		}
-		fascism = {
+		chauvinist_populism = {
 			popularity = 31
 		}
-		neutrality = {
+		autocracy = {
 			popularity = 44
 		}
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = yes
@@ -152,57 +152,16 @@ if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
 	}
-	create_country_leader = {
-		name = "Miklós Horthy"
-		desc = "POLITICS_MIKLOS_HORTHY_DESC"
-		picture = "Portrait_Hungary_Miklos_Horthy.dds"
-		expire = "1965.1.1"
-		ideology = oligarchism
-		traits = {
-			fascist_sympathies
-			anti_communist
-		}
-		id = 500 #Horthy Neutral
-	}
+	recruit_character = HUN_miklos_horthy
 	else = {
-		create_country_leader = {
-			name = "Miklós Horthy"
-			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
-			expire = "1965.1.1"
-			ideology = despotism
-		}
-		create_country_leader = {
-			name = "Miklós Horthy"
-			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
-			expire = "1965.1.1"
-			ideology = fascism_ideology
-		}
+		recruit_character = HUN_miklos_horthy_2
+		recruit_character = HUN_miklos_horthy_3
 	}
 }
 
-create_country_leader = {
-	name = "Mátyás Rákosi"
-	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
-	picture = "Portrait_Hungary_Matyas_Rakoski.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
+recruit_character = HUN_matyas_rakosi
 
-create_country_leader = {
-	name = "Árpád Szakasits"
-	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+recruit_character = HUN_arpad_szakasits
 
 1939.1.1 = {
 	if = {
@@ -211,36 +170,26 @@ create_country_leader = {
 		}
 		#Remove neutral Horty add fascist
 		retire_country_leader = yes
-		create_country_leader = {
-			name = "Miklós Horthy"
-			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
-			expire = "1965.1.1"
-			ideology = fascism_ideology
-			traits = {
-				anti_communist
-			}
-			id = 503 #Horty fascist
-		}
+		recruit_character = HUN_miklos_horthy_4
 	}
 
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 27
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 70
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 3
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = chauvinist_populism
 		last_election = "1939.5.29"
 		election_frequency = 48
 		elections_allowed = yes
@@ -249,57 +198,12 @@ create_country_leader = {
 }
 
 
-create_corps_commander = {
-	name = "Géza Lakatos"
-	gfx = GFX_Portrait_hungary_geza_lakatos
-	traits = {  }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = HUN_geza_lakatos
 
-create_corps_commander = {
-	name = "Iván Hindy"
-	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = {  trickster }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 4
-}
+recruit_character = HUN_ivan_hindy
 
-create_corps_commander = {
-	name = "Károly Beregfy"
-	gfx = GFX_Portrait_hungary_karoly_beregfy
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = HUN_karoly_beregfy
 
-create_corps_commander = {
-	name = "Lajos Veress"
-	gfx = GFX_Portrait_hungary_lajos_veress
-	traits = { armor_officer }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = HUN_lajos_veress
 
-create_field_marshal = {
-	name = "Ferenc Feketehalmy-Czeydner"
-	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = HUN_ferenc_feketehalmy_czeydner

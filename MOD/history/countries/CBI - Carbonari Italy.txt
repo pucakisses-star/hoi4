@@ -91,33 +91,7 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-	name = "Giuseppe Garibaldi"
-	picture = "Portrait_CBI_Giuseppe_Garibaldi.dds"
-	expire = "1965.1.1"
-	ideology = liberal_social
-	traits = {
-
-	}
-}
-create_corps_commander = {
-  name = "Giuseppe Garibaldi"
-  picture = "Portrait_PIE_Giuseppe_Garibaldi.dds"
-  traits = { infantry_officer brilliant_strategist  }
-  skill = 3
-  attack_skill = 3
-  defense_skill = 2
-  planning_skill = 2
-  logistics_skill = 2
-}
-create_corps_commander = {
-  name = "Nicola Fabrizi"
-  picture = "ITA_Young_Italy_General_Nicola_Fabrizi.dds"
-  #traits = { infantry_officer brilliant_strategist  }
-  skill = 2
-  attack_skill = 2
-  defense_skill = 3
-  planning_skill = 4
-  logistics_skill = 2
-}
+  recruit_character = CBI_giuseppe_garibaldi
+recruit_character = CBI_giuseppe_garibaldi_2
+recruit_character = CBI_nicola_fabrizi
 }

@@ -1,0 +1,17 @@
+characters = {
+	GBS_charles_paul_brossard_de_corbigny = {
+		name = "Charles-Paul Brossard de Corbigny"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GBS/Portrait_GBS_Charles_Paul_Brossard_de_Corbigny.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

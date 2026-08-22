@@ -1,0 +1,17 @@
+characters = {
+	ZAN_sayyid_majid_bin_sa_id = {
+		name = "Sayyid Majid bin Sa'id"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZAN/Portrait_ZAN_Majid_bin_Said.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_SAYYID_MAJID_BIN_SAID_DESC"
+			expire = "1870.10.7"
+			traits = {  }
+			id = -1
+		}
+	}
+}

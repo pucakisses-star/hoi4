@@ -1,0 +1,31 @@
+characters = {
+	VIC_william_haines = {
+		name = "William Haines"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VIC/Portrait_VIC_William_Haines.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_TEMP_DESC"
+			traits = {  }
+			id = -1
+		}
+	}
+	VIC_william_haines_2 = {
+		name = "William Haines"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VIC/Portrait_VIC_William_Haines.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_WILLIAM_HAINES_DESC"
+			expire = "2100.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

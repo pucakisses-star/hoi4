@@ -83,14 +83,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Raja Raghuraj"
-  desc = "POLITICS_RAGHURAJ_DESC"
-  picture = "Portrait_REW_Raja_Raghuraj.dds"
-  expire = "1880.3.27"
-  ideology = despotism
-  traits = {
-
-  }
-}
+recruit_character = REW_raja_raghuraj
 }

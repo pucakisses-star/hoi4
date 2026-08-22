@@ -1,0 +1,39 @@
+characters = {
+	GWA_jayajirao_sindhia = {
+		name = "Jayajirao Sindhia"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GWA/Portrait_GWA_Jayajirao_Sindhia.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_Sindhia_DESC"
+			expire = "1886.6.20"
+			traits = {  }
+			id = -1
+		}
+	}
+	GWA_nana_sahib = {
+		name = "Nana Sahib"
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	GWA_kunwar_singh = {
+		name = "Kunwar Singh"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

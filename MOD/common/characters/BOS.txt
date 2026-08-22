@@ -1,0 +1,28 @@
+characters = {
+	BOS_mehmed_rashid_pasha = {
+		name = "Mehmed Rashid Pasha"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/Portrait_BOS_Mehmed_Rashid_Pasha.dds"
+			}
+		}
+		country_leader = {
+			ideology = absolutism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "2000.09.10"
+			traits = {  }
+			id = -1
+		}
+	}
+	BOS_luka_vukalovic = {
+		name = "Luka Vukalović"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

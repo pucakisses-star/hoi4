@@ -1,0 +1,32 @@
+characters = {
+	COS_ricardo_jimenez_oreamuno = {
+		name = "Ricardo Jiménez Oreamuno"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COS/GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	COS_leon_cortes_castro = {
+		name = "León Cortés Castro"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_LEON_CORTES_CASTRO_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

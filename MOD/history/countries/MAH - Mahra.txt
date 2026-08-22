@@ -80,11 +80,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Ahmad ibn Sa`d Afrar al-Mahri"
-    picture = ""
-    expire = "2100.1.1"
-    ideology = despotism
-    traits = { }
-  }
+  recruit_character = MAH_ahmad_ibn_sa_d_afrar_al_mahri
 }

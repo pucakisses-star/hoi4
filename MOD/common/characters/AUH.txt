@@ -1,0 +1,114 @@
+characters = {
+	AUH_viktor_adler = {
+		name = "Viktor Adler"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	AUH_franz_ferdinand = {
+		name = "Franz Ferdinand"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	AUH_franz_joseph_i = {
+		name = "Franz Joseph I"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	AUH_conrad_von_hotzendorf = {
+		name = "Conrad von Hötzendorf"
+		field_marshal = {
+			traits = {  }
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUH_arthur_von_bolfras = {
+		name = "Arthur von Bolfras"
+		field_marshal = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	AUH_stoger_steiner_von_steinstatten = {
+		name = "Stöger-Steiner von Steinstätten"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	AUH_svetozar_borojevic_von_bojna = {
+		name = "Svetozar Borojević von Bojna"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	AUH_karl_von_pflanzer_baltin = {
+		name = "Karl von Pflanzer-Baltin"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	AUH_viktor_dankl_von_krasnik = {
+		name = "Viktor Dankl von Krasnik"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	AUH_hermann_kovess_von_kovesshaza = {
+		name = "Hermann Kövess von Kövessháza"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	AUH_anton_haus = {
+		name = "Anton Haus"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	AUH_hermann_von_spaun = {
+		name = "Hermann von Spaun"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+	AUH_miklos_horthy = {
+		name = "Miklós Horthy"
+		navy_leader = {
+			traits = {  }
+		}
+	}
+}

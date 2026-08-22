@@ -1,0 +1,81 @@
+characters = {
+	WUR_wilhelm_i = {
+		name = "Wilhelm I"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WUR/Portrait_WUR_Wilhelm_I_of_Wurttemberg.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_WILHELM_I_WURTTEMBERG_DESC"
+			expire = "1864.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	WUR_eduard_von_kallee = {
+		name = "Eduard von Kallee"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WUR/Portrait_WUR_Eduard_von_Kallee.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WUR_ferdinand_von_zeppelin = {
+		name = "Ferdinand von Zeppelin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WUR/Portrait_WUR_Ferdinand_von_Zeppelin.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WUR_graf_von_scheler = {
+		name = "Graf von Scheler"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WUR/Portrait_WUR_Graf_von_Scheler.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	WUR_oskar_von_hardegg = {
+		name = "Oskar von Hardegg"
+		portraits = {
+			army = {
+				large = "gfx/leaders/WUR/Portrait_WUR_Oskar_von_Hardegg.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

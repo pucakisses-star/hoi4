@@ -1,0 +1,17 @@
+characters = {
+	NJD_faisal_bin_turki_bin_abdullah_al_saud = {
+		name = "Faisal bin Turki bin Abdullah Al Saud"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Arabia/generic_leader_sultan_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1891.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+}

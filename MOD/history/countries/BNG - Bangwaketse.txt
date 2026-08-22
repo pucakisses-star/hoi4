@@ -66,14 +66,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Gaseitsiwe a Tshosa"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "gfx/leaders/Africa/generic_leader_tribe_4.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = BNG_gaseitsiwe_a_tshosa
 }

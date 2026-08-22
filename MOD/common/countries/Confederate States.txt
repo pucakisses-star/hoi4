@@ -2,9 +2,3 @@
 graphical_culture = southamerican_gfx
 
 color = { 242  205  94 }
-
-
-
-COF = {
-	color = rgb { 65 175 179 }
-	color_ui = rgb { 85 228 233 }

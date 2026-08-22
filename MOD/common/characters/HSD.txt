@@ -1,0 +1,65 @@
+characters = {
+	HSD_ludwig_iii = {
+		name = "Ludwig III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HSD/Portrait_HSD_Ludwig_III.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	HSD_heinrich_joseph_von_weitershausen = {
+		name = "Heinrich Joseph von Weitershausen"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HSD/Portrait_HSD_Heinrich_Joseph_von_Weitershausen.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	HSD_eberhard_freiherr_von_brandis = {
+		name = "Eberhard Freiherr von Brandis"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HSD/Portrait_HSD_eberhard_freiherr_von_brandis.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	HSD_friedrich_von_hessen_darmstadt = {
+		name = "Friedrich von Hessen-Darmstadt"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HSD/Portrait_HSD_friedrich_von_hessen_darmstadt.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	GQE_adam_kok_iii = {
+		name = "Adam Kok III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Adam_Kok_III.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1874.2.8"
+			traits = {  }
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	SNM_grand_and_general_council = {
+		name = "Grand and General Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SNM/Portrait_SNM_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_SanMan_DESC"
+			expire = "1947.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

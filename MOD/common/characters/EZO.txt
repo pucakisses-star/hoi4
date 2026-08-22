@@ -1,0 +1,17 @@
+characters = {
+	EZO_enomoto_takeaki = {
+		name = "Enomoto Takeaki"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EZO/Portrait_EZO_Enomoto_Takeaki.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

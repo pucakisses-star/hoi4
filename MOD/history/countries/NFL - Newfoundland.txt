@@ -86,29 +86,9 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Sir Alexander Bannerman"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_NFL_Alexander_Bannerman.dds"
-    expire = 1861.12.31
-    ideology = despotism
-  }
+  recruit_character = NFL_sir_alexander_bannerman
 
-  create_country_leader = {
-    name = "Charles Fox Bennett"
-    desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-    picture = "Portrait_NFL_Charles_Fox_Bennett.dds"
-    expire = "1865.1.1"
-    ideology = social_liberal
-    traits = { }
-  }
+  recruit_character = NFL_charles_fox_bennett
 
-  create_country_leader = {
-    name = "John Thomas Mullock"
-    desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-    picture = "Portrait_NFL_John_Thomas_Mullock.dds"
-    expire = "1865.1.1"
-    ideology = christian
-    traits = { }
-  }
+  recruit_character = NFL_john_thomas_mullock
 }

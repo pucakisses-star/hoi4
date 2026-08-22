@@ -1,0 +1,235 @@
+characters = {
+	ITA_benito_mussolini = {
+		name = "Benito Mussolini"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Benito_Mussolini.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	ITA_ferruccio_parri = {
+		name = "Ferruccio Parri"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/GFX_portrait_italy_ferruccio_parri"
+			}
+		}
+		country_leader = {
+			ideology = liberal_social
+			desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	ITA_palmiro_togliatti = {
+		name = "Palmiro Togliatti"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/GFX_portrait_ita_palmiro_togliatti"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	ITA_pietro_badoglio = {
+		name = "Pietro Badoglio"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Pietro_Badoglio.dds"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ITA_emilio_de_bono = {
+		name = "Emilio De Bono"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/portrait_italy_emilio_de_bono.dds"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine old_guard politically_connected trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ITA_ugo_cavallero = {
+		name = "Ugo Cavallero"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Ugo_Cavallero.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard trait_cautious career_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	ITA_giovanni_messe = {
+		name = "Giovanni Messe"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Giovanni_Messe.dds"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer war_hero }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	ITA_sebastiano_visconti_prasca = {
+		name = "Sebastiano Visconti Prasca"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer inflexible_strategist }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ITA_ubaldo_soddu = {
+		name = "Ubaldo Soddu"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Ubaldo_Soddu.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ITA_italo_balbo = {
+		name = "Italo Balbo"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/portrait_italy_italo_balbo.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ITA_rodolfo_graziani = {
+		name = "Rodolfo Graziani"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/portrait_italy_radolfo_graziani.dds"
+			}
+		}
+		field_marshal = {
+			traits = { offensive_doctrine politically_connected trait_cautious }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	ITA_inigo_campioni = {
+		name = "Inigo Campioni"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Inigo_Campioni.dds"
+			}
+		}
+		navy_leader = {
+			traits = { superior_tactician spotter }
+			skill = 2
+		}
+	}
+	ITA_alberto_da_zara = {
+		name = "Alberto Da Zara"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Alberto_Da_Zara.dds"
+			}
+		}
+		navy_leader = {
+			traits = { superior_tactician }
+			skill = 3
+		}
+	}
+	ITA_giuseppe_fioravanzo = {
+		name = "Giuseppe Fioravanzo"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Giuseppe_Fioravanzo.dds"
+			}
+		}
+		navy_leader = {
+			traits = { superior_tactician }
+			skill = 3
+		}
+	}
+	ITA_carlo_bergamini = {
+		name = "Carlo Bergamini"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Carlo_Bergamini.dds"
+			}
+		}
+		navy_leader = {
+			traits = { superior_tactician }
+			skill = 2
+		}
+	}
+	ITA_angelo_iachino = {
+		name = "Angelo Iachino"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/ITA/Portrait_Italy_Angelo_Iachino.dds"
+			}
+		}
+		navy_leader = {
+			traits = { superior_tactician spotter }
+			skill = 2
+		}
+	}
+}

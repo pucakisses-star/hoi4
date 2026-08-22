@@ -1,0 +1,32 @@
+characters = {
+	XSM_ma_bufang = {
+		name = "Ma Bufang"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XSM/GFX_portrait_xsm_ma_bufang"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	XSM_ma_hongbin = {
+		name = "Ma Hongbin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

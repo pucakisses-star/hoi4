@@ -28,20 +28,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 47
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 46
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 7
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -114,20 +114,20 @@ set_stability = 0.5
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 22
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 76
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 2
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = chauvinist_populism
 		last_election = "1934.3.26"
 		election_frequency = 60
 		elections_allowed = no
@@ -137,60 +137,15 @@ set_stability = 0.5
 	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
 }
 
-create_country_leader = {
-	name = "Manuel Azana"
-	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "Portrait_Spain_Manuel_Azana.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+recruit_character = SPR_manuel_azana
 
-create_country_leader = {
-	name = "José Díaz"
-	desc = "POLITICS_JOSE_DIAZ_DESC"
-	picture = "Portrait_Spain_Jose_Diaz.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
+recruit_character = SPR_jose_diaz
 
-create_country_leader = {
-	name = "Francisco Franco"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "Portrait_Spain_Francisco_Franco.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = SPR_francisco_franco
 
-create_country_leader = {
-	name = "Alejandro Lerroux"
-	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
+recruit_character = SPR_alejandro_lerroux
 
-create_field_marshal = {
-	name = "José Asensio Torrado"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 2
-    attack_skill = 1
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 1
-}
+recruit_character = SPR_jose_asensio_torrado
 
 
 ### Ship Variants ###

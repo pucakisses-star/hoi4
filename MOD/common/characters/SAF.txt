@@ -1,0 +1,105 @@
+characters = {
+	SAF_j_b_m_hertzog = {
+		name = "J. B. M. Hertzog"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/GFX_SAF_james_hertzog"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_J_B_M_HERTZOG_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SAF_jan_smuts = {
+		name = "Jan Smuts"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/Portrait_SouthAfrica_Jan_Smuts.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_JAN_SMUTS_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SAF_d_f_malan = {
+		name = "D. F. Malan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/GFX_SAF_daniel_malan"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			desc = "POLITICS_DF_MALAN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SAF_moses_kotane = {
+		name = "Moses Kotane"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAF/GFX_SAF_moses_kotane"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_MOSES_KOTANE_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SAF_pixley_ka_isaka_seme = {
+		name = "Pixley Ka Isaka Seme"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_PIXLEY_SEME_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SAF_george_edwin_brink = {
+		name = "George Edwin Brink"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/GFX_SAF_george_edwin_brink"
+			}
+		}
+		corps_commander = {
+			traits = { desert_fox }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 1
+		}
+	}
+	SAF_guy_hallifax = {
+		name = "Guy Hallifax"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/SAF/GFX_SAF_guy_halifax"
+			}
+		}
+		navy_leader = {
+			traits = {  }
+			skill = 3
+		}
+	}
+}

@@ -62,66 +62,34 @@ set_convoys = 20
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 25
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 20
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 5
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 50
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Bashir es Sadawi"
-	desc = ""
-	picture = "Portrait_Arabia_Generic_democratic1.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = LBA_bashir_es_sadawi
 
-create_country_leader = {
-	name = "Ettore Bastico"
-	desc = ""
-	picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = LBA_ettore_bastico
 
-create_country_leader = {
-	name = "Idris Senussi"
-	desc = ""
-	picture = "Portrait_Arabia_Generic_land_3.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = LBA_idris_senussi
 
-create_country_leader = {
-	name = "Hassan as-Senussi"
-	desc = ""
-	picture = "Portrait_Arabia_Generic_communism1.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = LBA_hassan_as_senussi

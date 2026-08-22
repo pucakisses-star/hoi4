@@ -1,0 +1,78 @@
+characters = {
+	IRE_eamon_de_valera = {
+		name = "Éamon de Valera"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRE/Portrait_Ireland_Eamon_de_Valera.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	IRE_eoin_o_duffy = {
+		name = "Eoin O'Duffy"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			desc = "POLITICS_EOIN_ODUFFY_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	IRE_james_larkin = {
+		name = "James Larkin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_JAMES_LARKIN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	IRE_william_norton = {
+		name = "William Norton"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_JAMES_LARKIN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	IRE_michael_costello = {
+		name = "Michael Costello"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+}

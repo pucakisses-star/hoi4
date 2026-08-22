@@ -82,34 +82,9 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Jayajirao Sindhia"
-  desc = "POLITICS_Sindhia_DESC"
-  picture = "Portrait_GWA_Jayajirao_Sindhia.dds"
-  expire = "1886.6.20"
-  ideology = despotism
-  traits = {
+  recruit_character = GWA_jayajirao_sindhia
 
-  }
-}
+recruit_character = GWA_nana_sahib
 
-create_corps_commander = {
-  name = "Nana Sahib"
-  traits = { }
-  skill = 2
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-  name = "Kunwar Singh"
-  traits = { }
-  skill = 1
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = GWA_kunwar_singh
 }

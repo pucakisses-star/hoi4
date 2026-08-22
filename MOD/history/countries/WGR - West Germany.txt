@@ -117,21 +117,21 @@ set_stability = 0.7
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 80
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 10
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 10
 			banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -142,25 +142,9 @@ set_politics = {
 add_ideas = {
 }
 
-create_country_leader = {
-	name = "Klaus Klauser"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-	}
-}
+recruit_character = WGR_klaus_klauser
 
-create_country_leader = {
-	name = "Konrad Adenauer"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
+recruit_character = WGR_konrad_adenauer
 #
 #create_country_leader = {
 #	name = "William Trieck"
@@ -177,7 +161,7 @@ create_country_leader = {
 #	desc = "POLITICS_OTTO_WELS_DESC"
 #	picture = "Portrait_Germany_Adolf_Hitler.dds"
 #	expire = "1939.1.16"
-#	ideology = socialism
+#	ideology = liberal_social
 #	traits = {
 #		exiled
 #		union_man

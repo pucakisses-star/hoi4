@@ -1,0 +1,16 @@
+characters = {
+	SAS_boyle_travers_finniss = {
+		name = "Boyle Travers Finniss"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAS/Portrait_SAS_Boyle_Travers_Finniss.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_TEMP_DESC"
+			traits = {  }
+			id = -1
+		}
+	}
+}

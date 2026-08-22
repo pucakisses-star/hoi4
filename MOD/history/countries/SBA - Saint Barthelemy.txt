@@ -94,11 +94,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Philippe de Saxe-Cobourg-Gotha"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_SBA_Philippe_de_Saxe_Cobourg_Gotha.dds"
-    expire = 1861.12.31
-    ideology = despotism
-  }
+  recruit_character = SBA_philippe_de_saxe_cobourg_gotha
 }

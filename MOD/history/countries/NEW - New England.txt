@@ -11,24 +11,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 43
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 15
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 17
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 25
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
@@ -41,48 +41,12 @@ set_stability = 0.77
 set_research_slots = 4
 
 
-create_country_leader = {
-	name = "William A. Harriman"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "WilliamAverellHarriman.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = NEW_william_a_harriman
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 #skill = 2
 #
-create_country_leader = {
-	name = "William D. Pelley"
-#desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "WilliamDudleyPelley.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		dictator
-	}
-}
-create_country_leader = {
-	name = "John J. Ballam"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "JohnJBallam_result.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Father Leonard Feeney"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Father Feeney.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+recruit_character = NEW_william_d_pelley
+recruit_character = NEW_john_j_ballam
+recruit_character = NEW_father_leonard_feeney

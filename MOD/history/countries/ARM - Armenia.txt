@@ -40,51 +40,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		fascism = { 
+		chauvinist_populism = { 
 			popularity = 34
 		}	
 	
-		democratic = { 
+		centrism = { 
 			popularity = 30
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 36
 		}	
 	}
 }
 
-create_country_leader = {
-	name = "Drastamat Kanayan"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1953.3.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
+recruit_character = ARM_drastamat_kanayan
 
-create_country_leader = {
-	name = "Hovhannes Kajaznuni"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
+recruit_character = ARM_hovhannes_kajaznuni
 
-create_country_leader = {
-	name = "Grigor Harutyunyan"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
+recruit_character = ARM_grigor_harutyunyan
 
 

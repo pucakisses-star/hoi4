@@ -91,14 +91,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Louise Michel"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_CPR_Louise_Michel.dds"
-  expire = "1900.1.1"
-  ideology = anarchism_sub
-  traits = {
-
-  }
-}
+  recruit_character = CPR_louise_michel
 }

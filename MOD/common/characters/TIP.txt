@@ -1,0 +1,17 @@
+characters = {
+	TIP_tippu_tib = {
+		name = "Tippu Tib"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TIP/Portrait_TIP_Tippu_Tip.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,64 @@
+characters = {
+	CSP_juan_iii = {
+		name = "Juan III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CSP/Portrait_CSP_Juan_de_Borbon.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CSP_juan_nepomuceno_de_orbe = {
+		name = "Juan Nepomuceno de Orbe"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CSP/Portrait_CSP_Juan_Nepomuceno_de_Orbe.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trickster ambusher }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	CSP_antonio_dorregaray = {
+		name = "Antonio Dorregaray"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CSP/Portrait_CSP_Antonio_Dorregaray.dds"
+			}
+		}
+		corps_commander = {
+			traits = { scavenger ambusher }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CSP_pedro_balanzategui = {
+		name = "Pedro Balanzátegui"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CSP/Portrait_CSP_pedro_balanzategui.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+}

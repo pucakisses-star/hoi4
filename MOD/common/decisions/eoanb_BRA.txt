@@ -17,3 +17,5 @@ BRA_decision_weaken_the_elites = {
      BRA = { add_stability = 0.02 
 	 add_political_power = 150 }
     }
+}
+}

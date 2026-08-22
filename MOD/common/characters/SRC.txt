@@ -1,0 +1,17 @@
+characters = {
+	SRC_arthur_edward_kennedy = {
+		name = "Arthur Edward Kennedy"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRC/Portrait_SRC_arthur_edward_kennedy.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1862.02.27"
+			traits = {  }
+			id = -1
+		}
+	}
+}

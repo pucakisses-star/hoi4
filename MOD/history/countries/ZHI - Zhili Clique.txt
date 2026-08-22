@@ -85,22 +85,7 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "Yang Wenzhi"
-    picture = "Portrait_ZHI_YANG_Wenzhi.dds"
-    desc = "POLITICS_TEMP_DESC"
-    expire = 1891.12.31
-    ideology = despotism
-}
+recruit_character = ZHI_yang_wenzhi
 
-create_corps_commander = {
-  name = "Yang Wenzhi"
-  picture = "Portrait_ZHI_YANG_Wenzhi.dds"
-  traits = { }
-  skill = 2
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = ZHI_yang_wenzhi_2
 }

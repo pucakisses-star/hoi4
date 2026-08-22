@@ -94,11 +94,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Léopold Louis-Philippe de Belgique"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_BMX_Leopold_de_Belgique.dds"
-    expire = 1861.12.31
-    ideology = despotism
-  }
+  recruit_character = BMX_leopold_louis_philippe_de_belgique
 }

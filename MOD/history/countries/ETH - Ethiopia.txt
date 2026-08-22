@@ -49,51 +49,33 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Haile Selassie"
-	desc = "POLITICS_HAILE_SELASSIE_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = ETH_haile_selassie
 
-create_country_leader = {
-	name = "Fitawrari Yeebio Woldai"
-	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
-	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+recruit_character = ETH_fitawrari_yeebio_woldai
 
 
 #Now a colony of Italy  However, if independent it would have
@@ -101,38 +83,29 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 		
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 }
 
-create_corps_commander = {
-	name = "Seyoum Mengesha"
-	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
-	traits = {  desert_fox }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
+recruit_character = ETH_seyoum_mengesha

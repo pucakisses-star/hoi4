@@ -1,0 +1,38 @@
+characters = {
+	GDC_charles_ferdinand_pahud = {
+		name = "Charles Ferdinand Pahud"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/Portrait_INS_Charles_Ferdinand_Pahud.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	GDC_willem_boetje = {
+		name = "Willem Boetje"
+		field_marshal = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	GDC_anthonie_haga = {
+		name = "Anthonie Haga"
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

@@ -1,0 +1,75 @@
+characters = {
+	BEL_leopold_ii = {
+		name = "Leopold II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/old/BEL gum/leopold_deux_md.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_HUBERT_PIERLOT_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	BEL_joseph_jacquemotte = {
+		name = "Joseph Jacquemotte"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = anarchism_sub
+			desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	BEL_leon_degrelle = {
+		name = "Léon Degrelle"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			desc = "POLITICS_LEON_DEGRELLE_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	BEL_m_c_l_keyaerts = {
+		name = "M.C.L. Keyaerts"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_mountaineer hill_fighter }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	BEL_georges_timmermans = {
+		name = "Georges Timmermans"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			}
+		}
+		navy_leader = {
+			traits = { seawolf }
+			skill = 4
+		}
+	}
+}

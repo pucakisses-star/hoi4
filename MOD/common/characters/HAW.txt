@@ -1,0 +1,44 @@
+characters = {
+	HAW_queen_liliokalani = {
+		name = "Queen Liliokalani"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/liliokalani.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	HAW_jack_w_hall = {
+		name = "Jack W. Hall"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/JackW.Hall(Com.Haw.)_result.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	HAW_queen_lydia = {
+		name = "Queen Lydia"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HAW/Lydia_result.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

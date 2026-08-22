@@ -180,305 +180,51 @@ add_equipment_to_stockpile = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Otto Theodor von Manteuffel"
-  desc = "POLITICS_OTTO_VON_BISMARCK_DESC"
-  picture = "Portrait_PRS_Otto_Theodor_von_Manteuffel.dds"
-  expire = "1900.1.1"
-  ideology = conserv
-  traits = {
+recruit_character = PRS_otto_theodor_von_manteuffel
 
-  }
-}
+recruit_character = PRS_rudolf_von_bennigsen
 
-create_country_leader = {
-  name = "Rudolf von Bennigsen"
-  desc = "POLITICS_RUDOLF_VON_BENNIGSEN_DESC"
-  picture = "Portrait_PRS_Rudolf_von_Bennigsen.dds"
-  expire = "1900.1.1"
-  ideology = conserv_liberal
-  traits = {
+recruit_character = PRS_ferdinand_lassalle
 
-  }
-}
+recruit_character = PRS_leopold_sonnemann
 
-create_country_leader = {
-  name = "Ferdinand Lassalle"
-  desc = "POLITICS_FERDINAND_LASSALLE_DESC"
-  picture = "Portrait_PRS_Ferdinand_Lassalle.dds"
-  expire = "1900.1.1"
-  ideology = liberal_social
-  traits = {
+recruit_character = PRS_karl_liebknecht
 
-  }
-}
+recruit_character = PRS_herrenhaus
 
-create_country_leader = {
-  name = "Leopold Sonnemann"
-  desc = "POLITICS_LEOPOLD_SONNEMANN_DESC"
-  picture = "Portrait_PRS_Leopold_Sonnemann.dds"
-  expire = "1900.1.1"
-  ideology = syndicalism
-  traits = {
+recruit_character = PRS_alexander_pinkert
 
-  }
-}
+recruit_character = PRS_anton_drexler
 
-create_country_leader = {
-  name = "Karl Liebknecht"
-  desc = "POLITICS_KARL_LIEBKNECHT_DESC"
-  picture = "Portrait_PRS_Karl_Liebknecht.dds"
-  expire = "1900.1.1"
-  ideology = marxism
-  traits = {
+recruit_character = PRS_friedrich_wilhelm_iv
 
-  }
-}
+recruit_character = PRS_friedrich_wilhelm_iv_2
 
-create_country_leader = {
-  name = "Herrenhaus"
-  desc = "POLITICS_HERRENHAUS_DESC"
-  picture = "Portrait_PRS_Herrenhaus.dds"
-  expire = "1900.1.1"
-  ideology = plutocracy
-  traits = {
+recruit_character = PRS_friedrich_graf_von_wrangel
 
-  }
-}
+recruit_character = PRS_karl_friedrich_emil_zu_dohna_schlobitten
 
-create_country_leader = {
-  name = "Alexander Pinkert"
-  desc = "POLITICS_ALEXANDER_PINKERT_DESC"
-  picture = "Portrait_PRS_Alexander_Pinkert.dds"
-  expire = "1900.1.1"
-  ideology = fascism
-  traits = {
+recruit_character = PRS_friedrich_karl_of_prussia
 
-  }
-}
+recruit_character = PRS_eberhard_herwarth_von_bittenfeld
 
-create_country_leader = {
-  name = "Anton Drexler"
-  desc = "POLITICS_ANTON_DREXLER_DESC"
-  picture = "Portrait_PRS_Anton_Drexler.dds"
-  expire = "1900.1.1"
-  ideology = rexism
-  traits = {
+recruit_character = PRS_edwin_von_manteuffel
 
-  }
-}
+recruit_character = PRS_eduard_vogel_von_falckenstein
 
-create_country_leader = {
-  name = "Friedrich Wilhelm IV"
-  desc = "POLITICS_FRIEDRICH_WILHELM_IV_DESC"
-  picture = "Portrait_PRS_Friedrich_Wilhelm_IV.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
+recruit_character = PRS_moritz_karl_ernst_von_prittwitz
 
-  }
-}
+recruit_character = PRS_adolf_von_bonin
 
-create_country_leader = {
-  name = "Friedrich Wilhelm IV"
-  desc = "POLITICS_FRIEDRICH_WILHELM_IV_DESC"
-  picture = "Portrait_PRS_Friedrich_Wilhelm_IV.dds"
-  expire = "1900.1.1"
-  ideology = christian
-  traits = {
+recruit_character = PRS_august_von_wurttemberg
 
-  }
-}
+recruit_character = PRS_prince_friedrich_karl_von_prussia
 
-create_field_marshal = {
-  name = "Friedrich Graf von Wrangel"
-  picture = "Portrait_PRS_Friedrich_Graf_von_Wrangel.dds"
-  traits = {
-	PRS_prussian_general
-	PRS_pour_le_merite
-	PRS_iron_cross
-    war_hero
-	old_guard
-  }
-  skill = 2
-  attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = PRS_eduard_heldt
 
-create_field_marshal = {
-  name = "Karl Friedrich Emil zu Dohna-Schlobitten"
-  picture = "Portrait_PRS_Karl_Friedrich_Emil_zu_Dohna_Schlobitten.dds"
-  traits = {
-	PRS_prussian_general
-	PRS_pour_le_merite
-	PRS_iron_cross
-    war_hero
-	old_guard
-  }
-  skill = 2
-  id = 2000
-  attack_skill = 1
-  defense_skill = 2
-  planning_skill = 2
-  logistics_skill = 1
-  id = 10115 
-}
+recruit_character = PRS_eduard_von_jachmann
 
-create_corps_commander = {
-  name = "Friedrich Karl of Prussia"
-  picture = "Portrait_PRS_Friedrich_Karl_of_Prussia.dds"
-  traits = {
-     PRS_prussian_general
-	 cavalry_officer
-	 cavalry_leader 
-  }
-  skill = 3
-  attack_skill = 3
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-	id = 10116
-}
-
-create_corps_commander = {
-  name = "Eberhard Herwarth von Bittenfeld"
-  picture = "Portrait_PRS_Karl_Eberhard_Herwarth_von_Bittenfeld.dds"
-  traits = {
-     PRS_prussian_general
-	 infantry_officer
-  }
-  skill = 2
-  attack_skill = 2
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 4
-	id = 10117
-}
-
-create_corps_commander = {
-  name = "Edwin von Manteuffel"
-  picture = "Portrait_PRS_Edwin_von_Manteuffel.dds"
-  traits = {
-    skilled_staffer
-	PRS_prussian_general
-  }
-  skill = 3
-  attack_skill = 1
-  defense_skill = 2
-  planning_skill = 2
-  logistics_skill = 2
-  id = 10118
-}
-
-create_corps_commander = {
-  name = "Eduard Vogel von Falckenstein"
-  picture = "Portrait_PRS_Eduard_Vogel_von_Falckenstein.dds"
-  traits = {
-     PRS_prussian_general
-  }
-  skill = 3
-  attack_skill = 3
-  defense_skill = 1
-  planning_skill = 3
-  logistics_skill = 1
-  id = 10119
-}
-
-create_corps_commander = {
-  name = "Moritz Karl Ernst von Prittwitz"
-  picture = "Portrait_PRS_Moritz_Karl_Ernst_von_Prittwitz.dds"
-  traits = {
-     PRS_prussian_general
-  }
-  skill = 2
-  attack_skill = 1
-  defense_skill = 4
-  planning_skill = 2
-  logistics_skill = 2
-  id = 10120
-}
-
-create_corps_commander = {
-  name = "Adolf von Bonin"
-  picture = "Portrait_PRS_Adolf_von_Bonin.dds"
-  traits = {
-     infantry_leader
-	 infantry_officer
-	 PRS_prussian_general
-  }
-  skill = 2
-  attack_skill = 3
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-	id = 10121
-}
-
-create_corps_commander = {
-  name = "August von Württemberg"
-  picture = "Portrait_PRS_Prince_August_of_Wurttemberg.dds"
-  traits = {
-     PRS_prussian_general
-	 cavalry_officer
-	 cavalry_leader 
-  }
-  skill = 3
-  attack_skill = 3
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-	id = 10122
-}
-
-create_navy_leader = {
-  name = "Prince Friedrich Karl von Prussia"
-  picture = "Portrait_PRS_Prince_Friedrich_Karl_of_Prussia.dds"
-  traits = { }
-  skill = 2
-  id = 10123
-  attack_skill = 2
-  defense_skill = 1
-  maneuvering_skill = 2
-  coordination_skill = 1
-}
-
-create_navy_leader = {
-  name = "Eduard Heldt"
-  picture = "Portrait_PRS_Eduard_Heldt.dds"
-  traits = { }
-  skill = 1
-  id = 10124
-  attack_skill = 2
-  defense_skill = 1
-  maneuvering_skill = 2
-  coordination_skill = 1
-}
-
-create_navy_leader = {
-  name = "Eduard von Jachmann"
-  picture = "Portrait_PRS_Eduard_von_Jachmann.dds"
-  traits = { }
-  skill = 1
-  id = 10125
-  attack_skill = 2
-  defense_skill = 1
-  maneuvering_skill = 2
-  coordination_skill = 1
-}
-
-create_navy_leader = {
-  name = "Hans Kuhn"
-  picture = "Portrait_PRS_Hans_Kuhn.dds"
-  traits = { }
-  skill = 1
-  id = 10126
-  attack_skill = 2
-  defense_skill = 1
-  maneuvering_skill = 2
-  coordination_skill = 1
-}
+recruit_character = PRS_hans_kuhn
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

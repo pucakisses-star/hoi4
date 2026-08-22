@@ -1,0 +1,17 @@
+characters = {
+	SLO_jozef_tiso = {
+		name = "Jozef Tiso"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/Portrait_Slovakia_Jozef_Tiso.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			desc = "POLITICS_JOZEF_TISO_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

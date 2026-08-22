@@ -1,0 +1,32 @@
+characters = {
+	MON_anandyn_amar = {
+		name = "Anandyn Amar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/GFX_portrait_mon_anandyn_amar"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_ANANDYN_AMAR_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	MON_khorloogiin_choibalsan = {
+		name = "Khorloogiin Choibalsan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = "POLITICS_KHORLOOGIIN_CHOIBALSAN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

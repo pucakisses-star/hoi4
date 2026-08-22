@@ -62,62 +62,30 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 80
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 20
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "David Ben-Gurion"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_david_ben_gurion
 
-create_country_leader = {
-	name = "Itzhak Gaster"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_itzhak_gaster
 
-create_country_leader = {
-	name = "Rudolf Szabó"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_rudolf_szabo
 
-create_country_leader = {
-	name = "Shmuel Mikunis"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = ISR_shmuel_mikunis

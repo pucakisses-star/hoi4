@@ -1,11 +1,6 @@
 ﻿
 
-create_country_leader = {
-    name = "William Haines"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_VIC_William_Haines.dds"
-    ideology = conserv
-}
+recruit_character = VIC_william_haines
 
 set_technology = {
   infantry_weapons = 1
@@ -116,12 +111,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "William Haines"
-    desc = "POLITICS_WILLIAM_HAINES_DESC"
-    picture = "Portrait_VIC_William_Haines.dds"
-    expire = "2100.1.1"
-    ideology = conserv
-    traits = { }
-  }
+  recruit_character = VIC_william_haines_2
 }

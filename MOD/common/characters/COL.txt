@@ -1,0 +1,63 @@
+characters = {
+	COL_alfonso_lopez_pumarejo = {
+		name = "Alfonso López Pumarejo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COL/GFX_Portrait_columbia_alfonso_lopez"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	COL_mariano_ospina_perez = {
+		name = "Mariano Ospina Pérez"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	COL_eduardo_santos = {
+		name = "Eduardo Santos"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_EDUARDO_SANTOS_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	COL_gustavo_rojas_pinilla = {
+		name = "Gustavo Rojas Pinilla"
+		portraits = {
+			army = {
+				large = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trickster urban_assault_specialist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

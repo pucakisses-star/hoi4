@@ -123,180 +123,36 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Abdulmecid"
-  desc = "POLITICS_ABDULMECID_DESC"
-  picture = "Portrait_OTO_Abdulmecid_I.dds"
-  expire = "1861.6.1"
-  ideology = constit_monarch
-  traits = {
+recruit_character = OTO_abdulmecid
 
-  }
-}
+recruit_character = OTO_abdulaziz
 
-create_country_leader = {
-  name = "Abdulaziz"
-  desc = "POLITICS_ABDULAZIZ_DESC"
-  picture = "Portrait_OTO_Abdulaziz.dds"
-  expire = "1876.5.30"
-  ideology = constit_monarch
-  traits = {
+recruit_character = OTO_murad_v
 
-  }
-}
+recruit_character = OTO_abdul_hamid_ii
 
-create_country_leader = {
-  name = "Murad V"
-  desc = "POLITICS_MURAD_V_DESC"
-  picture = "Portrait_OTO_Murad_V.dds"
-  expire = "1904.8.29"
-  ideology = constit_monarch
-  traits = {
+recruit_character = OTO_mehmed_v
 
-  }
-}
+recruit_character = OTO_mehmed_vi
 
-create_country_leader = {
-  name = "Abdul Hamid II"
-  desc = "POLITICS_ABDUL_HAMID_II_DESC"
-  picture = "Portrait_OTO_Abdul_Hamid_II.dds"
-  #Forced to abdicate by the Committee of Union and Progress in 1909
-  expire = "1909.4.27"
-  ideology = constit_monarch
-  traits = {
+recruit_character = OTO_abdulmecid_i
 
-  }
-}
+recruit_character = OTO_omar_pasha
 
-create_country_leader = {
-  name = "Mehmed V"
-  desc = "POLITICS_MEHMED_V_DESC"
-  picture = "Portrait_OTO_Mehmed_V.dds"
-  expire = "1918.7.3"
-  ideology = constit_monarch
-  traits = {
-
-  }
-}
-
-create_country_leader = {
-  name = "Mehmed VI"
-  desc = "POLITICS_MEHMED_VI_DESC"
-  picture = "Portrait_OTO_Mehmed_VI.dds"
-  expire = "1926.6.1"
-  ideology = constit_monarch
-  traits = {
-
-  }
-}
-
-create_country_leader = {
-  name = "Abdulmecid I"
-  desc = "POLITICS_ABDULMECID_II_DESC"
-  picture = "Portrait_OTO_Abdulmecid.dds"
-  expire = "1944.6.1"
-  ideology = constit_monarch
-  traits = {
-
-  }
-}
-
-create_corps_commander = {
-  name = "Omar Pasha"
-  picture = "Portrait_OTO_Omar_Pasha.dds"
-  id = 1877
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
-
-create_corps_commander = {
-  name = "Osman Pasha"
-  picture = "Portrait_OTO_Osman_Pasha.dds"
-  id = 1878
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = OTO_osman_pasha
 
 
-create_corps_commander = {
-  name = "Selim Begu Mustafa"
-  picture = ""
-  id = 1879
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = OTO_selim_begu_mustafa
 
-create_corps_commander = {
-  name = "Mustafa Pasha"
-  picture = ""
-  id = 1880
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = OTO_mustafa_pasha
 
-create_field_marshal = {
-  name = "Abdulmecid I"
-  picture = "Portrait_OTO_Abdulmecid.dds"
-  id = 1876
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = OTO_abdulmecid_i_2
 
-create_corps_commander = {
-  name = "İskender Pasha"
-  picture = "Portrait_OTO_Iskender_Pasha.dds"
-  id = 1881
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = OTO_iskender_pasha
 
-create_corps_commander = {
-  name = "Abdülkerim Nadir Pasha"
-  picture = "Portrait_OTO_Cirpanli_Nadir_Pasha.dds"
-  id = 1882
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = OTO_abdulkerim_nadir_pasha
 
-create_corps_commander = {
-  name = "Ismail Pasha"
-  picture = "Portrait_OTO_Ismail_Pasha.dds"
-  id = 28
-  traits = { }
-  skill = 1
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 1
-  logistics_skill = 1
-}
+recruit_character = OTO_ismail_pasha
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

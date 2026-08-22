@@ -1,0 +1,78 @@
+characters = {
+	DEN_thorvald_stauning = {
+		name = "Thorvald Stauning"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/Portrait_Denmark_Thorvald_Stauning.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_social
+			desc = "POLITICS_THORVALD_STAUNING_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	DEN_frits_clausen = {
+		name = "Frits Clausen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			desc = "POLITICS_FRITS_CLAUSEN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	DEN_aksel_larsen = {
+		name = "Aksel Larsen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			desc = "POLITICS_AKSEL_LARSEN_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	DEN_peter_rochegune_munch = {
+		name = "Peter Rochegune Munch"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	DEN_wilhelm_wain_prior = {
+		name = "Wilhelm Wain Prior"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trickster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

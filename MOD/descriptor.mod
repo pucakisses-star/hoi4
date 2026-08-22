@@ -1,4 +1,4 @@
-version="1.2"
+version="1.3"
 tags={
 	"Alternative History"
 	"Historical"
@@ -6,4 +6,4 @@ tags={
 	"Events"
 }
 name="Divided States of America"
-supported_version="1.9.0"
+supported_version="1.16.*"

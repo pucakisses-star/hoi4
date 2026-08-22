@@ -40,37 +40,19 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 60
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 40
 		}		
 	}
 }
 
-create_country_leader = {
-	name = "Nikolay Aleksandrovich Skvortsov"
-	desc = ""
-	picture = ""
-	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
+recruit_character = KAZ_nikolay_aleksandrovich_skvortsov
 
-create_country_leader = {
-	name = "Ilyas Zhansugurov"
-	desc = ""
-	picture = ""
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
+recruit_character = KAZ_ilyas_zhansugurov
 
 
 

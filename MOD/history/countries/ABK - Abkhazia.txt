@@ -103,11 +103,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Mikhail I"
-    desc = "POLITICS_GEO_MINORS_DESC"
-    picture = "Portrait_ABK_Mikhail_I.dds"
-    expire = 2000.09.10
-    ideology = despotism
-  }
+  recruit_character = ABK_mikhail_i
 }

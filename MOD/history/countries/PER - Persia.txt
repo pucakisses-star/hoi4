@@ -69,39 +69,30 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Reza Shah Pahlavi"
-	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
-	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = PER_reza_shah_pahlavi
 
 # His son, who came to power 41
 #create_country_leader = {
@@ -115,52 +106,34 @@ create_country_leader = {
 #	}
 #}
 
-create_country_leader = {
-	name = "Soleyman Mirza Eskandari"
-	desc = "POLITICS_SOLEYMAN_MIRZA_ESKANDARI_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = anarchist_communism
-	traits = {
-		#
-	}
-}
+recruit_character = PER_soleyman_mirza_eskandari
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 }
 
-create_corps_commander = {
-	name = "Hasan Arfa"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {  desert_fox }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = PER_hasan_arfa

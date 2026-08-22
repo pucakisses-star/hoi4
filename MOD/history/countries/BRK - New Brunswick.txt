@@ -95,47 +95,13 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Sir John Henry Thomas Manners-Sutton"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_BRK_John_Henry_Thomas_Manners_Sutton.dds"
-    expire = 1861.12.31
-    ideology = despotism
-  }
+  recruit_character = BRK_sir_john_henry_thomas_manners_sutton
 
-  create_country_leader = {
-    name = "Samuel Leonard Tilley"
-    desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-    picture = "Portrait_BRK_Samuel_Leonard_Tilley.dds"
-    expire = "1865.1.1"
-    ideology = social_liberal
-    traits = { }
-  }
+  recruit_character = BRK_samuel_leonard_tilley
 
-  create_country_leader = {
-    name = "Peter Mitchell"
-    desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-    picture = "Portrait_BRK_Peter_Mitchell.dds"
-    expire = "1865.1.1"
-    ideology = conserv
-    traits = { }
-  }
+  recruit_character = BRK_peter_mitchell
 
-  create_country_leader = {
-    name = "Albert James Smith"
-    desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-    picture = "Portrait_BRK_Albert_James_Smith.dds"
-    expire = "1865.1.1"
-    ideology = reactionary
-    traits = { }
-  }
+  recruit_character = BRK_albert_james_smith
 
-  create_country_leader = {
-    name = "James Rogers"
-    desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-    picture = "Portrait_BRK_James_Rogers.dds"
-    expire = "1865.1.1"
-    ideology = christian
-    traits = { }
-  }
+  recruit_character = BRK_james_rogers
 }

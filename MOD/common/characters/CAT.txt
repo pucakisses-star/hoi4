@@ -1,0 +1,113 @@
+characters = {
+	CAT_nicolau_bello = {
+		name = "Nicolau Bello"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_generic_leader_politician_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "
+  picture = "
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CAT_tomao_pique = {
+		name = "Tomao Pique"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_generic_leader_politician_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "
+  picture = "
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CAT_francesc_lassalle = {
+		name = "Francesc Lassalle"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_generic_leader_politician_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_social
+			desc = "
+  picture = "
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CAT_lluis_selva = {
+		name = "Lluis Selva"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_generic_leader_politician_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = syndicalism
+			desc = "
+  picture = "
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CAT_carles_saria = {
+		name = "Carles Saria"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_generic_leader_politician_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "
+  picture = "
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CAT_anselmo_lorenzo = {
+		name = "Anselmo Lorenzo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAT/Portait_CAT_Anselmo_Lorenzo.dds"
+			}
+		}
+		country_leader = {
+			ideology = anarchism_sub
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	CAT_parlament_de_catalunya = {
+		name = "Parlament de Catalunya"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRS/Portrait_PRS_Herrenhaus.dds"
+			}
+		}
+		country_leader = {
+			ideology = parlia_repub
+			desc = "
+  picture = "
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

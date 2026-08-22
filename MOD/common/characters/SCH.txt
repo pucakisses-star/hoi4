@@ -1,0 +1,17 @@
+characters = {
+	SCH_frederick_vii = {
+		name = "Frederick VII"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SCH/Portrait_SCH_Frederick_VII.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_FREDERICK_VII_DESC"
+			expire = "1907.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

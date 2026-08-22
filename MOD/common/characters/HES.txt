@@ -1,0 +1,17 @@
+characters = {
+	HES_friedrich_scheffer = {
+		name = "Friedrich Scheffer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HES/Portrait_HES_Friedrich_Scheffer.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

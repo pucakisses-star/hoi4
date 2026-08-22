@@ -1,0 +1,17 @@
+characters = {
+	STL_gerrit_jacobus_van_niekerk = {
+		name = "Gerrit Jacobus van Niekerk"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STL/Portrait_STL_Gerrit_Jacobus_van_Niekerk.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

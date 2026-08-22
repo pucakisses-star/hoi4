@@ -95,13 +95,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-	name = "Abdul Momin"
-	desc = ""
-	picture = "Portrait_BRU_Abdul_Momin.dds"
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-	}
-}
+  recruit_character = BRU_abdul_momin
 }

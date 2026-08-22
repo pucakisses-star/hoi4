@@ -12,7 +12,7 @@ set_convoys = 10
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Nikola I" desc=MTN_nikola_i_DESC picture="gfx/leaders/MTN_nikola_i.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+recruit_character = MTN_nikola_i
 
 #create_corps_commander={  name = "Martinovic M." id=58002 portrait_path="gfx/generals/MTN_martinovic_m.tga" traits={   } skill=3 }
 #create_corps_commander={  name = "Gojnic" id=58004 portrait_path="gfx/generals/MTN_gojnic.tga" traits={   } skill=1 }
@@ -21,19 +21,9 @@ create_country_leader={ name = "Nikola I" desc=MTN_nikola_i_DESC picture="gfx/le
 #create_corps_commander={  name = "Vucinic" id=58007 portrait_path="gfx/generals/MTN_vucinic.tga" traits={   } skill=1 }
 #create_corps_commander={  name = "Becir" id=58009 portrait_path="gfx/generals/MTN_becir.tga" traits={   } skill=2 }
 
-create_field_marshal={ name = "Janko Vukotić" id=58003 portrait_path="gfx/hoi4tgw_portraits/MTN/army_generals/MTN_Janko_Vukotic.dds" traits={ offensive_doctrine } skill=3 
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = MTN_janko_vukotic
 
-create_corps_commander={ name = "Crown Prince Danilo" id=58008 portrait_path="gfx/hoi4tgw_portraits/MTN/army_generals/MTN_CrownPrince_Danilo.dds" traits={ old_guard  } skill=1 
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
-}
+recruit_character = MTN_crown_prince_danilo
 
 set_technology = {
 	# Navy
@@ -116,7 +106,7 @@ set_technology = {
 	}
 
 	set_politics = {
-	    ruling_party = neutrality
+	    ruling_party = autocracy
 	    last_election = "1907.10.31"
 	    election_frequency = 48
 	    elections_allowed = yes
@@ -206,7 +196,7 @@ set_technology = {
 	}
 
 	set_politics = {
-	    ruling_party = neutrality
+	    ruling_party = autocracy
 	    last_election = "1911.9.27"
 	    election_frequency = 48
 	    elections_allowed = yes

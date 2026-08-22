@@ -76,14 +76,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "The Okpankpo"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Okpankpo.dds"
-  expire = "2100.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = ARO_the_okpankpo
 }

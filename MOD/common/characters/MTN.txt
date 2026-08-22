@@ -1,0 +1,30 @@
+characters = {
+	MTN_nikola_i = {
+		name = "Nikola I"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	MTN_janko_vukotic = {
+		name = "Janko Vukotić"
+		field_marshal = {
+			traits = {  }
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	MTN_crown_prince_danilo = {
+		name = "Crown Prince Danilo"
+		corps_commander = {
+			traits = {  }
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

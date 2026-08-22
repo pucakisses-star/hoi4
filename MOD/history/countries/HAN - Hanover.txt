@@ -93,81 +93,18 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Georg V"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_HAN_George_V.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
+recruit_character = HAN_georg_v
 
-  }
-}
+recruit_character = HAN_carl_jacobi
 
-create_corps_commander = {
-  name = "Carl Jacobi"
-  picture = "Portrait_HAN_Carl_von_Jacobi.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = HAN_hugh_halkett
 
-create_corps_commander = {
-  name = "Hugh Halkett"
-  picture = "Portrait_HAN_Hugh_Halkett.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = HAN_karl_august_pfannkuche
 
-create_corps_commander = {
-  name = "Karl August Pfannkuche"
-  picture = "Portrait_HAN_Karl_August_Pfannkuche.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = HAN_eberhard_von_brandis
 
-create_corps_commander = {
-  name = "Eberhard von Brandis"
-  picture = "Portrait_HAN_Eberhard_von_Brandis_Hannover.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 2
-  defense_skill = 1
-  planning_skill = 2
-  logistics_skill = 2
-}
+recruit_character = HAN_georg_von_der_decken
 
-create_corps_commander = {
-  name = "Georg von der Decken"
-  picture = "Portrait_HAN_Georg_von_der_Decken_Hannover.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 2
-  defense_skill = 2
-  planning_skill = 2
-  logistics_skill = 2
-}
-
-create_corps_commander = {
-  name = "Ernst von dem Knesebeck"
-  picture = "Portrait_HAN_Ernst_von_dem_Knesebeck_Hannover.dds"
-  traits = { }
-  skill = 3
-  attack_skill = 1
-  defense_skill = 1
-  planning_skill = 2
-  logistics_skill = 1
-}
+recruit_character = HAN_ernst_von_dem_knesebeck
 
 }

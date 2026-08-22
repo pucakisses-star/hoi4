@@ -1,12 +1,6 @@
 ﻿
 
-create_country_leader = {
-    name = "Unorganized Government"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_WLL_Mapuche_Unorganized.dds"
-    expire = 1891.12.31
-    ideology = despotism
-}
+recruit_character = WLL_unorganized_government
 
 set_technology = {
   infantry_weapons = 1
@@ -105,46 +99,12 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Quilapán"
-    desc = "POLITICS_WALLMAPU_UNORGANIZED_GOVERNMENT_DESC"
-    picture = "Portrait_WLL_Kulapang.dds"
-    expire = 1875.1.1
-    ideology = tribe
-    traits = { }
-  }
+  recruit_character = WLL_quilapan
   
-    create_corps_commander = {
-    name = "Quilapán"
-    picture = "Portrait_WLL_Kulapang.dds"
-    traits = { }
-    skill = 5
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 4
-  }
+    recruit_character = WLL_quilapan_2
   
-   create_corps_commander = {
-    name = "Modesto Inacayal"
-    picture = "Portrait_WLL_Modesto_Inacayal.dds"
-    traits = { }
-    skill = 3
-    attack_skill = 1
-    defense_skill = 3
-    planning_skill = 1
-    logistics_skill = 3
-  }
+   recruit_character = WLL_modesto_inacayal
   
-    create_corps_commander = {
-    name = "Valentin Sayhueque"
-    picture = "Portrait_WLL_Valentin_Sayhueque.dds"
-    traits = { }
-    skill = 2
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 1
-    logistics_skill = 1
-  }
+    recruit_character = WLL_valentin_sayhueque
   
 }

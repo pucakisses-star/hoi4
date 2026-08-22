@@ -1,0 +1,12 @@
+characters = {
+	ADR_jose_caixal = {
+		name = "José Caixal"
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "2000.09.10"
+			traits = {  }
+			id = -1
+		}
+	}
+}

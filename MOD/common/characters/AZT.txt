@@ -1,0 +1,30 @@
+characters = {
+	AZT_santa_anna = {
+		name = "Santa Anna"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AZT/SantaAnna.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			expire = "1880.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	AZT_navajo_arizonian_council = {
+		name = "Navajo-Arizonian Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AZT/navajonationcouncilARIneut_result.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

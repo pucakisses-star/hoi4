@@ -1,0 +1,17 @@
+characters = {
+	YEM_imam_yahya = {
+		name = "Imam Yahya"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YEM/GFX_portrait_yemen_imam_yahya"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_IMAM_YAHYA_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

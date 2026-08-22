@@ -1,0 +1,78 @@
+characters = {
+	SPR_manuel_azana = {
+		name = "Manuel Azana"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPR/Portrait_Spain_Manuel_Azana.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_MANUEL_AZANA_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SPR_jose_diaz = {
+		name = "José Díaz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPR/Portrait_Spain_Jose_Diaz.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			desc = "POLITICS_JOSE_DIAZ_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SPR_francisco_franco = {
+		name = "Francisco Franco"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPR/Portrait_Spain_Francisco_Franco.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SPR_alejandro_lerroux = {
+		name = "Alejandro Lerroux"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SPR_jose_asensio_torrado = {
+		name = "José Asensio Torrado"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

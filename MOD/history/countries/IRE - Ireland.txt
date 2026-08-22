@@ -64,20 +64,20 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 98
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 1
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 1
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = yes
@@ -87,76 +87,31 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 98
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 1
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 1
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1938.6.17"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 }
-create_country_leader = {
-	name = "Éamon de Valera"
-	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
-	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+recruit_character = IRE_eamon_de_valera
 
-create_country_leader = {
-	name = "Eoin O'Duffy"
-	desc = "POLITICS_EOIN_ODUFFY_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = IRE_eoin_o_duffy
 
-create_country_leader = {
-	name = "James Larkin"
-	desc = "POLITICS_JAMES_LARKIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+recruit_character = IRE_james_larkin
 
-create_country_leader = {
-	name = "William Norton"
-	desc = "POLITICS_JAMES_LARKIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
+recruit_character = IRE_william_norton
 
-create_corps_commander = {
-	name = "Michael Costello"
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
+recruit_character = IRE_michael_costello

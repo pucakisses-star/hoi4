@@ -88,10 +88,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "Boyle Travers Finniss"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_SAS_Boyle_Travers_Finniss.dds"
-    ideology = conserv
-}
+recruit_character = SAS_boyle_travers_finniss
 }

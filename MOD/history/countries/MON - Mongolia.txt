@@ -61,38 +61,29 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 			banned = yes
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 			banned = yes
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 100
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = vanguard_communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+recruit_character = MON_anandyn_amar
 
 1939.1.1 = {
 
@@ -103,36 +94,27 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 0
 				banned = yes
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 				banned = yes
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 100
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = communism
+		ruling_party = vanguard_communism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 
-	create_country_leader = {
-		name = "Khorloogiin Choibalsan"
-		desc = "POLITICS_KHORLOOGIIN_CHOIBALSAN_DESC"
-		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-		expire = "1965.1.1"
-		ideology = stalinism
-		traits = {
-			#
-		}
-	}
+	recruit_character = MON_khorloogiin_choibalsan
 }

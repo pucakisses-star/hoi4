@@ -1,0 +1,54 @@
+characters = {
+	LBA_bashir_es_sadawi = {
+		name = "Bashir es Sadawi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBA/Portrait_Arabia_Generic_democratic1.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			traits = {  }
+			id = -1
+		}
+	}
+	LBA_ettore_bastico = {
+		name = "Ettore Bastico"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBA/Portrait_Italy_Giuseppe_Fioravanzo.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			traits = {  }
+			id = -1
+		}
+	}
+	LBA_idris_senussi = {
+		name = "Idris Senussi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBA/Portrait_Arabia_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	LBA_hassan_as_senussi = {
+		name = "Hassan as-Senussi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LBA/Portrait_Arabia_Generic_communism1.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			id = -1
+		}
+	}
+}

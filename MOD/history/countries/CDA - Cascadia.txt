@@ -11,24 +11,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 37
+		centrism = { 
+			popularity = 40
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 11
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 35
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 14
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1868.3.5"
 	election_frequency = 48
 	elections_allowed = yes
@@ -41,16 +41,7 @@ set_stability = 0.54
 set_research_slots = 3
 
 
-create_country_leader = {
-	name = "Clarence D. Martin"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "ClarenceDMartin_result.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = CDA_clarence_d_martin
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
@@ -61,21 +52,12 @@ create_country_leader = {
 #desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 #	picture = "WilliamDudleyPelley.dds"
 #	expire = "1965.1.1"
-#	ideology = fascism_ideology
+#	ideology = fascism
 #	traits = {
 #		dictator
 #	}
 #}
-create_country_leader = {
-	name = "Eugene Dennis"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Eugene_Dennis_result.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
+recruit_character = CDA_eugene_dennis
 #create_country_leader = {
 	name = ""
 #desc = "POLITICS_KING_ZOG_DESC"

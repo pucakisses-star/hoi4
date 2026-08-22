@@ -72,99 +72,63 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 20
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 80
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Ghazi I"
-	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "GFX_portrait_iraq_ghazi"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = IRQ_ghazi_i
 
-create_country_leader = {
-	name = "Rashid Ali al-Gaylani"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = IRQ_rashid_ali_al_gaylani
 
-create_country_leader = {
-	name = "Yusuf Salman Yusuf"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = IRQ_yusuf_salman_yusuf
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 0
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 30
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 0
 				#banned = no #default is no
 			}
 
-			neutrality = { 
+			autocracy = { 
 				popularity = 70
 			}
 		}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 
-	create_country_leader = {
-		name = "Faisal II"
-		desc = "POLITICS_FAISAL_II_DESC"
-		picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_1.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
+	recruit_character = IRQ_faisal_ii
 }

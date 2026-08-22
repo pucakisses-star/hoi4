@@ -1,0 +1,76 @@
+characters = {
+	CEK_tewodros_ii = {
+		name = "Tewodros II"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ETH/Portrait_ETH_Tewodros_II.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1900.1.1"
+			traits = { afr_trait_reformer }
+			id = -1
+		}
+	}
+	CEK_tewodros_ii_2 = {
+		name = "Tewodros II"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ETH/Portrait_ETH_Tewodros_II.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CEK_yohannes_iv = {
+		name = "Yohannes IV"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ETH/Portrait_ETH_Yohannes_IV.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CEK_ras_alula = {
+		name = "Ras Alula"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ETH/Portrait_ETH_Ras_Alula.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	CEK_tkle_haymonot_of_gojjam = {
+		name = "Tkle Haymonot of Gojjam"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

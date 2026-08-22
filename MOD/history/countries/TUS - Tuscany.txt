@@ -101,44 +101,11 @@
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Leopold II"
-    expire = "1862.11.7"
-    picture = "Portrait_ICP_Leopold_II_of_Tuscany.dds"
-    ideology = despotism
-    traits = {}
-  }
-  create_country_leader = {
-    name = "Carlo Bon Compagni di Mombello"
-    expire = "1862.11.7"
-    picture = "Portrait_ICP_Carlo_Boncompagni_di_Mombello.dds"
-    ideology = conserv_liberal
-    traits = {}
-  }
-  create_country_leader = {
-    name = "Vincenzo Malenchini"
-    expire = "1862.11.7"
-    picture = "Portrait_TUS_Vincenzo_Malenchini.dds"
-    ideology = market_social
-    traits = {}
-  }
-  create_country_leader = {
-    name = "Ubaldino Peruzzi"
-    expire = "1862.11.7"
-    picture = "Portrait_TUS_Ubaldino_Peruzzi.dds"
-    ideology = conserv
-    traits = {}
-  }
-  create_corps_commander = {
-    name = "Girolamo Cala Ulloa"
-    picture = "ITA_Girolamo_Cala_Ulloa.dds"
-    traits = { }
-    skill = 1
-    attack_skill = 1
-  	defense_skill = 1
-  	planning_skill = 1
-  	logistics_skill = 1
-  }
+  recruit_character = TUS_leopold_ii
+  recruit_character = TUS_carlo_bon_compagni_di_mombello
+  recruit_character = TUS_vincenzo_malenchini
+  recruit_character = TUS_ubaldino_peruzzi
+  recruit_character = TUS_girolamo_cala_ulloa
 
   if = {
 	 limit = { has_dlc = "Man the Guns" }

@@ -1,0 +1,33 @@
+characters = {
+	SHU_lan_dashun = {
+		name = "Lan Dashun"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHU/Portrait_SHU_Lan_Dashun.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1891.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+	SHU_lan_dashun_2 = {
+		name = "Lan Dashun"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SHU/Portrait_SHU_Lan_Dashun.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

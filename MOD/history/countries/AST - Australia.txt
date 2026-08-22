@@ -121,80 +121,35 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 98
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 2
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "John Curtin"
-	desc = "POLITICS_JOHN_CURTIN_DESC"
-	picture = "Portrait_Australia_John_Curtin.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+recruit_character = AST_john_curtin
 
-create_country_leader = {
-	name = "Eric Campbell"
-	desc = "POLITICS_ERIC_CAMPBELL_DESC"
-	picture = "GFX_AST_eric_campbell"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = AST_eric_campbell
 
-create_country_leader = {
-	name = "Richard Dixon"
-	desc = "POLITICS_RICHARD_DIXON_DESC"
-	picture = "GFX_AST_richard_dixon"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
+recruit_character = AST_richard_dixon
 
-create_country_leader = {
-	name = "Earle Page"
-	desc = "POLITICS_EARLE_PAGE_DESC"
-	picture = "GFX_AST_earle_page"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
+recruit_character = AST_earle_page
 
-create_country_leader = {
-	name = "Rod Hull"
-	desc = ""
-	picture = "Portrait_Australia_Rod_Hull.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = AST_rod_hull
 
 set_convoys = 100
 
@@ -202,21 +157,21 @@ set_convoys = 100
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 99
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 1
 				#banned = no #default is no
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = centrism
 		last_election = "1937.10.23"
 		election_frequency = 36
 		elections_allowed = yes
@@ -224,82 +179,18 @@ set_convoys = 100
 	set_convoys = 100
 }
 
-create_corps_commander = {
-	name = "Leslie Morshead"
-	gfx = "GFX_AST_leslie_morshead"
-	traits = { }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 5
-    logistics_skill = 2
-}
+recruit_character = AST_leslie_morshead
 
 
 
-create_corps_commander = {
-	name = "Thomas Blamey"
-	gfx = "GFX_AST_thomas_blamey"
-	traits = { }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Henry Wynter"
-	gfx = "GFX_AST_henry_wynter"
-	traits = { }
-	skill = 4
-    attack_skill = 3
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Alan Vasey"
-	gfx = "GFX_AST_alan_vasey"
-	traits = { hill_fighter }
-	skill = 3
-    attack_skill = 2
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Horace Robertson"
-	gfx = "GFX_AST_horace_robertson"
-	traits = { desert_fox }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 3
-}
-create_corps_commander = {
-	name = "John Northcott"
-	gfx = "GFX_AST_john_northcott"
-	traits = { armor_officer}
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_navy_leader = {
-	name = "Harold Farncomb"
-	gfx = "GFX_AST_harold_farncomb"
-	traits = { air_controller }
-	skill = 4
-}
+recruit_character = AST_thomas_blamey
+recruit_character = AST_henry_wynter
+recruit_character = AST_alan_vasey
+recruit_character = AST_horace_robertson
+recruit_character = AST_john_northcott
+recruit_character = AST_harold_farncomb
 
-create_navy_leader = {
-	name = "Victor Crutchley"
-	gfx = "GFX_AST_victor_crutchley"
-	traits = { }
-	skill = 3
-}
+recruit_character = AST_victor_crutchley
 
 ### Ship Variants ###
 

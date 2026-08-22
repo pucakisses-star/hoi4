@@ -74,14 +74,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Aziz IV"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "gfx/leaders/Arabia/generic_leader_sultan_4.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = BUN_aziz_iv
 }

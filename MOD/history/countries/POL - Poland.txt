@@ -132,24 +132,24 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 18
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 15
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 2
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 65
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
@@ -159,150 +159,51 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 13
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 7
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 2
 			}
 			
-			neutrality = { 
+			autocracy = { 
 				popularity = 78
 			}
 		}
 		
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1935.9.8"
 		election_frequency = 36
 		elections_allowed = no
 	}
 }
 
-create_country_leader = {
-	name = "Władysław Sikorski"
-	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
-	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-}
+recruit_character = POL_wadysaw_sikorski
 
-create_country_leader = {
-	name = "Ignacy Mościcki"
-	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-}
+recruit_character = POL_ignacy_moscicki
 
-create_country_leader = {
-	name = "Władysław Gomułka"
-	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
-	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+recruit_character = POL_wadysaw_gomuka
 
-create_country_leader = {
-	name = "Wincenty Witos"
-	desc = "POLITICS_WINCENTY_WITOS_DESC"
-	picture = "GFX_POL_wincenty_witos"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+recruit_character = POL_wincenty_witos
 
-create_country_leader = {
-	name = "Bolesław Piasecki"
-	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
-	picture = "GFX_POL_boleslaw_piasecki"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
-		#
-	}
-}
+recruit_character = POL_bolesaw_piasecki
 
-create_field_marshal = {
-	name = "Władysław Sikorski"
-	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
-	traits = { defensive_doctrine }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
+recruit_character = POL_wadysaw_sikorski_2
 
-create_field_marshal = {
-	name = "Władysław Bortnowski"
-	gfx = "GFX_POL_wladyslaw_bortnowski"
-	traits = {  thorough_planner }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = POL_wadysaw_bortnowski
 
-create_field_marshal = {
-	name = "Stanisław Kopański"
-	gfx = "GFX_POL_stanislav_kopanski"
-	traits = {  offensive_doctrine }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = POL_stanisaw_kopanski
 
-create_corps_commander = {
-	name = "Władysław Anders"
-	gfx = "GFX_POL_wladislaw_anders"
-	traits = {  armor_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
+recruit_character = POL_wadysaw_anders
 
-create_corps_commander = {
-	name = "Roman Abraham"
-	gfx = "GFX_POL_roman_abraham"
-	traits = {  }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-}
+recruit_character = POL_roman_abraham
 
-create_corps_commander = {
-	name = "Wincenty Kowalski"
-	gfx = "GFX_POL_wincenty_kowalski"
-	traits = { trickster }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
+recruit_character = POL_wincenty_kowalski
 
 create_equipment_variant = {
 	name = "PZL P.24"

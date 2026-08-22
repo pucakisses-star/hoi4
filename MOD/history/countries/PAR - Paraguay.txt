@@ -62,21 +62,21 @@ set_country_flag = monroe_doctrine
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 25
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 75
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = vanguard_communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -87,63 +87,45 @@ set_politics = {
 #	desc = "POLITICS_EUSEBIO_AYALA_DESC"
 #	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 #	expire = "1965.1.1"
-#	ideology = liberalism
+#	ideology = conserv_liberal
 #	traits = {
 #		#
 #	}
 #}
 
 # Rafael Franco technically comes to and loses power slightly after/before the bookmarks, but is the go-to choice for a socialist leader
-create_country_leader = {
-	name = "Rafael Franco"
-	desc = "POLITICS_RAFAEL_FRANCO_DESC"
-	picture = "GFX_Portrait_paraguay_rafael_franco"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+recruit_character = PAR_rafael_franco
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 20
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 0
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 30
 				#banned = no #default is no
 			}
 
-			neutrality = {
+			autocracy = {
 				popularity = 50
 			}
 		}
 
-		ruling_party = neutrality
+		ruling_party = autocracy
 		last_election = "1938.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 
 
-	create_country_leader = {
-		name = "Higinio Morinigo"
-		desc = "POLITICS_HIGINIO_MORINIGO_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
+	recruit_character = PAR_higinio_morinigo
 
 
 }

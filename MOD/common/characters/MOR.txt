@@ -1,0 +1,10 @@
+characters = {
+	MOR_mulay_abdelhafid = {
+		name = "Mulay Abdelhafid"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+}

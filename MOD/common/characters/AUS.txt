@@ -1,0 +1,78 @@
+characters = {
+	AUS_kurt_schuschnigg = {
+		name = "Kurt Schuschnigg"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_Austria_Kurt_Schuschnigg.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	AUS_karl_renner = {
+		name = "Karl Renner"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_social
+			desc = "POLITICS_KARL_RENNER_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	AUS_arthur_seyss_inquart = {
+		name = "Arthur Seyss-Inquart"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	AUS_alfred_klahr = {
+		name = "Alfred Klahr"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_ALFRED_KLAHR_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	AUS_karl_eglseer = {
+		name = "Karl Eglseer"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_mountaineer trickster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

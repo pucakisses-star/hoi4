@@ -66,14 +66,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Bukar-a-Narbana"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "gfx/leaders/Africa/generic_leader_tribe_1.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = MDR_bukar_a_narbana
 }

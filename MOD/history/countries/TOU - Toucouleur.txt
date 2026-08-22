@@ -91,14 +91,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-	create_country_leader = {
-	  name = "El Hadj Umar Tall"
-	  desc = "POLITICS_GEORGE_V_DESC"
-	  picture = "Portrait_TOU_El_Hadj_Umar_Tall.dds"
-	  expire = "1900.1.1"
-	  ideology = islamist
-	  traits = {
-
-	  }
-	}
+	recruit_character = TOU_el_hadj_umar_tall
 }

@@ -1,0 +1,17 @@
+characters = {
+	NMD_georges_sorel = {
+		name = "Georges Sorel"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NMD/Portrait_NMD_Georges_Sorel.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

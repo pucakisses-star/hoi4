@@ -87,36 +87,12 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Imam Shamil"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_CAU_Imam_Shamil.dds"
-    expire = 1891.12.31
-    ideology = despotism
-}
+  recruit_character = CAU_imam_shamil
 
-create_corps_commander = {
-  name = "Imam Shamil"
-  picture = "Portrait_CAU_Imam_Shamil.dds"
-  traits = { ambusher hill_fighter trait_mountaineer }
-  skill = 4
-  attack_skill = 3
-  defense_skill = 4
-  planning_skill = 4
-  logistics_skill = 3
-}
+recruit_character = CAU_imam_shamil_2
 
 
-create_corps_commander = {
-  name = "Magomet-Amin"
-  picture = "Portrait_Magomet_Amin.dds"
-  traits = { ambusher hill_fighter trait_mountaineer }
-  skill = 2
-  attack_skill = 2
-  defense_skill = 3
-  planning_skill = 2
-  logistics_skill = 3
-}
+recruit_character = CAU_magomet_amin
 
 add_equipment_to_stockpile = {
     type = infantry_equipment_rifle_0

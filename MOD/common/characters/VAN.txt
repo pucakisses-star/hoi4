@@ -1,0 +1,17 @@
+characters = {
+	VAN_sir_james_douglas = {
+		name = "Sir James Douglas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VAN/Portrait_VAN_James_Douglas.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_SIR_JAMES_DOUGLAS_DESC"
+			expire = "2100.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

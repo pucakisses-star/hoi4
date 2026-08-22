@@ -11,24 +11,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 34
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 12
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 24
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 30
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
@@ -41,16 +41,7 @@ set_stability = 0.72
 set_research_slots = 4
 
 
-create_country_leader = {
-	name = "J. Hamilton Lewis"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "JHamiltonLewisdemGRL_result.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = JFR_j_hamilton_lewis
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
@@ -61,7 +52,7 @@ create_country_leader = {
 #desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 #	picture = "WilliamDudleyPelley.dds"
 #	expire = "1965.1.1"
-#	ideology = fascism_ideology
+#	ideology = fascism
 #	traits = {
 #		dictator
 #	}
@@ -76,13 +67,4 @@ create_country_leader = {
 #		
 #	}
 #}
-create_country_leader = {
-	name = "Great Lakes Assembly"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "GreatLakesNeutLeader_result.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+recruit_character = JFR_great_lakes_assembly

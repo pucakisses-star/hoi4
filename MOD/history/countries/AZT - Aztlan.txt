@@ -11,24 +11,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 34
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 32
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 27
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 7
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1860.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -39,16 +39,7 @@ set_convoys = 0
 set_stability = 0.70
 
 
-create_country_leader = {
-	name = "Santa Anna"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "SantaAnna.dds"
-	expire = "1880.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = AZT_santa_anna
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
@@ -59,7 +50,7 @@ create_country_leader = {
 #desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 #	picture = "WilliamDudleyPelley.dds"
 #	expire = "1965.1.1"
-#	ideology = fascism_ideology
+#	ideology = fascism
 #	traits = {
 ##	}
 #}
@@ -73,13 +64,4 @@ create_country_leader = {
 #		
 #	}
 #}
-create_country_leader = {
-	name = "Navajo-Arizonian Council"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "navajonationcouncilARIneut_result.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+recruit_character = AZT_navajo_arizonian_council

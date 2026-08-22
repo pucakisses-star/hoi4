@@ -93,14 +93,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Elie Reclus"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Portrait_AQU_Elie_Reclus.dds"
-  expire = "2100.1.1"
-  ideology = anarchism_sub
-  traits = {
-
-  }
-}
+  recruit_character = AQU_elie_reclus
 }

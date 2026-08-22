@@ -1,0 +1,17 @@
+characters = {
+	NOA_kitashirakawa_yoshihisa = {
+		name = "Kitashirakawa Yoshihisa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOA/Portrait_NOA_Kitashirakawa_Yoshihisa.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

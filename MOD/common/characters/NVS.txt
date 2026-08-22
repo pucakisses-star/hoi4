@@ -1,0 +1,62 @@
+characters = {
+	NVS_sir_john_gaspard_le_marchant = {
+		name = "Sir John Gaspard Le Marchant"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NVS/Portrait_NVS_John_Gaspard_Le_Marchant.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1861.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+	NVS_charles_tupper = {
+		name = "Charles Tupper"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NVS/Portrait_NVS_Charles_Tupper.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+			expire = "1865.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NVS_joseph_howe = {
+		name = "Joseph Howe"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NVS/Portrait_NVS_Joseph_Howe.dds"
+			}
+		}
+		country_leader = {
+			ideology = reactionary
+			desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+			expire = "1865.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	NVS_james_rogers = {
+		name = "James Rogers"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NVS/Portrait_NVS_James_Rogers.dds"
+			}
+		}
+		country_leader = {
+			ideology = christian
+			desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+			expire = "1865.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

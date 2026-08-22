@@ -1,0 +1,122 @@
+characters = {
+	RAJ_lord_linlithgow = {
+		name = "Lord Linlithgow"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_LORD_LINLITHGOW_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	RAJ_v_d_savarkar = {
+		name = "V. D. Savarkar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/GFX_RAJ_veer_savarkar"
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			desc = "POLITICS_VD_SAVARKAR_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	RAJ_p_krishna_pillai = {
+		name = "P. Krishna Pillai"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/GFX_RAJ_krishna_pillai"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	RAJ_b_p_sitaramayya = {
+		name = "B. P. Sitaramayya"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/GFX_RAJ_pattabhi_sitaramayya"
+			}
+		}
+		country_leader = {
+			ideology = liberal_social
+			desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+			expire = "1965.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	RAJ_noel_beresford_peirse = {
+		name = "Noel Beresford-Peirse"
+		portraits = {
+			army = {
+				large = "gfx/leaders/RAJ/GFX_RAJ_noel_beresford_peirse"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	RAJ_frank_messervy = {
+		name = "Frank Messervy"
+		portraits = {
+			army = {
+				large = "gfx/leaders/RAJ/GFX_RAJ_frank_messervy"
+			}
+		}
+		corps_commander = {
+			traits = { hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	RAJ_douglas_gracey = {
+		name = "Douglas Gracey"
+		portraits = {
+			army = {
+				large = "gfx/leaders/RAJ/GFX_RAJ_douglas_gracey"
+			}
+		}
+		corps_commander = {
+			traits = { desert_fox }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	RAJ_herbert_fitzherbert = {
+		name = "Herbert Fitzherbert"
+		portraits = {
+			navy = {
+				large = "gfx/leaders/RAJ/GFX_RAJ_herbert_fitzherbert"
+			}
+		}
+		navy_leader = {
+			traits = {  }
+			skill = 3
+		}
+	}
+}

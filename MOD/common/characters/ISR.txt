@@ -1,0 +1,54 @@
+characters = {
+	ISR_david_ben_gurion = {
+		name = "David Ben-Gurion"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			traits = {  }
+			id = -1
+		}
+	}
+	ISR_itzhak_gaster = {
+		name = "Itzhak Gaster"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism
+			traits = {  }
+			id = -1
+		}
+	}
+	ISR_rudolf_szabo = {
+		name = "Rudolf Szabó"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	ISR_shmuel_mikunis = {
+		name = "Shmuel Mikunis"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {  }
+			id = -1
+		}
+	}
+}

@@ -9,7 +9,7 @@ bookmarks = {
 
 		"CDA"={
 			history = "FRA_POWDERKEG_DESC"
-			ideology = democratic
+			ideology = centrism
 			ideas = {
 				FRA_ww1_Revanchism
 				FRA_disjointed_government
@@ -35,7 +35,7 @@ bookmarks = {
 		}
 		"CAL"={
 			history = "ENG_POWDERKEG_DESC"
-			ideology = democratic
+			ideology = centrism
 			ideas = {
 				stiff_upper_lip
 				ww1_Scramble_for_Africa
@@ -62,7 +62,7 @@ bookmarks = {
 		}
 		"USA"={
 			history = "ITA_POWDERKEG_DESC"
-			ideology = democratic
+			ideology = centrism
 			ideas = {
 				ITA_ww1_Risorgimento
 				ww1_Scramble_for_Africa
@@ -88,7 +88,7 @@ bookmarks = {
 		}
 		"AZT"={
 			history = "RUS_POWDERKEG_DESC"
-			ideology = democratic
+			ideology = centrism
 			ideas = {
 			RUS_ww1_orthodox_church
 			RUS_ww1_tsushima_humiliation
@@ -110,7 +110,7 @@ bookmarks = {
 		"VER"={
 			minor = yes
 			history = "USA_POWDERKEG_DESC"
-			ideology = democratic
+			ideology = centrism
 			ideas = {
 
 			}
@@ -122,7 +122,7 @@ bookmarks = {
 		"ALK"={
 			minor = yes
 			history = "SER_POWDERKEG_DESC"
-			ideology = democratic
+			ideology = centrism
 			ideas = {
 
 			}
@@ -146,7 +146,7 @@ bookmarks = {
 		"HAW"={
 			minor = yes
 			history = "BEL_POWDERKEG_DESC"
-			ideology = democratic
+			ideology = centrism
 			ideas = {
 
 			}
@@ -170,7 +170,7 @@ bookmarks = {
 		"ROM"={
 			minor = yes
 			history = "ROM_POWDERKEG_DESC"
-			ideology = democratic
+			ideology = centrism
 			ideas = {
 
 			}
@@ -182,7 +182,7 @@ bookmarks = {
 		"VEG"={
 			minor = yes
 			history = "JAP_POWDERKEG_DESC"
-			ideology = neutrality
+			ideology = autocracy
 			ideas = {
 				state_shintoism
 			}
@@ -194,7 +194,7 @@ bookmarks = {
 		"MEX"={
 			minor = yes
 			history = "MEX_POWDERKEG_DESC"
-			ideology = neutrality
+			ideology = autocracy
 			ideas = {
 
 			}

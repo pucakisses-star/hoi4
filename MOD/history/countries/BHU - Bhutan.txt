@@ -53,62 +53,53 @@ set_stability = 0.8
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Jigme Wangchuck"
-	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
-	picture = "GFX_portrait_buthan_jigme_wangchuk"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = BHU_jigme_wangchuck
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

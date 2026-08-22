@@ -1,0 +1,99 @@
+characters = {
+	NIE_zhang_lexing = {
+		name = "Zhang Lexing"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NIE/Portrait_NIE_Zhang_Lexing.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_TEMP_DESC"
+			expire = "1891.12.31"
+			traits = {  }
+			id = -1
+		}
+	}
+	NIE_zhang_lexing_2 = {
+		name = "Zhang Lexing"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NIE/Portrait_NIE_Zhang_Lexing.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NIE_lai_wenguang = {
+		name = "Lai Wenguang"
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NIE_zhang_zongyu = {
+		name = "Zhang Zongyu"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NIE_ren_zhu = {
+		name = "Ren Zhu"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NIE_miao_peilin = {
+		name = "Miao Peilin"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NIE_fan_ruzeng = {
+		name = "Fan Ruzeng"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	NIE_niu_hongsheng = {
+		name = "Niu Hongsheng"
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

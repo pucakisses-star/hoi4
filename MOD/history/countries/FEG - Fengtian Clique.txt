@@ -85,22 +85,7 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "Bai Linga"
-    picture = "Portrait_FEG_Bai_Linga.dds"
-    desc = "POLITICS_TEMP_DESC"
-    expire = 1891.12.31
-    ideology = despotism
-}
+recruit_character = FEG_bai_linga
 
-create_corps_commander = {
-  name = "Bai Linga"
-  picture = "Portrait_FEG_Bai_Linga.dds"
-  traits = { }
-  skill = 2
-  attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = FEG_bai_linga_2
 }

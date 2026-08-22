@@ -1,0 +1,60 @@
+characters = {
+	SAX_johann_of_saxony = {
+		name = "Johann of Saxony"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAX/Portrait_SAX_Johann.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_John_DESC"
+			expire = "1873.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	SAX_karl_von_heygendorff = {
+		name = "Karl von Heygendorff"
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SAX_thuisko_von_stieglitz = {
+		name = "Thuisko von Stieglitz"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAX/Portrait_SAX_Thuisko_von_Stieglitz.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	SAX_bernhard_von_radenhorst = {
+		name = "Bernhard von Radenhorst"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAX/Portrait_SAX_Bernhard_von_Radenhorst.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

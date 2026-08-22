@@ -58,41 +58,32 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 0
 			banned = yes
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 80
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 0
 			banned = yes
 		}
 
-		neutrality = {
+		autocracy = {
 			popularity = 20
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = chauvinist_populism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Prince Demchugdongrub"
-	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX_portrait_men_demchugdongrub"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-		spirit_of_genghis
-	}
-}
+recruit_character = MEN_prince_demchugdongrub
 
 1939.1.1 = {
 }

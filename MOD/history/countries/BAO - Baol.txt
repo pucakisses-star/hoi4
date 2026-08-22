@@ -83,14 +83,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-  name = "Thié Yassin Ngoné Jegeñ Fall"
-  desc = "POLITICS_GEORGE_V_DESC"
-  picture = "Thie_Fall.dds"
-  expire = "1900.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+  recruit_character = BAO_thie_yassin_ngone_jegen_fall
 }

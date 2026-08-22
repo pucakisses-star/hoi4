@@ -92,15 +92,6 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-  name = "Frederick von Augustenburg"
-  desc = "#"
-  picture = "#"
-  expire = "1950.1.1"
-  ideology = despotism
-  traits = {
-
-  }
-}
+recruit_character = HLS_frederick_von_augustenburg
 
 }

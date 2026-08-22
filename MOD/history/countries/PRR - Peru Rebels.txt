@@ -91,13 +91,7 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-    name = "Manuel Ignacio"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_PRR_Manuel_Ignacio_de_Vivanco.dds"
-    expire = 1900.1.1
-    ideology = conserv
-}
+recruit_character = PRR_manuel_ignacio
 
 create_field_marshal {
   name = "Manuel Ignacio"

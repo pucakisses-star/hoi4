@@ -68,12 +68,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-create_country_leader = {
-	name = "Peta Nocona"
-	desc = ""
-	picture = "Portrait_COM_Peta_Nocona.dds"
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-	}
+recruit_character = COM_peta_nocona
 }

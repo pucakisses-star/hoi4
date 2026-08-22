@@ -1,0 +1,17 @@
+characters = {
+	NDE_mkhepula_soqaleni_sonyengele_cornelius_i_a_mabhogo_mahlangu = {
+		name = "Mkhepula Soqaleni Sonyengele Cornelius I a Mabhôgô Mahlangu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/generic_leader_tribe_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

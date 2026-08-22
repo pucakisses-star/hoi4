@@ -1,0 +1,17 @@
+characters = {
+	BRE_arnold_duckwitz = {
+		name = "Arnold Duckwitz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRE/Portrait_BRE_Arnold_Duckwitz.dds"
+			}
+		}
+		country_leader = {
+			ideology = parlia_repub
+			desc = "POLITICS_GEORGE_V_DESC"
+			expire = "1900.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

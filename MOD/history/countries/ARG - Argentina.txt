@@ -79,141 +79,73 @@ set_convoys = 120
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 5
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 5
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 12
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 78
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1931.11.8"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Agustín Pedro Justo"
-	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
-	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+recruit_character = ARG_agustin_pedro_justo
 
 1939.1.1 = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 5
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 5
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 12
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 78
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 		last_election = "1937.9.5"
 		election_frequency = 108
 		elections_allowed = yes
 	}
 
-	create_country_leader = {
-		name = "Roberto María Ortiz"
-		desc = "POLITICS_ROBERTO_MARIA_ORTIZ_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
+	recruit_character = ARG_roberto_maria_ortiz
 }
 
 
-create_country_leader = {
-	name = "Nimo de Anquín"
-	desc = "POLITICS_NIMO_DE_ANQUIN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = ARG_nimo_de_anquin
 
-create_country_leader = {
-	name = "Marcelo T. de Alvear"
-	desc = "POLITICS_MARCELO_ALVEAR_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+recruit_character = ARG_marcelo_t_de_alvear
 
-create_country_leader = {
-	name = "Fanny Jabcovsky"
-	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
-	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+recruit_character = ARG_fanny_jabcovsky
 
-create_field_marshal = {
-	name = "Arturo Rawson"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 3
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 1
-    logistics_skill = 2
-}
+recruit_character = ARG_arturo_rawson
 
-create_corps_commander = {
-	name = "Juan Pistarini"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = { urban_assault_specialist fortress_buster }
-	skill = 3
-    attack_skill = 1
-    defense_skill = 2
-    planning_skill = 4
-    logistics_skill = 3
-}
+recruit_character = ARG_juan_pistarini
 
-create_navy_leader = {
-	name = "Alberto Teisaire"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	traits = { blockade_runner }
-	skill = 3
-}
+recruit_character = ARG_alberto_teisaire
 
 ### Ship Variants ###
 

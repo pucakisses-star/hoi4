@@ -40,77 +40,17 @@ set_technology = {
 	start_build_tech = 1
 }
 
-create_country_leader = {
-  name = "Nicolau Bello"
-  desc = "#"
-  picture = "Portrait_Europe_generic_leader_politician_1.dds"
-  expire = "1900.1.1"
-  ideology = conserv
-  traits = {
+recruit_character = CAT_nicolau_bello
 
-  }
-}
+recruit_character = CAT_tomao_pique
 
-create_country_leader = {
-  name = "Tomao Pique"
-  desc = "#"
-  picture = "Portrait_Europe_generic_leader_politician_1.dds"
-  expire = "1900.1.1"
-  ideology = conserv_liberal
-  traits = {
+recruit_character = CAT_francesc_lassalle
 
-  }
-}
+recruit_character = CAT_lluis_selva
 
-create_country_leader = {
-  name = "Francesc Lassalle"
-  desc = "#"
-  picture = "Portrait_Europe_generic_leader_politician_2.dds"
-  expire = "1900.1.1"
-  ideology = liberal_social
-  traits = {
+recruit_character = CAT_carles_saria
 
-  }
-}
+recruit_character = CAT_anselmo_lorenzo
 
-create_country_leader = {
-  name = "Lluis Selva"
-  desc = "#"
-  picture = "Portrait_Europe_generic_leader_politician_1.dds"
-  expire = "1900.1.1"
-  ideology = syndicalism
-  traits = {
-
-  }
-}
-
-create_country_leader = {
-  name = "Carles Saria"
-  desc = "#"
-  picture = "Portrait_Europe_generic_leader_politician_1.dds"
-  expire = "1900.1.1"
-  ideology = marxism
-  traits = {
-
-  }
-}
-
-create_country_leader = {
-  name = "Anselmo Lorenzo"
-  desc = "POLITICS_TEMP_DESC"
-  picture = "Portait_CAT_Anselmo_Lorenzo.dds"
-  expire = "1900.1.1"
-  ideology = anarchism_sub
-
-}
-
-create_country_leader = {
-  name = "Parlament de Catalunya"
-  desc = "#"
-  picture = "Portrait_PRS_Herrenhaus.dds"
-  expire = "1900.1.1"
-  ideology = parlia_repub
-  traits = {
-
-  }
+recruit_character = CAT_parlament_de_catalunya
 }

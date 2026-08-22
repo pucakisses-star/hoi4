@@ -11,24 +11,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 20
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 16
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 7
 		}
 		
-		neutrality = { 
+		autocracy = { 
 			popularity = 57
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = autocracy
 	last_election = "1865.3.5"
 	election_frequency = 56
 	elections_allowed = yes
@@ -41,48 +41,21 @@ set_stability = 0.64
 set_research_slots = 3
 
 
-create_country_leader = {
-	name = "Sam Houston"
-#desc = ""
-	picture = "Portrait_TEX_Sam_Houston.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+recruit_character = TEX_sam_houston
 
 #create_field_marshal = {
 #	name = "Xhemal Aranitasi"#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 #skill = 2
 #
-create_country_leader = {
-	name = "Robert Minor"
-#desc = ""
-	picture = "RobertMinor(TEXCOMMUNISM)_result.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		dictator
-	}
-}
+recruit_character = TEX_robert_minor
 #create_country_leader = {
 #	name = ""
 #desc = ""
 #	picture = ""
 #	expire = "1965.1.1"
-#	ideology = fascism_ideology
+#	ideology = fascism
 #	traits = {
 		
-	}
-}
-create_country_leader = {
-	name = "Royalist Texan Council"
-#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "RoyalistCouncil_result.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
+	
+
+recruit_character = TEX_royalist_texan_council

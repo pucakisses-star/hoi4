@@ -68,20 +68,20 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 15
 		}
 
-		fascism = {
+		chauvinist_populism = {
 			popularity = 75
 		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 10
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = chauvinist_populism
 	last_election = "1935.6.9"
 	election_frequency = 12
 	elections_allowed = no # none after offset 1
@@ -91,33 +91,24 @@ set_politics = {
 	set_politics = {
 
 		parties = {
-			democratic = { 
+			centrism = { 
 				popularity = 15
 			}
 
-			fascism = {
+			chauvinist_populism = {
 				popularity = 75
 			}
 			
-			communism = {
+			vanguard_communism = {
 				popularity = 10
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = chauvinist_populism
 		last_election = "1935.6.9"
 		election_frequency = 12
 		elections_allowed = no # none after offset 1
 	}
 }
 
-create_country_leader = {
-	name = "Ante Pavelic"
-	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+recruit_character = CRO_ante_pavelic

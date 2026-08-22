@@ -1,0 +1,30 @@
+characters = {
+	GEO_noe_zhordania = {
+		name = "Noe Zhordania"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv_liberal
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	GEO_kandid_charkviani = {
+		name = "Kandid Charkviani"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1953.3.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

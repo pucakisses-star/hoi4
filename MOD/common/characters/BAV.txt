@@ -1,0 +1,18 @@
+characters = {
+	BAV_luitpold = {
+		name = Luitpold
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+	BAV_ludwig_iii = {
+		name = "Ludwig III"
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			id = -1
+		}
+	}
+}

@@ -43,7 +43,7 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		centrism = { 
 			popularity = 40
 		}
 
@@ -51,53 +51,26 @@ set_politics = {
 #		
 #		}
 		
-		communism = {
+		vanguard_communism = {
 			popularity = 25
 		}
-		neutrality = {
+		autocracy = {
 			popularity = 35
 		}
 	}
 
-	ruling_party = democratic
+	ruling_party = centrism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Pol Pot" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
-	expire = "1953.3.1"
-	ideology = anarchist_communism #insanity
-	traits = {
-		
-	}
-}
+recruit_character = CAM_pol_pot
 
 #non standard english alphabet character
-create_country_leader = {
-	name = "Sisowath Youtévong"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	expire = "1953.3.1"
-	ideology = liberalism
-	traits = {
-		
-	}
-}
+recruit_character = CAM_sisowath_youtevong
 
-create_country_leader = {
-	name = "Norodom Sihanouk" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
+recruit_character = CAM_norodom_sihanouk
 
 #couldnt find anything historical on fascism
 

@@ -1,0 +1,16 @@
+characters = {
+	NSW_henry_parker = {
+		name = "Henry Parker"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NSW/Portrait_NSW_Henry_Parker.dds"
+			}
+		}
+		country_leader = {
+			ideology = conserv
+			desc = "POLITICS_TEMP_DESC"
+			traits = {  }
+			id = -1
+		}
+	}
+}

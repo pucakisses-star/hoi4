@@ -86,11 +86,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-  create_country_leader = {
-    name = "Ricardo Jordan"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_ETR_Ricardo_Jordan.dds"
-    expire = 1861.4.11
-    ideology = national_populism
-}
+  recruit_character = ETR_ricardo_jordan
 }
