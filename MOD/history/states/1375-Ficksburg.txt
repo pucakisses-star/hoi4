@@ -1,0 +1,27 @@
+state=
+{
+	id=1375
+	name="STATE_1375"
+	manpower = 23452
+	
+	state_category = rural
+	resources={
+	}	
+	
+
+	history= {
+		owner = SOT
+		add_core_of = SOT
+		add_claim_by = OFS
+		buildings = {
+			infrastructure = 1
+			cotton_farm=1
+		}
+		victory_points = {
+			13245 1
+		}
+	}
+	provinces={
+		12648 13245 13253 13257
+	}
+}

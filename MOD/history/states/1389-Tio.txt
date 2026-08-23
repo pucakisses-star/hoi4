@@ -1,0 +1,22 @@
+state=
+{
+	id=1389
+	name="STATE_1389"
+	manpower = 1924
+	
+	state_category = rural
+	resources={
+	}	
+	
+
+	history= {
+		owner = TYO
+		add_core_of = TYO
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		13315 13316 13320
+	}
+}

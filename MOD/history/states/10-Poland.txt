@@ -7,12 +7,6 @@ state={
 
 	history={
 		owner = POL
-		victory_points = {
-			3544 25
-		}
-		victory_points = {
-			402 1
-		}
 		buildings = {
 			infrastructure = 7
 			arms_factory = 6
@@ -24,6 +18,6 @@ state={
 	}
 
 	provinces={
-		402 467 524 3482 3544 6511 9400 11492 12562 
+		467 524 3482 6511 9400 11492 12562
 	}
 }

@@ -1,0 +1,23 @@
+state=
+{
+	id=1362
+	name="STATE_1362"
+	manpower = 1834
+	
+	state_category = pastoral
+	resources={
+	}	
+	
+
+	history= {
+		owner = KOY
+		add_core_of = KOY
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	provinces={
+		13226 13231
+	}
+}
