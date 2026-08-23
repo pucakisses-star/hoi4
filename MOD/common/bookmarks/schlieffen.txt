@@ -12,12 +12,10 @@ bookmarks = {
 			ideas={
 				FRA_ww1_Revanchism
 				#FRA_disjointed_government
-				ww1_Scramble_for_Africa
 			}
 			focuses = {
 				FRA_ww1_armeeorient
 				FRA_ww1_french_algeria_infra
-				FRA_ww1_gasmask_focus
 			}
 		}
 		#TUR = {
@@ -32,12 +30,10 @@ bookmarks = {
 			ideology = centrism
 			ideas = {
 				neutrality_idea
-				home_of_the_free
 			}
 			focuses = {
 				USA_ww1_AntiGermanSubmarineWarfare
 				USA_ww1_EscadrilleLaFayette
-				USA_ww1_ExpeditionaryForceFrance
 			}
 		}
 		ENG = {
@@ -47,12 +43,10 @@ bookmarks = {
 				stiff_upper_lip
 				british_austerity_idea
 				#ENG_colonial_elite
-				ww1_Scramble_for_Africa
 			}
 			focuses = {
 				uk_lawrence_focus
 				ENG_ww1_portugal_friend
-				ENG_ww1_ireland_crush
 			}
 		}
 		GER = {
@@ -61,12 +55,10 @@ bookmarks = {
 			ideas={
 				general_staff
 				GER_ww1_North_German_Confederation
-				ww1_Scramble_for_Africa
 			}
 			focuses = {
 				GER_strat_bombing
 				GER_asienkorps
-				GER_ww1_zimmermann_telegram
 			}
 		}
 		ITA = {
@@ -74,12 +66,10 @@ bookmarks = {
 			ideology = centrism
 			ideas = {
 				ITA_ww1_Risorgimento
-				ww1_Scramble_for_Africa
 			}
 			focuses = {
 				ITA_ww1_diaz
 				ITA_ww1_italian_askari
-				ITA_interwar_march_on_rome
 			}
 		}
 		AUH = {
@@ -87,12 +77,10 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				AUH_ww1_House_Habsburg_Lorraine
-				AUH_ww1_Multinational_State
 			}
 			focuses = {
 				AUH_ww1_end_dual_monarchy_emperor
 				AUH_ww1_unitedpeople
-				AUH_ww1_polnische_wehrmacht
 			}
 		}
 		RUS = {
@@ -101,12 +89,10 @@ bookmarks = {
 			ideas = {
 				RUS_ww1_orthodox_church
 				RUS_ww1_tsushima_humiliation
-				RUS_ww1_mixed_railways
 			}
 			focuses = {
 				RUS_ww1_sikorsky_airplane_research
 				RUS_ww1_restore_russia_glory
-				RUS_ww1_disarm_the_cossacks
 			}
 		}
 
@@ -122,7 +108,6 @@ bookmarks = {
 
 			}
 			focuses = {
-				TUR_russian_ports
 			}
 		}
 
@@ -134,7 +119,6 @@ bookmarks = {
 
 			}
 			focuses = {
-				SER_ww1_serbia_first
 			}
 		}
 
@@ -146,7 +130,6 @@ bookmarks = {
 
 			}
 			focuses = {
-				BUL_ww1_join_centralpower
 			}
 		}
 
@@ -191,7 +174,6 @@ bookmarks = {
 			history = "JAP_SCHLIEFFEN_DESC"
 			ideology = autocracy
 			ideas = {
-				state_shintoism
 			}
 			focuses = {
 

@@ -5,32 +5,26 @@ bookmarks = {
 		date = 1868.5.1.1
 		picture = "aknnz-8ewfd"
 		default_country = "COF"
-		default = yes
-
 		"CDA"={
 			history = "FRA_POWDERKEG_DESC"
 			ideology = centrism
 			ideas = {
 				FRA_ww1_Revanchism
 				FRA_disjointed_government
-				ww1_Scramble_for_Africa
 			}
 			focuses = {
 				FRA_ww1_triple_alliance
 				FRA_ww1_agadir_crisis
-				FRA_ww1_ready_country
 			}
 		}
 		"DES"={
 			history = "TUR_POWDERKEG_DESC"
 			ideology = fascism
 			ideas = {
-				ww1_Faith_Allah
 			}
 			focuses = {
 				TUR_ww1_BalkanLeagueMenace
 				TUR_ww1_fight_arab_revolt
-				TUR_ww1_support_libya
 			}
 		}
 		"CAL"={
@@ -38,12 +32,10 @@ bookmarks = {
 			ideology = centrism
 			ideas = {
 				stiff_upper_lip
-				ww1_Scramble_for_Africa
 			}
 			focuses = {
 				ENG_ww1_aviation_effort
 				ENG_ww1_protect_suez
-				ENG_ww1_airship_focus
 			}
 		}
 		"COF"={
@@ -52,12 +44,10 @@ bookmarks = {
 			ideas = {
 				#general_staff
 				GER_ww1_North_German_Confederation
-				ww1_Scramble_for_Africa
 			}
 			focuses = {
 				GER_ww1_support_kaiser
 				GER_ww1_agadir_crisis
-				GER_ww1_secret_alliance_rom
 			}
 		}
 		"USA"={
@@ -65,12 +55,10 @@ bookmarks = {
 			ideology = centrism
 			ideas = {
 				ITA_ww1_Risorgimento
-				ww1_Scramble_for_Africa
 			}
 			focuses = {
 				ITA_ww1_aviation_effort
 				ITA_ww1_libyan_claims
-				ITA_ww1_back_france
 			}
 		}
 		"TEX"={
@@ -78,12 +66,10 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				AUH_ww1_House_Habsburg_Lorraine
-				AUH_ww1_Multinational_State
 			}
 			focuses = {
 				AUH_ww1_back_italy
 				AUH_ww1_military_advisors
-				AUH_ww1_aviation_effort
 			}
 		}
 		"AZT"={
@@ -92,12 +78,10 @@ bookmarks = {
 			ideas = {
 			RUS_ww1_orthodox_church
 			RUS_ww1_tsushima_humiliation
-			RUS_ww1_mixed_railways
 			}
 			focuses = {
 				RUS_ww1_pro_fra
 				RUS_wilhlems_deal
-				RUS_ww1_naval_effort
 			}
 		}
 
@@ -115,7 +99,6 @@ bookmarks = {
 
 			}
 			focuses = {
-				USA_ww1_MexicanRevolution
 			}
 		}
 
@@ -127,7 +110,6 @@ bookmarks = {
 
 			}
 			focuses = {
-				SER_first_balkan
 			}
 		}
 
@@ -139,7 +121,6 @@ bookmarks = {
 
 			}
 			focuses = {
-				BUL_ww1_balkan_league
 			}
 		}
 
@@ -184,7 +165,6 @@ bookmarks = {
 			history = "JAP_POWDERKEG_DESC"
 			ideology = autocracy
 			ideas = {
-				state_shintoism
 			}
 			focuses = {
 
