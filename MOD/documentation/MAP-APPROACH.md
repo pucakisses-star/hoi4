@@ -281,3 +281,49 @@ country simply inherits a vanilla state whole; an explicit list is only needed
 where a state must be cut. Nothing is written unless every region reproduces its
 sources exactly — nothing claimed twice, nothing left behind, map-wide province
 total unchanged.
+
+## The rest of Europe
+
+225 states, almost all whole-state inheritance — the borders of France, Iberia,
+Italy, the Low Countries and Scandinavia in 1886 are close enough to 1936 that
+vanilla's states carry over unchanged. What changes is ownership in the east and
+north-west:
+
+| | states | provinces | |
+|---|---|---|---|
+| Russian Empire | 111 | 1989 | Congress Poland, the Baltic governorates, Belarus, Ukraine, the Caucasus |
+| France | 28 | 282 | Third Republic; Alsace-Lorraine already German |
+| Spain | 16 | 222 | Restoration monarchy; Alfonso XIII born May 1886 |
+| United Kingdom | 22 | 150 | **including all of Ireland** — no partition until 1922 |
+| Italy | 12 | 124 | unified since 1870; the Pope holds no territory |
+| Sweden | 7 | 201 | |
+| Finland | 8 | 155 | Russian Grand Duchy, own diet, currency and army |
+| Norway | 4 | 135 | personal union with Sweden, separate kingdom |
+| Portugal, Denmark, Netherlands, Belgium, Switzerland, Luxembourg | 17 | 121 | Denmark including Iceland and the Faroes |
+
+Poland, Lithuania, Latvia, Estonia, Belarus and Ukraine are not countries in
+1886 — they are governorates. Ireland is not one either. Finland and Norway keep
+their tags as genuine autonomous or personal-union subjects, the same case as
+Croatia-Slavonia under Hungary.
+
+**Anatolia and Mosul are deliberately excluded.** They are Ottoman, but Russia
+took Kars, Ardahan and Batumi in 1878, and carving those out needs a Caucasus
+projection fit — the Central European one is unreliable that far east. Left for
+a Near East region rather than assigned to a border known to be wrong.
+
+Running total: **5,228 of 10,623 provinces (49%) on 1886 owners, across 459
+states.**
+
+### Names are still not identifiers
+
+The base data contains two adjacent Volga states **both named "Samara"** (ids
+251 and 401). The driver refused to write rather than guess, which is the
+behaviour wanted. Region tables can now address a state as `"Name#id"` when the
+name alone is ambiguous, and the driver checks that the id really does carry
+that name.
+
+A second hazard surfaced in the same place. Python collapses duplicate keys in a
+dict literal silently, so a region table can lose an entry with no error at all
+— the generated Europe table briefly had `"Samara#251"` twice. The driver now
+parses each region module with `ast` and rejects duplicate keys in `SPLIT`
+before using it. Verified by deliberately introducing one.

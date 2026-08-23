@@ -24,12 +24,13 @@ alongside the coarse ones they replaced and left both in place, which cost it
 """
 
 import argparse
+import ast
 import collections
 import importlib
 import os
 import sys
 
-REGIONS = ["germany", "balkans"]
+REGIONS = ["germany", "balkans", "europe"]
 
 
 def load_geometry(path):
@@ -52,6 +53,26 @@ def load_geometry(path):
     return rows
 
 
+def duplicate_keys(module_path):
+    """Duplicate keys in a dict literal are silently collapsed by Python, so a
+    region table can lose an entry with no error. Parse the source and report
+    any repeats rather than trusting the loaded dict."""
+    tree = ast.parse(open(module_path, encoding="utf-8").read())
+    dupes = []
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Assign):
+            continue
+        targets = [t.id for t in node.targets if isinstance(t, ast.Name)]
+        if "SPLIT" not in targets or not isinstance(node.value, ast.Dict):
+            continue
+        seen = collections.Counter()
+        for k in node.value.keys:
+            if isinstance(k, ast.Constant):
+                seen[k.value] += 1
+        dupes = [k for k, n in seen.items() if n > 1]
+    return dupes
+
+
 def apply_region(geo, split, names, next_id, label):
     """Cut the named states per `split`. Returns (new geo, next free id, stats)."""
     idx = collections.defaultdict(list)
@@ -59,16 +80,35 @@ def apply_region(geo, split, names, next_id, label):
         idx[r["name"]].append(r)
 
     errs = []
-    missing = [n for n in split if n not in idx]
-    if missing:
-        errs.append(f"{label}: source states not present: {missing}")
-    ambiguous = [n for n in split if len(idx.get(n, [])) > 1]
-    if ambiguous:
-        errs.append(f"{label}: source state names not unique: {ambiguous}")
+    # A key may be a plain state name, or "Name#id" where the name alone is
+    # ambiguous. The base data contains two adjacent Volga states both named
+    # "Samara", so names are not identifiers and the table has to be able to
+    # say which one it means.
+    src_ids = {}
+    for key in split:
+        if "#" in key:
+            nm, _, want = key.rpartition("#")
+            if not want.isdigit():
+                errs.append(f"{label}: bad id in key {key!r}")
+                continue
+            want = int(want)
+            if want not in geo:
+                errs.append(f"{label}: key {key!r} names state id {want}, which does not exist")
+            elif geo[want]["name"] != nm:
+                errs.append(f"{label}: key {key!r} but state {want} is named "
+                            f"{geo[want]['name']!r}")
+            else:
+                src_ids[key] = want
+        elif key not in idx:
+            errs.append(f"{label}: source state not present: {key!r}")
+        elif len(idx[key]) > 1:
+            ids = sorted(r["id"] for r in idx[key])
+            errs.append(f"{label}: {key!r} is ambiguous, matches state ids {ids}; "
+                        f"use \"{key}#<id>\" to pick one")
+        else:
+            src_ids[key] = idx[key][0]["id"]
     if errs:
         return None, next_id, errs
-
-    src_ids = {n: idx[n][0]["id"] for n in split}
     seen = collections.Counter()
     resolved = {}
     for name, parts in split.items():
@@ -141,6 +181,10 @@ def main():
     per_tag = collections.Counter()
     for name in a.regions:
         mod = importlib.import_module(f"regions.{name}")
+        dupes = duplicate_keys(mod.__file__)
+        if dupes:
+            print(f"FAIL: {name}: duplicate keys in SPLIT, silently collapsed: {dupes}")
+            return 1
         new, next_id, res = apply_region(geo, mod.SPLIT, mod.NAMES, next_id, name)
         if new is None:
             for e in res:
