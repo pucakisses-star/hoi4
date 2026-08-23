@@ -1,0 +1,3 @@
+# Eastern Rumelia -- Autonomous Ottoman province, seized by Bulgaria
+graphical_culture = eastern_european_gfx
+graphical_culture_2d = eastern_european_2d

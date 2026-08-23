@@ -1,0 +1,3 @@
+# Congo Free State -- Personal possession of Leopold II
+graphical_culture = african_gfx
+graphical_culture_2d = african_2d

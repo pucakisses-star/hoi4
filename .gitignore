@@ -1,0 +1,26 @@
+# HOI4 build/run artefacts
+*.log
+error.log
+exceptions.txt
+*.hoi4
+*.ck2
+*.eu4
+
+# Paradox launcher leftovers
+.metadata/
+*.zip
+*.rar
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# Image working files the game never reads
+*.psd
+*.xcf
+*.ai

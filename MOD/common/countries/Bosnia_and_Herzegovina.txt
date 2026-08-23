@@ -1,0 +1,3 @@
+# Bosnia and Herzegovina -- Ottoman de jure, Austro-Hungarian occupation
+graphical_culture = eastern_european_gfx
+graphical_culture_2d = eastern_european_2d
