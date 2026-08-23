@@ -1,0 +1,26 @@
+state=
+{
+	id=1377
+	name="STATE_1377"
+	manpower = 862
+	
+	state_category = rural
+	resources={
+	}	
+	
+
+	history= {
+		owner = OFS
+		add_core_of = OFS
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13247 1
+		}
+		add_claim_by = TRV
+	}
+	provinces={
+		13246 13247 13249
+	}
+}

@@ -1,0 +1,23 @@
+state=
+{
+	id=1385
+	name="STATE_1385"
+	manpower = 34220
+	
+	state_category = rural
+	resources={
+	}	
+	
+
+	history= {
+		buildings = {
+			infrastructure = 1
+		}
+		owner = BAG
+		add_core_of = BAG
+		add_claim_by = WDD
+	}
+	provinces={
+		1993 2081 8078 9152 13354 13357 13358 13359 13361
+	}
+}

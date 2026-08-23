@@ -1,0 +1,23 @@
+state=
+{
+	id=1382
+	name="STATE_1382"
+	manpower = 672
+	
+	state_category = rural
+	resources={
+	}	
+	
+
+	history= {
+		buildings = {
+			infrastructure = 0
+		}
+		owner = BAM
+		add_core_of = BAM
+		add_claim_by = TOU
+	}
+	provinces={
+		4927 10812 12838 13274 13350 13402
+	}
+}
