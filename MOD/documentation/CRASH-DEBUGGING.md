@@ -66,9 +66,25 @@ are each self-contained.
 Expect the mod to look broken during these tests. That does not matter; the
 only question being asked is whether it reaches the main menu.
 
-## Two things worth checking first, since they are single launches
+## Two single-launch checks - both done, both negative
 
-- Does **vanilla with no mods** launch? Establishes the game itself is sound.
-- Does the mod launch with **every DLC disabled**? The idea-category
-  replacement in `common/idea_tags/00_idea.txt` removes roughly 1,243 vanilla
-  ideas, and the content that references them is overwhelmingly DLC content.
+- **Vanilla, no mods: launches fine.** The game, the DLC install, the drivers
+  and the hardware are all sound. The crash is in the mod.
+- **Mod with all 35 DLC disabled: still crashes.** Same exception, same
+  offset, `error.log` down to 19,286. That kills the idea-category theory as
+  the *cause*: with the DLC content gone there is far less referencing the
+  1,243 dead ideas, and it crashes anyway.
+
+## What the ninth report added, and why it is still not the answer
+
+`equipment_graphic_database` reports 1,221 errors covering 370 missing
+entities and sprites - `GFX_ENG_light_plane_3_medium`, `CHI_naval_bomber3`,
+`FIN_heavy_armor_entity` and so on. Dangling graphics references dereferenced
+while building models would be a plausible access violation.
+
+It is the same class as everything else, though: the mod removes the WW2
+equipment sprites, vanilla's graphics database still points at them. None of
+those names appear anywhere in this mod, so they are vanilla-side references
+to things the mod took away. Nine reports have now established that this
+pattern produces noise rather than the crash - each time it was removed, the
+crash stayed exactly where it was.
