@@ -17,7 +17,8 @@ passes, because an orphan's neighbours may themselves be orphans; each pass
 only assigns provinces that currently touch a decided state, so the frontier
 grows inward from known territory.
 
-Output is one tab-separated table: the single source of truth for state shape.
+The base table is never modified: this reads state_geometry.tsv and writes
+state_geometry_1886.tsv, so the split can be re-run and revised freely.
 Ownership for 1886 is a separate concern and lives elsewhere.
 """
 

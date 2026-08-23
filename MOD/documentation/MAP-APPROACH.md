@@ -163,3 +163,57 @@ whole: Weser-Ems covers Oldenburg, Bremen and Prussian territory; Eastern Hesse
 covers Prussian Hesse-Nassau, the Grand Duchy of Hesse and Frankfurt. Vanilla
 has no Baden state at all — Baden sits inside its eighteen-province Württemberg,
 which therefore has to be cut in three.
+
+## The German Empire split
+
+`tools/germany_1886.py` cuts the twenty-four vanilla states covering the Empire
+into **fifty-two 1886 states**, one per country present in each. All twenty-six
+Empire members end up holding territory.
+
+| | provinces | | | provinces |
+|---|---|---|---|---|
+| Prussia | 166 | | Anhalt, Brunswick, Saxe-Meiningen, Saxe-Coburg and Gotha | 2 each |
+| Bavaria | 35 | | Hamburg, Lübeck, Bremen, Mecklenburg-Strelitz | 1 each |
+| Alsace-Lorraine, Württemberg | 9 | | Schaumburg-Lippe, Lippe, Waldeck-Pyrmont | 1 each |
+| Baden | 8 | | Saxe-Weimar-Eisenach, Saxe-Altenburg | 1 each |
+| Oldenburg, Mecklenburg-Schwerin, Saxony | 5 | | both Reuss lines, both Schwarzburgs | 1 each |
+| Hesse | 4 | | | |
+
+Every province was placed by converting its centroid to latitude and longitude
+and comparing against where the 1886 border ran. Small fragments carry a note
+naming the town they stand for, so the choice can be checked rather than taken
+on trust. Some are very good — Saxe-Weimar's province sits 8 km from Weimar,
+Saxe-Coburg-Gotha's 6 km from Gotha. Others are a compromise the grid forces.
+
+Things worth knowing about the result:
+
+- **Prussia is deliberately many states, not one.** It holds two thirds of the
+  Empire across nineteen separate vanilla states, and keeping them separate is
+  what makes Prussia feel like a federation's hegemon rather than a blob.
+- **Some countries are deliberately discontiguous.** Oldenburg holds three
+  blocks — Oldenburg proper, the Principality of Lübeck at Eutin, and Birkenfeld
+  on the Nahe — because it really did. Saxe-Coburg and Gotha is two blocks,
+  Coburg and Gotha, as it really was. Brunswick keeps its Blankenburg exclave.
+- **Hohenzollern goes to Prussia**, not Württemberg. The dynasty's ancestral
+  land was an exclave ruled from Berlin.
+- **Alsace-Lorraine and Posen change hands from vanilla.** Vanilla assigns them
+  to France and Poland; in 1886 both are German.
+- **Thuringia is the honest compromise.** Eight sovereign states get one
+  province each. The real duchies were interleaved with dozens of exclaves and
+  no grid at this resolution reproduces that.
+
+The generator refuses to write unless the split exactly reproduces the source
+states: no province claimed twice, none left behind, and the total province
+count unchanged before and after. That is the check the previous mod never had.
+
+### A trap worth recording
+
+The base table contains two different states both displaying as **Samara**, ids
+251 and 401. An early version of this tool keyed states by display name, which
+silently merged them and dropped nineteen provinces — and the per-state checks
+still passed, because they only compared each source state against itself. The
+loss only showed up in the whole-map coverage count.
+
+Everything is keyed by state id now, `load_geometry` rejects a duplicate id
+outright, and the tool refuses to write if the province total changes at all.
+Display names are for humans; they are not identifiers.
