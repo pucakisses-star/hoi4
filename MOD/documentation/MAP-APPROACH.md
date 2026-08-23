@@ -491,3 +491,69 @@ were coined independently and identically by the previous mod and by this
 country list. Those are recorded as known-benign so they stop being reported.
 
 Running total: **8,609 of 10,623 provinces (81%) across 679 states.**
+
+## India, Australasia, the Indies, Africa — and completion
+
+The map is now **100% converted: 857 states, 174 countries, all 10,623 land
+provinces**, every invariant clean.
+
+**India.** Vanilla draws British India as one country. In 1886 roughly two
+fifths of the subcontinent by area was ruled by princes with their own courts,
+armies and coinage — Hyderabad alone was larger than Italy. The larger states
+are separated out; the hundreds of small ones are not, because the province grid
+cannot carry them. Rajputana is divided between Bikaner, Jaipur, Jodhpur and
+Udaipur; Gujarat between Kutch, Junagadh, Baroda and British Surat.
+
+The South Asian projection is the worst of any region — **112 km median
+residual** — so these splits use *relative* position within each state rather
+than absolute coordinates: Bikaner is Rajputana's north-western corner, Udaipur
+its southern. That ordering survives the distortion even where the numbers do
+not.
+
+**Australia is not a country.** Federation is fifteen years away. In 1886 there
+are six separate self-governing colonies with their own parliaments, tariffs,
+postage and rail gauges — trains could not cross from New South Wales to
+Victoria without passengers changing carriage. Six new tags. New Guinea is
+divided three ways in 1884–85 and none of them is Australian: Dutch west,
+German north-east, British south-east, the last after Queensland tried to annex
+it unilaterally and London disallowed it.
+
+**The Indies.** Every Malay sultanate separately sovereign, Bali as five
+kingdoms, Aceh thirteen years into a war with the Dutch with eighteen still to
+run, and Borneo split between a Sultan, an English dynasty ruling Sarawak as
+rajahs, and a chartered company.
+
+**Africa — the year after Berlin**, when the partition was agreed on paper and
+had barely begun on the ground. This is where vanilla is most misleading:
+
+| Vanilla says | 1886 says |
+|---|---|
+| Italian Libya | **Ottoman** — Italy invades in 1911 |
+| Belgian Congo | **Leopold II's personal property** — not Belgian until 1908 |
+| British Sudan | **the Mahdists** — they hold Khartoum until 1898 |
+| British Kenya | **the Sultan of Zanzibar's coast** |
+| British Uganda | **the Kingdom of Buganda** |
+| British Tanganyika | **German** — chartered 1885 |
+| British Rhodesia | **Lobengula's Ndebele kingdom** — Rhodes arrives in 1890 |
+| French Morocco | **an independent sultanate** until 1912 |
+| Italian Somaliland | **the Majeerteen Sultanate** — Italy arrives in 1889 |
+| South Africa | **the Transvaal, the Orange Free State, the Cape, Natal** |
+
+Assigning any of those to its 1936 owner would put a colony on the map
+twenty-five years early.
+
+Much of Africa needed no correction. The previous mod had already built Ashanti,
+Dahomey, the Mossi, the Aro, the Kru, Kong, the Toucouleur, Wadai, the Sotho and
+the Orange Free State as real polities with territory. That work was
+1886-appropriate and is kept; only the colonial layer on top of it was wrong.
+
+**The tail.** Twenty-nine states were already on correct owners but had never
+been stamped by a region, so they were invisible to the coverage count. They are
+stamped now after checking, and four of them turned out to be wrong: **Guam** was
+Spanish until 1898, **Setsoto** is in Basutoland rather than France, **Anziku** is
+a Congo kingdom rather than Spanish, and **Port-de-Paix** is in Haiti — Spain's
+half of Hispaniola had been the Dominican Republic since 1865.
+
+That is the `assigned_by` column earning its place. Under the old
+count-by-owner-tag method all twenty-nine would have been silently counted as
+converted, and those four errors would have shipped.

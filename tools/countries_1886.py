@@ -90,6 +90,14 @@ ROWS = [
 ("HAM","Hamburg","German Empire","Free City","Hanseatic republic; joined the customs union only in 1888."),
 ("ALS","Alsace-Lorraine","German Empire","Imperial Territory","Taken in 1871, ruled directly from Berlin with no vote in the federal council."),
 
+# ---- Australasia: six separate self-governing colonies until 1901 ----
+("NSW","New South Wales","Australasia","Self-governing British colony","Federation is fifteen years away; in 1886 these six are separate colonies with their own parliaments, tariffs and even rail gauges."),
+("VIC","Victoria","Australasia","Self-governing British colony","The gold colony; richer and more populous than New South Wales in this decade."),
+("QLD","Queensland","Australasia","Self-governing British colony","Annexed south-eastern New Guinea in 1883 on its own initiative, which London disallowed."),
+("SAS","South Australia","Australasia","Self-governing British colony","Administers the Northern Territory from 1863."),
+("WAU","Western Australia","Australasia","Crown colony","Does not get responsible government until 1890."),
+("TAS","Tasmania","Australasia","Self-governing British colony",""),
+
 # ---- Eastern Europe ----
 ("RUS","Russian Empire","Eastern Europe","Empire","SOV is the Soviet Union: different state, different borders, no Finland, no Poland, no Bessarabia, and a Tsar rather than a Politburo."),
 
