@@ -3,8 +3,12 @@ state={
 	name="STATE_1345"
 
 	history={
+		victory_points = { 4073 3 }
 		owner = EGY
 		buildings = {
+			12049 = {				naval_base = 2
+			
+			}
 			infrastructure = 3
 			cotton_farm = 1
 		}
