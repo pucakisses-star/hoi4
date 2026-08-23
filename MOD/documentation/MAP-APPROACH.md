@@ -217,3 +217,67 @@ loss only showed up in the whole-map coverage count.
 Everything is keyed by state id now, `load_geometry` rejects a duplicate id
 outright, and the tool refuses to write if the province total changes at all.
 Display names are for humans; they are not identifiers.
+
+## Austria-Hungary and the Balkans
+
+The 1936 map barely resembles 1886 here. Yugoslavia and Czechoslovakia do not
+exist and their ground is Habsburg or Ottoman; the Ottoman Empire still holds
+Kosovo, Macedonia, Albania, Epirus and Thrace in Europe; Bosnia is Ottoman in
+law and Austro-Hungarian in fact; Bessarabia is Russian.
+
+Fifty-four vanilla states become sixty-two, giving **63 states and 544
+provinces across 12 countries**:
+
+| | states | provinces | | | states | provinces |
+|---|---|---|---|---|---|---|
+| Austria | 16 | 142 | | Bosnia | 1 | 30 |
+| Hungary | 13 | 111 | | Greece | 4 | 29 |
+| Ottoman Empire | 10 | 74 | | Russian Empire | 4 | 27 |
+| Romania | 4 | 46 | | Serbia | 3 | 25 |
+| Bulgaria | 4 | 37 | | Croatia-Slavonia | 2 | 13 |
+| | | | | Montenegro | 1 | 5 |
+| | | | | Crete | 1 | 5 |
+
+Borders used, all as they stood in 1886:
+
+- **Serbia's 1878 frontier**, south to roughly the latitude of Vranje. Kosovo
+  and the Sandžak of Novi Pazar stayed Ottoman until 1912.
+- **Montenegro's post-1878 borders** — Nikšić, Podgorica and Kolašin gained at
+  Berlin, but Bijelo Polje and Pljevlja still Ottoman.
+- **Greece's 1881 frontier**, bringing in Thessaly and Arta. Ioannina and Epirus
+  remained Ottoman until 1913.
+- **Bulgaria including Eastern Rumelia**, seized in September 1885 and accepted
+  by the Porte at Tophane in April 1886 — but not the Rhodope and Kardzhali
+  strip, which stayed Ottoman. Southern Dobruja is Bulgarian; Romania took only
+  the northern half in 1878.
+- **The Prut as the Romania–Russia border**, with Northern Dobruja Romanian and
+  the Budjak Russian, both from the 1878 settlement.
+- **Croatia-Slavonia** autonomous under Hungary, and the Croatian bank of the
+  Sava separated from occupied Bosnia.
+
+Two more source-data traps surfaced here. The state displaying as `East Galicia`
+carries a **trailing space** in its game localisation, so a region table
+addressing it by the name a human would write silently failed to find it; names
+are stripped on load now. And the state named `Koinadugu` — a district of Sierra
+Leone — actually sits in the **Danube delta**. As with `555-Lagos.txt` being the
+Kuril Islands, the names in this data cannot be trusted; only the coordinates
+can.
+
+## Adding a region
+
+`tools/build_1886_states.py` applies region tables in order to the recovered
+geometry. A region is a module under `tools/regions/` supplying:
+
+```python
+SPLIT = {
+    "<vanilla state name>": {"<1886 tag>": [province ids], ...},
+    "<vanilla state name>": {"<1886 tag>": None},   # the whole state
+}
+NAMES = {"<tag>": "<display name>", ...}
+```
+
+`None` means every province of that state, which covers the common case where a
+country simply inherits a vanilla state whole; an explicit list is only needed
+where a state must be cut. Nothing is written unless every region reproduces its
+sources exactly — nothing claimed twice, nothing left behind, map-wide province
+total unchanged.

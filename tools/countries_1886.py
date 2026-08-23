@@ -68,6 +68,9 @@ ROWS = [
 ("HAM","Hamburg","German Empire","Free City","Hanseatic republic; joined the customs union only in 1888."),
 ("ALS","Alsace-Lorraine","German Empire","Imperial Territory","Taken in 1871, ruled directly from Berlin with no vote in the federal council."),
 
+# ---- Eastern Europe ----
+("RUS","Russian Empire","Eastern Europe","Empire","SOV is the Soviet Union: different state, different borders, no Finland, no Poland, no Bessarabia, and a Tsar rather than a Politburo."),
+
 # ---- Habsburg lands and the Balkans ----
 ("BOS","Bosnia and Herzegovina","Balkans","Ottoman de jure, Austro-Hungarian occupation","Occupied since 1878; annexed outright only in 1908."),
 ("ERU","Eastern Rumelia","Balkans","Autonomous Ottoman province, seized by Bulgaria","Bulgaria annexed it in September 1885; the powers had not accepted this in 1886."),
@@ -214,6 +217,9 @@ is a materially different polity:
 
   OTT  Ottoman Empire   TUR is the 1923 republic: different borders, different
                         subjects, no caliphate, no Arab provinces.
+  RUS  Russian Empire   SOV is the Soviet Union. In 1886 the Tsar rules Finland
+                        and Congress Poland, holds Bessarabia and Kars, and has
+                        Khiva and Bukhara as protectorates.
   QNG  Qing Empire      CHI is the Republic. The Qing has a Manchu dynasty, a
                         tributary system and a court, none of which HOI4 models.
   PRU  Prussia          GER is the unified nation-state. In 1886 Prussia is one
