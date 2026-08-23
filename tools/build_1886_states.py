@@ -30,7 +30,7 @@ import importlib
 import os
 import sys
 
-REGIONS = ["germany", "balkans", "europe", "neareast"]
+REGIONS = ["germany", "balkans", "europe", "neareast", "asia"]
 
 
 def load_geometry(path):

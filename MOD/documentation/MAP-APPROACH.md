@@ -375,3 +375,65 @@ is the real one. A number derived from a proxy was quietly wrong; a number
 derived from a record of what actually happened cannot be.
 
 Running total: **4,675 of 10,623 provinces (44%) across 389 states.**
+
+## Asia
+
+141 vanilla states become 142, giving **142 states and 2,148 provinces across 16
+countries**. The map goes from 44% converted to **64%**.
+
+| | states | provinces | | | states | provinces |
+|---|---|---|---|---|---|---|
+| Qing Empire | 56 | 970 | | Dai Nam | 1 | 29 |
+| Russian Empire | 35 | 583 | | Cambodia | 1 | 27 |
+| Japan | 14 | 125 | | Luang Prabang | 1 | 26 |
+| Spain | 10 | 93 | | Tibet | 3 | 24 |
+| Siam | 2 | 82 | | United Kingdom | 8 | 19 |
+| Korea | 2 | 70 | | Champasak | 1 | 13 |
+| France / Afghanistan | 2 each | 38 / 33 | | Prussia / Portugal | 1 / 3 | 9 / 7 |
+
+The big correction is the one the country list already makes: **CHI is the
+Republic, and in 1886 there is no republic.** The Qing hold everything from the
+Amur to Hainan as one country — China proper, Manchuria, Inner and Outer
+Mongolia, Tannu Uriankhai, Xinjiang (a province since 1884), Taiwan (until
+1895), Dalian (until 1898) and Guangzhouwan (until 1898). Vanilla scatters that
+across eleven tags.
+
+Others worth naming:
+
+- **Korea is Joseon**, independent under Qing suzerainty. Japan does not annex
+  it until 1910.
+- **Sakhalin is entirely Russian and the Kurils entirely Japanese**, under the
+  Treaty of Saint Petersburg of 1875.
+- **The Philippines, Carolines, Palau and Marianas are Spanish.** The United
+  States does not appear in the Pacific until 1898.
+- **The Marshall Islands are a German protectorate** from 1885. The Empire's
+  colonies belong to the Empire, so Prussia stands in for it as the seat of the
+  Kaiser — a modelling choice, not a historical claim.
+- **Laos is not French until 1893.** It is two Siamese vassal kingdoms, split
+  here at 17.5°N: 26 provinces to Luang Prabang, 13 to Champasak. The Vientiane
+  region, destroyed by Siam in 1828 and administered directly since, is folded
+  into Luang Prabang.
+- **Tibet keeps its tag** — Qing suzerainty, but self-governing.
+
+### The naming problem, finally characterised
+
+Fourteen states in this region carry names describing somewhere else entirely:
+state 744 holds Xian's provinces under the name **"Baden"**, 751 is Liangshan
+called **"Roma"**, 750 is Changde called **"South Kuril Islands"**, 761 is
+Hulunbuir called **"Man"**.
+
+The cause is now understood. These are all in the id range 743–796 where two
+state layouts collided. The source mod renumbered vanilla's states and rewrote
+the localisation to match *its* layout, but the provinces that survived the
+collision came from the other one. So the name describes the discarded state and
+the provinces describe the surviving one.
+
+An attempt to fix this by preferring the filename over the localisation made
+things worse and was reverted: state 743 holds the Banat, its localisation
+correctly says "West Banat", and its **filename** says "Belgrade". Neither source
+is reliably right — which one lies varies per state, depending on which file won
+the collision.
+
+Both names are now recorded in the geometry builder, neither is trusted, and
+region tables note the real identity beside each misleading entry. Where a name
+is ambiguous rather than merely wrong, tables address the state as `"Name#id"`.

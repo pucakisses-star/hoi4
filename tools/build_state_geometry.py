@@ -52,8 +52,14 @@ def load_states(d, max_id):
             continue
         provs = {int(x) for blk in PROV.findall(t) for x in blk.split() if x.isdigit()}
         nm, cat, ow = NAME.search(t), CAT.search(t), OWNER.search(t)
+        # Two independent names exist and NEITHER is reliable in the id range
+        # 743-796, where two layouts collided. State 744 holds Xian's provinces
+        # but its localisation says "Baden"; state 743 holds the Banat and its
+        # FILENAME says "Belgrade". Both are recorded; region tables address a
+        # misleading one by id, as "Name#id".
         out[sid] = dict(
             id=sid,
+            file_name=re.sub(r"^\s*\d+\s*-\s*", "", fn[:-4]).strip(),
             name=nm.group(1) if nm else f"STATE_{sid}",
             category=cat.group(1) if cat else "rural",
             vanilla_owner=ow.group(1) if ow else "",
