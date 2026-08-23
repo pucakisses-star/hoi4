@@ -30,7 +30,7 @@ import importlib
 import os
 import sys
 
-REGIONS = ["germany", "balkans", "europe"]
+REGIONS = ["germany", "balkans", "europe", "neareast"]
 
 
 def load_geometry(path):
@@ -40,7 +40,9 @@ def load_geometry(path):
     for i, line in enumerate(open(path, encoding="utf-8")):
         if i == 0:
             continue
-        sid, key, name, cat, vo, provs = line.rstrip("\n").split("\t")
+        f = line.rstrip("\n").split("\t")
+        sid, key, name, cat, vo, provs = f[:6]
+        assigned = f[6] if len(f) > 6 else ""
         # names come from game localisation and carry stray whitespace
         # ("East Galicia " has a trailing space); strip so region tables can
         # address states by the name a human would write.
@@ -49,7 +51,8 @@ def load_geometry(path):
         if sid in rows:
             sys.exit(f"duplicate state id {sid} in {path}")
         rows[sid] = dict(id=sid, key=key, name=name, category=cat,
-                         vanilla_owner=vo, provinces=[int(x) for x in provs.split()])
+                         vanilla_owner=vo, assigned=assigned,
+                         provinces=[int(x) for x in provs.split()])
     return rows
 
 
@@ -160,7 +163,7 @@ def apply_region(geo, split, names, next_id, label):
                 disp = f"{base['name']} ({names[tag]})"
                 next_id += 1
             out[sid] = dict(id=sid, key=key, name=disp, category=base["category"],
-                            vanilla_owner=tag, provinces=sorted(ps))
+                            vanilla_owner=tag, assigned=label, provinces=sorted(ps))
             made += 1
     return out, next_id, dict(sources=len(split), made=made)
 
@@ -201,12 +204,25 @@ def main():
                               if r["vanilla_owner"] == t)
 
     with open(a.out, "w", encoding="utf-8") as fh:
-        fh.write("id\tkey\tname\tcategory\tvanilla_owner\tprovinces\n")
+        fh.write("id\tkey\tname\tcategory\towner\tprovinces\tassigned_by\n")
         for r in sorted(geo.values(), key=lambda r: r["id"]):
             fh.write(f"{r['id']}\t{r['key']}\t{r['name']}\t{r['category']}\t"
-                     f"{r['vanilla_owner']}\t{' '.join(str(p) for p in r['provinces'])}\n")
-    print(f"\nwrote {a.out}: {len(geo)} states, "
-          f"{sum(len(r['provinces']) for r in geo.values())} provinces")
+                     f"{r['vanilla_owner']}\t{' '.join(str(p) for p in r['provinces'])}\t"
+                     f"{r.get('assigned', '')}\n")
+    total = sum(len(r["provinces"]) for r in geo.values())
+    conv = [r for r in geo.values() if r.get("assigned")]
+    cp = sum(len(r["provinces"]) for r in conv)
+    print(f"\nwrote {a.out}: {len(geo)} states, {total} provinces")
+    print(f"  converted to 1886 owners: {len(conv)} states, {cp} provinces "
+          f"({100 * cp / total:.0f}%)")
+    print(f"  still on vanilla owners : {len(geo) - len(conv)} states, "
+          f"{total - cp} provinces")
+    left = collections.Counter()
+    for r in geo.values():
+        if not r.get("assigned"):
+            left[r["vanilla_owner"]] += len(r["provinces"])
+    print("  largest remaining: " +
+          ", ".join(f"{o} {n}p" for o, n in left.most_common(8)))
     return 0
 
 

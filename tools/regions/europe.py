@@ -16,6 +16,12 @@ the north-west:
   - Norway keeps its own tag: in personal union with Sweden under Oscar II, but
     a separate kingdom with its own constitution.
 
+Lebanon and Tunisia were briefly in this table and are not in Europe. They were
+swept in by a latitude/longitude box computed with the Central European
+projection, which is badly wrong at their longitude, and it put Mount Lebanon
+under France thirty-four years before the mandate. Regions are not defined by a
+projection box any more; a state is in a region because it is listed here.
+
 Anatolia and Mosul are deliberately NOT here. They are Ottoman, but Russia took
 Kars, Ardahan and Batumi in 1878 and carving those out needs a Caucasus
 projection fit; the Central European one is unreliable that far east. They are
@@ -157,7 +163,6 @@ SPLIT = {
     "Gascogne":                         {"FRA": None},
     "Ile de France":                    {"FRA": None},
     "Languedoc-Roussillion":            {"FRA": None},
-    "Lebanon":                          {"FRA": None},
     "Limousin":                         {"FRA": None},
     "Maine":                            {"FRA": None},
     "Picardie":                         {"FRA": None},
@@ -165,7 +170,6 @@ SPLIT = {
     "Pyrenees":                         {"FRA": None},
     "Rhone":                            {"FRA": None},
     "Savoy":                            {"FRA": None},
-    "Tunisia":                          {"FRA": None},
     "Vatican City":                     {"FRA": None},
 
     # --- SPR: the Restoration monarchy; Alfonso XIII is born in May 1886 ---
