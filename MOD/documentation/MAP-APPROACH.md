@@ -106,3 +106,60 @@ python3 tools/province_adjacency.py tools/data/definition_reference.csv /tmp/pro
 
 Commit `1fc1d364` is an ancestor of `main` and holds the complete pre-reset
 repository, so it can never be garbage collected.
+
+## Locating provinces on the real world
+
+Splitting a vanilla state along an 1886 border means knowing where its provinces
+physically are, and the game gives them no coordinates — only a colour in a
+bitmap. Three tools recover that.
+
+`tools/province_adjacency.py` reads which provinces touch which, straight out of
+`provinces.bmp`: 41,036 neighbour pairs, median six per province. No image
+library is installed, and scanning 11.5 million pixels in a Python loop would be
+slow, so boundaries are found by XORing each row against itself shifted one
+pixel, collapsing the result to a 0/1 mask with `bytes.translate`, then walking
+that with `bytes.find`. The loop runs once per boundary rather than once per
+pixel; the whole map takes about a second.
+
+`tools/province_geometry.py` gives each province a centroid and bounding box
+using the same boundary positions to walk runs instead of pixels — every pixel
+between two colour changes in a scanline belongs to one province. It accounts
+for 100.00% of the bitmap.
+
+`tools/map_projection.py` converts pixel coordinates to latitude and longitude.
+The map is not a clean projection: longitude runs close to linear across the
+full width, but latitude is stretched toward the poles and compressed in the far
+south, badly enough that the Falklands sit north of Tasmania. No single global
+formula fits, so the projection is fitted per region from anchor states whose
+real position is known, as an affine transform — lat and lon each linear in x
+and y, which absorbs the rotation and shear a plain scale cannot.
+
+Fitted on 31 Central European anchors the residual is 45 km median, 119 km
+worst. Some of that is the projection and some is the anchors, which are
+eyeballed estimates of where a region's centre really is. It is not good enough
+to place a border to the kilometre, and it does not need to be: an affine
+transform preserves relative position, so which province lies north or west of
+which is reliable even where the absolute figure drifts. That ordering is what
+assigning provinces to states actually depends on.
+
+## Does the province grid support 1886 Germany?
+
+Yes, with one tight spot. Counting the vanilla states covering the 1886 German
+Empire — including Posen, Pomerellen and Alsace-Lorraine, which vanilla assigns
+to Poland and France but which were German in 1886 — gives **267 provinces for
+26 member states**. Prussia takes roughly two thirds; the rest average about
+three or four each, and even the smallest members can hold one.
+
+The exception is Thuringia. Vanilla draws it as a single ten-province state. In
+1886 that ground holds eight sovereign states — Saxe-Weimar-Eisenach,
+Saxe-Meiningen, Saxe-Altenburg, Saxe-Coburg-Gotha, both Schwarzburgs and both
+Reuss lines — plus Prussian Erfurt. Ten provinces can give each one province,
+but the real duchies were interleaved with dozens of exclaves, and no province
+grid at this resolution can reproduce that. The split will be a fair
+approximation of who held what, not a reproduction of the map.
+
+Two other vanilla states span countries and must be split rather than assigned
+whole: Weser-Ems covers Oldenburg, Bremen and Prussian territory; Eastern Hesse
+covers Prussian Hesse-Nassau, the Grand Duchy of Hesse and Frankfurt. Vanilla
+has no Baden state at all — Baden sits inside its eighteen-province Württemberg,
+which therefore has to be cut in three.
