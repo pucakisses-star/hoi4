@@ -29,19 +29,41 @@ import sys
 
 # Vanilla HOI4 tags. Used only to refuse a collision, so it errs on the side of
 # listing more rather than fewer. Anything here is a tag we must not claim.
-VANILLA = set("""
+def _tags_in_use(path="tools/data/state_geometry.tsv"):
+    """Tags already used as a state owner in the recovered geometry.
+
+    This was originally a hand-written list of vanilla tags, and it was wrong:
+    it missed 26 tags actually in use, including PRU, which vanilla uses for
+    Peru. Prussia was assigned PRU on the strength of that list and collided
+    with five Peruvian states. Read the data instead of trusting a list.
+    """
+    out = set()
+    try:
+        with open(path, encoding="utf-8") as fh:
+            for i, line in enumerate(fh):
+                if i == 0:
+                    continue
+                f = line.rstrip("\n").split("\t")
+                if len(f) > 4 and f[4].strip():
+                    out.add(f[4].strip())
+    except FileNotFoundError:
+        pass
+    return out
+
+
+VANILLA = _tags_in_use() | set("""
 AFG ALB ANG ARG AST AUS BEL BHU BLR BOL BRA BUL CAN CGX CHI CHL COL COS CRO CUB
 CYP CZE DEN DOM ECU EGY ENG EST ETH FIN FRA GER GRE GUA GXC HAI HOL HON HUN ICE
 IND INS IRE IRQ ITA JAP KOR LAT LEB LIB LIT LUX MAL MAN MEN MEX MON MOR MTN NEP
-NIC NOR NZL OMA PAK PAL PAN PAR PER PHI POL POR PRC RAJ ROM SAF SAL SAU SER SIA
-SIK SLO SOV SPA SPD SPR SWE SWI SYR THA TIB TUR URG USA VEN VIN XSA XSM YEM YUG
-YUN ZIM D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15
+NIC NOR NZL OMA PAK PAL PAN PAR PER PHI POL POR PRC PRU RAJ ROM SAF SAL SAU SER
+SIA SIK SLO SOV SPA SPD SPR SWE SWI SYR THA TIB TUR URG USA VEN VIN XSA XSM YEM
+YUG ZIM D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15
 """.split())
 
 # tag  name  region  status  note
 ROWS = [
 # ---- German Empire: sovereign states that kept their monarchs until 1918 ----
-("PRU","Prussia","German Empire","Kingdom, hegemon of the Empire","Two thirds of the Empire's territory and population; its king is the Kaiser."),
+("PRS","Prussia","German Empire","Kingdom, hegemon of the Empire","Two thirds of the Empire's territory and population; its king is the Kaiser."),
 ("BAV","Bavaria","German Empire","Kingdom","Ludwig II is deposed and dies in June 1886. Kept its own army, railways and diplomatic corps."),
 ("SXY","Saxony","German Empire","Kingdom","Third largest German state; the Empire's industrial heart after Prussia."),
 ("WUR","Wurttemberg","German Empire","Kingdom","Retained its own army corps and postal service."),
@@ -222,8 +244,10 @@ is a materially different polity:
                         Khiva and Bukhara as protectorates.
   QNG  Qing Empire      CHI is the Republic. The Qing has a Manchu dynasty, a
                         tributary system and a court, none of which HOI4 models.
-  PRU  Prussia          GER is the unified nation-state. In 1886 Prussia is one
-                        of twenty-six members of a federal empire.
+  PRS  Prussia          GER is the unified nation-state. In 1886 Prussia is one
+                        of twenty-six members of a federal empire. Not PRU, which
+                        vanilla already uses for Peru -- a collision the original
+                        hand-written guard list missed entirely.
 
 Excluded because the base game already covers them adequately for 1886:
 Ethiopia, Liberia, Nepal, Bhutan, Siam, Persia, Afghanistan, Oman, Yemen, Korea,
@@ -246,14 +270,27 @@ are not countries and are left out.
 """
 
 
+# Tags this list shares with the recovered geometry because BOTH name the same
+# country -- the previous mod coined them independently and identically. These
+# are agreement, not collision. PRU was the real collision: it meant Prussia
+# here and Peru there, and Prussia moved to PRS.
+SAME_COUNTRY = {
+    "DAH": "Dahomey",
+    "NKO": "Nkore",
+    "OFS": "Orange Free State",
+    "RUS": "Russian Empire",
+}
+
+
 def check():
     seen = collections.Counter(r[0] for r in ROWS)
     dupes = [t for t, n in seen.items() if n > 1]
-    clash = sorted({r[0] for r in ROWS} & VANILLA)
+    clash = sorted(({r[0] for r in ROWS} & VANILLA) - set(SAME_COUNTRY))
     bad = [r[0] for r in ROWS if not (len(r[0]) == 3 and r[0].isalnum() and r[0].isupper())]
     print(f"entries: {len(ROWS)}")
     print(f"  duplicate tags:        {dupes or 'none'}")
     print(f"  clashes with vanilla:  {clash or 'none'}")
+    print(f"  shared, same country:  {sorted(SAME_COUNTRY)}")
     print(f"  malformed tags:        {bad or 'none'}")
     by = collections.Counter(r[2] for r in ROWS)
     print("\n  by region:")

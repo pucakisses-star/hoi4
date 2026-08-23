@@ -127,7 +127,7 @@ SPLIT.update({
 
     # ---- Germany's first Pacific protectorate, 1885. The Empire's colonies
     # belong to the Empire; Prussia stands in for it, being where the Kaiser sits.
-    "Marshall Islands": {"PRU": None},
+    "Marshall Islands": {"PRS": None},
 
     # ---- European possessions already established by 1886 ----
     "Hong Kong":        {"ENG": None},   # ceded 1842
@@ -148,6 +148,6 @@ NAMES = {
     "QNG": "Qing Empire", "RUS": "Russian Empire", "JAP": "Japan", "KOR": "Korea",
     "TIB": "Tibet", "AFG": "Afghanistan", "SIA": "Siam", "DNM": "Dai Nam",
     "CAM": "Cambodia", "LUA": "Luang Prabang", "CPS": "Champasak",
-    "SPR": "Spain", "PRU": "Prussia", "ENG": "United Kingdom",
+    "SPR": "Spain", "PRS": "Prussia", "ENG": "United Kingdom",
     "POR": "Portugal", "FRA": "France",
 }

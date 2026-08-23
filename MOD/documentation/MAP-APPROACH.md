@@ -437,3 +437,57 @@ the collision.
 Both names are now recorded in the geometry builder, neither is trusted, and
 region tables note the real identity beside each misleading entry. Where a name
 is ambiguous rather than merely wrong, tables address the state as `"Name#id"`.
+
+## The Americas
+
+148 states, 1,786 provinces. The map goes from 64% to **81%** converted.
+
+**North America stays divided — and that is a design decision, not history.**
+The recovered geometry carries a fully worked-out alternate United States from
+the previous mod, and since the mod is named for it, it is preserved rather than
+overwritten with a single historical USA:
+
+| | states | provinces |
+|---|---|---|
+| United States | 28 | 458 |
+| Confederate States | 11 | 186 |
+| California | 1 | 59 |
+| Texas | 1 | 50 |
+| Cascadia (Washington, Oregon) | 2 | 41 |
+| Aztec (New Mexico, Arizona) | 2 | 32 |
+| Deseret (Utah) | 1 | 13 |
+
+Nothing here asserts that is history. It is the author's to change; the point is
+that it was not silently destroyed.
+
+The genuine 1886 corrections:
+
+- **Cuba and Puerto Rico are Spanish.** The United States takes them in 1898.
+- **Panama is Colombian** — the isthmus and the canal zone both — until 1903.
+- **Hawaii is an independent kingdom** under Kalākaua, annexed only in 1898.
+- **Samoa is a contested independent kingdom**, not a New Zealand possession.
+- **Newfoundland and Labrador are a separate British colony.** Canada is a
+  self-governing Dominion, as it has been since 1867.
+
+Everything else is whole-state inheritance: every Latin American republic
+existed by 1886 with borders close enough to 1936 to carry over. Brazil is an
+empire under Pedro II until 1889, but the tag is unchanged.
+
+## A tag collision that had already happened
+
+Assigning Prussia the tag `PRU` was wrong: **vanilla uses `PRU` for Peru**, and
+the recovered geometry has five Peruvian states under it. Prussia is now `PRS`.
+
+The collision got through because the guard was a **hand-written list** of what
+vanilla tags supposedly were. Checked against the tags the data actually uses,
+that list was missing twenty-six of them — `PRU` among them, along with `TEX`,
+`CAL`, `DES`, `AZT` and the rest of the previous mod's alternate America. The
+guard now reads the geometry and takes the union with the written list, so a tag
+already in use cannot be claimed by accident.
+
+Four tags remain shared, and all four are agreement rather than collision:
+`DAH` Dahomey, `NKO` Nkore, `OFS` Orange Free State and `RUS` Russian Empire
+were coined independently and identically by the previous mod and by this
+country list. Those are recorded as known-benign so they stop being reported.
+
+Running total: **8,609 of 10,623 provinces (81%) across 679 states.**
