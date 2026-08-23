@@ -1,6 +1,0 @@
-###EOANB###
-sound = {
-	name = "custom_alerts_sound_mhc"
-	file = "menu/custom_alerts_sound_mhc.wav"
-	volume = 0.5
-}

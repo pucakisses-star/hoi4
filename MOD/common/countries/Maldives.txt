@@ -1,3 +1,0 @@
-graphical_culture = asian_gfx
-
-color = { 198  136  151 }

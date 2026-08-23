@@ -1,3 +1,0 @@
-graphical_culture = african_gfx
-
-color = { 149  218  174 }

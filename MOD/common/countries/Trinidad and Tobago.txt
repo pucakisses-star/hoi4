@@ -1,3 +1,0 @@
-graphical_culture = southamerican_gfx
-
-color = { 74  109  135 }
