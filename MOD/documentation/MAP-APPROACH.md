@@ -730,3 +730,40 @@ Still missing, in rough order of what a player would notice: national ideas,
 focus trees, characters and leaders, events, a Victorian ideology set, and
 research/technology appropriate to the 1880s. The world exists and is
 internally consistent; it is not yet furnished.
+
+## The first-launch crash, and its cause
+
+The mod crashed on its first real launch. The cause was mine, and it was the
+same defect I had diagnosed in the *previous* version and then reproduced.
+
+**`common/country_tags/00_countries.txt` is vanilla's own filename.** Hearts of
+Iron IV overrides `common/country_tags` by filename, so shipping that name does
+not add tags — it **replaces vanilla's file entirely**, deleting all ~190
+base-game country tags. 73 of the mod's state owners are vanilla tags: France,
+Britain, the United States, Canada, Japan, Brazil, and 67 others. Every state
+they owned pointed at a country that no longer existed.
+
+The old mod died with 325 countries undefined because a tag file had been
+blanked. This one shipped a tag file that blanked everyone else's. Same wound,
+opposite hand.
+
+A second collision was found in the same sweep. **`common/countries/colors.txt`
+is also a vanilla filename**, and unlike the tag file it has no alternative
+name the game will read — it genuinely must replace vanilla's. It was defining
+colours only for the mod's own 101 tags, so France and Britain would have had
+none. It now covers every tag the mod uses, 220 in total, all distinct.
+
+### Why the validator missed it
+
+`validate_mod.py` checked that every state owner had a definition *somewhere* —
+in the mod's file or in vanilla. It was right that both sets existed. What it
+could not see was that shipping one **destroys** the other. The check was for
+presence; the bug was in precedence.
+
+It now also refuses a set of known vanilla filenames outright, and verifies that
+`colors.txt`, which cannot avoid replacing vanilla's, is complete for every tag
+in use. Both confirmed by reintroducing the faults and watching them report.
+
+**The general rule, learned twice now:** in this game a mod file with a
+base-game filename is a deletion, not an addition. Either pick a name vanilla
+does not use, or accept the replacement and make the file complete.

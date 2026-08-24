@@ -95,12 +95,13 @@ def main():
 
     # country display names, from the generated tag file
     disp = {}
-    tagfile = os.path.join(a.mod, "common", "country_tags", "00_countries.txt")
-    if os.path.exists(tagfile):
-        for line in open(tagfile, encoding="utf-8"):
-            if "#" in line and "=" in line:
+    tagdir = os.path.join(a.mod, "common", "country_tags")
+    for tf in (sorted(os.listdir(tagdir)) if os.path.isdir(tagdir) else []):
+        for line in open(os.path.join(tagdir, tf), encoding="utf-8"):
+            if "#" in line and "=" in line and not line.lstrip().startswith("#"):
                 tag = line.split("=")[0].strip()
-                disp[tag] = line.split("#", 1)[1].strip()
+                if len(tag) == 3:
+                    disp[tag] = line.split("#", 1)[1].strip()
 
     d = os.path.join(a.mod, "history", "countries")
     if os.path.isdir(d):
