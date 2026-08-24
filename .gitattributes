@@ -1,0 +1,25 @@
+# Paradox script and data are text; keep diffs readable and endings stable.
+*.txt      text eol=lf
+*.yml      text eol=lf
+*.csv      text eol=lf
+*.mod      text eol=lf
+*.info     text eol=lf
+*.asset    text eol=lf
+*.gui      text eol=lf
+*.gfx      text eol=lf
+
+# Windows helpers must keep CRLF or cmd.exe mis-parses them.
+*.bat      text eol=crlf
+*.ps1      text eol=crlf
+
+# Binaries: never diff, never munge.
+*.dds      binary
+*.tga      binary
+*.png      binary
+*.bmp      binary
+*.psd      binary
+*.ogg      binary
+*.wav      binary
+*.bank     binary
+*.ttf      binary
+*.otf      binary

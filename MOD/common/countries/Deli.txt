@@ -1,0 +1,3 @@
+# Deli -- Sultanate under Dutch protection
+graphical_culture = asian_gfx
+graphical_culture_2d = asian_2d

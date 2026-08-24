@@ -1,0 +1,33 @@
+# The mod's only bookmark. Vanilla's 1936 and 1939 bookmarks are suppressed by
+# replace_path="common/bookmarks" -- the world in this mod is 1886, and letting
+# the player start it in 1936 would place Victorian states under a Second World
+# War calendar.
+#
+# ideas and focuses are deliberately empty. Neither national ideas nor focus
+# trees exist for these countries yet, and a bookmark listing one that does not
+# exist is a load error.
+bookmarks = {
+	bookmark = {
+		name = "BOOKMARK_1886_NAME"
+		desc = "BOOKMARK_1886_DESC"
+		date = 1886.1.1
+		picture = "GFX_select_date_1936"
+		default_country = "PRS"
+		default = yes
+
+		"PRS" = { history = "PRS_1886_DESC" ideology = neutrality  ideas = { } focuses = { } }
+		"ENG" = { history = "ENG_1886_DESC" ideology = democratic  ideas = { } focuses = { } }
+		"FRA" = { history = "FRA_1886_DESC" ideology = democratic  ideas = { } focuses = { } }
+		"RUS" = { history = "RUS_1886_DESC" ideology = neutrality  ideas = { } focuses = { } }
+		"AUS" = { history = "AUS_1886_DESC" ideology = neutrality  ideas = { } focuses = { } }
+		"OTT" = { history = "OTT_1886_DESC" ideology = neutrality  ideas = { } focuses = { } }
+		"QNG" = { history = "QNG_1886_DESC" ideology = neutrality  ideas = { } focuses = { } }
+		"USA" = { history = "USA_1886_DESC" ideology = democratic  ideas = { } focuses = { } }
+		"COF" = { history = "COF_1886_DESC" ideology = democratic  ideas = { } focuses = { } }
+		"ITA" = { history = "ITA_1886_DESC" ideology = democratic  ideas = { } focuses = { } }
+		"JAP" = { history = "JAP_1886_DESC" ideology = neutrality  ideas = { } focuses = { } }
+		"SPR" = { history = "SPR_1886_DESC" ideology = democratic  ideas = { } focuses = { } }
+
+		"---" = { history = "OTHER_1886_DESC" }
+	}
+}
