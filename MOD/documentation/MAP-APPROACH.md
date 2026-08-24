@@ -767,3 +767,16 @@ in use. Both confirmed by reintroducing the faults and watching them report.
 **The general rule, learned twice now:** in this game a mod file with a
 base-game filename is a deletion, not an addition. Either pick a name vanilla
 does not use, or accept the replacement and make the file complete.
+
+### The colours fix was itself incomplete
+
+The first pass at `colors.txt` covered every tag that **owns a state** — 220 of
+them. That was still short. Vanilla defines roughly 190 tags, and a tag with no
+1886 territory is still real at runtime: `GER`, `SOV`, `CHI`, `TUR`, `POL`, and
+in particular the `D01`–`D15` dynamic pool the game draws on for civil wars and
+released nations. Sixty-six such tags had no colour, and the first one created
+in play would have had none.
+
+It now colours every tag the mod knows can exist — **286, all distinct**. Fixing
+a precedence bug by asking "which tags do I use?" was the wrong question; the
+right one is "which tags can exist?"
