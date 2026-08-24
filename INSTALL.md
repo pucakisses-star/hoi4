@@ -17,6 +17,7 @@ tags={ "Alternative History" "Historical" "Map" }
 name="Divided States of America"
 supported_version="1.19.*"
 replace_path="history/states"
+replace_path="history/countries"
 path="C:/Users/<you>/Documents/Paradox Interactive/Hearts of Iron IV/mod/dsa"
 ```
 
@@ -34,7 +35,14 @@ Two earlier test cycles were lost to exactly this: `replace_path` was set in
 
 ## What replace_path does here
 
-It makes the game ignore vanilla's `history/states` completely. This mod defines
-all 857 states covering every one of the 10,623 land provinces, so nothing of
-vanilla's is wanted. Without the declaration the game merges the two directories
-by filename and every state id ends up defined twice.
+It makes the game ignore vanilla's `history/states` and `history/countries`
+completely.
+
+This mod defines all 857 states covering every one of the 10,623 land provinces,
+so nothing of vanilla's state directory is wanted. Without the declaration the
+game merges the two by filename and every state id ends up defined twice.
+
+The country directory is the same problem in a different form. Vanilla's files
+set up 1936 cabinets, technology and armies for countries that in 1886 either
+did not exist or looked nothing alike; left to load, the Third Republic would be
+handed the Popular Front's government.

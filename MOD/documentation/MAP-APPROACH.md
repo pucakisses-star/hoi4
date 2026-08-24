@@ -602,3 +602,62 @@ which province holds which city, which does not exist yet.
 they set up 1936 politics, technology and armies for countries that in 1886
 either did not exist or looked nothing alike. The states are placed; the
 countries standing on them are not yet dressed.
+
+## Emitting the country files
+
+`tools/emit_countries.py` writes `MOD/history/countries/` — **174 files, one per
+country that holds territory.** Validated on the emitted files: every capital is
+a state its country actually owns, every file has a ruling party, every set of
+popularities sums to 100 and includes the ruling party, braces balanced
+throughout.
+
+`replace_path="history/countries"` is declared for the same reason as the
+states. Vanilla's country files set up 1936 cabinets, technology and armies for
+countries that in 1886 either did not exist or looked nothing alike — left to
+load, the Third Republic would be handed the Popular Front's government.
+
+### Ideologies are vanilla's, deliberately
+
+A mod set in 1886 wants Victorian ideologies — absolutism, liberalism,
+socialism — not democratic/fascism/communism/neutrality. **It does not get them
+yet, on purpose.**
+
+Replacing `common/ideologies` means every vanilla idea, focus and event
+referencing a vanilla ideology stops resolving. An earlier attempt at exactly
+that in the previous mod took the error count from about 51,000 to **211,000**.
+A Victorian ideology set is real design work that has to be done together with
+the ideas and focus trees depending on it. Doing it now, before the mod has ever
+booted, would trade a working map for a broken one.
+
+So each country maps onto vanilla's four: parliamentary and republican states to
+`democratic` (51 of them), everything else — absolute monarchies, empires,
+sultanates, khanates, chartered companies — to `neutrality` (123), which is
+vanilla's non-aligned catch-all. Nothing is `fascism` or `communism`, neither of
+which exists in 1886.
+
+### Capitals
+
+Chosen as the highest-category state a country owns, which is right for most —
+Prussia lands on Brandenburg, France on Île de France, Britain on Greater
+London, Japan on Kanto, the Confederacy on Virginia. Sixteen are overridden by
+name where the heuristic picks a rich province over the seat of government:
+
+| | heuristic picked | actual capital |
+|---|---|---|
+| Russia | Moscow | **Sankt Petersburg** — the court moves back only in 1918 |
+| Qing | Shanghai | **Beijing** |
+| Ottomans | Adrianople | **Constantinople**, in the Thrace state |
+| Italy | Piedmont | **Rome** — the capital moved in 1871 |
+| Bavaria | the Rhenish Palatinate | **Munich** |
+| Korea | Pyongyang | **Seoul** |
+| United States | New York | **Washington**, in Maryland |
+
+Also Spain to Madrid, Sweden to Stockholm, Hungary to Budapest, Argentina to
+Buenos Aires, and the four Australian colonies to their own capitals.
+
+### What is still missing
+
+**No country has an army.** There is no `oob` declaration, so every nation starts
+with zero divisions. Technology, stability and war support are flat placeholders.
+Those are the next pieces, and unlike the map they are gameplay balance rather
+than research.
