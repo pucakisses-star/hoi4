@@ -661,3 +661,72 @@ Buenos Aires, and the four Australian colonies to their own capitals.
 with zero divisions. Technology, stability and war support are flat placeholders.
 Those are the next pieces, and unlike the map they are gameplay balance rather
 than research.
+
+## Armies, the bookmark, and a validator
+
+### Armies are researched, not derived
+
+`tools/emit_oob.py` writes 174 orders of battle, **418 divisions worldwide**.
+
+Division counts are **not** scaled from the manpower placeholders in the state
+files. Doing that compounds one guess with another, and it produces nonsense:
+the placeholder model gives the United States **48 divisions** when its actual
+1886 standing army was about 25,000 men — smaller than Belgium's. Instead the
+table is mid-1880s peacetime standing strength at roughly 15,000 men per
+division. 46 countries have a researched figure; the other 128 get one or two by
+territory size, which is honest about being a default rather than a number.
+
+The German Empire is the awkward case. Its army was raised by contingent —
+Prussia absorbed the smaller states' forces, but Bavaria, Saxony and Württemberg
+kept their own war ministries and general staffs until 1918. So the Empire's
+~450,000 men are split by contingent rather than handed to Prussia whole.
+
+Divisions are spread one per state across each country's most developed
+territory, so nothing starts as a doomstack sitting on its capital.
+
+### The bookmark
+
+`1886 – The Scramble`, dated 1886.1.1, with twelve featured powers. Vanilla's
+1936 and 1939 bookmarks are suppressed by `replace_path="common/bookmarks"` —
+leaving them would let a player start a Victorian map on a Second World War
+calendar.
+
+`ideas` and `focuses` are deliberately empty for every featured country. Neither
+national ideas nor focus trees exist yet, and a bookmark naming one that does
+not exist is a load error.
+
+### tools/validate_mod.py
+
+Reads the files **the game will read**, not the tables they were generated from,
+and checks every invariant that has actually gone wrong — in the previous
+version of this mod or in this one during its rebuild:
+
+- no state id defined twice, no province claimed by two states
+- every land province in a state, no sea or lake province in one
+- no victory point on a province its state does not own
+- every country's capital is a state it owns
+- every popularity set sums to 100 and contains the ruling party
+- every `oob` reference resolves to a file
+- no division standing in a province its country does not own
+- no division template used before it is defined
+- no bookmark featuring a country with no file
+- braces balanced in every generated file
+
+Confirmed working by injecting four faults — a duplicated state, a foreign
+capital, a misplaced division and a phantom bookmark country — and watching it
+report all of them and exit non-zero. The mod as it stands passes clean.
+
+## Current state
+
+| | |
+|---|---|
+| States | 857, covering all 10,623 land provinces |
+| Countries | 174, all with capital, government and army |
+| Divisions | 418 |
+| Bookmark | 1886.1.1, twelve featured powers |
+| Size | under 1 MB |
+
+Still missing, in rough order of what a player would notice: national ideas,
+focus trees, characters and leaders, events, a Victorian ideology set, and
+research/technology appropriate to the 1880s. The world exists and is
+internally consistent; it is not yet furnished.
