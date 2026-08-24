@@ -133,6 +133,36 @@ def main(mod="MOD", definition="tools/data/definition_reference.csv"):
             if u not in defined:
                 fails.append(f"units/{name}: uses undefined template {u!r}")
 
+    # ---- supply areas ----
+    # Every state must be in exactly one, and no area may name a state that
+    # does not exist. Failing either makes the game refuse to load the map,
+    # which is how this mod failed its first playable launch.
+    sa = os.path.join(mod, "map", "supplyareas")
+    if os.path.isdir(sa):
+        in_area = collections.Counter()
+        for fn in sorted(os.listdir(sa)):
+            if not fn.endswith(".txt"):
+                continue
+            t2 = open(os.path.join(sa, fn), encoding="utf-8").read()
+            if t2.count("{") != t2.count("}"):
+                fails.append(f"supplyareas/{fn}: unbalanced braces")
+            for blk in re.findall(r"states\s*=\s*\{([^}]*)\}", t2, re.S):
+                for x in blk.split():
+                    if x.isdigit():
+                        in_area[int(x)] += 1
+                        if int(x) not in ids:
+                            fails.append(f"supplyareas/{fn}: names state {x}, "
+                                         f"which the mod does not define")
+        twice = [s for s, n in in_area.items() if n > 1]
+        if twice:
+            fails.append(f"{len(twice)} states are in more than one supply area: {twice[:8]}")
+        none = sorted(set(ids) - set(in_area))
+        if none:
+            fails.append(f"{len(none)} states are in no supply area: {none[:8]}")
+    else:
+        fails.append("map/supplyareas is missing; vanilla's will be used and it "
+                     "knows nothing about this mod's new states")
+
     # ---- filenames that shadow vanilla's ----
     # Hearts of Iron IV overrides most directories by filename. Shipping a file
     # with a base-game name silently DELETES vanilla's version of it. That is

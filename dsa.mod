@@ -28,6 +28,11 @@ replace_path="history/states"
 replace_path="history/countries"
 replace_path="history/units"
 replace_path="common/bookmarks"
+# map/supplyareas is part of the map definition. The mod creates 57 states by
+# splitting vanilla ones and drops 12 that ended up empty, so vanilla's supply
+# areas both miss states and name states that no longer exist. Either is a
+# broken reference in the map definition, and the game refuses to load the map.
+replace_path="map/supplyareas"
 
 # Change the line below to where you put the mod folder.
 # Forward slashes, even on Windows. No trailing slash.

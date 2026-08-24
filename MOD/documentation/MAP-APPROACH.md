@@ -780,3 +780,43 @@ in play would have had none.
 It now colours every tag the mod knows can exist — **286, all distinct**. Fixing
 a precedence bug by asking "which tags do I use?" was the wrong question; the
 right one is "which tags can exist?"
+
+## Why the map refused to load
+
+The game reported *"Some errors are present in the map definition"* and would
+not load. The cause was a consequence of a decision made much earlier: **the mod
+defines its own states but inherits vanilla's `map/`** — and `map/supplyareas`
+is part of the map.
+
+Hearts of Iron IV requires **every state to belong to exactly one supply area,
+and every supply area to name only states that exist.** Neither held:
+
+- The mod creates **57 states by splitting** vanilla ones — Germany into its 26
+  members, the Balkans, Laos — with ids above 800. Vanilla's supply areas cannot
+  possibly reference them.
+- The mod **drops 12 vanilla state ids** that ended up with no territory, and
+  vanilla's supply areas still name them.
+
+Both are broken references in the map definition, which is exactly what the game
+said.
+
+The mod now ships `map/supplyareas` with `replace_path`. The grouping is
+recovered from the previous mod's areas rather than invented — they already
+assign every one of this mod's 857 states to an area. References to states this
+mod does not define are dropped, and areas left empty are not emitted: **360
+areas, 857 states, each in exactly one.**
+
+Nothing else under `map/` references states — checked across every `.txt` and
+`.csv` in the previous mod's map directory. Supply areas were the only coupling.
+
+### What this cost, and why
+
+Four launches were spent on this, and the first three were spent on the wrong
+thing. The reasoning was: the validator proves the mod internally consistent, so
+a crash must be a file the mod ships. That was the wrong frame. **The mod is not
+the unit of consistency — the mod plus vanilla is**, and every `replace_path` is
+a place where the two are stitched together and can tear.
+
+The validator now checks supply area coverage, and treats a *missing*
+`map/supplyareas` as a failure in its own right, because inheriting vanilla's is
+silently wrong the moment the mod adds or removes a single state.
