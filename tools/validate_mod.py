@@ -217,6 +217,50 @@ def main(mod="MOD", definition=None):
             fails.append(f"{len(stray)} provinces in strategic regions are not in "
                          f"definition.csv: {stray[:8]}")
 
+    # Every file under map/ has to be one that has been classified, because the
+    # fault above was missed by searching for a pattern instead of enumerating
+    # the directory. airports.txt, rocketsites.txt and buildings.txt key on the
+    # state id itself, so a search for "states = { ... }" blocks never saw them.
+    CLASSIFIED = {
+        "definition.csv", "provinces.bmp", "heightmap.bmp", "terrain.bmp",
+        "world_normal.bmp", "adjacencies.csv", "adjacency_rules.txt",
+        "continent.txt", "unitstacks.txt", "airports.txt", "rocketsites.txt",
+        "buildings.txt", "strategicregions", "supplyareas", "terrain",
+    }
+    if os.path.isdir(md):
+        unclassified = sorted(set(os.listdir(md)) - CLASSIFIED)
+        if unclassified:
+            fails.append(f"map/ contains files nobody has classified: "
+                         f"{unclassified}. Work out whether each references "
+                         f"provinces or states before shipping it")
+
+    # Province ids in the map files that carry them must exist in definition.csv.
+    refs = []
+    ap = os.path.join(md, "adjacencies.csv")
+    if os.path.exists(ap):
+        for n, line in enumerate(open(ap, encoding="utf-8", errors="replace")):
+            f = line.strip().split(";")
+            if n == 0 or len(f) < 4 or not f[0].isdigit():
+                continue
+            refs += [("adjacencies.csv", int(x)) for x in f[:4]
+                     if x.lstrip("-").isdigit() and int(x) >= 0]
+    rp = os.path.join(md, "adjacency_rules.txt")
+    if os.path.exists(rp):
+        t2 = open(rp, encoding="utf-8", errors="replace").read()
+        for blk in re.findall(r"required_provinces\s*=\s*\{([^}]*)\}", t2, re.S):
+            refs += [("adjacency_rules.txt", int(x)) for x in blk.split()
+                     if x.isdigit()]
+    up = os.path.join(md, "unitstacks.txt")
+    if os.path.exists(up):
+        for line in open(up, encoding="utf-8", errors="replace"):
+            f = line.split(";")
+            if f[0].isdigit():
+                refs.append(("unitstacks.txt", int(f[0])))
+    for name, count in sorted(collections.Counter(
+            n for n, q in refs if q not in known).items()):
+        fails.append(f"map/{name}: {count} references to provinces that are not "
+                     f"in definition.csv")
+
     # ---- map files keyed by state id ----
     # buildings.txt, airports.txt and rocketsites.txt are keyed by state, so they
     # rot exactly the way the supply areas did the moment the state layout moves.
