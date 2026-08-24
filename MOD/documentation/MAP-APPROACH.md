@@ -820,3 +820,112 @@ a place where the two are stitched together and can tear.
 The validator now checks supply area coverage, and treats a *missing*
 `map/supplyareas` as a failure in its own right, because inheriting vanilla's is
 silently wrong the moment the mod adds or removes a single state.
+
+## The map itself was missing
+
+The supply areas were a real fault. They were not the whole of it, and the
+section above ends on a claim that is wrong:
+
+> Nothing else under `map/` references states — checked across every `.txt` and
+> `.csv` in the previous mod's map directory.
+
+That check looked for `states = { ... }` blocks. Three files reference states
+without one, by using the state id as the key itself:
+
+```
+airports.txt      1={3838 }
+rocketsites.txt   1={11804 }
+buildings.txt     1;arms_factory;2948.00;11.18;1360.00;5.32;0
+```
+
+Searching for the shape of a reference rather than for the thing referenced
+missed all three.
+
+### 678 provinces that vanilla does not have
+
+The larger fault was underneath. Every province id in this mod's states was
+measured off the previous mod's `provinces.bmp`. That mod shipped its own
+`definition.csv`, `provinces.bmp`, `heightmap.bmp`, `terrain.bmp`,
+`world_normal.bmp`, `unitstacks.txt` and `buildings.txt` — and declared only
+`replace_path="common/on_actions"`, so each of those replaced vanilla's by
+filename. Its map was the game's map.
+
+This mod inherited vanilla's. The states named provinces from a map that was
+not loaded.
+
+The map turns out to be vanilla's with land carved into it, and its own
+strategic regions prove it. It reshipped 82 of them and left roughly 128 to
+vanilla. Every province above id 13203 — **678 of them, all land, no sea, no
+lake** — falls inside one of the 82 and none of the 128:
+
+| where the added land is | share of that region above id 13203 |
+|---|---|
+| South Africa | 64% |
+| Sub-Saharan Africa | 50% |
+| Sahara | 47% |
+| South America | 40% |
+| South West Africa | 36% |
+| Northern Andes, Central Africa, North West Africa, Iran | ~27% each |
+
+Colonial Africa, South America, Persia and the Balkans subdivided — exactly
+what a 19th-century map needs and a 1936 one does not. A province that exists
+only inside the regions a mod had to redraw is a province that mod added.
+**199 of the 857 states name at least one.**
+
+So `map/` now ships. Deliberately **without** `replace_path`: only the 82
+regions containing the added provinces are shipped, and `replace_path="map"`
+would delete the ~128 vanilla regions covering the rest of the world.
+
+Three of the previous mod's strategic region files were empty —
+`208-Western France.txt`, `209-Northwestern Iberia.txt`,
+`210-Southern Iberia.txt`. Same filename rule, same consequence as
+`00_countries.txt`: shipping an empty file with a vanilla name deletes that
+region and strands every province in it. They are not shipped.
+
+### Re-keying the three state-keyed files
+
+`buildings.txt` assumes 1,327 states, one per state key. This mod has 857.
+140 states were being handed a province belonging to a different state, and
+11,591 of 41,322 building rows were keyed to states that do not exist.
+
+`tools/emit_mapfiles.py` rebuilds all three. For each position it reads the
+pixel out of `provinces.bmp`, finds the province, and re-keys the row to the
+state that actually contains it. Nothing is invented: a position is either
+verbatim from the reference file, or on a real pixel of one of that state's own
+provinces where a state would otherwise fall short of the quota.
+
+The coordinate convention was not assumed. `buildings.txt` stores `z` from the
+bottom edge, and the proof is that all **1327 of 1327** `air_base` positions
+resolve to exactly the province `airports.txt` names for that state. Reading it
+the other way up matches 2.
+
+The format's structure, measured rather than guessed — all 1,327 reference
+states agree exactly:
+
+| per state | per land province | per coastal province | per coastal state |
+|---|---|---|---|
+| 6 arms_factory, 6 industrial_complex, 3 anti_air_building, 1 each of air_base, radar_station, nuclear_reactor, rocket_site | 1 bunker | 1 coastal_bunker, 1 naval_base | 1 dockyard |
+
+Result: 32,213 rows, every one inside the state it is keyed to; all 857 states
+at the exact quota; 10,623 bunkers for 10,623 land provinces; naval bases only
+on coastal provinces; 465 dockyards for 465 coastal states. `airports.txt` and
+`rocketsites.txt` are derived from the positions actually written, so the three
+files cannot disagree with each other.
+
+### What the validator learned
+
+It now reads the province table **the mod ships** rather than a reference copy —
+checking states against any other table proves nothing about what the game sees.
+It fails on a state naming a province that does not exist, a missing
+`definition.csv` or `provinces.bmp`, an empty strategic region file, a province
+in two strategic regions, and any state-keyed map file that disagrees with the
+state layout. Each of those six was confirmed by injecting the fault and
+watching it report.
+
+### Recorded, not fixed
+
+88 states straddle a strategic region boundary, and 14 more sit partly in a
+shipped region and partly in one of vanilla's. This is inherited from the
+previous mod's own region files and is not a broken reference — every province
+is still in exactly one region. Redrawing region boundaries would mean inventing
+map data, which nothing else here does.

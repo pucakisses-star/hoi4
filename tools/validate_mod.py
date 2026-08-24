@@ -25,15 +25,25 @@ TMPL = re.compile(r'division_template\s*=\s*\{[^{]*name\s*=\s*"([^"]+)"', re.S)
 USES = re.compile(r'division_template\s*=\s*"([^"]+)"')
 
 
-def main(mod="MOD", definition="tools/data/definition_reference.csv"):
+def main(mod="MOD", definition=None):
     fails = []
 
-    land = set()
-    for line in open(definition, encoding="utf-8", errors="replace"):
-        f = line.strip().split(";")
-        if len(f) >= 5 and f[0].isdigit() and f[4] == "land":
-            land.add(int(f[0]))
+    # Read the province table the mod itself ships, not a reference copy. A
+    # province id only means anything relative to the map that defines it, so
+    # checking the states against any other table proves nothing about what the
+    # game will see.
+    if definition is None:
+        definition = os.path.join(mod, "map", "definition.csv")
+    land, known = set(), set()
+    if os.path.exists(definition):
+        for line in open(definition, encoding="utf-8", errors="replace"):
+            f = line.strip().split(";")
+            if len(f) >= 5 and f[0].isdigit():
+                known.add(int(f[0]))
+                if f[4] == "land":
+                    land.add(int(f[0]))
     land.discard(0)
+    known.discard(0)
 
     # ---- states ----
     sd = os.path.join(mod, "history", "states")
@@ -75,9 +85,13 @@ def main(mod="MOD", definition="tools/data/definition_reference.csv"):
     miss = land - set(prov_owner)
     if miss:
         fails.append(f"{len(miss)} land provinces belong to no state")
-    wet = set(prov_owner) - land
+    wet = (set(prov_owner) & known) - land
     if wet:
         fails.append(f"{len(wet)} sea or lake provinces are inside a state")
+    ghost = sorted(set(prov_owner) - known)
+    if ghost:
+        fails.append(f"{len(ghost)} provinces named by states are not in "
+                     f"{definition}: {ghost[:8]}")
 
     # ---- countries ----
     cd = os.path.join(mod, "history", "countries")
@@ -162,6 +176,162 @@ def main(mod="MOD", definition="tools/data/definition_reference.csv"):
     else:
         fails.append("map/supplyareas is missing; vanilla's will be used and it "
                      "knows nothing about this mod's new states")
+
+    # ---- the map itself ----
+    # This mod's states were measured off a map that has 678 land provinces
+    # vanilla does not: someone had subdivided colonial Africa, South America,
+    # Persia and the Balkans. 199 states name at least one of them. Ship the
+    # states without that map and those ids refer to nothing, which is what the
+    # game means by "errors in the map definition".
+    md = os.path.join(mod, "map")
+    for need in ("definition.csv", "provinces.bmp"):
+        if not os.path.exists(os.path.join(md, need)):
+            fails.append(f"map/{need} is missing; the states name provinces that "
+                         f"only exist in the map this mod was built from")
+
+    srd = os.path.join(md, "strategicregions")
+    if os.path.isdir(srd):
+        in_region = collections.Counter()
+        for fn in sorted(os.listdir(srd)):
+            if not fn.endswith(".txt"):
+                continue
+            fp = os.path.join(srd, fn)
+            if os.path.getsize(fp) == 0:
+                fails.append(f"strategicregions/{fn} is empty; a file with a "
+                             f"vanilla filename replaces vanilla's, so an empty "
+                             f"one deletes that region and strands its provinces")
+                continue
+            t2 = open(fp, encoding="utf-8", errors="replace").read()
+            if t2.count("{") != t2.count("}"):
+                fails.append(f"strategicregions/{fn}: unbalanced braces")
+            for blk in re.findall(r"provinces\s*=\s*\{([^}]*)\}", t2, re.S):
+                for x in blk.split():
+                    if x.isdigit():
+                        in_region[int(x)] += 1
+        twice = [p for p, n in in_region.items() if n > 1]
+        if twice:
+            fails.append(f"{len(twice)} provinces are in more than one strategic "
+                         f"region: {twice[:8]}")
+        stray = sorted(set(in_region) - known)
+        if stray:
+            fails.append(f"{len(stray)} provinces in strategic regions are not in "
+                         f"definition.csv: {stray[:8]}")
+
+    # Every file under map/ has to be one that has been classified, because the
+    # fault above was missed by searching for a pattern instead of enumerating
+    # the directory. airports.txt, rocketsites.txt and buildings.txt key on the
+    # state id itself, so a search for "states = { ... }" blocks never saw them.
+    CLASSIFIED = {
+        "definition.csv", "provinces.bmp", "heightmap.bmp", "terrain.bmp",
+        "world_normal.bmp", "adjacencies.csv", "adjacency_rules.txt",
+        "continent.txt", "unitstacks.txt", "airports.txt", "rocketsites.txt",
+        "buildings.txt", "strategicregions", "supplyareas", "terrain",
+    }
+    if os.path.isdir(md):
+        unclassified = sorted(set(os.listdir(md)) - CLASSIFIED)
+        if unclassified:
+            fails.append(f"map/ contains files nobody has classified: "
+                         f"{unclassified}. Work out whether each references "
+                         f"provinces or states before shipping it")
+
+    # Province ids in the map files that carry them must exist in definition.csv.
+    refs = []
+    ap = os.path.join(md, "adjacencies.csv")
+    if os.path.exists(ap):
+        for n, line in enumerate(open(ap, encoding="utf-8", errors="replace")):
+            f = line.strip().split(";")
+            if n == 0 or len(f) < 4 or not f[0].isdigit():
+                continue
+            refs += [("adjacencies.csv", int(x)) for x in f[:4]
+                     if x.lstrip("-").isdigit() and int(x) >= 0]
+    rp = os.path.join(md, "adjacency_rules.txt")
+    if os.path.exists(rp):
+        t2 = open(rp, encoding="utf-8", errors="replace").read()
+        for blk in re.findall(r"required_provinces\s*=\s*\{([^}]*)\}", t2, re.S):
+            refs += [("adjacency_rules.txt", int(x)) for x in blk.split()
+                     if x.isdigit()]
+    up = os.path.join(md, "unitstacks.txt")
+    if os.path.exists(up):
+        for line in open(up, encoding="utf-8", errors="replace"):
+            f = line.split(";")
+            if f[0].isdigit():
+                refs.append(("unitstacks.txt", int(f[0])))
+    for name, count in sorted(collections.Counter(
+            n for n, q in refs if q not in known).items()):
+        fails.append(f"map/{name}: {count} references to provinces that are not "
+                     f"in definition.csv")
+
+    # ---- map files keyed by state id ----
+    # buildings.txt, airports.txt and rocketsites.txt are keyed by state, so they
+    # rot exactly the way the supply areas did the moment the state layout moves.
+    QUOTA = {"arms_factory": 6, "industrial_complex": 6, "anti_air_building": 3,
+             "air_base": 1, "radar_station": 1, "nuclear_reactor": 1,
+             "rocket_site": 1}
+    for name in ("airports.txt", "rocketsites.txt"):
+        fp = os.path.join(md, name)
+        if not os.path.exists(fp):
+            continue
+        kv = {}
+        for line in open(fp, encoding="utf-8", errors="replace"):
+            m = re.match(r"\s*(\d+)\s*=\s*\{\s*(\d+)", line)
+            if m:
+                kv[int(m.group(1))] = int(m.group(2))
+        alien = sorted(set(kv) - set(ids))
+        if alien:
+            fails.append(f"map/{name}: {len(alien)} entries name states the mod "
+                         f"does not define: {alien[:8]}")
+        elsewhere = sorted(s2 for s2, p in kv.items()
+                           if s2 in state_of and p not in state_of[s2])
+        if elsewhere:
+            fails.append(f"map/{name}: {len(elsewhere)} states are given a province "
+                         f"they do not own: {elsewhere[:8]}")
+        gap = sorted(set(ids) - set(kv))
+        if gap:
+            fails.append(f"map/{name}: {len(gap)} states have no entry: {gap[:8]}")
+
+    bp = os.path.join(md, "buildings.txt")
+    if os.path.exists(bp):
+        per = collections.defaultdict(collections.Counter)
+        rows = []
+        orphan = 0
+        for line in open(bp, encoding="utf-8", errors="replace"):
+            f = line.rstrip("\n").split(";")
+            if len(f) < 7 or not f[0].isdigit():
+                continue
+            sid = int(f[0])
+            rows.append(f)
+            if sid not in ids:
+                orphan += 1
+            per[f[1]][sid] += 1
+        if orphan:
+            fails.append(f"map/buildings.txt: {orphan} rows are keyed to states "
+                         f"the mod does not define")
+        for kind, want in sorted(QUOTA.items()):
+            off = sorted(s2 for s2 in ids if per[kind].get(s2, 0) != want)
+            if off:
+                fails.append(f"map/buildings.txt: {len(off)} states do not have "
+                             f"exactly {want} {kind}: {off[:8]}")
+        bunkers = per["bunker"]
+        if sum(bunkers.values()) != len(land):
+            fails.append(f"map/buildings.txt: {sum(bunkers.values())} bunkers for "
+                         f"{len(land)} land provinces; the format wants one each")
+        # A building's position has to fall inside the state it is keyed to.
+        bmp = os.path.join(md, "provinces.bmp")
+        if rows and os.path.exists(bmp) and os.path.exists(definition):
+            try:
+                from emit_mapfiles import Provinces
+            except ImportError:
+                sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+                from emit_mapfiles import Provinces
+            pr = Provinces(bmp, definition)
+            outside = 0
+            for f in rows:
+                p = pr.at(float(f[2]), float(f[4]))
+                if prov_owner.get(p, [None])[0] != int(f[0]):
+                    outside += 1
+            if outside:
+                fails.append(f"map/buildings.txt: {outside} rows sit at a position "
+                             f"that is not inside the state they are keyed to")
 
     # ---- filenames that shadow vanilla's ----
     # Hearts of Iron IV overrides most directories by filename. Shipping a file
