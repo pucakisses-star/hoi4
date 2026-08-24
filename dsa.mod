@@ -16,7 +16,7 @@
 # in descriptor.mod inside the folder does nothing. Two test cycles were lost
 # to that before.
 # ---------------------------------------------------------------------------
-version="0.4"
+version="0.5"
 tags={
 	"Alternative History"
 	"Historical"
@@ -33,6 +33,13 @@ replace_path="common/bookmarks"
 # areas both miss states and name states that no longer exist. Either is a
 # broken reference in the map definition, and the game refuses to load the map.
 replace_path="map/supplyareas"
+# The rest of map/ ships WITHOUT replace_path, and must keep doing so. The map
+# this mod is built on is vanilla's with 678 extra land provinces carved into
+# Africa, South America, Persia and the Balkans, so definition.csv and
+# provinces.bmp have to ship or the states name provinces the game has never
+# heard of. But only the 82 strategic regions those provinces fall in are
+# shipped; declaring replace_path="map" would delete the ~128 vanilla regions
+# that cover the rest of the world and strand every province in them.
 
 # Change the line below to where you put the mod folder.
 # Forward slashes, even on Windows. No trailing slash.
