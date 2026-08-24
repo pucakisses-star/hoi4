@@ -133,6 +133,39 @@ def main(mod="MOD", definition="tools/data/definition_reference.csv"):
             if u not in defined:
                 fails.append(f"units/{name}: uses undefined template {u!r}")
 
+    # ---- filenames that shadow vanilla's ----
+    # Hearts of Iron IV overrides most directories by filename. Shipping a file
+    # with a base-game name silently DELETES vanilla's version of it. That is
+    # how this mod crashed on its first launch: common/country_tags/00_countries.txt
+    # is vanilla's own filename, so shipping it removed all ~190 base-game tags
+    # and left 73 state owners -- France, Britain, the United States among them --
+    # pointing at countries that no longer existed.
+    SHADOW = {
+        "common/country_tags/00_countries.txt":
+            "deletes every vanilla country tag; use a different filename so it is additive",
+        "common/country_tags/zz_dynamic_countries.txt":
+            "deletes vanilla's dynamic tag pool used for civil wars and released nations",
+        "common/ideologies/00_ideologies.txt":
+            "deletes vanilla's ideologies; every idea and focus referencing one stops resolving",
+        "common/units/00_infantry.txt":
+            "deletes vanilla's infantry unit definitions",
+        "common/state_category/00_state_categories.txt":
+            "deletes vanilla's state categories, which every state file references",
+    }
+    for rel, why in SHADOW.items():
+        if os.path.exists(os.path.join(mod, rel)):
+            fails.append(f"{rel} shadows a vanilla filename: {why}")
+
+    # colors.txt genuinely has no alternative name, so it must be complete
+    cpath = os.path.join(mod, "common", "countries", "colors.txt")
+    if os.path.exists(cpath):
+        ct = open(cpath, encoding="utf-8").read()
+        coloured = set(re.findall(r"^([A-Z0-9]{3})\s*=", ct, re.M))
+        gap = sorted(set(owner_states) - coloured)
+        if gap:
+            fails.append(f"colors.txt replaces vanilla's but has no colour for "
+                         f"{len(gap)} tags in use: {gap[:8]}")
+
     # ---- bookmarks ----
     bd = os.path.join(mod, "common", "bookmarks")
     if os.path.isdir(bd):
