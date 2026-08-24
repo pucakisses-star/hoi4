@@ -557,3 +557,48 @@ half of Hispaniola had been the Dominican Republic since 1865.
 That is the `assigned_by` column earning its place. Under the old
 count-by-owner-tag method all twenty-nine would have been silently counted as
 converted, and those four errors would have shipped.
+
+## Emitting the state files
+
+`tools/emit_states.py` turns the geometry table into `MOD/history/states/` —
+**857 files, all 10,623 land provinces, 174 owners.** Validated by parsing the
+emitted files back independently of the code that wrote them: no duplicate ids,
+no double-claimed provinces, no gaps, nothing in the sea, no unbalanced braces,
+and no victory point on a province its state does not own.
+
+### The mod replaces vanilla's states rather than overriding them
+
+`replace_path="history/states"` is declared, and it matters. Hearts of Iron IV
+merges `history/states` **by filename**, so a mod file called `64-Brandenburg.txt`
+does not replace vanilla's own state 64 — both load, and the id is defined
+twice. That is precisely what left the previous version with 65 duplicate state
+ids and a map with two layouts stacked on it.
+
+Since this mod defines every land province, none of vanilla's directory is
+wanted. Declaring `replace_path` makes the game ignore it, filenames stop
+mattering, and a duplicate becomes structurally impossible rather than merely
+checked-for.
+
+`replace_path` only takes effect in the **outer `.mod` file** the launcher reads,
+not in `descriptor.mod` inside the folder. Two earlier test cycles were lost to
+that exact mistake. `INSTALL.md` spells it out.
+
+### What is researched and what is a placeholder
+
+Provinces and owners are researched. **Manpower, infrastructure and victory
+points are not** — they are derived from each state's category on a single
+scale, set at roughly a third of vanilla's 1936 figures on the reasoning that
+world population was about a third lower and industry far more concentrated.
+Every generated file says so in its header.
+
+One known crudity: the victory point is placed on each state's physically
+largest province, which is not always its most important city. Brandenburg's
+lands on Frankfurt an der Oder rather than Berlin. Fixing that needs a table of
+which province holds which city, which does not exist yet.
+
+### What the mod still needs to boot
+
+`history/countries/` is the next piece. Vanilla's country files still load and
+they set up 1936 politics, technology and armies for countries that in 1886
+either did not exist or looked nothing alike. The states are placed; the
+countries standing on them are not yet dressed.

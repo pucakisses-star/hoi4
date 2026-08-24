@@ -109,6 +109,7 @@ ROWS = [
 
 # ---- Ottoman Empire and its autonomous fringe ----
 ("OTT","Ottoman Empire","Near East","Empire","HOI4's TUR is the post-1923 republic -- a different state with different borders, subjects and institutions."),
+("TUN","Tunisia","North Africa","French protectorate","The Bey still reigns; France took the protectorate in 1881. Not a vanilla tag despite appearances, so it has to be defined here."),
 ("TRP","Tripolitania","North Africa","Ottoman vilayet","The last Ottoman holding in Africa; Italy takes it in 1911."),
 ("MLB","Mount Lebanon","Near East","Autonomous Ottoman mutasarrifate","Christian governor guaranteed by the powers after the 1860 massacres."),
 
@@ -324,11 +325,15 @@ LOOK = {
     "East Africa":      ("african",           0.47, 0.08),
     "Southern Africa":  ("african",           0.55, 0.08),
     "Oceania":          ("commonwealth",      0.88, 0.05),
+    "Australasia":      ("commonwealth",      0.94, 0.06),
+    "Eastern Europe":   ("eastern_european",  0.70, 0.03),
 }
 
 
 def rgb_for(region, i, n):
     import colorsys
+    if region not in LOOK:
+        raise SystemExit(f"no colour/graphics rule for region {region!r}; add it to LOOK")
     gfx, base, spread = LOOK[region]
     h = (base + (spread * ((i / max(n - 1, 1)) - 0.5) * 2)) % 1.0
     s = 0.42 + 0.20 * ((i * 7) % 5) / 4.0

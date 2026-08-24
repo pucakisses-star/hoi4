@@ -336,6 +336,10 @@ NSN = {
 	color = rgb { 91 211 124 }
 	color_ui = rgb { 91 211 124 }
 }
+NSW = {
+	color = rgb { 140 81 123 }
+	color_ui = rgb { 140 81 123 }
+}
 NTL = {
 	color = rgb { 108 126 187 }
 	color_ui = rgb { 108 126 187 }
@@ -372,7 +376,7 @@ PRL = {
 	color = rgb { 112 211 161 }
 	color_ui = rgb { 112 211 161 }
 }
-PRU = {
+PRS = {
 	color = rgb { 81 133 140 }
 	color_ui = rgb { 81 133 140 }
 }
@@ -383,6 +387,10 @@ PTL = {
 QAT = {
 	color = rgb { 184 187 90 }
 	color_ui = rgb { 184 187 90 }
+}
+QLD = {
+	color = rgb { 187 71 121 }
+	color_ui = rgb { 187 71 121 }
 }
 QNG = {
 	color = rgb { 140 127 81 }
@@ -400,6 +408,10 @@ RSD = {
 	color = rgb { 187 144 71 }
 	color_ui = rgb { 187 144 71 }
 }
+RUS = {
+	color = rgb { 82 81 140 }
+	color_ui = rgb { 82 81 140 }
+}
 RWA = {
 	color = rgb { 122 211 195 }
 	color_ui = rgb { 122 211 195 }
@@ -407,6 +419,10 @@ RWA = {
 RYL = {
 	color = rgb { 73 70 164 }
 	color_ui = rgb { 73 70 164 }
+}
+SAS = {
+	color = rgb { 164 86 109 }
+	color_ui = rgb { 164 86 109 }
 }
 SAT = {
 	color = rgb { 53 79 140 }
@@ -476,6 +492,10 @@ SXY = {
 	color = rgb { 71 162 187 }
 	color_ui = rgb { 71 162 187 }
 }
+TAS = {
+	color = rgb { 211 122 122 }
+	color_ui = rgb { 211 122 122 }
+}
 TCL = {
 	color = rgb { 95 140 74 }
 	color_ui = rgb { 95 140 74 }
@@ -505,8 +525,8 @@ TRO = {
 	color_ui = rgb { 60 140 118 }
 }
 TRP = {
-	color = rgb { 140 109 81 }
-	color_ui = rgb { 140 109 81 }
+	color = rgb { 211 194 101 }
+	color_ui = rgb { 211 194 101 }
 }
 TRU = {
 	color = rgb { 149 164 62 }
@@ -516,6 +536,10 @@ TRV = {
 	color = rgb { 211 122 128 }
 	color_ui = rgb { 211 122 128 }
 }
+TUN = {
+	color = rgb { 140 109 81 }
+	color_ui = rgb { 140 109 81 }
+}
 TVL = {
 	color = rgb { 81 140 129 }
 	color_ui = rgb { 81 140 129 }
@@ -524,9 +548,17 @@ UDA = {
 	color = rgb { 187 123 108 }
 	color_ui = rgb { 187 123 108 }
 }
+VIC = {
+	color = rgb { 211 101 164 }
+	color_ui = rgb { 211 101 164 }
+}
 WAD = {
 	color = rgb { 96 140 81 }
 	color_ui = rgb { 96 140 81 }
+}
+WAU = {
+	color = rgb { 140 60 71 }
+	color_ui = rgb { 140 60 71 }
 }
 WEI = {
 	color = rgb { 108 140 187 }
